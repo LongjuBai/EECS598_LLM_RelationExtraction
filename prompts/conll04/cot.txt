@@ -2,23 +2,23 @@ Example Instructional Prefix: List the relations of the types [OrgBased In, Work
 
 TEXT: $TEXT_1$
 Relations: $Relations_1$
-Explanation: $Explanation_1$
+Explanation: Bruno Pusterla is a top official of the Italian Agricultral Confederation.
 
 TEXT: $TEXT_2$
 Relations: $Relations_2$
-Explanation: $Explanation_2$
+Explanation: Shi Liming works for the Institute of Zoology, which is an organization based in Kunming.
 
 TEXT: $TEXT_3$
 Relations: $Relations_3$
-Explanation: $Explanation_3$
+Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
 
 TEXT: $TEXT_4$
 Relations: $Relations_4$
-Explanation: $Explanation_4$
+Explanation: PURCHASE is a place located in N.Y..
 
 TEXT: $TEXT_5$
 Relations: $Relations_5$
-Explanation: $Explanation_5$
+Explanation: City of BELGRADE is located in Yugoslavia and AP is an organization based in BELGRADE, Yugoslavia.
 
 TEXT: $TEXT_6$
 Relations: $Relations_6$
