@@ -1,0 +1,58 @@
+Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
+
+TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
+Relations: [['Bruno Pusterla:Per', 'Work For', 'Italian Agricultural Confederation:Org']]
+Explanation: Bruno Pusterla is a top official of the Italian Agricultral Confederation.
+
+TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Relations: [['Shi Liming:Per', 'Work For', 'Institute of Zoology:Org'], ['Institute of Zoology:Org', 'OrgBased In', 'Kunming:Loc']]
+Explanation: Shi Liming works for the Institute of Zoology, which is an organization based in Kunming.
+
+TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Relations: [['Oswald:Per', 'Kill', 'President Kennedy:Per'], ['Oswald:Per', 'Kill', 'Officer Tippit:Per']]
+Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
+
+TEXT: PURCHASE , N.Y .
+Relations: [['PURCHASE:Loc', 'Located In', 'N.Y .:Loc']]
+Explanation: PURCHASE is a place located in N.Y..
+
+TEXT: BELGRADE , Yugoslavia ( AP )
+Relations: [['BELGRADE:Loc', 'Located In', 'Yugoslavia:Loc'], ['AP:Org', 'OrgBased In', 'BELGRADE:Loc'], ['AP:Org', 'OrgBased In', 'Yugoslavia:Loc']]
+Explanation: City of BELGRADE is located in Yugoslavia and AP is an organization based in BELGRADE, Yugoslavia.
+
+TEXT: Rome is in Lazio province and Naples in Campania .
+Relations: [['Rome:Loc', 'Located In', 'Lazio:Loc'], ['Naples:Loc', 'Located In', 'Campania:Loc']]
+Explanation: Rome is a place located in Lazio and Naples is a place located in Campania.
+
+TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
+Relations: [['Mikhail Shevtsov:Per', 'Work For', 'ITAR-TASS:Org']]
+Explanation: Mikhail Shevtsov is a correspondent for the ITAR-TASS.
+
+TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Relations: [['Jean Bertrand Aristide:Per', 'Live In', 'Haiti:Loc']]
+Explanation: Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti.
+
+TEXT: Moscow ITAR-TASS
+Relations: [['ITAR-TASS:Org', 'OrgBased In', 'Moscow:Loc']]
+Explanation: ITAR-TASS is an organization based in Moscow.
+
+TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Relations: [['Mrs. Parks:Per', 'Live In', 'Montgomery:Loc'], ['Mrs. Parks:Per', 'Live In', 'Ala.:Loc'], ['Montgomery:Loc', 'Located In', 'Ala.:Loc']]
+Explanation: Mrs. Parks actions were in Montgomery, Ala., where she lived. It can be derived that Montgomery is located in Ala..
+
+TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Relations: [['Sirhan:Per', 'Kill', 'Kennedy:Per']]
+Explanation: Sirhan was the lone assassin in the Kennedy assassination.
+
+TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
+Relations: [['Denver:Loc', 'Located In', 'Colorado:Loc']]
+Explanation: Denver officials closed Interstate 270 in Colorado, consequently we can see that Denver is located in Colorado.
+
+TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Relations: [['Edward Marks:Per', 'Work For', 'Montgomery County Democratic Party:Org']]
+Explanation: Edward Marks is an official that works for the Montgomery County Democratic Party.
+
+Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
+
+TEXT: $TEXT$
+Relations: 
