@@ -47,3 +47,8 @@ Explanation: paradoxical effect of brimonidine was reported.
 TEXT: Hepatocellular damage following therapeutic intravenous iron sucrose infusion in a child .
 Relations: [['Hepatocellular damage', 'iron sucrose']]
 Explanation: Hepatocellular damage occurred in a child after infusion of iron sucrose.
+
+Instructional Prefix: List all [drug, adverse effects] pairs in the TEXT provided below.
+
+TEXT: $TEXT$
+Relations: 
