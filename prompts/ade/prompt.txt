@@ -1,0 +1,49 @@
+Example Instructional Prefix: List all [drug, adverse effects] pairs in the TEXT provided below.
+
+TEXT: We report on three observations of parkinsonian patients with levo - dopa - induced diphasic dyskinesias , who received subcutaneous apomorphine to reduce the duration of abnormal movements .
+Relations: [['diphasic dyskinesias', 'levo - dopa']]
+Explanation: levo-dopa induced diphasic dyskinesias in parkinsonian patients.
+
+TEXT: A girl with cystic fibrosis and cyclic neutropenia developed an erythematous papular eruption without fever or neutrophilia 7 months after commencing therapy with G - CSF .
+Relations: [['erythematous papular eruption', 'G - CSF']]
+Explanation: G-CSF therapy caused erythematous papular eruption in a girl with cystic fibrosis.
+
+TEXT: Hypersensitivity to carboplatin is a rare but real complication of therapy and should be considered in patients presenting with hyperacute changes on ECG whilst receiving carboplatin therapy .
+Relations: [['hyperacute changes on ECG', 'carboplatin'], ['Hypersensitivity', 'carboplatin']]
+Explanation: Patients who undergo carboplatin therapy are prone to hypersensitivity and hyperacute changes on their ECG.
+
+TEXT: The diagnosis of hypothermia was delayed until it was apparent for several days but resolved with the discontinuation of risperidone and continuation of clozapine .
+Relations: [['hypothermia', 'risperidone']]
+Explanation: risperidone caused hypothermia since it was resolved with its discontinuation.
+
+TEXT: Eighty - two patients with various malignancies who received imipenem / cilastatin 143 times for neutropenic fever between March 1994 and October 1999 in Department of Pediatric Oncology , Gazi University , were identified .
+Relations: [['neutropenic fever', 'cilastatin'], ['neutropenic fever', 'imipenem']]
+Explanation: Patients who received either cilastatin or imipenem were identified with neutropenic fever.
+
+TEXT: This increase when clozapine was switched to risperidone and vice versa is consistent with our previous report of elevated serum triglyceride levels in clozapine - treated patients .
+Relations: [['elevated serum triglyceride levels', 'clozapine']]
+Explanation: There was a report of elevated serum triglyceride levels in clozapine-treated patients.
+
+TEXT: The autopsy findings and a detailed medical history supported the conclusion that clozapine - induced hypersensitivity myocarditis was the most likely cause of death .
+Relations: [['hypersensitivity myocarditis', 'clozapine']]
+Explanation: Both bleomycin and oxygen caused pulmonary damage in the autopsy findings.
+
+TEXT: CD4 T - lymphocyte depletion , myelosuppression , and subsequent severe infections are the major side effects of fludarabine phosphate therapy .
+Relations: [['CD4 T - lymphocyte depletion', 'fludarabine phosphate'], ['myelosuppression', 'fludarabine phosphate'], ['severe infections', 'fludarabine phosphate']]
+Explanation: Following major side-effects are known of fludarabine phosphate therapy, CD4 T-lymphocyte depletion, myelosuppression, and severe infections.
+
+TEXT: OBJECTIVE : To describe a case of severe skin necrosis resulting from peripheral intravenous administration of low - dose vasopressin in a patient with catecholamine - resistant septic shock .
+Relations: [['skin necrosis', 'vasopressin']]
+Explanation: A case of skin necrosis was described after administration of low-dose vasopressin.
+
+TEXT: In vitro inhibition of hematopoiesis in a patient with systemic sclerosis treated with D - penicillamine .
+Relations: [['inhibition of hematopoiesis', 'D - penicillamine']]
+Explanation: Patient treated with D-penicillamine had in vitro inhibition of hematopoiesis.
+
+TEXT: PURPOSE : We report an unusual paradoxical effect of brimonidine .
+Relations: [['paradoxical effect', 'brimonidine']]
+Explanation: paradoxical effect of brimonidine was reported.
+
+TEXT: Hepatocellular damage following therapeutic intravenous iron sucrose infusion in a child .
+Relations: [['Hepatocellular damage', 'iron sucrose']]
+Explanation: Hepatocellular damage occurred in a child after infusion of iron sucrose.
