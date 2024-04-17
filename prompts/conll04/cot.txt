@@ -22,31 +22,31 @@ Explanation: City of BELGRADE is located in Yugoslavia and AP is an organization
 
 TEXT: $TEXT_6$
 Relations: $Relations_6$
-Explanation: $Explanation_6$
+Explanation: Rome is a place located in Lazio and Naples is a place located in Campania.
 
 TEXT: $TEXT_7$
 Relations: $Relations_7$
-Explanation: $Explanation_7$
+Explanation: Mikhail Shevtsov is a correspondent for the ITAR-TASS.
 
 TEXT: $TEXT_8$
 Relations: $Relations_8$
-Explanation: $Explanation_8$
+Explanation: Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti.
 
 TEXT: $TEXT_9$
 Relations: $Relations_9$
-Explanation: $Explanation_9$
+Explanation: ITAR-TASS is an organization based in Moscow.
 
 TEXT: $TEXT_10$
 Relations: $Relations_10$
-Explanation: $Explanation_10$
+Explanation: Mrs. Parks actions were in Montgomery, Ala., where she lived. It can be derived that Montgomery is located in Ala..
 
 TEXT: $TEXT_11$
 Relations: $Relations_11$
-Explanation: $Explanation_11$
+Explanation: Sirhan was the lone assassin in the Kennedy assassination.
 
 TEXT: $TEXT_12$
 Relations: $Relations_12$
-Explanation: $Explanation_12$
+Explanation: Edward Marks is an official that works for the Montgomery County Democratic Party.
 
 Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
 
