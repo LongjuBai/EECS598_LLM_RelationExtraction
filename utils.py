@@ -58,7 +58,7 @@ def load_ade(split=0):
                     ' '.join(text[ent_1['start']:ent_1['end']]),
                     ' '.join(text[ent_2['start']:ent_2['end']])
                 ])
-            output[part][int(sample['orig_id'])] = {
+            output[part][sample['orig_id']] = {
                 'text': ' '.join(text), 
                 'relations': relations_new
             }
@@ -85,7 +85,7 @@ def load_conll04():
                     relation_dict[r['type']],
                     f"{' '.join(text[ent_2['start']:ent_2['end']])}:{entity_dict[ent_2['type']]}"
                 ])
-            output[part][int(sample['orig_id'])] = {
+            output[part][sample['orig_id']] = {
                 'text': ' '.join(text), 
                 'relations': relations_new
             }
@@ -115,7 +115,7 @@ def load_nyt():
                         r['label'],
                         f"{r['em2Text']}:{name2type[r['em2Text']]}"
                     ])
-                output[part][int(i)] = {
+                output[part][i] = {
                     'text': text, 
                     'relations': relations_new
                 }

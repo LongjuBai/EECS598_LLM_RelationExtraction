@@ -1,7 +1,7 @@
 Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
 
-TEXT: $TEXT_1$
-Relations: $Relations_1$
+TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
+Relations: [['Bruno Pusterla:Per', 'Work For', 'Italian Agricultural Confederation:Org']]
 Explanation: Bruno Pusterla is a top official of the Italian Agricultral Confederation.
 
 TEXT: $TEXT_2$
