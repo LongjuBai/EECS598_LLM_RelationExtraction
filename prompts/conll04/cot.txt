@@ -1,0 +1,54 @@
+Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
+
+TEXT: $TEXT_1$
+Relations: $Relations_1$
+Explanation: $Explanation_1$
+
+TEXT: $TEXT_2$
+Relations: $Relations_2$
+Explanation: $Explanation_2$
+
+TEXT: $TEXT_3$
+Relations: $Relations_3$
+Explanation: $Explanation_3$
+
+TEXT: $TEXT_4$
+Relations: $Relations_4$
+Explanation: $Explanation_4$
+
+TEXT: $TEXT_5$
+Relations: $Relations_5$
+Explanation: $Explanation_5$
+
+TEXT: $TEXT_6$
+Relations: $Relations_6$
+Explanation: $Explanation_6$
+
+TEXT: $TEXT_7$
+Relations: $Relations_7$
+Explanation: $Explanation_7$
+
+TEXT: $TEXT_8$
+Relations: $Relations_8$
+Explanation: $Explanation_8$
+
+TEXT: $TEXT_9$
+Relations: $Relations_9$
+Explanation: $Explanation_9$
+
+TEXT: $TEXT_10$
+Relations: $Relations_10$
+Explanation: $Explanation_10$
+
+TEXT: $TEXT_11$
+Relations: $Relations_11$
+Explanation: $Explanation_11$
+
+TEXT: $TEXT_12$
+Relations: $Relations_12$
+Explanation: $Explanation_12$
+
+Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
+
+TEXT: $TEXT$
+Relations: 
