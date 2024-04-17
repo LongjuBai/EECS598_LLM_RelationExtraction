@@ -1,54 +1,80 @@
 Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
 
-TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
-Relations: [['Bruno Pusterla:Per', 'Work For', 'Italian Agricultural Confederation:Org']]
-Explanation: Bruno Pusterla is a top official of the Italian Agricultral Confederation.
+TEXT: Massachusetts ASTON MAGNA Great Barrington ; also at Bard College , Annandale-on-Hudson , N.Y. , July 1-Aug . 
+Relations: [['Annandale-on-Hudson:Loc', '/location/location/contains', 'Bard College:Org']]
+Explanation: Annandale-on-Hudson is a location in N.Y. that contains Bard College.
 
-TEXT: $TEXT_2$
-Relations: $Relations_2$
-Explanation: Shi Liming works for the Institute of Zoology, which is an organization based in Kunming.
+TEXT: It will be the final movie credited to Debra Hill , a film producer and native of Haddonfield , who produced '' Halloween '' and was considered a pioneering woman in film . 
+Relations: [['Debra Hill:Loc', '/people/person/place_of_birth', 'Haddonfield:Loc']]
+Explanation: Debra Hill was a film producer born (native of) in Haddonfield.
 
-TEXT: $TEXT_3$
-Relations: $Relations_3$
-Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
+TEXT: Under pressure from Mr. Kerkorian and other disgruntled shareholders , Mr. Wagoner started talks on Friday in Detroit with Carlos Ghosn , the chief executive of Renault and Nissan . 
+Relations: [['Carlos Ghosn:Per', '/business/person/company', 'Renault:Org']]
+Explanation: Carlos Ghosn is a business person (chief executive) associated with Renault and Nissan.
 
-TEXT: $TEXT_4$
-Relations: $Relations_4$
-Explanation: PURCHASE is a place located in N.Y..
+TEXT: Mr. Ferrer still holds commanding leads over the other two Democrats in the race -- United States Representative Anthony D. Weiner of Brooklyn and Queens , and City Council Speaker Gifford Miller -- and is also ahead of Mayor Michael R. Bloomberg in most polls . 
+Relations: [['Anthony D. Weiner:Per', '/people/person/place_lived', 'Brooklyn:Loc'], ['Anthony D. Weiner:Per', '/people/person/place_lived', 'Queens:Loc']]
+Explanation: Anthony D. Weiner is a person representing Brooklyn and Queens, therefore we can infer he lives in those places.
 
-TEXT: $TEXT_5$
-Relations: $Relations_5$
-Explanation: City of BELGRADE is located in Yugoslavia and AP is an organization based in BELGRADE, Yugoslavia.
+TEXT: Quebec , Canada 's second most populous province , after Ontario , has not decided to go that far . 
+Relations: [['Ontario:Loc', '/location/administrative_division/country', 'Canada:Loc'], ['Canada:Loc', '/location/location/contains', 'Ontario:Loc'], ['Canada:Loc', '/location/country/administrative_divisions', 'Ontario:Loc']]
+Explanation: Ontario is a place located in the administrative divisions of the country Canada. Quebec is Canada’s second most populous province and hence, Canada is a place that contains Quebec.
 
-TEXT: $TEXT_6$
-Relations: $Relations_6$
-Explanation: Rome is a place located in Lazio and Naples is a place located in Campania.
+TEXT: And Abu Izzadeen , who converted to Islam at 17 and heads another successor group to Al Muhajiroun , called Al Ghurabaa , called suicide bombing '' martyrdom operations . '' 
+Relations: [['Abu Izzadeen:Per', '/people/person/religion', 'Islam:Org']]
+Explanation: Since Abu Izzadeen converted to Islam at the age of 17, we can infer that this is a person who belongs to the religion of Islam.
 
-TEXT: $TEXT_7$
-Relations: $Relations_7$
-Explanation: Mikhail Shevtsov is a correspondent for the ITAR-TASS.
+TEXT: And yet , despite the success of its exhibitions , the institute remains something of a strange hybrid : located southeast of Notre-Dame , in a striking building designed by Jean Nouvel , it has operated since 1987 as a partnership between France and 22 Arab countries . 
+Relations: [['Jean Nouvel:Per', '/people/person/nationality', 'France:Loc']]
+Explanation: Jean Nouvel was a french designer and we can derive his nationality/citizenship as French or France.
+TEXT: They could have done it Sunday , when we were closed , '' said Joseph Bastianich , who owns Del Posto with his mother , Lidia Bastianich , and the chef , Mario Batali . 
+Relations: [['Lidia Bastianich:Per', '/people/person/children', 'Joseph Bastianich:Per']]
+Explanation: Joseph Bastianich owns Del Posto with his mother Lidia Bastianich.
 
-TEXT: $TEXT_8$
-Relations: $Relations_8$
-Explanation: Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti.
+TEXT: A French court sentenced six Algerian-French men to prison terms of up to 10 years on Tuesday for their role in a 2001 plot to attack the United States Embassy in Paris , closing the books on one of France 's most serious terrorist cases . 
+Relations: [['Paris:Loc', '/location/administrative_division/country', 'France:Loc'], ['France:Loc', '/location/location/contains', 'Paris:Loc'], ['France:Loc', '/location/country/administrative_divisions', 'Paris:Loc'], ['France:Loc', '/location/country/capital', 'Paris:Loc']]
+Explanation: Paris is located in the administrative divisons of the country France. Consequently, France is a place that contains Paris. US embassies are located in the capital of countries, therefore it can be inferred that Paris is the capital of France.
 
-TEXT: $TEXT_9$
-Relations: $Relations_9$
-Explanation: ITAR-TASS is an organization based in Moscow.
+TEXT: Anheuser-Busch , which has been the exclusive beer sponsor for the Super Bowl since 1989 , will do so again for the Super Bowls in 2007 and 2010 on CBS and in 2008 and 2011 on Fox Broadcasting , said Anthony T. Ponturo , vice president for global media and sports marketing at Anheuser-Busch in St. Louis . 
+Relations: [['Anheuser-Busch:Org', '/business/company/place_founded', 'St. Louis:Loc'], ['St. Louis:Loc', '/location/location/contains', 'Anheuser-Busch:Org']]
+Explanation: Anheuser-Busch is a business that was founded in St. Louis. Consequently, St. Louis is a place that contains Anheuser-Busch.
 
-TEXT: $TEXT_10$
-Relations: $Relations_10$
-Explanation: Mrs. Parks actions were in Montgomery, Ala., where she lived. It can be derived that Montgomery is located in Ala..
+TEXT: Somewhat chastened by his retreat in the polls , Mr. Blair acknowledged that Britons had turned against him in part over accusations that he led them into a war in Iraq on dubious legal grounds and on the false premise that Saddam Hussein presented a direct threat because of a supposed arsenal of unconventional weapons that was never found . '' 
+Relations: [['Saddam Hussein:Per', '/people/deceased_person/place_of_death', 'Iraq:Loc'], ['Saddam Hussein:Per', '/people/person/place_of_birth', 'Iraq:Loc'], ['Saddam Hussein:Per', '/people/person/nationality', 'Iraq:Loc']]
+Explanation: Saddam Hussein was killed in Iraq. His place of birth was also Iraq. We can infer that his nationality was Iraq.
 
-TEXT: $TEXT_11$
-Relations: $Relations_11$
-Explanation: Sirhan was the lone assassin in the Kennedy assassination.
+TEXT: Rupert Murdoch and John C. Malone , who have wrangled for two years over Mr. Malone 's challenge to Mr. Murdoch 's control of the News Corporation , have made peace . 
+Relations: [['Rupert Murdoch:Per', '/business/person/company', 'News Corporation:Org'], ['News Corporation:Org', '/business/company/founders', 'Rupert Murdoch:Per']]
+Explanation: Rupert Murdoch is a business person associated with News Corporation, which was a company founded by Rupert Murdoch.
 
-TEXT: $TEXT_12$
-Relations: $Relations_12$
-Explanation: Edward Marks is an official that works for the Montgomery County Democratic Party.
+TEXT: Manhattan , especially the East Village , has long been well stocked with cheap and raucous yakitori places that specialize in skewers and beer . 
+Relations: [['Manhattan:Loc', '/location/location/contains', 'East Village:Loc'], ['East Village:Loc', '/location/neighborhood/neighborhood_of', 'Manhattan:Loc']]
+Explanation: Rupert Murdoch is a business person associated with News Corporation, which was a company founded by Rupert Murdoch.
 
-Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
+TEXT: HEADING OUT -- Sanford I. Weill stepped down as chairman of Citigroup , the worldwide financial supermarket he had meticulously and single-mindedly stitched together through dozens of mergers and acquisitions . 
+Relations: [['Citigroup:Org', '/business/company/advisors', 'Sanford I. Weill:Per']]
+Explanation: Citigroup is a business company who was associated with (advised by) Sanford I. Weill.
 
-TEXT: $TEXT$
-Relations: 
+TEXT: He had decided to use the premiere to publicize the issue ; his plan was to invite the neighborhood 's Russian speakers to sign a petition against piracy , a common practice at the area 's Russian-language video outlets , which sell films and music from Russia and by Russian immigrants in the United States . 
+Relations: [['Russian:Loc', '/people/ethnicity/geographic_distribution', 'Russia:Loc']]
+Explanation: Russian is an ethnicity in United States associated with immigrants who came from the geographic distribution of Russia.
+
+TEXT: In 1995 , Cleveland successfully lobbied to have the name Cleveland Browns stay in that city after that venerable franchise 's owner , Art Modell , opted to move it to Baltimore . 
+Relations: [['Cleveland:Loc', '/sports/sports_team_location/teams', 'Cleveland Browns:Org'], ['Cleveland Browns:Org', '/sports/sports_team/location', 'Cleveland:Loc']]
+Explanation: Cleveland Browns is the sports franchise located in Cleveland, consequently Cleveland’s sports team is Cleveland Browns.
+
+TEXT: Mr. Fields , speaking from vacation in France , added , '' That a mogul like Sumner Redstone could make a statement so vicious , so pompous , so petulant as that he did n't want to make a deal with Tom Cruise because of his personal conduct -- it tells you more about Sumner Redstone and Viacom , than about Tom Cruise . '' 
+Relations: [['Sumner Redstone:Per', '/business/company_shareholder/major_shareholder_of', 'Viacom:Org'], ['Sumner Redstone:Per', '/business/company_shareholder/major_shareholder_of', 'Viacom:Org'], ['Sumner Redstone:Per', '/business/person/company', 'Viacom:Org'], ['Viacom:Org', '/business/company/major_shareholders', 'Sumner Redstone:Per'], ['Sumner Redstone:Per', '/business/person/company', 'Viacom:Org'], ['Viacom:Org', '/business/company/major_shareholders', 'Sumner Redstone:Per']]
+Explanation: Sumner Redstone is a major shareholder of the company Viacom.
+
+TEXT: It is a room of paintings by Leonard Peltier , a citizen of the Anishinabe and Dakota and Lakota nations who is serving two consecutive life terms in Pennsylvania for the murder of two F.B.I. agents on the Pine Ridge Reservation in South Dakota . 
+Relations: [['Leonard Peltier:Per', '/people/person/ethnicity', 'Lakota:Loc'], ['Lakota:Loc', '/people/ethnicity/people', 'Leonard Peltier:Per']]
+Explanation: Leonard Peltier is a member of the Lakota native-american tribe and consequently belongs to that ethnic group.
+
+TEXT: INSIDE THE N.B.A. Correction : February 9 , 2006 , Thursday A sports article on the Spotlight page on Sunday about Dick Bavetta , a longtime referee in the National Basketball Association , misstated the number he was approaching to set the record for regular-season games worked . 
+Relations: [['Dick Bavetta:Per', '/people/person/profession', 'National Basketball Association:Org']]
+Explanation: Leonard Peltier is a member of the Lakota native-american tribe and consequently belongs to that ethnic group.
+
+TEXT: Now the United States Postal Service may be displaying a similar rebellious streak : tomorrow at the huge Sturgis motorcycle rally in the Black Hills of South Dakota , the Postal Service will issue a set of four stamps that depict classic American bikes . 
+Relations: [['United States Postal Service:Org', '/business/company/industry', 'Postal Service:Org']]
+Explanation: United States Postal Service is a business company in the industry of providing postal services.
