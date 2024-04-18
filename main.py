@@ -16,6 +16,9 @@ def get_response_from_gpt(args):
     
     if dataset == 'ade':
         test_data = load_ade(split=split)['test']
+        with open(f'prompts/{dataset}/few_shot_id.txt', 'r') as f:
+            for id in f.read().split('\n'):
+                test_data.pop(id, None)
     elif dataset == 'conll04':
         test_data = load_conll04()['test']
     elif dataset == 'nyt':
