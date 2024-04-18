@@ -79,9 +79,9 @@ def get_response_from_gpt(args):
             if pred_set.difference(true_set):
                 false_cases[id] = sorted(pred_set.difference(true_set))
         
-        # early termination
-        if i >= 5:
-            break
+        # # early termination
+        # if i >= 5:
+        #     break
 
     precision = false_pred_num/total_pred_num
     recall = missing_true_num/total_true_num
