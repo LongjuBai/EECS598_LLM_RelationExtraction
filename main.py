@@ -37,6 +37,7 @@ def get_response_from_gpt(args):
     fail_cases = {}
     missing_cases = {}
     false_cases = {}
+    error_cases = {}
     for i, (id, data) in tqdm(enumerate(test_data.items())):
         prompt_message = prompt.replace('$TEXT$', data['text']),
         response = client.completions.create(
@@ -50,13 +51,14 @@ def get_response_from_gpt(args):
 
         pred_list = []
         try:
-            pred_string_processed = response.split('Explanation')[0].replace("'", '"').lower()
+            pred_string_processed = response.split('Explanation')[0].lower()
             pred_list = [tuple(relation) for relation in json.loads(pred_string_processed)] # result is a list of list
         except Exception as e:
-            print('error in try: ', e)
-            print(f'id: {id}, LLM message: {response}')
+            print(f'error in try: {e}')
+            error_cases[id] = {'error': str(e)}
+            print(f'id: {id}, error response: {response}')
         pred_set = set(pred_list)
-        true_list = [tuple([item.replace("'", '"').lower() for item in relation]) for relation in data['relations']]
+        true_list = [tuple([item.lower() for item in relation]) for relation in data['relations']]
         true_set = set(true_list)
 
         precision = len(pred_set.intersection(true_set))/len(pred_set) if len(pred_set) > 0 else 0
@@ -78,6 +80,8 @@ def get_response_from_gpt(args):
                 missing_cases[id] = sorted(true_set.difference(pred_set))
             if pred_set.difference(true_set):
                 false_cases[id] = sorted(pred_set.difference(true_set))
+        if id in error_cases:
+            error_cases[id].update(record)
         
         # # early termination
         # if i >= 5:
@@ -98,6 +102,7 @@ def get_response_from_gpt(args):
         'fail_cases': fail_cases,
         'missing_cases': missing_cases,
         'false_cases': false_cases,
+        'error_cases': error_cases
     }
 
     os.makedirs('outputs', exist_ok=True) 
