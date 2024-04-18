@@ -1,0 +1,50 @@
+{
+  "precision": 0.6666666666666666,
+  "recall": 0.8,
+  "macro_F1": 0.7272727272727273,
+  "micro_F1": 0.7083333333333334,
+  "accuracy": 0.5,
+  "correct_cases": {
+    "2566": [["lethal anuria", "ifosfamide"]],
+    "2399": [["pulmonary toxicity", "gemcitabine"]],
+    "1190": [
+      ["localized panniculitis", "glatiramer acetate"],
+      ["subcutaneous changes", "glatiramer acetate"]
+    ]
+  },
+  "fail_cases": {
+    "83": [
+      ["human teratogen", "cyclophosphamide"],
+      ["safety of cp in pregnancy", "cyclophosphamide"],
+      ["distinct phenotype", "cyclophosphamide"]
+    ],
+    "475": [
+      ["hepatitis", "sulphasalazine"],
+      ["dermatitis", "sulphasalazine"],
+      ["lymphadenopathy", "sulphasalazine"],
+      ["fever", "sulphasalazine"]
+    ],
+    "2979": [["risk factor for the development of rs", "aspirin"]]
+  },
+  "missing_cases": {
+    "83": [],
+    "475": [["constellation of dermatitis", "sulphasalazine"]],
+    "2979": [["rs", "aspirin"]]
+  },
+  "false_cases": {
+    "83": [
+      ["safety of cp in pregnancy", "cyclophosphamide"],
+      ["distinct phenotype", "cyclophosphamide"]
+    ],
+    "475": [["dermatitis", "sulphasalazine"]],
+    "2979": [["risk factor for the development of rs", "aspirin"]]
+  },
+  "responses": {
+    "83": " [['human teratogen', 'cyclophosphamide'], ['distinct phenotype', 'cyclophosphamide'], ['safety of CP in pregnancy', 'cyclophosphamide']]\nExplanation: Cyclophosphamide is a human teratogen and can cause a distinct phenotype in pregnant women, raising serious safety concerns.",
+    "2566": " [['lethal anuria', 'ifosfamide']]\nExplanation: High dose ifosfamide chemotherapy led to lethal anuria in a breast cancer patient with impaired renal function.",
+    "475": " [['dermatitis', 'sulphasalazine'], ['fever', 'sulphasalazine'], ['lymphadenopathy', 'sulphasalazine'], ['hepatitis', 'sulphasalazine']]\nExplanation: The patient developed dermatitis, fever, lymphadenopathy, and hepatitis after taking oral sulphasalazine for sero-negative rheumatoid arthritis.",
+    "2399": " [['pulmonary toxicity', 'gemcitabine']]\nExplanation: Gemcitabine can cause pulmonary toxicity, which is a dramatic condition.",
+    "2979": " [['risk factor for the development of RS', 'aspirin']]\nExplanation: The use of aspirin during an antecedent illness was found to be a risk factor for the development of RS.",
+    "1190": " [['subcutaneous changes', 'glatiramer acetate'], ['localized panniculitis', 'glatiramer acetate']]\nExplanation: The 46-year-old female patient developed subcutaneous changes and localized panniculitis after being treated with glatiramer acetate for 18 months."
+  }
+}

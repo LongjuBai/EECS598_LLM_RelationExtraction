@@ -26,6 +26,7 @@ def get_response_from_gpt(args = {}, dataset='ade'):
     fail_cases = {}
     missing_cases = {}
     false_cases = {}
+    responses = {}
     for i, (id, data) in tqdm(enumerate(test_data.items())):
         prompt_message = prompt.replace('$TEXT$', data['text']),
         response = client.completions.create(
@@ -34,33 +35,35 @@ def get_response_from_gpt(args = {}, dataset='ade'):
             max_tokens=100,
             temperature=0.5
         )
-        predicted_string_processed = response.choices[0].text.replace("'", '"').lower()
-        true_set = set([tuple([item.replace("'", '"').lower() for item in relation]) for relation in data['relations']])
+        response = response.choices[0].text
+        responses[id] = response
+
+        predicted_list = []
         try:
+            predicted_string_processed = response.split('Explanation')[0].replace("'", '"').lower()
             predicted_list = [tuple(relation) for relation in json.loads(predicted_string_processed)] # result is a list of list
-            predicted_set = set(predicted_list)
-            precision = len(predicted_set.intersection(true_set))/len(predicted_set) # 
-            recall = len(true_set.intersection(predicted_set))/len(true_set)
-            micro_F1_list.append(2/(1/precision + 1/recall) if min(precision, recall) > 0 else 0)
-            false_pred_num += len(predicted_set.intersection(true_set))
-            total_pred_num += len(predicted_set)
-            missing_true_num += len(true_set.intersection(predicted_set))
         except Exception as e:
-            micro_F1_list.append(0)
             print("error in try: ", e)
-            print("LLM message:", response.choices[0].text)
-            # false_pred_num += 0
-            # total_pred_num += 0
-            # missing_true_num += 0
+            print("LLM message:", response)
+        predicted_set = set(predicted_list)
+        true_set = set([tuple([item.replace("'", '"').lower() for item in relation]) for relation in data['relations']])
+
+        precision = len(predicted_set.intersection(true_set))/len(predicted_set) if len(predicted_set) > 0 else 0
+        recall = len(true_set.intersection(predicted_set))/len(true_set) if len(true_set) > 0 else 0
+        micro_F1_list.append(2/(1/precision + 1/recall) if min(precision, recall) > 0 else 0)
+
+        false_pred_num += len(predicted_set.intersection(true_set))
+        total_pred_num += len(predicted_set)
+        missing_true_num += len(true_set.intersection(predicted_set))
         total_true_num += len(true_set)
         
         # record fail/correct cases
-        if true_set == predicted_set:
-            correct_cases[id] = predicted_set
+        if predicted_set == true_set:
+            correct_cases[id] = list(predicted_set)
         else:
-            fail_cases[id] = predicted_set
-            missing_cases[id] = true_set.difference(predicted_set)
-            false_cases[id] = predicted_set.difference(true_set)
+            fail_cases[id] = list(predicted_set)
+            missing_cases[id] = list(true_set.difference(predicted_set))
+            false_cases[id] = list(predicted_set.difference(true_set))
         
         # early termination
         if i >= 5:
@@ -81,7 +84,8 @@ def get_response_from_gpt(args = {}, dataset='ade'):
         'correct_cases': correct_cases, # all correct
         'fail_cases': fail_cases,
         'missing_cases': missing_cases,
-        'false_cases': false_cases
+        'false_cases': false_cases,
+        'responses': responses
     }
 
     with open('output.json', 'w') as json_file:
