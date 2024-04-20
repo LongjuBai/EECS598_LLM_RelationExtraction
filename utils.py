@@ -1,123 +1,93 @@
-import json
-# from nltk.tokenize.treebank import TreebankWordDetokenizer
-# text = TreebankWordDetokenizer().detokenize(tokens)
-import os
-from unidecode import unidecode
+import numpy as np
+import asyncio
+from openai import OpenAI, AsyncOpenAI
+from tqdm import tqdm
+from tqdm.asyncio import tqdm as tqdm_asyncio
 
 
-class Dataset():
-    def __init__(self, name, **kwargs):
-        if name == 'ade':
-            dic = load_ade() if 'split' not in kwargs else load_ade(kwargs['split'])
-        elif name == 'conll04':
-            dic = load_conll04()
-        elif name == 'nyt':
-            dic = load_nyt()
+def dict_first_k(dic, k):
+    return {k: v for k, v in zip(list(dic.keys())[:k], list(dic.values())[:k])}
+
+
+def find_triplets(s):
+    start, end = s.find('[['), s.find(']]')
+    if start == -1 or end == -1:
+        return ''
+    return s[start:end+2]
+
+
+def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
+    async def llm_worker_async(id, sample):
+        if model == 'gpt-3.5-turbo-0125':
+            completion = await client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+        elif model == 'gpt-3.5-turbo-instruct':
+            completion = await client.completions.create(
+                model=model,
+                prompt=prompt.replace('$TEXT$', sample['text']),
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
         else:
-            raise Exception('Dataset Not Supported!')
-        self.entities = dic['entities']
-        self.relations = dic['relations']
-        self.train = dic['train']
-        self.test = dic['test']
-        self.val = dic['val']
-        self.prompts = None
-        self.shots = None
+            raise Exception('Model Not Supported!')
+        return id, completion.choices[0].message.content
     
-    def get_sample(self, id):
-        for part in [self.train, self.test, self.val]:
-            if id in part:
-                return part[id]
-        raise Exception('Sample Not Found!')
+    def llm_worker(id, sample):
+        if model == 'gpt-3.5-turbo-0125':
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+        elif model == 'gpt-3.5-turbo-instruct':
+            completion = client.completions.create(
+                model=model,
+                prompt=prompt.replace('$TEXT$', sample['text']),
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+        else:
+            raise Exception('Model Not Supported!')
+        return id, completion.choices[0].message.content
     
-    # def load_few_shots(self, n_shots, path_prompts, path_shots):
-    #     for 
+    if not is_async:
+        client = OpenAI(api_key=api_key)
+        responses = dict([llm_worker(id, sample) for id, sample in tqdm(data.items())])
+    else:
+        client = AsyncOpenAI(api_key=api_key)
+        loop = asyncio.get_event_loop()
+        responses = dict(loop.run_until_complete(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()])))
+        loop.close()
+    return responses
 
+
+def compute_metrics(counter):
+    def compute_f1(pc, rc):
+        if pc == 0 or rc == 0:
+            return 0
+        return 2 / (1 / pc + 1 / rc)
+
+    pc_list = {r: counter[r]['hit'] / counter[r]['num_pred'] if counter[r]['num_pred'] else 0 for r in counter}
+    micro_pc = np.mean(list(pc_list.values()))
+    macro_pc = sum([counter[r]['hit'] for r in counter]) / sum([counter[r]['num_pred'] for r in counter])
     
-    def remove_few_shots(self, ids):
-        for samples in [self.train, self.test, self.val]:
-            for i, sample in enumerate(samples):
-                if sample['id'] in ids:
-                    samples.pop(i)
+    rc_list = {r: counter[r]['hit'] / counter[r]['num_true'] if counter[r]['num_true'] else 0 for r in counter}
+    micro_rc = np.mean(list(rc_list.values()))
+    macro_rc = sum([counter[r]['hit'] for r in counter]) / sum([counter[r]['num_true'] for r in counter])
+    
+    f1_list = {r: compute_f1(pc_list[r], rc_list[r]) for r in counter}
+    micro_f1 = np.mean([compute_f1(pc_list[r], rc_list[r]) for r in counter])
+    macro_f1 = compute_f1(macro_pc, macro_rc)
 
-
-def load_ade(split=0):
-    path = f'datasets/ade/preprocessed_{split}.json'
-    if os.path.exists(path):
-        return json.load(open(path))
-    entities_all = ['Drug', 'Adverse-Effect']
-    relations_all = ['Adverse-Effect']
-    output = {'entities': entities_all, 'relations': relations_all, 'train': {}, 'test': {}, 'val': {}}
-    for part in ['train', 'test']:
-        samples = json.load(open(f'datasets/ade/ade_split_{split}_{part}.json'))
-        for sample in samples:
-            text, entities, relations = sample['tokens'], sample['entities'], sample['relations']
-            relations_new = []
-            for r in relations:
-                ent_1, ent_2 = entities[r['head']], entities[r['tail']]
-                relations_new.append([
-                    ' '.join(text[ent_1['start']:ent_1['end']]),
-                    ' '.join(text[ent_2['start']:ent_2['end']])
-                ])
-            output[part][str(sample['orig_id'])] = {
-                'text': ' '.join(text), 
-                'relations': relations_new
-            }
-    json.dump(output, open(path, 'w'))
-    return output
-
-
-def load_conll04():
-    path = 'datasets/conll04/preprocessed.json'
-    if os.path.exists(path):
-        return json.load(open(path))
-    entity_dict = {'Loc': 'Loc', 'Org': 'Org', 'Peop': 'Per', 'Other': 'Other'}
-    relation_dict = {'Work_For': 'Work For', 'Kill': 'Kill', 'OrgBased_In': 'OrgBased In', 'Live_In': 'Live In', 'Located_In': 'Located In'} 
-    output = {'entities': list(entity_dict.values()), 'relations': list(relation_dict.values()), 'train': {}, 'test': {}, 'val': {}}
-    for part in ['train', 'test', 'val']:
-        samples = json.load(open(f"datasets/conll04/conll04_{part if part != 'val' else 'dev'}.json"))
-        for sample in samples:
-            text, entities, relations = sample['tokens'], sample['entities'], sample['relations']
-            relations_new = []
-            for r in relations:
-                ent_1, ent_2 = entities[r['head']], entities[r['tail']]
-                relations_new.append([
-                    f"{' '.join(text[ent_1['start']:ent_1['end']])}:{entity_dict[ent_1['type']]}",
-                    relation_dict[r['type']],
-                    f"{' '.join(text[ent_2['start']:ent_2['end']])}:{entity_dict[ent_2['type']]}"
-                ])
-            output[part][str(sample['orig_id'])] = {
-                'text': ' '.join(text), 
-                'relations': relations_new
-            }
-    json.dump(output, open(path, 'w'))
-    return output
-
-
-def load_nyt():
-    path = 'datasets/nyt/preprocessed.json'
-    if os.path.exists(path):
-        return json.load(open(path))
-    entity_dict = {'LOCATION': 'Loc', 'ORGANIZATION': 'Org', 'PERSON': 'Per'}
-    relations_all = [r for r in json.load(open('datasets/nyt/relations2id.json')).keys() if r != 'None']
-    output = {'entities': list(entity_dict.values()), 'relations': relations_all, 'train': {}, 'test': {}, 'val': {}}
-    for part in ['train', 'test', 'val']:
-        with open(f"datasets/nyt/raw_{part if part != 'val' else 'valid'}.json") as f:
-            for i, line in enumerate(f.readlines()):
-                sample = json.loads(line)
-                text, entities, relations = sample['sentText'], sample['entityMentions'], sample['relationMentions']
-                name2type = {ent['text']: entity_dict[ent['label']] for ent in entities}
-                relations_new = []
-                for r in relations:
-                    r['em1Text'] = unidecode(r['em1Text'])
-                    r['em2Text'] = unidecode(r['em2Text'])
-                    relations_new.append([
-                        f"{r['em1Text']}:{name2type[r['em1Text']]}",
-                        r['label'],
-                        f"{r['em2Text']}:{name2type[r['em2Text']]}"
-                    ])
-                output[part][str(i)] = {
-                    'text': text, 
-                    'relations': relations_new
-                }
-    json.dump(output, open(path, 'w'))
-    return output
+    return {'micro_pc': micro_pc, 'macro_pc': macro_pc, 'pc_list': pc_list,
+            'micro_rc': micro_rc, 'macro_rc': macro_rc, 'rc_list': rc_list,
+            'micro_f1': micro_f1, 'macro_f1': macro_f1, 'f1_list': f1_list}

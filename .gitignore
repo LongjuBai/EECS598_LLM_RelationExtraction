@@ -1,5 +1,6 @@
 __pycache__/
-datasets/
+datasets/*
+!datasets/utils.py
 random.ipynb
 gl.sh
 gl.log
