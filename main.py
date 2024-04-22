@@ -26,9 +26,13 @@ def update_counter(counter, true_set, pred_set):
 
 
 def get_response_from_llm(args):
-    dataset, is_cot = args.dataset, args.is_cot
+    dataset = args.dataset
 
-    prompt_file_path = os.path.join('prompts', dataset, 'prompt.txt')
+    if args.is_cot:
+        prompt_file_path = os.path.join('prompts', dataset, 'prompt_cot.txt')
+    else:
+        prompt_file_path = os.path.join('prompts', dataset, 'prompt.txt')
+
     with open(prompt_file_path, 'r') as f:
         prompt = f.read()
     
@@ -48,7 +52,7 @@ def get_response_from_llm(args):
         raise Exception('Dataset Not Supported!')
     
     # # early termination
-    # test_data = dict_first_k(test_data, 50)
+    # test_data = dict_first_k(test_data, 10)
 
     responses = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt, test_data)
 
@@ -92,6 +96,7 @@ def get_response_from_llm(args):
 
     output = compute_metrics(counter)
     output.update({
+        'num_cases': len(correct_cases) + len(fail_cases),
         'accuracy': len(correct_cases)/(len(correct_cases) + len(fail_cases)),
         'correct_cases': correct_cases, # all correct
         'fail_cases': fail_cases,
@@ -101,7 +106,7 @@ def get_response_from_llm(args):
     })
 
     os.makedirs('outputs', exist_ok=True) 
-    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}k.json', 'w') as json_file:
+    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}.json', 'w') as json_file:
         json.dump(output, json_file)
 
     return output
@@ -115,9 +120,9 @@ if __name__ == "__main__":
     parser.add_argument('--model', type=str, default='gpt-3.5-turbo-0125')
     parser.add_argument('--temp', type=float, default=0.5)
     parser.add_argument('--max_tokens', type=int, default=256)
-    parser.add_argument('--seed', type=int, default=0)
+    parser.add_argument('--seed', type=int, default=42)
 
-    parser.add_argument('--dataset', type=str, default='ade')
+    parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--split', type=int, default=0)
     parser.add_argument('--is_val', action='store_true')
     parser.add_argument('--is_cot', action='store_true')

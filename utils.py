@@ -26,6 +26,7 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 max_tokens=max_tokens,
                 seed=seed
             )
+            return id, completion.choices[0].message.content
         elif model == 'gpt-3.5-turbo-instruct':
             completion = await client.completions.create(
                 model=model,
@@ -34,9 +35,9 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 max_tokens=max_tokens,
                 seed=seed
             )
+            return id, completion.choices[0].text
         else:
             raise Exception('Model Not Supported!')
-        return id, completion.choices[0].message.content
     
     def llm_worker(id, sample):
         if model == 'gpt-3.5-turbo-0125':
@@ -47,6 +48,7 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 max_tokens=max_tokens,
                 seed=seed
             )
+            return id, completion.choices[0].message.content
         elif model == 'gpt-3.5-turbo-instruct':
             completion = client.completions.create(
                 model=model,
@@ -55,9 +57,9 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 max_tokens=max_tokens,
                 seed=seed
             )
+            return id, completion.choices[0].text
         else:
             raise Exception('Model Not Supported!')
-        return id, completion.choices[0].message.content
     
     if not is_async:
         client = OpenAI(api_key=api_key)
