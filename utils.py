@@ -43,7 +43,8 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
         if model == 'gpt-3.5-turbo-0125':
             completion = client.chat.completions.create(
                 model=model,
-                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                messages=[{"role": "system", "content": "You are a linguist. You are good at parsing sentences correctly."}, 
+                          {"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed

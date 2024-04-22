@@ -1,4 +1,4 @@
-from datasets.utils import load_ade, load_conll04, load_nyt
+from datasets598.utils import load_ade, load_conll04, load_nyt
 from utils import dict_first_k, find_triplets, run_llm, compute_metrics
 import json
 import os
@@ -106,7 +106,7 @@ def get_response_from_llm(args):
     })
 
     os.makedirs('outputs', exist_ok=True) 
-    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}.json', 'w') as json_file:
+    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_system_prompt.json', 'w') as json_file:
         json.dump(output, json_file)
 
     return output
