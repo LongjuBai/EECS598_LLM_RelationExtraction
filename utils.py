@@ -73,6 +73,32 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
     return responses
 
 
+def struct_response(response, mode):
+    if mode == 'cot':
+        [tuple([item.lower() for item in relation]) for relation in sample['relations']]
+        true_set = set(true_list)
+
+
+
+def update_counter(counter, true_set, pred_set):
+    if len(counter) > 1:
+        for triplet in pred_set:
+            if triplet[1] in counter:
+                counter[triplet[1]]['num_pred'] += 1
+        for triplet in true_set:
+            if triplet[1] in counter:
+                counter[triplet[1]]['num_true'] += 1
+        for triplet in pred_set.intersection(true_set):
+            if triplet[1] in counter:
+                counter[triplet[1]]['hit'] += 1
+    else:
+        r = list(counter.keys())[0]
+        counter[r]['num_pred'] += len(pred_set)
+        counter[r]['num_true'] += len(true_set)
+        counter[r]['hit'] += len(pred_set.intersection(true_set))
+    return counter
+
+
 def compute_metrics(counter):
     def compute_f1(pc, rc):
         if pc == 0 or rc == 0:

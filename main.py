@@ -1,41 +1,26 @@
 from datasets598.utils import load_ade, load_conll04, load_nyt
-from utils import dict_first_k, find_triplets, run_llm, compute_metrics
+from utils import dict_first_k, find_triplets, run_llm, update_counter, compute_metrics
 import json
 import os
 from tqdm import tqdm
 import argparse
 
 
-def update_counter(counter, true_set, pred_set):
-    if len(counter) > 1:
-        for triplet in pred_set:
-            if triplet[1] in counter:
-                counter[triplet[1]]['num_pred'] += 1
-        for triplet in true_set:
-            if triplet[1] in counter:
-                counter[triplet[1]]['num_true'] += 1
-        for triplet in pred_set.intersection(true_set):
-            if triplet[1] in counter:
-                counter[triplet[1]]['hit'] += 1
-    else:
-        r = list(counter.keys())[0]
-        counter[r]['num_pred'] += len(pred_set)
-        counter[r]['num_true'] += len(true_set)
-        counter[r]['hit'] += len(pred_set.intersection(true_set))
-    return counter
-
-
 def get_response_from_llm(args):
     dataset = args.dataset
 
+    # load prompt
     if args.is_cot:
         prompt_file_path = os.path.join('prompts', dataset, 'prompt_cot.txt')
+    elif args.is_tot:
+        prompt_file_path = os.path.join('prompts', dataset, 'prompt_tot.txt')
+        prompt_file_path_2 = os.path.join('prompts', dataset, 'prompt_tot2.txt')
     else:
         prompt_file_path = os.path.join('prompts', dataset, 'prompt.txt')
-
     with open(prompt_file_path, 'r') as f:
         prompt = f.read()
     
+    # load test data
     if dataset == 'ade':
         data = load_ade(split=args.split)
         test_data = data['test']
@@ -50,11 +35,14 @@ def get_response_from_llm(args):
         test_data = data['val'] if args.is_val else data['test']
     else:
         raise Exception('Dataset Not Supported!')
-    
-    # # early termination
-    # test_data = dict_first_k(test_data, 10)
+    if args.test_k >= 0:
+        test_data = dict_first_k(test_data, args.test_k)
 
+    # get response
     responses = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt, test_data)
+
+    if args.is_tot:
+        responses
 
     # metrics initialization
     counter = {r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']}
@@ -126,6 +114,7 @@ if __name__ == "__main__":
     parser.add_argument('--split', type=int, default=0)
     parser.add_argument('--is_val', action='store_true')
     parser.add_argument('--is_cot', action='store_true')
+    parser.add_argument('--test_k', type=int, default=-1)
 
     args = parser.parse_args()
 
