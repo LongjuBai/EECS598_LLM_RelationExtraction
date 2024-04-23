@@ -1,18 +1,21 @@
-Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text. You should do it step by step as follows. First, find the subject entity with a relation. Second, find the object entity. Third, for each found triplets, give a confidence level (sure/likely).
+Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION] in the given text. You should do it step by step as follows. First, find the subject entity with a relation. Second, find the object entity. Third, for each found triplets, give a confidence level (sure/likely).
 
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
-Answer: (1) Valid entities are ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"
+Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: ["Italian Agricultural Confederation:Org"], ORGANIZATION: []
 Relations: [["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"]]
 
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Entities: PERSON: ["Shi Liming:Per"], LOCATION: ["Kunming:Loc"], ORGANIZATION: ["Institute of Zoology:Org"]
 Relations: [["Shi Liming:Per", "Work For", "Institute of Zoology:Org"], ["Institute of Zoology:Org", "OrgBased In", "Kunming:Loc"]]
 Explanation: Shi Liming works for the Institute of Zoology, which is an organization based in Kunming.
 
 TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per"], LOCATION: [], ORGANIZATION: []
 Relations: [["Oswald:Per", "Kill", "President Kennedy:Per"], ["Oswald:Per", "Kill", "Officer Tippit:Per"]]
 Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
 
 TEXT: PURCHASE , N.Y .
+Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per"], LOCATION: [], ORGANIZATION: []
 Relations: [["PURCHASE:Loc", "Located In", "N.Y .:Loc"]]
 Explanation: PURCHASE is a place located in N.Y..
 
