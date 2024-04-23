@@ -1,7 +1,7 @@
 Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION] in the given text. You should do it step by step as follows. First, find the subject entity with a relation. Second, find the object entity. Third, for each found triplets, give a confidence level (sure/likely).
 
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
-Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: ["Italian Agricultural Confederation:Org"], ORGANIZATION: []
+Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: [], ORGANIZATION: ["Italian Agricultural Confederation:Org"]
 Relations: [["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"]]
 
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
@@ -15,35 +15,42 @@ Relations: [["Oswald:Per", "Kill", "President Kennedy:Per"], ["Oswald:Per", "Kil
 Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
 
 TEXT: PURCHASE , N.Y .
-Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per"], LOCATION: [], ORGANIZATION: []
+Entities: PERSON: [], LOCATION: ["PURCHASE:Loc", "N.Y .:Loc"], ORGANIZATION: []
 Relations: [["PURCHASE:Loc", "Located In", "N.Y .:Loc"]]
 Explanation: PURCHASE is a place located in N.Y..
 
 TEXT: BELGRADE , Yugoslavia ( AP )
+Entities: PERSON: [], LOCATION: ["BELGRADE:Loc", "Yugoslavia:Loc", "BELGRADE:Loc", "Yugoslavia:Loc"], ORGANIZATION: ["AP:Org", "AP:Org"]
 Relations: [["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"], ["AP:Org", "OrgBased In", "BELGRADE:Loc"], ["AP:Org", "OrgBased In", "Yugoslavia:Loc"]]
 Explanation: City of BELGRADE is located in Yugoslavia and AP is an organization based in BELGRADE, Yugoslavia.
 
 TEXT: Rome is in Lazio province and Naples in Campania .
+Entities: PERSON: [], LOCATION: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"], ORGANIZATION: []
 Relations: [["Rome:Loc", "Located In", "Lazio:Loc"], ["Naples:Loc", "Located In", "Campania:Loc"]]
 Explanation: Rome is a place located in Lazio and Naples is a place located in Campania.
 
 TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
+Entities: PERSON: ["Mikhail Shevtsov:Per"], LOCATION: [], ORGANIZATION: ["ITAR-TASS:Org"]
 Relations: [["Mikhail Shevtsov:Per", "Work For", "ITAR-TASS:Org"]]
 Explanation: Mikhail Shevtsov is a correspondent for the ITAR-TASS.
 
 TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Entities: PERSON: ["Jean Bertrand Aristide:Per"], LOCATION: [], ORGANIZATION: ["Haiti:Loc"]
 Relations: [["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"]]
 Explanation: Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti.
 
 TEXT: Moscow ITAR-TASS
+Entities: PERSON: [], LOCATION: ["Moscow:Loc"], ORGANIZATION: ["ITAR-TASS:Org"]
 Relations: [["ITAR-TASS:Org", "OrgBased In", "Moscow:Loc"]]
 Explanation: ITAR-TASS is an organization based in Moscow.
 
 TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Entities: PERSON: ["Mrs. Parks:Per"], LOCATION: ["Montgomery:Loc", "Ala.:Loc"], ORGANIZATION: []
 Relations: [["Mrs. Parks:Per", "Live In", "Montgomery:Loc"], ["Mrs. Parks:Per", "Live In", "Ala.:Loc"], ["Montgomery:Loc", "Located In", "Ala.:Loc"]]
 Explanation: Mrs. Parks actions were in Montgomery, Ala., where she lived. It can be derived that Montgomery is located in Ala..
 
 TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Entities: PERSON: ["Sirhan:Per", "Kennedy:Per"], LOCATION: [], ORGANIZATION: []
 Relations: [["Sirhan:Per", "Kill", "Kennedy:Per"]]
 Explanation: Sirhan was the lone assassin in the Kennedy assassination.
 
