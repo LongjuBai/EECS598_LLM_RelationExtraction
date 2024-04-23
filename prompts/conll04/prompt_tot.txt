@@ -1,33 +1,90 @@
 Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION] in the given text. You should do it step by step as follows. First, find the subject entity with a relation. Second, find the object entity. Third, for each found triplets, give a confidence level (sure/likely).
 
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
-Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: ["Italian Agricultural Confederation:Org"], ORGANIZATION: []
-Relations: [["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"]]
+Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: [], ORGANIZATION: ["Italian Agricultural Confederation:Org"]
+Relations: 
+"OrgBased In": []
+"Work For": [["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]]
+"Located In": []
+"Live In": []
+"Kill": []
+Output:
+["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"] sure
 
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
 Entities: PERSON: ["Shi Liming:Per"], LOCATION: ["Kunming:Loc"], ORGANIZATION: ["Institute of Zoology:Org"]
-Relations: [["Shi Liming:Per", "Work For", "Institute of Zoology:Org"], ["Institute of Zoology:Org", "OrgBased In", "Kunming:Loc"]]
-Explanation: Shi Liming works for the Institute of Zoology, which is an organization based in Kunming.
+Relations: 
+"OrgBased In": [["Institute of Zoology:Org", "Kunming:Loc"]]
+"Work For": [["Shi Liming:Per", "Institute of Zoology:Org"]]
+"Located In": []
+"Live In": [["Shi Liming:Per", "Kunming:Loc"]]
+"Kill": []
+Output:
+["Shi Liming:Per", "Work For", "Institute of Zoology:Org"] sure
+["Institute of Zoology:Org", "OrgBased In", "Kunming:Loc"] sure
+["Shi Liming:Per", "Live In", "Kunming:Loc"] likely
+
 
 TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
-Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per"], LOCATION: [], ORGANIZATION: []
-Relations: [["Oswald:Per", "Kill", "President Kennedy:Per"], ["Oswald:Per", "Kill", "Officer Tippit:Per"]]
-Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
+Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren"], LOCATION: [], ORGANIZATION: ["Warren Commission"]
+Relations:
+"OrgBased In": []
+"Work For": [["Oswald:Per", "President Kennedy:Per"], ["Oswald:Per", "Officer Tippit:Per"], ["Officer Tippit:Per", "President Kennedy:Per"], ["President Kennedy:Per", "Officer Tippit:Per"]]
+"Located In": []
+"Live In": []
+"Kill": [["Oswald:Per", "President Kennedy:Per"], ["Oswald:Per", "Officer Tippit:Per"], ["President Kennedy:Per", "Officer Tippit:Per"]]
+Output:
+["Oswald:Per", "Kill", "President Kennedy:Per"] sure 
+["Oswald:Per", "Kill", "Officer Tippit:Per"] sure
+["Officer Tippit:Per", "Work For", "President Kennedy:Per"] likely
+["President Kennedy:Per", "Work For", "Officer Tippit:Per"] impossible
+["Oswald:Per", "Work For", "President Kennedy:Per"] impossible
+["Oswald:Per", "Work For", "Officer Tippit:Per"] impossible
+["President Kennedy:Per", "Kill", "Officer Tippit:Per"] impossible
 
 TEXT: PURCHASE , N.Y .
-Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per"], LOCATION: [], ORGANIZATION: []
-Relations: [["PURCHASE:Loc", "Located In", "N.Y .:Loc"]]
-Explanation: PURCHASE is a place located in N.Y..
+Entities: PERSON: [], LOCATION: ["PURCHASE:Loc", "N.Y .:Loc"], ORGANIZATION: []
+Relations: 
+"OrgBased In": []
+"Work For": []
+"Located In": [["PURCHASE:Loc", "N.Y .:Loc"]]
+"Live In": []
+"Kill": []
+Output:
+["PURCHASE:Loc", "Located In", "N.Y .:Loc"] sure
+["N.Y .:Loc", "Located In", "PURCHASE:Loc"] impossible
+
 
 TEXT: BELGRADE , Yugoslavia ( AP )
-Entities: PERSON: [], LOCATION: ["BELGRADE:Loc", "Yugoslavia:Loc", "BELGRADE:Loc", "Yugoslavia:Loc"], ORGANIZATION: ["AP:Org", "AP:Org"]
-Relations: [["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"], ["AP:Org", "OrgBased In", "BELGRADE:Loc"], ["AP:Org", "OrgBased In", "Yugoslavia:Loc"]]
-Explanation: City of BELGRADE is located in Yugoslavia and AP is an organization based in BELGRADE, Yugoslavia.
+Entities: PERSON: [], LOCATION: ["BELGRADE:Loc", "Yugoslavia:Loc"], ORGANIZATION: ["AP:Org"]
+Relations:
+"OrgBased In": [["AP:Org", "BELGRADE:Loc"], ["AP:Org", "Yugoslavia:Loc"]]
+"Work For": []
+"Located In": [["BELGRADE:Loc", "Yugoslavia:Loc"], ["Yugoslavia:Loc", "BELGRADE:Loc"]]
+"Live In": []
+"Kill": []
+Output:
+["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"] sure
+["AP:Org", "OrgBased In", "BELGRADE:Loc"] sure
+["AP:Org", "OrgBased In", "Yugoslavia:Loc"] sure
+["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] impossible
+
 
 TEXT: Rome is in Lazio province and Naples in Campania .
 Entities: PERSON: [], LOCATION: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"], ORGANIZATION: []
-Relations: [["Rome:Loc", "Located In", "Lazio:Loc"], ["Naples:Loc", "Located In", "Campania:Loc"]]
-Explanation: Rome is a place located in Lazio and Naples is a place located in Campania.
+Relations:
+"OrgBased In": [["Rome:Loc", "Lazio:Loc"], ["Lazio:Loc", "Rome:Loc"], ["Naples:Loc", "Campania:Loc"], ["Campania:Loc", "Naples:Loc"], ["Rome:Loc", "Campania:Loc"], ["Campania:Loc", "Rome:Loc"]]
+"Work For": []
+"Located In": []
+"Live In": []
+"Kill": []
+Output:
+["Rome:Loc", "Located In", "Lazio:Loc"] sure
+["Naples:Loc", "Located In", "Campania:Loc"] sure
+["Lazio:Loc", "Located In", "Rome:Loc"] sure
+["Campania:Loc", "Located In", "Naples:Loc"] sure
+["Rome:Loc", "Located In", "Campania:Loc"] impossible
+["Campania:Loc", "Located In", "Rome:Loc"] impossible
 
 TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
 Entities: PERSON: ["Mikhail Shevtsov:Per"], LOCATION: [], ORGANIZATION: ["ITAR-TASS:Org"]
