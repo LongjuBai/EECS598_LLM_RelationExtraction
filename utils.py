@@ -8,6 +8,16 @@ from tqdm.asyncio import tqdm as tqdm_asyncio
 def dict_first_k(dic, k):
     return {k: v for k, v in zip(list(dic.keys())[:k], list(dic.values())[:k])}
 
+def find_entity_type(s):
+    return s.split(':')[-1]
+
+def find_entities(s):
+    start, end = s.find('['), s.find(']')
+    if start == -1 or end == -1:
+        return []
+    entity_list = s[start+1:end].split(',')
+    return [entity.strip() for entity in entity_list]
+
 
 def find_triplets(s):
     start, end = s.find('[['), s.find(']]')
@@ -43,8 +53,7 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
         if model == 'gpt-3.5-turbo-0125':
             completion = client.chat.completions.create(
                 model=model,
-                messages=[{"role": "system", "content": "You are a linguist. You are good at parsing sentences correctly."}, 
-                          {"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed
@@ -72,12 +81,60 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
         loop.close()
     return responses
 
-
-def struct_response(response, mode):
-    if mode == 'cot':
-        [tuple([item.lower() for item in relation]) for relation in sample['relations']]
-        true_set = set(true_list)
-
+def run_llm_relation(relation_prompt_string_dict, api_key, is_async, model, temp, max_tokens, seed, prompt, data):
+    async def llm_worker_async(id, sample):
+        if model == 'gpt-3.5-turbo-0125':
+            completion = await client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
+        elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
+            completion = await client.completions.create(
+                model=model,
+                prompt=prompt.replace('$TEXT$', sample['text']),
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].text
+        else:
+            raise Exception('Model Not Supported!')
+    
+    def llm_worker(relation_prompt_string, id, sample):
+        if model == 'gpt-3.5-turbo-0125':
+            completion = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'] + relation_prompt_string)}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
+        elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
+            completion = client.completions.create(
+                model=model,
+                prompt=prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].text
+        else:
+            raise Exception('Model Not Supported!')
+    
+    if not is_async:
+        client = OpenAI(api_key=api_key)
+        responses = dict([llm_worker(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
+    else:
+        client = AsyncOpenAI(api_key=api_key)
+        loop = asyncio.get_event_loop()
+        responses = dict(loop.run_until_complete(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()])))
+        loop.close()
+    return responses
 
 
 def update_counter(counter, true_set, pred_set):
