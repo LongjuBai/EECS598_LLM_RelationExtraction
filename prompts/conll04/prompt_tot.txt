@@ -1,7 +1,7 @@
 Example Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION] in the given text. You should do it step by step as follows. First, find the subject entity with a relation. Second, find the object entity. Third, for each found triplets, give a confidence level (sure/likely).
 
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
-Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: [], ORGANIZATION: ["Italian Agricultural Confederation:Org"]
+Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: ["Italian Agricultural Confederation:Org"], ORGANIZATION: []
 Relations: [["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"]]
 
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
@@ -15,7 +15,7 @@ Relations: [["Oswald:Per", "Kill", "President Kennedy:Per"], ["Oswald:Per", "Kil
 Explanation: Oswald was the lone gunman who killed President Kennedy and Officer Tippit.
 
 TEXT: PURCHASE , N.Y .
-Entities: PERSON: [], LOCATION: ["PURCHASE:Loc", "N.Y .:Loc"], ORGANIZATION: []
+Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per"], LOCATION: [], ORGANIZATION: []
 Relations: [["PURCHASE:Loc", "Located In", "N.Y .:Loc"]]
 Explanation: PURCHASE is a place located in N.Y..
 
@@ -55,12 +55,10 @@ Relations: [["Sirhan:Per", "Kill", "Kennedy:Per"]]
 Explanation: Sirhan was the lone assassin in the Kennedy assassination.
 
 TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
-Relations: [["Denver:Loc", "Located In", "Colorado:Loc"]]
-Explanation: Denver officials closed Interstate 270 in Colorado, consequently we can see that Denver is located in Colorado.
+Entities: PERSON: [], LOCATION: ["Colorado:Loc", "Denver:Loc"], ORGANIZATION: []
 
 TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
-Relations: [["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"]]
-Explanation: Edward Marks is an official that works for the Montgomery County Democratic Party.
+Entities: PERSON: ["Edward Marks:Per", "Ms. Toth:Per"], LOCATION: ["Montgomery County:Loc"], ORGANIZATION: ["Democratic Party:Org"]
 
 Instructional Prefix: List the relations of the types [OrgBased In, Work For, Located In, Live In, Kill] among the entities [PERSON, LOCATION, ORGANIZATION, OTHER] in the given text and provide a reasonable explanation.
 

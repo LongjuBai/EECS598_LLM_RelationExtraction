@@ -8,10 +8,10 @@ import argparse
 
 def update_counter(counter, true_set, pred_set):
     if len(counter) > 1:
-        for triplet in true_set:
+        for triplet in pred_set:
             if triplet[1] in counter:
                 counter[triplet[1]]['num_pred'] += 1
-        for triplet in pred_set:
+        for triplet in true_set:
             if triplet[1] in counter:
                 counter[triplet[1]]['num_true'] += 1
         for triplet in pred_set.intersection(true_set):

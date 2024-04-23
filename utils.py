@@ -27,7 +27,7 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 seed=seed
             )
             return id, completion.choices[0].message.content
-        elif model == 'gpt-3.5-turbo-instruct':
+        elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
             completion = await client.completions.create(
                 model=model,
                 prompt=prompt.replace('$TEXT$', sample['text']),
@@ -50,7 +50,7 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 seed=seed
             )
             return id, completion.choices[0].message.content
-        elif model == 'gpt-3.5-turbo-instruct':
+        elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
             completion = client.completions.create(
                 model=model,
                 prompt=prompt.replace('$TEXT$', sample['text']),
