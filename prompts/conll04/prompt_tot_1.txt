@@ -1,0 +1,45 @@
+Example Instructional Prefix: List the entities in [PERSON, LOCATION, ORGANIZATION] in the given text. 
+
+TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
+Entities: PERSON: ["Bruno Pusterla:Per"], LOCATION: [], ORGANIZATION: ["Italian Agricultural Confederation:Org"]
+
+TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Entities: PERSON: ["Shi Liming:Per"], LOCATION: ["Kunming:Loc"], ORGANIZATION: ["Institute of Zoology:Org"]
+
+TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Entities: PERSON: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren"], LOCATION: [], ORGANIZATION: ["Warren Commission"]
+
+TEXT: PURCHASE , N.Y .
+Entities: PERSON: [], LOCATION: ["PURCHASE:Loc", "N.Y .:Loc"], ORGANIZATION: []
+
+TEXT: BELGRADE , Yugoslavia ( AP )
+Entities: PERSON: [], LOCATION: ["BELGRADE:Loc", "Yugoslavia:Loc"], ORGANIZATION: ["AP:Org"]
+
+TEXT: Rome is in Lazio province and Naples in Campania .
+Entities: PERSON: [], LOCATION: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"], ORGANIZATION: []
+
+TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
+Entities: PERSON: ["Mikhail Shevtsov:Per"], LOCATION: [], ORGANIZATION: ["ITAR-TASS:Org"]
+
+TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Entities: PERSON: ["Jean Bertrand Aristide:Per"], LOCATION: [], ORGANIZATION: ["Haiti:Loc"]
+
+TEXT: Moscow ITAR-TASS
+Entities: PERSON: [], LOCATION: ["Moscow:Loc"], ORGANIZATION: ["ITAR-TASS:Org"]
+
+TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Entities: PERSON: ["Mrs. Parks:Per"], LOCATION: ["Montgomery:Loc", "Ala.:Loc"], ORGANIZATION: []
+
+TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Entities: PERSON: ["Sirhan:Per", "Kennedy:Per"], LOCATION: [], ORGANIZATION: []
+
+TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
+Entities: PERSON: [], LOCATION: ["Colorado:Loc", "Denver:Loc"], ORGANIZATION: []
+
+TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Entities: PERSON: ["Edward Marks:Per", "Ms. Toth:Per"], LOCATION: ["Montgomery County:Loc"], ORGANIZATION: ["Democratic Party:Org"]
+
+Instructional Prefix: List the entities in [PERSON, LOCATION, ORGANIZATION] in the given text. 
+
+TEXT: $TEXT$
+Entities:
