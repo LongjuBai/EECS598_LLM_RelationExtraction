@@ -3,119 +3,134 @@ Example Instructional Prefix: Check if a given pair of entities have relations [
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
 Pairs of entities: 
 [,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+[, "OrgBased In", ] impossible
+[, "Work For", ] impossible
+[, "Located In", ] impossible
+[, "Live In", ] impossible
+[, "Kill", ] impossible
 
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
 Pairs of entities: 
 [,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+[, "OrgBased In", ] impossible
+[, "Work For", ] impossible
+[, "Located In", ] impossible
+[, "Live In", ] impossible
+[, "Kill", ] impossible
 
 TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
 Pairs of entities: 
 [,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+[, "OrgBased In", ] impossible
+[, "Work For", ] impossible
+[, "Located In", ] impossible
+[, "Live In", ] impossible
+[, "Kill", ] impossible
 
 TEXT: PURCHASE , N.Y .
 Pairs of entities: 
 [,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+[, "OrgBased In", ] impossible
+[, "Work For", ] impossible
+[, "Located In", ] impossible
+[, "Live In", ] impossible
+[, "Kill", ] impossible
 
 TEXT: BELGRADE , Yugoslavia ( AP )
 Pairs of entities: 
 [,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+[, "OrgBased In", ] impossible
+[, "Work For", ] impossible
+[, "Located In", ] impossible
+[, "Live In", ] impossible
+[, "Kill", ] impossible
 
 TEXT: Rome is in Lazio province and Naples in Campania .
 Pairs of entities: 
 [,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+[, "OrgBased In", ] impossible
+[, "Work For", ] impossible
+[, "Located In", ] impossible
+[, "Live In", ] impossible
+[, "Kill", ] impossible
 
 TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+Entities: PERSON: ["Mikhail Shevtsov:Per"], LOCATION: [], ORGANIZATION: ["ITAR-TASS:Org"]
+"OrgBased In": []
+"Work For": [["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]]
+"Located In": []
+"Live In": []
+"Kill": []
+Output:
+["Mikhail Shevtsov:Per", "ITAR-TASS:Org"] sure
 
 TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+"OrgBased In": [["Group of Rio:Org", "Haiti:Loc"]]
+"Work For": [["Jean Bertrand Aristide:Per", "Group of Rio:Org"]]
+"Located In": []
+"Live In": [["Jean Bertrand Aristide:Per", "Haiti:Loc"]]
+"Kill": []
+Output:
+["Group of Rio:Org", "OrgBased In", "Haiti:Loc"] impossible
+["Jean Bertrand Aristide:Per", "Work For", "Group of Rio:Org"] impossible
+["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"] sure
 
 TEXT: Moscow ITAR-TASS
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+"OrgBased In": [["ITAR-TASS:Org", "Moscow:Loc"]]
+"Work For": []
+"Located In": []
+"Live In": []
+"Kill": []
+Output:
+["ITAR-TASS:Org", "OrgBased In", "Moscow:Loc"] sure
 
 TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+"OrgBased In": []
+"Work For": []
+"Located In": [["Montgomery:Loc", "Ala.:Loc"], ["Ala.:Loc", "Montgomery:Loc"]]
+"Live In": [["Mrs. Parks:Per", "Montgomery:Loc"], ["Mrs. Parks:Per", "Ala.:Loc"]]
+"Kill": []
+Output:
+["Montgomery:Loc", "Located In", "Ala.:Loc"] sure
+["Ala.:Loc", "Located In", "Montgomery:Loc"] impossible
+["Mrs. Parks:Per", "Live In", "Montgomery:Loc"] sure
+["Mrs. Parks:Per", "Live In", "Ala.:Loc"] sure
 
 TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+"OrgBased In": []
+"Work For": [["Sirhan:Per", "Kennedy:Per"], ["Kennedy:Per", "Sirhan:Per"]]
+"Located In": []
+"Live In": []
+"Kill": [["Sirhan:Per", "Kennedy:Per"], ["Kennedy:Per", "Sirhan:Per"]]
+Output:
+["Sirhan:Per", "Work For", "Kennedy:Per"] impossible
+["Kennedy:Per", "Work For", "Sirhan:Per"] impossible
+["Sirhan:Per", "Kill", "Kennedy:Per"] sure
+["Kennedy:Per", "Kill", "Sirhan:Per"] impossible
 
 TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+"OrgBased In": []
+"Work For": []
+"Located In": [["Colorado:Loc", "Denver:Loc"], ["Denver:Loc", "Colorado:Loc"]]
+"Live In": []
+"Kill": []
+Output:
+["Colorado:Loc", "Located In", "Denver:Loc"] sure
+["Denver:Loc", "Located In", "Colorado:Loc"] impossible
 
 TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
-Pairs of entities: 
-[,]
-[, OrgBased In, ] impossible
-[, Work For, ] impossible
-[, Located In, ] impossible
-[, Live In, ] impossible
-[, Kill, ] impossible
+"OrgBased In": []
+"Work For": [["Edward Marks:Per", "Ms. Toth:Per"], ["Edward Marks:Per", "Montgomery County Democratic Party:Org"], ["Ms. Toth:Per", "Edward Marks:Per"], ["Ms. Toth:Per", "Montgomery County Democratic Party:Org"]]
+"Located In": []
+"Live In": []
+"Kill": [["Edward Marks:Per", "Ms. Toth:Per"], ["Ms. Toth:Per", "Edward Marks:Per"]]
+Output:
+["Edward Marks:Per", "Work For", "Ms. Toth:Per"] impossible
+["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"] sure
+["Ms. Toth:Per", "Work For", "Edward Marks:Per"] impossible
+["Ms. Toth:Per", "Work For", "Montgomery County Democratic Party:Org"] impossible
+["Edward Marks:Per", "Kill", "Ms. Toth:Per"] impossible
+["Ms. Toth:Per", "Kill", "Edward Marks:Per"] impossible
 
 Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] based on the given text and provide a confidence level (sure/likely/impossible).
 
