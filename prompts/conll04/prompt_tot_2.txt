@@ -82,6 +82,7 @@ Output:
 "Kill": []
 TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
 Output:
+Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti. So, Jean Bertrand Aristide:Per lives in Haiti:Loc.
 ["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"] yes
 
 "OrgBased In": [["ITAR-TASS:Org", "Moscow:Loc"]]
@@ -91,6 +92,7 @@ Output:
 "Kill": []
 TEXT: Moscow ITAR-TASS
 Output:
+ITAR-TASS is an organization based in Moscow. So, ITAR-TASS:Org is based in Moscow:Loc.
 ["ITAR-TASS:Org", "OrgBased In", "Moscow:Loc"] yes
 
 "OrgBased In": []
@@ -100,6 +102,7 @@ Output:
 "Kill": []
 TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
 Output:
+Mrs. Parks actions were in Montgomery, Ala., where she lived, so Mrs. Parks:Per lives in Montgomery:Loc and Mrs. Parks:Per lives in Ala.:Loc. It can be derived that Montgomery is located in Ala, so Montgomery:Loc is located In Ala.:Loc.
 ["Montgomery:Loc", "Located In", "Ala.:Loc"] yes
 ["Mrs. Parks:Per", "Live In", "Montgomery:Loc"] yes
 ["Mrs. Parks:Per", "Live In", "Ala.:Loc"] yes
@@ -111,6 +114,7 @@ Output:
 "Kill": [["Sirhan:Per", "Kennedy:Per"], ["Kennedy:Per", "Sirhan:Per"]]
 TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
 Output:
+Sirhan was the lone assassin in the Kennedy assassination, so Sirhan:Per kills Kennedy:Per.
 ["Sirhan:Per", "Kill", "Kennedy:Per"] yes
 
 "OrgBased In": []
@@ -120,6 +124,7 @@ Output:
 "Kill": []
 TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
 Output:
+Denver officials closed Interstate 270 in Colorado, consequently we can see that Denver is located in Colorado, so Colorado:Loc is located in Denver:Loc.
 ["Colorado:Loc", "Located In", "Denver:Loc"] yes
 
 "OrgBased In": []
@@ -129,6 +134,7 @@ Output:
 "Kill": [["Edward Marks:Per", "Ms. Toth:Per"], ["Ms. Toth:Per", "Edward Marks:Per"]]
 TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
 Output:
+Edward Marks is an official that works for the Montgomery County Democratic Party, so Edward Marks:Per works For Montgomery County Democratic Party:Org.
 ["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"] yes
 
 Instructional Prefix: Use common sense. Use high school knowledge. Use politics, geography, history knowledge. Use Logic. Be smart. Be loyal to the given text content. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/likely/no) for each relation.
