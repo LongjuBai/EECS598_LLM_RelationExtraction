@@ -1,0 +1,1 @@
+{"raw_entity_output": {"17": "[\"Hakawati Theatre:Org\", \"Jerusalem:Loc\", \"Palestinians:Per\"]"}, "logic_processed_output": {"17": "\"Work For\": [['\"Palestinians:Per\"', '\"Hakawati Theatre:Org\"']]\n\"Kill\": []\n\"OrgBased In\": [['\"Hakawati Theatre:Org\"', '\"Jerusalem:Loc\"']]\n\"Live In\": [['\"Palestinians:Per\"', '\"Jerusalem:Loc\"']]\n\"Located In\": []\n"}}

@@ -1,0 +1,1023 @@
+{
+    "micro_pc": 0.2985631499563388,
+    "macro_pc": 0.3230769230769231,
+    "pc_list": {
+        "work for": 0.11764705882352941,
+        "kill": 0.0,
+        "orgbased in": 0.6666666666666666,
+        "live in": 0.07692307692307693,
+        "located in": 0.631578947368421
+    },
+    "micro_rc": 0.526984126984127,
+    "macro_rc": 0.6176470588235294,
+    "rc_list": {
+        "work for": 1.0,
+        "kill": 0,
+        "orgbased in": 0.6666666666666666,
+        "live in": 0.1111111111111111,
+        "located in": 0.8571428571428571
+    },
+    "micro_f1": 0.3390749601275917,
+    "macro_f1": 0.4242424242424243,
+    "f1_list": {
+        "work for": 0.21052631578947367,
+        "kill": 0,
+        "orgbased in": 0.6666666666666666,
+        "live in": 0.09090909090909091,
+        "located in": 0.7272727272727273
+    },
+    "num_cases": 20,
+    "accuracy": 0.4,
+    "correct_cases": {
+        "34": {
+            "text": "Reagan sounded positive notes reminiscent of earlier speeches throughout his political career _ the pre-eminent position of ` ` We the People' ' in the American system, the image of America as a shining ` ` city upon a hill,' ' the importance of paying more attention to American history.",
+            "true": [
+                [
+                    "reagan:per",
+                    "live in",
+                    "america:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "reagan:per",
+                    "live in",
+                    "america:loc"
+                ]
+            ],
+            "response": "[\"Reagan:Per\", \"Live In\", \"America:Loc\"] likely"
+        },
+        "36": {
+            "text": "Nor did he argue, as he did in a speech at the University of Virginia in Charlottesville Dec. 16, that Congress had perpetuated a dangerous situation in Central America by its ` ` on-again, off-again indecisiveness' ' on his program of aid to the anti-communist Contra rebels.",
+            "true": [
+                [
+                    "university of virginia:org",
+                    "orgbased in",
+                    "charlottesville:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "university of virginia:org",
+                    "orgbased in",
+                    "charlottesville:loc"
+                ]
+            ],
+            "response": "[\"University of Virginia:Org\", \"OrgBased In\", \"Charlottesville:Loc\"] yes\n[\"University of Virginia:Org\", \"OrgBased In\", \"Central America:Loc\"] no\n[\"Congress:Org\", \"OrgBased In\", \"Charlottesville:Loc\"] no\n[\"Congress:Org\", \"OrgBased In\", \"Central America:Loc\"] no\n[\"Contra rebels:Org\", \"OrgBased In\", \"Charlottesville:Loc\"] no\n[\"Contra rebels:Org\", \"OrgBased In\", \"Central America:Loc\"] no"
+        },
+        "130": {
+            "text": "Hot Springs National Park, Ark.;",
+            "true": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ]
+            ],
+            "response": "[\"Hot Springs National Park:Loc\", \"Located In\", \"Ark.:Loc\"] yes"
+        },
+        "136": {
+            "text": "Aguadilla, Puerto Rico;",
+            "true": [
+                [
+                    "aguadilla:loc",
+                    "located in",
+                    "puerto rico:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "aguadilla:loc",
+                    "located in",
+                    "puerto rico:loc"
+                ]
+            ],
+            "response": "[\"Aguadilla:Loc\", \"Located In\", \"Puerto Rico:Loc\"] yes"
+        },
+        "150": {
+            "text": "ATLANTIC CITY, N.J.",
+            "true": [
+                [
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
+                ]
+            ],
+            "response": "[\"ATLANTIC CITY:Loc\", \"Located In\", \"N.J.:Loc\"] yes"
+        },
+        "171": {
+            "text": "FRESNO, Calif.",
+            "true": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "response": "[\"FRESNO:Loc\", \"Located In\", \"Calif.:Loc\"] yes"
+        },
+        "195": {
+            "text": "Boston University's Michael D. Papagiannis said he believes the crater was created 100 million years ago when a 50-mile-wide meteorite slammed into the Earth.",
+            "true": [
+                [
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
+                ]
+            ],
+            "response": "[\"Michael D. Papagiannis:Per\", \"Work For\", \"Boston University:Org\"] yes\n[\"Boston University:Org\", \"OrgBased In\", \"Earth:Loc\"] no\n[\"Michael D. Papagiannis:Per\", \"Live In\", \"Earth:Loc\"] no"
+        },
+        "197": {
+            "text": "It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.",
+            "true": [
+                [
+                    "ostined:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "lesny:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "liberec:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "gmund:loc",
+                    "located in",
+                    "austria:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ostined:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "lesny:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "liberec:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "gmund:loc",
+                    "located in",
+                    "austria:loc"
+                ]
+            ],
+            "response": "[\"Ostined:Loc\", \"Located In\", \"Czechoslovakia:Loc\"] yes\n[\"Lesny:Loc\", \"Located In\", \"Czechoslovakia:Loc\"] yes\n[\"Liberec:Loc\", \"Located In\", \"Czechoslovakia:Loc\"] yes\n[\"Gmund:Loc\", \"Located In\", \"Austria:Loc\"] yes"
+        }
+    },
+    "fail_cases": {
+        "17": {
+            "text": "An art exhibit at the Hakawati Theatre in Arab east Jerusalem was a series of portraits of Palestinians killed in the rebellion.",
+            "true": [
+                [
+                    "hakawati theatre:org",
+                    "orgbased in",
+                    "jerusalem:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "palestinians:per",
+                    "live in",
+                    "jerusalem:loc"
+                ],
+                [
+                    "hakawati theatre:org",
+                    "orgbased in",
+                    "jerusalem:loc"
+                ],
+                [
+                    "palestinians:per",
+                    "work for",
+                    "hakawati theatre:org"
+                ]
+            ],
+            "response": "[\"Palestinians:Per\", \"Live In\", \"Jerusalem:Loc\"] likely\n[\"Hakawati Theatre:Org\", \"OrgBased In\", \"Jerusalem:Loc\"] yes\n[\"Palestinians:Per\", \"Work For\", \"Hakawati Theatre:Org\"] likely"
+        },
+        "23": {
+            "text": "PERUGIA, Italy (AP)",
+            "true": [
+                [
+                    "perugia:loc",
+                    "located in",
+                    "italy:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "perugia:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "perugia:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ],
+                [
+                    "perugia:loc",
+                    "located in",
+                    "italy:loc"
+                ],
+                [
+                    "italy:loc",
+                    "located in",
+                    "perugia:loc"
+                ]
+            ],
+            "response": "[\"AP:Org\", \"OrgBased In\", \"PERUGIA:Loc\"] yes\n[\"AP:Org\", \"OrgBased In\", \"Italy:Loc\"] yes\n[\"PERUGIA:Loc\", \"Located In\", \"Italy:Loc\"] yes\n[\"Italy:Loc\", \"Located In\", \"PERUGIA:Loc\"] yes"
+        },
+        "35": {
+            "text": "There was no mention of the ` ` iron triangle' ' of members of Congress, the news media and special interest groups who, in a speech to political appointees in Washington on Dec. 13, Reagan claimed had prevented his administration from balancing the federal budget.",
+            "true": [
+                [
+                    "congress:org",
+                    "orgbased in",
+                    "washington:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "reagan:per",
+                    "live in",
+                    "washington:loc"
+                ]
+            ],
+            "response": "[\"Reagan:Per\", \"Live In\", \"Washington:Loc\"] yes"
+        },
+        "56": {
+            "text": "Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.",
+            "true": [
+                [
+                    "wright:per",
+                    "work for",
+                    "university of texas:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "wright:per",
+                    "work for",
+                    "university of texas:org"
+                ],
+                [
+                    "wright:per",
+                    "work for",
+                    "watergate:org"
+                ],
+                [
+                    "nixon:per",
+                    "work for",
+                    "university of texas:org"
+                ],
+                [
+                    "nixon:per",
+                    "work for",
+                    "watergate:org"
+                ],
+                [
+                    "wright:per",
+                    "kill",
+                    "nixon:per"
+                ],
+                [
+                    "nixon:per",
+                    "kill",
+                    "wright:per"
+                ]
+            ],
+            "response": "[\"Wright:Per\", \"Work For\", \"University of Texas:Org\"] likely\n[\"Wright:Per\", \"Work For\", \"Watergate:Org\"] likely\n[\"Nixon:Per\", \"Work For\", \"University of Texas:Org\"] likely\n[\"Nixon:Per\", \"Work For\", \"Watergate:Org\"] likely\n[\"Wright:Per\", \"Kill\", \"Nixon:Per\"] yes\n[\"Nixon:Per\", \"Kill\", \"Wright:Per\"] yes"
+        },
+        "77": {
+            "text": "An enraged Nikita Khrushchev instructed Soviet ships to ignore President Kennedy's naval blockade during the Cuban missile crisis, but the order was reversed just hours before an inevitable confrontation, according to a new book.",
+            "true": [
+                [
+                    "nikita khrushchev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "nikita khrushchev:per",
+                    "live in",
+                    "cuba:loc"
+                ],
+                [
+                    "president kennedy:per",
+                    "live in",
+                    "cuba:loc"
+                ],
+                [
+                    "nikita khrushchev:per",
+                    "kill",
+                    "president kennedy:per"
+                ]
+            ],
+            "response": "[\"Nikita Khrushchev:Per\", \"Live In\", \"Cuba:Loc\"] yes\n[\"President Kennedy:Per\", \"Live In\", \"Cuba:Loc\"] yes\n[\"Nikita Khrushchev:Per\", \"Kill\", \"President Kennedy:Per\"] yes"
+        },
+        "79": {
+            "text": "Anastas Mikoyan, then Soviet first deputy premier, was the catalyst for the reversal of Khrushchev's order, according to the authors.",
+            "true": [
+                [
+                    "anastas mikoyan:per",
+                    "live in",
+                    "soviet:loc"
+                ],
+                [
+                    "khrushchev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "anastas mikoyan:per",
+                    "work for",
+                    "soviet:org"
+                ],
+                [
+                    "khrushchev:per",
+                    "work for",
+                    "soviet:org"
+                ],
+                [
+                    "anastas mikoyan:per",
+                    "kill",
+                    "khrushchev:per"
+                ],
+                [
+                    "khrushchev:per",
+                    "kill",
+                    "anastas mikoyan:per"
+                ]
+            ],
+            "response": "[\"Anastas Mikoyan:Per\", \"Work For\", \"Soviet:Org\"] yes\n[\"Khrushchev:Per\", \"Work For\", \"Soviet:Org\"] yes\n[\"Anastas Mikoyan:Per\", \"Kill\", \"Khrushchev:Per\"] yes\n[\"Khrushchev:Per\", \"Kill\", \"Anastas Mikoyan:Per\"] yes"
+        },
+        "80": {
+            "text": "Mikoyan ` ` preempted Khrushchev's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line,' ' they say.",
+            "true": [
+                [
+                    "mikoyan:per",
+                    "live in",
+                    "soviet:loc"
+                ],
+                [
+                    "khrushchev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "mikoyan:per",
+                    "work for",
+                    "soviet:org"
+                ],
+                [
+                    "khrushchev:per",
+                    "work for",
+                    "soviet:org"
+                ],
+                [
+                    "mikoyan:per",
+                    "kill",
+                    "khrushchev:per"
+                ],
+                [
+                    "khrushchev:per",
+                    "kill",
+                    "mikoyan:per"
+                ]
+            ],
+            "response": "[\"Mikoyan:Per\", \"Work For\", \"Soviet:Org\"] likely\n[\"Khrushchev:Per\", \"Work For\", \"Soviet:Org\"] likely\n[\"Mikoyan:Per\", \"Kill\", \"Khrushchev:Per\"] likely\n[\"Khrushchev:Per\", \"Kill\", \"Mikoyan:Per\"] likely"
+        },
+        "89": {
+            "text": "But the authors suggested that Alekseev, along with others in the Soviet diplomatic corps, were not receiving accurate information from Moscow about the missiles.",
+            "true": [
+                [
+                    "alekseev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "alekseev:per",
+                    "work for",
+                    "soviet diplomatic corps:org"
+                ],
+                [
+                    "soviet diplomatic corps:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "alekseev:per",
+                    "live in",
+                    "moscow:loc"
+                ]
+            ],
+            "response": "[\"Alekseev:Per\", \"Work For\", \"Soviet diplomatic corps:Org\"] yes\n[\"Soviet diplomatic corps:Org\", \"OrgBased In\", \"Moscow:Loc\"] yes\n[\"Alekseev:Per\", \"Live In\", \"Moscow:Loc\"] yes"
+        },
+        "92": {
+            "text": "MILAN, Italy (AP)",
+            "true": [
+                [
+                    "milan:loc",
+                    "located in",
+                    "italy:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "milan:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "milan:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ],
+                [
+                    "milan:loc",
+                    "located in",
+                    "italy:loc"
+                ],
+                [
+                    "italy:loc",
+                    "located in",
+                    "milan:loc"
+                ]
+            ],
+            "response": "[\"AP:Org\", \"OrgBased In\", \"MILAN:Loc\"] yes\n[\"AP:Org\", \"OrgBased In\", \"Italy:Loc\"] yes\n[\"MILAN:Loc\", \"Located In\", \"Italy:Loc\"] yes\n[\"Italy:Loc\", \"Located In\", \"MILAN:Loc\"] yes"
+        },
+        "138": {
+            "text": "Locations containing suitable federally owned land were listed as: Fort Wainwright annex, Fairbanks, Alaska;",
+            "true": [
+                [
+                    "fort wainwright annex:loc",
+                    "located in",
+                    "fairbanks:loc"
+                ],
+                [
+                    "fort wainwright annex:loc",
+                    "located in",
+                    "alaska:loc"
+                ],
+                [
+                    "fairbanks:loc",
+                    "located in",
+                    "alaska:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "fort wainwright:loc",
+                    "located in",
+                    "fairbanks:loc"
+                ],
+                [
+                    "fort wainwright:loc",
+                    "located in",
+                    "alaska:loc"
+                ],
+                [
+                    "fairbanks:loc",
+                    "located in",
+                    "fort wainwright:loc"
+                ],
+                [
+                    "fairbanks:loc",
+                    "located in",
+                    "alaska:loc"
+                ],
+                [
+                    "alaska:loc",
+                    "located in",
+                    "fort wainwright:loc"
+                ],
+                [
+                    "alaska:loc",
+                    "located in",
+                    "fairbanks:loc"
+                ]
+            ],
+            "response": "[\"Fort Wainwright:Loc\", \"Located In\", \"Fairbanks:Loc\"] yes\n[\"Fort Wainwright:Loc\", \"Located In\", \"Alaska:Loc\"] yes\n[\"Fairbanks:Loc\", \"Located In\", \"Fort Wainwright:Loc\"] yes\n[\"Fairbanks:Loc\", \"Located In\", \"Alaska:Loc\"] yes\n[\"Alaska:Loc\", \"Located In\", \"Fort Wainwright:Loc\"] yes\n[\"Alaska:Loc\", \"Located In\", \"Fairbanks:Loc\"] yes"
+        },
+        "188": {
+            "text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.",
+            "true": [
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "leningrad:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "u.s.:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "u.s.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "june anderson:per",
+                    "work for",
+                    "bolshoi ballet:org"
+                ],
+                [
+                    "june anderson:per",
+                    "work for",
+                    "kirov ballet:org"
+                ],
+                [
+                    "june anderson:per",
+                    "work for",
+                    "british:org"
+                ],
+                [
+                    "carol vaness:per",
+                    "work for",
+                    "bolshoi ballet:org"
+                ],
+                [
+                    "carol vaness:per",
+                    "work for",
+                    "kirov ballet:org"
+                ],
+                [
+                    "carol vaness:per",
+                    "work for",
+                    "british:org"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "moscow:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "leningrad:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "yerevan:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "armenia:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "moscow:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "leningrad:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "yerevan:loc"
+                ]
+            ],
+            "response": "[\"June Anderson:Per\", \"Work For\", \"Bolshoi Ballet:Org\"] yes\n[\"June Anderson:Per\", \"Work For\", \"Kirov Ballet:Org\"] yes\n[\"June Anderson:Per\", \"Work For\", \"British:Org\"] yes\n[\"Carol Vaness:Per\", \"Work For\", \"Bolshoi Ballet:Org\"] yes\n[\"Carol Vaness:Per\", \"Work For\", \"Kirov Ballet:Org\"] yes\n[\"Carol Vaness:Per\", \"Work For\", \"British:Org\"] yes\n[\"June Anderson:Per\", \"Live In\", \"Moscow:Loc\"] yes\n[\"June Anderson:Per\", \"Live In\", \"Leningrad:Loc\"] yes\n[\"June Anderson:Per\", \"Live In\", \"Yerevan:Loc\"] yes\n[\"June Anderson:Per\", \"Live In\", \"Armenia:Loc\"] yes\n[\"Carol Vaness:Per\", \"Live In\", \"Moscow:Loc\"] yes\n[\"Carol Vaness:Per\", \"Live In\", \"Leningrad:Loc\"] yes\n[\"Carol Vaness:Per\", \"Live In\", \"Yerevan:Loc\"] yes\n[\"Carol Van"
+        },
+        "198": {
+            "text": "BONE, Idaho (AP)",
+            "true": [
+                [
+                    "bone:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "bone:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "idaho:loc"
+                ],
+                [
+                    "bone:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "response": "[\"AP:Org\", \"OrgBased In\", \"BONE:Loc\"] yes\n[\"AP:Org\", \"OrgBased In\", \"Idaho:Loc\"] yes\n[\"BONE:Loc\", \"Located In\", \"Idaho:Loc\"] yes"
+        }
+    },
+    "missing_cases": {
+        "35": [
+            [
+                "congress:org",
+                "orgbased in",
+                "washington:loc"
+            ]
+        ],
+        "77": [
+            [
+                "nikita khrushchev:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "79": [
+            [
+                "anastas mikoyan:per",
+                "live in",
+                "soviet:loc"
+            ],
+            [
+                "khrushchev:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "80": [
+            [
+                "khrushchev:per",
+                "live in",
+                "soviet:loc"
+            ],
+            [
+                "mikoyan:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "89": [
+            [
+                "alekseev:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "138": [
+            [
+                "fort wainwright annex:loc",
+                "located in",
+                "alaska:loc"
+            ],
+            [
+                "fort wainwright annex:loc",
+                "located in",
+                "fairbanks:loc"
+            ]
+        ],
+        "188": [
+            [
+                "bolshoi ballet:org",
+                "orgbased in",
+                "moscow:loc"
+            ],
+            [
+                "carol vaness:per",
+                "live in",
+                "u.s.:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "u.s.:loc"
+            ],
+            [
+                "kirov ballet:org",
+                "orgbased in",
+                "leningrad:loc"
+            ]
+        ]
+    },
+    "false_cases": {
+        "17": [
+            [
+                "palestinians:per",
+                "live in",
+                "jerusalem:loc"
+            ],
+            [
+                "palestinians:per",
+                "work for",
+                "hakawati theatre:org"
+            ]
+        ],
+        "23": [
+            [
+                "italy:loc",
+                "located in",
+                "perugia:loc"
+            ]
+        ],
+        "35": [
+            [
+                "reagan:per",
+                "live in",
+                "washington:loc"
+            ]
+        ],
+        "56": [
+            [
+                "nixon:per",
+                "kill",
+                "wright:per"
+            ],
+            [
+                "nixon:per",
+                "work for",
+                "university of texas:org"
+            ],
+            [
+                "nixon:per",
+                "work for",
+                "watergate:org"
+            ],
+            [
+                "wright:per",
+                "kill",
+                "nixon:per"
+            ],
+            [
+                "wright:per",
+                "work for",
+                "watergate:org"
+            ]
+        ],
+        "77": [
+            [
+                "nikita khrushchev:per",
+                "kill",
+                "president kennedy:per"
+            ],
+            [
+                "nikita khrushchev:per",
+                "live in",
+                "cuba:loc"
+            ],
+            [
+                "president kennedy:per",
+                "live in",
+                "cuba:loc"
+            ]
+        ],
+        "79": [
+            [
+                "anastas mikoyan:per",
+                "kill",
+                "khrushchev:per"
+            ],
+            [
+                "anastas mikoyan:per",
+                "work for",
+                "soviet:org"
+            ],
+            [
+                "khrushchev:per",
+                "kill",
+                "anastas mikoyan:per"
+            ],
+            [
+                "khrushchev:per",
+                "work for",
+                "soviet:org"
+            ]
+        ],
+        "80": [
+            [
+                "khrushchev:per",
+                "kill",
+                "mikoyan:per"
+            ],
+            [
+                "khrushchev:per",
+                "work for",
+                "soviet:org"
+            ],
+            [
+                "mikoyan:per",
+                "kill",
+                "khrushchev:per"
+            ],
+            [
+                "mikoyan:per",
+                "work for",
+                "soviet:org"
+            ]
+        ],
+        "89": [
+            [
+                "alekseev:per",
+                "live in",
+                "moscow:loc"
+            ],
+            [
+                "alekseev:per",
+                "work for",
+                "soviet diplomatic corps:org"
+            ],
+            [
+                "soviet diplomatic corps:org",
+                "orgbased in",
+                "moscow:loc"
+            ]
+        ],
+        "92": [
+            [
+                "italy:loc",
+                "located in",
+                "milan:loc"
+            ]
+        ],
+        "138": [
+            [
+                "alaska:loc",
+                "located in",
+                "fairbanks:loc"
+            ],
+            [
+                "alaska:loc",
+                "located in",
+                "fort wainwright:loc"
+            ],
+            [
+                "fairbanks:loc",
+                "located in",
+                "fort wainwright:loc"
+            ],
+            [
+                "fort wainwright:loc",
+                "located in",
+                "alaska:loc"
+            ],
+            [
+                "fort wainwright:loc",
+                "located in",
+                "fairbanks:loc"
+            ]
+        ],
+        "188": [
+            [
+                "carol vaness:per",
+                "live in",
+                "leningrad:loc"
+            ],
+            [
+                "carol vaness:per",
+                "live in",
+                "moscow:loc"
+            ],
+            [
+                "carol vaness:per",
+                "live in",
+                "yerevan:loc"
+            ],
+            [
+                "carol vaness:per",
+                "work for",
+                "bolshoi ballet:org"
+            ],
+            [
+                "carol vaness:per",
+                "work for",
+                "british:org"
+            ],
+            [
+                "carol vaness:per",
+                "work for",
+                "kirov ballet:org"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "armenia:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "leningrad:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "moscow:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "yerevan:loc"
+            ],
+            [
+                "june anderson:per",
+                "work for",
+                "bolshoi ballet:org"
+            ],
+            [
+                "june anderson:per",
+                "work for",
+                "british:org"
+            ],
+            [
+                "june anderson:per",
+                "work for",
+                "kirov ballet:org"
+            ]
+        ],
+        "198": [
+            [
+                "ap:org",
+                "orgbased in",
+                "bone:loc"
+            ],
+            [
+                "ap:org",
+                "orgbased in",
+                "idaho:loc"
+            ]
+        ]
+    },
+    "error_cases": {}
+}

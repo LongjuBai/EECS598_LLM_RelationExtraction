@@ -82,8 +82,8 @@ def get_response_from_llm(args):
         # convert the constructed relations into prompt string
         relation_prompt_string = ''
         for relation_type, relation_list in relation_type_dict.items():
-            relation_prompt_string += ('\n"' + relation_type + '": ')
-            relation_prompt_string += str(relation_list)
+            relation_prompt_string += ('"' + relation_type + '": ')
+            relation_prompt_string += str(relation_list) + '\n'
 
         # record to the dictionary
         relation_prompt_string_dict[id] = relation_prompt_string
