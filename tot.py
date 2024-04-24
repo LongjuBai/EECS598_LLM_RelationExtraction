@@ -90,7 +90,7 @@ def get_response_from_llm(args):
     
     # save the entity output
     os.makedirs('outputs', exist_ok=True) 
-    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_entity.json', 'w') as json_file:
+    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_entity_{args.suffix}.json', 'w') as json_file:
         json.dump({
             'raw_entity_output': responses_entity_extraction,
             'logic_processed_output': relation_prompt_string_dict
