@@ -1,4 +1,4 @@
-Example Instructional Prefix: Use common sense. Use high school knowledge. Use politics, geography, history knowledge. Use Logic. Be smart. Be loyal to the given text content. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/likely/no) for each relation.
+Example Instructional Prefix: Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Use geography for Located In and OrgBased In. Provide a confidence level (yes/likely/no) for each relation.
 
 "OrgBased In": []
 "Work For": [["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]]
@@ -7,7 +7,7 @@ Example Instructional Prefix: Use common sense. Use high school knowledge. Use p
 "Kill": []
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
 Output:
-Bruno Pusterla , a top official of the Italian Agricultural Confederation, so "Bruno Pusterla:Per" "Work For" "Italian Agricultural Confederation:Org".
+Bruno Pusterla , a top official of the Italian Agricultural Confederation, so "Bruno Pusterla:Per" works for "Italian Agricultural Confederation:Org".
 ["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"] yes
 
 "OrgBased In": [["Institute of Zoology:Org", "Kunming:Loc"]]
@@ -17,9 +17,9 @@ Bruno Pusterla , a top official of the Italian Agricultural Confederation, so "B
 "Kill": []
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
 Output:
-Shi Liming at the Institute of Zoology, so "Shi Liming:Per" "Work For" "Institute of Zoology:Org".
+Shi Liming at the Institute of Zoology, so "Shi Liming:Per" works for "Institute of Zoology:Org".
 ["Shi Liming:Per", "Work For", "Institute of Zoology:Org"] yes
-Zoology of Kunming, so "Institute of Zoology:Org" "OrgBased In" "Kunming:Loc".
+Zoology of Kunming, so "Institute of Zoology:Org" is based in "Kunming:Loc".
 ["Institute of Zoology:Org", "OrgBased In", "Kunming:Loc"] yes
 
 "OrgBased In": []
@@ -29,7 +29,9 @@ Zoology of Kunming, so "Institute of Zoology:Org" "OrgBased In" "Kunming:Loc".
 "Kill": [["Oswald:Per", "President Kennedy:Per"], ["Oswald:Per", "Officer Tippit:Per"], ["President Kennedy:Per", "Officer Tippit:Per"]]
 TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
 Output:
-yes ["Oswald:Per", "Kill", "President Kennedy:Per"] 
+Oswald was the lone gunman who killed President Kennedy and Officer Tippit, so "Oswald:Per" killed "President Kennedy:Per".
+["Oswald:Per", "Kill", "President Kennedy:Per"] yes
+Oswald was the lone gunman who killed President Kennedy and Officer Tippit, so "Oswald:Per" killed "Officer Tippit:Per".
 ["Oswald:Per", "Kill", "Officer Tippit:Per"] yes
 
 "OrgBased In": []
@@ -39,8 +41,8 @@ yes ["Oswald:Per", "Kill", "President Kennedy:Per"]
 "Kill": []
 TEXT: PURCHASE , N.Y .
 Output:
+PURCHASE , N.Y ., so "PURCHASE:Loc" is located in "N.Y .:Loc".
 ["PURCHASE:Loc", "Located In", "N.Y .:Loc"] yes
-
 
 "OrgBased In": [["AP:Org", "BELGRADE:Loc"], ["AP:Org", "Yugoslavia:Loc"]]
 "Work For": []
@@ -49,10 +51,12 @@ Output:
 "Kill": []
 TEXT: BELGRADE , Yugoslavia ( AP )
 Output:
+BELGRADE , Yugoslavia, so "BELGRADE:Loc" is located in "Yugoslavia:Loc".
 ["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"] yes
+Yugoslavia ( AP ), so "AP:Org" is based in "BELGRADE:Loc"
 ["AP:Org", "OrgBased In", "BELGRADE:Loc"] yes
+BELGRADE , Yugoslavia ( AP ), so "AP:Org" is based in "BELGRADE:Loc".
 ["AP:Org", "OrgBased In", "Yugoslavia:Loc"] yes
-
 
 "OrgBased In": [["Rome:Loc", "Lazio:Loc"], ["Lazio:Loc", "Rome:Loc"], ["Naples:Loc", "Campania:Loc"], ["Campania:Loc", "Naples:Loc"], ["Rome:Loc", "Campania:Loc"], ["Campania:Loc", "Rome:Loc"]]
 "Work For": []
@@ -61,10 +65,10 @@ Output:
 "Kill": []
 TEXT: Rome is in Lazio province and Naples in Campania .
 Output:
+Rome is in Lazio province, so "Rome:Loc" is located in "Lazio:Loc".
 ["Rome:Loc", "Located In", "Lazio:Loc"] yes
+Naples in Campania, so "Naples:Loc" is located in "Campania:Loc".
 ["Naples:Loc", "Located In", "Campania:Loc"] yes
-["Lazio:Loc", "Located In", "Rome:Loc"] yes
-["Campania:Loc", "Located In", "Naples:Loc"] yes
 
 "OrgBased In": []
 "Work For": [["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]]
@@ -73,6 +77,7 @@ Output:
 "Kill": []
 TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
 Output:
+ITAR-TASS correspondent Mikhail Shevtsov, so "Mikhail Shevtsov:Per" works for "ITAR-TASS:Org".
 ["Mikhail Shevtsov:Per", "Work For", "ITAR-TASS:Org"] yes
 
 "OrgBased In": [["Group of Rio:Org", "Haiti:Loc"]]
@@ -82,7 +87,7 @@ Output:
 "Kill": []
 TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
 Output:
-Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti. So, Jean Bertrand Aristide:Per lives in Haiti:Loc.
+Haitian President Jean Bertrand Aristide, so "Jean Bertrand Aristide:Per" lives in "Haiti:Loc".
 ["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"] yes
 
 "OrgBased In": [["ITAR-TASS:Org", "Moscow:Loc"]]
@@ -92,7 +97,7 @@ Jean Bertrand Aristide was the president of Haiti and therefore lived in Haiti. 
 "Kill": []
 TEXT: Moscow ITAR-TASS
 Output:
-ITAR-TASS is an organization based in Moscow. So, ITAR-TASS:Org is based in Moscow:Loc.
+Moscow ITAR-TASS, so "ITAR-TASS:Org" is based in "Moscow:Loc".
 ["ITAR-TASS:Org", "OrgBased In", "Moscow:Loc"] yes
 
 "OrgBased In": []
@@ -102,9 +107,11 @@ ITAR-TASS is an organization based in Moscow. So, ITAR-TASS:Org is based in Mosc
 "Kill": []
 TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
 Output:
-Mrs. Parks actions were in Montgomery, Ala., where she lived, so Mrs. Parks:Per lives in Montgomery:Loc and Mrs. Parks:Per lives in Ala.:Loc. It can be derived that Montgomery is located in Ala, so Montgomery:Loc is located In Ala.:Loc.
+It can be derived that Montgomery is located in Ala, so Montgomery:Loc is located In Ala.:Loc.
 ["Montgomery:Loc", "Located In", "Ala.:Loc"] yes
+Mrs. Parks actions were in Montgomery, so Mrs. Parks:Per lives in Montgomery:Loc. 
 ["Mrs. Parks:Per", "Live In", "Montgomery:Loc"] yes
+Mrs. Parks actions were in Ala., so Mrs. Parks:Per lives in Ala.:Loc.
 ["Mrs. Parks:Per", "Live In", "Ala.:Loc"] yes
 
 "OrgBased In": []
@@ -137,7 +144,7 @@ Output:
 Edward Marks is an official that works for the Montgomery County Democratic Party, so Edward Marks:Per works For Montgomery County Democratic Party:Org.
 ["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"] yes
 
-Instructional Prefix: Use common sense. Use high school knowledge. Use politics, geography, history knowledge. Use Logic. Be smart. Be loyal to the given text content. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/likely/no) for each relation.
+Instructional Prefix: Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Use geography for Located In and OrgBased In. Provide a confidence level (yes/likely/no) for each relation.
 
 $TEXT$
 Output:
