@@ -1,4 +1,4 @@
-Example Instructional Prefix: Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Use geography for Located In and OrgBased In. Provide a confidence level (yes/likely/no) for each relation.
+Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Use geography for Located In and OrgBased In. Provide a confidence level (yes/likely/no) for each relation.
 
 "OrgBased In": []
 "Work For": [["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]]
@@ -144,7 +144,7 @@ Output:
 Edward Marks is an official that works for the Montgomery County Democratic Party, so Edward Marks:Per works For Montgomery County Democratic Party:Org.
 ["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"] yes
 
-Instructional Prefix: Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge. Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Use geography for Located In and OrgBased In. Provide a confidence level (yes/likely/no) for each relation.
+Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Use geography for Located In and OrgBased In. Provide a confidence level (yes/likely/no) for each relation.
 
 $TEXT$
 Output:

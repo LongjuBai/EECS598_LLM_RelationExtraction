@@ -108,7 +108,15 @@ def run_llm_relation(relation_prompt_string_dict, api_key, is_async, model, temp
         if model == 'gpt-3.5-turbo-0125':
             completion = client.chat.completions.create(
                 model=model,
-                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'] + 'TEXT: ' + relation_prompt_string)}"}],
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge."
+                    },
+                    {
+                        "role": "user", 
+                        "content": f"{prompt.replace('$TEXT$', sample['text'] + 'TEXT: ' + relation_prompt_string)}"
+                    }],
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed
