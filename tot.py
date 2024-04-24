@@ -10,16 +10,12 @@ def get_response_from_llm(args):
     dataset = args.dataset
 
     # load prompt
-    if args.is_cot:
-        prompt_file_path = os.path.join('prompts', dataset, 'prompt_cot.txt')
-    elif args.is_tot:
-        prompt_file_path = os.path.join('prompts', dataset, 'prompt_tot.txt')
-        prompt_file_path_2 = os.path.join('prompts', dataset, 'prompt_tot2.txt')
-    else:
-        prompt_file_path = os.path.join('prompts', dataset, 'prompt.txt')
-    with open(prompt_file_path, 'r') as f:
-        prompt = f.read()
-    
+    prompt_file_path_1 = os.path.join('prompts', dataset, 'prompt_tot_1.txt')
+    prompt_file_path_2 = os.path.join('prompts', dataset, 'prompt_tot_2.txt')
+    with open(prompt_file_path_1, 'r') as f:
+        prompt_1 = f.read()
+    with open(prompt_file_path_2, 'r') as f:
+        prompt_2 = f.read()
     # load test data
     if dataset == 'ade':
         data = load_ade(split=args.split)
@@ -33,7 +29,7 @@ def get_response_from_llm(args):
         # get the entity types for each relation type within conll04 dataset
         valid_type_dict = {
             "Work For": set([("Per", "Org")]),
-            "Kill": set(["Per", "Per"]),
+            "Kill": set([("Per", "Per")]),
             "OrgBased In": set([("Org", "Loc")]),
             "Live In": set([("Per", "Loc")]),
             "Located In": set([("Loc", "Loc")])
@@ -47,7 +43,7 @@ def get_response_from_llm(args):
         test_data = dict_first_k(test_data, args.test_k)
 
     # get response; {id: response}
-    responses_entity_extraction = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt, test_data)
+    responses_entity_extraction = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_1, test_data)
 
     relation_prompt_string_dict = {} # key is the job id, value is the prompt string for relation rating
     # try to parse each response; if fail, pass an empty list
@@ -65,6 +61,7 @@ def get_response_from_llm(args):
             if entity_type in entity_type_dict:
                 entity_type_dict[entity_type].append(entity)
         
+
         # construct relations; {relation_type: [[ins1, int2], [ins3, ins4]]}
         relation_type_dict = {}
         for relation_type in data['relations']:
@@ -72,7 +69,7 @@ def get_response_from_llm(args):
             # get the all possible entity type pairs
             possible_entity_type_pairs = valid_type_dict[relation_type]
             # for each entity pair, iterate and match
-            for (entity_type_1, entity_type_2) in possible_entity_type_pairs:
+            for entity_type_1, entity_type_2 in possible_entity_type_pairs:
                 # get all the instances of both types and match
                 entity_instance_list_1 = entity_type_dict[entity_type_1]
                 entity_instance_list_2 = entity_type_dict[entity_type_2]
@@ -84,19 +81,23 @@ def get_response_from_llm(args):
         
         # convert the constructed relations into prompt string
         relation_prompt_string = ''
-        for relation_type, relation_list in relation_type_dict:
+        for relation_type, relation_list in relation_type_dict.items():
             relation_prompt_string += ('\n"' + relation_type + '": ')
             relation_prompt_string += str(relation_list)
 
-        # save
+        # record to the dictionary
         relation_prompt_string_dict[id] = relation_prompt_string
     
+    # save the entity output
+    os.makedirs('outputs', exist_ok=True) 
+    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_entity.json', 'w') as json_file:
+        json.dump({
+            'raw_entity_output': responses_entity_extraction,
+            'logic_processed_output': relation_prompt_string_dict
+        }, json_file)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
-    responses_relation_rating = run_llm_relation(relation_prompt_string_dict, args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt, test_data)
-
-    
-
+    responses_relation_rating = run_llm_relation(relation_prompt_string_dict, args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_2, test_data)
 
     # metrics initialization
     counters = [{r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']} for _ in range(2)]
@@ -142,18 +143,18 @@ def get_response_from_llm(args):
             true_list = [tuple([item.lower() for item in relation]) for relation in sample['relations']]
             true_set = set(true_list)
 
-            counters[id] = update_counter(counters[id], true_set, pred_set)
+            counters[list_num] = update_counter(counters[list_num], true_set, pred_set)
             
             # record fail/correct cases
             record = {'text': sample['text'], 'true': true_list, 'pred': pred_list, 'response': response}
             if pred_set == true_set:
-                correct_cases_list[list_num] = record
+                correct_cases_list[list_num][id] = record
             else:
-                fail_cases_list[list_num] = record
+                fail_cases_list[list_num][id] = record
                 if true_set.difference(pred_set):
-                    missing_cases_list[list_num] = sorted(true_set.difference(pred_set))
+                    missing_cases_list[list_num][id] = sorted(true_set.difference(pred_set))
                 if pred_set.difference(true_set):
-                    false_cases_list[list_num] = sorted(pred_set.difference(true_set))
+                    false_cases_list[list_num][id] = sorted(pred_set.difference(true_set))
             if id in error_cases_list[list_num]:
                 error_cases_list[list_num][id].update(record)
 

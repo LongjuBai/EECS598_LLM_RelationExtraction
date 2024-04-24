@@ -9,7 +9,7 @@ def dict_first_k(dic, k):
     return {k: v for k, v in zip(list(dic.keys())[:k], list(dic.values())[:k])}
 
 def find_entity_type(s):
-    return s.split(':')[-1]
+    return s.split(':')[-1][:-1]
 
 def find_entities(s):
     start, end = s.find('['), s.find(']')

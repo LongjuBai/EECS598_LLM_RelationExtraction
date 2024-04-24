@@ -34,7 +34,7 @@ Output:
 TEXT: PURCHASE , N.Y .
 "OrgBased In": []
 "Work For": []
-"Located In": [["PURCHASE:Loc", "N.Y .:Loc"]]
+"Located In": [["PURCHASE:Loc", "N.Y .:Loc"], ["N.Y .:Loc", "PURCHASE:Loc"]]
 "Live In": []
 "Kill": []
 Output:
