@@ -1,4 +1,4 @@
-Example Instructional Prefix: List the entities in [PERSON, LOCATION, ORGANIZATION] in the given text. 
+Example Instructional Prefix: List the entities in [Person:Per, Location:Loc, Organization:Org] in the given text. Person:Per includes human names. Location:Loc includes countries, cities, states, provinces, counties, and geographical locations. Organization:Org includes groups, communities, companies, corportions, clubs, institutions, and teams.
 
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
 Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]

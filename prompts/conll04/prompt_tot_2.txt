@@ -1,4 +1,4 @@
-Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] based on the given text and provide a confidence level (sure/likely/impossible).
+Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] based on the given text and provide a confidence level (yes/likely/no).
 
 TEXT: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
 "OrgBased In": []
@@ -7,7 +7,7 @@ TEXT: ` ` If it does not snow , and a lot , within this month we will have no wa
 "Live In": []
 "Kill": []
 Output:
-["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"] sure
+["Bruno Pusterla:Per", "Work For", "Italian Agricultural Confederation:Org"] yes
 
 TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
 "OrgBased In": [["Institute of Zoology:Org", "Kunming:Loc"]]
@@ -16,8 +16,8 @@ TEXT: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that p
 "Live In": [["Shi Liming:Per", "Kunming:Loc"]]
 "Kill": []
 Output:
-["Shi Liming:Per", "Work For", "Institute of Zoology:Org"] sure
-["Institute of Zoology:Org", "OrgBased In", "Kunming:Loc"] sure
+["Shi Liming:Per", "Work For", "Institute of Zoology:Org"] yes
+["Institute of Zoology:Org", "OrgBased In", "Kunming:Loc"] yes
 ["Shi Liming:Per", "Live In", "Kunming:Loc"] likely
 
 TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
@@ -27,9 +27,9 @@ TEXT: 'The viewers of " JFK " and " The Men Who Killed Kennedy " never learn abo
 "Live In": []
 "Kill": [["Oswald:Per", "President Kennedy:Per"], ["Oswald:Per", "Officer Tippit:Per"], ["President Kennedy:Per", "Officer Tippit:Per"]]
 Output:
-["Oswald:Per", "Kill", "President Kennedy:Per"] sure 
-["Oswald:Per", "Kill", "Officer Tippit:Per"] sure
-["President Kennedy:Per", "Kill", "Officer Tippit:Per"] impossible
+["Oswald:Per", "Kill", "President Kennedy:Per"] yes 
+["Oswald:Per", "Kill", "Officer Tippit:Per"] yes
+["President Kennedy:Per", "Kill", "Officer Tippit:Per"] no
 
 TEXT: PURCHASE , N.Y .
 "OrgBased In": []
@@ -38,8 +38,8 @@ TEXT: PURCHASE , N.Y .
 "Live In": []
 "Kill": []
 Output:
-["PURCHASE:Loc", "Located In", "N.Y .:Loc"] sure
-["N.Y .:Loc", "Located In", "PURCHASE:Loc"] impossible
+["PURCHASE:Loc", "Located In", "N.Y .:Loc"] yes
+["N.Y .:Loc", "Located In", "PURCHASE:Loc"] no
 
 TEXT: BELGRADE , Yugoslavia ( AP )
 "OrgBased In": [["AP:Org", "BELGRADE:Loc"], ["AP:Org", "Yugoslavia:Loc"]]
@@ -48,10 +48,10 @@ TEXT: BELGRADE , Yugoslavia ( AP )
 "Live In": []
 "Kill": []
 Output:
-["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"] sure
-["AP:Org", "OrgBased In", "BELGRADE:Loc"] sure
-["AP:Org", "OrgBased In", "Yugoslavia:Loc"] sure
-["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] impossible
+["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"] yes
+["AP:Org", "OrgBased In", "BELGRADE:Loc"] yes
+["AP:Org", "OrgBased In", "Yugoslavia:Loc"] yes
+["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] no
 
 TEXT: Rome is in Lazio province and Naples in Campania .
 "OrgBased In": [["Rome:Loc", "Lazio:Loc"], ["Lazio:Loc", "Rome:Loc"], ["Naples:Loc", "Campania:Loc"], ["Campania:Loc", "Naples:Loc"], ["Rome:Loc", "Campania:Loc"], ["Campania:Loc", "Rome:Loc"]]
@@ -60,12 +60,12 @@ TEXT: Rome is in Lazio province and Naples in Campania .
 "Live In": []
 "Kill": []
 Output:
-["Rome:Loc", "Located In", "Lazio:Loc"] sure
-["Naples:Loc", "Located In", "Campania:Loc"] sure
-["Lazio:Loc", "Located In", "Rome:Loc"] sure
-["Campania:Loc", "Located In", "Naples:Loc"] sure
-["Rome:Loc", "Located In", "Campania:Loc"] impossible
-["Campania:Loc", "Located In", "Rome:Loc"] impossible
+["Rome:Loc", "Located In", "Lazio:Loc"] yes
+["Naples:Loc", "Located In", "Campania:Loc"] yes
+["Lazio:Loc", "Located In", "Rome:Loc"] yes
+["Campania:Loc", "Located In", "Naples:Loc"] yes
+["Rome:Loc", "Located In", "Campania:Loc"] no
+["Campania:Loc", "Located In", "Rome:Loc"] no
 
 TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
 "OrgBased In": []
@@ -74,7 +74,7 @@ TEXT: ( By ITAR-TASS correspondent Mikhail Shevtsov )
 "Live In": []
 "Kill": []
 Output:
-["Mikhail Shevtsov:Per", "Work For", "ITAR-TASS:Org"] sure
+["Mikhail Shevtsov:Per", "Work For", "ITAR-TASS:Org"] yes
 
 TEXT: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
 "OrgBased In": [["Group of Rio:Org", "Haiti:Loc"]]
@@ -83,9 +83,9 @@ TEXT: In the communique , the Group of Rio states that " the Haitian crisis can 
 "Live In": [["Jean Bertrand Aristide:Per", "Haiti:Loc"]]
 "Kill": []
 Output:
-["Group of Rio:Org", "OrgBased In", "Haiti:Loc"] impossible
-["Jean Bertrand Aristide:Per", "Work For", "Group of Rio:Org"] impossible
-["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"] sure
+["Group of Rio:Org", "OrgBased In", "Haiti:Loc"] no
+["Jean Bertrand Aristide:Per", "Work For", "Group of Rio:Org"] no
+["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"] yes
 
 TEXT: Moscow ITAR-TASS
 "OrgBased In": [["ITAR-TASS:Org", "Moscow:Loc"]]
@@ -94,7 +94,7 @@ TEXT: Moscow ITAR-TASS
 "Live In": []
 "Kill": []
 Output:
-["ITAR-TASS:Org", "OrgBased In", "Moscow:Loc"] sure
+["ITAR-TASS:Org", "OrgBased In", "Moscow:Loc"] yes
 
 TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
 "OrgBased In": []
@@ -103,10 +103,10 @@ TEXT: King rose to prominence after Mrs. Parks ' action in December 1955 in Mont
 "Live In": [["Mrs. Parks:Per", "Montgomery:Loc"], ["Mrs. Parks:Per", "Ala.:Loc"]]
 "Kill": []
 Output:
-["Montgomery:Loc", "Located In", "Ala.:Loc"] sure
-["Ala.:Loc", "Located In", "Montgomery:Loc"] impossible
-["Mrs. Parks:Per", "Live In", "Montgomery:Loc"] sure
-["Mrs. Parks:Per", "Live In", "Ala.:Loc"] sure
+["Montgomery:Loc", "Located In", "Ala.:Loc"] yes
+["Ala.:Loc", "Located In", "Montgomery:Loc"] no
+["Mrs. Parks:Per", "Live In", "Montgomery:Loc"] yes
+["Mrs. Parks:Per", "Live In", "Ala.:Loc"] yes
 
 TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
 "OrgBased In": []
@@ -115,8 +115,8 @@ TEXT: Sirhan says he was the lone assassin but can 't remember shooting Kennedy 
 "Live In": []
 "Kill": [["Sirhan:Per", "Kennedy:Per"], ["Kennedy:Per", "Sirhan:Per"]]
 Output:
-["Sirhan:Per", "Kill", "Kennedy:Per"] sure
-["Kennedy:Per", "Kill", "Sirhan:Per"] impossible
+["Sirhan:Per", "Kill", "Kennedy:Per"] yes
+["Kennedy:Per", "Kill", "Sirhan:Per"] no
 
 TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
 "OrgBased In": []
@@ -125,8 +125,8 @@ TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to 
 "Live In": []
 "Kill": []
 Output:
-["Colorado:Loc", "Located In", "Denver:Loc"] sure
-["Denver:Loc", "Located In", "Colorado:Loc"] impossible
+["Colorado:Loc", "Located In", "Denver:Loc"] yes
+["Denver:Loc", "Located In", "Colorado:Loc"] no
 
 TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
 "OrgBased In": []
@@ -135,12 +135,12 @@ TEXT: Edward Marks , an official with the Montgomery County Democratic Party , a
 "Live In": []
 "Kill": [["Edward Marks:Per", "Ms. Toth:Per"], ["Ms. Toth:Per", "Edward Marks:Per"]]
 Output:
-["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"] sure
-["Ms. Toth:Per", "Work For", "Montgomery County Democratic Party:Org"] impossible
-["Edward Marks:Per", "Kill", "Ms. Toth:Per"] impossible
-["Ms. Toth:Per", "Kill", "Edward Marks:Per"] impossible
+["Edward Marks:Per", "Work For", "Montgomery County Democratic Party:Org"] yes
+["Ms. Toth:Per", "Work For", "Montgomery County Democratic Party:Org"] no
+["Edward Marks:Per", "Kill", "Ms. Toth:Per"] no
+["Ms. Toth:Per", "Kill", "Edward Marks:Per"] no
 
-Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] based on the given text and provide a confidence level (sure/likely/impossible).
+Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] based on the given text and provide a confidence level (yes/likely/no).
 
 TEXT: $TEXT$
 Output:

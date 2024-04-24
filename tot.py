@@ -117,7 +117,7 @@ def get_response_from_llm(args):
         sure_likely_response_list = []
         # classify each relation in current response, by sure/likely, and parse
         for relation_rating in relation_rating_list:
-            sure_start = relation_rating.find('sure')
+            sure_start = relation_rating.find('yes')
             likely_start = relation_rating.find('likely')
             
             if sure_start >= 1:
@@ -171,7 +171,7 @@ def get_response_from_llm(args):
         })
 
         os.makedirs('outputs', exist_ok=True) 
-        with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_{scope}.json', 'w') as json_file:
+        with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_{scope}_{args.suffix}.json', 'w') as json_file:
             json.dump(output, json_file)
 
     # return output
@@ -192,6 +192,7 @@ if __name__ == "__main__":
     parser.add_argument('--is_val', action='store_true')
     # parser.add_argument('--is_cot', action='store_true')
     parser.add_argument('--test_k', type=int, default=-1)
+    parser.add_argument('--suffix', type=str, default='')
 
     args = parser.parse_args()
 

@@ -164,11 +164,11 @@ def compute_metrics(counter):
 
     pc_list = {r: counter[r]['hit'] / counter[r]['num_pred'] if counter[r]['num_pred'] else 0 for r in counter}
     micro_pc = np.mean(list(pc_list.values()))
-    macro_pc = sum([counter[r]['hit'] for r in counter]) / sum([counter[r]['num_pred'] for r in counter])
+    macro_pc = sum([counter[r]['hit'] for r in counter]) / temp if (temp := sum([counter[r]['num_pred'] for r in counter])) != 0 else 0
     
     rc_list = {r: counter[r]['hit'] / counter[r]['num_true'] if counter[r]['num_true'] else 0 for r in counter}
     micro_rc = np.mean(list(rc_list.values()))
-    macro_rc = sum([counter[r]['hit'] for r in counter]) / sum([counter[r]['num_true'] for r in counter])
+    macro_rc = sum([counter[r]['hit'] for r in counter]) / temp if (temp := sum([counter[r]['num_true'] for r in counter])) != 0 else 0
     
     f1_list = {r: compute_f1(pc_list[r], rc_list[r]) for r in counter}
     micro_f1 = np.mean([compute_f1(pc_list[r], rc_list[r]) for r in counter])
