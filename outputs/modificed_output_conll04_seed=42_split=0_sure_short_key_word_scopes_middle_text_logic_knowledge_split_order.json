@@ -8795,8 +8795,33 @@
             "true": [
                 [
                     "brigham young:per",
+                    "work for",
+                    "mormon:org"
+                ],
+                [
+                    "mormon:org",
+                    "orgbased in",
+                    "whitingham:loc"
+                ],
+                [
+                    "mormon:org",
+                    "orgbased in",
+                    "vt.:loc"
+                ],
+                [
+                    "brigham young:per",
                     "live in",
-                    "whitingham, vt:loc"
+                    "whitingham:loc"
+                ],
+                [
+                    "brigham young:per",
+                    "live in",
+                    "vt.:loc"
+                ],
+                [
+                    "whitingham:loc",
+                    "located in",
+                    "vt.:loc"
                 ]
             ],
             "pred": [
@@ -8862,7 +8887,17 @@
                 [
                     "jesse owens:per",
                     "live in",
-                    "danville, ala.:loc"
+                    "danville:loc"
+                ],
+                [
+                    "jesse owens:per",
+                    "live in",
+                    "ala.:loc"
+                ],
+                [
+                    "danville:loc",
+                    "located in",
+                    "ala.:loc"
                 ]
             ],
             "pred": [
@@ -8918,7 +8953,17 @@
                 [
                     "james garfield:per",
                     "live in",
-                    "orange, ohio:loc"
+                    "united states:loc"
+                ],
+                [
+                    "james garfield:per",
+                    "live in",
+                    "orange:loc"
+                ],
+                [
+                    "james garfield:per",
+                    "live in",
+                    "ohio:loc"
                 ]
             ],
             "pred": [
@@ -9007,7 +9052,12 @@
                 [
                     "john deere:per",
                     "live in",
-                    "rutland, vt.:loc"
+                    "rutland:loc"
+                ],
+                [
+                    "john deere:per",
+                    "live in",
+                    "vt.:loc"
                 ]
             ],
             "pred": [
@@ -9058,7 +9108,27 @@
                 [
                     "ulysses s. grant:per",
                     "live in",
-                    "point pleasant, ohio:loc"
+                    "united states:loc"
+                ],
+                [
+                    "point pleasant:loc",
+                    "located in",
+                    "united states:loc"
+                ],
+                [
+                    "point pleasant:loc",
+                    "located in",
+                    "ohio:loc"
+                ],
+                [
+                    "ohio:loc",
+                    "located in",
+                    "united states:loc"
+                ],
+                [
+                    "ohio:loc",
+                    "located in",
+                    "point pleasant:loc"
                 ]
             ],
             "pred": [
@@ -9096,7 +9166,17 @@
                 [
                     "james monroe:per",
                     "live in",
-                    "westmoreland county,virginia:loc"
+                    "united states:loc"
+                ],
+                [
+                    "james monroe:per",
+                    "live in",
+                    "westmoreland county:loc"
+                ],
+                [
+                    "james monroe:per",
+                    "live in",
+                    "virginia:loc"
                 ]
             ],
             "pred": [
@@ -9168,6 +9248,16 @@
                     "rev. jesse jackson:per",
                     "live in",
                     "south carolina:loc"
+                ],
+                [
+                    "rev. jesse jackson:per",
+                    "work for",
+                    "fema:org"
+                ],
+                [
+                    "fema:org",
+                    "orgbased in",
+                    "south carolina:loc"
                 ]
             ],
             "pred": [
@@ -9213,7 +9303,17 @@
                 [
                     "martin van buren:per",
                     "live in",
-                    "kinderhook, n.y.:loc"
+                    "kinderhook:loc"
+                ],
+                [
+                    "wolfgang amadeus mozart:per",
+                    "live in",
+                    "vienna:loc"
+                ],
+                [
+                    "kinderhook:loc",
+                    "located in",
+                    "n.y.:loc"
                 ]
             ],
             "pred": [
@@ -9270,6 +9370,11 @@
                     "bob dylan:per",
                     "live in",
                     "duluth:loc"
+                ],
+                [
+                    "bob dylan:per",
+                    "live in",
+                    "hibbing:loc"
                 ]
             ],
             "pred": [
@@ -9302,7 +9407,17 @@
                 [
                     "andrew jackson:per",
                     "live in",
-                    "waxhaw, s.c.:loc"
+                    "united states:loc"
+                ],
+                [
+                    "andrew jackson:per",
+                    "live in",
+                    "waxhaw:loc"
+                ],
+                [
+                    "andrew jackson:per",
+                    "live in",
+                    "s.c.:loc"
                 ]
             ],
             "pred": [
@@ -9330,7 +9445,17 @@
                 [
                     "benjamin harrison:per",
                     "live in",
-                    "north bend, ohio:loc"
+                    "united states:loc"
+                ],
+                [
+                    "benjamin harrison:per",
+                    "live in",
+                    "north bend:loc"
+                ],
+                [
+                    "benjamin harrison:per",
+                    "live in",
+                    "ohio:loc"
                 ]
             ],
             "pred": [
@@ -9358,7 +9483,12 @@
                 [
                     "oliver hazard perry:per",
                     "live in",
-                    "south kingstown, r.i.:loc"
+                    "south kingstown:loc"
+                ],
+                [
+                    "south kingstown:loc",
+                    "located in",
+                    "r.i.:loc"
                 ]
             ],
             "pred": [
@@ -9393,7 +9523,17 @@
                 [
                     "james garfield:per",
                     "live in",
-                    "orange, ohio:loc"
+                    "united states:loc"
+                ],
+                [
+                    "james garfield:per",
+                    "live in",
+                    "orange:loc"
+                ],
+                [
+                    "james garfield:per",
+                    "live in",
+                    "ohio:loc"
                 ]
             ],
             "pred": [
@@ -9419,9 +9559,19 @@
             "text": "Photo, COLOR, The father of our 34th President was working as a railroad laborer when his son Dwight D. Eisenhower was born on Oct. 14, 1890, in a modest two-story frame house in Denison, Tex.",
             "true": [
                 [
+                    "denison:loc",
+                    "located in",
+                    "tex:loc"
+                ],
+                [
                     "dwight d. eisenhower:per",
                     "live in",
-                    "denison, tex:loc"
+                    "denison:loc"
+                ],
+                [
+                    "dwight d. eisenhower:per",
+                    "live in",
+                    "tex:loc"
                 ]
             ],
             "pred": [
@@ -9449,12 +9599,27 @@
                 [
                     "bette davis:per",
                     "live in",
-                    "lowell, mass:loc"
+                    "lowell:loc"
+                ],
+                [
+                    "bette davis:per",
+                    "live in",
+                    "mass:loc"
                 ],
                 [
                     "ruth elizabeth davis:per",
                     "live in",
-                    "lowell, mass:loc"
+                    "lowell:loc"
+                ],
+                [
+                    "ruth elizabeth davis:per",
+                    "live in",
+                    "mass:loc"
+                ],
+                [
+                    "lowell:loc",
+                    "located in",
+                    "mass:loc"
                 ]
             ],
             "pred": [
@@ -9494,6 +9659,11 @@
         "5413": {
             "text": "The House voted Thursday to withdraw a grant to develop bandleader Lawrence Welk's North Dakota hometown, a rural development project that became a symbol for wasteful government spending last fall.",
             "true": [
+                [
+                    "lawrence welk:per",
+                    "live in",
+                    "north dakota:loc"
+                ],
                 [
                     "lawrence welk:per",
                     "live in",
