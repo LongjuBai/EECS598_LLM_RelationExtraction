@@ -4,10 +4,13 @@ import json
 import os
 from tqdm import tqdm
 import argparse
+import shutil
 
 
 def get_response_from_llm(args):
     dataset = args.dataset
+    out_dir = os.path.join(f'outputs/{args.suffix}')
+    os.makedirs(out_dir, exist_ok=True) 
 
     # load prompt
     prompt_file_path_1 = os.path.join('prompts', dataset, 'prompt_tot_1.txt')
@@ -89,12 +92,12 @@ def get_response_from_llm(args):
         relation_prompt_string_dict[id] = relation_prompt_string
     
     # save the entity output
-    os.makedirs('outputs', exist_ok=True) 
-    with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_entity_{args.suffix}.json', 'w') as json_file:
+    with open(os.path.join(out_dir, f'output_{dataset}_seed={args.seed}_split={args.split}_entity.json'), 'w') as json_file:
         json.dump({
             'raw_entity_output': responses_entity_extraction,
             'logic_processed_output': relation_prompt_string_dict
         }, json_file)
+    shutil.copy2(prompt_file_path_1, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
     responses_relation_rating = run_llm_relation(relation_prompt_string_dict, args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_2, test_data)
@@ -170,9 +173,9 @@ def get_response_from_llm(args):
             'error_cases': error_cases_list[list_num]
         })
 
-        os.makedirs('outputs', exist_ok=True) 
-        with open(f'outputs/output_{dataset}_seed={args.seed}_split={args.split}_{scope}_{args.suffix}.json', 'w') as json_file:
+        with open(os.path.join(out_dir, f'output_{dataset}_seed={args.seed}_split={args.split}_{scope}.json'), 'w') as json_file:
             json.dump(output, json_file)
+        shutil.copy2(prompt_file_path_2, out_dir)
 
     # return output
 
@@ -190,7 +193,6 @@ if __name__ == "__main__":
     parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--split', type=int, default=0)
     parser.add_argument('--is_val', action='store_true')
-    # parser.add_argument('--is_cot', action='store_true')
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--suffix', type=str, default='')
 

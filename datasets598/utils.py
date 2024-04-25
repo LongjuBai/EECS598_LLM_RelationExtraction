@@ -3,6 +3,8 @@ import os
 from unidecode import unidecode
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 
+DIR = os.path.dirname(__file__)
+
 
 def detokenize(tokens):
     return TreebankWordDetokenizer().detokenize(tokens)
@@ -43,14 +45,14 @@ class Dataset():
 
 
 def load_ade(split=0):
-    path = f'datasets598/ade/preprocessed_{split}.json'
+    path = os.path.join(DIR, f'ade/preprocessed_{split}.json')
     if os.path.exists(path):
         return json.load(open(path))
     entities_all = ['Drug', 'Adverse-Effect']
     relations_all = ['Adverse-Effect']
     output = {'entities': entities_all, 'relations': relations_all, 'train': {}, 'test': {}, 'val': {}}
     for part in ['train', 'test']:
-        samples = json.load(open(f'datasets598/ade/ade_split_{split}_{part}.json'))
+        samples = json.load(open(os.path.join(DIR, f'ade/ade_split_{split}_{part}.json')))
         for sample in samples:
             text, entities, relations = sample['tokens'], sample['entities'], sample['relations']
             relations_new = []
@@ -69,14 +71,14 @@ def load_ade(split=0):
 
 
 def load_conll04():
-    path = 'datasets598/conll04/preprocessed.json'
+    path = os.path.join(DIR, 'conll04/preprocessed.json')
     if os.path.exists(path):
         return json.load(open(path))
-    entity_dict = {'Loc': 'Loc', 'Org': 'Org', 'Peop': 'Per', 'Other': 'Other'}
+    entity_dict = {'Loc': 'Loc', 'Org': 'Org', 'Peop': 'Per'} # No 'Other'
     relation_dict = {'Work_For': 'Work For', 'Kill': 'Kill', 'OrgBased_In': 'OrgBased In', 'Live_In': 'Live In', 'Located_In': 'Located In'} 
     output = {'entities': list(entity_dict.values()), 'relations': list(relation_dict.values()), 'train': {}, 'test': {}, 'val': {}}
     for part in ['train', 'test', 'val']:
-        samples = json.load(open(f"datasets598/conll04/conll04_{part if part != 'val' else 'dev'}.json"))
+        samples = json.load(open(os.path.join(DIR, f"conll04/conll04_{part if part != 'val' else 'dev'}.json")))
         for sample in samples:
             text, entities, relations = sample['tokens'], sample['entities'], sample['relations']
             relations_new = []
@@ -96,14 +98,14 @@ def load_conll04():
 
 
 def load_nyt():
-    path = 'datasets598/nyt/preprocessed.json'
+    path = os.path.join(DIR, 'nyt/preprocessed.json')
     if os.path.exists(path):
         return json.load(open(path))
     entity_dict = {'LOCATION': 'Loc', 'ORGANIZATION': 'Org', 'PERSON': 'Per'}
-    relations_all = [r for r in json.load(open('datasets598/nyt/relations2id.json')).keys() if r != 'None']
+    relations_all = [r for r in json.load(open(os.path.join(DIR, 'nyt/relations2id.json'))).keys() if r != 'None']
     output = {'entities': list(entity_dict.values()), 'relations': relations_all, 'train': {}, 'test': {}, 'val': {}}
     for part in ['train', 'test', 'val']:
-        with open(f"datasets598/nyt/raw_{part if part != 'val' else 'valid'}.json") as f:
+        with open(os.path.join(DIR, f"nyt/raw_{part if part != 'val' else 'valid'}.json")) as f:
             for i, line in enumerate(f.readlines()):
                 sample = json.loads(line)
                 text, entities, relations = sample['sentText'], sample['entityMentions'], sample['relationMentions']
