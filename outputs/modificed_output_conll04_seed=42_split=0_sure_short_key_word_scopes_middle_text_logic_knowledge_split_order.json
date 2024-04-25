@@ -4061,7 +4061,22 @@
             "text": "Also on the GOP ballot are insurance broker David Fleischer and former North Miami Mayor John Stembridge.",
             "true": [
                 [
+                    "david fleischer:per",
+                    "work for",
+                    "gop:org"
+                ],
+                [
+                    "john stembridge:per",
+                    "work for",
+                    "gop:org"
+                ],
+                [
                     "john stembridge.:per",
+                    "live in",
+                    "north miami:loc"
+                ],
+                [
+                    "john stembridge:per",
                     "live in",
                     "north miami:loc"
                 ]
@@ -4137,9 +4152,9 @@
                     "port arthur:loc"
                 ],
                 [
-                    "malcolm grant:per",
-                    "live in",
-                    "port arthur.:loc"
+                    "sabine pass:loc",
+                    "located in",
+                    "port arthur:loc"
                 ]
             ],
             "pred": [
@@ -4315,6 +4330,11 @@
                     "branstad:per",
                     "work for",
                     "national governors' association:org"
+                ],
+                [
+                    "national governors' association:org",
+                    "orgbased in",
+                    "washington:loc"
                 ]
             ],
             "pred": [
@@ -4371,6 +4391,11 @@
                     "javier perez de cuellar.:per",
                     "work for",
                     "u.n.:org"
+                ],
+                [
+                    "hun sen:per",
+                    "live in",
+                    "cambodian:loc"
                 ]
             ],
             "pred": [
@@ -4495,7 +4520,17 @@
                     "seoul:loc",
                     "located in",
                     "south korea.:loc"
-                ]
+                ],
+                [
+                    "u.s. district court:org",
+                    "orgbased in",
+                    "anchorage:loc"
+                ],
+                [
+                    "u.s. district court:org",
+                    "orgbased in",
+                    "alaska:loc"
+                ],
             ],
             "pred": [
                 [
@@ -4561,6 +4596,11 @@
                     "joseph r. biden:per",
                     "work for",
                     "senate judiciary committee:org"
+                ],
+                [
+                    "joseph r. biden:per",
+                    "work for",
+                    "d-del.:org"
                 ]
             ],
             "pred": [
@@ -4598,6 +4638,11 @@
         "2308": {
             "text": "The Revolutionary Justice Organization announced Cicippio's reprieve in a 13-line handwritten statement in Arabic delivered to the independent Beirut newspaper An-Nahar.",
             "true": [
+                [
+                    "cicippio:per",
+                    "work for",
+                    "revolutionary justice organization:org"
+                ],
                 [
                     "an-nahar.:org",
                     "orgbased in",
@@ -4649,6 +4694,16 @@
                 [
                     "the associated press:org",
                     "orgbased in",
+                    "middle east:loc"
+                ],
+                [
+                    "anderson:per",
+                    "live in",
+                    "beirut:loc"
+                ],
+                [
+                    "beirut:loc",
+                    "located in",
                     "middle east:loc"
                 ]
             ],
@@ -4711,6 +4766,16 @@
                     "wyatt mccauley:per",
                     "work for",
                     "ch2m hill:org"
+                ],
+                [
+                    "ch2m hill:org",
+                    "orgbased in",
+                    "denver:loc"
+                ],
+                [
+                    "wyatt mccauley:per",
+                    "live in",
+                    "denver:loc"
                 ]
             ],
             "pred": [
@@ -4738,17 +4803,17 @@
                 [
                     "houston:loc",
                     "located in",
-                    "texas.:loc"
+                    "texas:loc"
                 ],
                 [
                     "ellington air force base:loc",
                     "located in",
-                    "texas.:loc"
+                    "texas:loc"
                 ],
                 [
                     "galveston:loc",
                     "located in",
-                    "texas.:loc"
+                    "texas:loc"
                 ]
             ],
             "pred": [
@@ -4805,6 +4870,21 @@
                     "ogdon:per",
                     "work for",
                     "manygate management:org"
+                ],
+                [
+                    "manygate management:org",
+                    "orgbased in",
+                    "london:loc"
+                ],
+                [
+                    "ogdon:per",
+                    "live in",
+                    "london:loc"
+                ],
+                [
+                    "charing cross hospital:org",
+                    "orgbased in",
+                    "london:loc"
                 ]
             ],
             "pred": [
@@ -5004,6 +5084,16 @@
                     "greg thayer:per",
                     "work for",
                     "u.s. forest service.:org"
+                ],
+                [
+                    "u.s. forest service:org",
+                    "orgbased in",
+                    "washington:loc"
+                ],
+                [
+                    "greg thayer:per",
+                    "live in",
+                    "washington:loc"
                 ]
             ],
             "pred": [
@@ -5143,7 +5233,12 @@
                 [
                     "jeff widener:per",
                     "work for",
-                    "ap:org"
+                    "ap laserphoto:org"
+                ],
+                [
+                    "jeff widener:per",
+                    "live in",
+                    "bangkok:loc"
                 ]
             ],
             "pred": [
@@ -5372,6 +5467,11 @@
                     "cincinnati:loc",
                     "located in",
                     "ohio:loc"
+                ],
+                [
+                    "lawrence kane jr.:per",
+                    "live in",
+                    "cincinnati:loc"
                 ]
             ],
             "pred": [
@@ -5404,7 +5504,7 @@
                 [
                     "jean-luckenson:per",
                     "work for",
-                    "signal fm.:org"
+                    "signal fm:org"
                 ]
             ],
             "pred": [
@@ -5695,6 +5795,16 @@
                     "bta:org",
                     "orgbased in",
                     "sofia:loc"
+                ],
+                [
+                    "bsp:org",
+                    "orgbased in",
+                    "bosnia:loc"
+                ],
+                [
+                    "sds:org",
+                    "orgbased in",
+                    "bosnia:loc"
                 ]
             ],
             "pred": [
@@ -5956,6 +6066,11 @@
                     "john savage:per",
                     "live in",
                     "nova scotia:loc"
+                ],
+                [
+                    "ricardo cabrisas:per",
+                    "live in",
+                    "cuba:loc"
                 ]
             ],
             "pred": [
@@ -6014,6 +6129,16 @@
                     "miguel rodriguez mendoza:per",
                     "work for",
                     "ice:org"
+                ],
+                [
+                    "miguel rodriguez mendoza:per",
+                    "live in",
+                    "venezuela:loc"
+                ],
+                [
+                    "ice:org",
+                    "orgbased in",
+                    "venezuela:loc"
                 ]
             ],
             "pred": [
@@ -6093,6 +6218,11 @@
                     "efe:org",
                     "orgbased in",
                     "santiago:loc"
+                ],
+                [
+                    "finandes:org",
+                    "located in",
+                    "valparaiso:loc"
                 ]
             ],
             "pred": [
@@ -6549,6 +6679,11 @@
                     "ldp:org"
                 ],
                 [
+                    "ldp:org",
+                    "orgbased in",
+                    "nonsan county:loc"
+                ],
+                [
                     "kim pom-myon:per",
                     "live in",
                     "nonsan county:loc"
@@ -6656,6 +6791,16 @@
                     "ernesto zedillo ponce de leon:per",
                     "work for",
                     "pri:org"
+                ],
+                [
+                    "pri:org",
+                    "orgbased in",
+                    "valley of mexico:loc"
+                ],
+                [
+                    "ernesto zedillo ponce de leon:per",
+                    "live in",
+                    "valley of mexico:loc"
                 ]
             ],
             "pred": [
@@ -6815,6 +6960,16 @@
                     "kim hyong-ki:per",
                     "work for",
                     "nub:org"
+                ],
+                [
+                    "nub:org",
+                    "orgbased in",
+                    "north korea:loc"
+                ],
+                [
+                    "kim hyong-ki:per",
+                    "live in",
+                    "north korea:loc"
                 ]
             ],
             "pred": [
@@ -7022,6 +7177,21 @@
                     "viktor posuvalyuk:per",
                     "work for",
                     "russian foreign ministry:org"
+                ],
+                [
+                    "russian foreign ministry:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "itar-tass:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "viktor posuvalyuk:per",
+                    "live in",
+                    "moscow:loc"
                 ]
             ],
             "pred": [
@@ -7060,6 +7230,16 @@
                     "sergey rogov:per",
                     "work for",
                     "center for problems of national security and international relations:org"
+                ],
+                [
+                    "center for problems of national security and international relations:org",
+                    "orgbased in",
+                    "russia:loc"
+                ],
+                [
+                    "sergey rogov:per",
+                    "live in",
+                    "russia:loc"
                 ]
             ],
             "pred": [
@@ -7104,6 +7284,11 @@
         "4517": {
             "text": "(Text) Chisinau BASAPRESS, 23 5 1994--President Mircea Snegur's decision to join the governing party, the Agrarian Democratic Party of Moldova (PDAM), reveals unsteadiness in his political views, declared to BASA Valentin Krylov, a leader of the Socialist Party.",
             "true": [
+                [
+                    "mircea snegur:per",
+                    "work for",
+                    "agrarian democratic party of moldova (pdam):org"
+                ],
                 [
                     "valentin krylov:per",
                     "work for",
@@ -7364,6 +7549,11 @@
                     "sirhan bishara sirhan:per",
                     "kill",
                     "sen. robert f. kennedy:per"
+                ],
+                [
+                    "good samaritan hospital:org",
+                    "orgbased in",
+                    "los angeles:loc"
                 ]
             ],
             "pred": [
@@ -7741,6 +7931,11 @@
                     "lee harvard oswald:per",
                     "kill",
                     "president john f. kennedy:per"
+                ],
+                [
+                    "lee harvey oswald:per",
+                    "work for",
+                    "texas school book depository:org"
                 ]
             ],
             "pred": [
@@ -7765,6 +7960,11 @@
         "5080": {
             "text": "A long, long time.' ' _ Dallas resident Danny Veno, on his visit to the spot from which Lee Harvey Oswald allegedly shot President Kennedy, which has been turned into a museum.",
             "true": [
+                [
+                    "danny veno:per",
+                    "live in",
+                    "dallas:loc"
+                ],
                 [
                     "lee harvey oswald:per",
                     "kill",
@@ -7796,7 +7996,12 @@
                 [
                     "sirhan sirhan:per",
                     "kill",
-                    "new york sen. robert f. kennedy:per"
+                    "sen. robert f. kennedy:per"
+                ],
+                [
+                    "sen. robert f. kennedy:per",
+                    "live in",
+                    "new york:loc"
                 ]
             ],
             "pred": [
@@ -7843,6 +8048,11 @@
                     "john wilkes booth:per",
                     "kill",
                     "president abraham lincoln:per"
+                ],
+                [
+                    "president abraham lincoln:per",
+                    "live in",
+                    "d.c.:loc"
                 ]
             ],
             "pred": [
@@ -8153,6 +8363,26 @@
                     "kim jae-kyu:per",
                     "kill",
                     "president park chung-hee:per"
+                ],
+                [
+                    "kim jae-kyu:per",
+                    "work for",
+                    "korean central intelligence agency:org"
+                ],
+                [
+                    "korean central intelligence agency:org",
+                    "orgbased in",
+                    "south korea:loc"
+                ],
+                [
+                    "park chung-hee:per",
+                    "live in",
+                    "south korea:loc"
+                ],
+                [
+                    "kim jae-kyu:per",
+                    "live in",
+                    "south korea:loc"
                 ]
             ],
             "pred": [
@@ -8201,6 +8431,11 @@
                     "mark david chapman:per",
                     "kill",
                     "lennon:per"
+                ],
+                [
+                    "lennon:per",
+                    "live in",
+                    "new york:loc"
                 ]
             ],
             "pred": [
@@ -8239,6 +8474,11 @@
                     "mark david chapman:per",
                     "kill",
                     "lennon:per"
+                ],
+                [
+                    "lennon:per",
+                    "work for",
+                    "beatle:org"
                 ]
             ],
             "pred": [
@@ -8277,6 +8517,11 @@
                     "kleber elias gia bustamante:per",
                     "kill",
                     "jose antonio briz lopez.:per"
+                ],
+                [
+                    "kleber elias gia bustamante:per",
+                    "work for",
+                    "red sun:org"
                 ]
             ],
             "pred": [
@@ -8384,6 +8629,11 @@
                     "sirhan:per",
                     "kill",
                     "kennedy:per"
+                ],
+                [
+                    "markman:per",
+                    "live in",
+                    "israel:loc"
                 ]
             ],
             "pred": [
@@ -8538,6 +8788,11 @@
                     "john wilkes booth:per",
                     "kill",
                     "abraham lincoln:per"
+                ],
+                [
+                    "john wilkes booth:per",
+                    "kill",
+                    "john wilkes booth:per"
                 ]
             ],
             "pred": [
@@ -8557,6 +8812,11 @@
         "5245": {
             "text": "Dole is at an organizational disadvantage in the South but has had his wife, Elizabeth, a native of North Carolina, working the region for him.",
             "true": [
+                [
+                    "dole:per",
+                    "live in",
+                    "north carolina:loc"
+                ],
                 [
                     "elizabeth:per",
                     "live in",
@@ -8583,7 +8843,12 @@
                 [
                     "elizabeth dole:per",
                     "live in",
-                    "salisbury, n.c.:loc"
+                    "salisbury:loc"
+                ],
+                [
+                    "elizabeth dole:per",
+                    "live in",
+                    "north carolina:loc"
                 ]
             ],
             "pred": [
@@ -8655,6 +8920,11 @@
                     "jesse jackson:per",
                     "live in",
                     "south carolina:loc"
+                ],
+                [
+                    "jesse jackson:per",
+                    "work for",
+                    "democratic:org"
                 ]
             ],
             "pred": [
@@ -8693,6 +8963,16 @@
                     "lowell thomas:per",
                     "live in",
                     "woodington, ohio:loc"
+                ],
+                [
+                    "lowell thomas:per",
+                    "live in",
+                    "ohio:loc"
+                ],
+                [
+                    "woodington:loc",
+                    "located in",
+                    "ohio:loc"
                 ]
             ],
             "pred": [
@@ -8721,6 +9001,16 @@
                     "eric sevareid:per",
                     "live in",
                     "velva:loc"
+                ],
+                [
+                    "eric sevareid:per",
+                    "work for",
+                    "cbs news:org"
+                ],
+                [
+                    "velva:loc",
+                    "located in",
+                    "minot:loc"
                 ]
             ],
             "pred": [
