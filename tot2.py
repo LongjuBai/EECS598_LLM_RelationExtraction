@@ -17,7 +17,7 @@ def get_response_from_llm(args):
     prompt_path_entity = os.path.join(prompt_dir, 'prompt_tot_entity.txt')
     with open(prompt_path_entity, 'r') as f:
         prompt_entity = f.read()
-    if args.extract_relation_types:
+    if not args.no_relation_type_extraction:
         prompt_path_relation_type = os.path.join(prompt_dir, 'prompt_tot_relation_type.txt')
         with open(prompt_path_relation_type, 'r') as f:
             prompt_relation_type = f.read()
@@ -43,6 +43,13 @@ def get_response_from_llm(args):
             "Live In": set([("Per", "Loc")]),
             "Located In": set([("Loc", "Loc")])
         }
+        augment_relation_types = {
+            'Work For': 'Work(ed) For',
+            'Kill': 'Kill(ed)',
+            'OrgBased In': 'is(was) OrgBased In',
+            'Live In': 'Live(d) In',
+            'Located In': 'is(was) Located In'
+        }
     elif dataset == 'nyt':
         data = load_nyt()
         test_data = data['val'] if args.is_val else data['test']
@@ -53,16 +60,17 @@ def get_response_from_llm(args):
 
     # get response; {id: response}
     responses_entity = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, test_data)
-    if args.extract_relation_types: 
+    if not args.no_relation_type_extraction: 
         responses_relation_type = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data)
 
     # logic to map the extracted entities / relation types into relations, with the valid type dict
     relation_prompt_string_dict = {} # {id: prompt string for candidate relations}
+    relation_answer_string_dict = {}
     for id, response in responses_entity.items():
 
         # try to parse each response; if fail, pass an empty list
         entity_type_dict = struct_response_entity(response, data['entities'])
-        relation_type_list = struct_response_relation(responses_relation_type[id]) if args.extract_relation_types else data['relations']      
+        relation_type_list = struct_response_relation(responses_relation_type[id]) if not args.no_relation_type_extraction else data['relations']      
 
         # construct relations; {relation type: [[ins1, int2], [ins3, ins4]]}
         relation_type_dict = {}
@@ -83,21 +91,26 @@ def get_response_from_llm(args):
         
         # convert the constructed relations into prompt string
         relation_prompt_string = ''
-        for relation, entity_pair_list in relation_type_dict.items():
-            relation_prompt_string += '\n' + ('"' + relation + '": ') + str(entity_pair_list)
+        relation_answer_string = []
+        for relation_type, entity_pairs in relation_type_dict.items():
+            for entity_pair in entity_pairs:
+                entity_1, entity_2 = entity_pair[0].split(':')[0][1:], entity_pair[1].split(':')[0][1:]
+                relation_prompt_string += f'\nIs the relation "{entity_1} {augment_relation_types[relation_type]} {entity_2}" correct? (Yes/Likely/No)'
+                relation_answer_string.append((entity_pair[0].strip('"').lower(), f'{relation_type}'.lower(), entity_pair[1].strip('"').lower()))
 
         # record to the dictionary
         relation_prompt_string_dict[id] = relation_prompt_string
+        relation_answer_string_dict[id] = relation_answer_string
     
     # save the entity output
     with open(os.path.join(out_dir, f'output_{dataset}_seed={args.seed}_split={args.split}_entity.json'), 'w') as json_file:
         json.dump({
             'raw_entity_output': responses_entity,
-            'raw_relation_type_output': responses_relation_type,
+            # 'raw_relation_type_output': responses_relation_type,
             'logic_processed_output': relation_prompt_string_dict
         }, json_file)
     shutil.copy2(prompt_path_entity, out_dir)
-    if args.extract_relation_types: 
+    if not args.no_relation_type_extraction: 
         shutil.copy2(prompt_path_relation_type, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
@@ -120,27 +133,28 @@ def get_response_from_llm(args):
         sure_response_list = []
         sure_likely_response_list = []
         # classify each relation in current response, by sure/likely, and parse
-        for relation_rating in relation_rating_list:
-            sure_start = relation_rating.find('yes')
-            likely_start = relation_rating.find('likely')
+        for relation_i, relation_rating in enumerate(relation_rating_list):
+            sure_start = relation_rating.find('Yes')
+            likely_start = relation_rating.find('Likely')
             
-            if sure_start >= 1:
+            if sure_start >= 0:
                 try:
-                    string_to_append = tuple(json.loads(relation_rating[:(sure_start-1)].lower()))                    
+                    string_to_append = relation_answer_string_dict[id][relation_i]                     
                     sure_response_list.append(string_to_append)
                     sure_likely_response_list.append(string_to_append)
                 except Exception as e:
-                    print(f'error in try: {e}')
+                    # print(f'error in try: {e}')
                     error_cases_list[0][id] = {'error': str(e)}
-                    print(f'id: {id}, error response: {response}')
-            elif likely_start >= 1:
+                    # print(f'id: {id}, error response: {response}')
+            elif likely_start >= 0:
                 try:
-                    string_to_append = tuple(json.loads(relation_rating[:(likely_start-1)].lower()))
+                    string_to_append = relation_answer_string_dict[id][relation_i]
                     sure_likely_response_list.append(string_to_append)
                 except Exception as e:
-                    print(f'error in try: {e}')
+                    # print(f'error in try: {e}')
                     error_cases_list[1][id] = {'error': str(e)}
-                    print(f'id: {id}, error response: {response}')
+                    # print(f'id: {id}, error response: {response}')
+            
 
         for list_num, pred_list in enumerate([sure_response_list, sure_likely_response_list]):
             pred_set = set(pred_list)
@@ -191,8 +205,8 @@ if __name__ == "__main__":
     parser.add_argument('--temp', type=float, default=0.5)
     parser.add_argument('--max_tokens', type=int, default=256)
     parser.add_argument('--seed', type=int, default=42)
-    parser.add_argument('--extract_relation_types', type=bool, default=True)
-    parser.add_argument('--check_commonsense', type=bool, default=True)
+    parser.add_argument('--no_relation_type_extraction', action='store_true')
+    parser.add_argument('--check_commonsense', action='store_true')
 
     parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--split', type=int, default=0)

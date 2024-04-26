@@ -8,15 +8,30 @@ from tqdm.asyncio import tqdm as tqdm_asyncio
 def dict_first_k(dic, k):
     return {k: v for k, v in zip(list(dic.keys())[:k], list(dic.values())[:k])}
 
-def find_entity_type(s):
-    return s.split(':')[-1][:-1]
 
-def find_entities(s):
+def parse_list_string(s, marks_removed=''):
     start, end = s.find('['), s.find(']')
     if start == -1 or end == -1:
         return []
-    entity_list = s[start+1:end].split(',')
-    return [entity.strip() for entity in entity_list]
+    item_list = s[start+1:end].split(',')
+    return [item.strip().strip(marks_removed) for item in item_list]
+
+
+def struct_response_entity(response, entity_types):
+    def find_entity_type(s):
+        return s.split(':')[-1][:-1]
+    entity_type_dict = {entity_type: [] for entity_type in entity_types}
+    entity_list = parse_list_string(response) # ['"fds:Per"', '"ior:Loc"', '"vio:Org"']
+    for entity in entity_list:
+        entity_type = find_entity_type(entity)
+        if entity_type in entity_type_dict:
+            entity_type_dict[entity_type].append(entity)
+    return entity_type_dict
+
+
+def struct_response_relation(response):
+    relation_list = parse_list_string(response, marks_removed='"') # ['Live In', 'Kill', 'Located In']
+    return relation_list
 
 
 def find_triplets(s):
@@ -81,7 +96,7 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
         loop.close()
     return responses
 
-def run_llm_relation(relation_prompt_string_dict, api_key, is_async, model, temp, max_tokens, seed, prompt, data):
+def run_llm_relation(api_key, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -115,7 +130,7 @@ def run_llm_relation(relation_prompt_string_dict, api_key, is_async, model, temp
                     },
                     {
                         "role": "user", 
-                        "content": f"{prompt.replace('$TEXT$', sample['text'] + 'TEXT: ' + relation_prompt_string)}"
+                        "content": prompt.replace('$TEXT$', sample['text'] + relation_prompt_string)
                     }],
                 temperature=temp,
                 max_tokens=max_tokens,
@@ -125,7 +140,7 @@ def run_llm_relation(relation_prompt_string_dict, api_key, is_async, model, temp
         elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
             completion = client.completions.create(
                 model=model,
-                prompt=prompt.replace('$TEXT$', sample['text'] + 'TEXT: ' + relation_prompt_string),
+                prompt=prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed
