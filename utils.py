@@ -148,10 +148,43 @@ def run_llm_relation(api_key, is_async, model, temp, max_tokens, seed, prompt, d
             return id, completion.choices[0].text
         else:
             raise Exception('Model Not Supported!')
+
+    def llm_worker_multi(relation_prompt_string, id, sample):
+        if model == 'gpt-3.5-turbo-0125':
+            responses = ''
+            for relation in relation_prompt_string:
+                completion = client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge."
+                        },
+                        {
+                            "role": "user", 
+                            "content": prompt.replace('$TEXT$', sample['text'] + relation)
+                        }],
+                    temperature=temp,
+                    max_tokens=max_tokens,
+                    seed=seed
+                )
+                responses += completion.choices[0].message.content + '\n'
+            return id, responses
+        elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
+            completion = client.completions.create(
+                model=model,
+                prompt=prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].text
+        else:
+            raise Exception('Model Not Supported!')
     
     if not is_async:
         client = OpenAI(api_key=api_key)
-        responses = dict([llm_worker(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
+        responses = dict([llm_worker_multi(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
     else:
         client = AsyncOpenAI(api_key=api_key)
         loop = asyncio.get_event_loop()
