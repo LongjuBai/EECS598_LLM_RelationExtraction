@@ -114,7 +114,7 @@ def get_response_from_llm(args):
         shutil.copy2(prompt_path_relation_type, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
-    responses_relation_rating = run_llm_relation(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict)
+    responses_relation_rating = run_llm_relation_multi(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict)
 
     # metrics initialization
     counters = [{r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']} for _ in range(2)]
