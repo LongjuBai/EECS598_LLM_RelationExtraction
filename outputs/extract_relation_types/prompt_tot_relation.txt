@@ -29,7 +29,7 @@ Output:
 TEXT: PURCHASE , N.Y .
 "OrgBased In": []
 "Work For": []
-"Located In": [["PURCHASE:Loc", "N.Y .:Loc"], ["N.Y .:Loc", "PURCHASE:Loc"]]
+"Located In": [["N.Y .:Loc", "PURCHASE:Loc"], ["PURCHASE:Loc", "N.Y .:Loc"]]
 "Live In": []
 "Kill": []
 Output:
@@ -45,10 +45,16 @@ TEXT: BELGRADE , Yugoslavia ( AP )
 Output:
 ["AP:Org", "OrgBased In", "BELGRADE:Loc"] yes
 ["AP:Org", "OrgBased In", "Yugoslavia:Loc"] yes
+<<<<<<< Updated upstream:outputs/extract_relation_types/prompt_tot_relation.txt
 ["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"] yes
 ["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] no
 
 TEXT: Rome is in Lazio province and Naples in Campania .
+=======
+["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] no
+
+
+>>>>>>> Stashed changes:prompts/conll04/prompt_tot_2.txt
 "OrgBased In": []
 "Work For": []
 "Located In": [["Rome:Loc", "Lazio:Loc"], ["Lazio:Loc", "Rome:Loc"], ["Naples:Loc", "Campania:Loc"], ["Campania:Loc", "Naples:Loc"], ["Rome:Loc", "Campania:Loc"], ["Campania:Loc", "Rome:Loc"]]
@@ -58,7 +64,10 @@ Output:
 ["Rome:Loc", "Located In", "Lazio:Loc"] yes
 ["Lazio:Loc", "Located In", "Rome:Loc"] no
 ["Naples:Loc", "Located In", "Campania:Loc"] yes
+<<<<<<< Updated upstream:outputs/extract_relation_types/prompt_tot_relation.txt
 ["Campania:Loc", "Located In", "Naples:Loc"] no
+=======
+>>>>>>> Stashed changes:prompts/conll04/prompt_tot_2.txt
 ["Rome:Loc", "Located In", "Campania:Loc"] no
 ["Campania:Loc", "Located In", "Rome:Loc"] no
 
@@ -81,6 +90,8 @@ Output:
 ["Group of Rio:Org", "OrgBased In", "Haiti:Loc"] no
 ["Jean Bertrand Aristide:Per", "Work For", "Group of Rio:Org"] no
 ["Jean Bertrand Aristide:Per", "Live In", "Haiti:Loc"] yes
+["Group of Rio:Org", "OrgBased In", "Haiti:Loc"] no
+["Jean Bertrand Aristide:Per", "Work For", "Group of Rio:Org"] no
 
 TEXT: Moscow ITAR-TASS
 "OrgBased In": [["ITAR-TASS:Org", "Moscow:Loc"]]
@@ -122,6 +133,7 @@ TEXT: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to 
 Output:
 ["Colorado:Loc", "Located In", "Denver:Loc"] no
 ["Denver:Loc", "Located In", "Colorado:Loc"] yes
+["Colorado:Loc", "Located In", "Denver:Loc"] no
 
 TEXT: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
 "OrgBased In": []
