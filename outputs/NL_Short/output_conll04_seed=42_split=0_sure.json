@@ -1,1 +1,901 @@
-{"micro_pc": 0.3585695006747638, "macro_pc": 0.46153846153846156, "pc_list": {"work for": 0.5, "kill": 0, "orgbased in": 0.5384615384615384, "live in": 0.3333333333333333, "located in": 0.42105263157894735}, "micro_rc": 0.4920634920634921, "macro_rc": 0.5294117647058824, "rc_list": {"work for": 1.0, "kill": 0, "orgbased in": 0.7777777777777778, "live in": 0.1111111111111111, "located in": 0.5714285714285714}, "micro_f1": 0.39090909090909093, "macro_f1": 0.4931506849315069, "f1_list": {"work for": 0.6666666666666666, "kill": 0, "orgbased in": 0.6363636363636364, "live in": 0.16666666666666666, "located in": 0.48484848484848486}, "num_cases": 20, "accuracy": 0.35, "correct_cases": {"17": {"text": "An art exhibit at the Hakawati Theatre in Arab east Jerusalem was a series of portraits of Palestinians killed in the rebellion.", "true": [["hakawati theatre:org", "orgbased in", "jerusalem:loc"]], "pred": [["hakawati theatre:org", "orgbased in", "jerusalem:loc"]], "response": "No\nYes\nNo\n"}, "23": {"text": "PERUGIA, Italy (AP)", "true": [["perugia:loc", "located in", "italy:loc"], ["ap:org", "orgbased in", "perugia:loc"], ["ap:org", "orgbased in", "italy:loc"]], "pred": [["ap:org", "orgbased in", "perugia:loc"], ["ap:org", "orgbased in", "italy:loc"], ["perugia:loc", "located in", "italy:loc"]], "response": "Yes\nYes\nYes\nNo\n"}, "34": {"text": "Reagan sounded positive notes reminiscent of earlier speeches throughout his political career _ the pre-eminent position of ` ` We the People' ' in the American system, the image of America as a shining ` ` city upon a hill,' ' the importance of paying more attention to American history.", "true": [["reagan:per", "live in", "america:loc"]], "pred": [["reagan:per", "live in", "america:loc"]], "response": "Yes\n"}, "92": {"text": "MILAN, Italy (AP)", "true": [["milan:loc", "located in", "italy:loc"], ["ap:org", "orgbased in", "milan:loc"], ["ap:org", "orgbased in", "italy:loc"]], "pred": [["ap:org", "orgbased in", "milan:loc"], ["ap:org", "orgbased in", "italy:loc"], ["milan:loc", "located in", "italy:loc"]], "response": "Yes\nYes\nYes\nNo\n"}, "136": {"text": "Aguadilla, Puerto Rico;", "true": [["aguadilla:loc", "located in", "puerto rico:loc"]], "pred": [["aguadilla:loc", "located in", "puerto rico:loc"]], "response": "Yes\nNo\n"}, "171": {"text": "FRESNO, Calif.", "true": [["fresno:loc", "located in", "calif.:loc"]], "pred": [["fresno:loc", "located in", "calif.:loc"]], "response": "Yes\nNo\n"}, "195": {"text": "Boston University's Michael D. Papagiannis said he believes the crater was created 100 million years ago when a 50-mile-wide meteorite slammed into the Earth.", "true": [["michael d. papagiannis:per", "work for", "boston university:org"]], "pred": [["michael d. papagiannis:per", "work for", "boston university:org"]], "response": "Yes\nNo\nNo\n"}}, "fail_cases": {"35": {"text": "There was no mention of the ` ` iron triangle' ' of members of Congress, the news media and special interest groups who, in a speech to political appointees in Washington on Dec. 13, Reagan claimed had prevented his administration from balancing the federal budget.", "true": [["congress:org", "orgbased in", "washington:loc"]], "pred": [], "response": "No\n"}, "36": {"text": "Nor did he argue, as he did in a speech at the University of Virginia in Charlottesville Dec. 16, that Congress had perpetuated a dangerous situation in Central America by its ` ` on-again, off-again indecisiveness' ' on his program of aid to the anti-communist Contra rebels.", "true": [["university of virginia:org", "orgbased in", "charlottesville:loc"]], "pred": [["contra rebels:org", "orgbased in", "central america:loc"]], "response": "No\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"}, "56": {"text": "Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.", "true": [["wright:per", "work for", "university of texas:org"]], "pred": [["wright:per", "work for", "university of texas:org"], ["nixon:per", "work for", "university of texas:org"]], "response": "Yes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs University of Texas OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Wright Located In University of Texas? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nDoes(Did) Wright work For Nixon? (Yes/Likely/No)\nAnswer:\nYes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Nixon OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"}, "77": {"text": "An enraged Nikita Khrushchev instructed Soviet ships to ignore President Kennedy's naval blockade during the Cuban missile crisis, but the order was reversed just hours before an inevitable confrontation, according to a new book.", "true": [["nikita khrushchev:per", "live in", "soviet:loc"]], "pred": [], "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"}, "79": {"text": "Anastas Mikoyan, then Soviet first deputy premier, was the catalyst for the reversal of Khrushchev's order, according to the authors.", "true": [["anastas mikoyan:per", "live in", "soviet:loc"], ["khrushchev:per", "live in", "soviet:loc"]], "pred": [["anastas mikoyan:per", "work for", "soviet:org"]], "response": "Yes\nNo\nNo\nNo\n"}, "80": {"text": "Mikoyan ` ` preempted Khrushchev's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line,' ' they say.", "true": [["mikoyan:per", "live in", "soviet:loc"], ["khrushchev:per", "live in", "soviet:loc"]], "pred": [], "response": "No\nNo\nNo\nNo\n"}, "89": {"text": "But the authors suggested that Alekseev, along with others in the Soviet diplomatic corps, were not receiving accurate information from Moscow about the missiles.", "true": [["alekseev:per", "live in", "soviet:loc"]], "pred": [], "response": "Likely\nLikely\nNo\n"}, "130": {"text": "Hot Springs National Park, Ark.;", "true": [["hot springs national park:loc", "located in", "ark.:loc"]], "pred": [["hot springs national park:loc", "located in", "ark.:loc"], ["ark.:loc", "located in", "hot springs national park:loc"]], "response": "Yes\nYes\n"}, "138": {"text": "Locations containing suitable federally owned land were listed as: Fort Wainwright annex, Fairbanks, Alaska;", "true": [["fort wainwright annex:loc", "located in", "fairbanks:loc"], ["fort wainwright annex:loc", "located in", "alaska:loc"], ["fairbanks:loc", "located in", "alaska:loc"]], "pred": [["fort wainwright:loc", "located in", "fairbanks:loc"], ["fort wainwright:loc", "located in", "alaska:loc"], ["fairbanks:loc", "located in", "alaska:loc"], ["alaska:loc", "located in", "fairbanks:loc"]], "response": "Yes\nYes\nNo\nYes\nNo\nYes\n"}, "150": {"text": "ATLANTIC CITY, N.J.", "true": [["atlantic city:loc", "located in", "n.j.:loc"]], "pred": [["atlantic city:loc", "located in", "n.j.:loc"], ["n.j.:loc", "located in", "atlantic city:loc"]], "response": "Yes\nYes\n"}, "188": {"text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.", "true": [["bolshoi ballet:org", "orgbased in", "moscow:loc"], ["bolshoi ballet:org", "orgbased in", "moscow:loc"], ["kirov ballet:org", "orgbased in", "leningrad:loc"], ["june anderson:per", "live in", "u.s.:loc"], ["carol vaness:per", "live in", "u.s.:loc"]], "pred": [["bolshoi ballet:org", "orgbased in", "moscow:loc"], ["bolshoi ballet:org", "orgbased in", "yerevan:loc"], ["bolshoi ballet:org", "orgbased in", "u.s.:loc"], ["kirov ballet:org", "orgbased in", "leningrad:loc"], ["kirov ballet:org", "orgbased in", "armenian:loc"], ["kirov ballet:org", "orgbased in", "british:loc"], ["june anderson:per", "live in", "moscow:loc"], ["carol vaness:per", "live in", "yerevan:loc"], ["leningrad:loc", "located in", "armenian:loc"], ["armenian:loc", "located in", "yerevan:loc"], ["british:loc", "located in", "leningrad:loc"]], "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Kirov Ballet base In Leningrad? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Yerevan base In Armenia? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) June Anderson Work For U.S.? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolsh\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"}, "197": {"text": "It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.", "true": [["ostined:loc", "located in", "czechoslovakia:loc"], ["lesny:loc", "located in", "czechoslovakia:loc"], ["liberec:loc", "located in", "czechoslovakia:loc"], ["gmund:loc", "located in", "austria:loc"]], "pred": [["lesny:loc", "located in", "ostined:loc"], ["lesny:loc", "located in", "liberec:loc"], ["austria:loc", "located in", "czechoslovakia:loc"]], "response": "No\nNo\nLikely\n\nGiven the text: It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.\nDoes(Did) Gmund locate In Austria? (Yes/Likely/No)\nAnswer: Yes\nNo\nNo\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"}, "198": {"text": "BONE, Idaho (AP)", "true": [["bone:loc", "located in", "idaho:loc"]], "pred": [["ap:org", "orgbased in", "idaho:loc"], ["bone:loc", "located in", "idaho:loc"]], "response": "No\nYes\nYes\nNo\n"}}, "missing_cases": {"35": [["congress:org", "orgbased in", "washington:loc"]], "36": [["university of virginia:org", "orgbased in", "charlottesville:loc"]], "77": [["nikita khrushchev:per", "live in", "soviet:loc"]], "79": [["anastas mikoyan:per", "live in", "soviet:loc"], ["khrushchev:per", "live in", "soviet:loc"]], "80": [["khrushchev:per", "live in", "soviet:loc"], ["mikoyan:per", "live in", "soviet:loc"]], "89": [["alekseev:per", "live in", "soviet:loc"]], "138": [["fort wainwright annex:loc", "located in", "alaska:loc"], ["fort wainwright annex:loc", "located in", "fairbanks:loc"]], "188": [["carol vaness:per", "live in", "u.s.:loc"], ["june anderson:per", "live in", "u.s.:loc"]], "197": [["gmund:loc", "located in", "austria:loc"], ["lesny:loc", "located in", "czechoslovakia:loc"], ["liberec:loc", "located in", "czechoslovakia:loc"], ["ostined:loc", "located in", "czechoslovakia:loc"]]}, "false_cases": {"36": [["contra rebels:org", "orgbased in", "central america:loc"]], "56": [["nixon:per", "work for", "university of texas:org"]], "79": [["anastas mikoyan:per", "work for", "soviet:org"]], "130": [["ark.:loc", "located in", "hot springs national park:loc"]], "138": [["alaska:loc", "located in", "fairbanks:loc"], ["fort wainwright:loc", "located in", "alaska:loc"], ["fort wainwright:loc", "located in", "fairbanks:loc"]], "150": [["n.j.:loc", "located in", "atlantic city:loc"]], "188": [["armenian:loc", "located in", "yerevan:loc"], ["bolshoi ballet:org", "orgbased in", "u.s.:loc"], ["bolshoi ballet:org", "orgbased in", "yerevan:loc"], ["british:loc", "located in", "leningrad:loc"], ["carol vaness:per", "live in", "yerevan:loc"], ["june anderson:per", "live in", "moscow:loc"], ["kirov ballet:org", "orgbased in", "armenian:loc"], ["kirov ballet:org", "orgbased in", "british:loc"], ["leningrad:loc", "located in", "armenian:loc"]], "197": [["austria:loc", "located in", "czechoslovakia:loc"], ["lesny:loc", "located in", "liberec:loc"], ["lesny:loc", "located in", "ostined:loc"]], "198": [["ap:org", "orgbased in", "idaho:loc"]]}, "error_cases": {"56": {"error": "list index out of range", "text": "Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.", "true": [["wright:per", "work for", "university of texas:org"]], "pred": [["wright:per", "work for", "university of texas:org"], ["nixon:per", "work for", "university of texas:org"]], "response": "Yes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs University of Texas OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Wright Located In University of Texas? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nDoes(Did) Wright work For Nixon? (Yes/Likely/No)\nAnswer:\nYes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Nixon OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"}, "188": {"error": "list index out of range", "text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.", "true": [["bolshoi ballet:org", "orgbased in", "moscow:loc"], ["bolshoi ballet:org", "orgbased in", "moscow:loc"], ["kirov ballet:org", "orgbased in", "leningrad:loc"], ["june anderson:per", "live in", "u.s.:loc"], ["carol vaness:per", "live in", "u.s.:loc"]], "pred": [["bolshoi ballet:org", "orgbased in", "moscow:loc"], ["bolshoi ballet:org", "orgbased in", "yerevan:loc"], ["bolshoi ballet:org", "orgbased in", "u.s.:loc"], ["kirov ballet:org", "orgbased in", "leningrad:loc"], ["kirov ballet:org", "orgbased in", "armenian:loc"], ["kirov ballet:org", "orgbased in", "british:loc"], ["june anderson:per", "live in", "moscow:loc"], ["carol vaness:per", "live in", "yerevan:loc"], ["leningrad:loc", "located in", "armenian:loc"], ["armenian:loc", "located in", "yerevan:loc"], ["british:loc", "located in", "leningrad:loc"]], "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Kirov Ballet base In Leningrad? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Yerevan base In Armenia? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) June Anderson Work For U.S.? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolsh\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"}}}
+{
+    "micro_pc": 0.3585695006747638,
+    "macro_pc": 0.46153846153846156,
+    "pc_list": {
+        "work for": 0.5,
+        "kill": 0,
+        "orgbased in": 0.5384615384615384,
+        "live in": 0.3333333333333333,
+        "located in": 0.42105263157894735
+    },
+    "micro_rc": 0.4920634920634921,
+    "macro_rc": 0.5294117647058824,
+    "rc_list": {
+        "work for": 1.0,
+        "kill": 0,
+        "orgbased in": 0.7777777777777778,
+        "live in": 0.1111111111111111,
+        "located in": 0.5714285714285714
+    },
+    "micro_f1": 0.39090909090909093,
+    "macro_f1": 0.4931506849315069,
+    "f1_list": {
+        "work for": 0.6666666666666666,
+        "kill": 0,
+        "orgbased in": 0.6363636363636364,
+        "live in": 0.16666666666666666,
+        "located in": 0.48484848484848486
+    },
+    "num_cases": 20,
+    "accuracy": 0.35,
+    "correct_cases": {
+        "17": {
+            "text": "An art exhibit at the Hakawati Theatre in Arab east Jerusalem was a series of portraits of Palestinians killed in the rebellion.",
+            "true": [
+                [
+                    "hakawati theatre:org",
+                    "orgbased in",
+                    "jerusalem:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "hakawati theatre:org",
+                    "orgbased in",
+                    "jerusalem:loc"
+                ]
+            ],
+            "response": "No\nYes\nNo\n"
+        },
+        "23": {
+            "text": "PERUGIA, Italy (AP)",
+            "true": [
+                [
+                    "perugia:loc",
+                    "located in",
+                    "italy:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "perugia:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "perugia:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ],
+                [
+                    "perugia:loc",
+                    "located in",
+                    "italy:loc"
+                ]
+            ],
+            "response": "Yes\nYes\nYes\nNo\n"
+        },
+        "34": {
+            "text": "Reagan sounded positive notes reminiscent of earlier speeches throughout his political career _ the pre-eminent position of ` ` We the People' ' in the American system, the image of America as a shining ` ` city upon a hill,' ' the importance of paying more attention to American history.",
+            "true": [
+                [
+                    "reagan:per",
+                    "live in",
+                    "america:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "reagan:per",
+                    "live in",
+                    "america:loc"
+                ]
+            ],
+            "response": "Yes\n"
+        },
+        "92": {
+            "text": "MILAN, Italy (AP)",
+            "true": [
+                [
+                    "milan:loc",
+                    "located in",
+                    "italy:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "milan:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "milan:loc"
+                ],
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "italy:loc"
+                ],
+                [
+                    "milan:loc",
+                    "located in",
+                    "italy:loc"
+                ]
+            ],
+            "response": "Yes\nYes\nYes\nNo\n"
+        },
+        "136": {
+            "text": "Aguadilla, Puerto Rico;",
+            "true": [
+                [
+                    "aguadilla:loc",
+                    "located in",
+                    "puerto rico:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "aguadilla:loc",
+                    "located in",
+                    "puerto rico:loc"
+                ]
+            ],
+            "response": "Yes\nNo\n"
+        },
+        "171": {
+            "text": "FRESNO, Calif.",
+            "true": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "response": "Yes\nNo\n"
+        },
+        "195": {
+            "text": "Boston University's Michael D. Papagiannis said he believes the crater was created 100 million years ago when a 50-mile-wide meteorite slammed into the Earth.",
+            "true": [
+                [
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
+                ]
+            ],
+            "response": "Yes\nNo\nNo\n"
+        }
+    },
+    "fail_cases": {
+        "35": {
+            "text": "There was no mention of the ` ` iron triangle' ' of members of Congress, the news media and special interest groups who, in a speech to political appointees in Washington on Dec. 13, Reagan claimed had prevented his administration from balancing the federal budget.",
+            "true": [
+                [
+                    "congress:org",
+                    "orgbased in",
+                    "washington:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\n"
+        },
+        "36": {
+            "text": "Nor did he argue, as he did in a speech at the University of Virginia in Charlottesville Dec. 16, that Congress had perpetuated a dangerous situation in Central America by its ` ` on-again, off-again indecisiveness' ' on his program of aid to the anti-communist Contra rebels.",
+            "true": [
+                [
+                    "university of virginia:org",
+                    "orgbased in",
+                    "charlottesville:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "contra rebels:org",
+                    "orgbased in",
+                    "central america:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"
+        },
+        "56": {
+            "text": "Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.",
+            "true": [
+                [
+                    "wright:per",
+                    "work for",
+                    "university of texas:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "wright:per",
+                    "work for",
+                    "university of texas:org"
+                ],
+                [
+                    "nixon:per",
+                    "work for",
+                    "university of texas:org"
+                ]
+            ],
+            "response": "Yes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs University of Texas OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Wright Located In University of Texas? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nDoes(Did) Wright work For Nixon? (Yes/Likely/No)\nAnswer:\nYes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Nixon OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "77": {
+            "text": "An enraged Nikita Khrushchev instructed Soviet ships to ignore President Kennedy's naval blockade during the Cuban missile crisis, but the order was reversed just hours before an inevitable confrontation, according to a new book.",
+            "true": [
+                [
+                    "nikita khrushchev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "79": {
+            "text": "Anastas Mikoyan, then Soviet first deputy premier, was the catalyst for the reversal of Khrushchev's order, according to the authors.",
+            "true": [
+                [
+                    "anastas mikoyan:per",
+                    "live in",
+                    "soviet:loc"
+                ],
+                [
+                    "khrushchev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "anastas mikoyan:per",
+                    "work for",
+                    "soviet:org"
+                ]
+            ],
+            "response": "Yes\nNo\nNo\nNo\n"
+        },
+        "80": {
+            "text": "Mikoyan ` ` preempted Khrushchev's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line,' ' they say.",
+            "true": [
+                [
+                    "mikoyan:per",
+                    "live in",
+                    "soviet:loc"
+                ],
+                [
+                    "khrushchev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\n"
+        },
+        "89": {
+            "text": "But the authors suggested that Alekseev, along with others in the Soviet diplomatic corps, were not receiving accurate information from Moscow about the missiles.",
+            "true": [
+                [
+                    "alekseev:per",
+                    "live in",
+                    "soviet:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "Likely\nLikely\nNo\n"
+        },
+        "130": {
+            "text": "Hot Springs National Park, Ark.;",
+            "true": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ],
+                [
+                    "ark.:loc",
+                    "located in",
+                    "hot springs national park:loc"
+                ]
+            ],
+            "response": "Yes\nYes\n"
+        },
+        "138": {
+            "text": "Locations containing suitable federally owned land were listed as: Fort Wainwright annex, Fairbanks, Alaska;",
+            "true": [
+                [
+                    "fort wainwright annex:loc",
+                    "located in",
+                    "fairbanks:loc"
+                ],
+                [
+                    "fort wainwright annex:loc",
+                    "located in",
+                    "alaska:loc"
+                ],
+                [
+                    "fairbanks:loc",
+                    "located in",
+                    "alaska:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "fort wainwright:loc",
+                    "located in",
+                    "fairbanks:loc"
+                ],
+                [
+                    "fort wainwright:loc",
+                    "located in",
+                    "alaska:loc"
+                ],
+                [
+                    "fairbanks:loc",
+                    "located in",
+                    "alaska:loc"
+                ],
+                [
+                    "alaska:loc",
+                    "located in",
+                    "fairbanks:loc"
+                ]
+            ],
+            "response": "Yes\nYes\nNo\nYes\nNo\nYes\n"
+        },
+        "150": {
+            "text": "ATLANTIC CITY, N.J.",
+            "true": [
+                [
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
+                ],
+                [
+                    "n.j.:loc",
+                    "located in",
+                    "atlantic city:loc"
+                ]
+            ],
+            "response": "Yes\nYes\n"
+        },
+        "188": {
+            "text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.",
+            "true": [
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "leningrad:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "u.s.:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "u.s.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "yerevan:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "u.s.:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "leningrad:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "armenian:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "british:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "moscow:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "yerevan:loc"
+                ],
+                [
+                    "leningrad:loc",
+                    "located in",
+                    "armenian:loc"
+                ],
+                [
+                    "armenian:loc",
+                    "located in",
+                    "yerevan:loc"
+                ],
+                [
+                    "british:loc",
+                    "located in",
+                    "leningrad:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Kirov Ballet base In Leningrad? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Yerevan base In Armenia? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) June Anderson Work For U.S.? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolsh\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "197": {
+            "text": "It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.",
+            "true": [
+                [
+                    "ostined:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "lesny:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "liberec:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ],
+                [
+                    "gmund:loc",
+                    "located in",
+                    "austria:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "lesny:loc",
+                    "located in",
+                    "ostined:loc"
+                ],
+                [
+                    "lesny:loc",
+                    "located in",
+                    "liberec:loc"
+                ],
+                [
+                    "austria:loc",
+                    "located in",
+                    "czechoslovakia:loc"
+                ]
+            ],
+            "response": "No\nNo\nLikely\n\nGiven the text: It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.\nDoes(Did) Gmund locate In Austria? (Yes/Likely/No)\nAnswer: Yes\nNo\nNo\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "198": {
+            "text": "BONE, Idaho (AP)",
+            "true": [
+                [
+                    "bone:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "ap:org",
+                    "orgbased in",
+                    "idaho:loc"
+                ],
+                [
+                    "bone:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "response": "No\nYes\nYes\nNo\n"
+        }
+    },
+    "missing_cases": {
+        "35": [
+            [
+                "congress:org",
+                "orgbased in",
+                "washington:loc"
+            ]
+        ],
+        "36": [
+            [
+                "university of virginia:org",
+                "orgbased in",
+                "charlottesville:loc"
+            ]
+        ],
+        "77": [
+            [
+                "nikita khrushchev:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "79": [
+            [
+                "anastas mikoyan:per",
+                "live in",
+                "soviet:loc"
+            ],
+            [
+                "khrushchev:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "80": [
+            [
+                "khrushchev:per",
+                "live in",
+                "soviet:loc"
+            ],
+            [
+                "mikoyan:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "89": [
+            [
+                "alekseev:per",
+                "live in",
+                "soviet:loc"
+            ]
+        ],
+        "138": [
+            [
+                "fort wainwright annex:loc",
+                "located in",
+                "alaska:loc"
+            ],
+            [
+                "fort wainwright annex:loc",
+                "located in",
+                "fairbanks:loc"
+            ]
+        ],
+        "188": [
+            [
+                "carol vaness:per",
+                "live in",
+                "u.s.:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "u.s.:loc"
+            ]
+        ],
+        "197": [
+            [
+                "gmund:loc",
+                "located in",
+                "austria:loc"
+            ],
+            [
+                "lesny:loc",
+                "located in",
+                "czechoslovakia:loc"
+            ],
+            [
+                "liberec:loc",
+                "located in",
+                "czechoslovakia:loc"
+            ],
+            [
+                "ostined:loc",
+                "located in",
+                "czechoslovakia:loc"
+            ]
+        ]
+    },
+    "false_cases": {
+        "36": [
+            [
+                "contra rebels:org",
+                "orgbased in",
+                "central america:loc"
+            ]
+        ],
+        "56": [
+            [
+                "nixon:per",
+                "work for",
+                "university of texas:org"
+            ]
+        ],
+        "79": [
+            [
+                "anastas mikoyan:per",
+                "work for",
+                "soviet:org"
+            ]
+        ],
+        "130": [
+            [
+                "ark.:loc",
+                "located in",
+                "hot springs national park:loc"
+            ]
+        ],
+        "138": [
+            [
+                "alaska:loc",
+                "located in",
+                "fairbanks:loc"
+            ],
+            [
+                "fort wainwright:loc",
+                "located in",
+                "alaska:loc"
+            ],
+            [
+                "fort wainwright:loc",
+                "located in",
+                "fairbanks:loc"
+            ]
+        ],
+        "150": [
+            [
+                "n.j.:loc",
+                "located in",
+                "atlantic city:loc"
+            ]
+        ],
+        "188": [
+            [
+                "armenian:loc",
+                "located in",
+                "yerevan:loc"
+            ],
+            [
+                "bolshoi ballet:org",
+                "orgbased in",
+                "u.s.:loc"
+            ],
+            [
+                "bolshoi ballet:org",
+                "orgbased in",
+                "yerevan:loc"
+            ],
+            [
+                "british:loc",
+                "located in",
+                "leningrad:loc"
+            ],
+            [
+                "carol vaness:per",
+                "live in",
+                "yerevan:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "moscow:loc"
+            ],
+            [
+                "kirov ballet:org",
+                "orgbased in",
+                "armenian:loc"
+            ],
+            [
+                "kirov ballet:org",
+                "orgbased in",
+                "british:loc"
+            ],
+            [
+                "leningrad:loc",
+                "located in",
+                "armenian:loc"
+            ]
+        ],
+        "197": [
+            [
+                "austria:loc",
+                "located in",
+                "czechoslovakia:loc"
+            ],
+            [
+                "lesny:loc",
+                "located in",
+                "liberec:loc"
+            ],
+            [
+                "lesny:loc",
+                "located in",
+                "ostined:loc"
+            ]
+        ],
+        "198": [
+            [
+                "ap:org",
+                "orgbased in",
+                "idaho:loc"
+            ]
+        ]
+    },
+    "error_cases": {
+        "56": {
+            "error": "list index out of range",
+            "text": "Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.",
+            "true": [
+                [
+                    "wright:per",
+                    "work for",
+                    "university of texas:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "wright:per",
+                    "work for",
+                    "university of texas:org"
+                ],
+                [
+                    "nixon:per",
+                    "work for",
+                    "university of texas:org"
+                ]
+            ],
+            "response": "Yes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs University of Texas OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Wright Located In University of Texas? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nDoes(Did) Wright work For Nixon? (Yes/Likely/No)\nAnswer:\nYes\n\nGiven the text: Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.\nIs Nixon OrgBased In Wright? (Yes/Likely/No)\nAnswer:\nNo\n\nGiven\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "188": {
+            "error": "list index out of range",
+            "text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.",
+            "true": [
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "leningrad:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "u.s.:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "u.s.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "yerevan:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "u.s.:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "leningrad:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "armenian:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "british:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "moscow:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "yerevan:loc"
+                ],
+                [
+                    "leningrad:loc",
+                    "located in",
+                    "armenian:loc"
+                ],
+                [
+                    "armenian:loc",
+                    "located in",
+                    "yerevan:loc"
+                ],
+                [
+                    "british:loc",
+                    "located in",
+                    "leningrad:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Kirov Ballet base In Leningrad? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) Yerevan base In Armenia? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.\nDoes(Did) June Anderson Work For U.S.? (Yes/Likely/No)\nAnswer: Yes\n\nGiven the text: Dancers of Moscow's Bolsh\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        }
+    }
+}
