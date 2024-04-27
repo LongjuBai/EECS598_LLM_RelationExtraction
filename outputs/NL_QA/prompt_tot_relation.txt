@@ -1,0 +1,186 @@
+Example Instructional Prefix: Provide a confidence level (yes/likely/no) for each relation.
+
+Given the text: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
+Does(Did) Bruno Pusterla work for Italian Agricultural Confederation? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Does(Did) Shi Liming work for Institute of Zoology? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Does(Did) Institute of Zoology base in Kunming? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Does(Did) Shi Liming live in Kunming? (Yes/Likely/No)
+Answer:
+Likely
+
+Given the text: The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Does(Did) Oswald kill President Kennedy? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Does(Did) Oswald kill Officer Tippit? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Does(Did) President Kennedy kill Officer Tippit? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: PURCHASE , N.Y .
+Does(Did) PURCHASE locate in N.Y .? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: PURCHASE , N.Y .
+Does(Did) N.Y . locate in PURCHASE? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Does(Did) AP base in BELGRADE? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Does(Did) AP base in Yugoslavia? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Does(Did) BELGRADE locate in Yugoslavia? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Does(Did) Yugoslavia locate in BELGRADE? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Does(Did) Rome locate in Lazio? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Does(Did) Lazio locate in Rome? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Does(Did) Naples locate in Campania? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Does(Did) Campania locate in Naples? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Does(Did) Rome locate in Campania? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Does(Did) Campania locate in Rome? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: ( By ITAR-TASS correspondent Mikhail Shevtsov )
+Does(Did) Mikhail Shevtsov work for ITAR-TASS? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Does(Did) Group of Rio base in Haiti? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Does(Did) Jean Bertrand Aristide work for Group of Rio? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Does(Did) Jean Bertrand Aristide live in Haiti? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Moscow ITAR-TASS
+Does(Did) ITAR-TASS base in Moscow? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Does(Did) Montgomery locate in Ala.? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Does(Did) Ala. locate in Montgomery? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Does(Did) Mrs. Parks live in Montgomery? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Does(Did) Mrs. Parks live in Ala.? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Does(Did) Sirhan kill Kennedy? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Does(Did) Kennedy kill Sirhan? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
+Does(Did) Colorado locate in Denver? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
+Does(Did) Denver locate in Colorado? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Does(Did) Edward Marks work for Montgomery County Democratic Party? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Does(Did) Ms. Toth work for Montgomery County Democratic Party? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Does(Did) Edward Marks kill Ms. Toth? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Does(Did) Ms. Toth kill Edward Marks? (Yes/Likely/No)
+Answer:
+No
+
+Instructional Prefix: Provide a confidence level (yes/likely/no) for each relation.
+
+Given the text: $TEXT$
+Answer:

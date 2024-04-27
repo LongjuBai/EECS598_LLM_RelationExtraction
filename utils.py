@@ -189,7 +189,12 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
             for relation in relation_prompt_string:
                 completion = client.chat.completions.create(
                     model=model,
-                    messages=[{
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. "
+                        },
+                        {
                             "role": "user", 
                             "content": prompt.replace('$TEXT$', sample['text'] + relation)
                         }],

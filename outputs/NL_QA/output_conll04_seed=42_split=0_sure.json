@@ -1,69 +1,51 @@
 {
-    "micro_pc": 0.4766666666666667,
-    "macro_pc": 0.6818181818181818,
+    "micro_pc": 0.5333333333333333,
+    "macro_pc": 0.6153846153846154,
     "pc_list": {
-        "work for": 0.5,
+        "work for": 0.3333333333333333,
         "kill": 0,
-        "orgbased in": 0.8,
-        "live in": 0.3333333333333333,
-        "located in": 0.75
+        "orgbased in": 0.6666666666666666,
+        "live in": 1.0,
+        "located in": 0.6666666666666666
     },
-    "micro_rc": 0.3396825396825397,
-    "macro_rc": 0.4411764705882353,
+    "micro_rc": 0.22380952380952382,
+    "macro_rc": 0.23529411764705882,
     "rc_list": {
         "work for": 0.5,
         "kill": 0,
-        "orgbased in": 0.4444444444444444,
+        "orgbased in": 0.2222222222222222,
         "live in": 0.1111111111111111,
-        "located in": 0.6428571428571429
+        "located in": 0.2857142857142857
     },
-    "micro_f1": 0.38608058608058615,
-    "macro_f1": 0.5357142857142857,
+    "micro_f1": 0.2666666666666667,
+    "macro_f1": 0.3404255319148936,
     "f1_list": {
-        "work for": 0.5,
+        "work for": 0.4,
         "kill": 0,
-        "orgbased in": 0.5714285714285714,
-        "live in": 0.16666666666666666,
-        "located in": 0.6923076923076924
+        "orgbased in": 0.3333333333333333,
+        "live in": 0.2,
+        "located in": 0.4
     },
     "num_cases": 20,
-    "accuracy": 0.35,
+    "accuracy": 0.15,
     "correct_cases": {
-        "17": {
-            "text": "An art exhibit at the Hakawati Theatre in Arab east Jerusalem was a series of portraits of Palestinians killed in the rebellion.",
+        "34": {
+            "text": "Reagan sounded positive notes reminiscent of earlier speeches throughout his political career _ the pre-eminent position of ` ` We the People' ' in the American system, the image of America as a shining ` ` city upon a hill,' ' the importance of paying more attention to American history.",
             "true": [
                 [
-                    "hakawati theatre:org",
-                    "orgbased in",
-                    "jerusalem:loc"
+                    "reagan:per",
+                    "live in",
+                    "america:loc"
                 ]
             ],
             "pred": [
                 [
-                    "hakawati theatre:org",
-                    "orgbased in",
-                    "jerusalem:loc"
+                    "reagan:per",
+                    "live in",
+                    "america:loc"
                 ]
             ],
-            "response": "No\nYes\nNo\n"
-        },
-        "130": {
-            "text": "Hot Springs National Park, Ark.;",
-            "true": [
-                [
-                    "hot springs national park:loc",
-                    "located in",
-                    "ark.:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "hot springs national park:loc",
-                    "located in",
-                    "ark.:loc"
-                ]
-            ],
-            "response": "Yes\nNo\n"
+            "response": "Yes\n"
         },
         "136": {
             "text": "Aguadilla, Puerto Rico;",
@@ -79,42 +61,6 @@
                     "aguadilla:loc",
                     "located in",
                     "puerto rico:loc"
-                ]
-            ],
-            "response": "Yes\nNo\n"
-        },
-        "150": {
-            "text": "ATLANTIC CITY, N.J.",
-            "true": [
-                [
-                    "atlantic city:loc",
-                    "located in",
-                    "n.j.:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "atlantic city:loc",
-                    "located in",
-                    "n.j.:loc"
-                ]
-            ],
-            "response": "Yes\nNo\n"
-        },
-        "171": {
-            "text": "FRESNO, Calif.",
-            "true": [
-                [
-                    "fresno:loc",
-                    "located in",
-                    "calif.:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "fresno:loc",
-                    "located in",
-                    "calif.:loc"
                 ]
             ],
             "response": "Yes\nNo\n"
@@ -136,27 +82,27 @@
                 ]
             ],
             "response": "Yes\nNo\nNo\n"
-        },
-        "198": {
-            "text": "BONE, Idaho (AP)",
+        }
+    },
+    "fail_cases": {
+        "17": {
+            "text": "An art exhibit at the Hakawati Theatre in Arab east Jerusalem was a series of portraits of Palestinians killed in the rebellion.",
             "true": [
                 [
-                    "bone:loc",
-                    "located in",
-                    "idaho:loc"
+                    "hakawati theatre:org",
+                    "orgbased in",
+                    "jerusalem:loc"
                 ]
             ],
             "pred": [
                 [
-                    "bone:loc",
+                    "hakawati theatre:loc",
                     "located in",
-                    "idaho:loc"
+                    "jerusalem:loc"
                 ]
             ],
             "response": "No\nNo\nYes\nNo\n"
-        }
-    },
-    "fail_cases": {
+        },
         "23": {
             "text": "PERUGIA, Italy (AP)",
             "true": [
@@ -178,29 +124,12 @@
             ],
             "pred": [
                 [
-                    "ap:org",
-                    "orgbased in",
-                    "perugia:loc"
-                ],
-                [
                     "perugia:loc",
                     "located in",
                     "italy:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nNo\n"
-        },
-        "34": {
-            "text": "Reagan sounded positive notes reminiscent of earlier speeches throughout his political career _ the pre-eminent position of ` ` We the People' ' in the American system, the image of America as a shining ` ` city upon a hill,' ' the importance of paying more attention to American history.",
-            "true": [
-                [
-                    "reagan:per",
-                    "live in",
-                    "america:loc"
-                ]
-            ],
-            "pred": [],
-            "response": "No\n"
+            "response": "No\nNo\nYes\nNo\n"
         },
         "35": {
             "text": "There was no mention of the ` ` iron triangle' ' of members of Congress, the news media and special interest groups who, in a speech to political appointees in Washington on Dec. 13, Reagan claimed had prevented his administration from balancing the federal budget.",
@@ -211,14 +140,8 @@
                     "washington:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "reagan:per",
-                    "live in",
-                    "washington:loc"
-                ]
-            ],
-            "response": "Yes\n"
+            "pred": [],
+            "response": "No\n"
         },
         "36": {
             "text": "Nor did he argue, as he did in a speech at the University of Virginia in Charlottesville Dec. 16, that Congress had perpetuated a dangerous situation in Central America by its ` ` on-again, off-again indecisiveness' ' on his program of aid to the anti-communist Contra rebels.",
@@ -229,8 +152,19 @@
                     "charlottesville:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "pred": [
+                [
+                    "university of virginia:org",
+                    "orgbased in",
+                    "charlottesville:loc"
+                ],
+                [
+                    "contra rebels:org",
+                    "orgbased in",
+                    "central america:loc"
+                ]
+            ],
+            "response": "Yes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"
         },
         "56": {
             "text": "Wright, a University of Texas law professor, served as one of Nixon's lawyers in 1973 and 1974 while the Watergate special prosecutor was trying to subpoena the White House tapes.",
@@ -242,7 +176,7 @@
                 ]
             ],
             "pred": [],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\n"
+            "response": "Likely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "77": {
             "text": "An enraged Nikita Khrushchev instructed Soviet ships to ignore President Kennedy's naval blockade during the Cuban missile crisis, but the order was reversed just hours before an inevitable confrontation, according to a new book.",
@@ -254,7 +188,7 @@
                 ]
             ],
             "pred": [],
-            "response": "No\nNo\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "79": {
             "text": "Anastas Mikoyan, then Soviet first deputy premier, was the catalyst for the reversal of Khrushchev's order, according to the authors.",
@@ -270,8 +204,19 @@
                     "soviet:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\n"
+            "pred": [
+                [
+                    "anastas mikoyan:per",
+                    "work for",
+                    "soviet:org"
+                ],
+                [
+                    "khrushchev:per",
+                    "work for",
+                    "soviet:org"
+                ]
+            ],
+            "response": "Yes\nYes\nNo\nNo\n"
         },
         "80": {
             "text": "Mikoyan ` ` preempted Khrushchev's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line,' ' they say.",
@@ -299,24 +244,8 @@
                     "soviet:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "alekseev:per",
-                    "work for",
-                    "soviet diplomatic corps:org"
-                ],
-                [
-                    "soviet diplomatic corps:org",
-                    "orgbased in",
-                    "moscow:loc"
-                ],
-                [
-                    "alekseev:per",
-                    "live in",
-                    "moscow:loc"
-                ]
-            ],
-            "response": "Yes\nYes\nLikely\n"
+            "pred": [],
+            "response": "No\nLikely\nLikely\n"
         },
         "92": {
             "text": "MILAN, Italy (AP)",
@@ -346,6 +275,18 @@
             ],
             "response": "No\nNo\nYes\nNo\n"
         },
+        "130": {
+            "text": "Hot Springs National Park, Ark.;",
+            "true": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\n"
+        },
         "138": {
             "text": "Locations containing suitable federally owned land were listed as: Fort Wainwright annex, Fairbanks, Alaska;",
             "true": [
@@ -369,11 +310,6 @@
                 [
                     "fort wainwright:loc",
                     "located in",
-                    "fairbanks:loc"
-                ],
-                [
-                    "fort wainwright:loc",
-                    "located in",
                     "alaska:loc"
                 ],
                 [
@@ -382,7 +318,31 @@
                     "alaska:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nYes\nNo\nNo\n"
+            "response": "No\nYes\nNo\nYes\nNo\nNo\n"
+        },
+        "150": {
+            "text": "ATLANTIC CITY, N.J.",
+            "true": [
+                [
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\n"
+        },
+        "171": {
+            "text": "FRESNO, Calif.",
+            "true": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\n"
         },
         "188": {
             "text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.",
@@ -418,24 +378,9 @@
                     "bolshoi ballet:org",
                     "orgbased in",
                     "moscow:loc"
-                ],
-                [
-                    "kirov ballet:org",
-                    "orgbased in",
-                    "leningrad:loc"
-                ],
-                [
-                    "june anderson:per",
-                    "live in",
-                    "u.s.:loc"
-                ],
-                [
-                    "armenian:loc",
-                    "located in",
-                    "yerevan:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nLikely\nNo\nNo\nNo\n"
         },
         "197": {
             "text": "It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.",
@@ -461,29 +406,40 @@
                     "austria:loc"
                 ]
             ],
-            "pred": [
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "198": {
+            "text": "BONE, Idaho (AP)",
+            "true": [
                 [
-                    "gmund:loc",
+                    "bone:loc",
                     "located in",
-                    "austria:loc"
+                    "idaho:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\n"
         }
     },
     "missing_cases": {
+        "17": [
+            [
+                "hakawati theatre:org",
+                "orgbased in",
+                "jerusalem:loc"
+            ]
+        ],
         "23": [
             [
                 "ap:org",
                 "orgbased in",
                 "italy:loc"
-            ]
-        ],
-        "34": [
+            ],
             [
-                "reagan:per",
-                "live in",
-                "america:loc"
+                "ap:org",
+                "orgbased in",
+                "perugia:loc"
             ]
         ],
         "35": [
@@ -491,13 +447,6 @@
                 "congress:org",
                 "orgbased in",
                 "washington:loc"
-            ]
-        ],
-        "36": [
-            [
-                "university of virginia:org",
-                "orgbased in",
-                "charlottesville:loc"
             ]
         ],
         "56": [
@@ -557,6 +506,13 @@
                 "milan:loc"
             ]
         ],
+        "130": [
+            [
+                "hot springs national park:loc",
+                "located in",
+                "ark.:loc"
+            ]
+        ],
         "138": [
             [
                 "fort wainwright annex:loc",
@@ -569,14 +525,43 @@
                 "fairbanks:loc"
             ]
         ],
+        "150": [
+            [
+                "atlantic city:loc",
+                "located in",
+                "n.j.:loc"
+            ]
+        ],
+        "171": [
+            [
+                "fresno:loc",
+                "located in",
+                "calif.:loc"
+            ]
+        ],
         "188": [
             [
                 "carol vaness:per",
                 "live in",
                 "u.s.:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "u.s.:loc"
+            ],
+            [
+                "kirov ballet:org",
+                "orgbased in",
+                "leningrad:loc"
             ]
         ],
         "197": [
+            [
+                "gmund:loc",
+                "located in",
+                "austria:loc"
+            ],
             [
                 "lesny:loc",
                 "located in",
@@ -592,31 +577,40 @@
                 "located in",
                 "czechoslovakia:loc"
             ]
+        ],
+        "198": [
+            [
+                "bone:loc",
+                "located in",
+                "idaho:loc"
+            ]
         ]
     },
     "false_cases": {
-        "35": [
+        "17": [
             [
-                "reagan:per",
-                "live in",
-                "washington:loc"
+                "hakawati theatre:loc",
+                "located in",
+                "jerusalem:loc"
             ]
         ],
-        "89": [
+        "36": [
             [
-                "alekseev:per",
-                "live in",
-                "moscow:loc"
-            ],
-            [
-                "alekseev:per",
-                "work for",
-                "soviet diplomatic corps:org"
-            ],
-            [
-                "soviet diplomatic corps:org",
+                "contra rebels:org",
                 "orgbased in",
-                "moscow:loc"
+                "central america:loc"
+            ]
+        ],
+        "79": [
+            [
+                "anastas mikoyan:per",
+                "work for",
+                "soviet:org"
+            ],
+            [
+                "khrushchev:per",
+                "work for",
+                "soviet:org"
             ]
         ],
         "138": [
@@ -624,18 +618,6 @@
                 "fort wainwright:loc",
                 "located in",
                 "alaska:loc"
-            ],
-            [
-                "fort wainwright:loc",
-                "located in",
-                "fairbanks:loc"
-            ]
-        ],
-        "188": [
-            [
-                "armenian:loc",
-                "located in",
-                "yerevan:loc"
             ]
         ]
     },

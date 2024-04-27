@@ -44,11 +44,11 @@ def get_response_from_llm(args):
             "Located In": set([("Loc", "Loc")])
         }
         augment_relation_types = {
-            'Work For': 'Work(ed) For',
-            'Kill': 'Kill(ed)',
-            'OrgBased In': 'is(was) OrgBased In',
-            'Live In': 'Live(d) In',
-            'Located In': 'is(was) Located In'
+            'Work For': 'work For',
+            'Kill': 'kill',
+            'OrgBased In': 'base In',
+            'Live In': 'live In',
+            'Located In': 'locate In'
         }
     elif dataset == 'nyt':
         data = load_nyt()
@@ -95,7 +95,7 @@ def get_response_from_llm(args):
         for relation_type, entity_pairs in relation_type_dict.items():
             for entity_pair in entity_pairs:
                 entity_1, entity_2 = entity_pair[0].split(':')[0][1:], entity_pair[1].split(':')[0][1:]
-                relation_prompt_string.append(f'\nIs the relation "{entity_1} {augment_relation_types[relation_type]} {entity_2}" correct? (Yes/Likely/No)')
+                relation_prompt_string.append(f'\nDoes(Did) {entity_1} {augment_relation_types[relation_type]} {entity_2}? (Yes/Likely/No)')
                 relation_answer_string.append((entity_pair[0].strip('"').lower(), f'{relation_type}'.lower(), entity_pair[1].strip('"').lower()))
 
         # record to the dictionary
