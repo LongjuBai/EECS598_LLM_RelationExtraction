@@ -3,6 +3,11 @@ import asyncio
 from openai import OpenAI, AsyncOpenAI
 from tqdm import tqdm
 from tqdm.asyncio import tqdm as tqdm_asyncio
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_random_exponential,
+)
 
 
 def dict_first_k(dic, k):
@@ -183,11 +188,15 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
         else:
             raise Exception('Model Not Supported!')
 
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(100))
+    def completion_with_backoff(**kwargs):
+        return client.chat.completions.create(**kwargs)
+
     def llm_worker_multi(relation_prompt_string, id, sample):
         if model == 'gpt-3.5-turbo-0125':
             responses = ''
             for relation in relation_prompt_string:
-                completion = client.chat.completions.create(
+                completion = completion_with_backoff(
                     model=model,
                     messages=[
                         {
