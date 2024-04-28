@@ -214,14 +214,17 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
                 responses += completion.choices[0].message.content + '\n'
             return id, responses
         elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
-            completion = client.completions.create(
-                model=model,
-                prompt=prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
-                temperature=temp,
-                max_tokens=max_tokens,
-                seed=seed
-            )
-            return id, completion.choices[0].text
+            responses = ''
+            for relation in relation_prompt_string:
+                completion = client.completions.create(
+                    model=model,
+                    prompt=prompt.replace('$TEXT$', sample['text'] + relation),
+                    temperature=temp,
+                    max_tokens=max_tokens,
+                    seed=seed
+                )
+                responses += completion.choices[0].text
+            return id, responses
         else:
             raise Exception('Model Not Supported!')
     

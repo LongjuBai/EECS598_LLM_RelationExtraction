@@ -1,0 +1,46 @@
+Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/likely/no) for each relation.
+
+Given the text: PURCHASE , N.Y .
+Is the relation "PURCHASE is(was) Located In N.Y ." correct? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: PURCHASE , N.Y .
+Is the relation "N.Y . is(was) Located In PURCHASE" correct? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is the relation "AP is(was) OrgBased In BELGRADE" correct? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is the relation "AP is(was) OrgBased In Yugoslavia" correct? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is the relation "BELGRADE is(was) Located In Yugoslavia" correct? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is the relation "Yugoslavia is(was) Located In BELGRADE" correct? (Yes/Likely/No)
+Answer:
+No
+
+Given the text: ( By ITAR-TASS correspondent Mikhail Shevtsov )
+Is the relation "Mikhail Shevtsov Work(ed) For ITAR-TASS" correct? (Yes/Likely/No)
+Answer:
+Yes
+
+Given the text: Moscow ITAR-TASS
+Is the relation "ITAR-TASS is(was) OrgBased In Moscow" correct? (Yes/Likely/No)
+Answer:
+Yes
+
+Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/likely/no) for each relation.
+
+Given the text: $TEXT$
+Answer:

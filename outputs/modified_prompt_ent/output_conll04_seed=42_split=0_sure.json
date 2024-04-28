@@ -1,33 +1,33 @@
 {
-    "micro_pc": 0.425,
-    "macro_pc": 0.5555555555555556,
+    "micro_pc": 0.6833333333333333,
+    "macro_pc": 0.8333333333333334,
     "pc_list": {
         "work for": 0.5,
-        "kill": 0,
-        "orgbased in": 0.5,
-        "live in": 0.5,
-        "located in": 0.625
+        "kill": 0.0,
+        "orgbased in": 1.0,
+        "live in": 1.0,
+        "located in": 0.9166666666666666
     },
-    "micro_rc": 0.3380952380952381,
-    "macro_rc": 0.29411764705882354,
+    "micro_rc": 0.3238095238095238,
+    "macro_rc": 0.4411764705882353,
     "rc_list": {
-        "work for": 1.0,
+        "work for": 0.5,
         "kill": 0,
         "orgbased in": 0.2222222222222222,
         "live in": 0.1111111111111111,
-        "located in": 0.35714285714285715
+        "located in": 0.7857142857142857
     },
-    "micro_f1": 0.32214452214452216,
-    "macro_f1": 0.3846153846153847,
+    "micro_f1": 0.38195804195804195,
+    "macro_f1": 0.5769230769230769,
     "f1_list": {
-        "work for": 0.6666666666666666,
+        "work for": 0.5,
         "kill": 0,
-        "orgbased in": 0.3076923076923077,
-        "live in": 0.18181818181818182,
-        "located in": 0.45454545454545453
+        "orgbased in": 0.36363636363636365,
+        "live in": 0.2,
+        "located in": 0.8461538461538461
     },
     "num_cases": 20,
-    "accuracy": 0.2,
+    "accuracy": 0.35,
     "correct_cases": {
         "34": {
             "text": "Reagan sounded positive notes reminiscent of earlier speeches throughout his political career _ the pre-eminent position of ` ` We the People' ' in the American system, the image of America as a shining ` ` city upon a hill,' ' the importance of paying more attention to American history.",
@@ -63,7 +63,25 @@
                     "university of texas:org"
                 ]
             ],
-            "response": "Likely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "130": {
+            "text": "Hot Springs National Park, Ark.;",
+            "true": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "hot springs national park:loc",
+                    "located in",
+                    "ark.:loc"
+                ]
+            ],
+            "response": "Yes\nNo\n"
         },
         "136": {
             "text": "Aguadilla, Puerto Rico;",
@@ -83,23 +101,59 @@
             ],
             "response": "Yes\nNo\n"
         },
-        "195": {
-            "text": "Boston University's Michael D. Papagiannis said he believes the crater was created 100 million years ago when a 50-mile-wide meteorite slammed into the Earth.",
+        "150": {
+            "text": "ATLANTIC CITY, N.J.",
             "true": [
                 [
-                    "michael d. papagiannis:per",
-                    "work for",
-                    "boston university:org"
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
                 ]
             ],
             "pred": [
                 [
-                    "michael d. papagiannis:per",
-                    "work for",
-                    "boston university:org"
+                    "atlantic city:loc",
+                    "located in",
+                    "n.j.:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\n"
+            "response": "Yes\nNo\n"
+        },
+        "171": {
+            "text": "FRESNO, Calif.",
+            "true": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "fresno:loc",
+                    "located in",
+                    "calif.:loc"
+                ]
+            ],
+            "response": "Yes\nNo\n"
+        },
+        "198": {
+            "text": "BONE, Idaho (AP)",
+            "true": [
+                [
+                    "bone:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "bone:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "response": "No\nNo\nYes\nNo\n"
         }
     },
     "fail_cases": {
@@ -112,14 +166,8 @@
                     "jerusalem:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "hakawati theatre:loc",
-                    "located in",
-                    "jerusalem:loc"
-                ]
-            ],
-            "response": "No\nNo\nYes\nNo\n"
+            "pred": [],
+            "response": "No\n"
         },
         "23": {
             "text": "PERUGIA, Italy (AP)",
@@ -142,12 +190,17 @@
             ],
             "pred": [
                 [
+                    "ap:org",
+                    "orgbased in",
+                    "perugia:loc"
+                ],
+                [
                     "perugia:loc",
                     "located in",
                     "italy:loc"
                 ]
             ],
-            "response": "No\nNo\nYes\nNo\n"
+            "response": "Yes\nNo\nYes\nNo\n"
         },
         "35": {
             "text": "There was no mention of the ` ` iron triangle' ' of members of Congress, the news media and special interest groups who, in a speech to political appointees in Washington on Dec. 13, Reagan claimed had prevented his administration from balancing the federal budget.",
@@ -172,17 +225,12 @@
             ],
             "pred": [
                 [
-                    "university of virginia:org",
-                    "orgbased in",
+                    "university of virginia:loc",
+                    "located in",
                     "charlottesville:loc"
-                ],
-                [
-                    "contra rebels:org",
-                    "orgbased in",
-                    "central america:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
         },
         "77": {
             "text": "An enraged Nikita Khrushchev instructed Soviet ships to ignore President Kennedy's naval blockade during the Cuban missile crisis, but the order was reversed just hours before an inevitable confrontation, according to a new book.",
@@ -193,8 +241,14 @@
                     "soviet:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "pred": [
+                [
+                    "nikita khrushchev:per",
+                    "work for",
+                    "soviet:org"
+                ]
+            ],
+            "response": "Yes\nNo.\nNo\nNo\nNo\nNo\nNo\n"
         },
         "79": {
             "text": "Anastas Mikoyan, then Soviet first deputy premier, was the catalyst for the reversal of Khrushchev's order, according to the authors.",
@@ -210,19 +264,8 @@
                     "soviet:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "anastas mikoyan:per",
-                    "work for",
-                    "soviet:org"
-                ],
-                [
-                    "khrushchev:per",
-                    "work for",
-                    "soviet:org"
-                ]
-            ],
-            "response": "Yes\nYes\nNo\nNo\n"
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\n"
         },
         "80": {
             "text": "Mikoyan ` ` preempted Khrushchev's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line,' ' they say.",
@@ -238,8 +281,14 @@
                     "soviet:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\n"
+            "pred": [
+                [
+                    "khrushchev:per",
+                    "kill",
+                    "mikoyan:per"
+                ]
+            ],
+            "response": "Likely\n\nGiven the text: Mikoyan ` ` preempted Khrushchev's order to run the blockade and ordered Soviet ships to stop just short of the quarantine line,' ' they say.\nIs Mikoyan OrgBased In Soviet? (Yes/Likely/No)\nAnswer: No\nNo\nNo\nNo\n"
         },
         "89": {
             "text": "But the authors suggested that Alekseev, along with others in the Soviet diplomatic corps, were not receiving accurate information from Moscow about the missiles.",
@@ -250,19 +299,8 @@
                     "soviet:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "soviet:org",
-                    "orgbased in",
-                    "moscow:loc"
-                ],
-                [
-                    "alekseev:per",
-                    "live in",
-                    "moscow:loc"
-                ]
-            ],
-            "response": "No\nLikely\nLikely\n"
+            "pred": [],
+            "response": "No\nNo\nNo\n"
         },
         "92": {
             "text": "MILAN, Italy (AP)",
@@ -285,24 +323,17 @@
             ],
             "pred": [
                 [
+                    "ap:org",
+                    "orgbased in",
+                    "milan:loc"
+                ],
+                [
                     "milan:loc",
                     "located in",
                     "italy:loc"
                 ]
             ],
-            "response": "No\nNo\nYes\nNo\n"
-        },
-        "130": {
-            "text": "Hot Springs National Park, Ark.;",
-            "true": [
-                [
-                    "hot springs national park:loc",
-                    "located in",
-                    "ark.:loc"
-                ]
-            ],
-            "pred": [],
-            "response": "No\nNo\n"
+            "response": "Yes\nNo\nYes\nNo\n"
         },
         "138": {
             "text": "Locations containing suitable federally owned land were listed as: Fort Wainwright annex, Fairbanks, Alaska;",
@@ -325,7 +356,7 @@
             ],
             "pred": [
                 [
-                    "fort wainwright:loc",
+                    "fort wainwright annex:loc",
                     "located in",
                     "alaska:loc"
                 ],
@@ -336,30 +367,6 @@
                 ]
             ],
             "response": "No\nYes\nNo\nYes\nNo\nNo\n"
-        },
-        "150": {
-            "text": "ATLANTIC CITY, N.J.",
-            "true": [
-                [
-                    "atlantic city:loc",
-                    "located in",
-                    "n.j.:loc"
-                ]
-            ],
-            "pred": [],
-            "response": "No\nNo\n"
-        },
-        "171": {
-            "text": "FRESNO, Calif.",
-            "true": [
-                [
-                    "fresno:loc",
-                    "located in",
-                    "calif.:loc"
-                ]
-            ],
-            "pred": [],
-            "response": "No\nNo\n"
         },
         "188": {
             "text": "Dancers of Moscow's Bolshoi Ballet in Moscow and Leningrad's Kirov Ballet, together with opera singers from the Armenian capital of Yerevan, joined U.S. sopranos June Anderson and Carol Vaness and British dancers and singers.",
@@ -390,19 +397,20 @@
                     "u.s.:loc"
                 ]
             ],
-            "pred": [
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "195": {
+            "text": "Boston University's Michael D. Papagiannis said he believes the crater was created 100 million years ago when a 50-mile-wide meteorite slammed into the Earth.",
+            "true": [
                 [
-                    "bolshoi ballet:org",
-                    "orgbased in",
-                    "moscow:loc"
-                ],
-                [
-                    "yerevan:loc",
-                    "located in",
-                    "armenia:loc"
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nLikely\nNo\nNo\nNo\n"
+            "pred": [],
+            "response": "No\nNo\nNo\n"
         },
         "197": {
             "text": "It is roughly bounded by Ostined, Lesny and Liberec in Czechoslovakia and Gmund in Austria.",
@@ -433,21 +441,14 @@
                     "lesny:loc",
                     "located in",
                     "czechoslovakia:loc"
-                ]
-            ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nLikely\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
-        },
-        "198": {
-            "text": "BONE, Idaho (AP)",
-            "true": [
+                ],
                 [
-                    "bone:loc",
+                    "gmund:loc",
                     "located in",
-                    "idaho:loc"
+                    "austria:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
         }
     },
     "missing_cases": {
@@ -463,11 +464,6 @@
                 "ap:org",
                 "orgbased in",
                 "italy:loc"
-            ],
-            [
-                "ap:org",
-                "orgbased in",
-                "perugia:loc"
             ]
         ],
         "35": [
@@ -475,6 +471,13 @@
                 "congress:org",
                 "orgbased in",
                 "washington:loc"
+            ]
+        ],
+        "36": [
+            [
+                "university of virginia:org",
+                "orgbased in",
+                "charlottesville:loc"
             ]
         ],
         "77": [
@@ -520,47 +523,21 @@
                 "ap:org",
                 "orgbased in",
                 "italy:loc"
-            ],
-            [
-                "ap:org",
-                "orgbased in",
-                "milan:loc"
-            ]
-        ],
-        "130": [
-            [
-                "hot springs national park:loc",
-                "located in",
-                "ark.:loc"
             ]
         ],
         "138": [
             [
                 "fort wainwright annex:loc",
                 "located in",
-                "alaska:loc"
-            ],
-            [
-                "fort wainwright annex:loc",
-                "located in",
                 "fairbanks:loc"
             ]
         ],
-        "150": [
-            [
-                "atlantic city:loc",
-                "located in",
-                "n.j.:loc"
-            ]
-        ],
-        "171": [
-            [
-                "fresno:loc",
-                "located in",
-                "calif.:loc"
-            ]
-        ],
         "188": [
+            [
+                "bolshoi ballet:org",
+                "orgbased in",
+                "moscow:loc"
+            ],
             [
                 "carol vaness:per",
                 "live in",
@@ -577,12 +554,14 @@
                 "leningrad:loc"
             ]
         ],
-        "197": [
+        "195": [
             [
-                "gmund:loc",
-                "located in",
-                "austria:loc"
-            ],
+                "michael d. papagiannis:per",
+                "work for",
+                "boston university:org"
+            ]
+        ],
+        "197": [
             [
                 "liberec:loc",
                 "located in",
@@ -593,66 +572,28 @@
                 "located in",
                 "czechoslovakia:loc"
             ]
-        ],
-        "198": [
-            [
-                "bone:loc",
-                "located in",
-                "idaho:loc"
-            ]
         ]
     },
     "false_cases": {
-        "17": [
-            [
-                "hakawati theatre:loc",
-                "located in",
-                "jerusalem:loc"
-            ]
-        ],
         "36": [
             [
-                "contra rebels:org",
-                "orgbased in",
-                "central america:loc"
+                "university of virginia:loc",
+                "located in",
+                "charlottesville:loc"
             ]
         ],
-        "79": [
+        "77": [
             [
-                "anastas mikoyan:per",
+                "nikita khrushchev:per",
                 "work for",
                 "soviet:org"
-            ],
+            ]
+        ],
+        "80": [
             [
                 "khrushchev:per",
-                "work for",
-                "soviet:org"
-            ]
-        ],
-        "89": [
-            [
-                "alekseev:per",
-                "live in",
-                "moscow:loc"
-            ],
-            [
-                "soviet:org",
-                "orgbased in",
-                "moscow:loc"
-            ]
-        ],
-        "138": [
-            [
-                "fort wainwright:loc",
-                "located in",
-                "alaska:loc"
-            ]
-        ],
-        "188": [
-            [
-                "yerevan:loc",
-                "located in",
-                "armenia:loc"
+                "kill",
+                "mikoyan:per"
             ]
         ]
     },

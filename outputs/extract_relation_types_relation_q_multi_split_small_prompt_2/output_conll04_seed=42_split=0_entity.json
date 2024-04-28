@@ -1,0 +1,197 @@
+{
+    "raw_entity_output": {
+        "17": "[\"Hakawati Theatre:Org\", \"Jerusalem:Loc\"]",
+        "23": "[\"PERUGIA:Loc\", \"Italy:Loc\", \"AP:Org\"]",
+        "34": "[\"Reagan:Per\", \"America:Loc\"]",
+        "35": "[\"Reagan:Per\", \"Washington:Loc\"]",
+        "36": "[\"University of Virginia:Org\", \"Charlottesville:Loc\", \"Congress:Org\", \"Central America:Loc\", \"Contra rebels:Org\"]",
+        "56": "[\"Wright:Per\", \"University of Texas:Org\", \"Nixon:Per\", \"Watergate:Org\", \"White House:Loc\"]",
+        "77": "[\"Nikita Khrushchev:Per\", \"President Kennedy:Per\", \"Cuba:Loc\", \"Soviet:Org\"]",
+        "79": "[\"Anastas Mikoyan:Per\", \"Soviet:Org\", \"Khrushchev:Per\"]",
+        "80": "[\"Mikoyan:Per\", \"Khrushchev:Per\", \"Soviet:Org\"]",
+        "89": "[\"Alekseev:Per\", \"Moscow:Loc\", \"Soviet diplomatic corps:Org\"]",
+        "92": "[\"MILAN:Loc\", \"Italy:Loc\", \"AP:Org\"]",
+        "130": "[\"Hot Springs National Park:Loc\", \"Ark.:Loc\"]",
+        "136": "[\"Aguadilla:Loc\", \"Puerto Rico:Loc\"]",
+        "138": "[\"Fort Wainwright annex:Loc\", \"Fairbanks:Loc\", \"Alaska:Loc\"]",
+        "150": "[\"ATLANTIC CITY:Loc\", \"N.J.:Loc\"]",
+        "171": "[\"FRESNO:Loc\", \"Calif.:Loc\"]",
+        "188": "[\"Moscow's Bolshoi Ballet:Org\", \"Moscow:Loc\", \"Leningrad's Kirov Ballet:Org\", \"Yerevan:Loc\", \"Armenian:Loc\", \"U.S. sopranos June Anderson:Per\", \"Carol Vaness:Per\", \"British dancers:Per\"]",
+        "195": "[\"Michael D. Papagiannis:Per\", \"Boston University:Org\", \"Earth:Loc\"]",
+        "197": "[\"Ostined:Loc\", \"Lesny:Loc\", \"Liberec:Loc\", \"Czechoslovakia:Loc\", \"Gmund:Loc\", \"Austria:Loc\"]",
+        "198": "[\"BONE:Loc\", \"Idaho:Loc\", \"AP:Org\"]"
+    },
+    "logic_processed_output": {
+        "17": [
+            "\nIs the relation \"Hakawati Theatre is(was) OrgBased In Jerusalem\" correct? (Yes/Likely/No)"
+        ],
+        "23": [
+            "\nIs the relation \"AP is(was) OrgBased In PERUGIA\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"AP is(was) OrgBased In Italy\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"PERUGIA is(was) Located In Italy\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Italy is(was) Located In PERUGIA\" correct? (Yes/Likely/No)"
+        ],
+        "34": [
+            "\nIs the relation \"Reagan Live(d) In America\" correct? (Yes/Likely/No)"
+        ],
+        "35": [
+            "\nIs the relation \"Reagan Live(d) In Washington\" correct? (Yes/Likely/No)"
+        ],
+        "36": [
+            "\nIs the relation \"University of Virginia is(was) OrgBased In Charlottesville\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"University of Virginia is(was) OrgBased In Central America\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Congress is(was) OrgBased In Charlottesville\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Congress is(was) OrgBased In Central America\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Contra rebels is(was) OrgBased In Charlottesville\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Contra rebels is(was) OrgBased In Central America\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Charlottesville is(was) Located In Central America\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Central America is(was) Located In Charlottesville\" correct? (Yes/Likely/No)"
+        ],
+        "56": [
+            "\nIs the relation \"Wright Work(ed) For University of Texas\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Wright Work(ed) For Watergate\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Nixon Work(ed) For University of Texas\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Nixon Work(ed) For Watergate\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Wright Kill(ed) Nixon\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Nixon Kill(ed) Wright\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"University of Texas is(was) OrgBased In White House\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Watergate is(was) OrgBased In White House\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Wright Live(d) In White House\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Nixon Live(d) In White House\" correct? (Yes/Likely/No)"
+        ],
+        "77": [
+            "\nIs the relation \"Nikita Khrushchev Work(ed) For Soviet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"President Kennedy Work(ed) For Soviet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Nikita Khrushchev Kill(ed) President Kennedy\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"President Kennedy Kill(ed) Nikita Khrushchev\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Soviet is(was) OrgBased In Cuba\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Nikita Khrushchev Live(d) In Cuba\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"President Kennedy Live(d) In Cuba\" correct? (Yes/Likely/No)"
+        ],
+        "79": [
+            "\nIs the relation \"Anastas Mikoyan Work(ed) For Soviet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Khrushchev Work(ed) For Soviet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Anastas Mikoyan Kill(ed) Khrushchev\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Khrushchev Kill(ed) Anastas Mikoyan\" correct? (Yes/Likely/No)"
+        ],
+        "80": [
+            "\nIs the relation \"Mikoyan Work(ed) For Soviet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Khrushchev Work(ed) For Soviet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Mikoyan Kill(ed) Khrushchev\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Khrushchev Kill(ed) Mikoyan\" correct? (Yes/Likely/No)"
+        ],
+        "89": [
+            "\nIs the relation \"Alekseev Work(ed) For Soviet diplomatic corps\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Soviet diplomatic corps is(was) OrgBased In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Alekseev Live(d) In Moscow\" correct? (Yes/Likely/No)"
+        ],
+        "92": [
+            "\nIs the relation \"AP is(was) OrgBased In MILAN\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"AP is(was) OrgBased In Italy\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"MILAN is(was) Located In Italy\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Italy is(was) Located In MILAN\" correct? (Yes/Likely/No)"
+        ],
+        "130": [
+            "\nIs the relation \"Hot Springs National Park is(was) Located In Ark.\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Ark. is(was) Located In Hot Springs National Park\" correct? (Yes/Likely/No)"
+        ],
+        "136": [
+            "\nIs the relation \"Aguadilla is(was) Located In Puerto Rico\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Puerto Rico is(was) Located In Aguadilla\" correct? (Yes/Likely/No)"
+        ],
+        "138": [
+            "\nIs the relation \"Fort Wainwright annex is(was) Located In Fairbanks\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Fort Wainwright annex is(was) Located In Alaska\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Fairbanks is(was) Located In Fort Wainwright annex\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Fairbanks is(was) Located In Alaska\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Alaska is(was) Located In Fort Wainwright annex\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Alaska is(was) Located In Fairbanks\" correct? (Yes/Likely/No)"
+        ],
+        "150": [
+            "\nIs the relation \"ATLANTIC CITY is(was) Located In N.J.\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"N.J. is(was) Located In ATLANTIC CITY\" correct? (Yes/Likely/No)"
+        ],
+        "171": [
+            "\nIs the relation \"FRESNO is(was) Located In Calif.\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Calif. is(was) Located In FRESNO\" correct? (Yes/Likely/No)"
+        ],
+        "188": [
+            "\nIs the relation \"U.S. sopranos June Anderson Work(ed) For Moscow's Bolshoi Ballet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"U.S. sopranos June Anderson Work(ed) For Leningrad's Kirov Ballet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Work(ed) For Moscow's Bolshoi Ballet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Work(ed) For Leningrad's Kirov Ballet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Work(ed) For Moscow's Bolshoi Ballet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Work(ed) For Leningrad's Kirov Ballet\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"U.S. sopranos June Anderson Kill(ed) Carol Vaness\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"U.S. sopranos June Anderson Kill(ed) British dancers\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Kill(ed) U.S. sopranos June Anderson\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Kill(ed) British dancers\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Kill(ed) U.S. sopranos June Anderson\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Kill(ed) Carol Vaness\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Moscow's Bolshoi Ballet is(was) OrgBased In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Moscow's Bolshoi Ballet is(was) OrgBased In Yerevan\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Moscow's Bolshoi Ballet is(was) OrgBased In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Leningrad's Kirov Ballet is(was) OrgBased In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Leningrad's Kirov Ballet is(was) OrgBased In Yerevan\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Leningrad's Kirov Ballet is(was) OrgBased In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"U.S. sopranos June Anderson Live(d) In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"U.S. sopranos June Anderson Live(d) In Yerevan\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"U.S. sopranos June Anderson Live(d) In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Live(d) In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Live(d) In Yerevan\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Carol Vaness Live(d) In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Live(d) In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Live(d) In Yerevan\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"British dancers Live(d) In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Moscow is(was) Located In Yerevan\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Moscow is(was) Located In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Yerevan is(was) Located In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Yerevan is(was) Located In Armenian\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Armenian is(was) Located In Moscow\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Armenian is(was) Located In Yerevan\" correct? (Yes/Likely/No)"
+        ],
+        "195": [
+            "\nIs the relation \"Michael D. Papagiannis Work(ed) For Boston University\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Boston University is(was) OrgBased In Earth\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Michael D. Papagiannis Live(d) In Earth\" correct? (Yes/Likely/No)"
+        ],
+        "197": [
+            "\nIs the relation \"Ostined is(was) Located In Lesny\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Ostined is(was) Located In Liberec\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Ostined is(was) Located In Czechoslovakia\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Ostined is(was) Located In Gmund\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Ostined is(was) Located In Austria\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Lesny is(was) Located In Ostined\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Lesny is(was) Located In Liberec\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Lesny is(was) Located In Czechoslovakia\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Lesny is(was) Located In Gmund\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Lesny is(was) Located In Austria\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Liberec is(was) Located In Ostined\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Liberec is(was) Located In Lesny\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Liberec is(was) Located In Czechoslovakia\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Liberec is(was) Located In Gmund\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Liberec is(was) Located In Austria\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Czechoslovakia is(was) Located In Ostined\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Czechoslovakia is(was) Located In Lesny\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Czechoslovakia is(was) Located In Liberec\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Czechoslovakia is(was) Located In Gmund\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Czechoslovakia is(was) Located In Austria\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Gmund is(was) Located In Ostined\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Gmund is(was) Located In Lesny\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Gmund is(was) Located In Liberec\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Gmund is(was) Located In Czechoslovakia\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Gmund is(was) Located In Austria\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Austria is(was) Located In Ostined\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Austria is(was) Located In Lesny\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Austria is(was) Located In Liberec\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Austria is(was) Located In Czechoslovakia\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Austria is(was) Located In Gmund\" correct? (Yes/Likely/No)"
+        ],
+        "198": [
+            "\nIs the relation \"AP is(was) OrgBased In BONE\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"AP is(was) OrgBased In Idaho\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"BONE is(was) Located In Idaho\" correct? (Yes/Likely/No)",
+            "\nIs the relation \"Idaho is(was) Located In BONE\" correct? (Yes/Likely/No)"
+        ]
+    }
+}
