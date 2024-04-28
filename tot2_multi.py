@@ -17,10 +17,14 @@ def get_response_from_llm(args):
     prompt_path_entity = os.path.join(prompt_dir, 'prompt_tot_entity.txt')
     with open(prompt_path_entity, 'r') as f:
         prompt_entity = f.read()
-    if not args.no_relation_type_extraction:
+    if args.relation_type_extraction:
         prompt_path_relation_type = os.path.join(prompt_dir, 'prompt_tot_relation_type.txt')
         with open(prompt_path_relation_type, 'r') as f:
             prompt_relation_type = f.read()
+    if args.do_paraphrase:
+        prompt_path_para = os.path.join(prompt_dir, 'prompt_tot_para.txt')
+        with open(prompt_path_para, 'r') as f:
+            prompt_para = f.read()
     prompt_path_relation = os.path.join(prompt_dir, 'prompt_tot_relation.txt')
     with open(prompt_path_relation, 'r') as f:
         prompt_relation = f.read()
@@ -44,11 +48,11 @@ def get_response_from_llm(args):
             "Located In": set([("Loc", "Loc")])
         }
         augment_relation_types = {
-            'Work For': 'work For',
+            'Work For': 'work for',
             'Kill': 'kill',
-            'OrgBased In': 'base In',
-            'Live In': 'live In',
-            'Located In': 'locate In'
+            'OrgBased In': 'base in',
+            'Live In': 'live in',
+            'Located In': 'locate in'
         }
     elif dataset == 'nyt':
         data = load_nyt()
@@ -57,10 +61,12 @@ def get_response_from_llm(args):
         raise Exception('Dataset Not Supported!')
     if args.test_k >= 0:
         test_data = dict_first_k(test_data, args.test_k)
+    if args.test_ids:
+        test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
     responses_entity = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, test_data)
-    if not args.no_relation_type_extraction: 
+    if args.relation_type_extraction: 
         responses_relation_type = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data)
 
     # logic to map the extracted entities / relation types into relations, with the valid type dict
@@ -70,7 +76,7 @@ def get_response_from_llm(args):
 
         # try to parse each response; if fail, pass an empty list
         entity_type_dict = struct_response_entity(response, data['entities'])
-        relation_type_list = struct_response_relation(responses_relation_type[id]) if not args.no_relation_type_extraction else data['relations']      
+        relation_type_list = struct_response_relation(responses_relation_type[id]) if args.relation_type_extraction else data['relations']      
 
         # construct relations; {relation type: [[ins1, int2], [ins3, ins4]]}
         relation_type_dict = {}
@@ -95,7 +101,7 @@ def get_response_from_llm(args):
         for relation_type, entity_pairs in relation_type_dict.items():
             for entity_pair in entity_pairs:
                 entity_1, entity_2 = entity_pair[0].split(':')[0][1:], entity_pair[1].split(':')[0][1:]
-                relation_prompt_string.append(f'\nDoes(Did) {entity_1} {augment_relation_types[relation_type]} {entity_2}? (Yes/Likely/No)')
+                relation_prompt_string.append(f'\nDoes(Did) {entity_1} {augment_relation_types[relation_type]} {entity_2}? (Yes/No)') # Yes/Likely/No
                 relation_answer_string.append((entity_pair[0].strip('"').lower(), f'{relation_type}'.lower(), entity_pair[1].strip('"').lower()))
 
         # record to the dictionary
@@ -110,8 +116,14 @@ def get_response_from_llm(args):
             'logic_processed_output': relation_prompt_string_dict
         }, json_file)
     shutil.copy2(prompt_path_entity, out_dir)
-    if not args.no_relation_type_extraction: 
+    if args.relation_type_extraction: 
         shutil.copy2(prompt_path_relation_type, out_dir)
+    
+    if args.do_paraphrase:
+        responses_para = run_llm_para(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
+        for id in test_data:
+            test_data[id]['text'] = responses_para[id]
+            print(test_data[id]['text']) 
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
     responses_relation_rating = run_llm_relation_multi(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict)
@@ -205,13 +217,15 @@ if __name__ == "__main__":
     parser.add_argument('--temp', type=float, default=0.5)
     parser.add_argument('--max_tokens', type=int, default=256)
     parser.add_argument('--seed', type=int, default=42)
-    parser.add_argument('--no_relation_type_extraction', action='store_true')
+    parser.add_argument('--relation_type_extraction', action='store_true')
+    parser.add_argument('--do_paraphrase', action='store_true')
     parser.add_argument('--check_commonsense', action='store_true')
 
     parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--split', type=int, default=0)
     parser.add_argument('--is_val', action='store_true')
     parser.add_argument('--test_k', type=int, default=-1)
+    parser.add_argument('--test_ids', nargs="*", type=int, default=[])
 
     parser.add_argument('--prompt_dir', type=str, default='')
 

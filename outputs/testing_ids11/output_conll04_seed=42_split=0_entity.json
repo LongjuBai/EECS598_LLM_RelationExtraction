@@ -1,0 +1,39 @@
+{
+    "raw_entity_output": {
+        "5148": "[\"Belli:Per\", \"Jack Ruby:Per\", \"John F. Kennedy:Per\", \"Lee Harvey Oswald:Per\", \"Jim Bakker:Per\", \"Tammy Bakker:Per\"]"
+    },
+    "logic_processed_output": {
+        "5148": [
+            "\nDoes(Did) Belli kill Jack Ruby? (Yes/No)",
+            "\nDoes(Did) Belli kill John F. Kennedy? (Yes/No)",
+            "\nDoes(Did) Belli kill Lee Harvey Oswald? (Yes/No)",
+            "\nDoes(Did) Belli kill Jim Bakker? (Yes/No)",
+            "\nDoes(Did) Belli kill Tammy Bakker? (Yes/No)",
+            "\nDoes(Did) Jack Ruby kill Belli? (Yes/No)",
+            "\nDoes(Did) Jack Ruby kill John F. Kennedy? (Yes/No)",
+            "\nDoes(Did) Jack Ruby kill Lee Harvey Oswald? (Yes/No)",
+            "\nDoes(Did) Jack Ruby kill Jim Bakker? (Yes/No)",
+            "\nDoes(Did) Jack Ruby kill Tammy Bakker? (Yes/No)",
+            "\nDoes(Did) John F. Kennedy kill Belli? (Yes/No)",
+            "\nDoes(Did) John F. Kennedy kill Jack Ruby? (Yes/No)",
+            "\nDoes(Did) John F. Kennedy kill Lee Harvey Oswald? (Yes/No)",
+            "\nDoes(Did) John F. Kennedy kill Jim Bakker? (Yes/No)",
+            "\nDoes(Did) John F. Kennedy kill Tammy Bakker? (Yes/No)",
+            "\nDoes(Did) Lee Harvey Oswald kill Belli? (Yes/No)",
+            "\nDoes(Did) Lee Harvey Oswald kill Jack Ruby? (Yes/No)",
+            "\nDoes(Did) Lee Harvey Oswald kill John F. Kennedy? (Yes/No)",
+            "\nDoes(Did) Lee Harvey Oswald kill Jim Bakker? (Yes/No)",
+            "\nDoes(Did) Lee Harvey Oswald kill Tammy Bakker? (Yes/No)",
+            "\nDoes(Did) Jim Bakker kill Belli? (Yes/No)",
+            "\nDoes(Did) Jim Bakker kill Jack Ruby? (Yes/No)",
+            "\nDoes(Did) Jim Bakker kill John F. Kennedy? (Yes/No)",
+            "\nDoes(Did) Jim Bakker kill Lee Harvey Oswald? (Yes/No)",
+            "\nDoes(Did) Jim Bakker kill Tammy Bakker? (Yes/No)",
+            "\nDoes(Did) Tammy Bakker kill Belli? (Yes/No)",
+            "\nDoes(Did) Tammy Bakker kill Jack Ruby? (Yes/No)",
+            "\nDoes(Did) Tammy Bakker kill John F. Kennedy? (Yes/No)",
+            "\nDoes(Did) Tammy Bakker kill Lee Harvey Oswald? (Yes/No)",
+            "\nDoes(Did) Tammy Bakker kill Jim Bakker? (Yes/No)"
+        ]
+    }
+}

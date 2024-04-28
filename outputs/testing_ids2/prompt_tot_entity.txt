@@ -1,0 +1,45 @@
+Example Instructional Prefix: List the entities in [Per, Loc, Org] in the given text. Per are human names. Loc are geographical locations. Org are non-physical group entities, such as companies.
+
+TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
+Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
+
+TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
+Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
+
+TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
+Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren", "Warren Commission"]
+
+TEXT: PURCHASE, N.Y.
+Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
+
+TEXT: BELGRADE, Yugoslavia (AP)
+Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
+
+TEXT: Rome is in Lazio province and Naples in Campania.
+Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
+
+TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
+Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
+
+TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
+Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
+
+TEXT: Moscow ITAR-TASS
+Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
+
+TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
+Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
+
+TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
+Entities: ["Sirhan:Per", "Kennedy:Per"]
+
+TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
+Entities: ["Colorado:Loc", "Denver:Loc"]
+
+TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
+Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
+
+Instructional Prefix: List the entities in [Per, Loc, Org] in the given text. Per includes common human names. Loc includes countries, cities, states, provinces, counties, and geographical locations. Org includes groups, communities, companies, corportions, clubs, institutions, teams, and governments.
+
+TEXT: $TEXT$
+Entities:
