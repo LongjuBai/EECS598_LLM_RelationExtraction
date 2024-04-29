@@ -115,15 +115,18 @@ def get_response_from_llm(args):
             # 'raw_relation_type_output': responses_relation_type,
             'logic_processed_output': relation_prompt_string_dict
         }, json_file)
-    shutil.copy2(prompt_path_entity, out_dir)
-    if args.relation_type_extraction: 
+    if out_dir != args.prompt_dir:
+        shutil.copy2(prompt_path_entity, out_dir)
+    if args.relation_type_extraction and out_dir != args.prompt_dir: 
         shutil.copy2(prompt_path_relation_type, out_dir)
     
     if args.do_paraphrase:
         responses_para = run_llm_para(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
         for id in test_data:
             test_data[id]['text'] = responses_para[id]
-            print(test_data[id]['text']) 
+            print(test_data[id]['text'])
+        if out_dir != args.prompt_dir:
+            shutil.copy2(prompt_path_para, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
     responses_relation_rating = run_llm_relation_multi(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict)
@@ -202,7 +205,8 @@ def get_response_from_llm(args):
 
         with open(os.path.join(out_dir, f'output_{dataset}_seed={args.seed}_split={args.split}_{scope}.json'), 'w') as json_file:
             json.dump(output, json_file)
-        shutil.copy2(prompt_path_relation, out_dir)
+        if out_dir != args.prompt_dir:
+            shutil.copy2(prompt_path_relation, out_dir)
 
     # return output
 

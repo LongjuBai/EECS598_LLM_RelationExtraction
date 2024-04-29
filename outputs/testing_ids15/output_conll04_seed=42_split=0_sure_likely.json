@@ -1,1 +1,172 @@
-{"micro_pc": 0.12, "macro_pc": 0.42857142857142855, "pc_list": {"work for": 0, "kill": 0.6, "orgbased in": 0, "live in": 0, "located in": 0.0}, "micro_rc": 0.15, "macro_rc": 0.6, "rc_list": {"work for": 0, "kill": 0.75, "orgbased in": 0.0, "live in": 0, "located in": 0}, "micro_f1": 0.13333333333333333, "macro_f1": 0.5, "f1_list": {"work for": 0, "kill": 0.6666666666666666, "orgbased in": 0, "live in": 0, "located in": 0}, "num_cases": 4, "accuracy": 0.25, "correct_cases": {"5148": {"text": "Belli has represented clients such as Jack Ruby, who murdered Lee Harvey Oswald, the assassin of John F. Kennedy, as well as Jim and Tammy Bakker.", "true": [["jack ruby:per", "kill", "lee harvey oswald:per"], ["lee harvey oswald:per", "kill", "john f. kennedy:per"]], "pred": [["jack ruby:per", "kill", "lee harvey oswald:per"], ["lee harvey oswald:per", "kill", "john f. kennedy:per"]], "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"}}, "fail_cases": {"5125": {"text": "In 1964, a Dallas jury convicted Jack Ruby of killing Lee Harvey Oswald, who was accused of assassinating President Kennedy.", "true": [["lee harvey oswald:per", "kill", "president kennedy.:per"]], "pred": [["jack ruby:per", "kill", "lee harvey oswald:per"], ["lee harvey oswald:per", "kill", "president kennedy:per"]], "response": "Yes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"}, "5121": {"text": "Lincoln was shot in the head by actor John Wilkes Booth while attending a play at Ford Theatre in Washington on April 14. John Wilkes Booth cried out \"Sic Semper Tyranus,\" which is the motto of Virginia.", "true": [["john wilkes booth:per", "kill", "lincoln:per"]], "pred": [["john wilkes booth:per", "kill", "lincoln:per"], ["ford theatre:loc", "located in", "washington:loc"]], "response": "No\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\n"}, "36": {"text": "President did not repeat his arguments made during a speech at the University of Virginia in Charlottesville on Dec. 16, regarding Congress' inconsistent approach towards aiding the anti-communist Contra rebels in Central America, which he considered to be a dangerous situation.", "true": [["university of virginia:org", "orgbased in", "charlottesville:loc"]], "pred": [["university of virginia:loc", "located in", "charlottesville:loc"]], "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"}}, "missing_cases": {"5125": [["lee harvey oswald:per", "kill", "president kennedy.:per"]], "36": [["university of virginia:org", "orgbased in", "charlottesville:loc"]]}, "false_cases": {"5125": [["jack ruby:per", "kill", "lee harvey oswald:per"], ["lee harvey oswald:per", "kill", "president kennedy:per"]], "5121": [["ford theatre:loc", "located in", "washington:loc"]], "36": [["university of virginia:loc", "located in", "charlottesville:loc"]]}, "error_cases": {}}
+{
+    "micro_pc": 0.12,
+    "macro_pc": 0.42857142857142855,
+    "pc_list": {
+        "work for": 0,
+        "kill": 0.6,
+        "orgbased in": 0,
+        "live in": 0,
+        "located in": 0.0
+    },
+    "micro_rc": 0.15,
+    "macro_rc": 0.6,
+    "rc_list": {
+        "work for": 0,
+        "kill": 0.75,
+        "orgbased in": 0.0,
+        "live in": 0,
+        "located in": 0
+    },
+    "micro_f1": 0.13333333333333333,
+    "macro_f1": 0.5,
+    "f1_list": {
+        "work for": 0,
+        "kill": 0.6666666666666666,
+        "orgbased in": 0,
+        "live in": 0,
+        "located in": 0
+    },
+    "num_cases": 4,
+    "accuracy": 0.25,
+    "correct_cases": {
+        "5148": {
+            "text": "Belli has represented clients such as Jack Ruby, who murdered Lee Harvey Oswald, the assassin of John F. Kennedy, as well as Jim and Tammy Bakker.",
+            "true": [
+                [
+                    "jack ruby:per",
+                    "kill",
+                    "lee harvey oswald:per"
+                ],
+                [
+                    "lee harvey oswald:per",
+                    "kill",
+                    "john f. kennedy:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "jack ruby:per",
+                    "kill",
+                    "lee harvey oswald:per"
+                ],
+                [
+                    "lee harvey oswald:per",
+                    "kill",
+                    "john f. kennedy:per"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+        }
+    },
+    "fail_cases": {
+        "5125": {
+            "text": "In 1964, a Dallas jury convicted Jack Ruby of killing Lee Harvey Oswald, who was accused of assassinating President Kennedy.",
+            "true": [
+                [
+                    "lee harvey oswald:per",
+                    "kill",
+                    "president kennedy.:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "jack ruby:per",
+                    "kill",
+                    "lee harvey oswald:per"
+                ],
+                [
+                    "lee harvey oswald:per",
+                    "kill",
+                    "president kennedy:per"
+                ]
+            ],
+            "response": "Yes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "5121": {
+            "text": "Lincoln was shot in the head by actor John Wilkes Booth while attending a play at Ford Theatre in Washington on April 14. John Wilkes Booth cried out \"Sic Semper Tyranus,\" which is the motto of Virginia.",
+            "true": [
+                [
+                    "john wilkes booth:per",
+                    "kill",
+                    "lincoln:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "john wilkes booth:per",
+                    "kill",
+                    "lincoln:per"
+                ],
+                [
+                    "ford theatre:loc",
+                    "located in",
+                    "washington:loc"
+                ]
+            ],
+            "response": "No\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\n"
+        },
+        "36": {
+            "text": "President did not repeat his arguments made during a speech at the University of Virginia in Charlottesville on Dec. 16, regarding Congress' inconsistent approach towards aiding the anti-communist Contra rebels in Central America, which he considered to be a dangerous situation.",
+            "true": [
+                [
+                    "university of virginia:org",
+                    "orgbased in",
+                    "charlottesville:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "university of virginia:loc",
+                    "located in",
+                    "charlottesville:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
+        }
+    },
+    "missing_cases": {
+        "5125": [
+            [
+                "lee harvey oswald:per",
+                "kill",
+                "president kennedy.:per"
+            ]
+        ],
+        "36": [
+            [
+                "university of virginia:org",
+                "orgbased in",
+                "charlottesville:loc"
+            ]
+        ]
+    },
+    "false_cases": {
+        "5125": [
+            [
+                "jack ruby:per",
+                "kill",
+                "lee harvey oswald:per"
+            ],
+            [
+                "lee harvey oswald:per",
+                "kill",
+                "president kennedy:per"
+            ]
+        ],
+        "5121": [
+            [
+                "ford theatre:loc",
+                "located in",
+                "washington:loc"
+            ]
+        ],
+        "36": [
+            [
+                "university of virginia:loc",
+                "located in",
+                "charlottesville:loc"
+            ]
+        ]
+    },
+    "error_cases": {}
+}

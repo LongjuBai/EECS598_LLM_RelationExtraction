@@ -12,9 +12,9 @@ def get_response_from_llm(args):
     # load prompt
     if args.is_cot:
         prompt_file_path = os.path.join('prompts', dataset, 'prompt_cot.txt')
-    elif args.is_tot:
-        prompt_file_path = os.path.join('prompts', dataset, 'prompt_tot.txt')
-        prompt_file_path_2 = os.path.join('prompts', dataset, 'prompt_tot2.txt')
+    # elif args.is_tot:
+    #     prompt_file_path = os.path.join('prompts', dataset, 'prompt_tot.txt')
+    #     prompt_file_path_2 = os.path.join('prompts', dataset, 'prompt_tot2.txt')
     else:
         prompt_file_path = os.path.join('prompts', dataset, 'prompt.txt')
     with open(prompt_file_path, 'r') as f:

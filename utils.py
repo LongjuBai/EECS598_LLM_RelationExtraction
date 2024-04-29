@@ -8,10 +8,16 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
+import random
 
 
 def dict_first_k(dic, k):
     return {k: v for k, v in zip(list(dic.keys())[:k], list(dic.values())[:k])}
+
+
+def dict_random_k(dic, k):
+    ids = random.sample(range(len(dic)), k)
+    return {k: v for k, v in zip(list(dic.keys())[ids], list(dic.values())[ids])}
 
 
 def parse_list_string(s, marks_removed=''):
@@ -132,7 +138,7 @@ def run_llm_para(api_key, is_async, model, temp, max_tokens, seed, prompt, data,
                 messages=[
                     {
                         "role": "system",
-                        "content": "Use Logic to analyze given text. Be smart."
+                        "content": "Use Logic to analyze given text. Be smart. Loc only includes location names shown on map."
                     },
                     # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge.
                     {
