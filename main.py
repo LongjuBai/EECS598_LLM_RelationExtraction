@@ -102,7 +102,7 @@ def get_response_from_llm(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--api_key', type=str, default='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')
+    parser.add_argument('--api_key', type=str, default='')
     parser.add_argument('--is_async', action='store_true')
 
     parser.add_argument('--model', type=str, default='gpt-3.5-turbo-0125')

@@ -183,7 +183,7 @@ def get_response_from_llm(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--api_key', type=str, default='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') #sk-proj-s6cVQY87F5oWJo03DtRPT3BlbkFJY5SgzgfJqOIKhETzflEf
+    parser.add_argument('--api_key', type=str, default='')
     parser.add_argument('--is_async', action='store_true')
     parser.add_argument('--suffix', type=str, default='myFolder')
 
