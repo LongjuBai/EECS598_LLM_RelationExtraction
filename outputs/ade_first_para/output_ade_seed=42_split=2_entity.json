@@ -1,0 +1,1936 @@
+{
+    "raw_entity_output": {
+        "1536": "[\"NCSE:Adverse-Effect\", \"ifosfamide:Drug\"]",
+        "2984": "[\"hypertension:Adverse-Effect\", \"Propranolol:Drug\", \"cocaine:Drug\"]",
+        "3685": "[\"rhabdomyolysis:Adverse-Effect\", \"vasopressin:Drug\"]",
+        "2994": "Entities: [\"involuntary movements:Adverse-Effect\", \"trazodone:Drug\"]",
+        "2445": "[\"hydroxychloroquine toxicity:Adverse-Effect\", \"hydroxychloroquine:Drug\"]",
+        "1803": "[\"Serotonin syndrome:Adverse-Effect\", \"citalopram:Drug\", \"fentanyl:Drug\"]",
+        "2276": "[\"Neuroleptic malignant syndrome:Adverse-Effect\", \"risperidone:Drug\"]",
+        "1199": "[\"fulminant hepatitis:Adverse-Effect\", \"hyperthyroidism:Adverse-Effect\", \"amiodarone:Drug\", \"PTU:Drug\"]",
+        "2199": "[\"acute ischaemia:Adverse-Effect\", \"flunitrazepam:Drug\"]",
+        "2406": "[\"Hepatotoxicity:Adverse-Effect\", \"methylprednisolone:Drug\"]",
+        "3650": "[\"Cardiac complications:Adverse-Effect\", \"amphotericin B:Drug\"]",
+        "2820": "[\"glomerulonephritis:Adverse-Effect\", \"hemoptysis:Adverse-Effect\", \"D - penicillamine:Drug\"]",
+        "2625": "[\"Akathisia:Adverse-Effect\", \"fluoxetine:Drug\", \"propranolol:Drug\"]",
+        "3740": "[\"nephrogenic diabetes insipidus:Adverse-Effect\", \"renal tubular acidosis:Adverse-Effect\", \"foscarnet:Drug\"]",
+        "3019": "[\"Dystonia:Adverse-Effect\", \"carbamazepine:Drug\"]",
+        "2020": "[\"hyperglycemia:Adverse-Effect\", \"olanzapine:Drug\"]",
+        "2787": "[\"hepatotoxicity:Adverse-Effect\", \"Salicylate:Drug\"]",
+        "625": "[\"marrow aplasia:Adverse-Effect\", \"Ticlopidine:Drug\", \"cyclosporine:Drug\"]",
+        "90": "[\"angioedema:Adverse-Effect\", \"losartan:Drug\"]",
+        "566": "[\"sarcoidosis:Adverse-Effect\", \"interferon alfa:Drug\", \"ribavirin:Drug\"]",
+        "2438": "[\"neuropsychiatric symptoms:Adverse-Effect\", \"Interferon:Drug\"]",
+        "2552": "[\"progressive visual loss:Adverse-Effect\", \"loss of consciousness:Adverse-Effect\", \"MTX:Drug\", \"Ara - C:Drug\"]",
+        "1689": "[\"hyponatremia:Adverse-Effect\", \"citalopram:Drug\", \"mirtazapine:Drug\"]",
+        "1197": "[\"Vogt - Koyanagi - Harada disease:Adverse-Effect\", \"interferon alpha:Drug\"]",
+        "1661": "[\"Anaphylaxis:Adverse-Effect\", \"intrathecal diamorphine:Drug\"]",
+        "2055": "[\"sclerosing glomerulonephritis:Adverse-Effect\", \"Anastrozole:Drug\"]",
+        "3213": "[\"Priapism:Adverse-Effect\", \"trazodone:Drug\"]",
+        "4071": "[\"liver injury:Adverse-Effect\", \"Methyldopa:Drug\"]",
+        "3845": "[\"neuromuscular block:Adverse-Effect\", \"magnesium:Drug\", \"curariform muscle relaxant:Drug\"]",
+        "2184": "[\"drug-induced fever:Adverse-Effect\", \"diltiazem hydrochloride:Drug\"]",
+        "43": "[\"hepatitis:Adverse-Effect\", \"diclofenac:Drug\"]",
+        "1151": "[\"Acute renal insufficiency:Adverse-Effect\", \"ciprofloxacin:Drug\"]",
+        "3832": "[\"anticonvulsant osteomalacia:Adverse-Effect\", \"Acetazolamide:Drug\"]",
+        "3851": "No entities found.",
+        "3834": "[\"Severe osteomalacia:Adverse-Effect\", \"phenytoin:Drug\", \"phenobarbital:Drug\", \"acetazolamide:Drug\"]",
+        "3864": "[\"liver damage:Adverse-Effect\", \"fibrosis:Adverse-Effect\", \"cirrhosis:Adverse-Effect\", \"Methotrexate:Drug\"]",
+        "2653": "[\"TMA:Adverse-Effect\", \"cisplatin:Drug\", \"bleomycin:Drug\"]",
+        "3954": "[\"rash:Adverse-Effect\", \"Cephalexin:Drug\"]",
+        "2015": "[\"herpetic rash:Adverse-Effect\", \"acute liver failure:Adverse-Effect\", \"imatinib:Drug\"]",
+        "1980": "[\"leukoencephalopathy:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "2704": "[\"acute myocardial infarction:Adverse-Effect\", \"L - thyroxine:Drug\"]",
+        "1698": "[\"Scleritis:Adverse-Effect\", \"zoledronic acid:Drug\"]",
+        "3366": "[\"severe hepatotoxicity:Adverse-Effect\", \"hycanthone:Drug\"]",
+        "3527": "[\"alternative hemiparesis:Adverse-Effect\", \"dysarthria:Adverse-Effect\", \"altered consciousness:Adverse-Effect\", \"HD - MTX:Drug\", \"leucovorin:Drug\"]",
+        "1224": "[\"seizures:Adverse-Effect\", \"clozapine:Drug\"]",
+        "3189": "[\"platelet dysfunction:Adverse-Effect\", \"Moxalactam:Drug\"]",
+        "2539": "[\"sulfonamide-induced injury:Adverse-Effect\", \"sulfonamide:Drug\"]",
+        "1258": "[\"ototoxicity:Adverse-Effect\", \"antineutrophil cytoplasmic antibody (ANCA) - associated vasculitis:Adverse-Effect\", \"propylthiouracil (PTU):Drug\"]",
+        "876": "[\"Thrombocytosis:Adverse-Effect\", \"ciprofloxacin:Drug\", \"tazobactam:Drug\", \"piperacillin:Drug\"]",
+        "178": "[\"transient ischemic attacks:Adverse-Effect\", \"seizure:Adverse-Effect\", \"L - asparaginase:Drug\"]",
+        "1787": "[\"recurrent eosinophilia:Adverse-Effect\", \"severe persistent bronchospasm:Adverse-Effect\", \"tobramycin:Drug\"]",
+        "1286": "[\"acute rhabdomyolysis:Adverse-Effect\", \"cerivastatin:Drug\"]",
+        "3326": "[\"bronchospasm:Adverse-Effect\", \"propranolol:Drug\"]",
+        "4137": "[\"anaphylactic reaction:Adverse-Effect\", \"prednisone:Drug\"]",
+        "2091": "[\"Crohn's disease:Adverse-Effect\", \"Copaxone:Drug\"]",
+        "2520": "[\"erythema multiforme:Adverse-Effect\", \"griseofulvin:Drug\"]",
+        "2698": "[\"Parkinson's disease:Adverse-Effect\", \"chlorpromazine:Drug\"]",
+        "2620": "[\"CNS abnormalities:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "3171": "[\"renal failure:Adverse-Effect\", \"skeletal muscle ischemia:Adverse-Effect\", \"myoglobin:Drug\", \"vasopressin:Drug\"]",
+        "1721": "[\"valvular heart disease:Adverse-Effect\", \"benfluorex:Drug\"]",
+        "903": "[\"Scleroderma:Adverse-Effect\", \"bleomycin:Drug\"]",
+        "3705": "[\"Kaposi's sarcoma:Adverse-Effect\", \"corticosteroid therapy:Drug\", \"prednisolone:Drug\"]",
+        "2742": "[\"tonic - clonic seizures:Adverse-Effect\", \"adriamycin:Drug\", \"cisplatin:Drug\"]",
+        "306": "[\"Acute myeloid leukemia:Adverse-Effect\", \"lung cancer:Adverse-Effect\", \"fludarabine:Drug\", \"autologous peripheral blood stem - cell transplantation:Drug\"]",
+        "3686": "[\"vasodilation:Adverse-Effect\", \"vasopressin:Drug\"]",
+        "2581": "[\"tardive dyskinesia:Adverse-Effect\", \"sulpiride:Drug\"]",
+        "4040": "[\"Skin necrosis:Adverse-Effect\", \"low - molecular weight heparin:Drug\"]",
+        "1873": "[\"systemic lupus erythematosus:Adverse-Effect\", \"recombinant human interferon gamma:Drug\"]",
+        "3745": "[\"Accelerated nodulosis:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "3321": "[\"Acute non - lymphocytic leukemia:Adverse-Effect\", \"Treosulfan:Drug\"]",
+        "3074": "[\"left homonymous hemianopsia:Adverse-Effect\", \"encephalopathy:Adverse-Effect\", \"cisplatinum:Drug\", \"vinblastine:Drug\", \"bleomycin:Drug\"]",
+        "1407": "[\"CD20-negative T - cell - rich B - cell lymphoma:Adverse-Effect\", \"rituximab:Drug\"]",
+        "3606": "[\"hyperammonemia:Adverse-Effect\", \"valproic acid:Drug\"]",
+        "3104": "[\"Nonoliguric acute renal failure:Adverse-Effect\", \"captopril:Drug\"]",
+        "1634": "[\"Listeria brain abscess:Adverse-Effect\", \"Pneumocystis pneumonia:Adverse-Effect\", \"Kaposi's sarcoma:Adverse-Effect\", \"temozolomide:Drug\"]",
+        "1124": "[\"glucose levels:Adverse-Effect\", \"diabetes:Adverse-Effect\", \"indapamide:Drug\", \"fosinopril:Drug\"]",
+        "2287": "[\"serious hypoglycemia:Adverse-Effect\", \"octreotide:Drug\"]",
+        "3500": "[\"hypokalemia:Adverse-Effect\", \"Albuterol:Drug\"]",
+        "2486": "[\"fever:Adverse-Effect\", \"pancytopenia:Adverse-Effect\", \"splenomegaly:Adverse-Effect\", \"extreme hyperferritinemia:Adverse-Effect\", \"adalimumab:Drug\"]",
+        "3034": "[\"squamous cell carcinoma:Adverse-Effect\", \"psoralens:Drug\", \"long - wave ultraviolet radiation:Drug\"]",
+        "1412": "[\"Transfusion haemosiderosis:Adverse-Effect\", \"desferrioxamine:Drug\"]",
+        "1768": "[\"Infectious endophthalmitis:Adverse-Effect\", \"bevacizumab:Drug\"]",
+        "1903": "[\"rhabdomyolysis:Adverse-Effect\", \"simvastatin:Drug\", \"cyclosporine:Drug\"]",
+        "3105": "[\"acute reversible renal failure:Adverse-Effect\", \"Captopril:Drug\"]",
+        "2723": "[\"Gastro - oesophageal reflux:Adverse-Effect\", \"nifedipine:Drug\"]",
+        "4239": "[\"QT prolongation:Adverse-Effect\", \"T wave inversion:Adverse-Effect\", \"Pirmenol hydrochloride:Drug\"]",
+        "886": "[\"painful, bilateral gynaecomastia:Adverse-Effect\", \"Isoniazid:Drug\"]",
+        "2102": "[\"angio - oedema:Adverse-Effect\", \"Voriconazole:Drug\"]",
+        "843": "[\"Fatal agranulocytosis:Adverse-Effect\", \"dapsone:Drug\"]",
+        "3243": "[\"acute renal failure:Adverse-Effect\", \"isoniazid:Drug\", \"rifampin:Drug\"]",
+        "70": "[\"progressive paraparesis:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "4049": "[\"acute pancreatitis:Adverse-Effect\", \"5-aminosalicylic acid:Drug\"]",
+        "2403": "[\"Torsades de Pointes:Adverse-Effect\", \"garenoxacin:Drug\", \"disopyramide:Drug\", \"cytochrome P450:Drug\", \"licorice:Drug\"]",
+        "1606": "[\"sub-conjunctival haematoma:Adverse-Effect\", \"warfarin:Drug\"]",
+        "4264": "[\"Sunburn:Adverse-Effect\", \"psoralen:Drug\"]",
+        "2400": "[\"pulmonary toxicity:Adverse-Effect\", \"gemcitabine:Drug\"]",
+        "972": "[\"Severe Raynaud's phenomenon:Adverse-Effect\", \"yohimbine:Drug\"]",
+        "310": "[\"incontinence:Adverse-Effect\", \"venlafaxine:Drug\"]",
+        "354": "[\"intestinal toxic effects:Adverse-Effect\", \"meloxicam:Drug\"]",
+        "3126": "[\"low-grade fever:Adverse-Effect\", \"cough:Adverse-Effect\", \"dyspnea:Adverse-Effect\", \"sodium aurothiomalate:Drug\"]",
+        "1556": "[\"Destructive thyrotoxicosis:Adverse-Effect\", \"IFN - alpha:Drug\", \"Graves' hyperthyroidism:Adverse-Effect\"]",
+        "4082": "[\"ballistic movements:Adverse-Effect\", \"heroin:Drug\"]",
+        "1646": "[\"bilateral ptosis:Adverse-Effect\", \"vincristine:Drug\"]",
+        "123": "[\"total Hb:Adverse-Effect\", \"transfusion needs:Adverse-Effect\", \"HU:Drug\", \"SPB:Drug\"]",
+        "1170": "[\"perioral and upper extremity paresthesias:Adverse-Effect\", \"CAP:Drug\"]",
+        "4167": "[\"rhabdomyolysis:Adverse-Effect\", \"Clozapine:Drug\"]",
+        "2856": "[\"systemic hypersensitivity reaction:Adverse-Effect\", \"ibuprofen:Drug\"]",
+        "2672": "[\"thyrotoxicosis:Adverse-Effect\", \"amiodarone:Drug\", \"Dexamethasone:Drug\"]",
+        "2073": "[\"paraesthesia:Adverse-Effect\", \"agitation:Adverse-Effect\", \"olanzapine:Drug\"]",
+        "4055": "[\"maculopapular eruption:Adverse-Effect\", \"fever:Adverse-Effect\", \"ritonavir:Drug\"]",
+        "518": "[\"Gallstones:Adverse-Effect\", \"bile sludge:Adverse-Effect\", \"octreotide:Drug\"]",
+        "2947": "[\"temporary weakness:Adverse-Effect\", \"ampicillin sodium:Drug\"]",
+        "853": "[\"Proliferation of abnormal bone marrow histiocytes:Adverse-Effect\", \"granulocyte macrophage - colony - stimulating factor:Drug\"]",
+        "653": "[\"Generalised pustular psoriasis:Adverse-Effect\", \"cyclosporin a:Drug\", \"tumour necrosis factor alpha inhibitor:Drug\"]",
+        "3571": "[\"spontaneous first trimester abortions:Adverse-Effect\", \"therapeutic terminations:Adverse-Effect\", \"fetal abnormality:Adverse-Effect\", \"zidovudine:Drug\"]",
+        "2412": "[\"tardive dyskinesia:Adverse-Effect\", \"clozapine:Drug\"]",
+        "1937": "[\"colonic ulcer:Adverse-Effect\", \"sigmoidovesical fistula:Adverse-Effect\", \"calcium polystyrene sulfonate:Drug\", \"sorbitol:Drug\"]",
+        "1859": "[\"Interstitial pneumonitis:Adverse-Effect\", \"alveolar hemorrhage:Adverse-Effect\", \"rituximab:Drug\"]",
+        "703": "[\"palmar - plantar erythrodysaesthesia:Adverse-Effect\", \"cytarabine:Drug\"]",
+        "3799": "[\"increased serum lithium concentrations:Adverse-Effect\", \"acyclovir:Drug\"]",
+        "4189": "[\"vitreous hemorrhage:Adverse-Effect\", \"tPA:Drug\"]",
+        "2339": "[\"hyperammonemia:Adverse-Effect\", \"Carbamazepine:Drug\"]",
+        "2093": "[\"obsessional - like suicidal ideas:Adverse-Effect\", \"ketoconazole:Drug\"]",
+        "1656": "[\"neurotoxicity:Adverse-Effect\", \"5-fluorouracil:Drug\"]",
+        "4104": "[\"CDIC:Adverse-Effect\", \"clindamycin phosphate:Drug\", \"C. difficile toxin:Drug\"]",
+        "3781": "[\"Oculomotor disturbances:Adverse-Effect\", \"5-fluorouracil:Drug\"]",
+        "937": "[\"Renal tubular acidosis:Adverse-Effect\", \"FK506:Drug\"]",
+        "2084": "[\"Acute delirium:Adverse-Effect\", \"levofloxacin:Drug\"]",
+        "659": "[\"direct cytotoxic effect:Adverse-Effect\", \"ticlopidine:Drug\"]",
+        "3594": "[\"Seizures:Adverse-Effect\", \"fluoxetine:Drug\"]",
+        "3194": "[\"Thrombotic thrombocytopenic purpura:Adverse-Effect\", \"penicillamine:Drug\"]",
+        "640": "[\"Skin necrosis:Adverse-Effect\", \"vasopressin:Drug\"]",
+        "1843": "[\"hyperpigmentation:Adverse-Effect\", \"bleomycin:Drug\"]",
+        "3450": "[\"Arterial hypertension:Adverse-Effect\", \"phenylephrine:Drug\"]",
+        "2731": "[\"dacryolith:Adverse-Effect\", \"adrenaline:Drug\"]",
+        "3654": "[\"acute methemoglobinemia:Adverse-Effect\", \"severe anoxic metabolic acidosis:Adverse-Effect\", \"Methylene blue:Drug\", \"sweet spirits of nitre:Drug\"]",
+        "4148": "[\"Severe respiratory syncytial virus pulmonary infection:Adverse-Effect\", \"fludarabine:Drug\"]",
+        "1784": "[\"Piloerection:Adverse-Effect\", \"fluvoxamine:Drug\", \"milnacipran:Drug\"]",
+        "623": "[\"marrow aplasia:Adverse-Effect\", \"ticlopidine:Drug\", \"colony-stimulating factors:Drug\", \"corticosteroids:Drug\", \"cyclosporine:Drug\"]",
+        "2318": "[\"acute pancreatitis:Adverse-Effect\", \"Tigecycline:Drug\"]",
+        "3113": "[\"osteomalacia:Adverse-Effect\", \"cholestyramine:Drug\"]",
+        "2143": "[\"acute renal failure:Adverse-Effect\", \"gabapentin:Drug\"]",
+        "2398": "[\"pulmonary toxicity:Adverse-Effect\", \"gemcitabine:Drug\"]",
+        "410": "[\"Massive plasmocytosis:Adverse-Effect\", \"methimazole:Drug\"]",
+        "2974": "[\"pellagra:Adverse-Effect\", \"Isoniazid:Drug\"]",
+        "4073": "[\"Acute respiratory depression:Adverse-Effect\", \"morphine:Drug\"]",
+        "1148": "[\"Sideroblastic anemia:Adverse-Effect\", \"linezolid:Drug\"]",
+        "2111": "[\"leukopenia:Adverse-Effect\", \"cephalosporin:Drug\"]",
+        "3292": "[\"lichen planus:Adverse-Effect\", \"gold:Drug\"]",
+        "26": "[\"Allergic contact dermatitis:Adverse-Effect\", \"irritant contact dermatitis:Adverse-Effect\", \"calcipotriol:Drug\"]",
+        "460": "[\"grand mal seizures:Adverse-Effect\", \"petit mal seizures:Adverse-Effect\", \"amphotericin B:Drug\"]",
+        "244": "[\"lactic acidosis:Adverse-Effect\", \"stavudine:Drug\", \"lamivudine:Drug\"]",
+        "2371": "[\"cardiovascular and neurological depression:Adverse-Effect\", \"oxymetalzoline:Drug\"]",
+        "3459": "[\"hepatotoxicity:Adverse-Effect\", \"benzarone:Drug\"]",
+        "4051": "[\"acute renal failure:Adverse-Effect\", \"enalapril:Drug\"]",
+        "1673": "[\"BOOP:Adverse-Effect\", \"rituximab:Drug\"]",
+        "3549": "[\"contact dermatitis:Adverse-Effect\", \"Budesonide:Drug\"]",
+        "311": "[\"thrombocytopenia:Adverse-Effect\", \"heparin:Drug\"]",
+        "3918": "[\"severe adverse reactions:Adverse-Effect\", \"5-fluorouracil:Drug\"]",
+        "3980": "[\"magnesium toxicosis:Adverse-Effect\", \"calcium:Drug\"]",
+        "3797": "No entities found.",
+        "300": "[\"severe thrombocytopenia:Adverse-Effect\", \"quinine:Drug\"]",
+        "1356": "[\"increased vincristine neurotoxicity:Adverse-Effect\", \"Itraconazole:Drug\"]",
+        "2711": "[\"renal failure:Adverse-Effect\", \"eosinophilia:Adverse-Effect\", \"skin rash:Adverse-Effect\", \"renal biopsy finding:Adverse-Effect\", \"ampicillin:Drug\"]",
+        "2207": "[\"reversible corneal edema:Adverse-Effect\", \"irreversibly reduce the density of endothelial cells:Adverse-Effect\", \"Amantadine:Drug\"]",
+        "419": "No entities found.",
+        "561": "[\"Thrombotic stroke:Adverse-Effect\", \"porcine factor VIII:Drug\"]",
+        "142": "[\"theophylline poisoning:Adverse-Effect\", \"theophylline:Drug\"]",
+        "3903": "[\"protracted amiodarone - induced thyroiditis:Adverse-Effect\", \"amiodarone:Drug\"]",
+        "1901": "[\"Pulmonary fibrosis:Adverse-Effect\", \"nabumetone:Drug\"]",
+        "441": "[\"renal colicky pain:Adverse-Effect\", \"indinavir:Drug\"]",
+        "1063": "[\"Heat stroke:Adverse-Effect\", \"clozapine:Drug\"]",
+        "2910": "[\"eosinophilic pneumonia:Adverse-Effect\", \"nitrofurantoin:Drug\"]",
+        "401": "[\"mucositis:Adverse-Effect\", \"fatal hyperkalemia:Adverse-Effect\", \"succinylcholine:Drug\"]",
+        "3825": "[\"irreversible pulmonary fibrosis:Adverse-Effect\", \"nitrofurantoin:Drug\"]",
+        "2138": "[\"fixed drug eruption:Adverse-Effect\", \"Ceftriaxone:Drug\"]",
+        "1775": "[\"circulatory collapse:Adverse-Effect\", \"deep coma:Adverse-Effect\", \"perospirone hydrochloride:Drug\"]",
+        "1097": "[\"soft-tissue injury:Adverse-Effect\", \"phenytoin:Drug\"]",
+        "1289": "[\"CBDCA hypersensitivity:Adverse-Effect\", \"platinum agents:Drug\"]",
+        "1086": "[\"Restless legs syndrome:Adverse-Effect\", \"interferon - alpha:Drug\"]",
+        "353": "[\"bloody diarrhoea:Adverse-Effect\", \"meloxicam:Drug\"]",
+        "3145": "[\"decrease in serum Na+:Adverse-Effect\", \"lorcainide:Drug\"]",
+        "568": "[\"SS:Adverse-Effect\", \"mirtazapine:Drug\"]",
+        "4157": "[\"crescentic glomerulonephritis:Adverse-Effect\", \"propylthiouracil:Drug\"]",
+        "3238": "[\"toxic effects of theophylline:Adverse-Effect\", \"theophylline:Drug\", \"cimetidine:Drug\"]",
+        "3997": "[\"Cutaneous reactions:Adverse-Effect\", \"propylthiouracil:Drug\", \"methimazole:Drug\"]",
+        "746": "[\"hepatotoxicity:Adverse-Effect\", \"6-MP:Drug\", \"AZA:Drug\"]",
+        "2517": "[\"abnormal liver function tests:Adverse-Effect\", \"cyproterone acetate:Drug\"]",
+        "94": "[\"heparin-induced thrombocytopenia:Adverse-Effect\"]",
+        "2999": "[\"renal failure:Adverse-Effect\", \"rifampicin:Drug\"]",
+        "1074": "[\"neurotoxicity:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "488": "[\"severe motor neuropathy:Adverse-Effect\", \"vincristine:Drug\"]",
+        "3357": "[\"oesophageal damage:Adverse-Effect\", \"emepronium bromide:Drug\"]",
+        "2014": "[\"hepatotoxicity:Adverse-Effect\", \"imatinib:Drug\"]",
+        "930": "[\"congestive heart failure:Adverse-Effect\", \"IFN:Drug\"]",
+        "177": "[\"sagittal sinus thrombosis:Adverse-Effect\", \"transient free protein S deficiency:Adverse-Effect\", \"L - asparaginase:Drug\"]",
+        "1572": "[\"subfulminant hepatitis B:Adverse-Effect\", \"infliximab:Drug\"]",
+        "1595": "[\"QT prolongation:Adverse-Effect\", \"refractory ventricular arrhythmia:Adverse-Effect\", \"hydroxychloroquine:Drug\"]",
+        "1754": "[\"Hepatotoxicity:Adverse-Effect\", \"erlotinib:Drug\"]",
+        "2097": "[\"nasal septal perforation:Adverse-Effect\", \"bevacizumab:Drug\"]",
+        "1619": "[\"severe hepatitis:Adverse-Effect\", \"ivermectin:Drug\"]",
+        "2296": "[\"sAML:Adverse-Effect\", \"etoposide:Drug\"]",
+        "1729": "[\"thrombosis of the central retinal vein:Adverse-Effect\", \"cyclosporin:Drug\", \"prednisone:Drug\", \"azathioprine:Drug\"]",
+        "2523": "[\"skin toxicity:Adverse-Effect\", \"aminoglutethimide:Drug\"]",
+        "493": "[\"confusion:Adverse-Effect\", \"abdominal pain:Adverse-Effect\", \"distention:Adverse-Effect\", \"benztropine:Drug\"]",
+        "1718": "[\"cardiac toxicity:Adverse-Effect\", \"ventricular arrhythmias:Adverse-Effect\", \"bradycardia:Adverse-Effect\", \"Amphotericin B deoxycholate:Drug\"]",
+        "776": "[\"Comeoscleral perforation:Adverse-Effect\", \"mitomycin C:Drug\"]",
+        "1456": "[\"cardiomyopathy:Adverse-Effect\", \"Interferon alpha-2b:Drug\"]",
+        "1062": "[\"heatstroke:Adverse-Effect\", \"clozapine:Drug\"]",
+        "2934": "[\"lethal complication:Adverse-Effect\", \"vasopressin:Drug\"]",
+        "195": "[\"spinal cord infarction:Adverse-Effect\", \"zolmitriptan:Drug\"]",
+        "786": "[\"neurologic abnormalities:Adverse-Effect\", \"FK506:Drug\"]",
+        "742": "[\"myelosuppression:Adverse-Effect\", \"hypertension:Adverse-Effect\", \"hyperlipidemia:Adverse-Effect\", \"infection:Adverse-Effect\", \"sirolimus:Drug\"]",
+        "3908": "[\"pulmonary hypertension:Adverse-Effect\", \"protamine:Drug\", \"Ketanserin:Drug\"]",
+        "3024": "[\"aplastic anemia:Adverse-Effect\", \"acetazolamide:Drug\", \"aplastic anemia:Adverse-Effect\", \"methazolamide:Drug\"]",
+        "1280": "[\"visual disturbances:Adverse-Effect\", \"BTX - B:Drug\"]",
+        "192": "[\"death:Adverse-Effect\", \"fluoxetine:Drug\", \"genetic polymorphism of the CYP2D6 gene:Adverse-Effect\"]",
+        "1322": "[\"peripheral neuropathy:Adverse-Effect\", \"bone marrow depression:Adverse-Effect\", \"blood transfusions:Adverse-Effect\", \"linezolid:Drug\"]",
+        "119": "[\"symptomatic improvement:Adverse-Effect\", \"HU:Drug\"]",
+        "3940": "[\"adverse response:Adverse-Effect\", \"clonidine:Drug\"]",
+        "3578": "[\"acute intermittent porphyria:Adverse-Effect\", \"Diphenylhydantoin:Drug\"]",
+        "2565": "[\"nephrotoxic:Adverse-Effect\", \"Ifosfamide:Drug\"]",
+        "1608": "[\"discomfort:Adverse-Effect\", \"diplopia:Adverse-Effect\", \"lagophthalmos:Adverse-Effect\", \"haematoma:Adverse-Effect\", \"warfarin:Drug\"]",
+        "2697": "[\"Exacerbation of schizophrenia:Adverse-Effect\", \"amantadine:Drug\"]",
+        "2925": "[\"leucopenia:Adverse-Effect\", \"cholestasis:Adverse-Effect\", \"fatty liver parenchyma degeneration:Adverse-Effect\", \"granulocytic portal infiltration:Adverse-Effect\", \"bile stasis:Adverse-Effect\", \"methimazole:Drug\"]",
+        "1426": "[\"membranous nephropathy:Adverse-Effect\", \"infliximab:Drug\"]",
+        "386": "[\"neurotoxicity:Adverse-Effect\", \"valacyclovir:Drug\"]",
+        "4050": "[\"acute pancreatitis:Adverse-Effect\", \"mesalamine:Drug\"]",
+        "747": "[\"Hepatotoxicity:Adverse-Effect\", \"6-thioguanine:Drug\"]",
+        "3312": "[\"Bradycardia:Adverse-Effect\", \"congestive heart failure:Adverse-Effect\", \"timolol maleate:Drug\"]",
+        "548": "[]",
+        "2312": "[\"stupor:Adverse-Effect\", \"increased fast activity:Adverse-Effect\", \"valproate:Drug\"]",
+        "2457": "[\"pleuropericarditis:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "1392": "[\"pericardial effusion:Adverse-Effect\", \"gemcitabine:Drug\"]",
+        "3147": "[\"severe hyponatremia:Adverse-Effect\", \"hydrochlorothiazide:Drug\"]",
+        "2204": "[\"myelosuppression:Adverse-Effect\", \"aplastic anemia:Adverse-Effect\", \"lenalidomide:Drug\"]",
+        "241": "[\"Allergic reaction:Adverse-Effect\", \"gemfibrozil:Drug\"]",
+        "1419": "[\"epinephrine overdose:Adverse-Effect\", \"epinephrine:Drug\"]",
+        "1974": "[\"Metabolic acidosis:Adverse-Effect\", \"acetazolamide:Drug\"]",
+        "1507": "[\"monoarthritis:Adverse-Effect\", \"IFN - beta:Drug\"]",
+        "3270": "[\"Atypical ventricular tachycardia:Adverse-Effect\", \"amiodarone:Drug\", \"quinidine:Drug\", \"disopyramide:Drug\"]",
+        "4108": "[\"development of TEN:Adverse-Effect\", \"lamotrigine:Drug\", \"valproic acid:Drug\"]",
+        "28": "[\"contact dermatitis:Adverse-Effect\", \"calcipotriol:Drug\"]",
+        "3332": "[\"interstitial lung disease:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "2451": "[\"heart failure:Adverse-Effect\", \"etanercept:Drug\"]",
+        "2326": "[\"rhabdomyolysis:Adverse-Effect\", \"sertraline:Drug\"]",
+        "331": "[\"toxic epidermal necrolysis:Adverse-Effect\", \"cytosine arabinoside:Drug\"]",
+        "3345": "[\"hypoglycaemia:Adverse-Effect\", \"Para-aminosalicylic acid:Drug\"]",
+        "2668": "[\"Ulcerative proctitis:Adverse-Effect\", \"ibuprofen:Drug\"]",
+        "3632": "[\"Imidazoline intoxication:Adverse-Effect\"]",
+        "3683": "[\"Fatal eosinophilia myalgia syndrome:Adverse-Effect\", \"total parenteral nutrition:Drug\", \"tryptophan:Drug\"]",
+        "684": "[\"lymphoma:Adverse-Effect\", \"cyclosporin:Drug\", \"methotrexate:Drug\"]",
+        "3539": "Entities: [\"coma:Adverse-Effect\", \"promethazine:Drug\", \"flumazenil:Drug\"]",
+        "3386": "[\"severe skin rash:Adverse-Effect\", \"bone marrow aplasia:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "1052": "[\"cholestatic hepatitis:Adverse-Effect\", \"nitrofurantoin:Drug\"]",
+        "2824": "[\"pneumonitis:Adverse-Effect\", \"Gold:Drug\"]",
+        "3336": "[\"sclerosing peritonitis:Adverse-Effect\", \"practolol:Drug\"]",
+        "1107": "[\"choroidal detachment:Adverse-Effect\", \"Dorzolamide:Drug\"]",
+        "1707": "[\"skin necrosis:Adverse-Effect\", \"thrombocytopenia:Adverse-Effect\", \"warfarin:Drug\", \"heparin:Drug\"]",
+        "3674": "[\"tics:Adverse-Effect\", \"Carbamazepine:Drug\"]",
+        "3820": "[\"seizures:Adverse-Effect\", \"ofloxacin:Drug\"]",
+        "4257": "[\"impaired cough reflex:Adverse-Effect\", \"mineral oil:Drug\"]",
+        "595": "[\"Priapism:Adverse-Effect\", \"zuclopenthixol:Drug\"]",
+        "1116": "[\"deep venous thrombosis:Adverse-Effect\", \"infliximab:Drug\"]",
+        "1993": "[\"desquamative skin rash:Adverse-Effect\", \"Temozolomide:Drug\"]",
+        "4145": "[\"hemolytic uremic syndrome:Adverse-Effect\", \"Mitomycin C:Drug\"]",
+        "4154": "[\"balanced translocation:Adverse-Effect\", \"chlorambucil:Drug\"]",
+        "3672": "[\"suppression of the endogeneous production of ACTH:Adverse-Effect\", \"suppression of the endogeneous production of cortisol:Adverse-Effect\", \"CPH82:Drug\"]",
+        "3477": "[\"secretory carcinoma of the endometrium:Adverse-Effect\", \"tamoxifen:Drug\"]",
+        "1078": "[\"TEN:Adverse-Effect\", \"ampicillin:Drug\"]",
+        "1655": "[\"neurotoxicity:Adverse-Effect\", \"5-fluorouracil:Drug\"]",
+        "2167": "[\"Syncope:Adverse-Effect\", \"propranolol:Drug\"]",
+        "3677": "[\"facial motor tics:Adverse-Effect\", \"CBZ:Drug\"]",
+        "2321": "[\"myositis:Adverse-Effect\", \"leuprolide acetate:Drug\"]",
+        "3776": "[\"nonconvulsive status epilepticus:Adverse-Effect\", \"ifosfamide:Drug\"]",
+        "1884": "[\"anemia:Adverse-Effect\", \"MMF:Drug\", \"prednisone:Drug\", \"cyclosporine:Drug\"]",
+        "2609": "[\"multiple nodules in the liver:Adverse-Effect\", \"phosphate diethylstilbestrol (PDES):Drug\"]",
+        "1048": "[\"Osteonecrosis:Adverse-Effect\", \"dexamethasone:Drug\"]",
+        "8": "[\"neurotoxicity:Adverse-Effect\", \"5-fluorouracil:Drug\", \"dihydropyrimidine dehydrogenase:Drug\"]",
+        "2139": "[\"FDE:Adverse-Effect\", \"ceftriaxone:Drug\"]",
+        "2898": "[\"acute hepatitis:Adverse-Effect\", \"amiodarone:Drug\"]",
+        "3577": "[\"Reversible leukopenia:Adverse-Effect\", \"ibopamine:Drug\"]",
+        "2707": "[\"leukopenia:Adverse-Effect\", \"L - Thyroxine:Drug\"]",
+        "128": "[\"severe rhabdomyolysis:Adverse-Effect\", \"caffeine:Drug\"]",
+        "2971": "[\"severe cholestasis:Adverse-Effect\", \"oxacillin derivatives:Drug\"]",
+        "2780": "[\"ischaemic cerebrovascular accident:Adverse-Effect\", \"streptokinase:Drug\"]",
+        "1746": "[\"Cardiomyopathy:Adverse-Effect\", \"adriamycin:Drug\", \"actinomycin - D:Drug\", \"mithramycin:Drug\"]",
+        "3474": "[\"bradycardia:Adverse-Effect\", \"sotalol:Drug\", \"glucagon:Drug\"]",
+        "1610": "[\"Angioedema:Adverse-Effect\", \"maculopapular eruptions:Adverse-Effect\", \"carbamazepine:Drug\"]",
+        "3365": "[\"Hepatotoxicity:Adverse-Effect\", \"hycanthone:Drug\"]",
+        "1600": "[\"lack of control of diabetes:Adverse-Effect\", \"weight gain:Adverse-Effect\", \"olanzapine:Drug\"]",
+        "954": "[\"bilateral optic neuropathy:Adverse-Effect\", \"ethambutol:Drug\"]",
+        "3048": "[\"salt and water retention:Adverse-Effect\", \"ibuprofen:Drug\", \"phenylbutazone:Drug\", \"indomethacin:Drug\"]",
+        "336": "[\"serotonin syndrome:Adverse-Effect\", \"clomipramine:Drug\", \"clozapine:Drug\"]",
+        "1509": "[\"autoimmune thyroid disease:Adverse-Effect\", \"refractory pre - patellar bursitis:Adverse-Effect\", \"IFN - beta:Drug\"]",
+        "3604": "[\"Hyperammonemia:Adverse-Effect\", \"valproic acid:Drug\"]",
+        "936": "[\"acute pancreatitis:Adverse-Effect\", \"roxithromycin:Drug\", \"betamethasone:Drug\"]",
+        "1345": "[\"Cutaneous necrosis:Adverse-Effect\", \"interferon alfa:Drug\"]",
+        "1321": "[\"peripheral neuropathy:Adverse-Effect\", \"bone marrow depression:Adverse-Effect\", \"linezolid:Drug\"]",
+        "462": "[\"seizures:Adverse-Effect\", \"amphotericin B:Drug\", \"phenytoin:Drug\", \"lorazepam:Drug\"]",
+        "4001": "[\"heat stroke:Adverse-Effect\", \"zonisamide:Drug\"]",
+        "3353": "[\"encephalopathy:Adverse-Effect\", \"Disulfiram:Drug\"]",
+        "619": "[\"interstitial pneumonitis:Adverse-Effect\", \"fludarabine:Drug\"]",
+        "138": "[\"rippling phenomena:Adverse-Effect\", \"pyridostigmine:Drug\", \"azathioprine:Drug\"]",
+        "2799": "[\"shallow erosion of a psoriatic plaque:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "698": "[\"generalized rash:Adverse-Effect\", \"itching:Adverse-Effect\", \"sore throat:Adverse-Effect\", \"dizziness:Adverse-Effect\", \"capecitabine:Drug\"]",
+        "3665": "[\"retinoic acid syndrome:Adverse-Effect\", \"retinoic acid:Drug\"]",
+        "3638": "[\"myoclonus:Adverse-Effect\", \"seizures:Adverse-Effect\", \"L - dopa:Drug\"]",
+        "3061": "[\"paresthesia:Adverse-Effect\", \"peripheral neuropathy:Adverse-Effect\", \"sulindac:Drug\"]",
+        "2918": "[\"duodenal ulceration:Adverse-Effect\", \"intestinal perforation:Adverse-Effect\", \"Tolazoline:Drug\"]",
+        "1897": "[\"hypothyroidism:Adverse-Effect\", \"RFP:Drug\"]",
+        "1692": "[\"nephrotic syndrome:Adverse-Effect\", \"IFN:Drug\"]",
+        "1795": "[\"tuberculous uveitis:Adverse-Effect\", \"etanercept:Drug\"]",
+        "2907": "[\"paroxysmal supraventricular tachycardia:Adverse-Effect\", \"cisplatin:Drug\", \"etoposide:Drug\"]",
+        "3069": "[\"increased histamine release:Adverse-Effect\", \"dextrose:Drug\"]",
+        "1085": "[\"restless legs symptoms:Adverse-Effect\", \"interferon - alpha:Drug\"]",
+        "3031": "[\"Erythema multiforme bullosum:Adverse-Effect\", \"rifampicin:Drug\"]",
+        "4": "[\"PCT-like presentation:Adverse-Effect\", \"erythropoietic protoporphyria:Adverse-Effect\", \"Naproxen:Drug\"]",
+        "3493": "[\"noncardiogenic pulmonary edema:Adverse-Effect\", \"EO:Drug\"]",
+        "2470": "[\"nephrotoxicity:Adverse-Effect\", \"ototoxicity:Adverse-Effect\", \"gastrointestinal disturbances:Adverse-Effect\", \"blood disorders:Adverse-Effect\", \"hypersensitivity reactions:Adverse-Effect\", \"red man syndrome:Adverse-Effect\", \"anaphylaxis:Adverse-Effect\", \"Vancomycin:Drug\", \"methicillin-resistant Staphylococcus aureus:Drug\"]",
+        "1806": "[\"Meibomian duct inflammation:Adverse-Effect\", \"docetaxel:Drug\"]",
+        "1688": "[\"symptomatic hyponatremia:Adverse-Effect\", \"mirtazapine:Drug\"]",
+        "3935": "[\"Eye movement disorders:Adverse-Effect\", \"cyclosporin:Drug\", \"ganciclovir:Drug\"]",
+        "276": "[\"behavioural side effects:Adverse-Effect\", \"gabapentin:Drug\"]",
+        "3277": "[\"complete atrioventricular block:Adverse-Effect\", \"digoxin:Drug\"]",
+        "3998": "[\"maculopapular and papular purpuric eruptions:Adverse-Effect\", \"thionamide:Drug\"]",
+        "565": "[\"granulomatosis:Adverse-Effect\", \"interferon alfa:Drug\", \"ribavirin:Drug\"]",
+        "4109": "[\"toxic epidermal necrolysis:Adverse-Effect\", \"lamotrigine:Drug\"]",
+        "1039": "[\"stroke:Adverse-Effect\", \"PPA:Drug\"]",
+        "4176": "[\"Decreased plasma cortisol level:Adverse-Effect\", \"alprazolam:Drug\"]",
+        "1377": "[\"knee arthritis:Adverse-Effect\", \"sodium hyaluronate:Drug\"]",
+        "2342": "[\"hyperammonemia:Adverse-Effect\", \"carbamazepine:Drug\"]",
+        "1025": "[\"toxic myelopathy:Adverse-Effect\", \"doxorubicin:Drug\"]",
+        "3448": "[\"refractory seizures:Adverse-Effect\", \"INH:Drug\"]",
+        "1977": "[\"renal colic:Adverse-Effect\", \"fever:Adverse-Effect\", \"cutaneous rash:Adverse-Effect\", \"nausea:Adverse-Effect\", \"temporary memory loss:Adverse-Effect\", \"indinavir:Drug\", \"nelfinavir:Drug\", \"efavirenz:Drug\"]",
+        "3985": "[\"rhabdomyolysis:Adverse-Effect\", \"renal failure:Adverse-Effect\", \"lovastatin:Drug\"]",
+        "98": "[\"Acute hyperphosphatemia:Adverse-Effect\", \"sodium phosphate:Drug\"]",
+        "2145": "[\"acute syphilitic posterior placoid chorioretinitis:Adverse-Effect\", \"triamcinolone acetonide:Drug\"]",
+        "2248": "[\"Persistent hypoglycemia:Adverse-Effect\", \"etanercept:Drug\"]",
+        "2640": "[\"parkinsonism:Adverse-Effect\", \"Metoclopramide:Drug\"]",
+        "4134": "[\"PSA response:Adverse-Effect\", \"flutamide:Drug\"]",
+        "215": "[\"extrapyramidal symptoms:Adverse-Effect\", \"risperidone:Drug\"]",
+        "1890": "[\"hepatic VOD:Adverse-Effect\", \"tacrolimus:Drug\"]",
+        "3197": "[\"pulmonary toxicity:Adverse-Effect\", \"Amiodarone hydrochloride:Drug\"]",
+        "4261": "[\"burn injury:Adverse-Effect\", \"psoralens:Drug\"]",
+        "3518": "[\"Fracture of the femoral neck:Adverse-Effect\", \"PSL:Drug\"]",
+        "2104": "[\"hallucinations:Adverse-Effect\", \"agitation:Adverse-Effect\", \"vomiting:Adverse-Effect\", \"tachycardia:Adverse-Effect\", \"seizures:Adverse-Effect\", \"bupropion:Drug\"]",
+        "3509": "[\"ARF:Adverse-Effect\", \"mannitol:Drug\"]",
+        "1542": "[\"anaphylaxis:Adverse-Effect\", \"gelatine:Drug\"]",
+        "2784": "[\"Creutzfeldt - Jakob disease:Adverse-Effect\", \"human growth hormone:Drug\"]",
+        "2171": "[\"thymic enlargement:Adverse-Effect\", \"mediastinal lymphadenopathy:Adverse-Effect\", \"pleurisy:Adverse-Effect\", \"Etanercept:Drug\"]",
+        "1203": "[\"Epstein - Barr virus (EBV) - associated polyclonal B cell lymphoproliferative disorder:Adverse-Effect\", \"Methotrexate (MTX):Drug\"]",
+        "2509": "[\"photosensitivity:Adverse-Effect\", \"quinine:Drug\"]",
+        "1431": "[\"Prominent eye movements:Adverse-Effect\", \"REM sleep behavior disorder:Adverse-Effect\", \"fluoxetine:Drug\"]",
+        "2776": "[\"cutaneous vasculitis:Adverse-Effect\", \"diltiazem:Drug\"]",
+        "1933": "[\"myoclonic muscle spasms:Adverse-Effect\", \"dobutamine:Drug\"]",
+        "3065": "[\"toxicity:Adverse-Effect\", \"hyperpyrexia:Adverse-Effect\", \"severe rigidity:Adverse-Effect\", \"mutism:Adverse-Effect\", \"irreversible tardive dyskinesia:Adverse-Effect\", \"lithium:Drug\", \"haloperidol:Drug\"]",
+        "2696": "[\"psychosis:Adverse-Effect\", \"amantadine:Drug\"]",
+        "537": "[\"cutaneous reactions:Adverse-Effect\", \"captopril:Drug\"]",
+        "3711": "[\"multiform ventricular tachycardia:Adverse-Effect\", \"haloperidol:Drug\"]",
+        "1840": "[\"severe cerebral swelling:Adverse-Effect\", \"raised intracranial pressure:Adverse-Effect\", \"sodium valproic acid:Drug\"]",
+        "805": "[\"Sensorimotor polyneuropathy:Adverse-Effect\", \"5-aminosalicylic acid:Drug\"]",
+        "1175": "[\"Severe leukopenia:Adverse-Effect\", \"mild hepatotoxicity:Adverse-Effect\", \"nevirapine:Drug\"]",
+        "2530": "[\"leukoencephalopathy:Adverse-Effect\", \"Methotrexate:Drug\", \"folinic acid:Drug\"]",
+        "2863": "[\"neurologic disease:Adverse-Effect\", \"sudden neurologic deterioration:Adverse-Effect\", \"D - penicillamine:Drug\"]",
+        "2802": "[\"nephrotoxicity:Adverse-Effect\", \"cyclosporine A:Drug\"]",
+        "2468": "[\"loss of intracellular potassium:Adverse-Effect\", \"cardiac toxicity:Adverse-Effect\", \"lithium:Drug\"]",
+        "1844": "[\"localized pigmentation:Adverse-Effect\", \"cisplatin:Drug\", \"etoposide:Drug\", \"bleomycin:Drug\"]",
+        "356": "[\"hyperkalaemia:Adverse-Effect\", \"spironolactone:Drug\"]",
+        "611": "[\"hyperammonemia:Adverse-Effect\", \"mental status changes:Adverse-Effect\", \"valproate:Drug\"]",
+        "1809": "[\"recall pneumonitis:Adverse-Effect\", \"gemcitabine:Drug\"]",
+        "2555": "[\"bromide intoxication:Adverse-Effect\", \"pyridostigmine bromide:Drug\"]",
+        "3703": "[\"hepatotoxicity:Adverse-Effect\", \"paracetamol:Drug\"]",
+        "2615": "[\"hyperpigmentation:Adverse-Effect\", \"bleomycin:Drug\"]",
+        "2284": "[\"anaphylactic reaction:Adverse-Effect\", \"bacitracin:Drug\"]",
+        "1006": "[\"AIN:Adverse-Effect\", \"pantoprazole:Drug\"]",
+        "2570": "[\"interstitial nephritis:Adverse-Effect\", \"ciprofloxacin:Drug\"]",
+        "4100": "[\"lower average heart rate:Adverse-Effect\", \"lower average mean blood pressure values:Adverse-Effect\", \"propranolol:Drug\"]",
+        "3342": "[\"hepatotoxicity:Adverse-Effect\", \"D - penicillamine:Drug\"]",
+        "3553": "[\"hyperglycemia:Adverse-Effect\", \"ketonuria:Adverse-Effect\", \"insulin:Drug\", \"IFN:Drug\"]",
+        "1587": "[\"Adverse reaction:Adverse-Effect\", \"aspirin:Drug\", \"zafirlukast:Drug\"]",
+        "2165": "[\"urticaria:Adverse-Effect\", \"DSCG:Drug\"]",
+        "3840": "[\"Creutzfeldt - Jakob syndrome:Adverse-Effect\", \"Lithium:Drug\"]",
+        "3786": "[\"Growth suppression:Adverse-Effect\", \"adrenal suppression:Adverse-Effect\", \"fluticasone propionate:Drug\"]",
+        "974": "[\"increased serum level of calcium:Adverse-Effect\", \"increased urinary excretion of calcium:Adverse-Effect\", \"tacalcitol:Drug\"]",
+        "3027": "[\"squamous - cell carcinoma:Adverse-Effect\", \"5-FU:Drug\"]",
+        "3245": "[\"histamine reaction:Adverse-Effect\", \"isoniazid:Drug\"]",
+        "2335": "[\"arrhythmias:Adverse-Effect\", \"lopinavir:Drug\", \"ritonavir:Drug\"]",
+        "2953": "[\"painful, oedematous, cyanosed hand:Adverse-Effect\", \"diamorphine:Drug\", \"methylphenidate:Drug\"]",
+        "1035": "[\"chloroquine and hydroxychloroquine maculopathy:Adverse-Effect\", \"chloroquine:Drug\", \"hydroxychloroquine:Drug\"]",
+        "1576": "[\"acute unilateral total visual loss:Adverse-Effect\", \"retrogasserian phenol:Drug\"]",
+        "3154": "[\"sinus rhythm:Adverse-Effect\", \"sinoatrial block:Adverse-Effect\", \"propranolol:Drug\"]",
+        "3659": "[\"Delayed neurotoxicity:Adverse-Effect\", \"intraventricular interleukin-2:Drug\"]",
+        "558": "[\"acute liver damage:Adverse-Effect\", \"itraconazole:Drug\"]",
+        "2373": "[\"acute liver damage:Adverse-Effect\", \"Nitrofurantoin:Drug\"]",
+        "1163": "[\"hypersensitivity:Adverse-Effect\", \"warfarin:Drug\"]",
+        "3043": "[\"Fatal complication:Adverse-Effect\", \"formalin:Drug\"]",
+        "4061": "[\"vitiligo:Adverse-Effect\", \"interferon alpha 2a:Drug\"]",
+        "2007": "[\"short - of - breath:Adverse-Effect\", \"hemoptysis:Adverse-Effect\", \"severe weakness:Adverse-Effect\", \"leflunomide:Drug\"]",
+        "3595": "[\"headache:Adverse-Effect\", \"fluoxetine:Drug\"]",
+        "2619": "[\"renal failure:Adverse-Effect\", \"dextran:Drug\"]",
+        "1036": "[\"Cerebral infarcts:Adverse-Effect\", \"phenylpropanolamine:Drug\"]",
+        "1118": "[\"hypersensitivity to infliximab:Adverse-Effect\", \"infliximab:Drug\"]",
+        "2001": "[\"interstitial lung disease:Adverse-Effect\", \"trastuzumab:Drug\"]",
+        "3574": "[\"pneumonitis:Adverse-Effect\", \"celiprolol:Drug\"]",
+        "3558": "[\"potentiate opportunistic infections:Adverse-Effect\", \"accelerate HIV disease:Adverse-Effect\", \"methotrexate:Drug\"]",
+        "630": "[\"proarrhythmic effect:Adverse-Effect\", \"Verapamil:Drug\"]",
+        "2452": "[\"risk of stroke:Adverse-Effect\", \"methylephedrine:Drug\", \"Chinese herbal drugs:Drug\"]",
+        "3128": "[\"interstitial pneumonitis:Adverse-Effect\", \"fibrosis:Adverse-Effect\", \"Cyclophosphamide:Drug\"]",
+        "1996": "[\"exfoliative dermatitis:Adverse-Effect\", \"tobramycin:Drug\"]",
+        "249": "[\"loss of consciousness:Adverse-Effect\", \"pilsicainide:Drug\"]",
+        "2090": "[\"Crohn's disease:Adverse-Effect\", \"copaxone:Drug\"]",
+        "3963": "[\"pneumonitis:Adverse-Effect\", \"MTX:Drug\"]",
+        "2119": "[\"propafenone adverse effects:Adverse-Effect\", \"citalopram:Drug\", \"propafenone:Drug\"]",
+        "552": "[\"endometrial cancer:Adverse-Effect\", \"tamoxifen:Drug\"]",
+        "2646": "[\"water intoxication:Adverse-Effect\", \"indomethacin:Drug\", \"cyclophosphamide:Drug\"]",
+        "3172": "[\"Myoglobinuria:Adverse-Effect\", \"acute renal failure:Adverse-Effect\", \"vasopressin:Drug\"]",
+        "2347": "[\"Acute bilateral phrenic neuropathy:Adverse-Effect\", \"adalimumab:Drug\"]",
+        "346": "[\"Ectropion:Adverse-Effect\", \"5-fluorouracil:Drug\"]",
+        "4021": "[\"TEN:Adverse-Effect\", \"Phenolphthalein:Drug\"]",
+        "4105": "[\"C. difficile toxin:Adverse-Effect\", \"clindamycin:Drug\"]",
+        "2945": "[\"aggravate clinical myasthenia gravis:Adverse-Effect\", \"ampicillin:Drug\"]",
+        "3794": "[\"hyponatremia:Adverse-Effect\", \"desmopressin:Drug\"]",
+        "802": "[\"hyponatremia:Adverse-Effect\", \"Carbamazepine:Drug\"]",
+        "3124": "[\"Vasomotor reactions:Adverse-Effect\", \"gold sodium thiomalate:Drug\"]",
+        "1685": "[\"neutropenia:Adverse-Effect\", \"olanzapine:Drug\", \"thiazide:Drug\"]",
+        "2463": "Entities: [\"acute kidney injury:Adverse-Effect\", \"zonisamide:Drug\"]"
+    },
+    "logic_processed_output": {
+        "1536": [
+            "\nNCSE is an adeverse effect for drug ifosfamide, Yes or No?"
+        ],
+        "2984": [
+            "\nhypertension is an adeverse effect for drug Propranolol, Yes or No?",
+            "\nhypertension is an adeverse effect for drug cocaine, Yes or No?"
+        ],
+        "3685": [
+            "\nrhabdomyolysis is an adeverse effect for drug vasopressin, Yes or No?"
+        ],
+        "2994": [
+            "\ninvoluntary movements is an adeverse effect for drug trazodone, Yes or No?"
+        ],
+        "2445": [
+            "\nhydroxychloroquine toxicity is an adeverse effect for drug hydroxychloroquine, Yes or No?"
+        ],
+        "1803": [
+            "\nSerotonin syndrome is an adeverse effect for drug citalopram, Yes or No?",
+            "\nSerotonin syndrome is an adeverse effect for drug fentanyl, Yes or No?"
+        ],
+        "2276": [
+            "\nNeuroleptic malignant syndrome is an adeverse effect for drug risperidone, Yes or No?"
+        ],
+        "1199": [
+            "\nfulminant hepatitis is an adeverse effect for drug amiodarone, Yes or No?",
+            "\nfulminant hepatitis is an adeverse effect for drug PTU, Yes or No?",
+            "\nhyperthyroidism is an adeverse effect for drug amiodarone, Yes or No?",
+            "\nhyperthyroidism is an adeverse effect for drug PTU, Yes or No?"
+        ],
+        "2199": [
+            "\nacute ischaemia is an adeverse effect for drug flunitrazepam, Yes or No?"
+        ],
+        "2406": [
+            "\nHepatotoxicity is an adeverse effect for drug methylprednisolone, Yes or No?"
+        ],
+        "3650": [
+            "\nCardiac complications is an adeverse effect for drug amphotericin B, Yes or No?"
+        ],
+        "2820": [
+            "\nglomerulonephritis is an adeverse effect for drug D - penicillamine, Yes or No?",
+            "\nhemoptysis is an adeverse effect for drug D - penicillamine, Yes or No?"
+        ],
+        "2625": [
+            "\nAkathisia is an adeverse effect for drug fluoxetine, Yes or No?",
+            "\nAkathisia is an adeverse effect for drug propranolol, Yes or No?"
+        ],
+        "3740": [
+            "\nnephrogenic diabetes insipidus is an adeverse effect for drug foscarnet, Yes or No?",
+            "\nrenal tubular acidosis is an adeverse effect for drug foscarnet, Yes or No?"
+        ],
+        "3019": [
+            "\nDystonia is an adeverse effect for drug carbamazepine, Yes or No?"
+        ],
+        "2020": [
+            "\nhyperglycemia is an adeverse effect for drug olanzapine, Yes or No?"
+        ],
+        "2787": [
+            "\nhepatotoxicity is an adeverse effect for drug Salicylate, Yes or No?"
+        ],
+        "625": [
+            "\nmarrow aplasia is an adeverse effect for drug Ticlopidine, Yes or No?",
+            "\nmarrow aplasia is an adeverse effect for drug cyclosporine, Yes or No?"
+        ],
+        "90": [
+            "\nangioedema is an adeverse effect for drug losartan, Yes or No?"
+        ],
+        "566": [
+            "\nsarcoidosis is an adeverse effect for drug interferon alfa, Yes or No?",
+            "\nsarcoidosis is an adeverse effect for drug ribavirin, Yes or No?"
+        ],
+        "2438": [
+            "\nneuropsychiatric symptoms is an adeverse effect for drug Interferon, Yes or No?"
+        ],
+        "2552": [
+            "\nprogressive visual loss is an adeverse effect for drug MTX, Yes or No?",
+            "\nprogressive visual loss is an adeverse effect for drug Ara - C, Yes or No?",
+            "\nloss of consciousness is an adeverse effect for drug MTX, Yes or No?",
+            "\nloss of consciousness is an adeverse effect for drug Ara - C, Yes or No?"
+        ],
+        "1689": [
+            "\nhyponatremia is an adeverse effect for drug citalopram, Yes or No?",
+            "\nhyponatremia is an adeverse effect for drug mirtazapine, Yes or No?"
+        ],
+        "1197": [
+            "\nVogt - Koyanagi - Harada disease is an adeverse effect for drug interferon alpha, Yes or No?"
+        ],
+        "1661": [
+            "\nAnaphylaxis is an adeverse effect for drug intrathecal diamorphine, Yes or No?"
+        ],
+        "2055": [
+            "\nsclerosing glomerulonephritis is an adeverse effect for drug Anastrozole, Yes or No?"
+        ],
+        "3213": [
+            "\nPriapism is an adeverse effect for drug trazodone, Yes or No?"
+        ],
+        "4071": [
+            "\nliver injury is an adeverse effect for drug Methyldopa, Yes or No?"
+        ],
+        "3845": [
+            "\nneuromuscular block is an adeverse effect for drug magnesium, Yes or No?",
+            "\nneuromuscular block is an adeverse effect for drug curariform muscle relaxant, Yes or No?"
+        ],
+        "2184": [
+            "\ndrug-induced fever is an adeverse effect for drug diltiazem hydrochloride, Yes or No?"
+        ],
+        "43": [
+            "\nhepatitis is an adeverse effect for drug diclofenac, Yes or No?"
+        ],
+        "1151": [
+            "\nAcute renal insufficiency is an adeverse effect for drug ciprofloxacin, Yes or No?"
+        ],
+        "3832": [
+            "\nanticonvulsant osteomalacia is an adeverse effect for drug Acetazolamide, Yes or No?"
+        ],
+        "3851": [],
+        "3834": [
+            "\nSevere osteomalacia is an adeverse effect for drug phenytoin, Yes or No?",
+            "\nSevere osteomalacia is an adeverse effect for drug phenobarbital, Yes or No?",
+            "\nSevere osteomalacia is an adeverse effect for drug acetazolamide, Yes or No?"
+        ],
+        "3864": [
+            "\nliver damage is an adeverse effect for drug Methotrexate, Yes or No?",
+            "\nfibrosis is an adeverse effect for drug Methotrexate, Yes or No?",
+            "\ncirrhosis is an adeverse effect for drug Methotrexate, Yes or No?"
+        ],
+        "2653": [
+            "\nTMA is an adeverse effect for drug cisplatin, Yes or No?",
+            "\nTMA is an adeverse effect for drug bleomycin, Yes or No?"
+        ],
+        "3954": [
+            "\nrash is an adeverse effect for drug Cephalexin, Yes or No?"
+        ],
+        "2015": [
+            "\nherpetic rash is an adeverse effect for drug imatinib, Yes or No?",
+            "\nacute liver failure is an adeverse effect for drug imatinib, Yes or No?"
+        ],
+        "1980": [
+            "\nleukoencephalopathy is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "2704": [
+            "\nacute myocardial infarction is an adeverse effect for drug L - thyroxine, Yes or No?"
+        ],
+        "1698": [
+            "\nScleritis is an adeverse effect for drug zoledronic acid, Yes or No?"
+        ],
+        "3366": [
+            "\nsevere hepatotoxicity is an adeverse effect for drug hycanthone, Yes or No?"
+        ],
+        "3527": [
+            "\nalternative hemiparesis is an adeverse effect for drug HD - MTX, Yes or No?",
+            "\nalternative hemiparesis is an adeverse effect for drug leucovorin, Yes or No?",
+            "\ndysarthria is an adeverse effect for drug HD - MTX, Yes or No?",
+            "\ndysarthria is an adeverse effect for drug leucovorin, Yes or No?",
+            "\naltered consciousness is an adeverse effect for drug HD - MTX, Yes or No?",
+            "\naltered consciousness is an adeverse effect for drug leucovorin, Yes or No?"
+        ],
+        "1224": [
+            "\nseizures is an adeverse effect for drug clozapine, Yes or No?"
+        ],
+        "3189": [
+            "\nplatelet dysfunction is an adeverse effect for drug Moxalactam, Yes or No?"
+        ],
+        "2539": [
+            "\nsulfonamide-induced injury is an adeverse effect for drug sulfonamide, Yes or No?"
+        ],
+        "1258": [
+            "\nototoxicity is an adeverse effect for drug propylthiouracil (PTU), Yes or No?",
+            "\nantineutrophil cytoplasmic antibody (ANCA) - associated vasculitis is an adeverse effect for drug propylthiouracil (PTU), Yes or No?"
+        ],
+        "876": [
+            "\nThrombocytosis is an adeverse effect for drug ciprofloxacin, Yes or No?",
+            "\nThrombocytosis is an adeverse effect for drug tazobactam, Yes or No?",
+            "\nThrombocytosis is an adeverse effect for drug piperacillin, Yes or No?"
+        ],
+        "178": [
+            "\ntransient ischemic attacks is an adeverse effect for drug L - asparaginase, Yes or No?",
+            "\nseizure is an adeverse effect for drug L - asparaginase, Yes or No?"
+        ],
+        "1787": [
+            "\nrecurrent eosinophilia is an adeverse effect for drug tobramycin, Yes or No?",
+            "\nsevere persistent bronchospasm is an adeverse effect for drug tobramycin, Yes or No?"
+        ],
+        "1286": [
+            "\nacute rhabdomyolysis is an adeverse effect for drug cerivastatin, Yes or No?"
+        ],
+        "3326": [
+            "\nbronchospasm is an adeverse effect for drug propranolol, Yes or No?"
+        ],
+        "4137": [
+            "\nanaphylactic reaction is an adeverse effect for drug prednisone, Yes or No?"
+        ],
+        "2091": [
+            "\nCrohn's disease is an adeverse effect for drug Copaxone, Yes or No?"
+        ],
+        "2520": [
+            "\nerythema multiforme is an adeverse effect for drug griseofulvin, Yes or No?"
+        ],
+        "2698": [
+            "\nParkinson's disease is an adeverse effect for drug chlorpromazine, Yes or No?"
+        ],
+        "2620": [
+            "\nCNS abnormalities is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "3171": [
+            "\nrenal failure is an adeverse effect for drug myoglobin, Yes or No?",
+            "\nrenal failure is an adeverse effect for drug vasopressin, Yes or No?",
+            "\nskeletal muscle ischemia is an adeverse effect for drug myoglobin, Yes or No?",
+            "\nskeletal muscle ischemia is an adeverse effect for drug vasopressin, Yes or No?"
+        ],
+        "1721": [
+            "\nvalvular heart disease is an adeverse effect for drug benfluorex, Yes or No?"
+        ],
+        "903": [
+            "\nScleroderma is an adeverse effect for drug bleomycin, Yes or No?"
+        ],
+        "3705": [
+            "\nKaposi's sarcoma is an adeverse effect for drug corticosteroid therapy, Yes or No?",
+            "\nKaposi's sarcoma is an adeverse effect for drug prednisolone, Yes or No?"
+        ],
+        "2742": [
+            "\ntonic - clonic seizures is an adeverse effect for drug adriamycin, Yes or No?",
+            "\ntonic - clonic seizures is an adeverse effect for drug cisplatin, Yes or No?"
+        ],
+        "306": [
+            "\nAcute myeloid leukemia is an adeverse effect for drug fludarabine, Yes or No?",
+            "\nAcute myeloid leukemia is an adeverse effect for drug autologous peripheral blood stem - cell transplantation, Yes or No?",
+            "\nlung cancer is an adeverse effect for drug fludarabine, Yes or No?",
+            "\nlung cancer is an adeverse effect for drug autologous peripheral blood stem - cell transplantation, Yes or No?"
+        ],
+        "3686": [
+            "\nvasodilation is an adeverse effect for drug vasopressin, Yes or No?"
+        ],
+        "2581": [
+            "\ntardive dyskinesia is an adeverse effect for drug sulpiride, Yes or No?"
+        ],
+        "4040": [
+            "\nSkin necrosis is an adeverse effect for drug low - molecular weight heparin, Yes or No?"
+        ],
+        "1873": [
+            "\nsystemic lupus erythematosus is an adeverse effect for drug recombinant human interferon gamma, Yes or No?"
+        ],
+        "3745": [
+            "\nAccelerated nodulosis is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "3321": [
+            "\nAcute non - lymphocytic leukemia is an adeverse effect for drug Treosulfan, Yes or No?"
+        ],
+        "3074": [
+            "\nleft homonymous hemianopsia is an adeverse effect for drug cisplatinum, Yes or No?",
+            "\nleft homonymous hemianopsia is an adeverse effect for drug vinblastine, Yes or No?",
+            "\nleft homonymous hemianopsia is an adeverse effect for drug bleomycin, Yes or No?",
+            "\nencephalopathy is an adeverse effect for drug cisplatinum, Yes or No?",
+            "\nencephalopathy is an adeverse effect for drug vinblastine, Yes or No?",
+            "\nencephalopathy is an adeverse effect for drug bleomycin, Yes or No?"
+        ],
+        "1407": [
+            "\nCD20-negative T - cell - rich B - cell lymphoma is an adeverse effect for drug rituximab, Yes or No?"
+        ],
+        "3606": [
+            "\nhyperammonemia is an adeverse effect for drug valproic acid, Yes or No?"
+        ],
+        "3104": [
+            "\nNonoliguric acute renal failure is an adeverse effect for drug captopril, Yes or No?"
+        ],
+        "1634": [
+            "\nListeria brain abscess is an adeverse effect for drug temozolomide, Yes or No?",
+            "\nPneumocystis pneumonia is an adeverse effect for drug temozolomide, Yes or No?",
+            "\nKaposi's sarcoma is an adeverse effect for drug temozolomide, Yes or No?"
+        ],
+        "1124": [
+            "\nglucose levels is an adeverse effect for drug indapamide, Yes or No?",
+            "\nglucose levels is an adeverse effect for drug fosinopril, Yes or No?",
+            "\ndiabetes is an adeverse effect for drug indapamide, Yes or No?",
+            "\ndiabetes is an adeverse effect for drug fosinopril, Yes or No?"
+        ],
+        "2287": [
+            "\nserious hypoglycemia is an adeverse effect for drug octreotide, Yes or No?"
+        ],
+        "3500": [
+            "\nhypokalemia is an adeverse effect for drug Albuterol, Yes or No?"
+        ],
+        "2486": [
+            "\nfever is an adeverse effect for drug adalimumab, Yes or No?",
+            "\npancytopenia is an adeverse effect for drug adalimumab, Yes or No?",
+            "\nsplenomegaly is an adeverse effect for drug adalimumab, Yes or No?",
+            "\nextreme hyperferritinemia is an adeverse effect for drug adalimumab, Yes or No?"
+        ],
+        "3034": [
+            "\nsquamous cell carcinoma is an adeverse effect for drug psoralens, Yes or No?",
+            "\nsquamous cell carcinoma is an adeverse effect for drug long - wave ultraviolet radiation, Yes or No?"
+        ],
+        "1412": [
+            "\nTransfusion haemosiderosis is an adeverse effect for drug desferrioxamine, Yes or No?"
+        ],
+        "1768": [
+            "\nInfectious endophthalmitis is an adeverse effect for drug bevacizumab, Yes or No?"
+        ],
+        "1903": [
+            "\nrhabdomyolysis is an adeverse effect for drug simvastatin, Yes or No?",
+            "\nrhabdomyolysis is an adeverse effect for drug cyclosporine, Yes or No?"
+        ],
+        "3105": [
+            "\nacute reversible renal failure is an adeverse effect for drug Captopril, Yes or No?"
+        ],
+        "2723": [
+            "\nGastro - oesophageal reflux is an adeverse effect for drug nifedipine, Yes or No?"
+        ],
+        "4239": [
+            "\nQT prolongation is an adeverse effect for drug Pirmenol hydrochloride, Yes or No?",
+            "\nT wave inversion is an adeverse effect for drug Pirmenol hydrochloride, Yes or No?"
+        ],
+        "886": [
+            "\nilateral gynaecomastia is an adeverse effect for drug Isoniazid, Yes or No?"
+        ],
+        "2102": [
+            "\nangio - oedema is an adeverse effect for drug Voriconazole, Yes or No?"
+        ],
+        "843": [
+            "\nFatal agranulocytosis is an adeverse effect for drug dapsone, Yes or No?"
+        ],
+        "3243": [
+            "\nacute renal failure is an adeverse effect for drug isoniazid, Yes or No?",
+            "\nacute renal failure is an adeverse effect for drug rifampin, Yes or No?"
+        ],
+        "70": [
+            "\nprogressive paraparesis is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "4049": [
+            "\nacute pancreatitis is an adeverse effect for drug 5-aminosalicylic acid, Yes or No?"
+        ],
+        "2403": [
+            "\nTorsades de Pointes is an adeverse effect for drug garenoxacin, Yes or No?",
+            "\nTorsades de Pointes is an adeverse effect for drug disopyramide, Yes or No?",
+            "\nTorsades de Pointes is an adeverse effect for drug cytochrome P450, Yes or No?",
+            "\nTorsades de Pointes is an adeverse effect for drug licorice, Yes or No?"
+        ],
+        "1606": [
+            "\nsub-conjunctival haematoma is an adeverse effect for drug warfarin, Yes or No?"
+        ],
+        "4264": [
+            "\nSunburn is an adeverse effect for drug psoralen, Yes or No?"
+        ],
+        "2400": [
+            "\npulmonary toxicity is an adeverse effect for drug gemcitabine, Yes or No?"
+        ],
+        "972": [
+            "\nSevere Raynaud's phenomenon is an adeverse effect for drug yohimbine, Yes or No?"
+        ],
+        "310": [
+            "\nincontinence is an adeverse effect for drug venlafaxine, Yes or No?"
+        ],
+        "354": [
+            "\nintestinal toxic effects is an adeverse effect for drug meloxicam, Yes or No?"
+        ],
+        "3126": [
+            "\nlow-grade fever is an adeverse effect for drug sodium aurothiomalate, Yes or No?",
+            "\ncough is an adeverse effect for drug sodium aurothiomalate, Yes or No?",
+            "\ndyspnea is an adeverse effect for drug sodium aurothiomalate, Yes or No?"
+        ],
+        "1556": [
+            "\nDestructive thyrotoxicosis is an adeverse effect for drug IFN - alpha, Yes or No?",
+            "\nGraves' hyperthyroidism is an adeverse effect for drug IFN - alpha, Yes or No?"
+        ],
+        "4082": [
+            "\nballistic movements is an adeverse effect for drug heroin, Yes or No?"
+        ],
+        "1646": [
+            "\nbilateral ptosis is an adeverse effect for drug vincristine, Yes or No?"
+        ],
+        "123": [
+            "\ntotal Hb is an adeverse effect for drug HU, Yes or No?",
+            "\ntotal Hb is an adeverse effect for drug SPB, Yes or No?",
+            "\ntransfusion needs is an adeverse effect for drug HU, Yes or No?",
+            "\ntransfusion needs is an adeverse effect for drug SPB, Yes or No?"
+        ],
+        "1170": [
+            "\nperioral and upper extremity paresthesias is an adeverse effect for drug CAP, Yes or No?"
+        ],
+        "4167": [
+            "\nrhabdomyolysis is an adeverse effect for drug Clozapine, Yes or No?"
+        ],
+        "2856": [
+            "\nsystemic hypersensitivity reaction is an adeverse effect for drug ibuprofen, Yes or No?"
+        ],
+        "2672": [
+            "\nthyrotoxicosis is an adeverse effect for drug amiodarone, Yes or No?",
+            "\nthyrotoxicosis is an adeverse effect for drug Dexamethasone, Yes or No?"
+        ],
+        "2073": [
+            "\nparaesthesia is an adeverse effect for drug olanzapine, Yes or No?",
+            "\nagitation is an adeverse effect for drug olanzapine, Yes or No?"
+        ],
+        "4055": [
+            "\nmaculopapular eruption is an adeverse effect for drug ritonavir, Yes or No?",
+            "\nfever is an adeverse effect for drug ritonavir, Yes or No?"
+        ],
+        "518": [
+            "\nGallstones is an adeverse effect for drug octreotide, Yes or No?",
+            "\nbile sludge is an adeverse effect for drug octreotide, Yes or No?"
+        ],
+        "2947": [
+            "\ntemporary weakness is an adeverse effect for drug ampicillin sodium, Yes or No?"
+        ],
+        "853": [
+            "\nProliferation of abnormal bone marrow histiocytes is an adeverse effect for drug granulocyte macrophage - colony - stimulating factor, Yes or No?"
+        ],
+        "653": [
+            "\nGeneralised pustular psoriasis is an adeverse effect for drug cyclosporin a, Yes or No?",
+            "\nGeneralised pustular psoriasis is an adeverse effect for drug tumour necrosis factor alpha inhibitor, Yes or No?"
+        ],
+        "3571": [
+            "\nspontaneous first trimester abortions is an adeverse effect for drug zidovudine, Yes or No?",
+            "\ntherapeutic terminations is an adeverse effect for drug zidovudine, Yes or No?",
+            "\nfetal abnormality is an adeverse effect for drug zidovudine, Yes or No?"
+        ],
+        "2412": [
+            "\ntardive dyskinesia is an adeverse effect for drug clozapine, Yes or No?"
+        ],
+        "1937": [
+            "\ncolonic ulcer is an adeverse effect for drug calcium polystyrene sulfonate, Yes or No?",
+            "\ncolonic ulcer is an adeverse effect for drug sorbitol, Yes or No?",
+            "\nsigmoidovesical fistula is an adeverse effect for drug calcium polystyrene sulfonate, Yes or No?",
+            "\nsigmoidovesical fistula is an adeverse effect for drug sorbitol, Yes or No?"
+        ],
+        "1859": [
+            "\nInterstitial pneumonitis is an adeverse effect for drug rituximab, Yes or No?",
+            "\nalveolar hemorrhage is an adeverse effect for drug rituximab, Yes or No?"
+        ],
+        "703": [
+            "\npalmar - plantar erythrodysaesthesia is an adeverse effect for drug cytarabine, Yes or No?"
+        ],
+        "3799": [
+            "\nincreased serum lithium concentrations is an adeverse effect for drug acyclovir, Yes or No?"
+        ],
+        "4189": [
+            "\nvitreous hemorrhage is an adeverse effect for drug tPA, Yes or No?"
+        ],
+        "2339": [
+            "\nhyperammonemia is an adeverse effect for drug Carbamazepine, Yes or No?"
+        ],
+        "2093": [
+            "\nobsessional - like suicidal ideas is an adeverse effect for drug ketoconazole, Yes or No?"
+        ],
+        "1656": [
+            "\nneurotoxicity is an adeverse effect for drug 5-fluorouracil, Yes or No?"
+        ],
+        "4104": [
+            "\nCDIC is an adeverse effect for drug clindamycin phosphate, Yes or No?",
+            "\nCDIC is an adeverse effect for drug C. difficile toxin, Yes or No?"
+        ],
+        "3781": [
+            "\nOculomotor disturbances is an adeverse effect for drug 5-fluorouracil, Yes or No?"
+        ],
+        "937": [
+            "\nRenal tubular acidosis is an adeverse effect for drug FK506, Yes or No?"
+        ],
+        "2084": [
+            "\nAcute delirium is an adeverse effect for drug levofloxacin, Yes or No?"
+        ],
+        "659": [
+            "\ndirect cytotoxic effect is an adeverse effect for drug ticlopidine, Yes or No?"
+        ],
+        "3594": [
+            "\nSeizures is an adeverse effect for drug fluoxetine, Yes or No?"
+        ],
+        "3194": [
+            "\nThrombotic thrombocytopenic purpura is an adeverse effect for drug penicillamine, Yes or No?"
+        ],
+        "640": [
+            "\nSkin necrosis is an adeverse effect for drug vasopressin, Yes or No?"
+        ],
+        "1843": [
+            "\nhyperpigmentation is an adeverse effect for drug bleomycin, Yes or No?"
+        ],
+        "3450": [
+            "\nArterial hypertension is an adeverse effect for drug phenylephrine, Yes or No?"
+        ],
+        "2731": [
+            "\ndacryolith is an adeverse effect for drug adrenaline, Yes or No?"
+        ],
+        "3654": [
+            "\nacute methemoglobinemia is an adeverse effect for drug Methylene blue, Yes or No?",
+            "\nacute methemoglobinemia is an adeverse effect for drug sweet spirits of nitre, Yes or No?",
+            "\nsevere anoxic metabolic acidosis is an adeverse effect for drug Methylene blue, Yes or No?",
+            "\nsevere anoxic metabolic acidosis is an adeverse effect for drug sweet spirits of nitre, Yes or No?"
+        ],
+        "4148": [
+            "\nSevere respiratory syncytial virus pulmonary infection is an adeverse effect for drug fludarabine, Yes or No?"
+        ],
+        "1784": [
+            "\nPiloerection is an adeverse effect for drug fluvoxamine, Yes or No?",
+            "\nPiloerection is an adeverse effect for drug milnacipran, Yes or No?"
+        ],
+        "623": [
+            "\nmarrow aplasia is an adeverse effect for drug ticlopidine, Yes or No?",
+            "\nmarrow aplasia is an adeverse effect for drug colony-stimulating factors, Yes or No?",
+            "\nmarrow aplasia is an adeverse effect for drug corticosteroids, Yes or No?",
+            "\nmarrow aplasia is an adeverse effect for drug cyclosporine, Yes or No?"
+        ],
+        "2318": [
+            "\nacute pancreatitis is an adeverse effect for drug Tigecycline, Yes or No?"
+        ],
+        "3113": [
+            "\nosteomalacia is an adeverse effect for drug cholestyramine, Yes or No?"
+        ],
+        "2143": [
+            "\nacute renal failure is an adeverse effect for drug gabapentin, Yes or No?"
+        ],
+        "2398": [
+            "\npulmonary toxicity is an adeverse effect for drug gemcitabine, Yes or No?"
+        ],
+        "410": [
+            "\nMassive plasmocytosis is an adeverse effect for drug methimazole, Yes or No?"
+        ],
+        "2974": [
+            "\npellagra is an adeverse effect for drug Isoniazid, Yes or No?"
+        ],
+        "4073": [
+            "\nAcute respiratory depression is an adeverse effect for drug morphine, Yes or No?"
+        ],
+        "1148": [
+            "\nSideroblastic anemia is an adeverse effect for drug linezolid, Yes or No?"
+        ],
+        "2111": [
+            "\nleukopenia is an adeverse effect for drug cephalosporin, Yes or No?"
+        ],
+        "3292": [
+            "\nlichen planus is an adeverse effect for drug gold, Yes or No?"
+        ],
+        "26": [
+            "\nAllergic contact dermatitis is an adeverse effect for drug calcipotriol, Yes or No?",
+            "\nirritant contact dermatitis is an adeverse effect for drug calcipotriol, Yes or No?"
+        ],
+        "460": [
+            "\ngrand mal seizures is an adeverse effect for drug amphotericin B, Yes or No?",
+            "\npetit mal seizures is an adeverse effect for drug amphotericin B, Yes or No?"
+        ],
+        "244": [
+            "\nlactic acidosis is an adeverse effect for drug stavudine, Yes or No?",
+            "\nlactic acidosis is an adeverse effect for drug lamivudine, Yes or No?"
+        ],
+        "2371": [
+            "\ncardiovascular and neurological depression is an adeverse effect for drug oxymetalzoline, Yes or No?"
+        ],
+        "3459": [
+            "\nhepatotoxicity is an adeverse effect for drug benzarone, Yes or No?"
+        ],
+        "4051": [
+            "\nacute renal failure is an adeverse effect for drug enalapril, Yes or No?"
+        ],
+        "1673": [
+            "\nBOOP is an adeverse effect for drug rituximab, Yes or No?"
+        ],
+        "3549": [
+            "\ncontact dermatitis is an adeverse effect for drug Budesonide, Yes or No?"
+        ],
+        "311": [
+            "\nthrombocytopenia is an adeverse effect for drug heparin, Yes or No?"
+        ],
+        "3918": [
+            "\nsevere adverse reactions is an adeverse effect for drug 5-fluorouracil, Yes or No?"
+        ],
+        "3980": [
+            "\nmagnesium toxicosis is an adeverse effect for drug calcium, Yes or No?"
+        ],
+        "3797": [],
+        "300": [
+            "\nsevere thrombocytopenia is an adeverse effect for drug quinine, Yes or No?"
+        ],
+        "1356": [
+            "\nincreased vincristine neurotoxicity is an adeverse effect for drug Itraconazole, Yes or No?"
+        ],
+        "2711": [
+            "\nrenal failure is an adeverse effect for drug ampicillin, Yes or No?",
+            "\neosinophilia is an adeverse effect for drug ampicillin, Yes or No?",
+            "\nskin rash is an adeverse effect for drug ampicillin, Yes or No?",
+            "\nrenal biopsy finding is an adeverse effect for drug ampicillin, Yes or No?"
+        ],
+        "2207": [
+            "\nreversible corneal edema is an adeverse effect for drug Amantadine, Yes or No?",
+            "\nirreversibly reduce the density of endothelial cells is an adeverse effect for drug Amantadine, Yes or No?"
+        ],
+        "419": [],
+        "561": [
+            "\nThrombotic stroke is an adeverse effect for drug porcine factor VIII, Yes or No?"
+        ],
+        "142": [
+            "\ntheophylline poisoning is an adeverse effect for drug theophylline, Yes or No?"
+        ],
+        "3903": [
+            "\nprotracted amiodarone - induced thyroiditis is an adeverse effect for drug amiodarone, Yes or No?"
+        ],
+        "1901": [
+            "\nPulmonary fibrosis is an adeverse effect for drug nabumetone, Yes or No?"
+        ],
+        "441": [
+            "\nrenal colicky pain is an adeverse effect for drug indinavir, Yes or No?"
+        ],
+        "1063": [
+            "\nHeat stroke is an adeverse effect for drug clozapine, Yes or No?"
+        ],
+        "2910": [
+            "\neosinophilic pneumonia is an adeverse effect for drug nitrofurantoin, Yes or No?"
+        ],
+        "401": [
+            "\nmucositis is an adeverse effect for drug succinylcholine, Yes or No?",
+            "\nfatal hyperkalemia is an adeverse effect for drug succinylcholine, Yes or No?"
+        ],
+        "3825": [
+            "\nirreversible pulmonary fibrosis is an adeverse effect for drug nitrofurantoin, Yes or No?"
+        ],
+        "2138": [
+            "\nfixed drug eruption is an adeverse effect for drug Ceftriaxone, Yes or No?"
+        ],
+        "1775": [
+            "\ncirculatory collapse is an adeverse effect for drug perospirone hydrochloride, Yes or No?",
+            "\ndeep coma is an adeverse effect for drug perospirone hydrochloride, Yes or No?"
+        ],
+        "1097": [
+            "\nsoft-tissue injury is an adeverse effect for drug phenytoin, Yes or No?"
+        ],
+        "1289": [
+            "\nCBDCA hypersensitivity is an adeverse effect for drug platinum agents, Yes or No?"
+        ],
+        "1086": [
+            "\nRestless legs syndrome is an adeverse effect for drug interferon - alpha, Yes or No?"
+        ],
+        "353": [
+            "\nbloody diarrhoea is an adeverse effect for drug meloxicam, Yes or No?"
+        ],
+        "3145": [
+            "\ndecrease in serum Na+ is an adeverse effect for drug lorcainide, Yes or No?"
+        ],
+        "568": [
+            "\nSS is an adeverse effect for drug mirtazapine, Yes or No?"
+        ],
+        "4157": [
+            "\ncrescentic glomerulonephritis is an adeverse effect for drug propylthiouracil, Yes or No?"
+        ],
+        "3238": [
+            "\ntoxic effects of theophylline is an adeverse effect for drug theophylline, Yes or No?",
+            "\ntoxic effects of theophylline is an adeverse effect for drug cimetidine, Yes or No?"
+        ],
+        "3997": [
+            "\nCutaneous reactions is an adeverse effect for drug propylthiouracil, Yes or No?",
+            "\nCutaneous reactions is an adeverse effect for drug methimazole, Yes or No?"
+        ],
+        "746": [
+            "\nhepatotoxicity is an adeverse effect for drug 6-MP, Yes or No?",
+            "\nhepatotoxicity is an adeverse effect for drug AZA, Yes or No?"
+        ],
+        "2517": [
+            "\nabnormal liver function tests is an adeverse effect for drug cyproterone acetate, Yes or No?"
+        ],
+        "94": [],
+        "2999": [
+            "\nrenal failure is an adeverse effect for drug rifampicin, Yes or No?"
+        ],
+        "1074": [
+            "\nneurotoxicity is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "488": [
+            "\nsevere motor neuropathy is an adeverse effect for drug vincristine, Yes or No?"
+        ],
+        "3357": [
+            "\noesophageal damage is an adeverse effect for drug emepronium bromide, Yes or No?"
+        ],
+        "2014": [
+            "\nhepatotoxicity is an adeverse effect for drug imatinib, Yes or No?"
+        ],
+        "930": [
+            "\ncongestive heart failure is an adeverse effect for drug IFN, Yes or No?"
+        ],
+        "177": [
+            "\nsagittal sinus thrombosis is an adeverse effect for drug L - asparaginase, Yes or No?",
+            "\ntransient free protein S deficiency is an adeverse effect for drug L - asparaginase, Yes or No?"
+        ],
+        "1572": [
+            "\nsubfulminant hepatitis B is an adeverse effect for drug infliximab, Yes or No?"
+        ],
+        "1595": [
+            "\nQT prolongation is an adeverse effect for drug hydroxychloroquine, Yes or No?",
+            "\nrefractory ventricular arrhythmia is an adeverse effect for drug hydroxychloroquine, Yes or No?"
+        ],
+        "1754": [
+            "\nHepatotoxicity is an adeverse effect for drug erlotinib, Yes or No?"
+        ],
+        "2097": [
+            "\nnasal septal perforation is an adeverse effect for drug bevacizumab, Yes or No?"
+        ],
+        "1619": [
+            "\nsevere hepatitis is an adeverse effect for drug ivermectin, Yes or No?"
+        ],
+        "2296": [
+            "\nsAML is an adeverse effect for drug etoposide, Yes or No?"
+        ],
+        "1729": [
+            "\nthrombosis of the central retinal vein is an adeverse effect for drug cyclosporin, Yes or No?",
+            "\nthrombosis of the central retinal vein is an adeverse effect for drug prednisone, Yes or No?",
+            "\nthrombosis of the central retinal vein is an adeverse effect for drug azathioprine, Yes or No?"
+        ],
+        "2523": [
+            "\nskin toxicity is an adeverse effect for drug aminoglutethimide, Yes or No?"
+        ],
+        "493": [
+            "\nconfusion is an adeverse effect for drug benztropine, Yes or No?",
+            "\nabdominal pain is an adeverse effect for drug benztropine, Yes or No?",
+            "\ndistention is an adeverse effect for drug benztropine, Yes or No?"
+        ],
+        "1718": [
+            "\ncardiac toxicity is an adeverse effect for drug Amphotericin B deoxycholate, Yes or No?",
+            "\nventricular arrhythmias is an adeverse effect for drug Amphotericin B deoxycholate, Yes or No?",
+            "\nbradycardia is an adeverse effect for drug Amphotericin B deoxycholate, Yes or No?"
+        ],
+        "776": [
+            "\nComeoscleral perforation is an adeverse effect for drug mitomycin C, Yes or No?"
+        ],
+        "1456": [
+            "\ncardiomyopathy is an adeverse effect for drug Interferon alpha-2b, Yes or No?"
+        ],
+        "1062": [
+            "\nheatstroke is an adeverse effect for drug clozapine, Yes or No?"
+        ],
+        "2934": [
+            "\nlethal complication is an adeverse effect for drug vasopressin, Yes or No?"
+        ],
+        "195": [
+            "\nspinal cord infarction is an adeverse effect for drug zolmitriptan, Yes or No?"
+        ],
+        "786": [
+            "\nneurologic abnormalities is an adeverse effect for drug FK506, Yes or No?"
+        ],
+        "742": [
+            "\nmyelosuppression is an adeverse effect for drug sirolimus, Yes or No?",
+            "\nhypertension is an adeverse effect for drug sirolimus, Yes or No?",
+            "\nhyperlipidemia is an adeverse effect for drug sirolimus, Yes or No?",
+            "\ninfection is an adeverse effect for drug sirolimus, Yes or No?"
+        ],
+        "3908": [
+            "\npulmonary hypertension is an adeverse effect for drug protamine, Yes or No?",
+            "\npulmonary hypertension is an adeverse effect for drug Ketanserin, Yes or No?"
+        ],
+        "3024": [
+            "\naplastic anemia is an adeverse effect for drug acetazolamide, Yes or No?",
+            "\naplastic anemia is an adeverse effect for drug methazolamide, Yes or No?",
+            "\naplastic anemia is an adeverse effect for drug acetazolamide, Yes or No?",
+            "\naplastic anemia is an adeverse effect for drug methazolamide, Yes or No?"
+        ],
+        "1280": [
+            "\nvisual disturbances is an adeverse effect for drug BTX - B, Yes or No?"
+        ],
+        "192": [
+            "\ndeath is an adeverse effect for drug fluoxetine, Yes or No?",
+            "\ngenetic polymorphism of the CYP2D6 gene is an adeverse effect for drug fluoxetine, Yes or No?"
+        ],
+        "1322": [
+            "\nperipheral neuropathy is an adeverse effect for drug linezolid, Yes or No?",
+            "\nbone marrow depression is an adeverse effect for drug linezolid, Yes or No?",
+            "\nblood transfusions is an adeverse effect for drug linezolid, Yes or No?"
+        ],
+        "119": [
+            "\nsymptomatic improvement is an adeverse effect for drug HU, Yes or No?"
+        ],
+        "3940": [
+            "\nadverse response is an adeverse effect for drug clonidine, Yes or No?"
+        ],
+        "3578": [
+            "\nacute intermittent porphyria is an adeverse effect for drug Diphenylhydantoin, Yes or No?"
+        ],
+        "2565": [
+            "\nnephrotoxic is an adeverse effect for drug Ifosfamide, Yes or No?"
+        ],
+        "1608": [
+            "\ndiscomfort is an adeverse effect for drug warfarin, Yes or No?",
+            "\ndiplopia is an adeverse effect for drug warfarin, Yes or No?",
+            "\nlagophthalmos is an adeverse effect for drug warfarin, Yes or No?",
+            "\nhaematoma is an adeverse effect for drug warfarin, Yes or No?"
+        ],
+        "2697": [
+            "\nExacerbation of schizophrenia is an adeverse effect for drug amantadine, Yes or No?"
+        ],
+        "2925": [
+            "\nleucopenia is an adeverse effect for drug methimazole, Yes or No?",
+            "\ncholestasis is an adeverse effect for drug methimazole, Yes or No?",
+            "\nfatty liver parenchyma degeneration is an adeverse effect for drug methimazole, Yes or No?",
+            "\ngranulocytic portal infiltration is an adeverse effect for drug methimazole, Yes or No?",
+            "\nbile stasis is an adeverse effect for drug methimazole, Yes or No?"
+        ],
+        "1426": [
+            "\nmembranous nephropathy is an adeverse effect for drug infliximab, Yes or No?"
+        ],
+        "386": [
+            "\nneurotoxicity is an adeverse effect for drug valacyclovir, Yes or No?"
+        ],
+        "4050": [
+            "\nacute pancreatitis is an adeverse effect for drug mesalamine, Yes or No?"
+        ],
+        "747": [
+            "\nHepatotoxicity is an adeverse effect for drug 6-thioguanine, Yes or No?"
+        ],
+        "3312": [
+            "\nBradycardia is an adeverse effect for drug timolol maleate, Yes or No?",
+            "\ncongestive heart failure is an adeverse effect for drug timolol maleate, Yes or No?"
+        ],
+        "548": [],
+        "2312": [
+            "\nstupor is an adeverse effect for drug valproate, Yes or No?",
+            "\nincreased fast activity is an adeverse effect for drug valproate, Yes or No?"
+        ],
+        "2457": [
+            "\npleuropericarditis is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "1392": [
+            "\npericardial effusion is an adeverse effect for drug gemcitabine, Yes or No?"
+        ],
+        "3147": [
+            "\nsevere hyponatremia is an adeverse effect for drug hydrochlorothiazide, Yes or No?"
+        ],
+        "2204": [
+            "\nmyelosuppression is an adeverse effect for drug lenalidomide, Yes or No?",
+            "\naplastic anemia is an adeverse effect for drug lenalidomide, Yes or No?"
+        ],
+        "241": [
+            "\nAllergic reaction is an adeverse effect for drug gemfibrozil, Yes or No?"
+        ],
+        "1419": [
+            "\nepinephrine overdose is an adeverse effect for drug epinephrine, Yes or No?"
+        ],
+        "1974": [
+            "\nMetabolic acidosis is an adeverse effect for drug acetazolamide, Yes or No?"
+        ],
+        "1507": [
+            "\nmonoarthritis is an adeverse effect for drug IFN - beta, Yes or No?"
+        ],
+        "3270": [
+            "\nAtypical ventricular tachycardia is an adeverse effect for drug amiodarone, Yes or No?",
+            "\nAtypical ventricular tachycardia is an adeverse effect for drug quinidine, Yes or No?",
+            "\nAtypical ventricular tachycardia is an adeverse effect for drug disopyramide, Yes or No?"
+        ],
+        "4108": [
+            "\ndevelopment of TEN is an adeverse effect for drug lamotrigine, Yes or No?",
+            "\ndevelopment of TEN is an adeverse effect for drug valproic acid, Yes or No?"
+        ],
+        "28": [
+            "\ncontact dermatitis is an adeverse effect for drug calcipotriol, Yes or No?"
+        ],
+        "3332": [
+            "\ninterstitial lung disease is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "2451": [
+            "\nheart failure is an adeverse effect for drug etanercept, Yes or No?"
+        ],
+        "2326": [
+            "\nrhabdomyolysis is an adeverse effect for drug sertraline, Yes or No?"
+        ],
+        "331": [
+            "\ntoxic epidermal necrolysis is an adeverse effect for drug cytosine arabinoside, Yes or No?"
+        ],
+        "3345": [
+            "\nhypoglycaemia is an adeverse effect for drug Para-aminosalicylic acid, Yes or No?"
+        ],
+        "2668": [
+            "\nUlcerative proctitis is an adeverse effect for drug ibuprofen, Yes or No?"
+        ],
+        "3632": [],
+        "3683": [
+            "\nFatal eosinophilia myalgia syndrome is an adeverse effect for drug total parenteral nutrition, Yes or No?",
+            "\nFatal eosinophilia myalgia syndrome is an adeverse effect for drug tryptophan, Yes or No?"
+        ],
+        "684": [
+            "\nlymphoma is an adeverse effect for drug cyclosporin, Yes or No?",
+            "\nlymphoma is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "3539": [
+            "\ncoma is an adeverse effect for drug promethazine, Yes or No?",
+            "\ncoma is an adeverse effect for drug flumazenil, Yes or No?"
+        ],
+        "3386": [
+            "\nsevere skin rash is an adeverse effect for drug methotrexate, Yes or No?",
+            "\nbone marrow aplasia is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "1052": [
+            "\ncholestatic hepatitis is an adeverse effect for drug nitrofurantoin, Yes or No?"
+        ],
+        "2824": [
+            "\npneumonitis is an adeverse effect for drug Gold, Yes or No?"
+        ],
+        "3336": [
+            "\nsclerosing peritonitis is an adeverse effect for drug practolol, Yes or No?"
+        ],
+        "1107": [
+            "\nchoroidal detachment is an adeverse effect for drug Dorzolamide, Yes or No?"
+        ],
+        "1707": [
+            "\nskin necrosis is an adeverse effect for drug warfarin, Yes or No?",
+            "\nskin necrosis is an adeverse effect for drug heparin, Yes or No?",
+            "\nthrombocytopenia is an adeverse effect for drug warfarin, Yes or No?",
+            "\nthrombocytopenia is an adeverse effect for drug heparin, Yes or No?"
+        ],
+        "3674": [
+            "\ntics is an adeverse effect for drug Carbamazepine, Yes or No?"
+        ],
+        "3820": [
+            "\nseizures is an adeverse effect for drug ofloxacin, Yes or No?"
+        ],
+        "4257": [
+            "\nimpaired cough reflex is an adeverse effect for drug mineral oil, Yes or No?"
+        ],
+        "595": [
+            "\nPriapism is an adeverse effect for drug zuclopenthixol, Yes or No?"
+        ],
+        "1116": [
+            "\ndeep venous thrombosis is an adeverse effect for drug infliximab, Yes or No?"
+        ],
+        "1993": [
+            "\ndesquamative skin rash is an adeverse effect for drug Temozolomide, Yes or No?"
+        ],
+        "4145": [
+            "\nhemolytic uremic syndrome is an adeverse effect for drug Mitomycin C, Yes or No?"
+        ],
+        "4154": [
+            "\nbalanced translocation is an adeverse effect for drug chlorambucil, Yes or No?"
+        ],
+        "3672": [
+            "\nsuppression of the endogeneous production of ACTH is an adeverse effect for drug CPH82, Yes or No?",
+            "\nsuppression of the endogeneous production of cortisol is an adeverse effect for drug CPH82, Yes or No?"
+        ],
+        "3477": [
+            "\nsecretory carcinoma of the endometrium is an adeverse effect for drug tamoxifen, Yes or No?"
+        ],
+        "1078": [
+            "\nTEN is an adeverse effect for drug ampicillin, Yes or No?"
+        ],
+        "1655": [
+            "\nneurotoxicity is an adeverse effect for drug 5-fluorouracil, Yes or No?"
+        ],
+        "2167": [
+            "\nSyncope is an adeverse effect for drug propranolol, Yes or No?"
+        ],
+        "3677": [
+            "\nfacial motor tics is an adeverse effect for drug CBZ, Yes or No?"
+        ],
+        "2321": [
+            "\nmyositis is an adeverse effect for drug leuprolide acetate, Yes or No?"
+        ],
+        "3776": [
+            "\nnonconvulsive status epilepticus is an adeverse effect for drug ifosfamide, Yes or No?"
+        ],
+        "1884": [
+            "\nanemia is an adeverse effect for drug MMF, Yes or No?",
+            "\nanemia is an adeverse effect for drug prednisone, Yes or No?",
+            "\nanemia is an adeverse effect for drug cyclosporine, Yes or No?"
+        ],
+        "2609": [
+            "\nmultiple nodules in the liver is an adeverse effect for drug phosphate diethylstilbestrol (PDES), Yes or No?"
+        ],
+        "1048": [
+            "\nOsteonecrosis is an adeverse effect for drug dexamethasone, Yes or No?"
+        ],
+        "8": [
+            "\nneurotoxicity is an adeverse effect for drug 5-fluorouracil, Yes or No?",
+            "\nneurotoxicity is an adeverse effect for drug dihydropyrimidine dehydrogenase, Yes or No?"
+        ],
+        "2139": [
+            "\nFDE is an adeverse effect for drug ceftriaxone, Yes or No?"
+        ],
+        "2898": [
+            "\nacute hepatitis is an adeverse effect for drug amiodarone, Yes or No?"
+        ],
+        "3577": [
+            "\nReversible leukopenia is an adeverse effect for drug ibopamine, Yes or No?"
+        ],
+        "2707": [
+            "\nleukopenia is an adeverse effect for drug L - Thyroxine, Yes or No?"
+        ],
+        "128": [
+            "\nsevere rhabdomyolysis is an adeverse effect for drug caffeine, Yes or No?"
+        ],
+        "2971": [
+            "\nsevere cholestasis is an adeverse effect for drug oxacillin derivatives, Yes or No?"
+        ],
+        "2780": [
+            "\nischaemic cerebrovascular accident is an adeverse effect for drug streptokinase, Yes or No?"
+        ],
+        "1746": [
+            "\nCardiomyopathy is an adeverse effect for drug adriamycin, Yes or No?",
+            "\nCardiomyopathy is an adeverse effect for drug actinomycin - D, Yes or No?",
+            "\nCardiomyopathy is an adeverse effect for drug mithramycin, Yes or No?"
+        ],
+        "3474": [
+            "\nbradycardia is an adeverse effect for drug sotalol, Yes or No?",
+            "\nbradycardia is an adeverse effect for drug glucagon, Yes or No?"
+        ],
+        "1610": [
+            "\nAngioedema is an adeverse effect for drug carbamazepine, Yes or No?",
+            "\nmaculopapular eruptions is an adeverse effect for drug carbamazepine, Yes or No?"
+        ],
+        "3365": [
+            "\nHepatotoxicity is an adeverse effect for drug hycanthone, Yes or No?"
+        ],
+        "1600": [
+            "\nlack of control of diabetes is an adeverse effect for drug olanzapine, Yes or No?",
+            "\nweight gain is an adeverse effect for drug olanzapine, Yes or No?"
+        ],
+        "954": [
+            "\nbilateral optic neuropathy is an adeverse effect for drug ethambutol, Yes or No?"
+        ],
+        "3048": [
+            "\nsalt and water retention is an adeverse effect for drug ibuprofen, Yes or No?",
+            "\nsalt and water retention is an adeverse effect for drug phenylbutazone, Yes or No?",
+            "\nsalt and water retention is an adeverse effect for drug indomethacin, Yes or No?"
+        ],
+        "336": [
+            "\nserotonin syndrome is an adeverse effect for drug clomipramine, Yes or No?",
+            "\nserotonin syndrome is an adeverse effect for drug clozapine, Yes or No?"
+        ],
+        "1509": [
+            "\nautoimmune thyroid disease is an adeverse effect for drug IFN - beta, Yes or No?",
+            "\nrefractory pre - patellar bursitis is an adeverse effect for drug IFN - beta, Yes or No?"
+        ],
+        "3604": [
+            "\nHyperammonemia is an adeverse effect for drug valproic acid, Yes or No?"
+        ],
+        "936": [
+            "\nacute pancreatitis is an adeverse effect for drug roxithromycin, Yes or No?",
+            "\nacute pancreatitis is an adeverse effect for drug betamethasone, Yes or No?"
+        ],
+        "1345": [
+            "\nCutaneous necrosis is an adeverse effect for drug interferon alfa, Yes or No?"
+        ],
+        "1321": [
+            "\nperipheral neuropathy is an adeverse effect for drug linezolid, Yes or No?",
+            "\nbone marrow depression is an adeverse effect for drug linezolid, Yes or No?"
+        ],
+        "462": [
+            "\nseizures is an adeverse effect for drug amphotericin B, Yes or No?",
+            "\nseizures is an adeverse effect for drug phenytoin, Yes or No?",
+            "\nseizures is an adeverse effect for drug lorazepam, Yes or No?"
+        ],
+        "4001": [
+            "\nheat stroke is an adeverse effect for drug zonisamide, Yes or No?"
+        ],
+        "3353": [
+            "\nencephalopathy is an adeverse effect for drug Disulfiram, Yes or No?"
+        ],
+        "619": [
+            "\ninterstitial pneumonitis is an adeverse effect for drug fludarabine, Yes or No?"
+        ],
+        "138": [
+            "\nrippling phenomena is an adeverse effect for drug pyridostigmine, Yes or No?",
+            "\nrippling phenomena is an adeverse effect for drug azathioprine, Yes or No?"
+        ],
+        "2799": [
+            "\nshallow erosion of a psoriatic plaque is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "698": [
+            "\ngeneralized rash is an adeverse effect for drug capecitabine, Yes or No?",
+            "\nitching is an adeverse effect for drug capecitabine, Yes or No?",
+            "\nsore throat is an adeverse effect for drug capecitabine, Yes or No?",
+            "\ndizziness is an adeverse effect for drug capecitabine, Yes or No?"
+        ],
+        "3665": [
+            "\nretinoic acid syndrome is an adeverse effect for drug retinoic acid, Yes or No?"
+        ],
+        "3638": [
+            "\nmyoclonus is an adeverse effect for drug L - dopa, Yes or No?",
+            "\nseizures is an adeverse effect for drug L - dopa, Yes or No?"
+        ],
+        "3061": [
+            "\nparesthesia is an adeverse effect for drug sulindac, Yes or No?",
+            "\nperipheral neuropathy is an adeverse effect for drug sulindac, Yes or No?"
+        ],
+        "2918": [
+            "\nduodenal ulceration is an adeverse effect for drug Tolazoline, Yes or No?",
+            "\nintestinal perforation is an adeverse effect for drug Tolazoline, Yes or No?"
+        ],
+        "1897": [
+            "\nhypothyroidism is an adeverse effect for drug RFP, Yes or No?"
+        ],
+        "1692": [
+            "\nnephrotic syndrome is an adeverse effect for drug IFN, Yes or No?"
+        ],
+        "1795": [
+            "\ntuberculous uveitis is an adeverse effect for drug etanercept, Yes or No?"
+        ],
+        "2907": [
+            "\nparoxysmal supraventricular tachycardia is an adeverse effect for drug cisplatin, Yes or No?",
+            "\nparoxysmal supraventricular tachycardia is an adeverse effect for drug etoposide, Yes or No?"
+        ],
+        "3069": [
+            "\nincreased histamine release is an adeverse effect for drug dextrose, Yes or No?"
+        ],
+        "1085": [
+            "\nrestless legs symptoms is an adeverse effect for drug interferon - alpha, Yes or No?"
+        ],
+        "3031": [
+            "\nErythema multiforme bullosum is an adeverse effect for drug rifampicin, Yes or No?"
+        ],
+        "4": [
+            "\nPCT-like presentation is an adeverse effect for drug Naproxen, Yes or No?",
+            "\nerythropoietic protoporphyria is an adeverse effect for drug Naproxen, Yes or No?"
+        ],
+        "3493": [
+            "\nnoncardiogenic pulmonary edema is an adeverse effect for drug EO, Yes or No?"
+        ],
+        "2470": [
+            "\nnephrotoxicity is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\nnephrotoxicity is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?",
+            "\nototoxicity is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\nototoxicity is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?",
+            "\ngastrointestinal disturbances is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\ngastrointestinal disturbances is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?",
+            "\nblood disorders is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\nblood disorders is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?",
+            "\nhypersensitivity reactions is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\nhypersensitivity reactions is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?",
+            "\nred man syndrome is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\nred man syndrome is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?",
+            "\nanaphylaxis is an adeverse effect for drug Vancomycin, Yes or No?",
+            "\nanaphylaxis is an adeverse effect for drug methicillin-resistant Staphylococcus aureus, Yes or No?"
+        ],
+        "1806": [
+            "\nMeibomian duct inflammation is an adeverse effect for drug docetaxel, Yes or No?"
+        ],
+        "1688": [
+            "\nsymptomatic hyponatremia is an adeverse effect for drug mirtazapine, Yes or No?"
+        ],
+        "3935": [
+            "\nEye movement disorders is an adeverse effect for drug cyclosporin, Yes or No?",
+            "\nEye movement disorders is an adeverse effect for drug ganciclovir, Yes or No?"
+        ],
+        "276": [
+            "\nbehavioural side effects is an adeverse effect for drug gabapentin, Yes or No?"
+        ],
+        "3277": [
+            "\ncomplete atrioventricular block is an adeverse effect for drug digoxin, Yes or No?"
+        ],
+        "3998": [
+            "\nmaculopapular and papular purpuric eruptions is an adeverse effect for drug thionamide, Yes or No?"
+        ],
+        "565": [
+            "\ngranulomatosis is an adeverse effect for drug interferon alfa, Yes or No?",
+            "\ngranulomatosis is an adeverse effect for drug ribavirin, Yes or No?"
+        ],
+        "4109": [
+            "\ntoxic epidermal necrolysis is an adeverse effect for drug lamotrigine, Yes or No?"
+        ],
+        "1039": [
+            "\nstroke is an adeverse effect for drug PPA, Yes or No?"
+        ],
+        "4176": [
+            "\nDecreased plasma cortisol level is an adeverse effect for drug alprazolam, Yes or No?"
+        ],
+        "1377": [
+            "\nknee arthritis is an adeverse effect for drug sodium hyaluronate, Yes or No?"
+        ],
+        "2342": [
+            "\nhyperammonemia is an adeverse effect for drug carbamazepine, Yes or No?"
+        ],
+        "1025": [
+            "\ntoxic myelopathy is an adeverse effect for drug doxorubicin, Yes or No?"
+        ],
+        "3448": [
+            "\nrefractory seizures is an adeverse effect for drug INH, Yes or No?"
+        ],
+        "1977": [
+            "\nrenal colic is an adeverse effect for drug indinavir, Yes or No?",
+            "\nrenal colic is an adeverse effect for drug nelfinavir, Yes or No?",
+            "\nrenal colic is an adeverse effect for drug efavirenz, Yes or No?",
+            "\nfever is an adeverse effect for drug indinavir, Yes or No?",
+            "\nfever is an adeverse effect for drug nelfinavir, Yes or No?",
+            "\nfever is an adeverse effect for drug efavirenz, Yes or No?",
+            "\ncutaneous rash is an adeverse effect for drug indinavir, Yes or No?",
+            "\ncutaneous rash is an adeverse effect for drug nelfinavir, Yes or No?",
+            "\ncutaneous rash is an adeverse effect for drug efavirenz, Yes or No?",
+            "\nnausea is an adeverse effect for drug indinavir, Yes or No?",
+            "\nnausea is an adeverse effect for drug nelfinavir, Yes or No?",
+            "\nnausea is an adeverse effect for drug efavirenz, Yes or No?",
+            "\ntemporary memory loss is an adeverse effect for drug indinavir, Yes or No?",
+            "\ntemporary memory loss is an adeverse effect for drug nelfinavir, Yes or No?",
+            "\ntemporary memory loss is an adeverse effect for drug efavirenz, Yes or No?"
+        ],
+        "3985": [
+            "\nrhabdomyolysis is an adeverse effect for drug lovastatin, Yes or No?",
+            "\nrenal failure is an adeverse effect for drug lovastatin, Yes or No?"
+        ],
+        "98": [
+            "\nAcute hyperphosphatemia is an adeverse effect for drug sodium phosphate, Yes or No?"
+        ],
+        "2145": [
+            "\nacute syphilitic posterior placoid chorioretinitis is an adeverse effect for drug triamcinolone acetonide, Yes or No?"
+        ],
+        "2248": [
+            "\nPersistent hypoglycemia is an adeverse effect for drug etanercept, Yes or No?"
+        ],
+        "2640": [
+            "\nparkinsonism is an adeverse effect for drug Metoclopramide, Yes or No?"
+        ],
+        "4134": [
+            "\nPSA response is an adeverse effect for drug flutamide, Yes or No?"
+        ],
+        "215": [
+            "\nextrapyramidal symptoms is an adeverse effect for drug risperidone, Yes or No?"
+        ],
+        "1890": [
+            "\nhepatic VOD is an adeverse effect for drug tacrolimus, Yes or No?"
+        ],
+        "3197": [
+            "\npulmonary toxicity is an adeverse effect for drug Amiodarone hydrochloride, Yes or No?"
+        ],
+        "4261": [
+            "\nburn injury is an adeverse effect for drug psoralens, Yes or No?"
+        ],
+        "3518": [
+            "\nFracture of the femoral neck is an adeverse effect for drug PSL, Yes or No?"
+        ],
+        "2104": [
+            "\nhallucinations is an adeverse effect for drug bupropion, Yes or No?",
+            "\nagitation is an adeverse effect for drug bupropion, Yes or No?",
+            "\nvomiting is an adeverse effect for drug bupropion, Yes or No?",
+            "\ntachycardia is an adeverse effect for drug bupropion, Yes or No?",
+            "\nseizures is an adeverse effect for drug bupropion, Yes or No?"
+        ],
+        "3509": [
+            "\nARF is an adeverse effect for drug mannitol, Yes or No?"
+        ],
+        "1542": [
+            "\nanaphylaxis is an adeverse effect for drug gelatine, Yes or No?"
+        ],
+        "2784": [
+            "\nCreutzfeldt - Jakob disease is an adeverse effect for drug human growth hormone, Yes or No?"
+        ],
+        "2171": [
+            "\nthymic enlargement is an adeverse effect for drug Etanercept, Yes or No?",
+            "\nmediastinal lymphadenopathy is an adeverse effect for drug Etanercept, Yes or No?",
+            "\npleurisy is an adeverse effect for drug Etanercept, Yes or No?"
+        ],
+        "1203": [
+            "\nEpstein - Barr virus (EBV) - associated polyclonal B cell lymphoproliferative disorder is an adeverse effect for drug Methotrexate (MTX), Yes or No?"
+        ],
+        "2509": [
+            "\nphotosensitivity is an adeverse effect for drug quinine, Yes or No?"
+        ],
+        "1431": [
+            "\nProminent eye movements is an adeverse effect for drug fluoxetine, Yes or No?",
+            "\nREM sleep behavior disorder is an adeverse effect for drug fluoxetine, Yes or No?"
+        ],
+        "2776": [
+            "\ncutaneous vasculitis is an adeverse effect for drug diltiazem, Yes or No?"
+        ],
+        "1933": [
+            "\nmyoclonic muscle spasms is an adeverse effect for drug dobutamine, Yes or No?"
+        ],
+        "3065": [
+            "\ntoxicity is an adeverse effect for drug lithium, Yes or No?",
+            "\ntoxicity is an adeverse effect for drug haloperidol, Yes or No?",
+            "\nhyperpyrexia is an adeverse effect for drug lithium, Yes or No?",
+            "\nhyperpyrexia is an adeverse effect for drug haloperidol, Yes or No?",
+            "\nsevere rigidity is an adeverse effect for drug lithium, Yes or No?",
+            "\nsevere rigidity is an adeverse effect for drug haloperidol, Yes or No?",
+            "\nmutism is an adeverse effect for drug lithium, Yes or No?",
+            "\nmutism is an adeverse effect for drug haloperidol, Yes or No?",
+            "\nirreversible tardive dyskinesia is an adeverse effect for drug lithium, Yes or No?",
+            "\nirreversible tardive dyskinesia is an adeverse effect for drug haloperidol, Yes or No?"
+        ],
+        "2696": [
+            "\npsychosis is an adeverse effect for drug amantadine, Yes or No?"
+        ],
+        "537": [
+            "\ncutaneous reactions is an adeverse effect for drug captopril, Yes or No?"
+        ],
+        "3711": [
+            "\nmultiform ventricular tachycardia is an adeverse effect for drug haloperidol, Yes or No?"
+        ],
+        "1840": [
+            "\nsevere cerebral swelling is an adeverse effect for drug sodium valproic acid, Yes or No?",
+            "\nraised intracranial pressure is an adeverse effect for drug sodium valproic acid, Yes or No?"
+        ],
+        "805": [
+            "\nSensorimotor polyneuropathy is an adeverse effect for drug 5-aminosalicylic acid, Yes or No?"
+        ],
+        "1175": [
+            "\nSevere leukopenia is an adeverse effect for drug nevirapine, Yes or No?",
+            "\nmild hepatotoxicity is an adeverse effect for drug nevirapine, Yes or No?"
+        ],
+        "2530": [
+            "\nleukoencephalopathy is an adeverse effect for drug Methotrexate, Yes or No?",
+            "\nleukoencephalopathy is an adeverse effect for drug folinic acid, Yes or No?"
+        ],
+        "2863": [
+            "\nneurologic disease is an adeverse effect for drug D - penicillamine, Yes or No?",
+            "\nsudden neurologic deterioration is an adeverse effect for drug D - penicillamine, Yes or No?"
+        ],
+        "2802": [
+            "\nnephrotoxicity is an adeverse effect for drug cyclosporine A, Yes or No?"
+        ],
+        "2468": [
+            "\nloss of intracellular potassium is an adeverse effect for drug lithium, Yes or No?",
+            "\ncardiac toxicity is an adeverse effect for drug lithium, Yes or No?"
+        ],
+        "1844": [
+            "\nlocalized pigmentation is an adeverse effect for drug cisplatin, Yes or No?",
+            "\nlocalized pigmentation is an adeverse effect for drug etoposide, Yes or No?",
+            "\nlocalized pigmentation is an adeverse effect for drug bleomycin, Yes or No?"
+        ],
+        "356": [
+            "\nhyperkalaemia is an adeverse effect for drug spironolactone, Yes or No?"
+        ],
+        "611": [
+            "\nhyperammonemia is an adeverse effect for drug valproate, Yes or No?",
+            "\nmental status changes is an adeverse effect for drug valproate, Yes or No?"
+        ],
+        "1809": [
+            "\nrecall pneumonitis is an adeverse effect for drug gemcitabine, Yes or No?"
+        ],
+        "2555": [
+            "\nbromide intoxication is an adeverse effect for drug pyridostigmine bromide, Yes or No?"
+        ],
+        "3703": [
+            "\nhepatotoxicity is an adeverse effect for drug paracetamol, Yes or No?"
+        ],
+        "2615": [
+            "\nhyperpigmentation is an adeverse effect for drug bleomycin, Yes or No?"
+        ],
+        "2284": [
+            "\nanaphylactic reaction is an adeverse effect for drug bacitracin, Yes or No?"
+        ],
+        "1006": [
+            "\nAIN is an adeverse effect for drug pantoprazole, Yes or No?"
+        ],
+        "2570": [
+            "\ninterstitial nephritis is an adeverse effect for drug ciprofloxacin, Yes or No?"
+        ],
+        "4100": [
+            "\nlower average heart rate is an adeverse effect for drug propranolol, Yes or No?",
+            "\nlower average mean blood pressure values is an adeverse effect for drug propranolol, Yes or No?"
+        ],
+        "3342": [
+            "\nhepatotoxicity is an adeverse effect for drug D - penicillamine, Yes or No?"
+        ],
+        "3553": [
+            "\nhyperglycemia is an adeverse effect for drug insulin, Yes or No?",
+            "\nhyperglycemia is an adeverse effect for drug IFN, Yes or No?",
+            "\nketonuria is an adeverse effect for drug insulin, Yes or No?",
+            "\nketonuria is an adeverse effect for drug IFN, Yes or No?"
+        ],
+        "1587": [
+            "\nAdverse reaction is an adeverse effect for drug aspirin, Yes or No?",
+            "\nAdverse reaction is an adeverse effect for drug zafirlukast, Yes or No?"
+        ],
+        "2165": [
+            "\nurticaria is an adeverse effect for drug DSCG, Yes or No?"
+        ],
+        "3840": [
+            "\nCreutzfeldt - Jakob syndrome is an adeverse effect for drug Lithium, Yes or No?"
+        ],
+        "3786": [
+            "\nGrowth suppression is an adeverse effect for drug fluticasone propionate, Yes or No?",
+            "\nadrenal suppression is an adeverse effect for drug fluticasone propionate, Yes or No?"
+        ],
+        "974": [
+            "\nincreased serum level of calcium is an adeverse effect for drug tacalcitol, Yes or No?",
+            "\nincreased urinary excretion of calcium is an adeverse effect for drug tacalcitol, Yes or No?"
+        ],
+        "3027": [
+            "\nsquamous - cell carcinoma is an adeverse effect for drug 5-FU, Yes or No?"
+        ],
+        "3245": [
+            "\nhistamine reaction is an adeverse effect for drug isoniazid, Yes or No?"
+        ],
+        "2335": [
+            "\narrhythmias is an adeverse effect for drug lopinavir, Yes or No?",
+            "\narrhythmias is an adeverse effect for drug ritonavir, Yes or No?"
+        ],
+        "2953": [
+            "\nyanosed hand is an adeverse effect for drug diamorphine, Yes or No?",
+            "\nyanosed hand is an adeverse effect for drug methylphenidate, Yes or No?"
+        ],
+        "1035": [
+            "\nchloroquine and hydroxychloroquine maculopathy is an adeverse effect for drug chloroquine, Yes or No?",
+            "\nchloroquine and hydroxychloroquine maculopathy is an adeverse effect for drug hydroxychloroquine, Yes or No?"
+        ],
+        "1576": [
+            "\nacute unilateral total visual loss is an adeverse effect for drug retrogasserian phenol, Yes or No?"
+        ],
+        "3154": [
+            "\nsinus rhythm is an adeverse effect for drug propranolol, Yes or No?",
+            "\nsinoatrial block is an adeverse effect for drug propranolol, Yes or No?"
+        ],
+        "3659": [
+            "\nDelayed neurotoxicity is an adeverse effect for drug intraventricular interleukin-2, Yes or No?"
+        ],
+        "558": [
+            "\nacute liver damage is an adeverse effect for drug itraconazole, Yes or No?"
+        ],
+        "2373": [
+            "\nacute liver damage is an adeverse effect for drug Nitrofurantoin, Yes or No?"
+        ],
+        "1163": [
+            "\nhypersensitivity is an adeverse effect for drug warfarin, Yes or No?"
+        ],
+        "3043": [
+            "\nFatal complication is an adeverse effect for drug formalin, Yes or No?"
+        ],
+        "4061": [
+            "\nvitiligo is an adeverse effect for drug interferon alpha 2a, Yes or No?"
+        ],
+        "2007": [
+            "\nshort - of - breath is an adeverse effect for drug leflunomide, Yes or No?",
+            "\nhemoptysis is an adeverse effect for drug leflunomide, Yes or No?",
+            "\nsevere weakness is an adeverse effect for drug leflunomide, Yes or No?"
+        ],
+        "3595": [
+            "\nheadache is an adeverse effect for drug fluoxetine, Yes or No?"
+        ],
+        "2619": [
+            "\nrenal failure is an adeverse effect for drug dextran, Yes or No?"
+        ],
+        "1036": [
+            "\nCerebral infarcts is an adeverse effect for drug phenylpropanolamine, Yes or No?"
+        ],
+        "1118": [
+            "\nhypersensitivity to infliximab is an adeverse effect for drug infliximab, Yes or No?"
+        ],
+        "2001": [
+            "\ninterstitial lung disease is an adeverse effect for drug trastuzumab, Yes or No?"
+        ],
+        "3574": [
+            "\npneumonitis is an adeverse effect for drug celiprolol, Yes or No?"
+        ],
+        "3558": [
+            "\npotentiate opportunistic infections is an adeverse effect for drug methotrexate, Yes or No?",
+            "\naccelerate HIV disease is an adeverse effect for drug methotrexate, Yes or No?"
+        ],
+        "630": [
+            "\nproarrhythmic effect is an adeverse effect for drug Verapamil, Yes or No?"
+        ],
+        "2452": [
+            "\nrisk of stroke is an adeverse effect for drug methylephedrine, Yes or No?",
+            "\nrisk of stroke is an adeverse effect for drug Chinese herbal drugs, Yes or No?"
+        ],
+        "3128": [
+            "\ninterstitial pneumonitis is an adeverse effect for drug Cyclophosphamide, Yes or No?",
+            "\nfibrosis is an adeverse effect for drug Cyclophosphamide, Yes or No?"
+        ],
+        "1996": [
+            "\nexfoliative dermatitis is an adeverse effect for drug tobramycin, Yes or No?"
+        ],
+        "249": [
+            "\nloss of consciousness is an adeverse effect for drug pilsicainide, Yes or No?"
+        ],
+        "2090": [
+            "\nCrohn's disease is an adeverse effect for drug copaxone, Yes or No?"
+        ],
+        "3963": [
+            "\npneumonitis is an adeverse effect for drug MTX, Yes or No?"
+        ],
+        "2119": [
+            "\npropafenone adverse effects is an adeverse effect for drug citalopram, Yes or No?",
+            "\npropafenone adverse effects is an adeverse effect for drug propafenone, Yes or No?"
+        ],
+        "552": [
+            "\nendometrial cancer is an adeverse effect for drug tamoxifen, Yes or No?"
+        ],
+        "2646": [
+            "\nwater intoxication is an adeverse effect for drug indomethacin, Yes or No?",
+            "\nwater intoxication is an adeverse effect for drug cyclophosphamide, Yes or No?"
+        ],
+        "3172": [
+            "\nMyoglobinuria is an adeverse effect for drug vasopressin, Yes or No?",
+            "\nacute renal failure is an adeverse effect for drug vasopressin, Yes or No?"
+        ],
+        "2347": [
+            "\nAcute bilateral phrenic neuropathy is an adeverse effect for drug adalimumab, Yes or No?"
+        ],
+        "346": [
+            "\nEctropion is an adeverse effect for drug 5-fluorouracil, Yes or No?"
+        ],
+        "4021": [
+            "\nTEN is an adeverse effect for drug Phenolphthalein, Yes or No?"
+        ],
+        "4105": [
+            "\nC. difficile toxin is an adeverse effect for drug clindamycin, Yes or No?"
+        ],
+        "2945": [
+            "\naggravate clinical myasthenia gravis is an adeverse effect for drug ampicillin, Yes or No?"
+        ],
+        "3794": [
+            "\nhyponatremia is an adeverse effect for drug desmopressin, Yes or No?"
+        ],
+        "802": [
+            "\nhyponatremia is an adeverse effect for drug Carbamazepine, Yes or No?"
+        ],
+        "3124": [
+            "\nVasomotor reactions is an adeverse effect for drug gold sodium thiomalate, Yes or No?"
+        ],
+        "1685": [
+            "\nneutropenia is an adeverse effect for drug olanzapine, Yes or No?",
+            "\nneutropenia is an adeverse effect for drug thiazide, Yes or No?"
+        ],
+        "2463": [
+            "\nacute kidney injury is an adeverse effect for drug zonisamide, Yes or No?"
+        ]
+    }
+}

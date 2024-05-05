@@ -1,73 +1,106 @@
 {
-    "micro_pc": 0.4,
-    "macro_pc": 1.0,
+    "micro_pc": 0.2,
+    "macro_pc": 0.5,
     "pc_list": {
         "work for": 0,
         "kill": 0,
         "orgbased in": 1.0,
         "live in": 0,
-        "located in": 1.0
+        "located in": 0.0
     },
-    "micro_rc": 0.4,
-    "macro_rc": 1.0,
+    "micro_rc": 0.1,
+    "macro_rc": 0.25,
     "rc_list": {
         "work for": 0,
         "kill": 0,
-        "orgbased in": 1.0,
-        "live in": 0,
-        "located in": 1.0
+        "orgbased in": 0.5,
+        "live in": 0.0,
+        "located in": 0
     },
-    "micro_f1": 0.4,
-    "macro_f1": 1.0,
+    "micro_f1": 0.13333333333333333,
+    "macro_f1": 0.3333333333333333,
     "f1_list": {
         "work for": 0,
         "kill": 0,
-        "orgbased in": 1.0,
+        "orgbased in": 0.6666666666666666,
         "live in": 0,
-        "located in": 1.0
+        "located in": 0
     },
-    "num_cases": 2,
-    "accuracy": 1.0,
-    "correct_cases": {
-        "17": {
-            "text": "An art exhibit at the Hakawati Theatre in Arab east Jerusalem featured a series of portraits of Palestinians who died during the rebellion.",
+    "num_cases": 1,
+    "accuracy": 0.0,
+    "correct_cases": {},
+    "fail_cases": {
+        "188": {
+            "text": "Dancers from the Bolshoi Ballet in Moscow and the Kirov Ballet in Leningrad, along with opera singers from Yerevan, Armenia, performed with U.S. sopranos June Anderson and Carol Vaness, as well as British dancers and singers.",
             "true": [
                 [
-                    "hakawati theatre:org",
+                    "bolshoi ballet:org",
                     "orgbased in",
-                    "jerusalem:loc"
+                    "moscow:loc"
+                ],
+                [
+                    "bolshoi ballet:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "kirov ballet:org",
+                    "orgbased in",
+                    "leningrad:loc"
+                ],
+                [
+                    "june anderson:per",
+                    "live in",
+                    "u.s.:loc"
+                ],
+                [
+                    "carol vaness:per",
+                    "live in",
+                    "u.s.:loc"
                 ]
             ],
             "pred": [
                 [
-                    "hakawati theatre:org",
+                    "bolshoi ballet:org",
                     "orgbased in",
-                    "jerusalem:loc"
-                ]
-            ],
-            "response": "No\nYes\nNo\n"
-        },
-        "4618": {
-            "text": "Ukraine has the highest power-output ratio in its gross national product compared to other countries in the former Soviet Union.",
-            "true": [
+                    "moscow:loc"
+                ],
                 [
-                    "ukraine:loc",
+                    "yerevan:loc",
                     "located in",
-                    "soviet union:loc"
+                    "armenian:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "ukraine:loc",
-                    "located in",
-                    "soviet union:loc"
-                ]
-            ],
-            "response": "Yes\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         }
     },
-    "fail_cases": {},
-    "missing_cases": {},
-    "false_cases": {},
+    "missing_cases": {
+        "188": [
+            [
+                "carol vaness:per",
+                "live in",
+                "u.s.:loc"
+            ],
+            [
+                "june anderson:per",
+                "live in",
+                "u.s.:loc"
+            ],
+            [
+                "kirov ballet:org",
+                "orgbased in",
+                "leningrad:loc"
+            ]
+        ]
+    },
+    "false_cases": {
+        "188": [
+            [
+                "yerevan:loc",
+                "located in",
+                "armenian:loc"
+            ]
+        ]
+    },
     "error_cases": {}
 }

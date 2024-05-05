@@ -1,7 +1,0 @@
-Given the text: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
-Does(Did) Denver locate in Colorado correct? (Yes/No)
-Answer:
-Yes
-
-Given the text: $TEXT$
-Answer:

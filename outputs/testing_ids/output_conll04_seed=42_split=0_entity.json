@@ -1,1 +1,55 @@
-{"raw_entity_output": {"17": "[\"Hakawati Theatre:Org\", \"Jerusalem:Loc\", \"Palestinians:Per\"]", "4618": "[\"Ukraine:Loc\", \"Soviet Union:Loc\"]"}, "logic_processed_output": {"17": ["\nDoes(Did) Palestinians work for Hakawati Theatre? (Yes/No)", "\nDoes(Did) Hakawati Theatre base in Jerusalem? (Yes/No)", "\nDoes(Did) Palestinians live in Jerusalem? (Yes/No)"], "4618": ["\nDoes(Did) Ukraine locate in Soviet Union? (Yes/No)", "\nDoes(Did) Soviet Union locate in Ukraine? (Yes/No)"]}}
+{
+    "raw_entity_output": {
+        "188": "[\"Moscow:Loc\", \"Bolshoi Ballet:Org\", \"Leningrad:Loc\", \"Kirov Ballet:Org\", \"Yerevan:Loc\", \"June Anderson:Per\", \"Carol Vaness:Per\", \"Armenian:Loc\", \"British:Loc\"]"
+    },
+    "logic_processed_output": {
+        "188": [
+            "\nDoes(Did) June Anderson work for Bolshoi Ballet? (Yes/No)",
+            "\nDoes(Did) June Anderson work for Kirov Ballet? (Yes/No)",
+            "\nDoes(Did) Carol Vaness work for Bolshoi Ballet? (Yes/No)",
+            "\nDoes(Did) Carol Vaness work for Kirov Ballet? (Yes/No)",
+            "\nDoes(Did) June Anderson kill Carol Vaness? (Yes/No)",
+            "\nDoes(Did) Carol Vaness kill June Anderson? (Yes/No)",
+            "\nDoes(Did) Bolshoi Ballet base in Moscow? (Yes/No)",
+            "\nDoes(Did) Bolshoi Ballet base in Leningrad? (Yes/No)",
+            "\nDoes(Did) Bolshoi Ballet base in Yerevan? (Yes/No)",
+            "\nDoes(Did) Bolshoi Ballet base in Armenian? (Yes/No)",
+            "\nDoes(Did) Bolshoi Ballet base in British? (Yes/No)",
+            "\nDoes(Did) Kirov Ballet base in Moscow? (Yes/No)",
+            "\nDoes(Did) Kirov Ballet base in Leningrad? (Yes/No)",
+            "\nDoes(Did) Kirov Ballet base in Yerevan? (Yes/No)",
+            "\nDoes(Did) Kirov Ballet base in Armenian? (Yes/No)",
+            "\nDoes(Did) Kirov Ballet base in British? (Yes/No)",
+            "\nDoes(Did) June Anderson live in Moscow? (Yes/No)",
+            "\nDoes(Did) June Anderson live in Leningrad? (Yes/No)",
+            "\nDoes(Did) June Anderson live in Yerevan? (Yes/No)",
+            "\nDoes(Did) June Anderson live in Armenian? (Yes/No)",
+            "\nDoes(Did) June Anderson live in British? (Yes/No)",
+            "\nDoes(Did) Carol Vaness live in Moscow? (Yes/No)",
+            "\nDoes(Did) Carol Vaness live in Leningrad? (Yes/No)",
+            "\nDoes(Did) Carol Vaness live in Yerevan? (Yes/No)",
+            "\nDoes(Did) Carol Vaness live in Armenian? (Yes/No)",
+            "\nDoes(Did) Carol Vaness live in British? (Yes/No)",
+            "\nDoes(Did) Moscow locate in Leningrad? (Yes/No)",
+            "\nDoes(Did) Moscow locate in Yerevan? (Yes/No)",
+            "\nDoes(Did) Moscow locate in Armenian? (Yes/No)",
+            "\nDoes(Did) Moscow locate in British? (Yes/No)",
+            "\nDoes(Did) Leningrad locate in Moscow? (Yes/No)",
+            "\nDoes(Did) Leningrad locate in Yerevan? (Yes/No)",
+            "\nDoes(Did) Leningrad locate in Armenian? (Yes/No)",
+            "\nDoes(Did) Leningrad locate in British? (Yes/No)",
+            "\nDoes(Did) Yerevan locate in Moscow? (Yes/No)",
+            "\nDoes(Did) Yerevan locate in Leningrad? (Yes/No)",
+            "\nDoes(Did) Yerevan locate in Armenian? (Yes/No)",
+            "\nDoes(Did) Yerevan locate in British? (Yes/No)",
+            "\nDoes(Did) Armenian locate in Moscow? (Yes/No)",
+            "\nDoes(Did) Armenian locate in Leningrad? (Yes/No)",
+            "\nDoes(Did) Armenian locate in Yerevan? (Yes/No)",
+            "\nDoes(Did) Armenian locate in British? (Yes/No)",
+            "\nDoes(Did) British locate in Moscow? (Yes/No)",
+            "\nDoes(Did) British locate in Leningrad? (Yes/No)",
+            "\nDoes(Did) British locate in Yerevan? (Yes/No)",
+            "\nDoes(Did) British locate in Armenian? (Yes/No)"
+        ]
+    }
+}

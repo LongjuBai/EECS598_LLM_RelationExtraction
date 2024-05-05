@@ -136,10 +136,10 @@ def run_llm_para(api_key, is_async, model, temp, max_tokens, seed, prompt, data,
             completion = client.chat.completions.create(
                 model=model,
                 messages=[
-                    {
-                        "role": "system",
-                        "content": "Use Logic to analyze given text. Be smart. Loc only includes location names shown on map."
-                    },
+                    # {
+                    #     "role": "system",
+                    #     "content": "Use Logic to analyze given text. Be smart. Loc only includes location names shown on map."
+                    # },
                     # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary and high school knowledge.
                     {
                         "role": "user", 
@@ -271,10 +271,11 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
                 completion = completion_with_backoff(
                     model=model,
                     messages=[
-                        {
-                            "role": "system",
-                            "content": "Use Logic to analyze given text. Be smart. Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. "
-                        },
+                        # {
+                        #     "role": "system",
+                        #     "content": "Use Logic to analyze given text. Be smart."
+                        # },
+                        # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
                         {
                             "role": "user", 
                             "content": prompt.replace('$TEXT$', sample['text'] + relation)

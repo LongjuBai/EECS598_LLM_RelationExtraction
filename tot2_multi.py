@@ -36,6 +36,12 @@ def get_response_from_llm(args):
         with open(os.path.join(prompt_dir, 'few_shot_id.txt'), 'r') as f:
             for id in f.read().split('\n'):
                 test_data.pop(id, None)
+        valid_type_dict = {
+            "Adverse-Effect": set([("Adverse-Effect", "Drug")])
+        }
+        augment_relation_types = {
+            'Adverse-Effect': 'is an adeverse effect for drug'
+        }
     elif dataset == 'conll04':
         data = load_conll04()
         test_data = data['val'] if args.is_val else data['test']
@@ -101,8 +107,12 @@ def get_response_from_llm(args):
         for relation_type, entity_pairs in relation_type_dict.items():
             for entity_pair in entity_pairs:
                 entity_1, entity_2 = entity_pair[0].split(':')[0][1:], entity_pair[1].split(':')[0][1:]
-                relation_prompt_string.append(f'\nDoes(Did) {entity_1} {augment_relation_types[relation_type]} {entity_2}? (Yes/No)') # Yes/Likely/No
-                relation_answer_string.append((entity_pair[0].strip('"').lower(), f'{relation_type}'.lower(), entity_pair[1].strip('"').lower()))
+                if dataset == 'ade':
+                    relation_prompt_string.append(f'\n{entity_1} {augment_relation_types[relation_type]} {entity_2}, Yes or No?') # Yes/Likely/No  
+                    relation_answer_string.append((entity_1.lower(), entity_2.lower()))
+                if dataset == 'conll04':
+                    relation_prompt_string.append(f'\nDoes(Did) {entity_1} {augment_relation_types[relation_type]} {entity_2}? (Yes/No)') # Yes/Likely/No
+                    relation_answer_string.append((entity_pair[0].strip('"').lower(), f'{relation_type}'.lower(), entity_pair[1].strip('"').lower()))
 
         # record to the dictionary
         relation_prompt_string_dict[id] = relation_prompt_string

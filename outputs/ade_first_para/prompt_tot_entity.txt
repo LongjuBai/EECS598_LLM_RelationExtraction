@@ -1,0 +1,42 @@
+Example Instructional Prefix: List the entities in [Adverse-Effect, Drug] in the given text.
+
+TEXT: We report on three observations of parkinsonian patients with levo - dopa - induced diphasic dyskinesias , who received subcutaneous apomorphine to reduce the duration of abnormal movements .
+Entities: ["diphasic dyskinesias:Adverse-Effect", "levo - dopa:Drug"]
+
+TEXT: A girl with cystic fibrosis and cyclic neutropenia developed an erythematous papular eruption without fever or neutrophilia 7 months after commencing therapy with G - CSF .
+Entities: ["erythematous papular eruption:Adverse-Effect", "G - CSF:Drug"]
+
+TEXT: Hypersensitivity to carboplatin is a rare but real complication of therapy and should be considered in patients presenting with hyperacute changes on ECG whilst receiving carboplatin therapy .
+Entities: ["hyperacute changes on ECG:Adverse-Effect", "Hypersensitivity:Adverse-Effect", "carboplatin:Drug"]
+
+TEXT: The diagnosis of hypothermia was delayed until it was apparent for several days but resolved with the discontinuation of risperidone and continuation of clozapine .
+Entities: ["hypothermia:Adverse-Effect", "risperidone:Drug"]
+
+TEXT: Eighty - two patients with various malignancies who received imipenem / cilastatin 143 times for neutropenic fever between March 1994 and October 1999 in Department of Pediatric Oncology , Gazi University , were identified .
+Entities: ["neutropenic fever:Adverse-Effect", "neutropenic fever:Adverse-Effect", "cilastatin:Drug", "imipenem:Drug"]
+
+TEXT: This increase when clozapine was switched to risperidone and vice versa is consistent with our previous report of elevated serum triglyceride levels in clozapine - treated patients .
+Entities: ["elevated serum triglyceride levels:Adverse-Effect", "clozapine:Drug"]
+
+TEXT: The autopsy findings and a detailed medical history supported the conclusion that clozapine - induced hypersensitivity myocarditis was the most likely cause of death .
+Entities: ["hypersensitivity myocarditis:Adverse-Effect", "clozapine:Drug"]
+
+TEXT: CD4 T - lymphocyte depletion , myelosuppression , and subsequent severe infections are the major side effects of fludarabine phosphate therapy .
+Entities: ["CD4 T - lymphocyte depletion:Adverse-Effect", "myelosuppression:Adverse-Effect", "severe infections:Adverse-Effect", "fludarabine phosphate:Drug"]
+
+TEXT: OBJECTIVE : To describe a case of severe skin necrosis resulting from peripheral intravenous administration of low - dose vasopressin in a patient with catecholamine - resistant septic shock .
+Entities: ["skin necrosis:Adverse-Effect", "vasopressin:Drug"]
+
+TEXT: In vitro inhibition of hematopoiesis in a patient with systemic sclerosis treated with D - penicillamine .
+Entities: ["inhibition of hematopoiesis:Adverse-Effect", "D - penicillamine:Drug"]
+
+TEXT: PURPOSE : We report an unusual paradoxical effect of brimonidine .
+Entities: ["paradoxical effect:Adverse-Effect", "brimonidine:Drug"]
+
+TEXT: Hepatocellular damage following therapeutic intravenous iron sucrose infusion in a child .
+Entities: ["Hepatocellular damage:Adverse-Effect", "iron sucrose:Drug"]
+
+Instructional Prefix: List the entities in [Adverse-Effect, Drug] in the given text.
+
+TEXT: $TEXT$
+Entities: 
