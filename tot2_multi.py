@@ -134,7 +134,7 @@ def get_response_from_llm(args):
         responses_para = run_llm_para(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
         for id in test_data:
             test_data[id]['text'] = responses_para[id]
-            print(test_data[id]['text'])
+            # print(test_data[id]['text'])
         if out_dir != args.prompt_dir:
             shutil.copy2(prompt_path_para, out_dir)
 
@@ -223,7 +223,9 @@ def get_response_from_llm(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--api_key', type=str, default='')
+    with open('api_key', 'r') as f:
+        default_api_key = f.read()
+    parser.add_argument('--api_key', type=str, default=default_api_key)
     parser.add_argument('--is_async', action='store_true')
     parser.add_argument('--suffix', type=str, default='myFolder')
 

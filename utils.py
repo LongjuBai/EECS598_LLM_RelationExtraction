@@ -1,6 +1,7 @@
 import numpy as np
+import time
 import asyncio
-from openai import OpenAI, AsyncOpenAI
+from openai import OpenAI, AsyncOpenAI, AzureOpenAI
 from tqdm import tqdm
 from tqdm.asyncio import tqdm as tqdm_asyncio
 from tenacity import (
@@ -94,11 +95,28 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 seed=seed
             )
             return id, completion.choices[0].text
+        elif model == 'umgpt':
+            completion = client.chat.completions.create(
+                model='gpt-35-turbo',
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        client = OpenAI(api_key=api_key)
+        if model == 'umgpt':
+            client = AzureOpenAI(
+                api_key=api_key,
+                api_version="2023-05-15",
+                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
+                organization = '001145'
+            )
+        else:
+            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker(id, sample) for id, sample in tqdm(data.items())])
     else:
         client = AsyncOpenAI(api_key=api_key)
@@ -159,11 +177,37 @@ def run_llm_para(api_key, is_async, model, temp, max_tokens, seed, prompt, data,
                 seed=seed
             )
             return id, completion.choices[0].text
+        elif model == 'umgpt':
+            completion = client.chat.completions.create(
+                model='gpt-35-turbo',
+                messages=[
+                    # {
+                    #     "role": "system",
+                    #     "content": "Use Logic to analyze given text. Be smart."
+                    # },
+                    # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
+                    {
+                        "role": "user", 
+                        "content": prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                    }],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        client = OpenAI(api_key=api_key)
+        if model == 'umgpt':
+            client = AzureOpenAI(
+                api_key=api_key,
+                api_version="2023-05-15",
+                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
+                organization = '001145'
+            )
+        else:
+            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
     else:
         client = AsyncOpenAI(api_key=api_key)
@@ -260,7 +304,7 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
         else:
             raise Exception('Model Not Supported!')
 
-    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(100))
+    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(100))
     def completion_with_backoff(**kwargs):
         return client.chat.completions.create(**kwargs)
 
@@ -298,11 +342,40 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
                 )
                 responses += completion.choices[0].text
             return id, responses
+        elif model == 'umgpt':
+            responses = ''
+            for relation in relation_prompt_string:
+                completion = completion_with_backoff(
+                    model='gpt-35-turbo',
+                    messages=[
+                        # {
+                        #     "role": "system",
+                        #     "content": "Use Logic to analyze given text. Be smart."
+                        # },
+                        # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
+                        {
+                            "role": "user", 
+                            "content": prompt.replace('$TEXT$', sample['text'] + relation)
+                        }],
+                    temperature=temp,
+                    max_tokens=max_tokens,
+                    seed=seed
+                )
+                responses += completion.choices[0].message.content + '\n'
+            return id, responses
         else:
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        client = OpenAI(api_key=api_key)
+        if model == 'umgpt':
+            client = AzureOpenAI(
+                api_key=api_key,
+                api_version="2023-05-15",
+                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
+                organization = '001145'
+            )
+        else:
+            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker_multi(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
     else:
         client = AsyncOpenAI(api_key=api_key)
