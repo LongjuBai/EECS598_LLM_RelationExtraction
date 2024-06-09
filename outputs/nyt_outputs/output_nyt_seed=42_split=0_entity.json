@@ -1,1 +1,80 @@
-{"raw_entity_output": {"0": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "1": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "2": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "3": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "4": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "5": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "6": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "7": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "8": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]", "9": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]"}, "logic_processed_output": {"0": [], "1": [], "2": ["\nSturgis contain(ed) Black Hills, Yes or No?", "\nSturgis contain(ed) South Dakota, Yes or No?", "\nBlack Hills contain(ed) Sturgis, Yes or No?", "\nBlack Hills contain(ed) South Dakota, Yes or No?", "\nSouth Dakota contain(ed) Sturgis, Yes or No?", "\nSouth Dakota contain(ed) Black Hills, Yes or No?"], "3": ["\nSturgis contain(ed) Black Hills, Yes or No?", "\nSturgis contain(ed) South Dakota, Yes or No?", "\nBlack Hills contain(ed) Sturgis, Yes or No?", "\nBlack Hills contain(ed) South Dakota, Yes or No?", "\nSouth Dakota contain(ed) Sturgis, Yes or No?", "\nSouth Dakota contain(ed) Black Hills, Yes or No?"], "4": ["\nSturgis contain(ed) Black Hills, Yes or No?", "\nSturgis contain(ed) South Dakota, Yes or No?", "\nBlack Hills contain(ed) Sturgis, Yes or No?", "\nBlack Hills contain(ed) South Dakota, Yes or No?", "\nSouth Dakota contain(ed) Sturgis, Yes or No?", "\nSouth Dakota contain(ed) Black Hills, Yes or No?", "\nSturgis is the capital of the country Black Hills, Yes or No?", "\nSturgis is the capital of the country South Dakota, Yes or No?", "\nBlack Hills is the capital of the country Sturgis, Yes or No?", "\nBlack Hills is the capital of the country South Dakota, Yes or No?", "\nSouth Dakota is the capital of the country Sturgis, Yes or No?", "\nSouth Dakota is the capital of the country Black Hills, Yes or No?"], "5": ["\nSturgis contain(ed) Black Hills, Yes or No?", "\nSturgis contain(ed) South Dakota, Yes or No?", "\nBlack Hills contain(ed) Sturgis, Yes or No?", "\nBlack Hills contain(ed) South Dakota, Yes or No?", "\nSouth Dakota contain(ed) Sturgis, Yes or No?", "\nSouth Dakota contain(ed) Black Hills, Yes or No?"], "6": ["\nSturgis contain(ed) Black Hills, Yes or No?", "\nSturgis contain(ed) South Dakota, Yes or No?", "\nBlack Hills contain(ed) Sturgis, Yes or No?", "\nBlack Hills contain(ed) South Dakota, Yes or No?", "\nSouth Dakota contain(ed) Sturgis, Yes or No?", "\nSouth Dakota contain(ed) Black Hills, Yes or No?", "\nSturgis is the capital of the country Black Hills, Yes or No?", "\nSturgis is the capital of the country South Dakota, Yes or No?", "\nBlack Hills is the capital of the country Sturgis, Yes or No?", "\nBlack Hills is the capital of the country South Dakota, Yes or No?", "\nSouth Dakota is the capital of the country Sturgis, Yes or No?", "\nSouth Dakota is the capital of the country Black Hills, Yes or No?"], "7": [], "8": [], "9": ["\nSturgis contain(ed) Black Hills, Yes or No?", "\nSturgis contain(ed) South Dakota, Yes or No?", "\nBlack Hills contain(ed) Sturgis, Yes or No?", "\nBlack Hills contain(ed) South Dakota, Yes or No?", "\nSouth Dakota contain(ed) Sturgis, Yes or No?", "\nSouth Dakota contain(ed) Black Hills, Yes or No?"]}}
+{
+    "raw_entity_output": {
+        "0": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "1": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "2": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "3": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "4": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "5": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "6": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "7": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "8": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]",
+        "9": "Entities: [\"Sturgis:Loc\", \"Black Hills:Loc\", \"South Dakota:Loc\", \"United States Postal Service:Org\"]"
+    },
+    "logic_processed_output": {
+        "0": [],
+        "1": [],
+        "2": [
+            "\nSturgis contain(ed) Black Hills, Yes or No?",
+            "\nSturgis contain(ed) South Dakota, Yes or No?",
+            "\nBlack Hills contain(ed) Sturgis, Yes or No?",
+            "\nBlack Hills contain(ed) South Dakota, Yes or No?",
+            "\nSouth Dakota contain(ed) Sturgis, Yes or No?",
+            "\nSouth Dakota contain(ed) Black Hills, Yes or No?"
+        ],
+        "3": [
+            "\nSturgis contain(ed) Black Hills, Yes or No?",
+            "\nSturgis contain(ed) South Dakota, Yes or No?",
+            "\nBlack Hills contain(ed) Sturgis, Yes or No?",
+            "\nBlack Hills contain(ed) South Dakota, Yes or No?",
+            "\nSouth Dakota contain(ed) Sturgis, Yes or No?",
+            "\nSouth Dakota contain(ed) Black Hills, Yes or No?"
+        ],
+        "4": [
+            "\nSturgis contain(ed) Black Hills, Yes or No?",
+            "\nSturgis contain(ed) South Dakota, Yes or No?",
+            "\nBlack Hills contain(ed) Sturgis, Yes or No?",
+            "\nBlack Hills contain(ed) South Dakota, Yes or No?",
+            "\nSouth Dakota contain(ed) Sturgis, Yes or No?",
+            "\nSouth Dakota contain(ed) Black Hills, Yes or No?",
+            "\nSturgis is the capital of the country Black Hills, Yes or No?",
+            "\nSturgis is the capital of the country South Dakota, Yes or No?",
+            "\nBlack Hills is the capital of the country Sturgis, Yes or No?",
+            "\nBlack Hills is the capital of the country South Dakota, Yes or No?",
+            "\nSouth Dakota is the capital of the country Sturgis, Yes or No?",
+            "\nSouth Dakota is the capital of the country Black Hills, Yes or No?"
+        ],
+        "5": [
+            "\nSturgis contain(ed) Black Hills, Yes or No?",
+            "\nSturgis contain(ed) South Dakota, Yes or No?",
+            "\nBlack Hills contain(ed) Sturgis, Yes or No?",
+            "\nBlack Hills contain(ed) South Dakota, Yes or No?",
+            "\nSouth Dakota contain(ed) Sturgis, Yes or No?",
+            "\nSouth Dakota contain(ed) Black Hills, Yes or No?"
+        ],
+        "6": [
+            "\nSturgis contain(ed) Black Hills, Yes or No?",
+            "\nSturgis contain(ed) South Dakota, Yes or No?",
+            "\nBlack Hills contain(ed) Sturgis, Yes or No?",
+            "\nBlack Hills contain(ed) South Dakota, Yes or No?",
+            "\nSouth Dakota contain(ed) Sturgis, Yes or No?",
+            "\nSouth Dakota contain(ed) Black Hills, Yes or No?",
+            "\nSturgis is the capital of the country Black Hills, Yes or No?",
+            "\nSturgis is the capital of the country South Dakota, Yes or No?",
+            "\nBlack Hills is the capital of the country Sturgis, Yes or No?",
+            "\nBlack Hills is the capital of the country South Dakota, Yes or No?",
+            "\nSouth Dakota is the capital of the country Sturgis, Yes or No?",
+            "\nSouth Dakota is the capital of the country Black Hills, Yes or No?"
+        ],
+        "7": [],
+        "8": [],
+        "9": [
+            "\nSturgis contain(ed) Black Hills, Yes or No?",
+            "\nSturgis contain(ed) South Dakota, Yes or No?",
+            "\nBlack Hills contain(ed) Sturgis, Yes or No?",
+            "\nBlack Hills contain(ed) South Dakota, Yes or No?",
+            "\nSouth Dakota contain(ed) Sturgis, Yes or No?",
+            "\nSouth Dakota contain(ed) Black Hills, Yes or No?"
+        ]
+    }
+}
