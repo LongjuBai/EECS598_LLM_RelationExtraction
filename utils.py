@@ -384,6 +384,37 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
         loop.close()
     return responses
 
+# text dict should be: id as key, entity list as value
+def run_llm_embed(api_key, is_async, model, text_dict):
+    def llm_worker(id, text_list):
+        if model == 'text-embedding-3-large':
+            output = []
+            for text in text_list:
+                response = client.embeddings.create(
+                    input=text,
+                    model=model
+                )
+                output.append(response.data[0].embedding)
+            return id, output # output is a list of text embeddings. A text embedding can be a list itself.
+        elif model == 'umgpt':
+            raise Exception("UMGPT for embedding is not done yet")
+        else:
+            raise Exception('Model Not Supported!')
+    
+    if not is_async:
+        if model == 'umgpt':
+            client = AzureOpenAI(
+                api_key=api_key,
+                api_version="2023-05-15",
+                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
+                organization = '001145'
+            )
+        else:
+            client = OpenAI(api_key=api_key)
+        responses = dict([llm_worker(id, text_list) for id, text_list in tqdm(text_dict.items())])
+    else:
+        raise Exception("Async is closed for this function")
+    return responses # dict, with id as key, and embedding list as value. Note each embedding can be a list itself.
 
 def update_counter(counter, true_set, pred_set):
     if len(counter) > 1:
