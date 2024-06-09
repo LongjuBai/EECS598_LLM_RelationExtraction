@@ -1,66 +1,80 @@
-Example Instructional Prefix: Give relations [/location/location/contains, /people/person/nationality, /people/person/place_lived, /business/person/company, /location/country/capital, /location/neighborhood/neighborhood_of, /people/person/place_of_birth, /location/country/administrative_divisions, /location/administrative_division/country, /people/deceased_person/place_of_death, /people/person/children, /business/company/founders, /business/company/place_founded, /business/company_shareholder/major_shareholder_of, /sports/sports_team_location/teams, /sports/sports_team/location, /business/company/major_shareholders, /people/person/religion, /business/company/advisors, /people/ethnicity/geographic_distribution, /people/person/ethnicity, /people/ethnicity/people, /people/person/profession, /business/company/industry] that are likely to appear in the given text. Use geography for Located In and OrgBased In.
+Example Instructional Prefix: List the entities in [Per, Loc, Org, Other] in the given text. Per are human names. Loc are geographical locations. Org are non-physical group entities, such as companies.
 
 TEXT: Massachusetts ASTON MAGNA Great Barrington ; also at Bard College , Annandale-on-Hudson , N.Y. , July 1-Aug . 
-Likely Relations: ["/location/location/contains"]
+Entities: ["Annandale-on-Hudson:Loc", "Bard College:Org"]
 
 TEXT: It will be the final movie credited to Debra Hill , a film producer and native of Haddonfield , who produced '' Halloween '' and was considered a pioneering woman in film . 
-Likely Relations: ["/people/person/place_of_birth"]
+Relations: [['Debra Hill:Loc', '/people/person/place_of_birth', 'Haddonfield:Loc']]
+Entities: ["Debra Hill:Loc", "Haddonfield:Loc"]
 
 TEXT: Under pressure from Mr. Kerkorian and other disgruntled shareholders , Mr. Wagoner started talks on Friday in Detroit with Carlos Ghosn , the chief executive of Renault and Nissan . 
-Likely Relations: ["/business/person/company"]
+Relations: [['Carlos Ghosn:Per', '/business/person/company', 'Renault:Org']]
+Entities: ["Carlos Ghosn:Per", "Renault:Org"]
 
 TEXT: Mr. Ferrer still holds commanding leads over the other two Democrats in the race -- United States Representative Anthony D. Weiner of Brooklyn and Queens , and City Council Speaker Gifford Miller -- and is also ahead of Mayor Michael R. Bloomberg in most polls . 
-Likely Relations: ["/people/person/place_lived"]
+Relations: [['Anthony D. Weiner:Per', '/people/person/place_lived', 'Brooklyn:Loc'], ['Anthony D. Weiner:Per', '/people/person/place_lived', 'Queens:Loc']]
+Entities: ["Anthony D. Weiner:Per", "Brooklyn:Loc"]
 
 TEXT: Quebec , Canada 's second most populous province , after Ontario , has not decided to go that far . 
-Likely Relations: ["/location/administrative_division/country"]
+Relations: [['Ontario:Loc', '/location/administrative_division/country', 'Canada:Loc'], ['Canada:Loc', '/location/location/contains', 'Ontario:Loc'], ['Canada:Loc', '/location/country/administrative_divisions', 'Ontario:Loc']]
+Entities: ["Ontario:Loc", "Canada:Loc", "Ontario:Loc"]
 
 TEXT: And Abu Izzadeen , who converted to Islam at 17 and heads another successor group to Al Muhajiroun , called Al Ghurabaa , called suicide bombing '' martyrdom operations . '' 
-Likely Relations: ["/people/person/religion"]
+Relations: [['Abu Izzadeen:Per', '/people/person/religion', 'Islam:Org']]
+Entities: ["Abu Izzadeen:Per", "Islam:Org"]
 
 TEXT: And yet , despite the success of its exhibitions , the institute remains something of a strange hybrid : located southeast of Notre-Dame , in a striking building designed by Jean Nouvel , it has operated since 1987 as a partnership between France and 22 Arab countries . 
-Likely Relations: ["/people/person/nationality"]
+Relations: [['Jean Nouvel:Per', '/people/person/nationality', 'France:Loc']]
+Entities: ['Jean Nouvel:Per', 'France:Loc']
 
 TEXT: They could have done it Sunday , when we were closed , '' said Joseph Bastianich , who owns Del Posto with his mother , Lidia Bastianich , and the chef , Mario Batali . 
-Likely Relations: ["/people/person/children"]
+Relations: [['Lidia Bastianich:Per', '/people/person/children', 'Joseph Bastianich:Per']]
+Entities: ["Lidia Bastianich:Per", "Joseph Bastianich:Per"]
 
 TEXT: A French court sentenced six Algerian-French men to prison terms of up to 10 years on Tuesday for their role in a 2001 plot to attack the United States Embassy in Paris , closing the books on one of France 's most serious terrorist cases . 
-Likely Relations: ["/location/administrative_division/country"]
+Relations: [['Paris:Loc', '/location/administrative_division/country', 'France:Loc'], ['France:Loc', '/location/location/contains', 'Paris:Loc'], ['France:Loc', '/location/country/administrative_divisions', 'Paris:Loc'], ['France:Loc', '/location/country/capital', 'Paris:Loc']]
+Entities: ["Paris:Loc", "France:Loc"]
 
 TEXT: Anheuser-Busch , which has been the exclusive beer sponsor for the Super Bowl since 1989 , will do so again for the Super Bowls in 2007 and 2010 on CBS and in 2008 and 2011 on Fox Broadcasting , said Anthony T. Ponturo , vice president for global media and sports marketing at Anheuser-Busch in St. Louis . 
-Likely Relations: ["/business/company/place_founded"]
+Relations: [['Anheuser-Busch:Org', '/business/company/place_founded', 'St. Louis:Loc'], ['St. Louis:Loc', '/location/location/contains', 'Anheuser-Busch:Org']]
+Entities: ["Anheuser-Busch:Org", "St. Louis:Loc"]
 
 TEXT: Somewhat chastened by his retreat in the polls , Mr. Blair acknowledged that Britons had turned against him in part over accusations that he led them into a war in Iraq on dubious legal grounds and on the false premise that Saddam Hussein presented a direct threat because of a supposed arsenal of unconventional weapons that was never found . '' 
-Likely Relations: ["/people/deceased_person/place_of_death"]
+Relations: [['Saddam Hussein:Per', '/people/deceased_person/place_of_death', 'Iraq:Loc'], ['Saddam Hussein:Per', '/people/person/place_of_birth', 'Iraq:Loc'], ['Saddam Hussein:Per', '/people/person/nationality', 'Iraq:Loc']]
+Entities: ["Saddam Hussein:Per", "Iraq:Loc"]
 
 TEXT: Rupert Murdoch and John C. Malone , who have wrangled for two years over Mr. Malone 's challenge to Mr. Murdoch 's control of the News Corporation , have made peace . 
-Likely Relations: ["/business/person/company"]
+Relations: [['Rupert Murdoch:Per', '/business/person/company', 'News Corporation:Org'], ['News Corporation:Org', '/business/company/founders', 'Rupert Murdoch:Per']]
+Entities: ["Rupert Murdoch:Per", "News Corporation:Org"]
 
 TEXT: Manhattan , especially the East Village , has long been well stocked with cheap and raucous yakitori places that specialize in skewers and beer . 
-Likely Relations: ["/location/location/contains"]
+Relations: [['Manhattan:Loc', '/location/location/contains', 'East Village:Loc'], ['East Village:Loc', '/location/neighborhood/neighborhood_of', 'Manhattan:Loc']]
+Entities: ["Manhattan:Loc", "East Village:Loc"]
 
 TEXT: HEADING OUT -- Sanford I. Weill stepped down as chairman of Citigroup , the worldwide financial supermarket he had meticulously and single-mindedly stitched together through dozens of mergers and acquisitions . 
-Likely Relations: ["/business/company/advisors"]
+Relations: [['Citigroup:Org', '/business/company/advisors', 'Sanford I. Weill:Per']]
+Entities: ["Citigroup:Org", "Sanford I. Weill:Per"]
 
 TEXT: He had decided to use the premiere to publicize the issue ; his plan was to invite the neighborhood 's Russian speakers to sign a petition against piracy , a common practice at the area 's Russian-language video outlets , which sell films and music from Russia and by Russian immigrants in the United States . 
-Likely Relations: ["/people/ethnicity/geographic_distribution"]
+Relations: [['Russian:Loc', '/people/ethnicity/geographic_distribution', 'Russia:Loc']]
+Entities: ["Russian:Loc", "Russia:Loc"]
 
 TEXT: In 1995 , Cleveland successfully lobbied to have the name Cleveland Browns stay in that city after that venerable franchise 's owner , Art Modell , opted to move it to Baltimore . 
-Likely Relations: ["/sports/sports_team_location/teams"]
+Relations: [['Cleveland:Loc', '/sports/sports_team_location/teams', 'Cleveland Browns:Org'], ['Cleveland Browns:Org', '/sports/sports_team/location', 'Cleveland:Loc']]
+Entities: ["Cleveland:Loc", "Cleveland Browns:Org"]
 
 TEXT: Mr. Fields , speaking from vacation in France , added , '' That a mogul like Sumner Redstone could make a statement so vicious , so pompous , so petulant as that he did n't want to make a deal with Tom Cruise because of his personal conduct -- it tells you more about Sumner Redstone and Viacom , than about Tom Cruise . '' 
-Likely Relations: ["/business/company_shareholder/major_shareholder_of"]
+Relations: [['Sumner Redstone:Per', '/business/company_shareholder/major_shareholder_of', 'Viacom:Org'], ['Sumner Redstone:Per', '/business/company_shareholder/major_shareholder_of', 'Viacom:Org'], ['Sumner Redstone:Per', '/business/person/company', 'Viacom:Org'], ['Viacom:Org', '/business/company/major_shareholders', 'Sumner Redstone:Per'], ['Sumner Redstone:Per', '/business/person/company', 'Viacom:Org'], ['Viacom:Org', '/business/company/major_shareholders', 'Sumner Redstone:Per']]
+Entities: ["Sumner Redstone:Per", "Viacom:Org"]
 
 TEXT: It is a room of paintings by Leonard Peltier , a citizen of the Anishinabe and Dakota and Lakota nations who is serving two consecutive life terms in Pennsylvania for the murder of two F.B.I. agents on the Pine Ridge Reservation in South Dakota . 
-Likely Relations: ["/people/person/ethnicity"]
+Relations: [['Leonard Peltier:Per', '/people/person/ethnicity', 'Lakota:Loc'], ['Lakota:Loc', '/people/ethnicity/people', 'Leonard Peltier:Per']]
+Entities: ["Leonard Peltier:Per", "Lakota:Loc"]
 
 TEXT: INSIDE THE N.B.A. Correction : February 9 , 2006 , Thursday A sports article on the Spotlight page on Sunday about Dick Bavetta , a longtime referee in the National Basketball Association , misstated the number he was approaching to set the record for regular-season games worked . 
-Likely Relations: ["/people/person/profession"]
+Relations: [['Dick Bavetta:Per', '/people/person/profession', 'National Basketball Association:Org']]
+Entities: ["Dick Bavetta:Per", "National Basketball Association:Org"]
 
 TEXT: Now the United States Postal Service may be displaying a similar rebellious streak : tomorrow at the huge Sturgis motorcycle rally in the Black Hills of South Dakota , the Postal Service will issue a set of four stamps that depict classic American bikes . 
-Likely Relations: ["/business/company/industrydustry"]
-
-Instructional Prefix: Check if relations [/location/location/contains, /people/person/nationality, /people/person/place_lived, /business/person/company, /location/country/capital, /location/neighborhood/neighborhood_of, /people/person/place_of_birth, /location/country/administrative_divisions, /location/administrative_division/country, /people/deceased_person/place_of_death, /people/person/children, /business/company/founders, /business/company/place_founded, /business/company_shareholder/major_shareholder_of, /sports/sports_team_location/teams, /sports/sports_team/location, /business/company/major_shareholders, /people/person/religion, /business/company/advisors, /people/ethnicity/geographic_distribution, /people/person/ethnicity, /people/ethnicity/people, /people/person/profession, /business/company/industry] appear in the given text. Use geography for Located In and OrgBased In.
-
-TEXT: $TEXT$
-Likely Relations:
+Relations: [['United States Postal Service:Org', '/business/company/industry', 'Postal Service:Org']]
+Entities: ["United States Postal Service:Org", "Postal Service:Org"]

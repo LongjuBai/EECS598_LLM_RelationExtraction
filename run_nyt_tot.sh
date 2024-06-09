@@ -1,0 +1,1 @@
+python tot2_multi.py --test_k 10 --prompt_dir prompts/nyt --dataset nyt --suffix nyt_outputs --temp 0 --do_paraphrase --relation_type_extraction
