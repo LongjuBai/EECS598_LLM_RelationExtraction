@@ -44,7 +44,7 @@ def get_response_from_llm(args):
         }
     elif dataset == 'conll04':
         data = load_conll04()
-        test_data = data['val'] if args.is_val else data['test']
+        test_data = data[args.part]
         # get the entity types for each relation type within conll04 dataset
         valid_type_dict = {
             "Work For": set([("Per", "Org")]),
@@ -62,7 +62,7 @@ def get_response_from_llm(args):
         }
     elif dataset == 'nyt':
         data = load_nyt()
-        test_data = data['val'] if args.is_val else data['test']
+        test_data = data[args.part]
     else:
         raise Exception('Dataset Not Supported!')
     if args.test_k >= 0:
@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
     parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--split', type=int, default=0)
-    parser.add_argument('--is_val', action='store_true')
+    parser.add_argument('--part', default='test')
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--test_ids', nargs="*", type=int, default=[])
 
