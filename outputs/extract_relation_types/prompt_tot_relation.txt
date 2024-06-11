@@ -45,16 +45,10 @@ TEXT: BELGRADE , Yugoslavia ( AP )
 Output:
 ["AP:Org", "OrgBased In", "BELGRADE:Loc"] yes
 ["AP:Org", "OrgBased In", "Yugoslavia:Loc"] yes
-<<<<<<< Updated upstream:outputs/extract_relation_types/prompt_tot_relation.txt
 ["BELGRADE:Loc", "Located In", "Yugoslavia:Loc"] yes
 ["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] no
 
 TEXT: Rome is in Lazio province and Naples in Campania .
-=======
-["Yugoslavia:Loc", "Located In", "BELGRADE:Loc"] no
-
-
->>>>>>> Stashed changes:prompts/conll04/prompt_tot_2.txt
 "OrgBased In": []
 "Work For": []
 "Located In": [["Rome:Loc", "Lazio:Loc"], ["Lazio:Loc", "Rome:Loc"], ["Naples:Loc", "Campania:Loc"], ["Campania:Loc", "Naples:Loc"], ["Rome:Loc", "Campania:Loc"], ["Campania:Loc", "Rome:Loc"]]
@@ -64,10 +58,7 @@ Output:
 ["Rome:Loc", "Located In", "Lazio:Loc"] yes
 ["Lazio:Loc", "Located In", "Rome:Loc"] no
 ["Naples:Loc", "Located In", "Campania:Loc"] yes
-<<<<<<< Updated upstream:outputs/extract_relation_types/prompt_tot_relation.txt
 ["Campania:Loc", "Located In", "Naples:Loc"] no
-=======
->>>>>>> Stashed changes:prompts/conll04/prompt_tot_2.txt
 ["Rome:Loc", "Located In", "Campania:Loc"] no
 ["Campania:Loc", "Located In", "Rome:Loc"] no
 
