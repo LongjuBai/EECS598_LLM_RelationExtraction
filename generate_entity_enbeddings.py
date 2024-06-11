@@ -41,7 +41,7 @@ if __name__ == "__main__":
     parser.add_argument('--suffix', type=str, default='our_final_results')
     parser.add_argument('--entity_file_name', type=str, default='output_conll04_seed=42_split=0_entity.json')
 
-    parser.add_argument('--model', type=str, default='text-embedding-3-large')
+    parser.add_argument('--model', type=str, default='umgpt')
     
     parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--test_k', type=int, default=-1)
