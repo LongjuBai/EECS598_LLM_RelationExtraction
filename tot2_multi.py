@@ -224,7 +224,7 @@ def get_response_from_llm(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--api_key', type=str, default='api_key')
+    parser.add_argument('--api_key', type=str, default='api_key_umgpt')
     parser.add_argument('--is_async', action='store_true')
     parser.add_argument('--suffix', type=str, default='myFolder')
 

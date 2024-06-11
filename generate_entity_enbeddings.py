@@ -36,9 +36,7 @@ def generate_entity_embedding(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    with open('api_key', 'r') as f:
-        default_api_key = f.read()
-    parser.add_argument('--api_key', type=str, default=default_api_key)
+    parser.add_argument('--api_key', type=str, default='api_key_umgpt')
     parser.add_argument('--is_async', action='store_true')
     parser.add_argument('--suffix', type=str, default='our_final_results')
     parser.add_argument('--entity_file_name', type=str, default='output_conll04_seed=42_split=0_entity.json')
@@ -52,5 +50,6 @@ if __name__ == "__main__":
     parser.add_argument('--entity_dir', type=str, default='outputs') # dir to /outputs, no suffix included; suffix specified in --suffix
 
     args = parser.parse_args()
+    args.api_key = open(args.api_key, 'r').read()
 
     generate_entity_embedding(args)
