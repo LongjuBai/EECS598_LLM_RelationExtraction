@@ -1,7 +1,7 @@
 import numpy as np
 import time
 import asyncio
-from openai import OpenAI, AsyncOpenAI, AzureOpenAI
+from openai import OpenAI, AsyncOpenAI, AzureOpenAI, AsyncAzureOpenAI
 from tqdm import tqdm
 from tqdm.asyncio import tqdm as tqdm_asyncio
 from tenacity import (
@@ -53,7 +53,7 @@ def find_triplets(s):
     return s[start:end+2]
 
 
-def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
+def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, data):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -73,6 +73,15 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
                 seed=seed
             )
             return id, completion.choices[0].text
+        elif model == 'umgpt':
+            completion = await client.chat.completions.create(
+                model='gpt-35-turbo',
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
     
@@ -108,26 +117,14 @@ def run_llm(api_key, is_async, model, temp, max_tokens, seed, prompt, data):
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        if model == 'umgpt':
-            client = AzureOpenAI(
-                api_key=api_key,
-                api_version="2023-05-15",
-                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
-                organization = '001145'
-            )
-        else:
-            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker(id, sample) for id, sample in tqdm(data.items())])
     else:
-        client = AsyncOpenAI(api_key=api_key)
-        loop = asyncio.get_event_loop()
-        responses = dict(loop.run_until_complete(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()])))
-        loop.close()
+        responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()]), debug=True))
     return responses
 
 
-def run_llm_para(api_key, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
-    async def llm_worker_async(id, sample):
+def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
+    async def llm_worker_async(relation_prompt_string, id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
                 model=model,
@@ -146,6 +143,24 @@ def run_llm_para(api_key, is_async, model, temp, max_tokens, seed, prompt, data,
                 seed=seed
             )
             return id, completion.choices[0].text
+        elif model == 'umgpt':
+            completion = await client.chat.completions.create(
+                model='gpt-35-turbo',
+                messages=[
+                    # {
+                    #     "role": "system",
+                    #     "content": "Use Logic to analyze given text. Be smart."
+                    # },
+                    # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
+                    {
+                        "role": "user", 
+                        "content": prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                    }],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
     
@@ -199,25 +214,13 @@ def run_llm_para(api_key, is_async, model, temp, max_tokens, seed, prompt, data,
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        if model == 'umgpt':
-            client = AzureOpenAI(
-                api_key=api_key,
-                api_version="2023-05-15",
-                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
-                organization = '001145'
-            )
-        else:
-            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
     else:
-        client = AsyncOpenAI(api_key=api_key)
-        loop = asyncio.get_event_loop()
-        responses = dict(loop.run_until_complete(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()])))
-        loop.close()
+        responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(relation_prompt_string_dict[id], id, sample) for id, sample in data.items()]), debug=True))
     return responses
 
-
-def run_llm_relation(api_key, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
+# TODO: fix this
+def run_llm_relation(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -237,6 +240,15 @@ def run_llm_relation(api_key, is_async, model, temp, max_tokens, seed, prompt, d
                 seed=seed
             )
             return id, completion.choices[0].text
+        elif model == 'umgpt':
+            completion = await client.chat.completions.create(
+                model='gpt-35-turbo',
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
     
@@ -271,17 +283,13 @@ def run_llm_relation(api_key, is_async, model, temp, max_tokens, seed, prompt, d
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        client = OpenAI(api_key=api_key)
         responses = dict([llm_worker(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
     else:
-        client = AsyncOpenAI(api_key=api_key)
-        loop = asyncio.get_event_loop()
-        responses = dict(loop.run_until_complete(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()])))
-        loop.close()
+        responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()]), debug=True))
     return responses
 
 
-def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
+def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -301,6 +309,15 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
                 seed=seed
             )
             return id, completion.choices[0].text
+        elif model == 'umgpt':
+            completion = await client.chat.completions.create(
+                model='gpt-35-turbo',
+                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
 
@@ -367,23 +384,12 @@ def run_llm_relation_multi(api_key, is_async, model, temp, max_tokens, seed, pro
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        if model == 'umgpt':
-            client = AzureOpenAI(
-                api_key=api_key,
-                api_version="2023-05-15",
-                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
-                organization = '001145'
-            )
-        else:
-            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker_multi(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
     else:
-        client = AsyncOpenAI(api_key=api_key)
-        loop = asyncio.get_event_loop()
-        responses = dict(loop.run_until_complete(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()])))
-        loop.close()
+        responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()]), debug=True))
     return responses
 
+# TODO: fix this async
 # text dict should be: id as key, entity list as value
 def run_llm_embed(api_key, is_async, model, text_dict):
     def llm_worker(id, text_list):
@@ -405,7 +411,7 @@ def run_llm_embed(api_key, is_async, model, text_dict):
         if model == 'umgpt':
             client = AzureOpenAI(
                 api_key=api_key,
-                api_version="2023-05-15",
+                api_version="2024-02-01",
                 azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
                 organization = '001145'
             )
@@ -456,3 +462,15 @@ def compute_metrics(counter):
     return {'micro_pc': micro_pc, 'macro_pc': macro_pc, 'pc_list': pc_list,
             'micro_rc': micro_rc, 'macro_rc': macro_rc, 'rc_list': rc_list,
             'micro_f1': micro_f1, 'macro_f1': macro_f1, 'f1_list': f1_list}
+
+
+def make_client(model, is_async, api_key):
+    client_umgpt = (AsyncAzureOpenAI if is_async else AzureOpenAI)(
+                api_key=api_key,
+                api_version="2024-02-01",
+                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
+                organization = '001145'
+            )
+    client_openai = (AsyncOpenAI if is_async else OpenAI)(api_key=api_key)
+    client = client_umgpt if model =='umgpt' else client_openai
+    return client

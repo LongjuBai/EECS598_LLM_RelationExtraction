@@ -71,9 +71,9 @@ def get_response_from_llm(args):
         test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
-    responses_entity = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, test_data)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, test_data)
     if args.relation_type_extraction: 
-        responses_relation_type = run_llm(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data)
+        responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data)
 
     # logic to map the extracted entities / relation types into relations, with the valid type dict
     relation_prompt_string_dict = {} # {id: prompt string for candidate relations}
@@ -131,7 +131,7 @@ def get_response_from_llm(args):
         shutil.copy2(prompt_path_relation_type, out_dir)
     
     if args.do_paraphrase:
-        responses_para = run_llm_para(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
+        responses_para = run_llm_para(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
         for id in test_data:
             test_data[id]['text'] = responses_para[id]
             # print(test_data[id]['text'])
@@ -139,7 +139,7 @@ def get_response_from_llm(args):
             shutil.copy2(prompt_path_para, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
-    responses_relation_rating = run_llm_relation_multi(args.api_key, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict)
+    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict)
 
     # metrics initialization
     counters = [{r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']} for _ in range(2)]
@@ -223,9 +223,8 @@ def get_response_from_llm(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    with open('api_key', 'r') as f:
-        default_api_key = f.read()
-    parser.add_argument('--api_key', type=str, default=default_api_key)
+
+    parser.add_argument('--api_key', type=str, default='api_key')
     parser.add_argument('--is_async', action='store_true')
     parser.add_argument('--suffix', type=str, default='myFolder')
 
@@ -246,5 +245,7 @@ if __name__ == "__main__":
     parser.add_argument('--prompt_dir', type=str, default='')
 
     args = parser.parse_args()
+    args.api_key = open(args.api_key, 'r').read()
+    args.client = make_client(args.model, args.is_async, args.api_key)
 
     get_response_from_llm(args)
