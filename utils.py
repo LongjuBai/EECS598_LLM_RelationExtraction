@@ -391,7 +391,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
 
 # TODO: fix this async
 # text dict should be: id as key, entity list as value
-def run_llm_embed(api_key, is_async, model, text_dict):
+def run_llm_embed(client, is_async, model, text_dict):
     def llm_worker(id, text_list):
         if model == 'text-embedding-3-large':
             output = []
