@@ -10,6 +10,9 @@ def generate_entity_embedding(args):
     entity_dir = os.path.join(args.entity_dir, args.suffix, args.entity_file_name)
     f = open(entity_dir)
     
+    # create client instance
+    client = utils.make_client(args.model, args.is_async, args.api_key)
+
     # with specified dataset, process and send to utils.generate_entity_embed
     if args.dataset == 'conll04':
         entity_dict = json.load(f)['raw_entity_output']
@@ -18,7 +21,7 @@ def generate_entity_embedding(args):
         # print(entity_dict['17'])
         if args.test_k > 0:
             entity_dict = dict([item for item in entity_dict.items()][:args.test_k])
-        embedding_dict = utils.run_llm_embed(args.api_key, args.is_async, args.model, entity_dict)
+        embedding_dict = utils.run_llm_embed(client, args.is_async, args.model, entity_dict)
         # print(len(embedding_dict['17'][0])) # 3072 embedding
     
     # write the output

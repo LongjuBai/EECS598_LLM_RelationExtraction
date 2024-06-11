@@ -391,7 +391,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
 
 # TODO: fix this async
 # text dict should be: id as key, entity list as value
-def run_llm_embed(api_key, is_async, model, text_dict):
+def run_llm_embed(client, is_async, model, text_dict):
     def llm_worker(id, text_list):
         if model == 'text-embedding-3-large':
             output = []
@@ -403,20 +403,18 @@ def run_llm_embed(api_key, is_async, model, text_dict):
                 output.append(response.data[0].embedding)
             return id, output # output is a list of text embeddings. A text embedding can be a list itself.
         elif model == 'umgpt':
-            raise Exception("UMGPT for embedding is not done yet")
+            output = []
+            for text in text_list:
+                response = client.embeddings.create(
+                    input=text,
+                    model='text-embedding-3-large'
+                )
+                output.append(response.data[0].embedding)
+            return id, output # output is a list of text embeddings. A text embedding can be a list itself.
         else:
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        if model == 'umgpt':
-            client = AzureOpenAI(
-                api_key=api_key,
-                api_version="2024-02-01",
-                azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
-                organization = '001145'
-            )
-        else:
-            client = OpenAI(api_key=api_key)
         responses = dict([llm_worker(id, text_list) for id, text_list in tqdm(text_dict.items())])
     else:
         raise Exception("Async is closed for this function")
