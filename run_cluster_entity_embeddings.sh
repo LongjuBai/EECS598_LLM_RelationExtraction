@@ -1,0 +1,1 @@
+python3 cluster_entity_embeddings.py --suffix CONll04_train

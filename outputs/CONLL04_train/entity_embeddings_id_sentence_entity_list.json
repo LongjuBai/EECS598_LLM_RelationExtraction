@@ -1,0 +1,122 @@
+[
+    {
+        "id": "210",
+        "sentence": "Penry raped Pamela Moseley Carpenter on Oct. 15, 1979, in Livingston, Texas, then stabbed her to death.",
+        "entity": "Texas:Loc"
+    },
+    {
+        "id": "3082",
+        "sentence": "Anhui ` Surplus' Rural Laborers Move to Cities OW1102132994 Beijing XINHUA in English 1313 GMT 11 Feb 94",
+        "entity": "Beijing:Loc"
+    },
+    {
+        "id": "5332",
+        "sentence": "Here are highlights of Lucille Ball's career: 1911 _ Born Aug. 6, 1911 in Jamestown N.Y., the daughter of an electrician and concert pianist Desiree Ball. 1926",
+        "entity": "N.Y.:Loc"
+    },
+    {
+        "id": "5235",
+        "sentence": "The viewers of \" JFK \" and \" The Men Who Killed Kennedy \" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;",
+        "entity": "Oswald:Per"
+    },
+    {
+        "id": "2415",
+        "sentence": "He has been the State Department's refugee coordinator and is a former Harvard politics professor. _Ronald for the rank of ambassador during his tenure as U.S. negotiator on textile matters.",
+        "entity": "U.S.:Loc"
+    },
+    {
+        "id": "3886",
+        "sentence": "(By ITAR-TASS correspondent Mikhail Shevtsov)",
+        "entity": "ITAR-TASS:Org"
+    },
+    {
+        "id": "2274",
+        "sentence": "But Sen. Strom Thurmond, R-S.C., sponsor of a proposed constitutional amendment, said, ` ` An overwhelming majority of Americans are looking to the Congress to...restore the proper civil respect for our American flag.' '",
+        "entity": "Congress:Org"
+    },
+    {
+        "id": "355",
+        "sentence": "SPACE CENTER, Houston (AP)",
+        "entity": "AP:Org"
+    },
+    {
+        "id": "5138",
+        "sentence": "Grant B. Cooper, an attorney who defended Kennedy assassin Sirhan B. Sirhan, has died at age 87.",
+        "entity": "Kennedy:Per"
+    },
+    {
+        "id": "3929",
+        "sentence": "PM2303111794 Moscow IZVESTIYA in Russian 23 Mar 94 p 3",
+        "entity": "Moscow:Loc"
+    },
+    {
+        "id": "5243",
+        "sentence": "Not content with that major error, the Journal editorial illustrated a lack of understanding of the overwhelming evidence in the Warren Commission Report proving that Lee Harvey Oswald was the lone gunman who killed President Kennedy and who 45 minutes later killed Dallas Police Officer J.D. Tippit.",
+        "entity": "Lee Harvey Oswald:Per"
+    },
+    {
+        "id": "5145",
+        "sentence": "Kennedy had just won California's Democratic presidential primary when Sirhan shot him in Los Angeles on June 5, 1968.",
+        "entity": "California:Loc"
+    },
+    {
+        "id": "5343",
+        "sentence": "Mrs. Vogt was born in Akron,Ohio, when Ulysses S. Grant was president, and spent much of her life there.",
+        "entity": "Ohio:Loc"
+    },
+    {
+        "id": "5167",
+        "sentence": "Before I became ` The man who murdered John Lennon,' I was basically a decent person,' ' Chapman said from his isolation cell at Attica state prison, where he is serving 20 years to life.",
+        "entity": "John Lennon:Per"
+    },
+    {
+        "id": "5060",
+        "sentence": "Lee's surrender of the Army of Northern Virginia had virtually ended the war by that time, but Booth thought he could save the South by killing Lincoln, said Tidwell, a retired CIA officer.",
+        "entity": "Lincoln:Per"
+    },
+    {
+        "id": "5176",
+        "sentence": "It is known that President Boris Yeltsin, in his meeting with Bill Clinton, gave him certain official documents on the Lee Harvey Oswald case, who as you know was officially recognized as the man who killed President Kennedy.",
+        "entity": "President Kennedy:Per"
+    },
+    {
+        "id": "5009",
+        "sentence": "In 1969, Sirhan Sirhan was sentenced to death for the assassination of New York Sen. Robert F. Kennedy.",
+        "entity": "Sirhan Sirhan:Per"
+    },
+    {
+        "id": "4152",
+        "sentence": "The poll conducted by the private Endemerc-Louis Harris Firm on 24-31 May among 600 people in the valley of Mexico shows that PAN (National Action Party) candidate Fernandez de Cevallos increased his popularity rating to 42 percent after the presidential debate.",
+        "entity": "Fernandez de Cevallos:Per"
+    },
+    {
+        "id": "5380",
+        "sentence": "Today's Highlight in History: One hundred years ago, on Oct. 14, 1890, Dwight D. Eisenhower, the 34th president of the United States, was born in Denison, Texas.",
+        "entity": "United States:Loc"
+    },
+    {
+        "id": "5002",
+        "sentence": "The Warren Commission determined that Lee Harvey Oswald fired at Kennedy from the sixth floor of what is now the Dallas County Administration Building on Nov. 22, 1963.",
+        "entity": "Dallas:Loc"
+    },
+    {
+        "id": "5014",
+        "sentence": "In 1865, John Wilkes Booth, the assassin of President Abraham Lincoln, was surrounded by federal troops near Bowling Green, Va., and killed.",
+        "entity": "Va.:Loc"
+    },
+    {
+        "id": "2635",
+        "sentence": "` ` I tried and tried, but he said he wouldn 't answer questions on the substance of his case,' ' said Robert Weisner, the Washington correspondent for state-run Austrian television.",
+        "entity": "Washington:Loc"
+    },
+    {
+        "id": "5311",
+        "sentence": "In 1800, the 13th president of the United States, Millard Fillmore, was born in Summerhill, N.Y. In 1927, commercial transatlantic telephone service was inaugurated between New York and London.",
+        "entity": "New York:Loc"
+    },
+    {
+        "id": "286",
+        "sentence": "France's deputy representative, M. Pierre Brochand, expressed similar sentiments.",
+        "entity": "France:Loc"
+    }
+]
