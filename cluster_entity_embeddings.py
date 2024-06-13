@@ -47,7 +47,7 @@ def cluster_entity_embeddings(args):
     print(output_list[0])
     print('Totally', args.relation_count, 'relations, with', args.k_shot_per_relation, 'shots per relation => picked min_cluster_size', k)
     print('The clusters found: (cluster_num, embedding_dim): ', hdb.medoids_.shape)
-    output_dir = os.path.join(args.entity_dir, args.suffix, 'entity_embeddings_id_sentence_entity_list.json')
+    output_dir = os.path.join(args.entity_dir, args.suffix, args.output_file_name)
     with open(output_dir, 'w') as f:
         # f.write(str(output_list))
         json.dump(output_list, f)
@@ -65,14 +65,16 @@ if __name__ == "__main__":
     parser.add_argument('--k_shot_per_relation', type=int, default=5)
 
     parser.add_argument('--entity_dir', type=str, default='outputs') # dir to /outputs, no suffix included; suffix specified in --suffix
+    parser.add_argument('--output_file_name', type=str, default='entity_embeddings_id_sentence_entity_list.json')
+    
     args = parser.parse_args()
     
     args.min_cluster_size = None
     if args.dataset == 'conll04':
         args.relation_count = 5
-        args.min_cluster_size = 14 # exhaustive search
+        args.min_cluster_size = None # 14 # exhaustive search
     elif args.dataset == 'ade':
         args.relation_count = 1
     elif args.dataset == 'nyt':
-        args.relation_count = 24
+        args.relation_count = 24 
     cluster_entity_embeddings(args)

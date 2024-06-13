@@ -1,7 +1,8 @@
 import numpy as np
 import time
 import asyncio
-from openai import OpenAI, AsyncOpenAI, AzureOpenAI, AsyncAzureOpenAI
+from openai import OpenAI, AsyncOpenAI, AzureOpenAI, AsyncAzureOpenAI, BadRequestError
+import openai
 from tqdm import tqdm
 from tqdm.asyncio import tqdm as tqdm_asyncio
 from tenacity import (
@@ -53,7 +54,7 @@ def find_triplets(s):
     return s[start:end+2]
 
 
-def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, data):
+def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round, data):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -86,10 +87,14 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, data):
             raise Exception('Model Not Supported!')
     
     def llm_worker(id, sample):
+        if multi_round:
+            messages = dispart_prompt(prompt.replace('$TEXT$', sample['text']))
+        else:
+            messages = [{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}]
         if model == 'gpt-3.5-turbo-0125':
             completion = client.chat.completions.create(
                 model=model,
-                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
+                messages=messages,
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed
@@ -105,13 +110,17 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, data):
             )
             return id, completion.choices[0].text
         elif model == 'umgpt':
-            completion = client.chat.completions.create(
-                model='gpt-35-turbo',
-                messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
-                temperature=temp,
-                max_tokens=max_tokens,
-                seed=seed
-            )
+            try:
+                completion = client.chat.completions.create(
+                    model='gpt-35-turbo',
+                    messages=messages,
+                    temperature=temp,
+                    max_tokens=max_tokens,
+                    seed=seed
+                )
+            except BadRequestError as e:
+                print(messages)
+                return id, ''
             return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
@@ -420,6 +429,7 @@ def run_llm_embed(client, is_async, model, text_dict):
         raise Exception("Async is closed for this function")
     return responses # dict, with id as key, and embedding list as value. Note each embedding can be a list itself.
 
+
 def update_counter(counter, true_set, pred_set):
     if len(counter) > 1:
         for triplet in pred_set:
@@ -472,3 +482,15 @@ def make_client(model, is_async, api_key):
     client_openai = (AsyncOpenAI if is_async else OpenAI)(api_key=api_key)
     client = client_umgpt if model =='umgpt' else client_openai
     return client
+
+# conll04: 1474 (hate)
+def dispart_prompt(prompt):
+    messages = []
+    prompt = prompt.split('\n\n')
+    messages.append({"role": "system", "content": "You are an expert at named entity recognition (NER). " + prompt[0].split(': ')[1]})
+    for sample in prompt[1:-2]:
+        question, answer = sample.split('\n')
+        messages.append({"role": "user", "content": sample.split('\n')[0]})
+        messages.append({"role": "assistant", "content": sample.split('\n')[1].split(': ')[-1]})
+    messages.append({"role": "user", "content": prompt[-1].split('\n')[0]})
+    return messages

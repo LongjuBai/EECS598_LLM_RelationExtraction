@@ -71,7 +71,7 @@ def get_response_from_llm(args):
         test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
-    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, test_data)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data)
     if args.relation_type_extraction: 
         responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data)
 
@@ -224,7 +224,7 @@ def get_response_from_llm(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--api_key', type=str, default='api_key_umgpt')
+    parser.add_argument('--api_key', type=str, default='api_key')
     parser.add_argument('--is_async', action='store_true')
     parser.add_argument('--suffix', type=str, default='myFolder')
 
@@ -235,6 +235,7 @@ if __name__ == "__main__":
     parser.add_argument('--relation_type_extraction', action='store_true')
     parser.add_argument('--do_paraphrase', action='store_true')
     parser.add_argument('--check_commonsense', action='store_true')
+    parser.add_argument('--multi_round', action='store_true')
 
     parser.add_argument('--dataset', type=str, default='conll04')
     parser.add_argument('--split', type=int, default=0)
@@ -245,7 +246,7 @@ if __name__ == "__main__":
     parser.add_argument('--prompt_dir', type=str, default='')
 
     args = parser.parse_args()
-    args.api_key = open(args.api_key, 'r').read()
+    args.api_key = open(args.api_key + '_umgpt', 'r').read() if args.model == 'umgpt' else open(args.api_key, 'r').read()
     args.client = make_client(args.model, args.is_async, args.api_key)
 
     get_response_from_llm(args)
