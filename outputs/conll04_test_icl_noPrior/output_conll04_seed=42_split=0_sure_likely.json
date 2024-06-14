@@ -1,30 +1,30 @@
 {
-    "micro_pc": 0.47270792283669116,
-    "macro_pc": 0.3977272727272727,
+    "micro_pc": 0.4728852128263893,
+    "macro_pc": 0.39539347408829173,
     "pc_list": {
-        "work for": 0.5131578947368421,
-        "kill": 0.8409090909090909,
-        "orgbased in": 0.4576271186440678,
-        "live in": 0.2671232876712329,
-        "located in": 0.2847222222222222
+        "work for": 0.5064935064935064,
+        "kill": 0.8461538461538461,
+        "orgbased in": 0.4369747899159664,
+        "live in": 0.2733333333333333,
+        "located in": 0.3014705882352941
     },
-    "micro_rc": 0.5432813353038117,
-    "macro_rc": 0.515970515970516,
+    "micro_rc": 0.5261750246944616,
+    "macro_rc": 0.5061425061425061,
     "rc_list": {
         "work for": 0.5131578947368421,
-        "kill": 0.7872340425531915,
-        "orgbased in": 0.5625,
-        "live in": 0.3979591836734694,
+        "kill": 0.7021276595744681,
+        "orgbased in": 0.5416666666666666,
+        "live in": 0.41836734693877553,
         "located in": 0.45555555555555555
     },
-    "micro_f1": 0.5002234173389617,
-    "macro_f1": 0.4491978609625668,
+    "micro_f1": 0.49088874639274077,
+    "macro_f1": 0.44396551724137934,
     "f1_list": {
-        "work for": 0.5131578947368421,
-        "kill": 0.8131868131868131,
-        "orgbased in": 0.5046728971962617,
-        "live in": 0.319672131147541,
-        "located in": 0.35042735042735046
+        "work for": 0.5098039215686274,
+        "kill": 0.7674418604651162,
+        "orgbased in": 0.4837209302325581,
+        "live in": 0.33064516129032256,
+        "located in": 0.3628318584070796
     },
     "num_cases": 288,
     "accuracy": 0.3402777777777778,
@@ -46,6 +46,24 @@
                 ]
             ],
             "response": "Yes\n"
+        },
+        "35": {
+            "text": "The ` ` iron triangle' ' consisting of members of Congress, the news media, and special interest groups, was not mentioned in a speech to political appointees in Washington on Dec. 13, according to Reagan. He claimed that this group had hindered his administration's efforts to balance the federal budget.",
+            "true": [
+                [
+                    "congress:org",
+                    "orgbased in",
+                    "washington:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "congress:org",
+                    "orgbased in",
+                    "washington:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\n"
         },
         "130": {
             "text": "Hot Springs National Park is located in the state of Arkansas.",
@@ -82,6 +100,24 @@
                 ]
             ],
             "response": "Yes\nNo\n"
+        },
+        "195": {
+            "text": "According to Michael D. Papagiannis from Boston University, he thinks that the Earth's crater was formed 100 million years ago due to a massive meteorite collision.",
+            "true": [
+                [
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "michael d. papagiannis:per",
+                    "work for",
+                    "boston university:org"
+                ]
+            ],
+            "response": "Yes\nNo\nNo\n"
         },
         "198": {
             "text": "BONE is a place located in Idaho and the information is from AP.",
@@ -255,24 +291,6 @@
             ],
             "response": "Yes\n"
         },
-        "942": {
-            "text": "Walesa, an electrician from the shipyard, established the independent union movement called Solidarity in 1980. According to Walesa, the people of Poland are becoming increasingly restless and frustrated due to the high prices and shortages.",
-            "true": [
-                [
-                    "walesa:per",
-                    "work for",
-                    "solidarity:org"
-                ]
-            ],
-            "pred": [
-                [
-                    "walesa:per",
-                    "work for",
-                    "solidarity:org"
-                ]
-            ],
-            "response": "Yes\n"
-        },
         "1004": {
             "text": "In 1985, the passengers on the shuttle included Sultan Al-Saud from Saudi Arabia and Rodolfo Neri Vela, who is Mexican.",
             "true": [
@@ -319,24 +337,6 @@
             ],
             "response": "No\nNo\nYes\nNo\nYes\nNo\n"
         },
-        "1197": {
-            "text": "According to Samuel L. Husk, executive director of the Council of Great City Schools, the size and financial strength are important factors.",
-            "true": [
-                [
-                    "samuel l. husk:per",
-                    "work for",
-                    "council of great city schools:org"
-                ]
-            ],
-            "pred": [
-                [
-                    "samuel l. husk:per",
-                    "work for",
-                    "council of great city schools:org"
-                ]
-            ],
-            "response": "Yes\n"
-        },
         "1326": {
             "text": "The news agency Notimex later reported that the union's locals had chosen Ricardo Camero Cardiel, a local leader and senator from Ciudad Madero, as the union's new secretary-general.",
             "true": [
@@ -354,6 +354,24 @@
                 ]
             ],
             "response": "No\nNo\nYes\n"
+        },
+        "1338": {
+            "text": "The specifics of the 'friendly' bid for Aussedat-Rey SA, the top producer of photocopy paper in Europe, were not made public.",
+            "true": [
+                [
+                    "aussedat-rey sa:org",
+                    "orgbased in",
+                    "europe:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "aussedat-rey sa:org",
+                    "orgbased in",
+                    "europe:loc"
+                ]
+            ],
+            "response": "Yes\n"
         },
         "1340": {
             "text": "Ann Silvernail, a spokeswoman for International Paper, stated that due to French regulations, the company is unable to disclose specific information until it receives government approval.",
@@ -392,7 +410,7 @@
             "response": "Yes\n"
         },
         "1405": {
-            "text": "Scott Hinton, an analyst from Elders Futures Inc., stated that despite the decline in copper prices from the record highs in early December, the market still appeared to be resilient.",
+            "text": "Scott Hinton, an analyst from Elders Futures Inc., stated that despite the decline in copper prices from the record highs in early December, the market remains resilient.",
             "true": [
                 [
                     "scott hinton:per",
@@ -428,7 +446,7 @@
             "response": "Yes\n"
         },
         "1640": {
-            "text": "Pacific Marine Inc., an organization based in Houston, was located approximately 15 miles to the east of Grand Isle.",
+            "text": "Pacific Marine Inc., based in Houston, was located approximately 15 miles to the east of Grand Isle.",
             "true": [
                 [
                     "pacific marine inc.:org",
@@ -446,7 +464,7 @@
             "response": "Yes\nNo\nNo\nNo\n"
         },
         "1669": {
-            "text": "Santa Monica artist Tom Van Sant speculated that the 23-foot-tall statue was knocked down for the same reason as the original one, which was destroyed by tanks.",
+            "text": "Santa Monica artist Tom Van Sant said on Monday that the previous statue was demolished by tanks for a specific reason, and he assumes that the same reason led to the destruction of the newly discovered 23-foot-tall statue, which was found in pieces and crushed.",
             "true": [
                 [
                     "tom van sant:per",
@@ -463,23 +481,23 @@
             ],
             "response": "Yes\n"
         },
-        "1692": {
-            "text": "Bush, who admitted that Sununu was not shy and reserved, also had something to say about Baliles, who was resigning as chairman of the association after a year.",
+        "1689": {
+            "text": "Gerald Baliles, a Democrat and the governor of Virginia, described him as the same easy-going, soft-spoken, self-effacing man we knew when he was governor of New Hampshire.",
             "true": [
                 [
-                    "baliles:per",
+                    "gerald baliles:per",
                     "live in",
                     "virginia:loc"
                 ]
             ],
             "pred": [
                 [
-                    "baliles:per",
+                    "gerald baliles:per",
                     "live in",
                     "virginia:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "No\nYes\nNo\nNo\n"
         },
         "1769": {
             "text": "The State Department issued a travel advisory on Monday, warning about a few attacks on tourists in Kenya. These attacks have occurred mainly along the coast south of Mombasa and in remote areas of the country, including some national parks.",
@@ -498,6 +516,52 @@
                 ]
             ],
             "response": "No\nNo\nNo\nYes\n"
+        },
+        "1844": {
+            "text": "Dave Olson, who is from the Payette National Forest in Idaho, stated that they are prepared for a lengthy period of dealing with the more than 200 ongoing fires.",
+            "true": [
+                [
+                    "dave olson:per",
+                    "live in",
+                    "idaho:loc"
+                ],
+                [
+                    "payette national forest:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "dave olson:per",
+                    "live in",
+                    "idaho:loc"
+                ],
+                [
+                    "payette national forest:loc",
+                    "located in",
+                    "idaho:loc"
+                ]
+            ],
+            "response": "No\nYes\nYes\nNo\n"
+        },
+        "1914": {
+            "text": "Robert Bernero, chief of waste disposal for the NRC, expressed concern that the DOE may not have enough time to plan and gather technical information due to the pressure to meet unrealistic schedule milestones.",
+            "true": [
+                [
+                    "robert bernero:per",
+                    "work for",
+                    "nrc:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "robert bernero:per",
+                    "work for",
+                    "nrc:org"
+                ]
+            ],
+            "response": "Yes\nNo\n"
         },
         "1936": {
             "text": "Khieu Samphan, the leader of the Khmer Rouge, expressed objections to the investigation mission and other aspects of the agreements reached today.",
@@ -563,6 +627,60 @@
             ],
             "response": "Yes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"
         },
+        "2116": {
+            "text": "Idaho Governor Cecil Andrus stated that he had to address the forest fires, which have become completely uncontrollable.",
+            "true": [
+                [
+                    "cecil andrus:per",
+                    "live in",
+                    "idaho:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "cecil andrus:per",
+                    "live in",
+                    "idaho:loc"
+                ]
+            ],
+            "response": "Yes\n"
+        },
+        "2300": {
+            "text": "According to Pentagon officials, when it comes to the U.S. hostages, such considerations are not seen solely from a military perspective, as has been the case in the past.",
+            "true": [
+                [
+                    "pentagon:org",
+                    "orgbased in",
+                    "u.s.:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "pentagon:org",
+                    "orgbased in",
+                    "u.s.:loc"
+                ]
+            ],
+            "response": "Yes\n"
+        },
+        "2314": {
+            "text": "Jacobsen, who is currently residing in Colorado, stated that sources in London informed him that Anderson, a person, was going to be released by the new Iranian government on the previous Saturday as a sign of goodwill.",
+            "true": [
+                [
+                    "jacobsen:per",
+                    "live in",
+                    "colorado:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "jacobsen:per",
+                    "live in",
+                    "colorado:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
+        },
         "2522": {
             "text": "Kim Dae-jung, the leader of the main opposition party in South Korea, was arrested on Wednesday based on a court order. He will be questioned regarding a party lawmaker's unauthorized visit to North Korea.",
             "true": [
@@ -581,8 +699,26 @@
             ],
             "response": "Yes\nNo\nNo\nNo\n"
         },
+        "2628": {
+            "text": "Idaho Governor Cecil Andrus stated that he had to address the forest fires, which have become completely uncontrollable.",
+            "true": [
+                [
+                    "cecil andrus:per",
+                    "live in",
+                    "idaho:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "cecil andrus:per",
+                    "live in",
+                    "idaho:loc"
+                ]
+            ],
+            "response": "Yes\n"
+        },
         "2644": {
-            "text": "$ENTITIES$ is a repulsive maze of densely packed shacks tottering over a marsh awash in garbage and other reeking waste in Bangkok's largest slum, Klong Toey.",
+            "text": "$ENTITIES$ is a densely populated slum located in Bangkok. It consists of tightly packed shacks built over a marshy area filled with garbage and other unpleasant waste.",
             "true": [
                 [
                     "klong toey:loc",
@@ -725,24 +861,6 @@
             ],
             "response": "Yes\n"
         },
-        "3303": {
-            "text": "Israeli Aircraft conducted two raids on Iqlim al-Tuffah, according to Beirut Radio Lebanon in Arabic at 0900 GMT on February 15, 1994.",
-            "true": [
-                [
-                    "radio lebanon:org",
-                    "orgbased in",
-                    "beirut:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "radio lebanon:org",
-                    "orgbased in",
-                    "beirut:loc"
-                ]
-            ],
-            "response": "No\nNo\nNo\nYes\nNo\nNo\n"
-        },
         "3392": {
             "text": "The Arrow Missile Program, known as the \"Arrow Missile Program,\" was discussed in an overview published by THE JERUSALEM POST, an English-language organization based in Jerusalem, on October 15, 1993. The content of the overview is classified as \"FOR OFFICIAL USE ONLY.\"",
             "true": [
@@ -775,6 +893,24 @@
                     "the jerusalem post:org",
                     "orgbased in",
                     "jerusalem:loc"
+                ]
+            ],
+            "response": "Yes\n"
+        },
+        "3470": {
+            "text": "Gerald Steinberg, a specialist in missiles at Bar-Ilan University, concurs that the challenge is formidable.",
+            "true": [
+                [
+                    "gerald steinberg:per",
+                    "work for",
+                    "bar-ilan university:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "gerald steinberg:per",
+                    "work for",
+                    "bar-ilan university:org"
                 ]
             ],
             "response": "Yes\n"
@@ -887,33 +1023,23 @@
             ],
             "response": "Yes\n"
         },
-        "3916": {
-            "text": "The Mangunchay irrigation project and a sawmill in the San Ignacio forest, which is situated in the provinces of Jaen and San Ignacio de Cajamarca, will also receive priority.",
+        "3911": {
+            "text": "The newspaper EL COMERCIO, located in Lima, published an article in Spanish on March 19, 1994, on page A8.",
             "true": [
                 [
-                    "san ignacio forest:loc",
-                    "located in",
-                    "jaen:loc"
-                ],
-                [
-                    "san ignacio forest:loc",
-                    "located in",
-                    "san ignacio de cajamarca:loc"
+                    "el comercio:org",
+                    "orgbased in",
+                    "lima:loc"
                 ]
             ],
             "pred": [
                 [
-                    "san ignacio forest:loc",
-                    "located in",
-                    "jaen:loc"
-                ],
-                [
-                    "san ignacio forest:loc",
-                    "located in",
-                    "san ignacio de cajamarca:loc"
+                    "el comercio:org",
+                    "orgbased in",
+                    "lima:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\n"
+            "response": "Yes\n"
         },
         "3950": {
             "text": "The newspaper PRAVDA UKRAINY, written in Russian, was published in Kiev on April 5, 1994, with pages 1-2.",
@@ -987,36 +1113,8 @@
             ],
             "response": "Yes\n"
         },
-        "4068": {
-            "text": "As of early March, five members of the LDP, including Kim Pom-myon representing Nonsan County, have reportedly committed to voting against the ratification motion.",
-            "true": [
-                [
-                    "kim pom-myon:per",
-                    "work for",
-                    "ldp:org"
-                ],
-                [
-                    "kim pom-myon:per",
-                    "live in",
-                    "nonsan county:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "kim pom-myon:per",
-                    "work for",
-                    "ldp:org"
-                ],
-                [
-                    "kim pom-myon:per",
-                    "live in",
-                    "nonsan county:loc"
-                ]
-            ],
-            "response": "Yes\nNo\nYes\n"
-        },
         "4117": {
-            "text": "The organization BANGKOK POST is located in Bangkok.",
+            "text": "The BANGKOK POST is a newspaper based in Bangkok.",
             "true": [
                 [
                     "bangkok post:org",
@@ -1177,24 +1275,6 @@
             ],
             "response": "Yes\n"
         },
-        "4485": {
-            "text": "Georgiy Gurinov, the Commander of the Pacific Fleet, is currently at the main command post of the fleet, overseeing and coordinating the operations of all the forces involved.",
-            "true": [
-                [
-                    "georgiy gurinov:per",
-                    "work for",
-                    "pacific fleet:org"
-                ]
-            ],
-            "pred": [
-                [
-                    "georgiy gurinov:per",
-                    "work for",
-                    "pacific fleet:org"
-                ]
-            ],
-            "response": "Yes\n"
-        },
         "4515": {
             "text": "Chisinau-based organization BASAPRESS released news in English at 1750 GMT on May 23, 1994.",
             "true": [
@@ -1249,24 +1329,6 @@
             ],
             "response": "Yes\n"
         },
-        "5003": {
-            "text": "According to the Warren Commission, on November 22, 1963, Lee Harvey Oswald shot at Kennedy's motorcade from the sixth floor of the Dallas County Administration Building, where he was employed.",
-            "true": [
-                [
-                    "lee harvey oswald:per",
-                    "kill",
-                    "kennedy:per"
-                ]
-            ],
-            "pred": [
-                [
-                    "lee harvey oswald:per",
-                    "kill",
-                    "kennedy:per"
-                ]
-            ],
-            "response": "No\nNo\nYes\nNo\nNo\nNo\nNo\n"
-        },
         "5008": {
             "text": "The investigation conducted by the LAPD into the assassination of Robert F. Kennedy by Sirhan Sirhan was thorough, but even after 20 years, public doubt persists regarding its findings.",
             "true": [
@@ -1286,7 +1348,7 @@
             "response": "No\nNo\nNo\nYes\n"
         },
         "5024": {
-            "text": "The commission led by the Warren Commission concluded that Oswald shot at Kennedy from the sixth floor of the current Dallas County Administration Building.",
+            "text": "The Warren Commission concluded that Oswald shot at Kennedy from the sixth floor of the current Dallas County Administration Building.",
             "true": [
                 [
                     "oswald:per",
@@ -1301,7 +1363,7 @@
                     "kennedy:per"
                 ]
             ],
-            "response": "No\nNo\nYes\nNo\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nNo\nNo\n"
         },
         "5041": {
             "text": "In 1964, the Warren Commission released a report stating that Lee Harvey Oswald was the sole perpetrator in the assassination of President John F. Kennedy.",
@@ -1322,7 +1384,7 @@
             "response": "No\nNo\nYes\nNo\n"
         },
         "5055": {
-            "text": "In 1881, Charles J. Guiteau stood trial for the murder of President James Garfield.\nThe United Nations was established in 1945 with the goal of fostering peace, security, and collaboration among member nations.\nThe Great Wall of China is a renowned landmark that spans the northern region of China.\nApple Inc. is a multinational technology company headquartered in Cupertino, California.\nThe Beatles, a British rock band, was formed in Liverpool in 1960.\nHarvard University, a private Ivy League research institution, is situated in Cambridge, Massachusetts.",
+            "text": "In 1881, the trial for the assassination of President James Garfield took place, with Charles J. Guiteau as the defendant.",
             "true": [
                 [
                     "charles j. guiteau:per",
@@ -1373,10 +1435,10 @@
                     "new york sen. robert f. kennedy:per"
                 ]
             ],
-            "response": "Yes\nNo\n"
+            "response": "No\nYes\n"
         },
         "5088": {
-            "text": "Sirhan Sirhan, who is currently serving a life sentence in prison for the assassination of Sen. Robert F. Kennedy, was denied parole for the 10th time on Tuesday. Despite expressing deep remorse for the killing, his request for parole was rejected.",
+            "text": "Sirhan Sirhan, the person who assassinated Sen. Robert F. Kennedy, was denied parole for the 10th time on Tuesday, even though he expressed deep remorse for the killing.",
             "true": [
                 [
                     "sirhan sirhan:per",
@@ -1391,7 +1453,7 @@
                     "sen. robert f. kennedy:per"
                 ]
             ],
-            "response": "Yes\nNo\n"
+            "response": "No\nYes\n"
         },
         "5091": {
             "text": "The state prison board denied parole to Sirhan B. Sirhan, the assassin of Sen. Robert F. Kennedy, for the 10th time, stating that he still poses a threat to society due to his unpredictable capacity for violence.",
@@ -1407,6 +1469,24 @@
                     "sirhan b. sirhan:per",
                     "kill",
                     "sen. robert f. kennedy:per"
+                ]
+            ],
+            "response": "No\nYes\n"
+        },
+        "5093": {
+            "text": "Sirhan Bishara Sirhan, the person who assassinated Kennedy, was apprehended right away.",
+            "true": [
+                [
+                    "sirhan bishara sirhan:per",
+                    "kill",
+                    "kennedy:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "sirhan bishara sirhan:per",
+                    "kill",
+                    "kennedy:per"
                 ]
             ],
             "response": "No\nYes\n"
@@ -1447,24 +1527,6 @@
             ],
             "response": "No\nYes\n"
         },
-        "5103": {
-            "text": "In 1978, James Earl Ray, the person convicted of assassinating Dr. Martin Luther King Jr., stated during a hearing on Capitol Hill that he was not responsible for the crime. He claimed that he had been framed by a mysterious individual named \"Raoul.\"",
-            "true": [
-                [
-                    "james earl ray:per",
-                    "kill",
-                    "dr. martin luther king jr.:per"
-                ]
-            ],
-            "pred": [
-                [
-                    "james earl ray:per",
-                    "kill",
-                    "dr. martin luther king jr.:per"
-                ]
-            ],
-            "response": "Yes\nNo\nNo\nNo\n"
-        },
         "5106": {
             "text": "The Warren Commission, in 1964, released a report stating that Lee Harvey Oswald was solely responsible for the assassination of President John F. Kennedy in November 1963.",
             "true": [
@@ -1479,42 +1541,6 @@
                     "lee harvey oswald:per",
                     "kill",
                     "president john f. kennedy:per"
-                ]
-            ],
-            "response": "Yes\nNo\n"
-        },
-        "5112": {
-            "text": "Ray, who is 61 years old, will not be able to be released from prison until 1998 for the murder of King on April 4, 1968, in Memphis, Tennessee.",
-            "true": [
-                [
-                    "ray:per",
-                    "kill",
-                    "king:per"
-                ]
-            ],
-            "pred": [
-                [
-                    "ray:per",
-                    "kill",
-                    "king:per"
-                ]
-            ],
-            "response": "Yes\nNo\nNo\nNo\n"
-        },
-        "5122": {
-            "text": "James Earl Ray, who is currently serving a 99-year prison sentence for the murder of civil rights leader Martin Luther King Jr., has recently initiated divorce proceedings with his wife of 12 years.",
-            "true": [
-                [
-                    "james earl ray:per",
-                    "kill",
-                    "martin luther king jr.:per"
-                ]
-            ],
-            "pred": [
-                [
-                    "james earl ray:per",
-                    "kill",
-                    "martin luther king jr.:per"
                 ]
             ],
             "response": "Yes\nNo\n"
@@ -1583,24 +1609,6 @@
             ],
             "response": "Yes\nNo\n"
         },
-        "5166": {
-            "text": "Mark David Chapman expresses deep regret for the assassination of John Lennon, emphasizing that this act does not define him as a malevolent individual.",
-            "true": [
-                [
-                    "mark david chapman:per",
-                    "kill",
-                    "john lennon:per"
-                ]
-            ],
-            "pred": [
-                [
-                    "mark david chapman:per",
-                    "kill",
-                    "john lennon:per"
-                ]
-            ],
-            "response": "Yes\nNo\n"
-        },
         "5170": {
             "text": "Lennon and Ono were heading back to their house after a recording session when Mark David Chapman, a fan who had gotten Lennon's autograph earlier that day, shot and murdered him.",
             "true": [
@@ -1636,6 +1644,24 @@
                 ]
             ],
             "response": "Yes\nNo\nNo\nNo\n"
+        },
+        "5201": {
+            "text": "During the trial of Sirhan Sirhan, Sen. Robert F. Kennedy's assassin, Diamond provided his most famous testimony.",
+            "true": [
+                [
+                    "sirhan sirhan:per",
+                    "kill",
+                    "sen. robert f. kennedy:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "sirhan sirhan:per",
+                    "kill",
+                    "sen. robert f. kennedy:per"
+                ]
+            ],
+            "response": "No\nYes\n"
         },
         "5211": {
             "text": "$ENTITIES$ are featured in different segments of the video. One segment shows Lyndon B. Johnson being sworn in as president, while another segment shows Jack Ruby shooting Oswald.",
@@ -1674,7 +1700,7 @@
             "response": "Yes\nNo\n"
         },
         "5216": {
-            "text": "Among Mr. Fensterwald's notable clients were McCord, who served as the security chief for President Nixon's 1972 campaign, and James Earl Ray, the convicted assassin of the Rev. Martin Luther King Jr.",
+            "text": "In addition to McCord, who was the security chief for President Nixon's 1972 campaign, Mr. Fensterwald also represented high-profile clients such as James Earl Ray, the convicted assassin of Rev. Martin Luther King Jr.",
             "true": [
                 [
                     "james earl ray:per",
@@ -1689,25 +1715,7 @@
                     "rev. martin luther king jr.:per"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\n"
-        },
-        "5240": {
-            "text": "In the same way, John Wilkes Booth, the person who killed Abraham Lincoln, sings in the barn that is on fire, where he will later shoot himself.",
-            "true": [
-                [
-                    "john wilkes booth:per",
-                    "kill",
-                    "abraham lincoln:per"
-                ]
-            ],
-            "pred": [
-                [
-                    "john wilkes booth:per",
-                    "kill",
-                    "abraham lincoln:per"
-                ]
-            ],
-            "response": "No\nYes\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\n"
         },
         "5257": {
             "text": "Jesse Jackson, a native of South Carolina, was celebrating his significant victory in Columbia, S.C. Meanwhile, election officials were facing challenges in tallying the final votes due to the high voter turnout at the Democratic caucuses.",
@@ -1744,24 +1752,6 @@
                 ]
             ],
             "response": "Yes\nNo\nNo\nNo\n"
-        },
-        "5277": {
-            "text": "Martin appreciated Jimbob for its authentic and charming nature, and believed that anyone with the name Rogers has always had success in winning elections in Oklahoma, the birthplace of the renowned humorist Will Rogers.",
-            "true": [
-                [
-                    "will rogers:per",
-                    "live in",
-                    "oklahoma:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "will rogers:per",
-                    "live in",
-                    "oklahoma:loc"
-                ]
-            ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
         "5296": {
             "text": "Springsteen, who is from New Jersey, was clearly the crowd's favorite, as chants of \"Bruce\" were louder than the audio from a video explaining the principles of the Universal Declaration of Human Rights.",
@@ -1818,7 +1808,7 @@
             "response": "Yes\n"
         },
         "5413": {
-            "text": "The House decided on Thursday to cancel a funding for the development of the hometown of bandleader Lawrence Welk in North Dakota. This rural development project had gained notoriety as an example of government spending that was seen as wasteful in the previous autumn.",
+            "text": "The House decided on Thursday to cancel a funding for the development of Lawrence Welk's hometown in North Dakota. This rural development project had gained notoriety as an example of excessive government spending last autumn.",
             "true": [
                 [
                     "lawrence welk:per",
@@ -1833,7 +1823,7 @@
                     "north dakota:loc"
                 ]
             ],
-            "response": "No\nNo\nYes\n"
+            "response": "Yes\n"
         },
         "5905": {
             "text": "In Indianapolis, power was interrupted in certain areas due to tree limbs that had fallen down in Indiana.",
@@ -1866,8 +1856,8 @@
             ],
             "pred": [
                 [
-                    "palestinians:org",
-                    "orgbased in",
+                    "palestinians:per",
+                    "live in",
                     "arab east jerusalem:loc"
                 ],
                 [
@@ -1906,36 +1896,8 @@
             ],
             "response": "Yes\nNo\n"
         },
-        "35": {
-            "text": "There was no reference to the group known as the \"iron triangle\" consisting of Congress, the news media, and special interest groups. In a speech to political appointees in Washington on Dec. 13, Reagan stated that this group had hindered his administration's efforts to achieve a balanced federal budget.",
-            "true": [
-                [
-                    "congress:org",
-                    "orgbased in",
-                    "washington:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "congress:org",
-                    "orgbased in",
-                    "washington:loc"
-                ],
-                [
-                    "news media:org",
-                    "orgbased in",
-                    "washington:loc"
-                ],
-                [
-                    "reagan:per",
-                    "live in",
-                    "washington:loc"
-                ]
-            ],
-            "response": "No\nNo\nNo\nYes\nYes\nNo\nYes\n"
-        },
         "36": {
-            "text": "He also did not make the same argument he made during his speech at the University of Virginia in Charlottesville on December 16th, that Congress has continued to create a risky situation in Central America with their inconsistent decision-making regarding his aid program for the anti-communist Contra rebels.",
+            "text": "He also did not make the same argument at the University of Virginia in Charlottesville on December 16th, where he stated that Congress had created a risky situation in Central America by their inconsistent decision-making regarding his aid program for the anti-communist Contra rebels.",
             "true": [
                 [
                     "university of virginia:org",
@@ -2210,18 +2172,6 @@
             ],
             "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
-        "195": {
-            "text": "According to Michael D. Papagiannis from Boston University, he thinks that the Earth's crater was formed around 100 million years ago due to the impact of a meteorite measuring 50 miles in diameter.",
-            "true": [
-                [
-                    "michael d. papagiannis:per",
-                    "work for",
-                    "boston university:org"
-                ]
-            ],
-            "pred": [],
-            "response": "No\n"
-        },
         "197": {
             "text": "The area is approximately surrounded by Ostined, Lesny, and Liberec in Czechoslovakia, and Gmund in Austria.",
             "true": [
@@ -2285,10 +2235,10 @@
                 ]
             ],
             "pred": [],
-            "response": "No\n"
+            "response": ""
         },
         "333": {
-            "text": "The teacher, Donald Miller, said through spokesman Bert Shanas of the United Federation of Teachers that either luck or good fortune was on his side.",
+            "text": "Donald Miller, the teacher, expressed that either luck or good fortune was in his favor. He shared this through Bert Shanas, a spokesman for the United Federation of Teachers.",
             "true": [
                 [
                     "bert shanas:per",
@@ -2296,8 +2246,19 @@
                     "united federation of teachers:org"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\n"
+            "pred": [
+                [
+                    "donald miller:per",
+                    "work for",
+                    "united federation of teachers:org"
+                ],
+                [
+                    "bert shanas:per",
+                    "work for",
+                    "united federation of teachers:org"
+                ]
+            ],
+            "response": "Yes\nYes\nNo\nNo\n"
         },
         "356": {
             "text": "Navy Capt. Michael Coats expressed pride in flying the third flight since the Challenger accident during the final preflight news conference on Wednesday.",
@@ -2359,7 +2320,7 @@
             "response": "No\n"
         },
         "475": {
-            "text": "On Wednesday, Urutigoechea and the rest of the individuals were apprehended in the southwestern French cities of Bayonee and Bonloc, as well as in Poitiers, which is located in west-central France.",
+            "text": "On Wednesday, Urutigoechea and the rest of the individuals were apprehended in the southwestern French cities of Bayonee and Bonloc, as well as in Poitiers in west-central France.",
             "true": [
                 [
                     "bayonee:loc",
@@ -2396,22 +2357,12 @@
                 [
                     "urutigoechea:per",
                     "live in",
-                    "bayonee:loc"
-                ],
-                [
-                    "urutigoechea:per",
-                    "live in",
-                    "bonloc:loc"
+                    "poitiers:loc"
                 ],
                 [
                     "urutigoechea:per",
                     "live in",
                     "france:loc"
-                ],
-                [
-                    "urutigoechea:per",
-                    "live in",
-                    "poitiers:loc"
                 ],
                 [
                     "bayonee:loc",
@@ -2429,7 +2380,7 @@
                     "france:loc"
                 ]
             ],
-            "response": "Yes\nYes\nYes\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "No\nNo\nYes\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nNo\n"
         },
         "490": {
             "text": "Judith C. Toth explains that she decided to serve a fourth term in Maryland's House of Delegates because she was unable to find a more suitable employment opportunity.",
@@ -2450,7 +2401,7 @@
             "response": "Yes\n"
         },
         "521": {
-            "text": "Hatcher, who initially sought refuge in the Onondaga territory, has now relocated to a Shoshone-Bannock reservation in Idaho.",
+            "text": "Hatcher initially sought refuge in the Onondaga territory, but he has now relocated to a Shoshone-Bannock reservation in Idaho.",
             "true": [
                 [
                     "shoshone-bannock reservation:loc",
@@ -2473,9 +2424,14 @@
                     "shoshone-bannock reservation:loc",
                     "located in",
                     "idaho:loc"
+                ],
+                [
+                    "idaho:loc",
+                    "located in",
+                    "shoshone-bannock reservation:loc"
                 ]
             ],
-            "response": "No\nYes\nYes\nNo\nNo\nNo\nYes\nNo\nNo\n"
+            "response": "No\nYes\nYes\nNo\nNo\nNo\nYes\nNo\nYes\n"
         },
         "541": {
             "text": "Albert O. Harjula, a 29-year-old resident of Thomaston, was the first person to become trapped, according to Paul Fournier, a spokesperson for the state Department of Inland Fisheries and Wildlife.",
@@ -2493,17 +2449,12 @@
             ],
             "pred": [
                 [
-                    "paul fournier:per",
-                    "work for",
-                    "state department of inland fisheries and wildlife:org"
-                ],
-                [
                     "albert o. harjula:per",
                     "live in",
                     "thomaston:loc"
                 ]
             ],
-            "response": "No\nYes\nNo\nNo\nNo\nYes\nNo\n"
+            "response": "No\nNo\nYes\n"
         },
         "556": {
             "text": "To fulfill the demand for tritium, the report reiterated the previous administration's suggestions to build a heavy water reactor worth $3.2 billion in Savannah River and a new design gas-cooled reactor worth $3.6 billion at the Energy Department facility in Idaho Falls, Idaho.",
@@ -2524,7 +2475,7 @@
             "response": "No\nYes\nNo\nNo\n"
         },
         "561": {
-            "text": "A key figure involved in President Nixon's failed executive-privilege Watergate defense is being considered as a strong candidate for the position of U.S. solicitor in the upcoming Bush administration.",
+            "text": "A key figure involved in President Nixon's failed executive-privilege defense during the Watergate scandal is being considered as a strong candidate for the position of U.S. solicitor in the upcoming Bush administration.",
             "true": [
                 [
                     "bush:per",
@@ -2533,6 +2484,11 @@
                 ]
             ],
             "pred": [
+                [
+                    "watergate:org",
+                    "orgbased in",
+                    "u.s.:loc"
+                ],
                 [
                     "bush administration:org",
                     "orgbased in",
@@ -2544,7 +2500,7 @@
                     "u.s.:loc"
                 ]
             ],
-            "response": "No\nYes\nYes\n"
+            "response": "No\nNo\nYes\nYes\nYes\n"
         },
         "563": {
             "text": "Two federal appellate judges, Ralph K. Winter and Kenneth Starr, who were appointed by President Reagan, are also being considered. Ralph K. Winter serves on the 2nd U.S. Circuit Court of Appeals in New York, while Kenneth Starr serves on the U.S. Circuit Court of Appeals for the District of Columbia.",
@@ -2610,7 +2566,7 @@
             "response": "No\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\n"
         },
         "786": {
-            "text": "Terry Hands, the artistic director of the subsidized theater, introduced a new work cycle called \"one-year, two-season\" in which actors will sign a 60-week contract. They will perform the first half of the season at the theater in Stratford-upon-Avon and then move the productions to the Barbican, their London base.",
+            "text": "Terry Hands, the artistic director of the subsidized theater, introduced a new work cycle called \"one-year, two-season\" in which actors will sign a 60-week contract. They will perform the first half of the season at the theater in Stratford-upon-Avon and then move the productions to the Barbican, their base in London.",
             "true": [
                 [
                     "barbican:loc",
@@ -2645,7 +2601,7 @@
             "response": ""
         },
         "841": {
-            "text": "Gadhafi asked for a meeting of the foreign ministers following the shooting down of the Libyan jets by U.S. Navy planes. The American officials claim that the Libyan jets were about to attack their own aircraft.",
+            "text": "Gadhafi asked for the gathering of foreign ministers following the shooting down of the Libyan jets by two U.S. Navy planes. American officials claim that the Libyan jets were about to attack the U.S. aircraft.",
             "true": [
                 [
                     "navy:org",
@@ -2660,17 +2616,22 @@
             ],
             "pred": [
                 [
-                    "u.s. navy:org",
-                    "orgbased in",
-                    "u.s.:loc"
-                ],
-                [
                     "gadhafi:per",
                     "live in",
                     "libyan:loc"
+                ],
+                [
+                    "u.s.:loc",
+                    "located in",
+                    "american:loc"
+                ],
+                [
+                    "american:loc",
+                    "located in",
+                    "u.s.:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\n"
         },
         "881": {
             "text": "Abrams, who has been in charge of the Latin America bureau for 3 years, described the tactics as those of a marginalized force pushed to extremes out of desperation. Abrams' tenure will come to an end next week with the inauguration of President-elect Bush.",
@@ -2773,6 +2734,24 @@
             ],
             "response": "Yes\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
+        "942": {
+            "text": "Walesa, an electrician at a shipyard, who established the independent Solidarity union movement in 1980, stated that the Polish people are discontented and tired of the high prices and shortages.",
+            "true": [
+                [
+                    "walesa:per",
+                    "work for",
+                    "solidarity:org"
+                ]
+            ],
+            "pred": [
+                [
+                    "walesa:per",
+                    "work for",
+                    "solidarity union:org"
+                ]
+            ],
+            "response": "Yes\n"
+        },
         "957": {
             "text": "The plane, which belongs to Bradley First Air, a company based in Ottawa, Canada, was transporting cargo to Montreal for Emery Air Freight Corp., an air freight courier service that operates out of the Dayton airport.",
             "true": [
@@ -2819,20 +2798,15 @@
                     "ottawa:loc"
                 ],
                 [
-                    "canada:loc",
-                    "located in",
-                    "montreal:loc"
-                ],
-                [
                     "montreal:loc",
                     "located in",
                     "canada:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\n"
+            "response": "Yes\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\n"
         },
         "966": {
-            "text": "Eastport International, an organization based in Upper Marlboro, Md., successfully recovered the recorder from a depth of 14,800 feet using their remote recovery vehicle, Gemini 6000. Eastport International has previous experience in deep-water recovery, including the wreckage of the space shuttle Challenger and other air crashes.",
+            "text": "Eastport International, an organization based in Upper Marlboro, Md., used their remote recovery vehicle called Gemini 6000 to retrieve the recorder from a depth of 14,800 feet. Eastport International has experience in deep-water recovery of wreckage, including the space shuttle Challenger and other air crashes.",
             "true": [
                 [
                     "eastport international:org",
@@ -2844,10 +2818,35 @@
                 [
                     "eastport international:org",
                     "orgbased in",
+                    "upper marlboro:loc"
+                ],
+                [
+                    "eastport international:org",
+                    "orgbased in",
                     "md.:loc"
+                ],
+                [
+                    "gemini 6000:org",
+                    "orgbased in",
+                    "upper marlboro:loc"
+                ],
+                [
+                    "gemini 6000:org",
+                    "orgbased in",
+                    "md.:loc"
+                ],
+                [
+                    "upper marlboro:loc",
+                    "located in",
+                    "md.:loc"
+                ],
+                [
+                    "md.:loc",
+                    "located in",
+                    "upper marlboro:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\n"
+            "response": "Yes\nYes\nNo\nNo\nYes\nYes\nYes\nYes\n"
         },
         "1029": {
             "text": "In Montana, strong winds blew on the eastern slopes of the Rocky Mountains, with gusts reaching nearly 50 mph in Livingston.",
@@ -2870,12 +2869,22 @@
             ],
             "pred": [
                 [
+                    "rocky mountains:loc",
+                    "located in",
+                    "montana:loc"
+                ],
+                [
+                    "montana:loc",
+                    "located in",
+                    "rocky mountains:loc"
+                ],
+                [
                     "livingston:loc",
                     "located in",
                     "montana:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "Yes\nNo\nYes\nNo\nNo\nYes\n"
         },
         "1166": {
             "text": "Folke Nyberg, a professor of urban planning and architecture at the University of Washington, concurred that Seattle's position on the Pacific Rim implies that it will experience growth, but had a different viewpoint on whether concentrated downtown growth is beneficial.",
@@ -2933,6 +2942,18 @@
             ],
             "response": "No\nNo\nYes\nNo\n"
         },
+        "1197": {
+            "text": "According to Samuel L. Husk, executive director of the Council of Great City Schools, the size and financial strength are important factors.",
+            "true": [
+                [
+                    "samuel l. husk:per",
+                    "work for",
+                    "council of great city schools:org"
+                ]
+            ],
+            "pred": [],
+            "response": "No\n"
+        },
         "1273": {
             "text": "Lt. Nettie Johnson, a Navy spokeswoman, could not immediately confirm if the aircraft had encountered issues due to defective check and drain valves.",
             "true": [
@@ -2968,18 +2989,6 @@
             ],
             "pred": [],
             "response": ""
-        },
-        "1338": {
-            "text": "The specifics of the 'friendly' bid for Aussedat-Rey SA, the top producer of photocopy paper in Europe, were not made public.",
-            "true": [
-                [
-                    "aussedat-rey sa:org",
-                    "orgbased in",
-                    "europe:loc"
-                ]
-            ],
-            "pred": [],
-            "response": "No\n"
         },
         "1354": {
             "text": "The city of GIESSEN is located in West Germany.",
@@ -3038,7 +3047,7 @@
             "response": "No\nNo\nYes\nNo\nNo\nYes\nNo\nNo\n"
         },
         "1443": {
-            "text": "Many communities that are running out of space to dispose of their bulky, plastic garbage are interested in sending it to the Middletown plant, which is known as Eaglebrook East. This plant is a branch of Eaglebrook Plastics Inc., a company based in Chicago.",
+            "text": "Many communities that are running low on landfill space are eager to transport their large, plastic waste to the branch of Eaglebrook Plastics Inc., called Eaglebrook East, located in Middletown. Eaglebrook Plastics Inc. is based in Chicago.",
             "true": [
                 [
                     "eaglebrook plastics inc.:org",
@@ -3053,25 +3062,15 @@
                     "middletown:loc"
                 ],
                 [
-                    "eaglebrook east:org",
-                    "orgbased in",
-                    "chicago:loc"
-                ],
-                [
                     "eaglebrook plastics inc.:org",
                     "orgbased in",
                     "chicago:loc"
-                ],
-                [
-                    "communities:loc",
-                    "located in",
-                    "landfill space:loc"
                 ]
             ],
-            "response": "No\nNo\nYes\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nNo\nYes\nNo\nNo\n"
         },
         "1471": {
-            "text": "BEIRUT is a place located in Lebanon.",
+            "text": "BEIRUT is a place located in Lebanon and the news source for this information is AP.",
             "true": [
                 [
                     "beirut:loc",
@@ -3151,9 +3150,14 @@
                     "john jamison:per",
                     "work for",
                     "national weather service:org"
+                ],
+                [
+                    "national weather service:org",
+                    "orgbased in",
+                    "galveston:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\n"
+            "response": "Yes\nYes\nNo\n"
         },
         "1552": {
             "text": "Pat Epps and other members of the Greenland Expedition Society experienced hunger, cold, and sunburn while searching for the lost squadron, which consisted of eight aircraft that crash-landed in Greenland in 1942.",
@@ -3164,8 +3168,19 @@
                     "greenland expedition society:org"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\n"
+            "pred": [
+                [
+                    "pat epps:per",
+                    "work for",
+                    "greenland expedition society:org"
+                ],
+                [
+                    "greenland expedition society:org",
+                    "orgbased in",
+                    "greenland:loc"
+                ]
+            ],
+            "response": "Yes\nYes\nNo\n"
         },
         "1563": {
             "text": "In 1942, Vaughan, who was both a dog musher and an officer in the Army Air Force, was tasked with using a dogsled to ensure that the top-secret bombsights on the bombers were either destroyed or returned.",
@@ -3290,17 +3305,28 @@
             ],
             "response": "Yes\nYes\nNo\nYes\nNo\nNo\n"
         },
-        "1689": {
-            "text": "\"Virginia Governor Gerald Baliles, a Democrat, described him as the same relaxed, calm, and humble individual we remember from his time as governor of New Hampshire.\"",
+        "1692": {
+            "text": "Sununu, who Bush admitted was not quiet and retiring, also had words for Baliles, who was stepping down as chairman of the association after a year.",
             "true": [
                 [
-                    "gerald baliles:per",
+                    "baliles:per",
                     "live in",
                     "virginia:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\n"
+            "pred": [
+                [
+                    "sununu:per",
+                    "live in",
+                    "virginia:loc"
+                ],
+                [
+                    "baliles:per",
+                    "live in",
+                    "virginia:loc"
+                ]
+            ],
+            "response": "No\nNo\nYes\nYes\n"
         },
         "1731": {
             "text": "In May, the organization known as the Bush administration and the European Community, which consists of 12 nations, came to a temporary agreement. This agreement permitted the resumption of sales for approximately 15 percent of the $100 million worth of U.S. beef exports to Europe.",
@@ -3341,11 +3367,6 @@
                     "government information:org"
                 ],
                 [
-                    "democracy movement:org",
-                    "orgbased in",
-                    "taiwan:loc"
-                ],
-                [
                     "government information:org",
                     "orgbased in",
                     "taiwan:loc"
@@ -3363,20 +3384,10 @@
                 [
                     "shaw yu-ming:per",
                     "live in",
-                    "washington:loc"
-                ],
-                [
-                    "taiwan:loc",
-                    "located in",
-                    "china:loc"
-                ],
-                [
-                    "taiwan:loc",
-                    "located in",
                     "washington:loc"
                 ]
             ],
-            "response": "No\nYes\nNo\nYes\nNo\nNo\nYes\nYes\nNo\nYes\nYes\nNo\nNo\nYes\nYes\nNo\nNo\n"
+            "response": "No\nYes\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "1776": {
             "text": "The Taiwan information center is located in Washington's National Press Building and it offers background and research material on China. This building also houses bureaus of several hundred U.S. and international news organizations.",
@@ -3480,39 +3491,6 @@
             "pred": [],
             "response": "No\nNo\n"
         },
-        "1844": {
-            "text": "Dave Olson, who is from the Payette National Forest in Idaho, stated that they are prepared for a lengthy period of dealing with the more than 200 ongoing fires.",
-            "true": [
-                [
-                    "dave olson:per",
-                    "live in",
-                    "idaho:loc"
-                ],
-                [
-                    "payette national forest:loc",
-                    "located in",
-                    "idaho:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "dave olson:per",
-                    "live in",
-                    "payette national forest:loc"
-                ],
-                [
-                    "dave olson:per",
-                    "live in",
-                    "idaho:loc"
-                ],
-                [
-                    "payette national forest:loc",
-                    "located in",
-                    "idaho:loc"
-                ]
-            ],
-            "response": "Yes\nYes\nYes\nNo\n"
-        },
         "1851": {
             "text": "In the northeastern part of Oregon, there were a minimum of five significant fires and a few smaller ones that covered an area of 60,000 acres. This led to the evacuation of certain homes in rural areas and posed a threat to the water source for the city of La Grande, according to authorities.",
             "true": [
@@ -3586,29 +3564,6 @@
                 ]
             ],
             "response": "No\nNo\nYes\nYes\n"
-        },
-        "1914": {
-            "text": "Robert Bernero, chief of waste disposal for the NRC, expressed concern that the DOE may not have enough time to plan and gather technical information due to the pressure to meet unrealistic schedule milestones.",
-            "true": [
-                [
-                    "robert bernero:per",
-                    "work for",
-                    "nrc:org"
-                ]
-            ],
-            "pred": [
-                [
-                    "robert bernero:per",
-                    "work for",
-                    "nrc:org"
-                ],
-                [
-                    "robert bernero:per",
-                    "work for",
-                    "doe:org"
-                ]
-            ],
-            "response": "Yes\nYes\n"
         },
         "1946": {
             "text": "On Monday, a person went missing from an oil rig off the coast of Grand Isle, Louisiana, as the storm approached.",
@@ -3781,18 +3736,6 @@
             ],
             "response": "Yes\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
-        "2116": {
-            "text": "Idaho Governor Cecil Andrus stated that he had to address forest fires that had become completely uncontrollable.",
-            "true": [
-                [
-                    "cecil andrus:per",
-                    "live in",
-                    "idaho:loc"
-                ]
-            ],
-            "pred": [],
-            "response": ""
-        },
         "2140": {
             "text": "Under the leadership of U.N. Secretary-General Javier Perez de Cuellar, Vietnam and the Cambodian government, headed by Prime Hun Sen, agreed to allow a fact-finding mission.",
             "true": [
@@ -3848,7 +3791,7 @@
             "response": "No\nYes\nNo\nNo\n"
         },
         "2229": {
-            "text": "In the U.S. District Court, during the final arguments of a two-week trial, attorneys representing the families of the victims claimed that Flight 007 deviated from its intended course shortly after taking off from Anchorage, Alaska. The flight was supposed to follow a route over the Pacific Ocean to Seoul, South Korea.",
+            "text": "During the two-week trial in U.S. District Court, attorneys representing the families of the victims argued that Flight 007 deviated from its intended course shortly after taking off from Anchorage, Alaska. Instead of following its Pacific Ocean route to Seoul, South Korea, the flight went off course.",
             "true": [
                 [
                     "anchorage:loc",
@@ -3862,10 +3805,10 @@
                 ]
             ],
             "pred": [],
-            "response": "No\nNo\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "2254": {
-            "text": "Mason reassured the congresswoman that the Secretary of HHS, Louis Sullivan, is a very trustworthy and reliable secretary.",
+            "text": "Mason told the congresswoman that the Secretary of HHS, Louis Sullivan, is a very cautious secretary.",
             "true": [
                 [
                     "louis sullivan:per",
@@ -3873,8 +3816,14 @@
                     "hhs:org"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\n"
+            "pred": [
+                [
+                    "secretary louis sullivan:per",
+                    "work for",
+                    "hhs:org"
+                ]
+            ],
+            "response": "No\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "2270": {
             "text": "Joseph R. Biden, who is the Chairman of the Senate Judiciary Committee from Delaware, announced his intention to conduct four hearings on proposals related to the burning of the flag.",
@@ -3903,18 +3852,6 @@
                 ]
             ],
             "response": "Yes\nYes\nYes\n"
-        },
-        "2300": {
-            "text": "According to Pentagon officials, when it comes to the U.S. hostages, such considerations are not seen solely from a military perspective, as has been the case in the past.",
-            "true": [
-                [
-                    "pentagon:org",
-                    "orgbased in",
-                    "u.s.:loc"
-                ]
-            ],
-            "pred": [],
-            "response": "No\n"
         },
         "2308": {
             "text": "The organization known as Revolutionary Justice has declared a reprieve for Cicippio. This announcement was made in a handwritten statement written in Arabic and delivered to the independent newspaper An-Nahar in Beirut.",
@@ -3965,50 +3902,12 @@
                     "the associated press:org"
                 ],
                 [
-                    "anderson:per",
-                    "live in",
-                    "middle east:loc"
-                ],
-                [
-                    "anderson:per",
-                    "live in",
-                    "beirut:loc"
-                ],
-                [
-                    "middle east:loc",
-                    "located in",
-                    "beirut:loc"
-                ],
-                [
                     "beirut:loc",
                     "located in",
                     "middle east:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\nYes\nYes\nYes\nYes\n"
-        },
-        "2314": {
-            "text": "Jacobsen, who is currently residing in Colorado, stated that sources in London informed him that Anderson, a person, was going to be released by the new Iranian government on the previous Saturday as a sign of goodwill.",
-            "true": [
-                [
-                    "jacobsen:per",
-                    "live in",
-                    "colorado:loc"
-                ]
-            ],
-            "pred": [
-                [
-                    "jacobsen:per",
-                    "live in",
-                    "colorado:loc"
-                ],
-                [
-                    "anderson:per",
-                    "live in",
-                    "colorado:loc"
-                ]
-            ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nYes\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
         "2328": {
             "text": "The spokesperson for CH2M Hill, Wyatt McCauley, did not promptly respond to a phone call made to his office in Denver.",
@@ -4039,7 +3938,7 @@
             "response": "Yes\nYes\nYes\n"
         },
         "2383": {
-            "text": "During the six hours ending at 2 p.m. EDT, there was a significant increase in rainfall. Houston received almost 7 inches, while Ellington Air Force Base and Galveston, both located in Texas, received 4 inches each.",
+            "text": "During the six hours ending at 2 p.m. EDT, there was a significant increase in rainfall. Houston received almost 7 inches, while Ellington Air Force Base and Galveston, both located in Texas, received 4 inches of rainfall.",
             "true": [
                 [
                     "houston:loc",
@@ -4092,17 +3991,12 @@
             ],
             "pred": [
                 [
-                    "president:per",
-                    "work for",
-                    "commodity futures trading commission:org"
-                ],
-                [
                     "william p. albrecht:per",
                     "work for",
                     "commodity futures trading commission:org"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nNo\n"
+            "response": "Yes\n"
         },
         "2420": {
             "text": "Ogdon, who was admitted to London's Charing Cross Hospital on Monday for bronchopneumonia, passed away peacefully after slipping into a coma, according to Manygate Management.",
@@ -4115,6 +4009,11 @@
             ],
             "pred": [
                 [
+                    "manygate management:org",
+                    "orgbased in",
+                    "london:loc"
+                ],
+                [
                     "ogdon:per",
                     "live in",
                     "london:loc"
@@ -4125,7 +4024,7 @@
                     "london:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nYes\nNo\nNo\nYes\n"
+            "response": "No\nYes\nNo\nYes\nNo\nNo\nYes\n"
         },
         "2481": {
             "text": "Debra Sweiger, a resident of Issaquah, was identified as the deceased woman, according to Vaughn Van Zant, an investigator from King County O.",
@@ -4259,11 +4158,6 @@
                     "washington state:loc"
                 ],
                 [
-                    "greg thayer:per",
-                    "live in",
-                    "washington state:loc"
-                ],
-                [
                     "cascade range:loc",
                     "located in",
                     "washington state:loc"
@@ -4272,9 +4166,14 @@
                     "cascade range:loc",
                     "located in",
                     "canadian border:loc"
+                ],
+                [
+                    "canadian border:loc",
+                    "located in",
+                    "washington state:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\n"
+            "response": "Yes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\n"
         },
         "2561": {
             "text": "In the foothills of California's Sierra Nevada, firefighters were able to control a fire that consumed 11,700 acres of brush and grassland and caused the destruction of seven homes.",
@@ -4339,18 +4238,6 @@
             ],
             "response": "Yes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
-        "2628": {
-            "text": "Idaho Governor Cecil Andrus stated that he had to address forest fires that had become completely uncontrollable.",
-            "true": [
-                [
-                    "cecil andrus:per",
-                    "live in",
-                    "idaho:loc"
-                ]
-            ],
-            "pred": [],
-            "response": ""
-        },
         "2640": {
             "text": "The AP LaserPhoto network, an organization, will feature a series of pictures taken by Jeff Widener, a staff photographer, showcasing scenes of a slum in Bangkok.",
             "true": [
@@ -4367,17 +4254,12 @@
                     "ap laserphoto:org"
                 ],
                 [
-                    "ap laserphoto:org",
-                    "orgbased in",
-                    "bangkok:loc"
-                ],
-                [
                     "jeff widener:per",
                     "live in",
                     "bangkok:loc"
                 ]
             ],
-            "response": "Yes\nYes\nYes\n"
+            "response": "Yes\nNo\nYes\n"
         },
         "2697": {
             "text": "For the past six years, a group of nine professors, including Arensberg, Ofer Bar-Yosef from Harvard University, and Bernard Vandermeersch from the University of Bordeaux in France, have been studying the findings at Kebara.",
@@ -4474,14 +4356,9 @@
                     "guernsey:loc",
                     "located in",
                     "britain's channel islands:loc"
-                ],
-                [
-                    "britain's channel islands:loc",
-                    "located in",
-                    "guernsey:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nNo\nNo\nNo\nNo\n"
         },
         "2885": {
             "text": "Lawrence Kane Jr., who is a special prosecutor in the Home State case from Cincinnati, Ohio, refused to make any statements regarding potential settlements.",
@@ -4546,6 +4423,11 @@
                 [
                     "ccri-cg of the ezln:org",
                     "orgbased in",
+                    "mexican southeast:loc"
+                ],
+                [
+                    "ccri-cg of the ezln:org",
+                    "orgbased in",
                     "mexico:loc"
                 ],
                 [
@@ -4559,7 +4441,7 @@
                     "mexican southeast:loc"
                 ]
             ],
-            "response": "No\nYes\nYes\nYes\n"
+            "response": "Yes\nYes\nYes\nYes\n"
         },
         "2979": {
             "text": "The aircraft had to pass through the airspace of Armenia on its way to Tehran, but for unknown reasons, it veered off course by 100 kilometers and crashed several miles away from Stepanakert, the administrative center of the Nagorno-Karabakh province, which is a break-away region of Azerbaijan.",
@@ -4589,18 +4471,23 @@
                 [
                     "nagorno-karabakh province:loc",
                     "located in",
+                    "stepanakert:loc"
+                ],
+                [
+                    "nagorno-karabakh province:loc",
+                    "located in",
                     "azerbaijan:loc"
                 ],
                 [
                     "azerbaijan:loc",
                     "located in",
-                    "nagorno-karabakh province:loc"
+                    "stepanakert:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nYes\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nNo\n"
         },
         "3074": {
-            "text": "The situation remains tense in the Namialo assembly area, located in Nampula Province. Government soldiers, along with members of the former Northern Improvement Brigade (Brigada de Melhoramentos do Norte), BMN, and others from the Nampula Provincial Command, are still waiting for the outcome of their demands.",
+            "text": "The situation in the Namialo assembly area, located in Nampula Province, remains tense. The government soldiers, along with the former Northern Improvement Brigade (Brigada de Melhoramentos do Norte), BMN, and other members of the Nampula Provincial Command, are still waiting for the resolution of their demands.",
             "true": [
                 [
                     "nampula province:loc",
@@ -4660,19 +4547,24 @@
             ],
             "pred": [
                 [
-                    "northern improvement brigade:org",
-                    "orgbased in",
-                    "nampula province:loc"
+                    "government soldiers:per",
+                    "work for",
+                    "nampula provincial command:org"
                 ],
                 [
-                    "brigada de melhoramentos do norte:org",
+                    "northern improvement brigade:org",
+                    "orgbased in",
+                    "namialo assembly area:loc"
+                ],
+                [
+                    "northern improvement brigade:org",
                     "orgbased in",
                     "nampula province:loc"
                 ],
                 [
                     "bmn:org",
                     "orgbased in",
-                    "nampula province:loc"
+                    "namialo assembly area:loc"
                 ],
                 [
                     "nampula provincial command:org",
@@ -4685,7 +4577,7 @@
                     "nampula province:loc"
                 ]
             ],
-            "response": "No\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\n"
+            "response": "No\nNo\nYes\nYes\nYes\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\n"
         },
         "3226": {
             "text": "At the suggestion of the Serb Radical Party (SRS), the Assembly chose Branko Vojnic from Beli Manastir as its speaker, while Marko Atlagic and Dr. Milan Ernjakovic, candidates from the Krajina Serb Democratic Party (SDS), were elected as deputy speakers.",
@@ -4728,11 +4620,6 @@
             ],
             "pred": [
                 [
-                    "branko vojnic:per",
-                    "work for",
-                    "assembly:org"
-                ],
-                [
                     "marko atlagic:per",
                     "work for",
                     "krajina serb democratic party:org"
@@ -4756,9 +4643,14 @@
                     "branko vojnic:per",
                     "live in",
                     "beli manastir:loc"
+                ],
+                [
+                    "dr. milan ernjakovic:per",
+                    "live in",
+                    "beli manastir:loc"
                 ]
             ],
-            "response": "No\nNo\nYes\nYes\nYes\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"
+            "response": "No\nNo\nNo\nYes\nYes\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nYes\n"
         },
         "3232": {
             "text": "The organizations BSP and SDS express their support for noninvolvement in Bosnia. The news was reported by BTA in English at 1646 GMT on February 15, 1994 in Sofia.",
@@ -4784,7 +4676,7 @@
             "response": "No\nYes\nNo\nNo\nNo\nYes\nNo\nNo\n"
         },
         "3294": {
-            "text": "The organization Security Forces has expanded the prohibition on possessing weapons in Paris. The news was reported by the organization AFP in English at 2200 GMT on February 3, 1994.",
+            "text": "The organization Security Forces has expanded their prohibition on the possession of arms in Paris, according to the news agency AFP. The report was published in English at 2200 GMT on February 3, 1994.",
             "true": [
                 [
                     "afp:org",
@@ -4805,6 +4697,18 @@
                 ]
             ],
             "response": "Yes\nYes\n"
+        },
+        "3303": {
+            "text": "$ENTITIES$ launched two raids on $ENTITIES$ in $ENTITIES$ at 0900 GMT on February 15, 1994.",
+            "true": [
+                [
+                    "radio lebanon:org",
+                    "orgbased in",
+                    "beirut:loc"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\n"
         },
         "3327": {
             "text": "The Dutch Air Force is conducting training exercises for attacks on Bosnia. The training is taking place in The Hague. The ANP, a Dutch organization, reported on this at 1540 GMT on February 9, 1994. This information is classified as \"FOR OFFICIAL USE ONLY.\"",
@@ -4829,18 +4733,6 @@
             ],
             "response": "No\nYes\nNo\nYes\nNo\nNo\n"
         },
-        "3470": {
-            "text": "The Eiffel Tower, which is a lattice tower made of wrought-iron, can be found on the Champ de Mars in the city of Paris, which is located in France.",
-            "true": [
-                [
-                    "gerald steinberg:per",
-                    "work for",
-                    "bar-ilan university:org"
-                ]
-            ],
-            "pred": [],
-            "response": "No\n"
-        },
         "3498": {
             "text": "According to Steven Bryen, a former Pentagon official in charge of U.S. technology transfers, this is the major issue that exists in all technology transfers.",
             "true": [
@@ -4860,9 +4752,14 @@
                     "pentagon:org",
                     "orgbased in",
                     "u.s.:loc"
+                ],
+                [
+                    "steven bryen:per",
+                    "live in",
+                    "u.s.:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\n"
+            "response": "Yes\nYes\nYes\n"
         },
         "3577": {
             "text": "Officials from North Korea and Australia have had undisclosed discussions at Australian Embassies in Jakarta and Bangkok. The federal government has also notified the United States, Japan, and South Korea about these talks.",
@@ -4878,27 +4775,11 @@
                     "bangkok:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "australian:org",
-                    "orgbased in",
-                    "jakarta:loc"
-                ],
-                [
-                    "north korean:loc",
-                    "located in",
-                    "jakarta:loc"
-                ],
-                [
-                    "north korean:loc",
-                    "located in",
-                    "bangkok:loc"
-                ]
-            ],
-            "response": "No\nYes\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "pred": [],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "3595": {
-            "text": "The government's policy, which was determined at the August ministers meeting regarding the reunification, has been significantly relaxed. According to the policy, businessmen will only be permitted to visit North Korea once it fully complies with the Nuclear Nonproliferation Treaty and allows inspection of unreported facilities in Yongbyon.",
+            "text": "The government's policy, which was determined at the August reunification-related ministers meeting, has been greatly eased. According to the policy, businessmen will only be permitted to visit North Korea once it fully rejoins the Nuclear Nonproliferation Treaty and allows inspection of unreported facilities in Yongbyon.",
             "true": [
                 [
                     "yongbyon.:loc",
@@ -4913,12 +4794,17 @@
             ],
             "pred": [
                 [
+                    "north korea:loc",
+                    "located in",
+                    "yongbyon:loc"
+                ],
+                [
                     "yongbyon:loc",
                     "located in",
                     "north korea:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nYes\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nYes\n"
         },
         "3631": {
             "text": "The Prime Minister of Nova Scotia, John Savage, along with a group of Canadian businessmen and entrepreneurs, met with Cuban Foreign Minister Ricardo Cabrisas during their visit to Cuba.",
@@ -4949,17 +4835,12 @@
                     "nova scotia:loc",
                     "located in",
                     "canada:loc"
-                ],
-                [
-                    "canada:loc",
-                    "located in",
-                    "nova scotia:loc"
                 ]
             ],
-            "response": "No\nNo\nYes\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nNo\n"
+            "response": "No\nNo\nYes\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\n"
         },
         "3643": {
-            "text": "Miguel Rodriguez Mendoza, the minister of state-president for ICE, stated that the regulation issued by the U.S. Environmental Protection Agency on 15 December is in violation of GATT Article III, according to Venezuela. This is because the regulation sets different quality standards for imported and domestic gasoline.",
+            "text": "Miguel Rodriguez Mendoza, the minister of state-president for ICE, stated that the regulation issued by the U.S. Environmental Protection Agency on December 15th violates GATT Article III, according to Venezuela. This is because it sets different quality standards for imported and domestic gasoline.",
             "true": [
                 [
                     "miguel rodriguez mendoza:per",
@@ -4974,12 +4855,17 @@
                     "ice:org"
                 ],
                 [
+                    "ice:org",
+                    "orgbased in",
+                    "venezuela:loc"
+                ],
+                [
                     "miguel rodriguez mendoza:per",
                     "live in",
                     "venezuela:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "Yes\nNo\nNo\nYes\nNo\nNo\nYes\n"
         },
         "3747": {
             "text": "The Esprit Project is working on the development of a chip in Duesseldorf that can receive and transmit nerve impulses, as reported by HANDELSBLATT in German on November 11, 1993, page 22.",
@@ -5045,6 +4931,11 @@
                 [
                     "chilean:loc",
                     "located in",
+                    "valparaiso:loc"
+                ],
+                [
+                    "chilean:loc",
+                    "located in",
                     "santiago:loc"
                 ],
                 [
@@ -5058,10 +4949,10 @@
                     "chilean:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nNo\nYes\nYes\nNo\nYes\nNo\n"
+            "response": "Yes\nYes\nNo\nYes\nYes\nYes\nNo\nYes\nNo\n"
         },
         "3788": {
-            "text": "The Sao Paulo State Attorney's Office will conduct an investigation into allegations that 11 individuals from the Institute for Nuclear and Energy Research (Ipen) in Sao Paulo were exposed to radioactive material while working at a laboratory controlled by the National Nuclear Energy Commission (CNEN).",
+            "text": "The Sao Paulo State Attorney's Office will conduct an investigation into allegations that 11 individuals from the Institute for Nuclear and Energy Research (Ipen) in Sao Paulo have been exposed to radioactive substances while working at one of the Ipen laboratories, which is overseen by the National Nuclear Energy Commission (CNEN).",
             "true": [
                 [
                     "institute for nuclear and energy research:org",
@@ -5119,17 +5010,12 @@
                     "institute for nuclear and energy research (ipen):org",
                     "orgbased in",
                     "sao paulo:loc"
-                ],
-                [
-                    "national nuclear energy commission (cnen):org",
-                    "orgbased in",
-                    "sao paulo:loc"
                 ]
             ],
-            "response": "Yes\nYes\nYes\n"
+            "response": "Yes\nYes\nNo\n"
         },
         "3789": {
-            "text": "The employees of the Association of Ipen, also known as Assipen, and the Federal Employees Union in Sao Paulo, known as Sindisef, have reported that the workers at Ipen, a pharmaceuticals laboratory, were exposed to Iodine-131 through inhalation.",
+            "text": "The Association of Ipen Employees (Assipen) and the Federal Employees Union in Sao Paulo (Sindisef) have announced that the employees of Ipen, consisting of five women and six men who worked with machinery at the pharmaceuticals laboratory, were exposed to contamination by inhaling Iodine-131.",
             "true": [
                 [
                     "association of ipen employees:org",
@@ -5154,17 +5040,7 @@
                     "sao paulo:loc"
                 ],
                 [
-                    "assipen:org",
-                    "orgbased in",
-                    "sao paulo:loc"
-                ],
-                [
                     "federal employees union:org",
-                    "orgbased in",
-                    "sao paulo:loc"
-                ],
-                [
-                    "sindisef:org",
                     "orgbased in",
                     "sao paulo:loc"
                 ],
@@ -5172,9 +5048,14 @@
                     "ipen:org",
                     "orgbased in",
                     "sao paulo:loc"
+                ],
+                [
+                    "sindisef:org",
+                    "orgbased in",
+                    "sao paulo:loc"
                 ]
             ],
-            "response": "Yes\nYes\nYes\nYes\nYes\n"
+            "response": "Yes\nYes\nYes\nYes\n"
         },
         "3853": {
             "text": "Our correspondent Yuriy Kuzmenko interviewed Stanislav Mikhaylovich Korochkin, the chief of the Magadan Basin Okhotrybvod (Okhotsk Sea Fishing Administration) Department, to get his comments on the event. During the interview, Kuzmenko asked Korochkin if the Washington agreement addresses the issues in the central part of the Okhotsk Sea. In response, Korochkin explained that after three years of preparatory work and 10 meetings, six countries finally signed an agreement in Washington to regulate fishing in the central part of the Bering Sea.",
@@ -5204,31 +5085,51 @@
             ],
             "response": "No\nNo\nYes\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
-        "3911": {
-            "text": "The organization PY3103144994 is based in Lima and is featured in the Spanish newspaper EL COMERCIO on March 19, 1994, on page A8.",
+        "3916": {
+            "text": "The Mangunchay irrigation project and a sawmill in the San Ignacio forest, which is situated in the provinces of Jaen and San Ignacio de Cajamarca, will also receive priority.",
             "true": [
                 [
-                    "el comercio:org",
-                    "orgbased in",
-                    "lima:loc"
+                    "san ignacio forest:loc",
+                    "located in",
+                    "jaen:loc"
+                ],
+                [
+                    "san ignacio forest:loc",
+                    "located in",
+                    "san ignacio de cajamarca:loc"
                 ]
             ],
             "pred": [
                 [
-                    "py3103144994:org",
+                    "mangunchay irrigation project:org",
                     "orgbased in",
-                    "lima:loc"
+                    "jaen:loc"
                 ],
                 [
-                    "el comercio:org",
-                    "orgbased in",
-                    "lima:loc"
+                    "san ignacio forest:loc",
+                    "located in",
+                    "jaen:loc"
+                ],
+                [
+                    "san ignacio forest:loc",
+                    "located in",
+                    "san ignacio de cajamarca:loc"
+                ],
+                [
+                    "san ignacio de cajamarca:loc",
+                    "located in",
+                    "san ignacio forest:loc"
+                ],
+                [
+                    "san ignacio de cajamarca:loc",
+                    "located in",
+                    "jaen:loc"
                 ]
             ],
-            "response": "Yes\nYes\n"
+            "response": "No\nYes\nNo\nYes\nYes\nNo\nNo\nYes\nYes\n"
         },
         "3919": {
-            "text": "There are also plantations in several locations such as Huancabamba in Piura, Bagua and Condorcanqui in Amazonas, and in various towns in San Martin Department including Nueva Cajamarca, Rioja, Soritor, and the valleys of Mayo, Sisa, and Biabo.",
+            "text": "There are also plantations in Huancabamba, Piura; in Bagua and Condorcanqui, Amazonas; and in several towns in San Martin Department, where cultivation has rapidly expanded in recent years in Nueva Cajamarca, Rioja, Soritor, and in the valleys of Mayo, Sisa, and Biabo.",
             "true": [
                 [
                     "huancabamba:loc",
@@ -5248,9 +5149,9 @@
             ],
             "pred": [
                 [
-                    "huancabamba:loc",
+                    "bagua:loc",
                     "located in",
-                    "piura:loc"
+                    "condorcanqui:loc"
                 ],
                 [
                     "bagua:loc",
@@ -5293,26 +5194,6 @@
                     "amazonas:loc"
                 ],
                 [
-                    "san martin department:loc",
-                    "located in",
-                    "rioja:loc"
-                ],
-                [
-                    "san martin department:loc",
-                    "located in",
-                    "soritor:loc"
-                ],
-                [
-                    "san martin department:loc",
-                    "located in",
-                    "sisa:loc"
-                ],
-                [
-                    "nueva cajamarca:loc",
-                    "located in",
-                    "amazonas:loc"
-                ],
-                [
                     "nueva cajamarca:loc",
                     "located in",
                     "san martin department:loc"
@@ -5320,12 +5201,12 @@
                 [
                     "rioja:loc",
                     "located in",
-                    "amazonas:loc"
+                    "san martin department:loc"
                 ],
                 [
-                    "rioja:loc",
+                    "soritor:loc",
                     "located in",
-                    "san martin department:loc"
+                    "condorcanqui:loc"
                 ],
                 [
                     "soritor:loc",
@@ -5338,65 +5219,20 @@
                     "san martin department:loc"
                 ],
                 [
-                    "soritor:loc",
-                    "located in",
-                    "mayo:loc"
-                ],
-                [
-                    "soritor:loc",
-                    "located in",
-                    "sisa:loc"
-                ],
-                [
-                    "mayo:loc",
-                    "located in",
-                    "san martin department:loc"
-                ],
-                [
-                    "mayo:loc",
-                    "located in",
-                    "soritor:loc"
-                ],
-                [
-                    "mayo:loc",
-                    "located in",
-                    "sisa:loc"
-                ],
-                [
                     "sisa:loc",
-                    "located in",
-                    "san martin department:loc"
-                ],
-                [
-                    "sisa:loc",
-                    "located in",
-                    "rioja:loc"
-                ],
-                [
-                    "sisa:loc",
-                    "located in",
-                    "soritor:loc"
-                ],
-                [
-                    "sisa:loc",
-                    "located in",
-                    "mayo:loc"
-                ],
-                [
-                    "biabo:loc",
                     "located in",
                     "san martin department:loc"
                 ],
                 [
                     "biabo:loc",
                     "located in",
-                    "sisa:loc"
+                    "san martin department:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\n"
         },
         "4016": {
-            "text": "In Beijing, Vice Deng Nan of the State Science and Technology Commission briefed the National People's Congress (NPC) on \"China's 21st Century Agenda.\" During the briefing, Deng Nan emphasized the importance of addressing environmental problems as a priority. He highlighted that sustainable economic development is contingent on addressing these environmental issues, as neglecting them would severely hinder economic progress. The briefing was reported by XINHUA news agency.",
+            "text": "In Beijing, Vice Deng Nan of the State Science and Technology Commission briefed the National People's Congress (NPC) on \"China's 21st Century Agenda.\" During the briefing, Deng Nan emphasized the importance of addressing environmental problems as a priority. He highlighted that sustainable economic development is contingent on addressing these environmental issues, as neglecting them would severely hinder economic progress. The report was covered by XINHUA news agency.",
             "true": [
                 [
                     "national people's congress:org",
@@ -5475,6 +5311,29 @@
                 ]
             ],
             "response": "Yes\n"
+        },
+        "4068": {
+            "text": "As of early March, five members of the LDP, including Kim Pom-myon representing Nonsan County, have reportedly committed to voting against the ratification motion.",
+            "true": [
+                [
+                    "kim pom-myon:per",
+                    "work for",
+                    "ldp:org"
+                ],
+                [
+                    "kim pom-myon:per",
+                    "live in",
+                    "nonsan county:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "kim pom-myon:per",
+                    "live in",
+                    "nonsan county:loc"
+                ]
+            ],
+            "response": "No\nNo\nYes\n"
         },
         "4102": {
             "text": "Kakizawa proposed that Hata's statements indicated that he believed in the validity of North Korean President Kim Il-song's claims that North Korea lacks the desire and capability to build nuclear weapons.",
@@ -5609,17 +5468,12 @@
                     "nub:org"
                 ],
                 [
-                    "nub:org",
-                    "orgbased in",
-                    "north korea:loc"
-                ],
-                [
                     "kim hyong-ki:per",
                     "live in",
                     "north korea:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nNo\nYes\n"
+            "response": "Yes\nNo\nNo\nNo\nYes\n"
         },
         "4347": {
             "text": "The Slovak Foreign Ministry in Bratislava has expressed its willingness to continue discussions with Budapest regarding the allocation of the Danube's waters between the Gabcikovo derivation canal in Slovakia and the river's original course. The ministry conveyed this message to the Hungarian Embassy today.",
@@ -5652,11 +5506,6 @@
                     "budapest:loc"
                 ],
                 [
-                    "hungarian embassy:org",
-                    "orgbased in",
-                    "slovakia:loc"
-                ],
-                [
                     "bratislava:loc",
                     "located in",
                     "slovakia:loc"
@@ -5677,7 +5526,7 @@
                     "bratislava:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nNo\n"
         },
         "4400": {
             "text": "Ortega expressed the significance of the agreement, stating that it marks the beginning of a more regular relationship with the EU. The agreement was signed by Ortega and Rene Steichen, a European agricultural official, at the EU headquarters in Brussels.",
@@ -5700,17 +5549,12 @@
                     "brussels:loc"
                 ],
                 [
-                    "ortega:per",
-                    "live in",
-                    "brussels:loc"
-                ],
-                [
                     "rene steichen:per",
                     "live in",
                     "brussels:loc"
                 ]
             ],
-            "response": "No\nYes\nNo\nNo\nYes\nYes\nYes\n"
+            "response": "No\nYes\nNo\nNo\nYes\nNo\nYes\n"
         },
         "4437": {
             "text": "Sa 'id Mu 'addi interviewed Dr. Nabil, who is an adviser to PLO Chairman Yasir 'Arafat, in Cairo on 18 May for the \"With the Midday Events\" program.",
@@ -5735,8 +5579,20 @@
             ],
             "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\n"
         },
+        "4485": {
+            "text": "Georgiy Gurinov, who is the Pacific Fleet Commander, is currently at the main command post of the fleet, where he is coordinating the activities of all the forces involved.",
+            "true": [
+                [
+                    "georgiy gurinov:per",
+                    "work for",
+                    "pacific fleet:org"
+                ]
+            ],
+            "pred": [],
+            "response": ""
+        },
         "4491": {
-            "text": "Director of the Middle East and Africa department of the Russian Foreign Ministry, Viktor Posuvalyuk, informed ITAR-TASS today that there has been a significant decrease in the number of Russians in Algeria recently. This is due to the evacuation of the wives and children of Russian specialists and employees from various organizations.",
+            "text": "Director of the Middle East and Africa department of the Russian Foreign Ministry, Viktor Posuvalyuk, informed ITAR-TASS today that the number of Russians in Algeria has significantly decreased recently. This is due to the evacuation of the wives and children of Russian specialists and employees from various organizations.",
             "true": [
                 [
                     "viktor posuvalyuk:per",
@@ -5761,12 +5617,32 @@
                     "itar-tass:org"
                 ],
                 [
+                    "tass:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "russian foreign ministry:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "itar-tass:org",
+                    "orgbased in",
+                    "moscow:loc"
+                ],
+                [
+                    "middle east:loc",
+                    "located in",
+                    "africa:loc"
+                ],
+                [
                     "algeria:loc",
                     "located in",
                     "africa:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "No\nYes\nYes\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
         "4499": {
             "text": "Scientists from the Russian Center for Problems of National Security and International Relations, led by Professor Sergey Rogov, who is a Doctor of Historical Sciences, have prepared a 33-page report titled \"Partnership for Peace and Russia's Interests.\" According to the report, it is believed that Russia is the country that needs the partnership the most.",
@@ -5832,12 +5708,12 @@
                     "chisinau:loc"
                 ],
                 [
-                    "basa:org",
-                    "orgbased in",
+                    "mircea snegur:per",
+                    "live in",
                     "chisinau:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nYes\nNo\n"
         },
         "4563": {
             "text": "According to a ruling by the Federal Administrative Court in Berlin, Kurds residing in the Federal Republic are only eligible for asylum if they do not have a secure place of refuge in Turkey.",
@@ -5865,8 +5741,18 @@
                     "federal republic:loc"
                 ],
                 [
-                    "kurds:org",
-                    "orgbased in",
+                    "kurds:per",
+                    "live in",
+                    "berlin:loc"
+                ],
+                [
+                    "kurds:per",
+                    "live in",
+                    "federal republic:loc"
+                ],
+                [
+                    "kurds:per",
+                    "live in",
                     "turkey:loc"
                 ],
                 [
@@ -5880,10 +5766,10 @@
                     "berlin:loc"
                 ]
             ],
-            "response": "Yes\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nNo\n"
+            "response": "No\nYes\nYes\nNo\nYes\nYes\nYes\nYes\nNo\nYes\nNo\nNo\nNo\n"
         },
         "4603": {
-            "text": "The Institute of Organic Chemistry in Shanghai has successfully completed the full and sequential synthesis of Nodrm-1, a molecule that acts as a communication transmitter between azotobacteria and bean plants.",
+            "text": "Scientists at the Institute of Organic Chemistry in Shanghai have successfully completed the total and sequential synthesis of Nodrm-1, a molecule that acts as an information transmitter between azotobacteria and bean plants.",
             "true": [
                 [
                     "institute of organic chemistry:org",
@@ -5906,6 +5792,29 @@
             "pred": [],
             "response": "No\n"
         },
+        "5003": {
+            "text": "According to the Warren Commission, on November 22, 1963, Lee Harvey Oswald shot at Kennedy's motorcade from the sixth floor of the current Dallas County Administration Building, where he was employed.",
+            "true": [
+                [
+                    "lee harvey oswald:per",
+                    "kill",
+                    "kennedy:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "lee harvey oswald:per",
+                    "kill",
+                    "kennedy:per"
+                ],
+                [
+                    "1963:loc",
+                    "located in",
+                    "dallas county administration building:loc"
+                ]
+            ],
+            "response": "No\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nNo\n"
+        },
         "5021": {
             "text": "Twenty years ago, on June 6, 1968, at 1: 44 a.m. local time, Sen. Robert F. Kennedy passed away at Good Samaritan Hospital in Los Angeles, 25 hours after being shot at the Ambassador Hotel by Sirhan Bishara Sirhan.",
             "true": [
@@ -5920,11 +5829,6 @@
                     "sirhan bishara sirhan:per",
                     "kill",
                     "sen. robert f. kennedy:per"
-                ],
-                [
-                    "good samaritan hospital:org",
-                    "orgbased in",
-                    "los angeles:loc"
                 ],
                 [
                     "sen. robert f. kennedy:per",
@@ -5942,12 +5846,17 @@
                     "los angeles:loc"
                 ],
                 [
+                    "good samaritan hospital:loc",
+                    "located in",
+                    "los angeles:loc"
+                ],
+                [
                     "ambassador hotel:loc",
                     "located in",
                     "los angeles:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nNo\nNo\nNo\nYes\n"
+            "response": "No\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
         "5023": {
             "text": "In 1968, James Earl Ray, who was suspected of assassinating civil rights leader Dr. Martin Luther King Jr., was captured in London.",
@@ -5961,16 +5870,11 @@
             "pred": [
                 [
                     "james earl ray:per",
-                    "kill",
-                    "dr. martin luther king jr.:per"
-                ],
-                [
-                    "james earl ray:per",
                     "live in",
                     "london:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nNo\n"
+            "response": "No\nNo\nYes\nNo\n"
         },
         "5036": {
             "text": "The House Assassinations Committee, in 1978, reached the conclusion that Kennedy was likely assassinated as a result of a conspiracy that involved a second gunman. This finding contradicted the belief of the Warren Commission, which stated that Lee Harvey Oswald acted alone in Dallas on November 22, 1963.",
@@ -5983,17 +5887,12 @@
             ],
             "pred": [
                 [
-                    "kennedy:per",
-                    "live in",
-                    "dallas:loc"
-                ],
-                [
                     "lee harvey oswald:per",
                     "live in",
                     "dallas:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\n"
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
         "5042": {
             "text": "In Dallas, plans are being made for a museum to be established at the Texas School Book Depository, the site where Lee Harvey Oswald shot Kennedy as the presidential motorcade passed through Dealey Plaza.",
@@ -6007,8 +5906,23 @@
             "pred": [
                 [
                     "lee harvey oswald:per",
+                    "work for",
+                    "texas school book depository:org"
+                ],
+                [
+                    "lee harvey oswald:per",
                     "kill",
                     "kennedy:per"
+                ],
+                [
+                    "texas school book depository:org",
+                    "orgbased in",
+                    "dallas:loc"
+                ],
+                [
+                    "texas school book depository:org",
+                    "orgbased in",
+                    "dealey plaza:loc"
                 ],
                 [
                     "lee harvey oswald:per",
@@ -6016,32 +5930,12 @@
                     "dallas:loc"
                 ],
                 [
-                    "dallas:loc",
-                    "located in",
-                    "dealey plaza:loc"
-                ],
-                [
-                    "texas school book depository:loc",
-                    "located in",
-                    "dallas:loc"
-                ],
-                [
-                    "texas school book depository:loc",
-                    "located in",
-                    "dealey plaza:loc"
-                ],
-                [
                     "dealey plaza:loc",
                     "located in",
                     "dallas:loc"
-                ],
-                [
-                    "dealey plaza:loc",
-                    "located in",
-                    "texas school book depository:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nYes\nYes\n"
+            "response": "Yes\nNo\nYes\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nYes\n"
         },
         "5043": {
             "text": "Lee Harvey Oswald's widow now believes that her late husband did not act alone in the assassination of President John F. Kennedy, twenty-five years after the tragic event.",
@@ -6154,17 +6048,65 @@
             ],
             "response": "No\nNo\nNo\nYes\nNo\nNo\nYes\nYes\nNo\n"
         },
-        "5093": {
-            "text": "Sirhan Bishara Sirhan, the person who assassinated Kennedy, was apprehended right away.",
+        "5103": {
+            "text": "In 1978, James Earl Ray, the person convicted of assassinating Dr. Martin Luther King Jr., stated during a hearing on Capitol Hill that he was not responsible for the crime. He claimed that he had been framed by a mysterious individual named \"Raoul.\"",
             "true": [
                 [
-                    "sirhan bishara sirhan:per",
+                    "james earl ray:per",
                     "kill",
-                    "kennedy:per"
+                    "dr. martin luther king jr.:per"
                 ]
             ],
             "pred": [],
-            "response": "No\nNo\n"
+            "response": "No\nNo\nNo\nNo\n"
+        },
+        "5112": {
+            "text": "Ray, who is 61 years old, will not be able to be released from prison until 1998. He was convicted for the murder of King on April 4, 1968, in Memphis, Tennessee.",
+            "true": [
+                [
+                    "ray:per",
+                    "kill",
+                    "king:per"
+                ]
+            ],
+            "pred": [
+                [
+                    "ray:per",
+                    "kill",
+                    "king:per"
+                ],
+                [
+                    "ray:per",
+                    "live in",
+                    "memphis:loc"
+                ],
+                [
+                    "ray:per",
+                    "live in",
+                    "tenn.:loc"
+                ],
+                [
+                    "king:per",
+                    "live in",
+                    "memphis:loc"
+                ],
+                [
+                    "king:per",
+                    "live in",
+                    "tenn.:loc"
+                ],
+                [
+                    "memphis:loc",
+                    "located in",
+                    "tenn.:loc"
+                ],
+                [
+                    "tenn.:loc",
+                    "located in",
+                    "memphis:loc"
+                ]
+            ],
+            "response": "Yes\nNo\nYes\nYes\nYes\nYes\nYes\nYes\n"
         },
         "5121": {
             "text": "On April 14, President Lincoln was shot in the head by actor John Wilkes Booth while he was attending a play at the Ford Theatre in Washington. John Wilkes Booth cried out \"Sic Semper Tyranus\" which is the motto of Virginia.",
@@ -6180,11 +6122,6 @@
                     "john wilkes booth:per",
                     "kill",
                     "lincoln:per"
-                ],
-                [
-                    "lincoln:per",
-                    "live in",
-                    "ford theatre:loc"
                 ],
                 [
                     "lincoln:per",
@@ -6207,7 +6144,19 @@
                     "washington:loc"
                 ]
             ],
-            "response": "No\nYes\nYes\nYes\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\n"
+            "response": "No\nYes\nNo\nYes\nNo\nNo\nYes\nYes\nYes\nNo\nNo\nNo\nNo\nNo\n"
+        },
+        "5122": {
+            "text": "James Earl Ray, who is currently serving a 99-year prison sentence for the murder of civil rights leader Martin Luther King Jr., has recently initiated divorce proceedings with his wife of 12 years.",
+            "true": [
+                [
+                    "james earl ray:per",
+                    "kill",
+                    "martin luther king jr.:per"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\n"
         },
         "5125": {
             "text": "In 1964, a jury in Dallas convicted Jack Ruby of killing Lee Harvey Oswald, the man accused of assassinating President Kennedy.",
@@ -6238,7 +6187,7 @@
             "response": "Yes\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\n"
         },
         "5143": {
-            "text": "$ENTITIES$ is an organization based in $ENTITIES$.",
+            "text": "The Statue of Liberty is a massive neoclassical sculpture situated on Liberty Island in the harbor of New York.",
             "true": [
                 [
                     "sirhan b. sirhan:per",
@@ -6261,11 +6210,6 @@
             "pred": [
                 [
                     "oswald:per",
-                    "kill",
-                    "kennedy:per"
-                ],
-                [
-                    "oswald:per",
                     "live in",
                     "dallas:loc"
                 ],
@@ -6280,7 +6224,7 @@
                     "dallas:loc"
                 ]
             ],
-            "response": "Yes\nNo\nNo\nYes\nNo\nYes\nYes\nNo\n"
+            "response": "No\nNo\nNo\nYes\nNo\nYes\nYes\nNo\n"
         },
         "5157": {
             "text": "In 1979, the head of the Korean Central Intelligence Agency, Kim Jae-kyu, shot and killed South Korean President Park Chung-hee.",
@@ -6305,8 +6249,20 @@
             ],
             "response": "No\nYes\nNo\nYes\n"
         },
+        "5166": {
+            "text": "Mark David Chapman expresses deep regret for the assassination of John Lennon, emphasizing that this act does not define him as a malevolent individual.",
+            "true": [
+                [
+                    "mark david chapman:per",
+                    "kill",
+                    "john lennon:per"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\n"
+        },
         "5168": {
-            "text": "On December 8, 1980, John Lennon and his wife were heading back to their apartment in the Dakota building in New York when he was fatally shot by Mark David Chapman, a disturbed fan who had obtained his autograph just hours earlier.",
+            "text": "On December 8, 1980, Lennon and his wife were heading back to their apartment in the Dakota building in New York when he was fatally shot by Mark David Chapman, a fan who had obtained his autograph just hours earlier.",
             "true": [
                 [
                     "mark david chapman:per",
@@ -6323,30 +6279,15 @@
                 [
                     "lennon:per",
                     "live in",
-                    "new york:loc"
-                ],
-                [
-                    "lennon:per",
-                    "live in",
-                    "dakota building:loc"
-                ],
-                [
-                    "mark david chapman:per",
-                    "live in",
-                    "new york:loc"
-                ],
-                [
-                    "dakota building:loc",
-                    "located in",
-                    "new york:loc"
+                    "new york's dakota building:loc"
                 ],
                 [
                     "1980:loc",
                     "located in",
-                    "new york:loc"
+                    "new york's dakota building:loc"
                 ]
             ],
-            "response": "No\nYes\nYes\nYes\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nYes\nNo\n"
+            "response": "No\nYes\nYes\nNo\nNo\nNo\nNo\nYes\n"
         },
         "5174": {
             "text": "Kleber Elias Gia Bustamante, who is alleged by the police to be a part of the central committee of the organization called \"Red Sun,\" has been in hiding since he escaped from Garcia Moreno Prison. He was imprisoned there for the murder of the industrialist, Jose Antonio Briz Lopez.",
@@ -6367,9 +6308,19 @@
                     "kleber elias gia bustamante:per",
                     "kill",
                     "jose antonio briz lopez:per"
+                ],
+                [
+                    "red sun:org",
+                    "orgbased in",
+                    "garcia moreno prison:loc"
+                ],
+                [
+                    "kleber elias gia bustamante:per",
+                    "live in",
+                    "garcia moreno prison:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nNo\nNo\nNo\nNo\n"
+            "response": "Yes\nNo\nYes\nNo\nYes\nYes\nNo\n"
         },
         "5181": {
             "text": "After a hearing in Memphis on the 25th anniversary of the assassination, the jury in a television trial acquitted James Earl Ray of the murder of Martin Luther King.",
@@ -6383,21 +6334,11 @@
             "pred": [
                 [
                     "james earl ray:per",
-                    "kill",
-                    "martin luther king:per"
-                ],
-                [
-                    "james earl ray:per",
-                    "live in",
-                    "memphis:loc"
-                ],
-                [
-                    "martin luther king:per",
                     "live in",
                     "memphis:loc"
                 ]
             ],
-            "response": "Yes\nNo\nYes\nYes\n"
+            "response": "No\nNo\nYes\nNo\n"
         },
         "5187": {
             "text": "The stadium was renamed by the Sandinistas in honor of Rigoberto Lopez Perez, a tailor and poet who killed Somoza Garcia and died in the process.",
@@ -6420,7 +6361,7 @@
                     "rigoberto lopez perez:per"
                 ]
             ],
-            "response": "No\nNo\nYes\nYes\n"
+            "response": "Yes\nYes\n"
         },
         "5200": {
             "text": "Markman said that Sirhan had murdered Kennedy because of Kennedy's positive sentiments towards Israel, and Markman himself had come from Israel.",
@@ -6444,18 +6385,6 @@
                 ]
             ],
             "response": "Yes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
-        },
-        "5201": {
-            "text": "During the trial of Sirhan Sirhan, Sen. Robert F. Kennedy's assassin, Diamond provided his most famous testimony.",
-            "true": [
-                [
-                    "sirhan sirhan:per",
-                    "kill",
-                    "sen. robert f. kennedy:per"
-                ]
-            ],
-            "pred": [],
-            "response": "No\nNo\n"
         },
         "5236": {
             "text": "On November 24, 1963, two days after the assassination of President Kennedy, Ruby fatally shot Oswald with a .38-caliber Colt Cobra revolver in the basement of Dallas City Jail.",
@@ -6485,6 +6414,18 @@
             ],
             "response": "Yes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nYes\n"
         },
+        "5240": {
+            "text": "In the same way, John Wilkes Booth, the person who killed Abraham Lincoln, sings in the barn that is on fire, where he will later shoot himself.",
+            "true": [
+                [
+                    "john wilkes booth:per",
+                    "kill",
+                    "abraham lincoln:per"
+                ]
+            ],
+            "pred": [],
+            "response": "No\nNo\n"
+        },
         "5245": {
             "text": "Dole faces challenges in the South, but he has enlisted the help of his wife, Elizabeth, who is from North Carolina, to work in that region for him.",
             "true": [
@@ -6509,7 +6450,7 @@
             "response": "No\nNo\nYes\nYes\n"
         },
         "5250": {
-            "text": "Dole strategists considered North Carolina to be one of their top prospects in the South, mainly because Elizabeth Dole, the candidate's wife and former transportation secretary, is originally from Salisbury, N.C. Recent polls indicate that Dole, who was behind by as much as 15 percentage points two weeks ago, has now caught up with Bush.",
+            "text": "Dole strategists considered North Carolina to be a promising state in the South, mainly because Elizabeth Dole, the candidate's wife and a native of Salisbury, N.C., had strong connections there. Recent polls indicated that Dole, who was previously trailing by a significant margin, had caught up to Bush in terms of popularity.",
             "true": [
                 [
                     "elizabeth dole:per",
@@ -6518,11 +6459,6 @@
                 ]
             ],
             "pred": [
-                [
-                    "dole:org",
-                    "orgbased in",
-                    "north carolina:loc"
-                ],
                 [
                     "elizabeth dole:per",
                     "live in",
@@ -6537,9 +6473,14 @@
                     "north carolina:loc",
                     "located in",
                     "n.c.:loc"
+                ],
+                [
+                    "n.c.:loc",
+                    "located in",
+                    "north carolina:loc"
                 ]
             ],
-            "response": "No\nNo\nNo\nNo\nYes\nNo\nYes\nYes\nNo\nNo\nYes\nNo\n"
+            "response": "Yes\nYes\nYes\nYes\n"
         },
         "5259": {
             "text": "Jesse Jackson had a strong performance in the Democratic caucuses in South Carolina, his birthplace, and is now focusing on the primary in Illinois, where he currently resides.",
@@ -6573,14 +6514,8 @@
                     "woodington, ohio:loc"
                 ]
             ],
-            "pred": [
-                [
-                    "lowell thomas:per",
-                    "live in",
-                    "ohio:loc"
-                ]
-            ],
-            "response": "Yes\n"
+            "pred": [],
+            "response": "No\n"
         },
         "5274": {
             "text": "Hubert H. Humphrey, the 38th U.S. vice president, was born in Wallace, S.D. in 1911. In 1929, aviator Charles Lindbergh married Anne Spencer Morrow in Englewood, N.J. In 1935, the Supreme Court invalidated the National Industrial Recovery Act.",
@@ -6595,7 +6530,7 @@
             "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
         },
         "5275": {
-            "text": "Brigham Young, the Mormon leader, was born in Whitingham, Vt. in 1801.",
+            "text": "Brigham Young, the Mormon leader, was born in Whitingham, Vt. in the year 1801.",
             "true": [
                 [
                     "brigham young:per",
@@ -6603,8 +6538,37 @@
                     "whitingham, vt:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\n"
+            "pred": [
+                [
+                    "brigham young:per",
+                    "live in",
+                    "vt:loc"
+                ]
+            ],
+            "response": "Yes\n"
+        },
+        "5277": {
+            "text": "Martin appreciated Jimbob for its authentic and charming nature, and believed that anyone with the name Rogers has always had success in winning elections in Oklahoma, the birthplace of the renowned humorist Will Rogers.",
+            "true": [
+                [
+                    "will rogers:per",
+                    "live in",
+                    "oklahoma:loc"
+                ]
+            ],
+            "pred": [
+                [
+                    "martin:per",
+                    "live in",
+                    "oklahoma:loc"
+                ],
+                [
+                    "will rogers:per",
+                    "live in",
+                    "oklahoma:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nYes\n"
         },
         "5294": {
             "text": "Jesse Owens, the Olympic legend, was born in Danville, Alabama in the year 1913.",
@@ -6660,7 +6624,7 @@
             "response": "No\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nYes\n"
         },
         "5313": {
-            "text": "The proposal will be resubmitted, and temporarily, the St. Louis Street side will be reserved for native New Orleans musicians like Fats Domino, according to spokeswoman Barbara Hutson in a news release on Friday.",
+            "text": "The spokesperson, Barbara Hutson, announced in a news release on Friday that they intend to revise and submit their proposal again. As of now, they have promised that the section of St. Louis Street will be reserved for local New Orleans musicians like Fats Domino.",
             "true": [
                 [
                     "fats domino:per",
@@ -6672,20 +6636,15 @@
                 [
                     "fats domino:per",
                     "live in",
-                    "st. louis:loc"
-                ],
-                [
-                    "fats domino:per",
-                    "live in",
                     "new orleans:loc"
                 ],
                 [
-                    "st. louis:loc",
+                    "st. louis street:loc",
                     "located in",
                     "new orleans:loc"
                 ]
             ],
-            "response": "Yes\nYes\nYes\nNo\n"
+            "response": "No\nYes\nYes\nNo\n"
         },
         "5317": {
             "text": "Despite her efforts to fulfill her dream, which involves receiving a scholarship from the Buddy Holly scholarship fund, preferably at Texas Tech University in the city of Lubbock, where Buddy Holly was born, or through a festival held in Lubbock, she has been unsuccessful in all her attempts.",
@@ -6837,8 +6796,14 @@
                     "kinderhook, n.y.:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n"
+            "pred": [
+                [
+                    "wolfgang amadeus mozart:per",
+                    "live in",
+                    "austria:loc"
+                ]
+            ],
+            "response": "No\nNo\nNo\nNo\nNo\nYes\nNo\nNo\n"
         },
         "5358": {
             "text": "On January 8, 1935, the famous rock 'n' roll icon Elvis Presley was born in Tupelo, Mississippi.",
@@ -6890,8 +6855,14 @@
                     "waxhaw, s.c.:loc"
                 ]
             ],
-            "pred": [],
-            "response": "No\n"
+            "pred": [
+                [
+                    "andrew jackson:per",
+                    "live in",
+                    "s.c.:loc"
+                ]
+            ],
+            "response": "Yes\n"
         },
         "5375": {
             "text": "On this day in 1833, Benjamin Harrison, who would later become the 23rd president of the United States, was born in the town of North Bend, Ohio.",
@@ -7145,25 +7116,11 @@
                 "n.j.:loc"
             ]
         ],
-        "195": [
-            [
-                "michael d. papagiannis:per",
-                "work for",
-                "boston university:org"
-            ]
-        ],
         "200": [
             [
                 "bill gordon:per",
                 "live in",
                 "bingham county:loc"
-            ]
-        ],
-        "333": [
-            [
-                "bert shanas:per",
-                "work for",
-                "united federation of teachers:org"
             ]
         ],
         "356": [
@@ -7255,6 +7212,13 @@
                 "soviet:loc"
             ]
         ],
+        "942": [
+            [
+                "walesa:per",
+                "work for",
+                "solidarity:org"
+            ]
+        ],
         "966": [
             [
                 "eastport international:org",
@@ -7267,11 +7231,6 @@
                 "livingston:loc",
                 "located in",
                 "rocky mountains:loc"
-            ],
-            [
-                "rocky mountains:loc",
-                "located in",
-                "montana:loc"
             ]
         ],
         "1188": [
@@ -7279,6 +7238,13 @@
                 "william j. bennett:per",
                 "live in",
                 "u.s.:loc"
+            ]
+        ],
+        "1197": [
+            [
+                "samuel l. husk:per",
+                "work for",
+                "council of great city schools:org"
             ]
         ],
         "1273": [
@@ -7300,13 +7266,6 @@
                 "francisco rojas:per",
                 "work for",
                 "pemex:org"
-            ]
-        ],
-        "1338": [
-            [
-                "aussedat-rey sa:org",
-                "orgbased in",
-                "europe:loc"
             ]
         ],
         "1354": [
@@ -7361,13 +7320,6 @@
                 "galveston.:loc"
             ]
         ],
-        "1552": [
-            [
-                "pat epps:per",
-                "work for",
-                "greenland expedition society:org"
-            ]
-        ],
         "1563": [
             [
                 "vaughan:per",
@@ -7399,13 +7351,6 @@
                 "boise:loc",
                 "located in",
                 "idaho.:loc"
-            ]
-        ],
-        "1689": [
-            [
-                "gerald baliles:per",
-                "live in",
-                "virginia:loc"
             ]
         ],
         "1731": [
@@ -7556,13 +7501,6 @@
                 "iowa:loc"
             ]
         ],
-        "2116": [
-            [
-                "cecil andrus:per",
-                "live in",
-                "idaho:loc"
-            ]
-        ],
         "2140": [
             [
                 "javier perez de cuellar.:per",
@@ -7603,13 +7541,6 @@
                 "hhs:org"
             ]
         ],
-        "2300": [
-            [
-                "pentagon:org",
-                "orgbased in",
-                "u.s.:loc"
-            ]
-        ],
         "2308": [
             [
                 "an-nahar.:org",
@@ -7618,6 +7549,11 @@
             ]
         ],
         "2312": [
+            [
+                "anderson:per",
+                "live in",
+                "middle east:loc"
+            ],
             [
                 "the associated press:org",
                 "orgbased in",
@@ -7747,13 +7683,6 @@
                 "west:loc"
             ]
         ],
-        "2628": [
-            [
-                "cecil andrus:per",
-                "live in",
-                "idaho:loc"
-            ]
-        ],
         "2640": [
             [
                 "jeff widener:per",
@@ -7847,12 +7776,22 @@
             [
                 "bmn:org",
                 "orgbased in",
+                "nampula province:loc"
+            ],
+            [
+                "bmn:org",
+                "orgbased in",
                 "nampula:loc"
             ],
             [
                 "brigada de melhoramentos do norte:org",
                 "orgbased in",
                 "namialo:loc"
+            ],
+            [
+                "brigada de melhoramentos do norte:org",
+                "orgbased in",
+                "nampula province:loc"
             ],
             [
                 "brigada de melhoramentos do norte:org",
@@ -7907,11 +7846,11 @@
                 "serb democratic party:org"
             ]
         ],
-        "3470": [
+        "3303": [
             [
-                "gerald steinberg:per",
-                "work for",
-                "bar-ilan university:org"
+                "radio lebanon:org",
+                "orgbased in",
+                "beirut:loc"
             ]
         ],
         "3577": [
@@ -7959,11 +7898,25 @@
                 "sao paulo:loc"
             ]
         ],
+        "3789": [
+            [
+                "assipen:org",
+                "orgbased in",
+                "sao paulo:loc"
+            ]
+        ],
         "3853": [
             [
                 "stanislav mikhaylovich korochkin:per",
                 "work for",
                 "magadan basin okhotrybvod (okhotsk sea fishing administration) department:org"
+            ]
+        ],
+        "3919": [
+            [
+                "huancabamba:loc",
+                "located in",
+                "piura:loc"
             ]
         ],
         "4016": [
@@ -7998,6 +7951,13 @@
                 "congress:org",
                 "orgbased in",
                 "united states:loc"
+            ]
+        ],
+        "4068": [
+            [
+                "kim pom-myon:per",
+                "work for",
+                "ldp:org"
             ]
         ],
         "4102": [
@@ -8043,6 +8003,13 @@
                 "yasir 'arafat:per",
                 "work for",
                 "plo:org"
+            ]
+        ],
+        "4485": [
+            [
+                "georgiy gurinov:per",
+                "work for",
+                "pacific fleet:org"
             ]
         ],
         "4491": [
@@ -8101,11 +8068,18 @@
                 "president john f. kennedy:per"
             ]
         ],
-        "5093": [
+        "5103": [
             [
-                "sirhan bishara sirhan:per",
+                "james earl ray:per",
                 "kill",
-                "kennedy:per"
+                "dr. martin luther king jr.:per"
+            ]
+        ],
+        "5122": [
+            [
+                "james earl ray:per",
+                "kill",
+                "martin luther king jr.:per"
             ]
         ],
         "5125": [
@@ -8122,11 +8096,25 @@
                 "sen. robert f. kennedy:per"
             ]
         ],
+        "5155": [
+            [
+                "oswald:per",
+                "kill",
+                "kennedy:per"
+            ]
+        ],
         "5157": [
             [
                 "kim jae-kyu:per",
                 "kill",
                 "president park chung-hee:per"
+            ]
+        ],
+        "5166": [
+            [
+                "mark david chapman:per",
+                "kill",
+                "john lennon:per"
             ]
         ],
         "5174": [
@@ -8136,11 +8124,18 @@
                 "jose antonio briz lopez.:per"
             ]
         ],
-        "5201": [
+        "5181": [
             [
-                "sirhan sirhan:per",
+                "james earl ray:per",
                 "kill",
-                "sen. robert f. kennedy:per"
+                "martin luther king:per"
+            ]
+        ],
+        "5240": [
+            [
+                "john wilkes booth:per",
+                "kill",
+                "abraham lincoln:per"
             ]
         ],
         "5250": [
@@ -8311,21 +8306,9 @@
                 "arab east jerusalem:loc"
             ],
             [
-                "palestinians:org",
-                "orgbased in",
-                "arab east jerusalem:loc"
-            ]
-        ],
-        "35": [
-            [
-                "news media:org",
-                "orgbased in",
-                "washington:loc"
-            ],
-            [
-                "reagan:per",
+                "palestinians:per",
                 "live in",
-                "washington:loc"
+                "arab east jerusalem:loc"
             ]
         ],
         "36": [
@@ -8399,6 +8382,13 @@
                 "gmund:loc"
             ]
         ],
+        "333": [
+            [
+                "donald miller:per",
+                "work for",
+                "united federation of teachers:org"
+            ]
+        ],
         "443": [
             [
                 "steve wright:per",
@@ -8407,16 +8397,6 @@
             ]
         ],
         "475": [
-            [
-                "urutigoechea:per",
-                "live in",
-                "bayonee:loc"
-            ],
-            [
-                "urutigoechea:per",
-                "live in",
-                "bonloc:loc"
-            ],
             [
                 "urutigoechea:per",
                 "live in",
@@ -8445,13 +8425,11 @@
                 "hatcher:per",
                 "live in",
                 "shoshone-bannock reservation:loc"
-            ]
-        ],
-        "541": [
+            ],
             [
-                "paul fournier:per",
-                "work for",
-                "state department of inland fisheries and wildlife:org"
+                "idaho:loc",
+                "located in",
+                "shoshone-bannock reservation:loc"
             ]
         ],
         "556": [
@@ -8470,6 +8448,11 @@
             [
                 "president nixon:per",
                 "live in",
+                "u.s.:loc"
+            ],
+            [
+                "watergate:org",
+                "orgbased in",
                 "u.s.:loc"
             ]
         ],
@@ -8499,14 +8482,19 @@
         ],
         "841": [
             [
+                "american:loc",
+                "located in",
+                "u.s.:loc"
+            ],
+            [
                 "gadhafi:per",
                 "live in",
                 "libyan:loc"
             ],
             [
-                "u.s. navy:org",
-                "orgbased in",
-                "u.s.:loc"
+                "u.s.:loc",
+                "located in",
+                "american:loc"
             ]
         ],
         "895": [
@@ -8545,12 +8533,14 @@
                 "beijing:loc"
             ]
         ],
-        "957": [
+        "942": [
             [
-                "canada:loc",
-                "located in",
-                "montreal:loc"
-            ],
+                "walesa:per",
+                "work for",
+                "solidarity union:org"
+            ]
+        ],
+        "957": [
             [
                 "canada:loc",
                 "located in",
@@ -8572,6 +8562,38 @@
                 "eastport international:org",
                 "orgbased in",
                 "md.:loc"
+            ],
+            [
+                "eastport international:org",
+                "orgbased in",
+                "upper marlboro:loc"
+            ],
+            [
+                "gemini 6000:org",
+                "orgbased in",
+                "md.:loc"
+            ],
+            [
+                "gemini 6000:org",
+                "orgbased in",
+                "upper marlboro:loc"
+            ],
+            [
+                "md.:loc",
+                "located in",
+                "upper marlboro:loc"
+            ],
+            [
+                "upper marlboro:loc",
+                "located in",
+                "md.:loc"
+            ]
+        ],
+        "1029": [
+            [
+                "montana:loc",
+                "located in",
+                "rocky mountains:loc"
             ]
         ],
         "1166": [
@@ -8602,19 +8624,23 @@
         ],
         "1443": [
             [
-                "communities:loc",
-                "located in",
-                "landfill space:loc"
-            ],
-            [
-                "eaglebrook east:org",
-                "orgbased in",
-                "chicago:loc"
-            ],
-            [
                 "eaglebrook east:org",
                 "orgbased in",
                 "middletown:loc"
+            ]
+        ],
+        "1507": [
+            [
+                "national weather service:org",
+                "orgbased in",
+                "galveston:loc"
+            ]
+        ],
+        "1552": [
+            [
+                "greenland expedition society:org",
+                "orgbased in",
+                "greenland:loc"
             ]
         ],
         "1563": [
@@ -8663,6 +8689,13 @@
                 "west:loc"
             ]
         ],
+        "1692": [
+            [
+                "sununu:per",
+                "live in",
+                "virginia:loc"
+            ]
+        ],
         "1731": [
             [
                 "bush administration:org",
@@ -8672,11 +8705,6 @@
         ],
         "1773": [
             [
-                "democracy movement:org",
-                "orgbased in",
-                "taiwan:loc"
-            ],
-            [
                 "government information:org",
                 "orgbased in",
                 "taiwan:loc"
@@ -8694,16 +8722,6 @@
             [
                 "shaw yu-ming:per",
                 "live in",
-                "washington:loc"
-            ],
-            [
-                "taiwan:loc",
-                "located in",
-                "china:loc"
-            ],
-            [
-                "taiwan:loc",
-                "located in",
                 "washington:loc"
             ]
         ],
@@ -8729,13 +8747,6 @@
                 "wyeth-ayerst laboratories:org",
                 "orgbased in",
                 "philadelphia:loc"
-            ]
-        ],
-        "1844": [
-            [
-                "dave olson:per",
-                "live in",
-                "payette national forest:loc"
             ]
         ],
         "1851": [
@@ -8777,13 +8788,6 @@
                 "john stembridge:per",
                 "live in",
                 "north miami:loc"
-            ]
-        ],
-        "1914": [
-            [
-                "robert bernero:per",
-                "work for",
-                "doe:org"
             ]
         ],
         "1965": [
@@ -8838,6 +8842,13 @@
                 "public utilities commission:org"
             ]
         ],
+        "2254": [
+            [
+                "secretary louis sullivan:per",
+                "work for",
+                "hhs:org"
+            ]
+        ],
         "2270": [
             [
                 "joseph r. biden:per",
@@ -8864,26 +8875,9 @@
         ],
         "2312": [
             [
-                "anderson:per",
-                "live in",
-                "beirut:loc"
-            ],
-            [
                 "beirut:loc",
                 "located in",
                 "middle east:loc"
-            ],
-            [
-                "middle east:loc",
-                "located in",
-                "beirut:loc"
-            ]
-        ],
-        "2314": [
-            [
-                "anderson:per",
-                "live in",
-                "colorado:loc"
             ]
         ],
         "2328": [
@@ -8922,11 +8916,6 @@
         ],
         "2416": [
             [
-                "president:per",
-                "work for",
-                "commodity futures trading commission:org"
-            ],
-            [
                 "william p. albrecht:per",
                 "work for",
                 "commodity futures trading commission:org"
@@ -8936,6 +8925,11 @@
             [
                 "charing cross hospital:loc",
                 "located in",
+                "london:loc"
+            ],
+            [
+                "manygate management:org",
+                "orgbased in",
                 "london:loc"
             ],
             [
@@ -8968,6 +8962,11 @@
         ],
         "2559": [
             [
+                "canadian border:loc",
+                "located in",
+                "washington state:loc"
+            ],
+            [
                 "cascade range:loc",
                 "located in",
                 "canadian border:loc"
@@ -8975,11 +8974,6 @@
             [
                 "cascade range:loc",
                 "located in",
-                "washington state:loc"
-            ],
-            [
-                "greg thayer:per",
-                "live in",
                 "washington state:loc"
             ],
             [
@@ -9009,11 +9003,6 @@
         ],
         "2640": [
             [
-                "ap laserphoto:org",
-                "orgbased in",
-                "bangkok:loc"
-            ],
-            [
                 "jeff widener:per",
                 "live in",
                 "bangkok:loc"
@@ -9040,11 +9029,6 @@
         ],
         "2774": [
             [
-                "britain's channel islands:loc",
-                "located in",
-                "guernsey:loc"
-            ],
-            [
                 "guernsey:loc",
                 "located in",
                 "britain's channel islands:loc"
@@ -9058,6 +9042,11 @@
             ]
         ],
         "2923": [
+            [
+                "ccri-cg of the ezln:org",
+                "orgbased in",
+                "mexican southeast:loc"
+            ],
             [
                 "ccri-cg of the ezln:org",
                 "orgbased in",
@@ -9078,12 +9067,17 @@
             [
                 "azerbaijan:loc",
                 "located in",
-                "nagorno-karabakh province:loc"
+                "stepanakert:loc"
             ],
             [
                 "nagorno-karabakh province:loc",
                 "located in",
                 "azerbaijan:loc"
+            ],
+            [
+                "nagorno-karabakh province:loc",
+                "located in",
+                "stepanakert:loc"
             ],
             [
                 "stepanakert:loc",
@@ -9098,6 +9092,16 @@
         ],
         "3074": [
             [
+                "bmn:org",
+                "orgbased in",
+                "namialo assembly area:loc"
+            ],
+            [
+                "government soldiers:per",
+                "work for",
+                "nampula provincial command:org"
+            ],
+            [
                 "namialo assembly area:loc",
                 "located in",
                 "nampula province:loc"
@@ -9106,13 +9110,18 @@
                 "nampula provincial command:org",
                 "orgbased in",
                 "nampula province:loc"
+            ],
+            [
+                "northern improvement brigade:org",
+                "orgbased in",
+                "namialo assembly area:loc"
             ]
         ],
         "3226": [
             [
-                "branko vojnic:per",
-                "work for",
-                "assembly:org"
+                "dr. milan ernjakovic:per",
+                "live in",
+                "beli manastir:loc"
             ],
             [
                 "dr. milan ernjakovic:per",
@@ -9156,26 +9165,19 @@
                 "pentagon:org",
                 "orgbased in",
                 "u.s.:loc"
-            ]
-        ],
-        "3577": [
-            [
-                "australian:org",
-                "orgbased in",
-                "jakarta:loc"
             ],
             [
-                "north korean:loc",
-                "located in",
-                "bangkok:loc"
-            ],
-            [
-                "north korean:loc",
-                "located in",
-                "jakarta:loc"
+                "steven bryen:per",
+                "live in",
+                "u.s.:loc"
             ]
         ],
         "3595": [
+            [
+                "north korea:loc",
+                "located in",
+                "yongbyon:loc"
+            ],
             [
                 "yongbyon:loc",
                 "located in",
@@ -9183,11 +9185,6 @@
             ]
         ],
         "3631": [
-            [
-                "canada:loc",
-                "located in",
-                "nova scotia:loc"
-            ],
             [
                 "john savage:per",
                 "live in",
@@ -9205,6 +9202,11 @@
             ]
         ],
         "3643": [
+            [
+                "ice:org",
+                "orgbased in",
+                "venezuela:loc"
+            ],
             [
                 "miguel rodriguez mendoza:per",
                 "live in",
@@ -9232,6 +9234,11 @@
                 "santiago:loc"
             ],
             [
+                "chilean:loc",
+                "located in",
+                "valparaiso:loc"
+            ],
+            [
                 "finandes financial company:org",
                 "orgbased in",
                 "chilean:loc"
@@ -9255,11 +9262,6 @@
         "3788": [
             [
                 "institute for nuclear and energy research (ipen):org",
-                "orgbased in",
-                "sao paulo:loc"
-            ],
-            [
-                "national nuclear energy commission (cnen):org",
                 "orgbased in",
                 "sao paulo:loc"
             ],
@@ -9298,11 +9300,21 @@
                 "okhotsk sea fishing administration:org"
             ]
         ],
-        "3911": [
+        "3916": [
             [
-                "py3103144994:org",
+                "mangunchay irrigation project:org",
                 "orgbased in",
-                "lima:loc"
+                "jaen:loc"
+            ],
+            [
+                "san ignacio de cajamarca:loc",
+                "located in",
+                "jaen:loc"
+            ],
+            [
+                "san ignacio de cajamarca:loc",
+                "located in",
+                "san ignacio forest:loc"
             ]
         ],
         "3919": [
@@ -9319,17 +9331,17 @@
             [
                 "bagua:loc",
                 "located in",
-                "san martin department:loc"
+                "condorcanqui:loc"
             ],
             [
-                "biabo:loc",
+                "bagua:loc",
                 "located in",
                 "san martin department:loc"
             ],
             [
                 "biabo:loc",
                 "located in",
-                "sisa:loc"
+                "san martin department:loc"
             ],
             [
                 "condorcanqui:loc",
@@ -9342,26 +9354,6 @@
                 "san martin department:loc"
             ],
             [
-                "mayo:loc",
-                "located in",
-                "san martin department:loc"
-            ],
-            [
-                "mayo:loc",
-                "located in",
-                "sisa:loc"
-            ],
-            [
-                "mayo:loc",
-                "located in",
-                "soritor:loc"
-            ],
-            [
-                "nueva cajamarca:loc",
-                "located in",
-                "amazonas:loc"
-            ],
-            [
                 "nueva cajamarca:loc",
                 "located in",
                 "san martin department:loc"
@@ -9369,11 +9361,6 @@
             [
                 "rioja:loc",
                 "located in",
-                "amazonas:loc"
-            ],
-            [
-                "rioja:loc",
-                "located in",
                 "san martin department:loc"
             ],
             [
@@ -9382,39 +9369,9 @@
                 "amazonas:loc"
             ],
             [
-                "san martin department:loc",
-                "located in",
-                "rioja:loc"
-            ],
-            [
-                "san martin department:loc",
-                "located in",
-                "sisa:loc"
-            ],
-            [
-                "san martin department:loc",
-                "located in",
-                "soritor:loc"
-            ],
-            [
-                "sisa:loc",
-                "located in",
-                "mayo:loc"
-            ],
-            [
-                "sisa:loc",
-                "located in",
-                "rioja:loc"
-            ],
-            [
                 "sisa:loc",
                 "located in",
                 "san martin department:loc"
-            ],
-            [
-                "sisa:loc",
-                "located in",
-                "soritor:loc"
             ],
             [
                 "soritor:loc",
@@ -9424,17 +9381,12 @@
             [
                 "soritor:loc",
                 "located in",
-                "mayo:loc"
+                "condorcanqui:loc"
             ],
             [
                 "soritor:loc",
                 "located in",
                 "san martin department:loc"
-            ],
-            [
-                "soritor:loc",
-                "located in",
-                "sisa:loc"
             ]
         ],
         "4016": [
@@ -9499,11 +9451,6 @@
                 "kim hyong-ki:per",
                 "live in",
                 "north korea:loc"
-            ],
-            [
-                "nub:org",
-                "orgbased in",
-                "north korea:loc"
             ]
         ],
         "4347": [
@@ -9533,11 +9480,6 @@
                 "budapest:loc"
             ],
             [
-                "hungarian embassy:org",
-                "orgbased in",
-                "slovakia:loc"
-            ],
-            [
                 "slovak foreign ministry:org",
                 "orgbased in",
                 "bratislava:loc"
@@ -9554,11 +9496,6 @@
             ]
         ],
         "4400": [
-            [
-                "ortega:per",
-                "live in",
-                "brussels:loc"
-            ],
             [
                 "rene steichen:per",
                 "live in",
@@ -9587,6 +9524,26 @@
                 "algeria:loc",
                 "located in",
                 "africa:loc"
+            ],
+            [
+                "itar-tass:org",
+                "orgbased in",
+                "moscow:loc"
+            ],
+            [
+                "middle east:loc",
+                "located in",
+                "africa:loc"
+            ],
+            [
+                "russian foreign ministry:org",
+                "orgbased in",
+                "moscow:loc"
+            ],
+            [
+                "tass:org",
+                "orgbased in",
+                "moscow:loc"
             ],
             [
                 "viktor posuvalyuk:per",
@@ -9628,8 +9585,8 @@
                 "chisinau:loc"
             ],
             [
-                "basa:org",
-                "orgbased in",
+                "mircea snegur:per",
+                "live in",
                 "chisinau:loc"
             ],
             [
@@ -9650,9 +9607,26 @@
                 "berlin:loc"
             ],
             [
-                "kurds:org",
-                "orgbased in",
+                "kurds:per",
+                "live in",
+                "berlin:loc"
+            ],
+            [
+                "kurds:per",
+                "live in",
+                "federal republic:loc"
+            ],
+            [
+                "kurds:per",
+                "live in",
                 "turkey:loc"
+            ]
+        ],
+        "5003": [
+            [
+                "1963:loc",
+                "located in",
+                "dallas county administration building:loc"
             ]
         ],
         "5021": [
@@ -9667,8 +9641,8 @@
                 "los angeles:loc"
             ],
             [
-                "good samaritan hospital:org",
-                "orgbased in",
+                "good samaritan hospital:loc",
+                "located in",
                 "los angeles:loc"
             ],
             [
@@ -9685,21 +9659,11 @@
         "5023": [
             [
                 "james earl ray:per",
-                "kill",
-                "dr. martin luther king jr.:per"
-            ],
-            [
-                "james earl ray:per",
                 "live in",
                 "london:loc"
             ]
         ],
         "5036": [
-            [
-                "kennedy:per",
-                "live in",
-                "dallas:loc"
-            ],
             [
                 "lee harvey oswald:per",
                 "live in",
@@ -9708,19 +9672,9 @@
         ],
         "5042": [
             [
-                "dallas:loc",
-                "located in",
-                "dealey plaza:loc"
-            ],
-            [
                 "dealey plaza:loc",
                 "located in",
                 "dallas:loc"
-            ],
-            [
-                "dealey plaza:loc",
-                "located in",
-                "texas school book depository:loc"
             ],
             [
                 "lee harvey oswald:per",
@@ -9728,13 +9682,18 @@
                 "dallas:loc"
             ],
             [
-                "texas school book depository:loc",
-                "located in",
+                "lee harvey oswald:per",
+                "work for",
+                "texas school book depository:org"
+            ],
+            [
+                "texas school book depository:org",
+                "orgbased in",
                 "dallas:loc"
             ],
             [
-                "texas school book depository:loc",
-                "located in",
+                "texas school book depository:org",
+                "orgbased in",
                 "dealey plaza:loc"
             ]
         ],
@@ -9794,6 +9753,38 @@
                 "dallas:loc"
             ]
         ],
+        "5112": [
+            [
+                "king:per",
+                "live in",
+                "memphis:loc"
+            ],
+            [
+                "king:per",
+                "live in",
+                "tenn.:loc"
+            ],
+            [
+                "memphis:loc",
+                "located in",
+                "tenn.:loc"
+            ],
+            [
+                "ray:per",
+                "live in",
+                "memphis:loc"
+            ],
+            [
+                "ray:per",
+                "live in",
+                "tenn.:loc"
+            ],
+            [
+                "tenn.:loc",
+                "located in",
+                "memphis:loc"
+            ]
+        ],
         "5121": [
             [
                 "ford theatre:loc",
@@ -9809,11 +9800,6 @@
                 "john wilkes booth:per",
                 "live in",
                 "washington:loc"
-            ],
-            [
-                "lincoln:per",
-                "live in",
-                "ford theatre:loc"
             ],
             [
                 "lincoln:per",
@@ -9871,27 +9857,12 @@
             [
                 "1980:loc",
                 "located in",
-                "new york:loc"
-            ],
-            [
-                "dakota building:loc",
-                "located in",
-                "new york:loc"
+                "new york's dakota building:loc"
             ],
             [
                 "lennon:per",
                 "live in",
-                "dakota building:loc"
-            ],
-            [
-                "lennon:per",
-                "live in",
-                "new york:loc"
-            ],
-            [
-                "mark david chapman:per",
-                "live in",
-                "new york:loc"
+                "new york's dakota building:loc"
             ]
         ],
         "5174": [
@@ -9902,18 +9873,23 @@
             ],
             [
                 "kleber elias gia bustamante:per",
+                "live in",
+                "garcia moreno prison:loc"
+            ],
+            [
+                "kleber elias gia bustamante:per",
                 "work for",
                 "red sun:org"
+            ],
+            [
+                "red sun:org",
+                "orgbased in",
+                "garcia moreno prison:loc"
             ]
         ],
         "5181": [
             [
                 "james earl ray:per",
-                "live in",
-                "memphis:loc"
-            ],
-            [
-                "martin luther king:per",
                 "live in",
                 "memphis:loc"
             ]
@@ -9953,11 +9929,6 @@
         ],
         "5250": [
             [
-                "dole:org",
-                "orgbased in",
-                "north carolina:loc"
-            ],
-            [
                 "elizabeth dole:per",
                 "live in",
                 "n.c.:loc"
@@ -9965,6 +9936,11 @@
             [
                 "elizabeth dole:per",
                 "live in",
+                "north carolina:loc"
+            ],
+            [
+                "n.c.:loc",
+                "located in",
                 "north carolina:loc"
             ],
             [
@@ -9980,11 +9956,18 @@
                 "illinois:loc"
             ]
         ],
-        "5264": [
+        "5275": [
             [
-                "lowell thomas:per",
+                "brigham young:per",
                 "live in",
-                "ohio:loc"
+                "vt:loc"
+            ]
+        ],
+        "5277": [
+            [
+                "martin:per",
+                "live in",
+                "oklahoma:loc"
             ]
         ],
         "5301": [
@@ -10003,12 +9986,7 @@
         ],
         "5313": [
             [
-                "fats domino:per",
-                "live in",
-                "st. louis:loc"
-            ],
-            [
-                "st. louis:loc",
+                "st. louis street:loc",
                 "located in",
                 "new orleans:loc"
             ]
@@ -10077,6 +10055,13 @@
                 "texas:loc"
             ]
         ],
+        "5354": [
+            [
+                "wolfgang amadeus mozart:per",
+                "live in",
+                "austria:loc"
+            ]
+        ],
         "5358": [
             [
                 "elvis presley:per",
@@ -10089,6 +10074,13 @@
                 "bob dylan:per",
                 "live in",
                 "hibbing:loc"
+            ]
+        ],
+        "5361": [
+            [
+                "andrew jackson:per",
+                "live in",
+                "s.c.:loc"
             ]
         ],
         "5375": [

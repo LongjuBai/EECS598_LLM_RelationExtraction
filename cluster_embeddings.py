@@ -69,8 +69,8 @@ if __name__ == "__main__":
     
     args.min_cluster_size = None
     if args.dataset == 'conll04':
-        args.relation_count = 5
-        args.min_cluster_size = 14 if args.mode == 'entity' else 4 # exhaustive search
+        args.relation_count = 7
+        args.min_cluster_size = 14 if args.mode == 'entity' else 3 # exhaustive search
     elif args.dataset == 'ade':
         args.relation_count = 1
     elif args.dataset == 'nyt':
