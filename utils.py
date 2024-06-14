@@ -11,6 +11,8 @@ from tenacity import (
     wait_random_exponential,
 )
 import random
+import json
+from sklearn.neighbors import NearestNeighbors
 
 
 def dict_first_k(dic, k):
@@ -483,6 +485,7 @@ def make_client(model, is_async, api_key):
     client = client_umgpt if model =='umgpt' else client_openai
     return client
 
+
 # conll04: 1474 (hate)
 def dispart_prompt(prompt):
     messages = []
@@ -494,3 +497,20 @@ def dispart_prompt(prompt):
         messages.append({"role": "assistant", "content": sample.split('\n')[1].split(': ')[-1]})
     messages.append({"role": "user", "content": prompt[-1].split('\n')[0]})
     return messages
+
+# TODO: Handle duplicate context examples
+# samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
+def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
+    data = json.load(open(f'datasets598/{dataset}/preprocessed.json', 'r'))['train']
+
+    neigh = NearestNeighbors(n_neighbors=context_len // len(embeddings), n_jobs=-1).fit([sample['embedding'] for sample in samples_gt])
+    _, neigh_ids = neigh.kneighbors(embeddings)
+    context_samples = [data[id] for id in neigh_ids.flatten()]
+
+    if mode == 'entity':
+        prompt = open(f'prompts/{dataset}/prompt_tot_entity.txt', 'r').read()
+        prompt = prompt.split('\n\n')
+        prompt_new = prompt[0]
+        for sample in prompt[1:-2]:
+            prompt_new
+    elif mode == 'sentence':    
