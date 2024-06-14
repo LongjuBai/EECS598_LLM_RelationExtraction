@@ -1,0 +1,186 @@
+Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.
+
+Given the text: ` ` If it does not snow , and a lot , within this month we will have no water to submerge 150 , 000 hectares ( 370 , 500 acres ) of rice , ' ' said Bruno Pusterla , a top official of the Italian Agricultural Confederation .
+Is Bruno Pusterla Work(ed) For Italian Agricultural Confederation correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Does(Did) Shi Liming work for Institute of Zoology correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Is Institute of Zoology is(was) OrgBased In Kunming correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Meanwhile , Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity , which may serve as one of the major reasons for pandas ' near extinction .
+Does(Did) Shi Liming Live(d) In Kunming correct? (Yes/No)
+Answer:
+No
+
+Given the text: The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Does(Did) Oswald Kill(ed) President Kennedy correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Is Oswald Kill(ed) Officer Tippit correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: The viewers of " JFK " and " The Men Who Killed Kennedy " never learn about these facts , nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission. ;
+Is President Kennedy Kill(ed) Officer Tippit correct? (Yes/No)
+Answer:
+No
+
+Given the text: PURCHASE , N.Y .
+Is PURCHASE is(was) Located In N.Y . correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: PURCHASE , N.Y .
+Is N.Y . is(was) Located In PURCHASE correct? (Yes/No)
+Answer:
+No
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is AP is(was) OrgBased In BELGRADE correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is AP is(was) OrgBased In Yugoslavia correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is BELGRADE is(was) Located In Yugoslavia correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: BELGRADE , Yugoslavia ( AP )
+Is Yugoslavia is(was) Located In BELGRADE correct? (Yes/No)
+Answer:
+No
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Is Rome is(was) Located In Lazio correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Is Lazio is(was) Located In Rome correct? (Yes/No)
+Answer:
+No
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Is Naples is(was) Located In Campania correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Is Campania is(was) Located In Naples correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Is Rome is(was) Located In Campania correct? (Yes/No)
+Answer:
+No
+
+Given the text: Rome is in Lazio province and Naples in Campania .
+Is Campania is(was) Located In Rome correct? (Yes/No)
+Answer:
+No
+
+Given the text: ( By ITAR-TASS correspondent Mikhail Shevtsov )
+Is Mikhail Shevtsov Work(ed) For ITAR-TASS correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Is Group of Rio is(was) OrgBased In Haiti correct? (Yes/No)
+Answer:
+No
+
+Given the text: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Is Jean Bertrand Aristide Work(ed) For Group of Rio correct? (Yes/No)
+Answer:
+No
+
+Given the text: In the communique , the Group of Rio states that " the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor \'s Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti .
+Is Jean Bertrand Aristide Live(d) In Haiti correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Moscow ITAR-TASS
+Is ITAR-TASS is(was) OrgBased In Moscow correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Is Montgomery is(was) Located In Ala. correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Is Ala. is(was) Located In Montgomery correct? (Yes/No)
+Answer:
+No
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Is Mrs. Parks Live(d) In Montgomery correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: King rose to prominence after Mrs. Parks ' action in December 1955 in Montgomery , Ala. , set the stage for a boycott and subsequent demonstrations that caught the nation by surprise .
+Is Mrs. Parks Live(d) In Ala. correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Is Sirhan Kill(ed) Kennedy correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Sirhan says he was the lone assassin but can 't remember shooting Kennedy .
+Is Kennedy Kill(ed) Sirhan correct? (Yes/No)
+Answer:
+No
+
+Given the text: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
+Is Colorado is(was) Located In Denver correct? (Yes/No)
+Answer:
+No
+
+Given the text: In Colorado , 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily .
+Is Denver is(was) Located In Colorado correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Is Edward Marks Work(ed) For Montgomery County Democratic Party correct? (Yes/No)
+Answer:
+Yes
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Is Ms. Toth Work(ed) For Montgomery County Democratic Party correct? (Yes/No)
+Answer:
+No
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Is Edward Marks Kill(ed) Ms. Toth correct? (Yes/No)
+Answer:
+No
+
+Given the text: Edward Marks , an official with the Montgomery County Democratic Party , argued that if Ms. Toth is not interested in the job , ` ` she should get out. .. .
+Is Ms. Toth Kill(ed) Edward Marks correct? (Yes/No)
+Answer:
+No
+
+Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/no) for each relation.
+
+Given the text: $TEXT$
+Answer:

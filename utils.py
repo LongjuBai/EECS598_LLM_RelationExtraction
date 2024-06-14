@@ -1,6 +1,7 @@
 import numpy as np
 import time
 import asyncio
+import pickle
 from openai import OpenAI, AsyncOpenAI, AzureOpenAI, AsyncAzureOpenAI, BadRequestError
 import openai
 from tqdm import tqdm
@@ -56,7 +57,7 @@ def find_triplets(s):
     return s[start:end+2]
 
 
-def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round, data):
+def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round, data, dataset, context_length = 10, use_ICL = False):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -92,7 +93,14 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
         if multi_round:
             messages = dispart_prompt(prompt.replace('$TEXT$', sample['text']))
         else:
-            messages = [{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}]
+            if use_ICL: 
+                if dataset == 'conll04':
+                    sample_gt = json.load(open('outputs/conll04_train/entity_medoids.json', 'r'))
+                    embeddings = list(pickle.load(open('outputs/conll04_test/entity_embeddings_notype_test.pickle', 'rb'))[id].values())
+                    prompt = make_icl_prompt('conll04', sample_gt, embeddings, context_length, mode='entity')
+                    messages = [{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}]
+            else:
+                messages = [{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}]
         if model == 'gpt-3.5-turbo-0125':
             completion = client.chat.completions.create(
                 model=model,
@@ -300,7 +308,7 @@ def run_llm_relation(client, is_async, model, temp, max_tokens, seed, prompt, da
     return responses
 
 
-def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
+def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict, dataset, use_ICL = False, context_length = 10):
     async def llm_worker_async(id, sample):
         if model == 'gpt-3.5-turbo-0125':
             completion = await client.chat.completions.create(
@@ -373,6 +381,16 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
         elif model == 'umgpt':
             responses = ''
             for relation in relation_prompt_string:
+                # icl prompts
+                if use_ICL:
+                    if dataset == 'conll04':
+                        sample_gt = json.load(open('outputs/conll04_train/sentence_medoids.json', 'r'))
+                        embeddings = list(pickle.load(open('outputs/conll04_test/sentence_embeddings_test.pickle', 'rb'))[id].values())
+                        prompt = make_icl_prompt('conll04', sample_gt, embeddings, context_length, mode='sentence')
+                    else:
+                        pass
+                else:
+                    pass # use the prompt passed from function interface above
                 completion = completion_with_backoff(
                     model='gpt-35-turbo',
                     messages=[
@@ -502,7 +520,7 @@ def dispart_prompt(prompt):
 # TODO: Handle duplicate context examples
 # samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
 def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
-    neigh = NearestNeighbors(n_neighbors=context_len // len(embeddings), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
+    neigh = NearestNeighbors(n_neighbors= max(1, context_len // len(embeddings)), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
     _, neigh_ids = neigh.kneighbors(embeddings)
     context_samples = [list(samples_gt.values())[id] for id in neigh_ids.flatten()]
     # print(context_samples)
