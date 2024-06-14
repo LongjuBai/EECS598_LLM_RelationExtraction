@@ -502,15 +502,16 @@ def dispart_prompt(prompt):
 # TODO: Handle duplicate context examples
 # samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
 def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
-    neigh = NearestNeighbors(n_neighbors=context_len // len(embeddings), n_jobs=-1).fit([sample['embedding'] for sample in samples_gt.values()])
+    neigh = NearestNeighbors(n_neighbors=context_len // len(embeddings), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
     _, neigh_ids = neigh.kneighbors(embeddings)
-    context_samples = [samples_gt.values()[id] for id in neigh_ids.flatten()]
-
+    context_samples = [list(samples_gt.values())[id] for id in neigh_ids.flatten()]
+    # print(context_samples)
+    # exit(0)
     if mode == 'entity':
         prompt = open(f'prompts/{dataset}/prompt_tot_entity.txt', 'r').read()
         prompt = prompt.split('\n\n')
         prompt_new = prompt[0] + '\n\n' # example instruction
-        for i, sample in context_samples:
+        for i, sample in enumerate(context_samples):
             entities = set()
             for relation in sample['relations']:
                 entities.add(relation[0])
@@ -518,6 +519,7 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
             entities_str = '[' + ', '.join([f'"{entity}"' for entity in entities]) + ']'
             prompt_new += f'TEXT: {sample["text"]}\nEntities: {entities_str}\n\n'
         prompt_new += prompt[-2] + '\n\n' + prompt[-1]
+        return prompt_new
     elif mode == 'sentence':    
         # get the question message, with ICL examples for sentences
         # ask ChatGPT
@@ -545,17 +547,25 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
                 'Live In': 'Live(d) In',
                 'Located In': 'is(was) Located In'
             }
+        else:
+            raise Exception('Not supported!')
 
-            message = "Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.\n"
-            # get the ground truth in the training examples
-            # set the true relations as Yes answers
-            # if reverse gives the wrong relations, set as No answers
-            for example in context_samples: # example is {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}
-                relations = example['relations'] # a list of relations
-                for relation in relations:
+        message = "Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.\n"
+        # get the ground truth in the training examples
+        # set the true relations as Yes answers
+        # if reverse gives the wrong relations, set as No answers
+        for example in context_samples: # example is {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}
+            relations = example['relations'] # a list of relations
+            for relation in relations:
+                if dataset == 'conll04':
+                    subject = relation[0][:-4]
+                    subject_type = relation[0][-3:]
+                    verb = relation[1]
+                    object = relation[2][:-4]
+                    object_type = relation[0][-3:]
                     message += '\n'
                     message += "Given the text: " + example['text'] + '\n'
-                    message += "Is " + relation[0] + ' ' + augment_relation_types[relation[1]] + ' ' + relation[2] + '? (Yes/No)\n'
+                    message += object + ' ' + augment_relation_types[verb] + ' ' + subject + ', Yes or No?\n'
                     message += "Answer:\n"
                     message += "Yes\n"
 
@@ -563,15 +573,29 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
                     if (relation[2][-3:], relation[0][-3:]) in valid_type_dict[relation[1]]:
                         message += '\n'
                         message += "Given the text: " + example['text'] + '\n'
-                        message += "Is " + relation[0] + ' ' + augment_relation_types[relation[1]] + ' ' + relation[2] + '? (Yes/No)\n'
+                        message +=  subject + ' ' + augment_relation_types[relation[1]] + ' ' + object + ', Yes or No?\n'
                         message += "Answer:\n"
                         message += "No\n"
+                elif dataset == 'ade':
+                    subject = relation[0]
+                    # subject_type = "Drug"
+                    verb = "Adverse-Effect"
+                    object = relation[1]
+                    # object_type = "Adverse-Effect"
+                    message += '\n'
+                    message += subject + verb + object + ', Yes or No?\n'
+                else:
+                    raise Exception("Not supported")
+
+        if dataset == 'conll04':
             message += '\n'
             message += 'Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/no) for each relation.\n'
             message += '\n'
-            message += 'Given the text: $TEXT$\n'
-            message += 'Answer:'
-            return message
+        elif dataset == 'ade':
+            pass
+        message += 'Given the text: $TEXT$\n'
+        message += 'Answer:'
+        return message
 
 
 
