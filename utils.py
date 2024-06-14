@@ -403,23 +403,23 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
 def run_llm_embed(client, is_async, model, text_dict):
     def llm_worker(id, text_list):
         if model == 'text-embedding-3-large':
-            output = []
+            output = {}
             for text in text_list:
                 response = client.embeddings.create(
                     input=text,
                     model=model
                 )
-                output.append(response.data[0].embedding)
-            return id, output # output is a list of text embeddings. A text embedding can be a list itself.
+                output[text] = response.data[0].embedding
+            return id, output # output is a dict, with id is the entity, and value is the text embedding. A text embedding is a list itself.
         elif model == 'umgpt':
-            output = []
+            output = {}
             for text in text_list:
                 response = client.embeddings.create(
                     input=text,
                     model='text-embedding-3-large'
                 )
-                output.append(response.data[0].embedding)
-            return id, output # output is a list of text embeddings. A text embedding can be a list itself.
+                output[text] = response.data[0].embedding
+            return id, output # output is a dict, with id is the entity, and value is the text embedding. A text embedding is a list itself.
         else:
             raise Exception('Model Not Supported!')
     
