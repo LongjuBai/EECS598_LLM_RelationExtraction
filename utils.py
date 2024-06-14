@@ -565,7 +565,7 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
                     object_type = relation[0][-3:]
                     message += '\n'
                     message += "Given the text: " + example['text'] + '\n'
-                    message += object + ' ' + augment_relation_types[verb] + ' ' + subject + ', Yes or No?\n'
+                    message += subject + ' ' + augment_relation_types[verb] + ' ' + object + ', Yes or No?\n'
                     message += "Answer:\n"
                     message += "Yes\n"
 
@@ -573,7 +573,7 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
                     if (relation[2][-3:], relation[0][-3:]) in valid_type_dict[relation[1]]:
                         message += '\n'
                         message += "Given the text: " + example['text'] + '\n'
-                        message +=  subject + ' ' + augment_relation_types[relation[1]] + ' ' + object + ', Yes or No?\n'
+                        message +=  object + ' ' + augment_relation_types[relation[1]] + ' ' + subject + ', Yes or No?\n'
                         message += "Answer:\n"
                         message += "No\n"
                 elif dataset == 'ade':
