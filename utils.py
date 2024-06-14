@@ -498,19 +498,31 @@ def dispart_prompt(prompt):
     messages.append({"role": "user", "content": prompt[-1].split('\n')[0]})
     return messages
 
+
 # TODO: Handle duplicate context examples
 # samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
 def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
-    data = json.load(open(f'datasets598/{dataset}/preprocessed.json', 'r'))['train']
-
-    neigh = NearestNeighbors(n_neighbors=context_len // len(embeddings), n_jobs=-1).fit([sample['embedding'] for sample in samples_gt])
+    neigh = NearestNeighbors(n_neighbors=context_len // len(embeddings), n_jobs=-1).fit([sample['embedding'] for sample in samples_gt.values()])
     _, neigh_ids = neigh.kneighbors(embeddings)
-    context_samples = [data[id] for id in neigh_ids.flatten()]
+    context_samples = [samples_gt.values()[id] for id in neigh_ids.flatten()]
+
+    for i, sample in enumerate(context_samples):
+        entities = set()
+        for relation in sample['relations']:
+            entities.add(relation[0])
+            entities.add(relation[-1])
+        context_samples[i]['entities'] = list(entities)
 
     if mode == 'entity':
         prompt = open(f'prompts/{dataset}/prompt_tot_entity.txt', 'r').read()
         prompt = prompt.split('\n\n')
-        prompt_new = prompt[0]
-        for sample in prompt[1:-2]:
-            prompt_new
+        prompt_new = prompt[0] + '\n\n' # example instruction
+        for i, sample in context_samples:
+            entities = set()
+            for relation in sample['relations']:
+                entities.add(relation[0])
+                entities.add(relation[-1])
+            entities_str = '[' + ', '.join([f'"{entity}"' for entity in entities]) + ']'
+            prompt_new += f'TEXT: {sample["text"]}\nEntities: {entities_str}\n\n'
+        prompt_new += prompt[-2] + '\n\n' + prompt[-1]
     elif mode == 'sentence':    
