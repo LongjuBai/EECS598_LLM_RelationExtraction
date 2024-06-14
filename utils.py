@@ -506,13 +506,6 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
     _, neigh_ids = neigh.kneighbors(embeddings)
     context_samples = [samples_gt.values()[id] for id in neigh_ids.flatten()]
 
-    for i, sample in enumerate(context_samples):
-        entities = set()
-        for relation in sample['relations']:
-            entities.add(relation[0])
-            entities.add(relation[-1])
-        context_samples[i]['entities'] = list(entities)
-
     if mode == 'entity':
         prompt = open(f'prompts/{dataset}/prompt_tot_entity.txt', 'r').read()
         prompt = prompt.split('\n\n')
@@ -526,3 +519,62 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
             prompt_new += f'TEXT: {sample["text"]}\nEntities: {entities_str}\n\n'
         prompt_new += prompt[-2] + '\n\n' + prompt[-1]
     elif mode == 'sentence':    
+        # get the question message, with ICL examples for sentences
+        # ask ChatGPT
+        # get the dataset-specific valid type dict and augment dict first
+        if dataset == 'ade':
+            valid_type_dict = {
+                "Adverse-Effect": set([("Adverse-Effect", "Drug")])
+            }
+            augment_relation_types = {
+                'Adverse-Effect': 'is an adeverse effect for drug'
+            }
+        elif dataset == 'conll04':
+            # get the entity types for each relation type within conll04 dataset
+            valid_type_dict = {
+                "Work For": set([("Per", "Org")]),
+                "Kill": set([("Per", "Per")]),
+                "OrgBased In": set([("Org", "Loc")]),
+                "Live In": set([("Per", "Loc")]),
+                "Located In": set([("Loc", "Loc")])
+            }
+            augment_relation_types = {
+                'Work For': 'Work(ed) For',
+                'Kill': 'Kill(ed)',
+                'OrgBased In': 'is(was) OrgBased In',
+                'Live In': 'Live(d) In',
+                'Located In': 'is(was) Located In'
+            }
+
+            message = "Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.\n"
+            # get the ground truth in the training examples
+            # set the true relations as Yes answers
+            # if reverse gives the wrong relations, set as No answers
+            for example in context_samples: # example is {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}
+                relations = example['relations'] # a list of relations
+                for relation in relations:
+                    message += '\n'
+                    message += "Given the text: " + example['text'] + '\n'
+                    message += "Is " + relation[0] + ' ' + augment_relation_types[relation[1]] + ' ' + relation[2] + '? (Yes/No)\n'
+                    message += "Answer:\n"
+                    message += "Yes\n"
+
+                    # negative sampling
+                    if (relation[2][-3:], relation[0][-3:]) in valid_type_dict[relation[1]]:
+                        message += '\n'
+                        message += "Given the text: " + example['text'] + '\n'
+                        message += "Is " + relation[0] + ' ' + augment_relation_types[relation[1]] + ' ' + relation[2] + '? (Yes/No)\n'
+                        message += "Answer:\n"
+                        message += "No\n"
+            message += '\n'
+            message += 'Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/no) for each relation.\n'
+            message += '\n'
+            message += 'Given the text: $TEXT$\n'
+            message += 'Answer:'
+            return message
+
+
+
+
+
+        
