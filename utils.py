@@ -89,7 +89,7 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
         else:
             raise Exception('Model Not Supported!')
     
-    def llm_worker(id, sample):
+    def llm_worker(id, sample, prompt):
         if multi_round:
             messages = dispart_prompt(prompt.replace('$TEXT$', sample['text']))
         else:
@@ -134,9 +134,8 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
             return id, completion.choices[0].message.content
         else:
             raise Exception('Model Not Supported!')
-    
     if not is_async:
-        responses = dict([llm_worker(id, sample) for id, sample in tqdm(data.items())])
+        responses = dict([llm_worker(id, sample, prompt) for id, sample in tqdm(data.items())])
     else:
         responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()]), debug=True))
     return responses

@@ -128,7 +128,7 @@ def get_response_from_llm(args):
         test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
-    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=True)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=False)
     if args.relation_type_extraction: 
         raise Exception('???')
         # responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data, dataset=args.dataset)
