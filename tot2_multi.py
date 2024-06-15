@@ -64,30 +64,30 @@ def get_response_from_llm(args):
         data = load_nyt()
         test_data = data[args.part]
         valid_type_dict = {
-            "/location/location/contains": set([("location", "location")]),
-            "/people/person/nationality": set([("people", "person")]),
-            "/people/person/place_lived": set([("people", "person")]),
-            "/business/person/company": set([("business", "person")]),
-            "/location/country/capital": set([("location", "country")]),
-            "/location/neighborhood/neighborhood_of": set([("location", "neighborhood")]),
-            "/people/person/place_of_birth": set([("people", "person")]),
-            "/location/country/administrative_divisions": set([("location", "country")]),
-            "/location/administrative_division/country": set([("location", "administrative_division")]),
-            "/people/deceased_person/place_of_death": set([("people", "deceased_person")]),
-            "/people/person/children": set([("people", "person")]),
-            "/business/company/founders": set([("business", "company")]),
-            "/business/company/place_founded": set([("business", "company")]),
-            "/business/company_shareholder/major_shareholder_of": set([("business", "company_shareholder")]),
-            "/sports/sports_team_location/teams": set([("sports", "sports_team_location")]),
-            "/sports/sports_team/location": set([("sports", "sports_team")]),
-            "/business/company/major_shareholders": set([("business", "company")]),
-            "/people/person/religion": set([("people", "person")]),
-            "/business/company/advisors": set([("business", "company")]),
-            "/people/ethnicity/geographic_distribution": set([("people", "ethnicity")]),
-            "/people/person/ethnicity": set([("people", "person")]),
-            "/people/ethnicity/people": set([("people", "ethnicity")]),
-            "/people/person/profession": set([("people", "person")]),
-            "/business/company/industry": set([("business", "company")])
+            "/location/location/contains": set([("Loc", "Loc")]),
+            "/people/person/nationality": set([("Per", "Loc")]),
+            "/people/person/place_lived": set([("Per", "Loc")]),
+            "/business/person/company": set([("Per", "Org")]),
+            "/location/country/capital": set([("Loc", "Loc")]),
+            "/location/neighborhood/neighborhood_of": set([("Loc", "Loc")]),
+            "/people/person/place_of_birth": set([("Per", "Loc")]),
+            "/location/country/administrative_divisions": set([("Loc", "Loc")]),
+            "/location/administrative_division/country": set([("Loc", "Loc")]),
+            "/people/deceased_person/place_of_death": set([("Per", "Loc")]),
+            "/people/person/children": set([("Per", "Per")]),
+            "/business/company/founders": set([("Org", "Per")]),
+            "/business/company/place_founded": set([("Org", "Loc")]),
+            "/business/company_shareholder/major_shareholder_of": set([("Per", "Org")]),
+            "/sports/sports_team_location/teams": set([("Loc", "Org")]),
+            "/sports/sports_team/location": set([("Org", "Loc")]),
+            "/business/company/major_shareholders": set([("Org", "Per")]),
+            "/people/person/religion": set([("Per", "Org")]),
+            "/business/company/advisors": set([("Org", "Per")]),
+            "/people/ethnicity/geographic_distribution": set([("Loc", "Loc")]),
+            "/people/person/ethnicity": set([("Per", "Loc"), ("Per", "Per")]),
+            "/people/ethnicity/people": set([("Loc", "Per"), ("Per", "Per")]),
+            "/people/person/profession": set([("Per", "Org")]),
+            "/business/company/industry": set([("Org", "Org")])
         }
 
 
@@ -128,7 +128,7 @@ def get_response_from_llm(args):
         test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
-    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=False)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=True)
     if args.relation_type_extraction: 
         raise Exception('???')
         # responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data, dataset=args.dataset)
