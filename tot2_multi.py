@@ -63,6 +63,63 @@ def get_response_from_llm(args):
     elif dataset == 'nyt':
         data = load_nyt()
         test_data = data[args.part]
+        valid_type_dict = {
+            "contains": set([("location", "location")]),
+            "nationality": set([("people", "person")]),
+            "place_lived": set([("people", "person")]),
+            "company": set([("business", "person")]),
+            "capital": set([("location", "country")]),
+            "neighborhood_of": set([("location", "neighborhood")]),
+            "place_of_birth": set([("people", "person")]),
+            "administrative_divisions": set([("location", "country")]),
+            "country": set([("location", "administrative_division")]),
+            "place_of_death": set([("people", "deceased_person")]),
+            "children": set([("people", "person")]),
+            "founders": set([("business", "company")]),
+            "place_founded": set([("business", "company")]),
+            "major_shareholder_of": set([("business", "company_shareholder")]),
+            "teams": set([("sports", "sports_team_location")]),
+            "location": set([("sports", "sports_team")]),
+            "major_shareholders": set([("business", "company")]),
+            "religion": set([("people", "person")]),
+            "advisors": set([("business", "company")]),
+            "geographic_distribution": set([("people", "ethnicity")]),
+            "ethnicity": set([("people", "person")]),
+            "people": set([("people", "ethnicity")]),
+            "profession": set([("people", "person")]),
+            "industry": set([("business", "company")])
+        }
+
+
+        augment_relation_types = {
+            'contains': 'contains',
+            'nationality': 'has nationality of',
+            'place_lived': 'is(was) living in',
+            'company': 'is(was) working in',
+            'capital': "'s capital is",
+            'neighborhood_of': 'is a neighborhood of',
+            'place_of_birth': 'was born in',
+            'administrative_divisions': 'has an administrative division called',
+            'country': 'is located in the country called',
+            'place_of_death': 'was dead in',
+            'children': 'has(had) a child called',
+            'founders': 'was founded by',
+            'place_founded': 'was founded in',
+            'major_shareholder_of': 'is a major shareholder of',
+            'teams': 'has a team called',
+            'location': 'is a team located in',
+            'major_shareholders': 'has a major shareholder called',
+            'religion': 'has the religion of',
+            'advisors': 'has an advisors called',
+            'geographic_distribution': 'are geographically distributed in',
+            'ethnicity': "'s ethnicity is",
+            'people': 'is the ethnicity of',
+            'profession': 'has(had) a profession in',
+            'industry': 'is in the industry of'
+        }
+
+
+
     else:
         raise Exception('Dataset Not Supported!')
     if args.test_k >= 0:
