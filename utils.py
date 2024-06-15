@@ -494,7 +494,7 @@ def compute_metrics(counter):
 def make_client(model, is_async, api_key):
     client_umgpt = (AsyncAzureOpenAI if is_async else AzureOpenAI)(
                 api_key=api_key,
-                api_version="2024-02-01",
+                api_version="2024-02-01", #"2024-02-01",
                 azure_endpoint = 'https://api.umgpt.umich.edu/azure-openai-api-unlimited',
                 organization = '001145'
             )

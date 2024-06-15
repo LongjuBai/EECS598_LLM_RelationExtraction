@@ -168,8 +168,8 @@ def get_response_from_llm(args):
                 if dataset == 'ade':
                     relation_prompt_string.append(f'\n{entity_1} {augment_relation_types[relation_type]} {entity_2}, Yes or No?') # Yes/Likely/No  
                     relation_answer_string.append((entity_1.lower(), entity_2.lower()))
-                if dataset == 'conll04':
-                    relation_prompt_string.append(f'\nDoes(Did) {entity_1} {augment_relation_types[relation_type]} {entity_2}? (Yes/No)') # Yes/Likely/No
+                if dataset == 'conll04' or 'nyt':
+                    relation_prompt_string.append(f'\n{entity_1} {augment_relation_types[relation_type]} {entity_2}, Yes or No?') # Yes/Likely/No
                     relation_answer_string.append((entity_pair[0].strip('"').lower(), f'{relation_type}'.lower(), entity_pair[1].strip('"').lower()))
 
         # record to the dictionary
@@ -197,7 +197,7 @@ def get_response_from_llm(args):
             shutil.copy2(prompt_path_para, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
-    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, use_ICL=True)
+    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, use_ICL=args.use_icl)
 
     # metrics initialization
     counters = [{r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']} for _ in range(2)]
@@ -300,6 +300,7 @@ if __name__ == "__main__":
     parser.add_argument('--part', default='test')
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--test_ids', nargs="*", type=int, default=[])
+    parser.add_argument('--use_icl', action='store_true')
 
     parser.add_argument('--prompt_dir', type=str, default='')
 
