@@ -343,7 +343,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
     def completion_with_backoff(**kwargs):
         return client.chat.completions.create(**kwargs)
 
-    def llm_worker_multi(relation_prompt_string, id, sample):
+    def llm_worker_multi(relation_prompt_string, id, sample, prompt):
         if model == 'gpt-3.5-turbo-0125':
             responses = ''
             for relation in relation_prompt_string:
@@ -412,7 +412,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
             raise Exception('Model Not Supported!')
     
     if not is_async:
-        responses = dict([llm_worker_multi(relation_prompt_string_dict[id], id, sample) for id, sample in tqdm(data.items())])
+        responses = dict([llm_worker_multi(relation_prompt_string_dict[id], id, sample, prompt) for id, sample in tqdm(data.items())])
     else:
         responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()]), debug=True))
     return responses
