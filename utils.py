@@ -26,6 +26,8 @@ def dict_random_k(dic, k):
 
 
 def parse_list_string(s, marks_removed=''):
+    if type(s) is not str:
+        return []
     start, end = s.find('['), s.find(']')
     if start == -1 or end == -1:
         return []

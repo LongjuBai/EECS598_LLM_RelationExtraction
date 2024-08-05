@@ -1,0 +1,2460 @@
+{
+    "raw_entity_output": {
+        "17": "[\"Hakawati Theatre:Loc\", \"Arab east Jerusalem:Loc\", \"Palestinians:Per\"]",
+        "23": "[\"PERUGIA:Loc\", \"Italy:Loc\"]",
+        "34": "[\"Reagan:Per\"]",
+        "35": "[\"Washington:Loc\", \"Reagan:Per\"]",
+        "36": "[\"University of Virginia:Loc\", \"Charlottesville:Loc\", \"Congress:Org\", \"Central America:Loc\", \"Contra rebels:Org\"]",
+        "56": "[\"Wright:Per\", \"University of Texas:Org\", \"Nixon:Per\", \"Watergate:Org\", \"White House:Loc\"]",
+        "77": "[\"Nikita Khrushchev:Per\", \"President Kennedy:Per\", \"Cuba:Loc\"]",
+        "79": "[\"Anastas Mikoyan:Per\", \"Soviet:Org\", \"Khrushchev:Per\"]",
+        "80": "[\"Mikoyan:Per\", \"Khrushchev:Per\", \"Soviet:Org\"]",
+        "89": "[\"Alekseev:Per\", \"Moscow:Loc\"]",
+        "92": "[\"MILAN:Loc\", \"Italy:Loc\"]",
+        "130": "[\"Hot Springs National Park:Loc\", \"Ark.:Loc\"]",
+        "136": "[\"Aguadilla, Puerto Rico:Loc\"]",
+        "138": "[\"Fort Wainwright annex:Loc\", \"Fairbanks, Alaska:Loc\"]",
+        "150": "[\"ATLANTIC CITY, N.J.:Loc\"]",
+        "171": "[\"FRESNO:Loc\", \"Calif.:Loc\"]",
+        "188": "[\"Moscow:Loc\", \"Leningrad:Loc\", \"Kirov Ballet:Org\", \"Bolshoi Ballet:Org\", \"Yerevan:Loc\", \"U.S.:Loc\", \"June Anderson:Per\", \"Carol Vaness:Per\", \"British:Loc\"]",
+        "195": "[\"Michael D. Papagiannis:Per\", \"Boston University:Org\", \"Earth:Loc\"]",
+        "197": "[\"Ostined:Loc\", \"Lesny:Loc\", \"Liberec:Loc\", \"Gmund:Loc\", \"Czechoslovakia:Loc\", \"Austria:Loc\"]",
+        "198": "[\"BONE:Loc\", \"Idaho:Loc\"]",
+        "200": "[\"Bingham County:Loc\", \"Bill Gordon:Per\"]",
+        "285": "[\"Yves Fortier:Per\", \"Canada:Loc\"]",
+        "333": "[\"Donald Miller:Per\", \"United Federation of Teachers:Org\"]",
+        "356": "[\"Michael Coats:Per\", \"Challenger:Org\"]",
+        "372": "[\"California:Loc\", \"Ontario:Loc\", \"El Toro:Loc\"]",
+        "379": "[\"Yellowstone, Wyo.:Loc\", \"McAllen, Texas:Loc\"]",
+        "443": "[\"Steve Wright:Per\", \"DOE:Org\", \"SRP:Org\"]",
+        "464": "[\"Bert Byers:Per\", \"Cecil Field Naval Air Station:Loc\"]",
+        "475": "[\"Urutigoechea:Per\", \"Bayonee:Loc\", \"Bonloc:Loc\", \"Poitiers:Loc\"]",
+        "490": "[\"Judith C. Toth:Per\", \"Maryland:Loc\", \"House of Delegates:Org\"]",
+        "503": "[\"Center for Disease Control:Org\", \"Fort Collins:Loc\"]",
+        "521": "[\"Hatcher:Per\", \"Onondaga territory:Loc\", \"Shoshone-Bannock reservation:Loc\"]",
+        "541": "[\"Albert O. Harjula:Per\", \"Thomaston:Loc\", \"Department of Inland Fisheries and Wildlife:Org\"]",
+        "556": "[\"Savannah River:Loc\", \"Energy Department:Org\", \"Idaho Falls:Loc\"]",
+        "561": "[\"President Nixon:Per\", \"U.S.:Loc\", \"Bush administration:Org\"]",
+        "563": "[\"President Reagan:Per\", \"Ralph K. Winter:Per\", \"Kenneth Starr:Per\", \"2nd U.S. Circuit Court of Appeals:Org\", \"U.S. Circuit Court of Appeals for the District of Columbia:Org\", \"New York:Loc\"]",
+        "630": "[\"Reagan:Per\", \"Normandy:Loc\"]",
+        "670": "[\"Darryl Breniser:Per\", \"Blue Ball:Loc\"]",
+        "786": "[\"Terry Hands:Per\", \"Stratford-upon-Avon:Loc\", \"London:Loc\", \"Barbican:Loc\"]",
+        "819": "[\"NASHVILLE:Loc\", \"Tenn.:Loc\"]",
+        "835": "[\"TUNIS:Loc\", \"Tunisia:Loc\", \"AP:Org\"]",
+        "841": "[\"Gadhafi:Per\", \"U.S.:Loc\", \"Libya:Loc\", \"Navy:Org\"]",
+        "844": "[\"U.S.:Loc\", \"Arab League:Org\", \"Chedli Klibi:Per\"]",
+        "881": "[\"Abrams:Per\", \"Latin America:Loc\", \"President-elect Bush:Per\"]",
+        "895": "[\"King:Per\", \"Memphis:Loc\", \"Tenn.:Loc\"]",
+        "913": "[\"Eduard A. Shevardnadze:Per\", \"China:Loc\", \"Soviet:Org\"]",
+        "922": "[\"Beijing:Loc\", \"Li:Per\", \"China:Loc\", \"Vietnamese:Loc\"]",
+        "924": "[\"Cambodia:Loc\", \"Khmer Rouge:Org\"]",
+        "942": "[\"Walesa:Per\", \"Poles:Per\", \"Poland:Loc\", \"Solidarity:Org\"]",
+        "957": "[\"Bradley First Air:Org\", \"Ottawa:Loc\", \"Canada:Loc\", \"Montreal:Loc\", \"Emery Air Freight Corp.:Org\", \"Dayton:Loc\"]",
+        "966": "[\"Upper Marlboro:Loc\", \"Eastport International:Org\", \"Challenger:Org\", \"Gemini 6000:Org\"]",
+        "1004": "[\"Sultan Al-Saud:Per\", \"Saudi Arabia:Loc\", \"Rodolfo Neri Vela:Per\", \"Mexico:Loc\"]",
+        "1029": "[\"Rocky Mountains:Loc\", \"Montana:Loc\", \"Livingston:Loc\"]",
+        "1166": "[\"Folke Nyberg:Per\", \"University of Washington:Org\", \"Seattle:Loc\", \"Pacific Rim:Loc\"]",
+        "1167": "[\"Seattle:Loc\", \"Puget Sound:Loc\", \"Lake Washington:Loc\"]",
+        "1188": "[\"Chicago:Loc\", \"U.S.:Loc\", \"William J. Bennett:Per\"]",
+        "1197": "[\"Samuel L. Husk:Per\", \"Council of Great City Schools:Org\"]",
+        "1273": "[\"Lt. Nettie Johnson:Per\", \"Navy:Org\"]",
+        "1285": "[\"U.S. District G. Ernest Tidwell:Per\"]",
+        "1323": "[\"Francisco Rojas:Per\", \"Pemex:Org\"]",
+        "1326": "[\"Ricardo Camero Cardiel:Per\", \"Ciudad Madero:Loc\", \"Notimex:Org\"]",
+        "1338": "[\"Aussedat-Rey SA:Org\", \"Europe:Loc\"]",
+        "1340": "[\"Ann Silvernail:Per\", \"International Paper:Org\", \"French:Loc\"]",
+        "1354": "[\"GIESSEN:Loc\", \"West Germany:Loc\"]",
+        "1368": "[\"Minox:Org\", \"Leica:Org\", \"Wetzlar:Loc\", \"Rollei:Org\", \"Braunschweig:Loc\"]",
+        "1369": "[\"Hans Guenther von Zydowitz:Per\", \"Leica:Org\"]",
+        "1405": "[\"Scott Hinton:Per\", \"Elders Futures Inc.:Org\"]",
+        "1431": "[\"James K. Batten:Per\", \"Knight-Ridder:Org\"]",
+        "1443": "[\"Middletown:Loc\", \"Eaglebrook East:Org\", \"Eaglebrook Plastics Inc.:Org\", \"Chicago:Loc\"]",
+        "1471": "[\"BEIRUT:Loc\", \"Lebanon:Loc\", \"AP:Org\"]",
+        "1472": "[\"Organization of the Oppressed on Earth:Org\", \"U.S. Marine Lt. William R. Higgins:Per\"]",
+        "1474": "[\"American spy Higgins:Per\", \"Sheik Abdul Karim Obeid:Per\"]",
+        "1507": "[\"John Jamison:Per\", \"National Weather Service:Org\", \"Galveston:Loc\"]",
+        "1552": "[\"Pat Epps:Per\", \"Greenland:Loc\", \"Greenland Expedition Society:Org\"]",
+        "1563": "[\"Vaughan:Per\", \"Army Air Force:Org\"]",
+        "1580": "[\"Mrs. Say:Per\", \"United States:Loc\", \"Cadiz:Loc\", \"Kentucky:Loc\"]",
+        "1628": "[\"NEW ORLEANS:Loc\"]",
+        "1640": "[\"Pacific Marine Inc.:Org\", \"Houston:Loc\", \"Grand Isle:Loc\"]",
+        "1648": "[\"Sandi Sacher:Per\", \"Boise, Idaho:Loc\"]",
+        "1650": "[\"Alaska:Loc\", \"U.S.:Loc\"]",
+        "1669": "[\"Tom Van Sant:Per\", \"Santa Monica:Loc\"]",
+        "1689": "[\"Virginia:Loc\", \"New Hampshire:Loc\", \"Gerald Baliles:Per\"]",
+        "1692": "[\"Bush:Per\", \"Sununu:Per\", \"Virginia:Loc\", \"Baliles:Per\"]",
+        "1731": "[\"Bush administration:Org\", \"European Community:Org\", \"U.S.:Loc\"]",
+        "1769": "[\"State Department:Org\", \"Kenya:Loc\", \"Mombasa:Loc\"]",
+        "1773": "[\"China:Loc\", \"Shaw Yu-ming:Per\", \"Taiwan:Loc\", \"Washington:Loc\", \"Government Information:Org\"]",
+        "1776": "[\"Taiwan information center:Org\", \"China:Loc\", \"Washington:Loc\", \"National Press Building:Loc\", \"U.S.:Loc\"]",
+        "1785": "[\"Phenergan:Org\", \"Wyeth-Ayerst Laboratories:Org\", \"Philadelphia:Loc\"]",
+        "1794": "[\"Cape Hatteras, N.C.:Loc\", \"Jacksonville, N.C.:Loc\", \"Dodge City, Kan.:Loc\"]",
+        "1797": "[\"Klamath Falls, Ore.:Loc\", \"Yuma, Ariz.:Loc\"]",
+        "1842": "[\"Fort Lewis:Loc\", \"Oregon:Loc\"]",
+        "1844": "[\"Dave Olson:Per\", \"Payette National Forest:Loc\", \"Idaho:Loc\"]",
+        "1851": "[\"northeastern Oregon:Loc\", \"La Grande:Loc\"]",
+        "1852": "[\"Mike Ferris:Per\", \"Wallowa-Whitman National Forest:Loc\", \"Malheur National Forest:Loc\", \"Baker:Loc\", \"Unity:Loc\", \"Enterprise:Loc\", \"John Day:Loc\", \"Forest Service:Org\"]",
+        "1885": "[\"David Fleischer:Per\", \"John Stembridge:Per\"]",
+        "1914": "[\"NRC:Org\", \"DOE:Org\", \"Robert Bernero:Per\"]",
+        "1936": "[\"Khmer Rouge leader Khieu Samphan:Per\"]",
+        "1946": "[\"Grand Isle:Loc\", \"La.:Loc\"]",
+        "1965": "[\"Malcolm Grant:Per\", \"Sabine Pass:Loc\", \"Louisiana:Loc\", \"Port Arthur:Loc\"]",
+        "1968": "[\"Lutie Dyson:Per\", \"Lake Charles:Loc\", \"La:Loc\"]",
+        "1996": "[\"DEM:Org\", \"Rhode Island:Loc\", \"Warwick:Loc\", \"Pawtuxet River:Loc\"]",
+        "2000": "[\"Jack Frazier:Per\", \"Rotary Club:Org\"]",
+        "2003": "[\"Tom Defelice:Per\", \"Warwick:Loc\", \"Disney World:Loc\"]",
+        "2010": "[\"Sherman Finesilver:Per\", \"John C. Keene:Per\", \"U.S.:Loc\"]",
+        "2112": "[\"Terry Branstad:Per\", \"Booth Gardner:Per\", \"National Governors' Association:Org\", \"Washington:Loc\"]",
+        "2116": "[\"Idaho:Loc\", \"Cecil Andrus:Per\"]",
+        "2140": "[\"Vietnam:Loc\", \"Cambodian government:Org\", \"Hun Sen:Per\", \"U.N.:Org\", \"Secretary-General Javier Perez de Cuellar:Per\"]",
+        "2154": "[\"New England Telephone:Org\", \"XBT Telecom:Org\", \"John Johnson:Per\"]",
+        "2156": "[\"Bernice McIntyre:Per\", \"Public Utilities Commission:Org\"]",
+        "2229": "[\"Anchorage, Alaska:Loc\", \"Seoul, South Korea:Loc\"]",
+        "2254": "[\"Mason:Per\", \"Louis Sullivan:Per\", \"HHS:Org\"]",
+        "2270": "[\"Joseph R. Biden:Per\", \"Del:Loc\", \"Senate Judiciary Committee:Org\"]",
+        "2300": "[\"U.S.:Loc\", \"Pentagon:Org\"]",
+        "2308": "[\"Revolutionary Justice Organization:Org\", \"Cicippio:Per\", \"Beirut:Loc\", \"An-Nahar:Org\"]",
+        "2312": "[\"Anderson:Per\", \"Beirut:Loc\", \"The Associated Press:Org\"]",
+        "2314": "[\"Jacobsen:Per\", \"Anderson:Per\", \"London:Loc\", \"Colorado:Loc\", \"Iranian government:Org\"]",
+        "2328": "[\"Wyatt McCauley:Per\", \"CH2M Hill:Org\", \"Denver:Loc\"]",
+        "2383": "[\"Houston:Loc\", \"Ellington Air Force Base:Loc\", \"Galveston:Loc\", \"Texas:Loc\"]",
+        "2416": "[\"The president:Per\", \"William P. Albrecht:Per\", \"Commodity Futures Trading Commission:Org\"]",
+        "2420": "[\"Ogdon:Per\", \"Manygate Management:Org\", \"London:Loc\", \"Charing Cross Hospital:Loc\"]",
+        "2481": "[\"Debra Sweiger:Per\", \"Issaquah:Loc\", \"King County O Investigator Vaughn Van Zant:Per\"]",
+        "2493": "[\"Mike Norton:Per\", \"Ken Fimberg:Per\", \"Peter Murtha:Per\", \"Denver:Loc\", \"Justice Department:Org\", \"Washington:Loc\"]",
+        "2522": "[\"Kim Dae-jung:Per\", \"South Korea:Loc\"]",
+        "2559": "[\"Washington state:Loc\", \"Cascade range:Loc\", \"Canadian border:Loc\", \"Greg Thayer:Per\", \"U.S. Forest Service:Org\"]",
+        "2561": "[\"California:Loc\", \"Sierra Nevada foothills:Loc\"]",
+        "2600": "[\"Michael Harrington:Per\", \"Joseph S. Murphy:Per\", \"City University:Org\"]",
+        "2626": "[\"Idaho:Loc\", \"Oregon:Loc\", \"California:Loc\", \"Washington:Loc\", \"Boise Interagency Fire Center:Org\"]",
+        "2628": "[\"Idaho:Loc\", \"Cecil Andrus:Per\"]",
+        "2640": "[\"Jeff Widener:Per\", \"Bangkok:Loc\", \"AP LaserPhoto:Org\"]",
+        "2644": "[\"Bangkok:Loc\", \"Klong Toey:Loc\"]",
+        "2697": "[\"Arensberg:Per\", \"Ofer Bar-Yosef:Per\", \"Bernard Vandermeersch:Per\", \"Harvard University:Org\", \"University of Bordeaux:Org\", \"Kebara:Loc\"]",
+        "2748": "[\"Carlos Tenev:Per\", \"Peronist Party:Org\"]",
+        "2774": "[\"Guernsey:Loc\", \"Britain:Loc\", \"Channel Islands:Loc\", \"France:Loc\"]",
+        "2833": "[\"Wharf Holdings:Org\", \"Hong Kong:Loc\"]",
+        "2838": "[\"Jack MacAllister:Per\", \"Hong Kong:Loc\", \"U S West inc.:Org\"]",
+        "2885": "[\"Lawrence Kane Jr.:Per\", \"Cincinnati, Ohio:Loc\", \"Home State:Org\"]",
+        "2901": "[\"Jean-Luckenson:Per\", \"Signal FM:Org\"]",
+        "2923": "[\"CCRI-CG:Org\", \"EZLN:Org\", \"Mexico:Loc\"]",
+        "2976": "[\"Iranian:Loc\", \"Moscow:Loc\", \"ITAR-TASS:Org\"]",
+        "2977": "[\"Moscow:Loc\", \"ITAR-TASS:Org\"]",
+        "2979": "[\"Armenian:Loc\", \"Tehran:Loc\", \"Stepanakert:Loc\", \"Nagorno-Karabakh province:Loc\", \"Azerbaijan:Loc\"]",
+        "3023": "[\"Gianfranco Fini:Per\", \"National Alliance:Org\"]",
+        "3074": "[\"Namialo assembly area:Loc\", \"Nampula Province:Loc\", \"Northern Improvement Brigade:Org\", \"Nampula Provincial Command:Org\"]",
+        "3128": "[\"Tokyo:Loc\", \"NIHON KEIZAI SHIMBUN:Org\"]",
+        "3226": "[\"Branko Vojnic:Per\", \"Marko Atlagic:Per\", \"Dr. Milan Ernjakovic:Per\", \"Serb Radical Party:Org\", \"Krajina Serb Democratic Party:Org\", \"Beli Manastir:Loc\"]",
+        "3232": "[\"BSP:Org\", \"SDS:Org\", \"Bosnia:Loc\", \"Sofia:Loc\", \"BTA:Org\"]",
+        "3276": "[\"Havana:Loc\", \"Radio Rebelde Network:Org\"]",
+        "3294": "[\"Security Forces:Org\", \"Paris:Loc\", \"AFP:Org\"]",
+        "3303": "[\"Israeli Aircraft:Org\", \"Iqlim al-Tuffah:Loc\", \"Beirut:Loc\", \"Radio Lebanon:Org\"]",
+        "3327": "[\"Dutch Air Force:Org\", \"Bosnia:Loc\", \"The Hague:Loc\", \"ANP:Org\"]",
+        "3392": "[\"Arrow Missile Program:Org\", \"Jerusalem:Loc\", \"THE JERUSALEM POST:Org\"]",
+        "3393": "[\"Jerusalem:Loc\", \"THE JERUSALEM POST:Org\"]",
+        "3470": "[\"Gerald Steinberg:Per\", \"Bar-Ilan University:Org\"]",
+        "3498": "[\"Steven Bryen:Per\", \"Pentagon:Org\", \"U.S.:Loc\"]",
+        "3501": "[\"Pedatzur:Per\", \"Massachusetts Institute of Technology:Org\"]",
+        "3577": "[\"North Korean:Loc\", \"Australian:Loc\", \"Jakarta:Loc\", \"Bangkok:Loc\", \"United States:Loc\", \"Japan:Loc\", \"South Korea:Loc\"]",
+        "3585": "[\"Australian Government:Org\", \"North Korean Government:Org\", \"Australia:Loc\"]",
+        "3595": "[\"North Korea:Loc\", \"Nuclear Nonproliferation Treaty:Org\", \"Yongbyon:Loc\"]",
+        "3631": "[\"John Savage:Per\", \"Nova Scotia:Loc\", \"Cuba:Loc\", \"Ricardo Cabrisas:Per\"]",
+        "3643": "[\"Miguel Rodriguez Mendoza:Per\", \"Venezuela:Loc\", \"U.S. Environmental Protection Agency:Org\", \"GATT:Org\"]",
+        "3687": "[\"Belarusian:Org\"]",
+        "3747": "[\"Esprit Project:Org\", \"Duesseldorf:Loc\", \"HANDELSBLATT:Org\"]",
+        "3756": "[\"Jordi Aguil\u00f3:Per\", \"CNM:Org\"]",
+        "3782": "[\"Finandes financial company:Org\", \"Santiago:Loc\", \"Valparaiso:Loc\"]",
+        "3787": "[\"Rio de Janeiro:Loc\", \"O GLOBO:Org\"]",
+        "3788": "[\"Sao Paulo:Loc\", \"Sao Paulo State Attorney's Office:Org\", \"Institute for Nuclear and Energy Research (Ipen):Org\", \"National Nuclear Energy Commission (CNEN):Org\"]",
+        "3789": "[\"Association of Ipen Employees:Org\", \"Federal Employees Union in Sao Paulo:Org\", \"Sao Paulo:Loc\", \"Ipen:Org\"]",
+        "3798": "[\"Guatemala City:Loc\", \"Teleonce Television:Org\"]",
+        "3853": "[\"Yuriy Kuzmenko:Per\", \"Stanislav Mikhaylovich Korochkin:Per\", \"Magadan Basin:Loc\", \"Okhotrybvod:Org\", \"Okhotsk Sea:Loc\", \"Washington:Loc\", \"Bering Sea:Loc\"]",
+        "3901": "[\"Helsinki:Loc\", \"Suomen Yleisradio Network:Org\"]",
+        "3911": "[\"Lima:Loc\", \"EL COMERCIO:Org\"]",
+        "3916": "[\"Mangunchay irrigation project:Org\", \"San Ignacio forest:Loc\", \"Jaen:Loc\", \"San Ignacio de Cajamarca:Loc\"]",
+        "3919": "[\"Huancabamba:Loc\", \"Piura:Loc\", \"Bagua:Loc\", \"Condorcanqui:Loc\", \"Amazonas:Loc\", \"San Martin Department:Loc\", \"Nueva Cajamarca:Loc\", \"Rioja:Loc\", \"Soritor:Loc\", \"Mayo:Loc\", \"Sisa:Loc\", \"Biabo:Loc\"]",
+        "3950": "[\"Kiev:Loc\", \"PRAVDA UKRAINY:Org\"]",
+        "3952": "[\"Ivan Plyushch:Per\", \"Ukrainian:Loc\"]",
+        "3997": "[\"Beijing:Loc\", \"JINGJI YANJIU:Org\"]",
+        "4016": "[\"Beijing:Loc\", \"XINHUA:Org\", \"National People's Congress:Org\", \"State Science and Technology Commission:Org\", \"Deng Nan:Per\", \"China:Loc\"]",
+        "4023": "[\"Deng Nan:Per\", \"China:Loc\"]",
+        "4048": "[\"United States:Loc\", \"U.S. Congress:Org\"]",
+        "4068": "[\"Kim Pom-myon:Per\", \"Nonsan County:Loc\", \"LDP:Org\"]",
+        "4102": "[\"Kakizawa:Per\", \"Hata:Per\", \"North Korean President Kim Il-song:Per\", \"North Korea:Loc\"]",
+        "4117": "[\"Bangkok:Loc\", \"BANGKOK POST:Org\"]",
+        "4148": "[\"Mexico City:Loc\", \"LA JORNADA:Org\"]",
+        "4174": "[\"Ernesto Zedillo Ponce de Leon:Per\", \"Valley of Mexico:Loc\", \"PRI:Org\"]",
+        "4196": "[\"ENTV Television Network:Org\", \"Algiers:Loc\"]",
+        "4197": "[\"Algiers:Loc\", \"ENTV Television Network:Org\"]",
+        "4212": "[\"Moscow:Loc\", \"NEZAVISIMAYA GAZETA:Org\"]",
+        "4230": "[\"Madras:Loc\", \"THE HINDU:Org\"]",
+        "4242": "[\"Panama City:Loc\", \"ACAN:Org\"]",
+        "4266": "[\"Johannesburg:Loc\", \"SAPA:Org\"]",
+        "4267": "[\"Nelson Rohihlahla Mandela:Per\", \"Republic of South Africa:Loc\"]",
+        "4284": "[\"Nairobi:Loc\", \"KNA:Org\"]",
+        "4305": "[\"Datuk Sri Dr. Mahathir:Per\", \"Nelson Mandela:Per\", \"President de Klerk:Per\", \"South Africa:Loc\", \"African National Congress:Org\"]",
+        "4341": "[\"Kim Hyong-ki:Per\", \"North Korea:Loc\", \"IAEA:Org\"]",
+        "4347": "[\"Bratislava:Loc\", \"Slovak Foreign Ministry:Org\", \"Budapest:Loc\", \"Gabcikovo derivation canal:Loc\", \"Danube:Loc\", \"Hungarian Embassy:Org\"]",
+        "4400": "[\"Ortega:Per\", \"Rene Steichen:Per\", \"EU:Org\", \"Brussels:Loc\"]",
+        "4437": "[\"Yasir 'Arafat:Per\", \"Sa 'id Mu 'addi:Per\", \"Cairo:Loc\", \"PLO:Org\"]",
+        "4485": "[\"Georgiy Gurinov:Per\", \"Pacific Fleet:Org\"]",
+        "4491": "[\"Viktor Posuvalyuk:Per\", \"Moscow:Loc\", \"Algeria:Loc\", \"Russian Foreign Ministry:Org\", \"ITAR-TASS:Org\"]",
+        "4499": "[\"Russia:Loc\", \"Russian Center for Problems of National Security and International Relations:Org\", \"Professor Sergey Rogov:Per\"]",
+        "4515": "[\"Chisinau:Loc\", \"BASAPRESS:Org\"]",
+        "4517": "[\"Mircea Snegur:Per\", \"Chisinau:Loc\", \"BASAPRESS:Org\", \"Agrarian Democratic Party of Moldova (PDAM):Org\", \"Socialist Party:Org\", \"Valentin Krylov:Per\"]",
+        "4563": "[\"Kurds:Per\", \"Federal Republic:Loc\", \"Turkey:Loc\", \"Federal Administrative Court:Org\"]",
+        "4603": "[\"Institute of Organic Chemistry of Shanghai:Org\", \"Nodrm-1:Org\", \"azotobacteria:Org\", \"bean plants:Org\", \"Scientists:Per\", \"Shanghai:Loc\"]",
+        "4614": "[\"Kiev:Loc\", \"HOLOS UKRAYINY:Org\"]",
+        "4615": "[\"Kiev:Loc\", \"HOLOS UKRAYINY:Org\"]",
+        "4618": "[\"Ukraine:Loc\", \"Soviet Union:Org\"]",
+        "5003": "[\"Lee Harvey Oswald:Per\", \"Kennedy:Per\", \"Dallas County Administration Building:Loc\", \"Warren Commission:Org\"]",
+        "5008": "[\"LAPD:Org\", \"Robert F. Kennedy:Per\", \"Sirhan Sirhan:Per\"]",
+        "5021": "[\"Sen. Robert F. Kennedy:Per\", \"Good Samaritan Hospital:Loc\", \"Los Angeles:Loc\", \"Ambassador Hotel:Loc\", \"Sirhan Bishara Sirhan:Per\"]",
+        "5023": "[\"James Earl Ray:Per\", \"London:Loc\", \"Dr. Martin Luther King Jr.:Per\"]",
+        "5024": "[\"Oswald:Per\", \"Kennedy:Per\", \"Dallas:Loc\", \"Dallas County Administration Building:Loc\", \"Warren Commission:Org\"]",
+        "5036": "[\"Kennedy:Per\", \"House Assassinations Committee:Org\", \"Lee Harvey Oswald:Per\", \"Dallas:Loc\"]",
+        "5041": "[\"Lee Harvey Oswald:Per\", \"President John F. Kennedy:Per\", \"Warren Commission:Org\"]",
+        "5042": "[\"Lee Harvey Oswald:Per\", \"Kennedy:Per\", \"Dallas:Loc\", \"Texas:Loc\", \"Dealey Plaza:Loc\", \"Texas School Book Depository:Org\"]",
+        "5043": "[\"President John F. Kennedy:Per\", \"Lee Harvey Oswald:Per\"]",
+        "5055": "[\"Charles J. Guiteau:Per\", \"President James Garfield:Per\"]",
+        "5068": "[\"Jack Ruby:Per\", \"Lee Harvey Oswald:Per\", \"President John F. Kennedy:Per\", \"Dallas:Loc\", \"Dallas municipal building:Loc\"]",
+        "5073": "[\"John Martini:Per\", \"Therese Afdahl:Per\", \"Fort Lee:Loc\", \"Irving Flax:Per\"]",
+        "5078": "[\"Lee Harvey Oswald:Per\", \"President John F. Kennedy:Per\", \"Texas School Book Depository:Loc\"]",
+        "5080": "[\"Danny Veno:Per\", \"Lee Harvey Oswald:Per\", \"President Kennedy:Per\", \"Dallas:Loc\"]",
+        "5085": "[\"Sirhan Sirhan:Per\", \"New York:Loc\", \"Robert F. Kennedy:Per\"]\n\nTEXT: In 1898, composer George Gershwin was born in New York.\nEntities: [\"George Gershwin:Per\", \"New York:Loc\"]\n\nTEXT: Many of the first visitors to a new museum at the former Texas School Book Depository went directly to the sixth-floor spot where Lee Harvey Oswald allegedly fired the shots that killed President Kennedy.\nEntities: [\"Texas School Book Depository:Org\", \"Lee Harvey Oswald:Per\", \"President Kennedy:Per\"]",
+        "5088": "[\"Sirhan Sirhan:Per\", \"Sen. Robert F. Kennedy:Per\"]",
+        "5091": "[\"Sen. Robert F. Kennedy:Per\", \"Sirhan B. Sirhan:Per\", \"state prison board:Org\"]",
+        "5093": "[\"Kennedy:Per\", \"Sirhan Bishara Sirhan:Per\"]",
+        "5099": "[\"John Wilkes Booth:Per\", \"Abraham Lincoln:Per\", \"Washington, D.C.:Loc\"]",
+        "5101": "[\"Jean Paul Marat:Per\", \"Charlotte Corday:Per\"]",
+        "5103": "[\"James Earl Ray:Per\", \"Dr. Martin Luther King Jr.:Per\", \"Capitol Hill:Loc\"]",
+        "5106": "[\"Lee Harvey Oswald:Per\", \"President John F. Kennedy:Per\", \"Warren Commission:Org\"]",
+        "5112": "[\"Ray:Per\", \"King:Per\", \"Memphis:Loc\"]",
+        "5121": "[\"Washington:Loc\", \"Lincoln:Per\", \"John Wilkes Booth:Per\", \"Virginia:Loc\", \"Ford Theatre:Loc\"]",
+        "5122": "[\"James Earl Ray:Per\", \"Martin Luther King Jr.:Per\"]",
+        "5124": "[\"James Earl Ray:Per\", \"Memphis:Loc\", \"Tenn.:Loc\", \"Martin Luther King Jr.:Per\"]",
+        "5125": "[\"Jack Ruby:Per\", \"Lee Harvey Oswald:Per\", \"President Kennedy:Per\", \"Dallas:Loc\"]",
+        "5143": "[\"Sirhan B. Sirhan:Per\", \"Sen. Robert F. Kennedy:Per\"]",
+        "5148": "[\"Belli:Per\", \"Jack Ruby:Per\", \"John F. Kennedy:Per\", \"Lee Harvey Oswald:Per\", \"Jim and Tammy Bakker:Per\"]",
+        "5155": "[\"Oswald:Per\", \"Kennedy:Per\", \"Dallas:Loc\"]",
+        "5157": "[\"South Korean President Park Chung-hee:Per\", \"Kim Jae-kyu:Per\", \"Korean Central Intelligence Agency:Org\"]",
+        "5163": "[\"Chapman:Per\", \"Lennon:Per\"]",
+        "5166": "[\"Mark David Chapman:Per\", \"John Lennon:Per\"]",
+        "5168": "[\"Lennon:Per\", \"wife:Per\", \"New York:Loc\", \"Dakota building:Loc\", \"Mark David Chapman:Per\"]",
+        "5170": "[\"Lennon:Per\", \"Ono:Per\", \"Mark David Chapman:Per\"]",
+        "5174": "[\"Kleber Elias Gia Bustamante:Per\", \"Red Sun central committee:Org\", \"Garcia Moreno Prison:Loc\", \"Jose Antonio Briz Lopez:Per\"]",
+        "5181": "[\"James Earl Ray:Per\", \"Martin Luther King:Per\", \"Memphis:Loc\"]",
+        "5187": "[\"Rigoberto Lopez Perez:Per\", \"Somoza Garcia:Per\", \"Sandinistas:Org\"]",
+        "5193": "[\"Sirhan B. Sirhan:Per\", \"Sen. Robert F. Kennedy:Per\", \"Middle Eastern:Loc\"]",
+        "5200": "[\"Sirhan:Per\", \"Kennedy:Per\", \"Markman:Per\", \"Israel:Loc\"]",
+        "5201": "[\"Diamond:Per\", \"Sen. Robert F. Kennedy:Per\", \"Sirhan Sirhan:Per\"]",
+        "5211": "[\"Lyndon B. Johnson:Per\", \"Jack Ruby:Per\"]",
+        "5215": "[\"Lee Harvey Oswald:Per\", \"President Kennedy:Per\", \"county offices:Org\"]",
+        "5216": "[\"McCord:Per\", \"President Nixon:Per\", \"Fensterwald:Per\", \"James Earl Ray:Per\", \"Rev. Martin Luther King Jr.:Per\", \"Nixon's 1972 campaign:Org\"]",
+        "5236": "[\"Ruby:Per\", \"Oswald:Per\", \"Dallas:Loc\", \"Dallas City Jail:Loc\", \"President Kennedy:Per\"]",
+        "5240": "[\"Abraham Lincoln:Per\", \"John Wilkes Booth:Per\"]",
+        "5245": "[\"Dole:Per\", \"Elizabeth:Per\", \"North Carolina:Loc\"]",
+        "5250": "[\"Elizabeth Dole:Per\", \"Salisbury, N.C.:Loc\", \"Dole strategists:Org\"]",
+        "5257": "[\"Jesse Jackson:Per\", \"South Carolina:Loc\", \"Democratic caucuses:Org\"]",
+        "5259": "[\"Jesse Jackson:Per\", \"South Carolina:Loc\", \"Illinois:Loc\"]",
+        "5264": "[\"Lowell Thomas:Per\", \"Woodington, Ohio:Loc\"]",
+        "5270": "[\"Eric Sevareid:Per\", \"Velva:Loc\", \"Minot:Loc\"]",
+        "5274": "[\"Hubert H. Humphrey:Per\", \"Wallace, S.D.:Loc\", \"Charles Lindbergh:Per\", \"Anne Spencer Morrow:Per\", \"Englewood, N.J.:Loc\", \"Supreme Court:Org\", \"National Industrial Recovery Act:Org\"]",
+        "5275": "[\"Brigham Young:Per\", \"Whitingham, Vt.:Loc\"]",
+        "5277": "[\"Martin:Per\", \"Jimbob:Per\", \"Rogers:Per\", \"Oklahoma:Loc\", \"Will Rogers:Per\"]",
+        "5294": "[\"Jesse Owens:Per\", \"Danville:Loc\", \"Ala.:Loc\"]",
+        "5296": "[\"Springsteen:Per\", \"New Jersey:Loc\", \"Universal Declaration of Human Rights:Org\"]",
+        "5301": "[\"James Garfield:Per\", \"Orange, Ohio:Loc\"]",
+        "5304": "[\"Atwater:Per\", \"South Carolina:Loc\", \"President Reagan:Per\", \"Sen. Strom Thurmond:Per\"]",
+        "5313": "[\"Fats Domino:Per\", \"St. Louis:Loc\", \"New Orleans:Loc\"]",
+        "5317": "[\"Buddy Holly:Per\", \"Texas Tech University:Org\", \"Lubbock:Loc\"]",
+        "5323": "[\"John Deere:Per\", \"Rutland, Vt.:Loc\"]",
+        "5326": "[\"Rev. Jesse Jackson:Per\", \"South Carolina:Loc\", \"Democratic:Org\"]",
+        "5330": "[\"Ulysses S. Grant:Per\", \"Point Pleasant, Ohio:Loc\"]",
+        "5331": "[\"James Monroe:Per\", \"Westmoreland County, Virginia:Loc\"]",
+        "5335": "[\"Sen. Bob Dole:Per\", \"Russell:Loc\", \"Kansas:Loc\", \"Republican Party:Org\"]",
+        "5350": "[\"Rev. Jesse Jackson:Per\", \"South Carolina:Loc\", \"FEMA:Org\"]",
+        "5351": "[\"Dwight D. Eisenhower:Per\", \"Denison, Texas:Loc\"]",
+        "5354": "[\"Martin Van Buren:Per\", \"Kinderhook, N.Y.:Loc\", \"Wolfgang Amadeus Mozart:Per\", \"Vienna, Austria:Loc\"]",
+        "5358": "[\"Elvis Presley:Per\", \"Tupelo, Miss:Loc\"]",
+        "5360": "[\"Bob Dylan:Per\", \"Duluth:Loc\", \"Hibbing:Loc\"]",
+        "5361": "[\"Andrew Jackson:Per\", \"Waxhaw, S.C.:Loc\"]",
+        "5375": "[\"Benjamin Harrison:Per\", \"North Bend, Ohio:Loc\"]",
+        "5376": "[\"Oliver Hazard Perry:Per\", \"South Kingstown, R.I.:Loc\"]",
+        "5378": "[\"Rutherford B. Hayes:Per\", \"Delaware, Ohio:Loc\"]",
+        "5383": "[\"Orange, Ohio:Loc\", \"James Garfield:Per\"]",
+        "5402": "[\"Dwight D. Eisenhower:Per\", \"Tex:Loc\", \"Denison:Loc\"]",
+        "5408": "[\"Bette Davis:Per\", \"Ruth Elizabeth Davis:Per\", \"Lowell:Loc\", \"Mass:Loc\"]",
+        "5410": "[\"Jesse Alexander Helms Jr.:Per\", \"Monroe:Loc\"]",
+        "5413": "[\"Lawrence Welk:Per\", \"North Dakota:Loc\"]",
+        "5905": "[\"Indianapolis:Loc\", \"Indiana:Loc\"]"
+    },
+    "logic_processed_output": {
+        "17": [
+            "\nPalestinians live in Hakawati Theatre, Yes or No?",
+            "\nPalestinians live in Arab east Jerusalem, Yes or No?",
+            "\nHakawati Theatre locate in Arab east Jerusalem, Yes or No?",
+            "\nArab east Jerusalem locate in Hakawati Theatre, Yes or No?"
+        ],
+        "23": [
+            "\nPERUGIA locate in Italy, Yes or No?",
+            "\nItaly locate in PERUGIA, Yes or No?"
+        ],
+        "34": [],
+        "35": [
+            "\nReagan live in Washington, Yes or No?"
+        ],
+        "36": [
+            "\nCongress base in University of Virginia, Yes or No?",
+            "\nCongress base in Charlottesville, Yes or No?",
+            "\nCongress base in Central America, Yes or No?",
+            "\nContra rebels base in University of Virginia, Yes or No?",
+            "\nContra rebels base in Charlottesville, Yes or No?",
+            "\nContra rebels base in Central America, Yes or No?",
+            "\nUniversity of Virginia locate in Charlottesville, Yes or No?",
+            "\nUniversity of Virginia locate in Central America, Yes or No?",
+            "\nCharlottesville locate in University of Virginia, Yes or No?",
+            "\nCharlottesville locate in Central America, Yes or No?",
+            "\nCentral America locate in University of Virginia, Yes or No?",
+            "\nCentral America locate in Charlottesville, Yes or No?"
+        ],
+        "56": [
+            "\nWright work for University of Texas, Yes or No?",
+            "\nWright work for Watergate, Yes or No?",
+            "\nNixon work for University of Texas, Yes or No?",
+            "\nNixon work for Watergate, Yes or No?",
+            "\nWright kill Nixon, Yes or No?",
+            "\nNixon kill Wright, Yes or No?",
+            "\nUniversity of Texas base in White House, Yes or No?",
+            "\nWatergate base in White House, Yes or No?",
+            "\nWright live in White House, Yes or No?",
+            "\nNixon live in White House, Yes or No?"
+        ],
+        "77": [
+            "\nNikita Khrushchev kill President Kennedy, Yes or No?",
+            "\nPresident Kennedy kill Nikita Khrushchev, Yes or No?",
+            "\nNikita Khrushchev live in Cuba, Yes or No?",
+            "\nPresident Kennedy live in Cuba, Yes or No?"
+        ],
+        "79": [
+            "\nAnastas Mikoyan work for Soviet, Yes or No?",
+            "\nKhrushchev work for Soviet, Yes or No?",
+            "\nAnastas Mikoyan kill Khrushchev, Yes or No?",
+            "\nKhrushchev kill Anastas Mikoyan, Yes or No?"
+        ],
+        "80": [
+            "\nMikoyan work for Soviet, Yes or No?",
+            "\nKhrushchev work for Soviet, Yes or No?",
+            "\nMikoyan kill Khrushchev, Yes or No?",
+            "\nKhrushchev kill Mikoyan, Yes or No?"
+        ],
+        "89": [
+            "\nAlekseev live in Moscow, Yes or No?"
+        ],
+        "92": [
+            "\nMILAN locate in Italy, Yes or No?",
+            "\nItaly locate in MILAN, Yes or No?"
+        ],
+        "130": [
+            "\nHot Springs National Park locate in Ark., Yes or No?",
+            "\nArk. locate in Hot Springs National Park, Yes or No?"
+        ],
+        "136": [],
+        "138": [
+            "\nFort Wainwright annex locate in laska, Yes or No?",
+            "\nlaska locate in Fort Wainwright annex, Yes or No?"
+        ],
+        "150": [],
+        "171": [
+            "\nFRESNO locate in Calif., Yes or No?",
+            "\nCalif. locate in FRESNO, Yes or No?"
+        ],
+        "188": [
+            "\nJune Anderson work for Kirov Ballet, Yes or No?",
+            "\nJune Anderson work for Bolshoi Ballet, Yes or No?",
+            "\nCarol Vaness work for Kirov Ballet, Yes or No?",
+            "\nCarol Vaness work for Bolshoi Ballet, Yes or No?",
+            "\nJune Anderson kill Carol Vaness, Yes or No?",
+            "\nCarol Vaness kill June Anderson, Yes or No?",
+            "\nKirov Ballet base in Moscow, Yes or No?",
+            "\nKirov Ballet base in Leningrad, Yes or No?",
+            "\nKirov Ballet base in Yerevan, Yes or No?",
+            "\nKirov Ballet base in U.S., Yes or No?",
+            "\nKirov Ballet base in British, Yes or No?",
+            "\nBolshoi Ballet base in Moscow, Yes or No?",
+            "\nBolshoi Ballet base in Leningrad, Yes or No?",
+            "\nBolshoi Ballet base in Yerevan, Yes or No?",
+            "\nBolshoi Ballet base in U.S., Yes or No?",
+            "\nBolshoi Ballet base in British, Yes or No?",
+            "\nJune Anderson live in Moscow, Yes or No?",
+            "\nJune Anderson live in Leningrad, Yes or No?",
+            "\nJune Anderson live in Yerevan, Yes or No?",
+            "\nJune Anderson live in U.S., Yes or No?",
+            "\nJune Anderson live in British, Yes or No?",
+            "\nCarol Vaness live in Moscow, Yes or No?",
+            "\nCarol Vaness live in Leningrad, Yes or No?",
+            "\nCarol Vaness live in Yerevan, Yes or No?",
+            "\nCarol Vaness live in U.S., Yes or No?",
+            "\nCarol Vaness live in British, Yes or No?",
+            "\nMoscow locate in Leningrad, Yes or No?",
+            "\nMoscow locate in Yerevan, Yes or No?",
+            "\nMoscow locate in U.S., Yes or No?",
+            "\nMoscow locate in British, Yes or No?",
+            "\nLeningrad locate in Moscow, Yes or No?",
+            "\nLeningrad locate in Yerevan, Yes or No?",
+            "\nLeningrad locate in U.S., Yes or No?",
+            "\nLeningrad locate in British, Yes or No?",
+            "\nYerevan locate in Moscow, Yes or No?",
+            "\nYerevan locate in Leningrad, Yes or No?",
+            "\nYerevan locate in U.S., Yes or No?",
+            "\nYerevan locate in British, Yes or No?",
+            "\nU.S. locate in Moscow, Yes or No?",
+            "\nU.S. locate in Leningrad, Yes or No?",
+            "\nU.S. locate in Yerevan, Yes or No?",
+            "\nU.S. locate in British, Yes or No?",
+            "\nBritish locate in Moscow, Yes or No?",
+            "\nBritish locate in Leningrad, Yes or No?",
+            "\nBritish locate in Yerevan, Yes or No?",
+            "\nBritish locate in U.S., Yes or No?"
+        ],
+        "195": [
+            "\nMichael D. Papagiannis work for Boston University, Yes or No?",
+            "\nBoston University base in Earth, Yes or No?",
+            "\nMichael D. Papagiannis live in Earth, Yes or No?"
+        ],
+        "197": [
+            "\nOstined locate in Lesny, Yes or No?",
+            "\nOstined locate in Liberec, Yes or No?",
+            "\nOstined locate in Gmund, Yes or No?",
+            "\nOstined locate in Czechoslovakia, Yes or No?",
+            "\nOstined locate in Austria, Yes or No?",
+            "\nLesny locate in Ostined, Yes or No?",
+            "\nLesny locate in Liberec, Yes or No?",
+            "\nLesny locate in Gmund, Yes or No?",
+            "\nLesny locate in Czechoslovakia, Yes or No?",
+            "\nLesny locate in Austria, Yes or No?",
+            "\nLiberec locate in Ostined, Yes or No?",
+            "\nLiberec locate in Lesny, Yes or No?",
+            "\nLiberec locate in Gmund, Yes or No?",
+            "\nLiberec locate in Czechoslovakia, Yes or No?",
+            "\nLiberec locate in Austria, Yes or No?",
+            "\nGmund locate in Ostined, Yes or No?",
+            "\nGmund locate in Lesny, Yes or No?",
+            "\nGmund locate in Liberec, Yes or No?",
+            "\nGmund locate in Czechoslovakia, Yes or No?",
+            "\nGmund locate in Austria, Yes or No?",
+            "\nCzechoslovakia locate in Ostined, Yes or No?",
+            "\nCzechoslovakia locate in Lesny, Yes or No?",
+            "\nCzechoslovakia locate in Liberec, Yes or No?",
+            "\nCzechoslovakia locate in Gmund, Yes or No?",
+            "\nCzechoslovakia locate in Austria, Yes or No?",
+            "\nAustria locate in Ostined, Yes or No?",
+            "\nAustria locate in Lesny, Yes or No?",
+            "\nAustria locate in Liberec, Yes or No?",
+            "\nAustria locate in Gmund, Yes or No?",
+            "\nAustria locate in Czechoslovakia, Yes or No?"
+        ],
+        "198": [
+            "\nBONE locate in Idaho, Yes or No?",
+            "\nIdaho locate in BONE, Yes or No?"
+        ],
+        "200": [
+            "\nBill Gordon live in Bingham County, Yes or No?"
+        ],
+        "285": [
+            "\nYves Fortier live in Canada, Yes or No?"
+        ],
+        "333": [
+            "\nDonald Miller work for United Federation of Teachers, Yes or No?"
+        ],
+        "356": [
+            "\nMichael Coats work for Challenger, Yes or No?"
+        ],
+        "372": [
+            "\nCalifornia locate in Ontario, Yes or No?",
+            "\nCalifornia locate in El Toro, Yes or No?",
+            "\nOntario locate in California, Yes or No?",
+            "\nOntario locate in El Toro, Yes or No?",
+            "\nEl Toro locate in California, Yes or No?",
+            "\nEl Toro locate in Ontario, Yes or No?"
+        ],
+        "379": [
+            "\nyo. locate in exas, Yes or No?",
+            "\nexas locate in yo., Yes or No?"
+        ],
+        "443": [
+            "\nSteve Wright work for DOE, Yes or No?",
+            "\nSteve Wright work for SRP, Yes or No?"
+        ],
+        "464": [
+            "\nBert Byers live in Cecil Field Naval Air Station, Yes or No?"
+        ],
+        "475": [
+            "\nUrutigoechea live in Bayonee, Yes or No?",
+            "\nUrutigoechea live in Bonloc, Yes or No?",
+            "\nUrutigoechea live in Poitiers, Yes or No?",
+            "\nBayonee locate in Bonloc, Yes or No?",
+            "\nBayonee locate in Poitiers, Yes or No?",
+            "\nBonloc locate in Bayonee, Yes or No?",
+            "\nBonloc locate in Poitiers, Yes or No?",
+            "\nPoitiers locate in Bayonee, Yes or No?",
+            "\nPoitiers locate in Bonloc, Yes or No?"
+        ],
+        "490": [
+            "\nJudith C. Toth work for House of Delegates, Yes or No?",
+            "\nHouse of Delegates base in Maryland, Yes or No?",
+            "\nJudith C. Toth live in Maryland, Yes or No?"
+        ],
+        "503": [
+            "\nCenter for Disease Control base in Fort Collins, Yes or No?"
+        ],
+        "521": [
+            "\nHatcher live in Onondaga territory, Yes or No?",
+            "\nHatcher live in Shoshone-Bannock reservation, Yes or No?",
+            "\nOnondaga territory locate in Shoshone-Bannock reservation, Yes or No?",
+            "\nShoshone-Bannock reservation locate in Onondaga territory, Yes or No?"
+        ],
+        "541": [
+            "\nAlbert O. Harjula work for Department of Inland Fisheries and Wildlife, Yes or No?",
+            "\nDepartment of Inland Fisheries and Wildlife base in Thomaston, Yes or No?",
+            "\nAlbert O. Harjula live in Thomaston, Yes or No?"
+        ],
+        "556": [
+            "\nEnergy Department base in Savannah River, Yes or No?",
+            "\nEnergy Department base in Idaho Falls, Yes or No?",
+            "\nSavannah River locate in Idaho Falls, Yes or No?",
+            "\nIdaho Falls locate in Savannah River, Yes or No?"
+        ],
+        "561": [
+            "\nPresident Nixon work for Bush administration, Yes or No?",
+            "\nBush administration base in U.S., Yes or No?",
+            "\nPresident Nixon live in U.S., Yes or No?"
+        ],
+        "563": [
+            "\nPresident Reagan work for 2nd U.S. Circuit Court of Appeals, Yes or No?",
+            "\nPresident Reagan work for U.S. Circuit Court of Appeals for the District of Columbia, Yes or No?",
+            "\nRalph K. Winter work for 2nd U.S. Circuit Court of Appeals, Yes or No?",
+            "\nRalph K. Winter work for U.S. Circuit Court of Appeals for the District of Columbia, Yes or No?",
+            "\nKenneth Starr work for 2nd U.S. Circuit Court of Appeals, Yes or No?",
+            "\nKenneth Starr work for U.S. Circuit Court of Appeals for the District of Columbia, Yes or No?",
+            "\nPresident Reagan kill Ralph K. Winter, Yes or No?",
+            "\nPresident Reagan kill Kenneth Starr, Yes or No?",
+            "\nRalph K. Winter kill President Reagan, Yes or No?",
+            "\nRalph K. Winter kill Kenneth Starr, Yes or No?",
+            "\nKenneth Starr kill President Reagan, Yes or No?",
+            "\nKenneth Starr kill Ralph K. Winter, Yes or No?",
+            "\n2nd U.S. Circuit Court of Appeals base in New York, Yes or No?",
+            "\nU.S. Circuit Court of Appeals for the District of Columbia base in New York, Yes or No?",
+            "\nPresident Reagan live in New York, Yes or No?",
+            "\nRalph K. Winter live in New York, Yes or No?",
+            "\nKenneth Starr live in New York, Yes or No?"
+        ],
+        "630": [
+            "\nReagan live in Normandy, Yes or No?"
+        ],
+        "670": [
+            "\nDarryl Breniser live in Blue Ball, Yes or No?"
+        ],
+        "786": [
+            "\nTerry Hands live in Stratford-upon-Avon, Yes or No?",
+            "\nTerry Hands live in London, Yes or No?",
+            "\nTerry Hands live in Barbican, Yes or No?",
+            "\nStratford-upon-Avon locate in London, Yes or No?",
+            "\nStratford-upon-Avon locate in Barbican, Yes or No?",
+            "\nLondon locate in Stratford-upon-Avon, Yes or No?",
+            "\nLondon locate in Barbican, Yes or No?",
+            "\nBarbican locate in Stratford-upon-Avon, Yes or No?",
+            "\nBarbican locate in London, Yes or No?"
+        ],
+        "819": [
+            "\nNASHVILLE locate in Tenn., Yes or No?",
+            "\nTenn. locate in NASHVILLE, Yes or No?"
+        ],
+        "835": [
+            "\nAP base in TUNIS, Yes or No?",
+            "\nAP base in Tunisia, Yes or No?",
+            "\nTUNIS locate in Tunisia, Yes or No?",
+            "\nTunisia locate in TUNIS, Yes or No?"
+        ],
+        "841": [
+            "\nGadhafi work for Navy, Yes or No?",
+            "\nNavy base in U.S., Yes or No?",
+            "\nNavy base in Libya, Yes or No?",
+            "\nGadhafi live in U.S., Yes or No?",
+            "\nGadhafi live in Libya, Yes or No?",
+            "\nU.S. locate in Libya, Yes or No?",
+            "\nLibya locate in U.S., Yes or No?"
+        ],
+        "844": [
+            "\nChedli Klibi work for Arab League, Yes or No?",
+            "\nArab League base in U.S., Yes or No?",
+            "\nChedli Klibi live in U.S., Yes or No?"
+        ],
+        "881": [
+            "\nAbrams kill President-elect Bush, Yes or No?",
+            "\nPresident-elect Bush kill Abrams, Yes or No?",
+            "\nAbrams live in Latin America, Yes or No?",
+            "\nPresident-elect Bush live in Latin America, Yes or No?"
+        ],
+        "895": [
+            "\nKing live in Memphis, Yes or No?",
+            "\nKing live in Tenn., Yes or No?",
+            "\nMemphis locate in Tenn., Yes or No?",
+            "\nTenn. locate in Memphis, Yes or No?"
+        ],
+        "913": [
+            "\nEduard A. Shevardnadze work for Soviet, Yes or No?",
+            "\nSoviet base in China, Yes or No?",
+            "\nEduard A. Shevardnadze live in China, Yes or No?"
+        ],
+        "922": [
+            "\nLi live in Beijing, Yes or No?",
+            "\nLi live in China, Yes or No?",
+            "\nLi live in Vietnamese, Yes or No?",
+            "\nBeijing locate in China, Yes or No?",
+            "\nBeijing locate in Vietnamese, Yes or No?",
+            "\nChina locate in Beijing, Yes or No?",
+            "\nChina locate in Vietnamese, Yes or No?",
+            "\nVietnamese locate in Beijing, Yes or No?",
+            "\nVietnamese locate in China, Yes or No?"
+        ],
+        "924": [
+            "\nKhmer Rouge base in Cambodia, Yes or No?"
+        ],
+        "942": [
+            "\nWalesa work for Solidarity, Yes or No?",
+            "\nPoles work for Solidarity, Yes or No?",
+            "\nWalesa kill Poles, Yes or No?",
+            "\nPoles kill Walesa, Yes or No?",
+            "\nSolidarity base in Poland, Yes or No?",
+            "\nWalesa live in Poland, Yes or No?",
+            "\nPoles live in Poland, Yes or No?"
+        ],
+        "957": [
+            "\nBradley First Air base in Ottawa, Yes or No?",
+            "\nBradley First Air base in Canada, Yes or No?",
+            "\nBradley First Air base in Montreal, Yes or No?",
+            "\nBradley First Air base in Dayton, Yes or No?",
+            "\nEmery Air Freight Corp. base in Ottawa, Yes or No?",
+            "\nEmery Air Freight Corp. base in Canada, Yes or No?",
+            "\nEmery Air Freight Corp. base in Montreal, Yes or No?",
+            "\nEmery Air Freight Corp. base in Dayton, Yes or No?",
+            "\nOttawa locate in Canada, Yes or No?",
+            "\nOttawa locate in Montreal, Yes or No?",
+            "\nOttawa locate in Dayton, Yes or No?",
+            "\nCanada locate in Ottawa, Yes or No?",
+            "\nCanada locate in Montreal, Yes or No?",
+            "\nCanada locate in Dayton, Yes or No?",
+            "\nMontreal locate in Ottawa, Yes or No?",
+            "\nMontreal locate in Canada, Yes or No?",
+            "\nMontreal locate in Dayton, Yes or No?",
+            "\nDayton locate in Ottawa, Yes or No?",
+            "\nDayton locate in Canada, Yes or No?",
+            "\nDayton locate in Montreal, Yes or No?"
+        ],
+        "966": [
+            "\nEastport International base in Upper Marlboro, Yes or No?",
+            "\nChallenger base in Upper Marlboro, Yes or No?",
+            "\nGemini 6000 base in Upper Marlboro, Yes or No?"
+        ],
+        "1004": [
+            "\nSultan Al-Saud kill Rodolfo Neri Vela, Yes or No?",
+            "\nRodolfo Neri Vela kill Sultan Al-Saud, Yes or No?",
+            "\nSultan Al-Saud live in Saudi Arabia, Yes or No?",
+            "\nSultan Al-Saud live in Mexico, Yes or No?",
+            "\nRodolfo Neri Vela live in Saudi Arabia, Yes or No?",
+            "\nRodolfo Neri Vela live in Mexico, Yes or No?",
+            "\nSaudi Arabia locate in Mexico, Yes or No?",
+            "\nMexico locate in Saudi Arabia, Yes or No?"
+        ],
+        "1029": [
+            "\nRocky Mountains locate in Montana, Yes or No?",
+            "\nRocky Mountains locate in Livingston, Yes or No?",
+            "\nMontana locate in Rocky Mountains, Yes or No?",
+            "\nMontana locate in Livingston, Yes or No?",
+            "\nLivingston locate in Rocky Mountains, Yes or No?",
+            "\nLivingston locate in Montana, Yes or No?"
+        ],
+        "1166": [
+            "\nFolke Nyberg work for University of Washington, Yes or No?",
+            "\nUniversity of Washington base in Seattle, Yes or No?",
+            "\nUniversity of Washington base in Pacific Rim, Yes or No?",
+            "\nFolke Nyberg live in Seattle, Yes or No?",
+            "\nFolke Nyberg live in Pacific Rim, Yes or No?",
+            "\nSeattle locate in Pacific Rim, Yes or No?",
+            "\nPacific Rim locate in Seattle, Yes or No?"
+        ],
+        "1167": [
+            "\nSeattle locate in Puget Sound, Yes or No?",
+            "\nSeattle locate in Lake Washington, Yes or No?",
+            "\nPuget Sound locate in Seattle, Yes or No?",
+            "\nPuget Sound locate in Lake Washington, Yes or No?",
+            "\nLake Washington locate in Seattle, Yes or No?",
+            "\nLake Washington locate in Puget Sound, Yes or No?"
+        ],
+        "1188": [
+            "\nWilliam J. Bennett live in Chicago, Yes or No?",
+            "\nWilliam J. Bennett live in U.S., Yes or No?",
+            "\nChicago locate in U.S., Yes or No?",
+            "\nU.S. locate in Chicago, Yes or No?"
+        ],
+        "1197": [
+            "\nSamuel L. Husk work for Council of Great City Schools, Yes or No?"
+        ],
+        "1273": [
+            "\nLt. Nettie Johnson work for Navy, Yes or No?"
+        ],
+        "1285": [],
+        "1323": [
+            "\nFrancisco Rojas work for Pemex, Yes or No?"
+        ],
+        "1326": [
+            "\nRicardo Camero Cardiel work for Notimex, Yes or No?",
+            "\nNotimex base in Ciudad Madero, Yes or No?",
+            "\nRicardo Camero Cardiel live in Ciudad Madero, Yes or No?"
+        ],
+        "1338": [
+            "\nAussedat-Rey SA base in Europe, Yes or No?"
+        ],
+        "1340": [
+            "\nAnn Silvernail work for International Paper, Yes or No?",
+            "\nInternational Paper base in French, Yes or No?",
+            "\nAnn Silvernail live in French, Yes or No?"
+        ],
+        "1354": [
+            "\nGIESSEN locate in West Germany, Yes or No?",
+            "\nWest Germany locate in GIESSEN, Yes or No?"
+        ],
+        "1368": [
+            "\nMinox base in Wetzlar, Yes or No?",
+            "\nMinox base in Braunschweig, Yes or No?",
+            "\nLeica base in Wetzlar, Yes or No?",
+            "\nLeica base in Braunschweig, Yes or No?",
+            "\nRollei base in Wetzlar, Yes or No?",
+            "\nRollei base in Braunschweig, Yes or No?",
+            "\nWetzlar locate in Braunschweig, Yes or No?",
+            "\nBraunschweig locate in Wetzlar, Yes or No?"
+        ],
+        "1369": [
+            "\nHans Guenther von Zydowitz work for Leica, Yes or No?"
+        ],
+        "1405": [
+            "\nScott Hinton work for Elders Futures Inc., Yes or No?"
+        ],
+        "1431": [
+            "\nJames K. Batten work for Knight-Ridder, Yes or No?"
+        ],
+        "1443": [
+            "\nEaglebrook East base in Middletown, Yes or No?",
+            "\nEaglebrook East base in Chicago, Yes or No?",
+            "\nEaglebrook Plastics Inc. base in Middletown, Yes or No?",
+            "\nEaglebrook Plastics Inc. base in Chicago, Yes or No?",
+            "\nMiddletown locate in Chicago, Yes or No?",
+            "\nChicago locate in Middletown, Yes or No?"
+        ],
+        "1471": [
+            "\nAP base in BEIRUT, Yes or No?",
+            "\nAP base in Lebanon, Yes or No?",
+            "\nBEIRUT locate in Lebanon, Yes or No?",
+            "\nLebanon locate in BEIRUT, Yes or No?"
+        ],
+        "1472": [
+            "\nU.S. Marine Lt. William R. Higgins work for Organization of the Oppressed on Earth, Yes or No?"
+        ],
+        "1474": [
+            "\nAmerican spy Higgins kill Sheik Abdul Karim Obeid, Yes or No?",
+            "\nSheik Abdul Karim Obeid kill American spy Higgins, Yes or No?"
+        ],
+        "1507": [
+            "\nJohn Jamison work for National Weather Service, Yes or No?",
+            "\nNational Weather Service base in Galveston, Yes or No?",
+            "\nJohn Jamison live in Galveston, Yes or No?"
+        ],
+        "1552": [
+            "\nPat Epps work for Greenland Expedition Society, Yes or No?",
+            "\nGreenland Expedition Society base in Greenland, Yes or No?",
+            "\nPat Epps live in Greenland, Yes or No?"
+        ],
+        "1563": [
+            "\nVaughan work for Army Air Force, Yes or No?"
+        ],
+        "1580": [
+            "\nMrs. Say live in United States, Yes or No?",
+            "\nMrs. Say live in Cadiz, Yes or No?",
+            "\nMrs. Say live in Kentucky, Yes or No?",
+            "\nUnited States locate in Cadiz, Yes or No?",
+            "\nUnited States locate in Kentucky, Yes or No?",
+            "\nCadiz locate in United States, Yes or No?",
+            "\nCadiz locate in Kentucky, Yes or No?",
+            "\nKentucky locate in United States, Yes or No?",
+            "\nKentucky locate in Cadiz, Yes or No?"
+        ],
+        "1628": [],
+        "1640": [
+            "\nPacific Marine Inc. base in Houston, Yes or No?",
+            "\nPacific Marine Inc. base in Grand Isle, Yes or No?",
+            "\nHouston locate in Grand Isle, Yes or No?",
+            "\nGrand Isle locate in Houston, Yes or No?"
+        ],
+        "1648": [
+            "\nSandi Sacher live in daho, Yes or No?"
+        ],
+        "1650": [
+            "\nAlaska locate in U.S., Yes or No?",
+            "\nU.S. locate in Alaska, Yes or No?"
+        ],
+        "1669": [
+            "\nTom Van Sant live in Santa Monica, Yes or No?"
+        ],
+        "1689": [
+            "\nGerald Baliles live in Virginia, Yes or No?",
+            "\nGerald Baliles live in New Hampshire, Yes or No?",
+            "\nVirginia locate in New Hampshire, Yes or No?",
+            "\nNew Hampshire locate in Virginia, Yes or No?"
+        ],
+        "1692": [
+            "\nBush kill Sununu, Yes or No?",
+            "\nBush kill Baliles, Yes or No?",
+            "\nSununu kill Bush, Yes or No?",
+            "\nSununu kill Baliles, Yes or No?",
+            "\nBaliles kill Bush, Yes or No?",
+            "\nBaliles kill Sununu, Yes or No?",
+            "\nBush live in Virginia, Yes or No?",
+            "\nSununu live in Virginia, Yes or No?",
+            "\nBaliles live in Virginia, Yes or No?"
+        ],
+        "1731": [
+            "\nBush administration base in U.S., Yes or No?",
+            "\nEuropean Community base in U.S., Yes or No?"
+        ],
+        "1769": [
+            "\nState Department base in Kenya, Yes or No?",
+            "\nState Department base in Mombasa, Yes or No?",
+            "\nKenya locate in Mombasa, Yes or No?",
+            "\nMombasa locate in Kenya, Yes or No?"
+        ],
+        "1773": [
+            "\nShaw Yu-ming work for Government Information, Yes or No?",
+            "\nGovernment Information base in China, Yes or No?",
+            "\nGovernment Information base in Taiwan, Yes or No?",
+            "\nGovernment Information base in Washington, Yes or No?",
+            "\nShaw Yu-ming live in China, Yes or No?",
+            "\nShaw Yu-ming live in Taiwan, Yes or No?",
+            "\nShaw Yu-ming live in Washington, Yes or No?",
+            "\nChina locate in Taiwan, Yes or No?",
+            "\nChina locate in Washington, Yes or No?",
+            "\nTaiwan locate in China, Yes or No?",
+            "\nTaiwan locate in Washington, Yes or No?",
+            "\nWashington locate in China, Yes or No?",
+            "\nWashington locate in Taiwan, Yes or No?"
+        ],
+        "1776": [
+            "\nTaiwan information center base in China, Yes or No?",
+            "\nTaiwan information center base in Washington, Yes or No?",
+            "\nTaiwan information center base in National Press Building, Yes or No?",
+            "\nTaiwan information center base in U.S., Yes or No?",
+            "\nChina locate in Washington, Yes or No?",
+            "\nChina locate in National Press Building, Yes or No?",
+            "\nChina locate in U.S., Yes or No?",
+            "\nWashington locate in China, Yes or No?",
+            "\nWashington locate in National Press Building, Yes or No?",
+            "\nWashington locate in U.S., Yes or No?",
+            "\nNational Press Building locate in China, Yes or No?",
+            "\nNational Press Building locate in Washington, Yes or No?",
+            "\nNational Press Building locate in U.S., Yes or No?",
+            "\nU.S. locate in China, Yes or No?",
+            "\nU.S. locate in Washington, Yes or No?",
+            "\nU.S. locate in National Press Building, Yes or No?"
+        ],
+        "1785": [
+            "\nPhenergan base in Philadelphia, Yes or No?",
+            "\nWyeth-Ayerst Laboratories base in Philadelphia, Yes or No?"
+        ],
+        "1794": [
+            "\n.C. locate in an., Yes or No?",
+            "\n.C. locate in an., Yes or No?",
+            "\nan. locate in .C., Yes or No?",
+            "\nan. locate in .C., Yes or No?"
+        ],
+        "1797": [
+            "\nre. locate in riz., Yes or No?",
+            "\nriz. locate in re., Yes or No?"
+        ],
+        "1842": [
+            "\nFort Lewis locate in Oregon, Yes or No?",
+            "\nOregon locate in Fort Lewis, Yes or No?"
+        ],
+        "1844": [
+            "\nDave Olson live in Payette National Forest, Yes or No?",
+            "\nDave Olson live in Idaho, Yes or No?",
+            "\nPayette National Forest locate in Idaho, Yes or No?",
+            "\nIdaho locate in Payette National Forest, Yes or No?"
+        ],
+        "1851": [
+            "\nnortheastern Oregon locate in La Grande, Yes or No?",
+            "\nLa Grande locate in northeastern Oregon, Yes or No?"
+        ],
+        "1852": [
+            "\nMike Ferris work for Forest Service, Yes or No?",
+            "\nForest Service base in Wallowa-Whitman National Forest, Yes or No?",
+            "\nForest Service base in Malheur National Forest, Yes or No?",
+            "\nForest Service base in Baker, Yes or No?",
+            "\nForest Service base in Unity, Yes or No?",
+            "\nForest Service base in Enterprise, Yes or No?",
+            "\nForest Service base in John Day, Yes or No?",
+            "\nMike Ferris live in Wallowa-Whitman National Forest, Yes or No?",
+            "\nMike Ferris live in Malheur National Forest, Yes or No?",
+            "\nMike Ferris live in Baker, Yes or No?",
+            "\nMike Ferris live in Unity, Yes or No?",
+            "\nMike Ferris live in Enterprise, Yes or No?",
+            "\nMike Ferris live in John Day, Yes or No?",
+            "\nWallowa-Whitman National Forest locate in Malheur National Forest, Yes or No?",
+            "\nWallowa-Whitman National Forest locate in Baker, Yes or No?",
+            "\nWallowa-Whitman National Forest locate in Unity, Yes or No?",
+            "\nWallowa-Whitman National Forest locate in Enterprise, Yes or No?",
+            "\nWallowa-Whitman National Forest locate in John Day, Yes or No?",
+            "\nMalheur National Forest locate in Wallowa-Whitman National Forest, Yes or No?",
+            "\nMalheur National Forest locate in Baker, Yes or No?",
+            "\nMalheur National Forest locate in Unity, Yes or No?",
+            "\nMalheur National Forest locate in Enterprise, Yes or No?",
+            "\nMalheur National Forest locate in John Day, Yes or No?",
+            "\nBaker locate in Wallowa-Whitman National Forest, Yes or No?",
+            "\nBaker locate in Malheur National Forest, Yes or No?",
+            "\nBaker locate in Unity, Yes or No?",
+            "\nBaker locate in Enterprise, Yes or No?",
+            "\nBaker locate in John Day, Yes or No?",
+            "\nUnity locate in Wallowa-Whitman National Forest, Yes or No?",
+            "\nUnity locate in Malheur National Forest, Yes or No?",
+            "\nUnity locate in Baker, Yes or No?",
+            "\nUnity locate in Enterprise, Yes or No?",
+            "\nUnity locate in John Day, Yes or No?",
+            "\nEnterprise locate in Wallowa-Whitman National Forest, Yes or No?",
+            "\nEnterprise locate in Malheur National Forest, Yes or No?",
+            "\nEnterprise locate in Baker, Yes or No?",
+            "\nEnterprise locate in Unity, Yes or No?",
+            "\nEnterprise locate in John Day, Yes or No?",
+            "\nJohn Day locate in Wallowa-Whitman National Forest, Yes or No?",
+            "\nJohn Day locate in Malheur National Forest, Yes or No?",
+            "\nJohn Day locate in Baker, Yes or No?",
+            "\nJohn Day locate in Unity, Yes or No?",
+            "\nJohn Day locate in Enterprise, Yes or No?"
+        ],
+        "1885": [
+            "\nDavid Fleischer kill John Stembridge, Yes or No?",
+            "\nJohn Stembridge kill David Fleischer, Yes or No?"
+        ],
+        "1914": [
+            "\nRobert Bernero work for NRC, Yes or No?",
+            "\nRobert Bernero work for DOE, Yes or No?"
+        ],
+        "1936": [],
+        "1946": [
+            "\nGrand Isle locate in La., Yes or No?",
+            "\nLa. locate in Grand Isle, Yes or No?"
+        ],
+        "1965": [
+            "\nMalcolm Grant live in Sabine Pass, Yes or No?",
+            "\nMalcolm Grant live in Louisiana, Yes or No?",
+            "\nMalcolm Grant live in Port Arthur, Yes or No?",
+            "\nSabine Pass locate in Louisiana, Yes or No?",
+            "\nSabine Pass locate in Port Arthur, Yes or No?",
+            "\nLouisiana locate in Sabine Pass, Yes or No?",
+            "\nLouisiana locate in Port Arthur, Yes or No?",
+            "\nPort Arthur locate in Sabine Pass, Yes or No?",
+            "\nPort Arthur locate in Louisiana, Yes or No?"
+        ],
+        "1968": [
+            "\nLutie Dyson live in Lake Charles, Yes or No?",
+            "\nLutie Dyson live in La, Yes or No?",
+            "\nLake Charles locate in La, Yes or No?",
+            "\nLa locate in Lake Charles, Yes or No?"
+        ],
+        "1996": [
+            "\nDEM base in Rhode Island, Yes or No?",
+            "\nDEM base in Warwick, Yes or No?",
+            "\nDEM base in Pawtuxet River, Yes or No?",
+            "\nRhode Island locate in Warwick, Yes or No?",
+            "\nRhode Island locate in Pawtuxet River, Yes or No?",
+            "\nWarwick locate in Rhode Island, Yes or No?",
+            "\nWarwick locate in Pawtuxet River, Yes or No?",
+            "\nPawtuxet River locate in Rhode Island, Yes or No?",
+            "\nPawtuxet River locate in Warwick, Yes or No?"
+        ],
+        "2000": [
+            "\nJack Frazier work for Rotary Club, Yes or No?"
+        ],
+        "2003": [
+            "\nTom Defelice live in Warwick, Yes or No?",
+            "\nTom Defelice live in Disney World, Yes or No?",
+            "\nWarwick locate in Disney World, Yes or No?",
+            "\nDisney World locate in Warwick, Yes or No?"
+        ],
+        "2010": [
+            "\nSherman Finesilver kill John C. Keene, Yes or No?",
+            "\nJohn C. Keene kill Sherman Finesilver, Yes or No?",
+            "\nSherman Finesilver live in U.S., Yes or No?",
+            "\nJohn C. Keene live in U.S., Yes or No?"
+        ],
+        "2112": [
+            "\nTerry Branstad work for National Governors' Association, Yes or No?",
+            "\nBooth Gardner work for National Governors' Association, Yes or No?",
+            "\nTerry Branstad kill Booth Gardner, Yes or No?",
+            "\nBooth Gardner kill Terry Branstad, Yes or No?",
+            "\nNational Governors' Association base in Washington, Yes or No?",
+            "\nTerry Branstad live in Washington, Yes or No?",
+            "\nBooth Gardner live in Washington, Yes or No?"
+        ],
+        "2116": [
+            "\nCecil Andrus live in Idaho, Yes or No?"
+        ],
+        "2140": [
+            "\nHun Sen work for Cambodian government, Yes or No?",
+            "\nHun Sen work for U.N., Yes or No?",
+            "\nSecretary-General Javier Perez de Cuellar work for Cambodian government, Yes or No?",
+            "\nSecretary-General Javier Perez de Cuellar work for U.N., Yes or No?",
+            "\nHun Sen kill Secretary-General Javier Perez de Cuellar, Yes or No?",
+            "\nSecretary-General Javier Perez de Cuellar kill Hun Sen, Yes or No?",
+            "\nCambodian government base in Vietnam, Yes or No?",
+            "\nU.N. base in Vietnam, Yes or No?",
+            "\nHun Sen live in Vietnam, Yes or No?",
+            "\nSecretary-General Javier Perez de Cuellar live in Vietnam, Yes or No?"
+        ],
+        "2154": [
+            "\nJohn Johnson work for New England Telephone, Yes or No?",
+            "\nJohn Johnson work for XBT Telecom, Yes or No?"
+        ],
+        "2156": [
+            "\nBernice McIntyre work for Public Utilities Commission, Yes or No?"
+        ],
+        "2229": [
+            "\nlaska locate in outh Korea, Yes or No?",
+            "\nouth Korea locate in laska, Yes or No?"
+        ],
+        "2254": [
+            "\nMason work for HHS, Yes or No?",
+            "\nLouis Sullivan work for HHS, Yes or No?",
+            "\nMason kill Louis Sullivan, Yes or No?",
+            "\nLouis Sullivan kill Mason, Yes or No?"
+        ],
+        "2270": [
+            "\nJoseph R. Biden work for Senate Judiciary Committee, Yes or No?",
+            "\nSenate Judiciary Committee base in Del, Yes or No?",
+            "\nJoseph R. Biden live in Del, Yes or No?"
+        ],
+        "2300": [
+            "\nPentagon base in U.S., Yes or No?"
+        ],
+        "2308": [
+            "\nCicippio work for Revolutionary Justice Organization, Yes or No?",
+            "\nCicippio work for An-Nahar, Yes or No?",
+            "\nRevolutionary Justice Organization base in Beirut, Yes or No?",
+            "\nAn-Nahar base in Beirut, Yes or No?",
+            "\nCicippio live in Beirut, Yes or No?"
+        ],
+        "2312": [
+            "\nAnderson work for The Associated Press, Yes or No?",
+            "\nThe Associated Press base in Beirut, Yes or No?",
+            "\nAnderson live in Beirut, Yes or No?"
+        ],
+        "2314": [
+            "\nJacobsen work for Iranian government, Yes or No?",
+            "\nAnderson work for Iranian government, Yes or No?",
+            "\nJacobsen kill Anderson, Yes or No?",
+            "\nAnderson kill Jacobsen, Yes or No?",
+            "\nIranian government base in London, Yes or No?",
+            "\nIranian government base in Colorado, Yes or No?",
+            "\nJacobsen live in London, Yes or No?",
+            "\nJacobsen live in Colorado, Yes or No?",
+            "\nAnderson live in London, Yes or No?",
+            "\nAnderson live in Colorado, Yes or No?",
+            "\nLondon locate in Colorado, Yes or No?",
+            "\nColorado locate in London, Yes or No?"
+        ],
+        "2328": [
+            "\nWyatt McCauley work for CH2M Hill, Yes or No?",
+            "\nCH2M Hill base in Denver, Yes or No?",
+            "\nWyatt McCauley live in Denver, Yes or No?"
+        ],
+        "2383": [
+            "\nHouston locate in Ellington Air Force Base, Yes or No?",
+            "\nHouston locate in Galveston, Yes or No?",
+            "\nHouston locate in Texas, Yes or No?",
+            "\nEllington Air Force Base locate in Houston, Yes or No?",
+            "\nEllington Air Force Base locate in Galveston, Yes or No?",
+            "\nEllington Air Force Base locate in Texas, Yes or No?",
+            "\nGalveston locate in Houston, Yes or No?",
+            "\nGalveston locate in Ellington Air Force Base, Yes or No?",
+            "\nGalveston locate in Texas, Yes or No?",
+            "\nTexas locate in Houston, Yes or No?",
+            "\nTexas locate in Ellington Air Force Base, Yes or No?",
+            "\nTexas locate in Galveston, Yes or No?"
+        ],
+        "2416": [
+            "\nThe president work for Commodity Futures Trading Commission, Yes or No?",
+            "\nWilliam P. Albrecht work for Commodity Futures Trading Commission, Yes or No?",
+            "\nThe president kill William P. Albrecht, Yes or No?",
+            "\nWilliam P. Albrecht kill The president, Yes or No?"
+        ],
+        "2420": [
+            "\nOgdon work for Manygate Management, Yes or No?",
+            "\nManygate Management base in London, Yes or No?",
+            "\nManygate Management base in Charing Cross Hospital, Yes or No?",
+            "\nOgdon live in London, Yes or No?",
+            "\nOgdon live in Charing Cross Hospital, Yes or No?",
+            "\nLondon locate in Charing Cross Hospital, Yes or No?",
+            "\nCharing Cross Hospital locate in London, Yes or No?"
+        ],
+        "2481": [
+            "\nDebra Sweiger kill King County O Investigator Vaughn Van Zant, Yes or No?",
+            "\nKing County O Investigator Vaughn Van Zant kill Debra Sweiger, Yes or No?",
+            "\nDebra Sweiger live in Issaquah, Yes or No?",
+            "\nKing County O Investigator Vaughn Van Zant live in Issaquah, Yes or No?"
+        ],
+        "2493": [
+            "\nMike Norton work for Justice Department, Yes or No?",
+            "\nKen Fimberg work for Justice Department, Yes or No?",
+            "\nPeter Murtha work for Justice Department, Yes or No?",
+            "\nMike Norton kill Ken Fimberg, Yes or No?",
+            "\nMike Norton kill Peter Murtha, Yes or No?",
+            "\nKen Fimberg kill Mike Norton, Yes or No?",
+            "\nKen Fimberg kill Peter Murtha, Yes or No?",
+            "\nPeter Murtha kill Mike Norton, Yes or No?",
+            "\nPeter Murtha kill Ken Fimberg, Yes or No?",
+            "\nJustice Department base in Denver, Yes or No?",
+            "\nJustice Department base in Washington, Yes or No?",
+            "\nMike Norton live in Denver, Yes or No?",
+            "\nMike Norton live in Washington, Yes or No?",
+            "\nKen Fimberg live in Denver, Yes or No?",
+            "\nKen Fimberg live in Washington, Yes or No?",
+            "\nPeter Murtha live in Denver, Yes or No?",
+            "\nPeter Murtha live in Washington, Yes or No?",
+            "\nDenver locate in Washington, Yes or No?",
+            "\nWashington locate in Denver, Yes or No?"
+        ],
+        "2522": [
+            "\nKim Dae-jung live in South Korea, Yes or No?"
+        ],
+        "2559": [
+            "\nGreg Thayer work for U.S. Forest Service, Yes or No?",
+            "\nU.S. Forest Service base in Washington state, Yes or No?",
+            "\nU.S. Forest Service base in Cascade range, Yes or No?",
+            "\nU.S. Forest Service base in Canadian border, Yes or No?",
+            "\nGreg Thayer live in Washington state, Yes or No?",
+            "\nGreg Thayer live in Cascade range, Yes or No?",
+            "\nGreg Thayer live in Canadian border, Yes or No?",
+            "\nWashington state locate in Cascade range, Yes or No?",
+            "\nWashington state locate in Canadian border, Yes or No?",
+            "\nCascade range locate in Washington state, Yes or No?",
+            "\nCascade range locate in Canadian border, Yes or No?",
+            "\nCanadian border locate in Washington state, Yes or No?",
+            "\nCanadian border locate in Cascade range, Yes or No?"
+        ],
+        "2561": [
+            "\nCalifornia locate in Sierra Nevada foothills, Yes or No?",
+            "\nSierra Nevada foothills locate in California, Yes or No?"
+        ],
+        "2600": [
+            "\nMichael Harrington work for City University, Yes or No?",
+            "\nJoseph S. Murphy work for City University, Yes or No?",
+            "\nMichael Harrington kill Joseph S. Murphy, Yes or No?",
+            "\nJoseph S. Murphy kill Michael Harrington, Yes or No?"
+        ],
+        "2626": [
+            "\nBoise Interagency Fire Center base in Idaho, Yes or No?",
+            "\nBoise Interagency Fire Center base in Oregon, Yes or No?",
+            "\nBoise Interagency Fire Center base in California, Yes or No?",
+            "\nBoise Interagency Fire Center base in Washington, Yes or No?",
+            "\nIdaho locate in Oregon, Yes or No?",
+            "\nIdaho locate in California, Yes or No?",
+            "\nIdaho locate in Washington, Yes or No?",
+            "\nOregon locate in Idaho, Yes or No?",
+            "\nOregon locate in California, Yes or No?",
+            "\nOregon locate in Washington, Yes or No?",
+            "\nCalifornia locate in Idaho, Yes or No?",
+            "\nCalifornia locate in Oregon, Yes or No?",
+            "\nCalifornia locate in Washington, Yes or No?",
+            "\nWashington locate in Idaho, Yes or No?",
+            "\nWashington locate in Oregon, Yes or No?",
+            "\nWashington locate in California, Yes or No?"
+        ],
+        "2628": [
+            "\nCecil Andrus live in Idaho, Yes or No?"
+        ],
+        "2640": [
+            "\nJeff Widener work for AP LaserPhoto, Yes or No?",
+            "\nAP LaserPhoto base in Bangkok, Yes or No?",
+            "\nJeff Widener live in Bangkok, Yes or No?"
+        ],
+        "2644": [
+            "\nBangkok locate in Klong Toey, Yes or No?",
+            "\nKlong Toey locate in Bangkok, Yes or No?"
+        ],
+        "2697": [
+            "\nArensberg work for Harvard University, Yes or No?",
+            "\nArensberg work for University of Bordeaux, Yes or No?",
+            "\nOfer Bar-Yosef work for Harvard University, Yes or No?",
+            "\nOfer Bar-Yosef work for University of Bordeaux, Yes or No?",
+            "\nBernard Vandermeersch work for Harvard University, Yes or No?",
+            "\nBernard Vandermeersch work for University of Bordeaux, Yes or No?",
+            "\nArensberg kill Ofer Bar-Yosef, Yes or No?",
+            "\nArensberg kill Bernard Vandermeersch, Yes or No?",
+            "\nOfer Bar-Yosef kill Arensberg, Yes or No?",
+            "\nOfer Bar-Yosef kill Bernard Vandermeersch, Yes or No?",
+            "\nBernard Vandermeersch kill Arensberg, Yes or No?",
+            "\nBernard Vandermeersch kill Ofer Bar-Yosef, Yes or No?",
+            "\nHarvard University base in Kebara, Yes or No?",
+            "\nUniversity of Bordeaux base in Kebara, Yes or No?",
+            "\nArensberg live in Kebara, Yes or No?",
+            "\nOfer Bar-Yosef live in Kebara, Yes or No?",
+            "\nBernard Vandermeersch live in Kebara, Yes or No?"
+        ],
+        "2748": [
+            "\nCarlos Tenev work for Peronist Party, Yes or No?"
+        ],
+        "2774": [
+            "\nGuernsey locate in Britain, Yes or No?",
+            "\nGuernsey locate in Channel Islands, Yes or No?",
+            "\nGuernsey locate in France, Yes or No?",
+            "\nBritain locate in Guernsey, Yes or No?",
+            "\nBritain locate in Channel Islands, Yes or No?",
+            "\nBritain locate in France, Yes or No?",
+            "\nChannel Islands locate in Guernsey, Yes or No?",
+            "\nChannel Islands locate in Britain, Yes or No?",
+            "\nChannel Islands locate in France, Yes or No?",
+            "\nFrance locate in Guernsey, Yes or No?",
+            "\nFrance locate in Britain, Yes or No?",
+            "\nFrance locate in Channel Islands, Yes or No?"
+        ],
+        "2833": [
+            "\nWharf Holdings base in Hong Kong, Yes or No?"
+        ],
+        "2838": [
+            "\nJack MacAllister work for U S West inc., Yes or No?",
+            "\nU S West inc. base in Hong Kong, Yes or No?",
+            "\nJack MacAllister live in Hong Kong, Yes or No?"
+        ],
+        "2885": [
+            "\nLawrence Kane Jr. work for Home State, Yes or No?",
+            "\nHome State base in hio, Yes or No?",
+            "\nLawrence Kane Jr. live in hio, Yes or No?"
+        ],
+        "2901": [
+            "\nJean-Luckenson work for Signal FM, Yes or No?"
+        ],
+        "2923": [
+            "\nCCRI-CG base in Mexico, Yes or No?",
+            "\nEZLN base in Mexico, Yes or No?"
+        ],
+        "2976": [
+            "\nITAR-TASS base in Iranian, Yes or No?",
+            "\nITAR-TASS base in Moscow, Yes or No?",
+            "\nIranian locate in Moscow, Yes or No?",
+            "\nMoscow locate in Iranian, Yes or No?"
+        ],
+        "2977": [
+            "\nITAR-TASS base in Moscow, Yes or No?"
+        ],
+        "2979": [
+            "\nArmenian locate in Tehran, Yes or No?",
+            "\nArmenian locate in Stepanakert, Yes or No?",
+            "\nArmenian locate in Nagorno-Karabakh province, Yes or No?",
+            "\nArmenian locate in Azerbaijan, Yes or No?",
+            "\nTehran locate in Armenian, Yes or No?",
+            "\nTehran locate in Stepanakert, Yes or No?",
+            "\nTehran locate in Nagorno-Karabakh province, Yes or No?",
+            "\nTehran locate in Azerbaijan, Yes or No?",
+            "\nStepanakert locate in Armenian, Yes or No?",
+            "\nStepanakert locate in Tehran, Yes or No?",
+            "\nStepanakert locate in Nagorno-Karabakh province, Yes or No?",
+            "\nStepanakert locate in Azerbaijan, Yes or No?",
+            "\nNagorno-Karabakh province locate in Armenian, Yes or No?",
+            "\nNagorno-Karabakh province locate in Tehran, Yes or No?",
+            "\nNagorno-Karabakh province locate in Stepanakert, Yes or No?",
+            "\nNagorno-Karabakh province locate in Azerbaijan, Yes or No?",
+            "\nAzerbaijan locate in Armenian, Yes or No?",
+            "\nAzerbaijan locate in Tehran, Yes or No?",
+            "\nAzerbaijan locate in Stepanakert, Yes or No?",
+            "\nAzerbaijan locate in Nagorno-Karabakh province, Yes or No?"
+        ],
+        "3023": [
+            "\nGianfranco Fini work for National Alliance, Yes or No?"
+        ],
+        "3074": [
+            "\nNorthern Improvement Brigade base in Namialo assembly area, Yes or No?",
+            "\nNorthern Improvement Brigade base in Nampula Province, Yes or No?",
+            "\nNampula Provincial Command base in Namialo assembly area, Yes or No?",
+            "\nNampula Provincial Command base in Nampula Province, Yes or No?",
+            "\nNamialo assembly area locate in Nampula Province, Yes or No?",
+            "\nNampula Province locate in Namialo assembly area, Yes or No?"
+        ],
+        "3128": [
+            "\nNIHON KEIZAI SHIMBUN base in Tokyo, Yes or No?"
+        ],
+        "3226": [
+            "\nBranko Vojnic work for Serb Radical Party, Yes or No?",
+            "\nBranko Vojnic work for Krajina Serb Democratic Party, Yes or No?",
+            "\nMarko Atlagic work for Serb Radical Party, Yes or No?",
+            "\nMarko Atlagic work for Krajina Serb Democratic Party, Yes or No?",
+            "\nDr. Milan Ernjakovic work for Serb Radical Party, Yes or No?",
+            "\nDr. Milan Ernjakovic work for Krajina Serb Democratic Party, Yes or No?",
+            "\nBranko Vojnic kill Marko Atlagic, Yes or No?",
+            "\nBranko Vojnic kill Dr. Milan Ernjakovic, Yes or No?",
+            "\nMarko Atlagic kill Branko Vojnic, Yes or No?",
+            "\nMarko Atlagic kill Dr. Milan Ernjakovic, Yes or No?",
+            "\nDr. Milan Ernjakovic kill Branko Vojnic, Yes or No?",
+            "\nDr. Milan Ernjakovic kill Marko Atlagic, Yes or No?",
+            "\nSerb Radical Party base in Beli Manastir, Yes or No?",
+            "\nKrajina Serb Democratic Party base in Beli Manastir, Yes or No?",
+            "\nBranko Vojnic live in Beli Manastir, Yes or No?",
+            "\nMarko Atlagic live in Beli Manastir, Yes or No?",
+            "\nDr. Milan Ernjakovic live in Beli Manastir, Yes or No?"
+        ],
+        "3232": [
+            "\nBSP base in Bosnia, Yes or No?",
+            "\nBSP base in Sofia, Yes or No?",
+            "\nSDS base in Bosnia, Yes or No?",
+            "\nSDS base in Sofia, Yes or No?",
+            "\nBTA base in Bosnia, Yes or No?",
+            "\nBTA base in Sofia, Yes or No?",
+            "\nBosnia locate in Sofia, Yes or No?",
+            "\nSofia locate in Bosnia, Yes or No?"
+        ],
+        "3276": [
+            "\nRadio Rebelde Network base in Havana, Yes or No?"
+        ],
+        "3294": [
+            "\nSecurity Forces base in Paris, Yes or No?",
+            "\nAFP base in Paris, Yes or No?"
+        ],
+        "3303": [
+            "\nIsraeli Aircraft base in Iqlim al-Tuffah, Yes or No?",
+            "\nIsraeli Aircraft base in Beirut, Yes or No?",
+            "\nRadio Lebanon base in Iqlim al-Tuffah, Yes or No?",
+            "\nRadio Lebanon base in Beirut, Yes or No?",
+            "\nIqlim al-Tuffah locate in Beirut, Yes or No?",
+            "\nBeirut locate in Iqlim al-Tuffah, Yes or No?"
+        ],
+        "3327": [
+            "\nDutch Air Force base in Bosnia, Yes or No?",
+            "\nDutch Air Force base in The Hague, Yes or No?",
+            "\nANP base in Bosnia, Yes or No?",
+            "\nANP base in The Hague, Yes or No?",
+            "\nBosnia locate in The Hague, Yes or No?",
+            "\nThe Hague locate in Bosnia, Yes or No?"
+        ],
+        "3392": [
+            "\nArrow Missile Program base in Jerusalem, Yes or No?",
+            "\nTHE JERUSALEM POST base in Jerusalem, Yes or No?"
+        ],
+        "3393": [
+            "\nTHE JERUSALEM POST base in Jerusalem, Yes or No?"
+        ],
+        "3470": [
+            "\nGerald Steinberg work for Bar-Ilan University, Yes or No?"
+        ],
+        "3498": [
+            "\nSteven Bryen work for Pentagon, Yes or No?",
+            "\nPentagon base in U.S., Yes or No?",
+            "\nSteven Bryen live in U.S., Yes or No?"
+        ],
+        "3501": [
+            "\nPedatzur work for Massachusetts Institute of Technology, Yes or No?"
+        ],
+        "3577": [
+            "\nNorth Korean locate in Australian, Yes or No?",
+            "\nNorth Korean locate in Jakarta, Yes or No?",
+            "\nNorth Korean locate in Bangkok, Yes or No?",
+            "\nNorth Korean locate in United States, Yes or No?",
+            "\nNorth Korean locate in Japan, Yes or No?",
+            "\nNorth Korean locate in South Korea, Yes or No?",
+            "\nAustralian locate in North Korean, Yes or No?",
+            "\nAustralian locate in Jakarta, Yes or No?",
+            "\nAustralian locate in Bangkok, Yes or No?",
+            "\nAustralian locate in United States, Yes or No?",
+            "\nAustralian locate in Japan, Yes or No?",
+            "\nAustralian locate in South Korea, Yes or No?",
+            "\nJakarta locate in North Korean, Yes or No?",
+            "\nJakarta locate in Australian, Yes or No?",
+            "\nJakarta locate in Bangkok, Yes or No?",
+            "\nJakarta locate in United States, Yes or No?",
+            "\nJakarta locate in Japan, Yes or No?",
+            "\nJakarta locate in South Korea, Yes or No?",
+            "\nBangkok locate in North Korean, Yes or No?",
+            "\nBangkok locate in Australian, Yes or No?",
+            "\nBangkok locate in Jakarta, Yes or No?",
+            "\nBangkok locate in United States, Yes or No?",
+            "\nBangkok locate in Japan, Yes or No?",
+            "\nBangkok locate in South Korea, Yes or No?",
+            "\nUnited States locate in North Korean, Yes or No?",
+            "\nUnited States locate in Australian, Yes or No?",
+            "\nUnited States locate in Jakarta, Yes or No?",
+            "\nUnited States locate in Bangkok, Yes or No?",
+            "\nUnited States locate in Japan, Yes or No?",
+            "\nUnited States locate in South Korea, Yes or No?",
+            "\nJapan locate in North Korean, Yes or No?",
+            "\nJapan locate in Australian, Yes or No?",
+            "\nJapan locate in Jakarta, Yes or No?",
+            "\nJapan locate in Bangkok, Yes or No?",
+            "\nJapan locate in United States, Yes or No?",
+            "\nJapan locate in South Korea, Yes or No?",
+            "\nSouth Korea locate in North Korean, Yes or No?",
+            "\nSouth Korea locate in Australian, Yes or No?",
+            "\nSouth Korea locate in Jakarta, Yes or No?",
+            "\nSouth Korea locate in Bangkok, Yes or No?",
+            "\nSouth Korea locate in United States, Yes or No?",
+            "\nSouth Korea locate in Japan, Yes or No?"
+        ],
+        "3585": [
+            "\nAustralian Government base in Australia, Yes or No?",
+            "\nNorth Korean Government base in Australia, Yes or No?"
+        ],
+        "3595": [
+            "\nNuclear Nonproliferation Treaty base in North Korea, Yes or No?",
+            "\nNuclear Nonproliferation Treaty base in Yongbyon, Yes or No?",
+            "\nNorth Korea locate in Yongbyon, Yes or No?",
+            "\nYongbyon locate in North Korea, Yes or No?"
+        ],
+        "3631": [
+            "\nJohn Savage kill Ricardo Cabrisas, Yes or No?",
+            "\nRicardo Cabrisas kill John Savage, Yes or No?",
+            "\nJohn Savage live in Nova Scotia, Yes or No?",
+            "\nJohn Savage live in Cuba, Yes or No?",
+            "\nRicardo Cabrisas live in Nova Scotia, Yes or No?",
+            "\nRicardo Cabrisas live in Cuba, Yes or No?",
+            "\nNova Scotia locate in Cuba, Yes or No?",
+            "\nCuba locate in Nova Scotia, Yes or No?"
+        ],
+        "3643": [
+            "\nMiguel Rodriguez Mendoza work for U.S. Environmental Protection Agency, Yes or No?",
+            "\nMiguel Rodriguez Mendoza work for GATT, Yes or No?",
+            "\nU.S. Environmental Protection Agency base in Venezuela, Yes or No?",
+            "\nGATT base in Venezuela, Yes or No?",
+            "\nMiguel Rodriguez Mendoza live in Venezuela, Yes or No?"
+        ],
+        "3687": [],
+        "3747": [
+            "\nEsprit Project base in Duesseldorf, Yes or No?",
+            "\nHANDELSBLATT base in Duesseldorf, Yes or No?"
+        ],
+        "3756": [
+            "\nJordi Aguil\u00f3 work for CNM, Yes or No?"
+        ],
+        "3782": [
+            "\nFinandes financial company base in Santiago, Yes or No?",
+            "\nFinandes financial company base in Valparaiso, Yes or No?",
+            "\nSantiago locate in Valparaiso, Yes or No?",
+            "\nValparaiso locate in Santiago, Yes or No?"
+        ],
+        "3787": [
+            "\nO GLOBO base in Rio de Janeiro, Yes or No?"
+        ],
+        "3788": [
+            "\nSao Paulo State Attorney's Office base in Sao Paulo, Yes or No?",
+            "\nInstitute for Nuclear and Energy Research (Ipen) base in Sao Paulo, Yes or No?",
+            "\nNational Nuclear Energy Commission (CNEN) base in Sao Paulo, Yes or No?"
+        ],
+        "3789": [
+            "\nAssociation of Ipen Employees base in Sao Paulo, Yes or No?",
+            "\nFederal Employees Union in Sao Paulo base in Sao Paulo, Yes or No?",
+            "\nIpen base in Sao Paulo, Yes or No?"
+        ],
+        "3798": [
+            "\nTeleonce Television base in Guatemala City, Yes or No?"
+        ],
+        "3853": [
+            "\nYuriy Kuzmenko work for Okhotrybvod, Yes or No?",
+            "\nStanislav Mikhaylovich Korochkin work for Okhotrybvod, Yes or No?",
+            "\nYuriy Kuzmenko kill Stanislav Mikhaylovich Korochkin, Yes or No?",
+            "\nStanislav Mikhaylovich Korochkin kill Yuriy Kuzmenko, Yes or No?",
+            "\nOkhotrybvod base in Magadan Basin, Yes or No?",
+            "\nOkhotrybvod base in Okhotsk Sea, Yes or No?",
+            "\nOkhotrybvod base in Washington, Yes or No?",
+            "\nOkhotrybvod base in Bering Sea, Yes or No?",
+            "\nYuriy Kuzmenko live in Magadan Basin, Yes or No?",
+            "\nYuriy Kuzmenko live in Okhotsk Sea, Yes or No?",
+            "\nYuriy Kuzmenko live in Washington, Yes or No?",
+            "\nYuriy Kuzmenko live in Bering Sea, Yes or No?",
+            "\nStanislav Mikhaylovich Korochkin live in Magadan Basin, Yes or No?",
+            "\nStanislav Mikhaylovich Korochkin live in Okhotsk Sea, Yes or No?",
+            "\nStanislav Mikhaylovich Korochkin live in Washington, Yes or No?",
+            "\nStanislav Mikhaylovich Korochkin live in Bering Sea, Yes or No?",
+            "\nMagadan Basin locate in Okhotsk Sea, Yes or No?",
+            "\nMagadan Basin locate in Washington, Yes or No?",
+            "\nMagadan Basin locate in Bering Sea, Yes or No?",
+            "\nOkhotsk Sea locate in Magadan Basin, Yes or No?",
+            "\nOkhotsk Sea locate in Washington, Yes or No?",
+            "\nOkhotsk Sea locate in Bering Sea, Yes or No?",
+            "\nWashington locate in Magadan Basin, Yes or No?",
+            "\nWashington locate in Okhotsk Sea, Yes or No?",
+            "\nWashington locate in Bering Sea, Yes or No?",
+            "\nBering Sea locate in Magadan Basin, Yes or No?",
+            "\nBering Sea locate in Okhotsk Sea, Yes or No?",
+            "\nBering Sea locate in Washington, Yes or No?"
+        ],
+        "3901": [
+            "\nSuomen Yleisradio Network base in Helsinki, Yes or No?"
+        ],
+        "3911": [
+            "\nEL COMERCIO base in Lima, Yes or No?"
+        ],
+        "3916": [
+            "\nMangunchay irrigation project base in San Ignacio forest, Yes or No?",
+            "\nMangunchay irrigation project base in Jaen, Yes or No?",
+            "\nMangunchay irrigation project base in San Ignacio de Cajamarca, Yes or No?",
+            "\nSan Ignacio forest locate in Jaen, Yes or No?",
+            "\nSan Ignacio forest locate in San Ignacio de Cajamarca, Yes or No?",
+            "\nJaen locate in San Ignacio forest, Yes or No?",
+            "\nJaen locate in San Ignacio de Cajamarca, Yes or No?",
+            "\nSan Ignacio de Cajamarca locate in San Ignacio forest, Yes or No?",
+            "\nSan Ignacio de Cajamarca locate in Jaen, Yes or No?"
+        ],
+        "3919": [
+            "\nHuancabamba locate in Piura, Yes or No?",
+            "\nHuancabamba locate in Bagua, Yes or No?",
+            "\nHuancabamba locate in Condorcanqui, Yes or No?",
+            "\nHuancabamba locate in Amazonas, Yes or No?",
+            "\nHuancabamba locate in San Martin Department, Yes or No?",
+            "\nHuancabamba locate in Nueva Cajamarca, Yes or No?",
+            "\nHuancabamba locate in Rioja, Yes or No?",
+            "\nHuancabamba locate in Soritor, Yes or No?",
+            "\nHuancabamba locate in Mayo, Yes or No?",
+            "\nHuancabamba locate in Sisa, Yes or No?",
+            "\nHuancabamba locate in Biabo, Yes or No?",
+            "\nPiura locate in Huancabamba, Yes or No?",
+            "\nPiura locate in Bagua, Yes or No?",
+            "\nPiura locate in Condorcanqui, Yes or No?",
+            "\nPiura locate in Amazonas, Yes or No?",
+            "\nPiura locate in San Martin Department, Yes or No?",
+            "\nPiura locate in Nueva Cajamarca, Yes or No?",
+            "\nPiura locate in Rioja, Yes or No?",
+            "\nPiura locate in Soritor, Yes or No?",
+            "\nPiura locate in Mayo, Yes or No?",
+            "\nPiura locate in Sisa, Yes or No?",
+            "\nPiura locate in Biabo, Yes or No?",
+            "\nBagua locate in Huancabamba, Yes or No?",
+            "\nBagua locate in Piura, Yes or No?",
+            "\nBagua locate in Condorcanqui, Yes or No?",
+            "\nBagua locate in Amazonas, Yes or No?",
+            "\nBagua locate in San Martin Department, Yes or No?",
+            "\nBagua locate in Nueva Cajamarca, Yes or No?",
+            "\nBagua locate in Rioja, Yes or No?",
+            "\nBagua locate in Soritor, Yes or No?",
+            "\nBagua locate in Mayo, Yes or No?",
+            "\nBagua locate in Sisa, Yes or No?",
+            "\nBagua locate in Biabo, Yes or No?",
+            "\nCondorcanqui locate in Huancabamba, Yes or No?",
+            "\nCondorcanqui locate in Piura, Yes or No?",
+            "\nCondorcanqui locate in Bagua, Yes or No?",
+            "\nCondorcanqui locate in Amazonas, Yes or No?",
+            "\nCondorcanqui locate in San Martin Department, Yes or No?",
+            "\nCondorcanqui locate in Nueva Cajamarca, Yes or No?",
+            "\nCondorcanqui locate in Rioja, Yes or No?",
+            "\nCondorcanqui locate in Soritor, Yes or No?",
+            "\nCondorcanqui locate in Mayo, Yes or No?",
+            "\nCondorcanqui locate in Sisa, Yes or No?",
+            "\nCondorcanqui locate in Biabo, Yes or No?",
+            "\nAmazonas locate in Huancabamba, Yes or No?",
+            "\nAmazonas locate in Piura, Yes or No?",
+            "\nAmazonas locate in Bagua, Yes or No?",
+            "\nAmazonas locate in Condorcanqui, Yes or No?",
+            "\nAmazonas locate in San Martin Department, Yes or No?",
+            "\nAmazonas locate in Nueva Cajamarca, Yes or No?",
+            "\nAmazonas locate in Rioja, Yes or No?",
+            "\nAmazonas locate in Soritor, Yes or No?",
+            "\nAmazonas locate in Mayo, Yes or No?",
+            "\nAmazonas locate in Sisa, Yes or No?",
+            "\nAmazonas locate in Biabo, Yes or No?",
+            "\nSan Martin Department locate in Huancabamba, Yes or No?",
+            "\nSan Martin Department locate in Piura, Yes or No?",
+            "\nSan Martin Department locate in Bagua, Yes or No?",
+            "\nSan Martin Department locate in Condorcanqui, Yes or No?",
+            "\nSan Martin Department locate in Amazonas, Yes or No?",
+            "\nSan Martin Department locate in Nueva Cajamarca, Yes or No?",
+            "\nSan Martin Department locate in Rioja, Yes or No?",
+            "\nSan Martin Department locate in Soritor, Yes or No?",
+            "\nSan Martin Department locate in Mayo, Yes or No?",
+            "\nSan Martin Department locate in Sisa, Yes or No?",
+            "\nSan Martin Department locate in Biabo, Yes or No?",
+            "\nNueva Cajamarca locate in Huancabamba, Yes or No?",
+            "\nNueva Cajamarca locate in Piura, Yes or No?",
+            "\nNueva Cajamarca locate in Bagua, Yes or No?",
+            "\nNueva Cajamarca locate in Condorcanqui, Yes or No?",
+            "\nNueva Cajamarca locate in Amazonas, Yes or No?",
+            "\nNueva Cajamarca locate in San Martin Department, Yes or No?",
+            "\nNueva Cajamarca locate in Rioja, Yes or No?",
+            "\nNueva Cajamarca locate in Soritor, Yes or No?",
+            "\nNueva Cajamarca locate in Mayo, Yes or No?",
+            "\nNueva Cajamarca locate in Sisa, Yes or No?",
+            "\nNueva Cajamarca locate in Biabo, Yes or No?",
+            "\nRioja locate in Huancabamba, Yes or No?",
+            "\nRioja locate in Piura, Yes or No?",
+            "\nRioja locate in Bagua, Yes or No?",
+            "\nRioja locate in Condorcanqui, Yes or No?",
+            "\nRioja locate in Amazonas, Yes or No?",
+            "\nRioja locate in San Martin Department, Yes or No?",
+            "\nRioja locate in Nueva Cajamarca, Yes or No?",
+            "\nRioja locate in Soritor, Yes or No?",
+            "\nRioja locate in Mayo, Yes or No?",
+            "\nRioja locate in Sisa, Yes or No?",
+            "\nRioja locate in Biabo, Yes or No?",
+            "\nSoritor locate in Huancabamba, Yes or No?",
+            "\nSoritor locate in Piura, Yes or No?",
+            "\nSoritor locate in Bagua, Yes or No?",
+            "\nSoritor locate in Condorcanqui, Yes or No?",
+            "\nSoritor locate in Amazonas, Yes or No?",
+            "\nSoritor locate in San Martin Department, Yes or No?",
+            "\nSoritor locate in Nueva Cajamarca, Yes or No?",
+            "\nSoritor locate in Rioja, Yes or No?",
+            "\nSoritor locate in Mayo, Yes or No?",
+            "\nSoritor locate in Sisa, Yes or No?",
+            "\nSoritor locate in Biabo, Yes or No?",
+            "\nMayo locate in Huancabamba, Yes or No?",
+            "\nMayo locate in Piura, Yes or No?",
+            "\nMayo locate in Bagua, Yes or No?",
+            "\nMayo locate in Condorcanqui, Yes or No?",
+            "\nMayo locate in Amazonas, Yes or No?",
+            "\nMayo locate in San Martin Department, Yes or No?",
+            "\nMayo locate in Nueva Cajamarca, Yes or No?",
+            "\nMayo locate in Rioja, Yes or No?",
+            "\nMayo locate in Soritor, Yes or No?",
+            "\nMayo locate in Sisa, Yes or No?",
+            "\nMayo locate in Biabo, Yes or No?",
+            "\nSisa locate in Huancabamba, Yes or No?",
+            "\nSisa locate in Piura, Yes or No?",
+            "\nSisa locate in Bagua, Yes or No?",
+            "\nSisa locate in Condorcanqui, Yes or No?",
+            "\nSisa locate in Amazonas, Yes or No?",
+            "\nSisa locate in San Martin Department, Yes or No?",
+            "\nSisa locate in Nueva Cajamarca, Yes or No?",
+            "\nSisa locate in Rioja, Yes or No?",
+            "\nSisa locate in Soritor, Yes or No?",
+            "\nSisa locate in Mayo, Yes or No?",
+            "\nSisa locate in Biabo, Yes or No?",
+            "\nBiabo locate in Huancabamba, Yes or No?",
+            "\nBiabo locate in Piura, Yes or No?",
+            "\nBiabo locate in Bagua, Yes or No?",
+            "\nBiabo locate in Condorcanqui, Yes or No?",
+            "\nBiabo locate in Amazonas, Yes or No?",
+            "\nBiabo locate in San Martin Department, Yes or No?",
+            "\nBiabo locate in Nueva Cajamarca, Yes or No?",
+            "\nBiabo locate in Rioja, Yes or No?",
+            "\nBiabo locate in Soritor, Yes or No?",
+            "\nBiabo locate in Mayo, Yes or No?",
+            "\nBiabo locate in Sisa, Yes or No?"
+        ],
+        "3950": [
+            "\nPRAVDA UKRAINY base in Kiev, Yes or No?"
+        ],
+        "3952": [
+            "\nIvan Plyushch live in Ukrainian, Yes or No?"
+        ],
+        "3997": [
+            "\nJINGJI YANJIU base in Beijing, Yes or No?"
+        ],
+        "4016": [
+            "\nDeng Nan work for XINHUA, Yes or No?",
+            "\nDeng Nan work for National People's Congress, Yes or No?",
+            "\nDeng Nan work for State Science and Technology Commission, Yes or No?",
+            "\nXINHUA base in Beijing, Yes or No?",
+            "\nXINHUA base in China, Yes or No?",
+            "\nNational People's Congress base in Beijing, Yes or No?",
+            "\nNational People's Congress base in China, Yes or No?",
+            "\nState Science and Technology Commission base in Beijing, Yes or No?",
+            "\nState Science and Technology Commission base in China, Yes or No?",
+            "\nDeng Nan live in Beijing, Yes or No?",
+            "\nDeng Nan live in China, Yes or No?",
+            "\nBeijing locate in China, Yes or No?",
+            "\nChina locate in Beijing, Yes or No?"
+        ],
+        "4023": [
+            "\nDeng Nan live in China, Yes or No?"
+        ],
+        "4048": [
+            "\nU.S. Congress base in United States, Yes or No?"
+        ],
+        "4068": [
+            "\nKim Pom-myon work for LDP, Yes or No?",
+            "\nLDP base in Nonsan County, Yes or No?",
+            "\nKim Pom-myon live in Nonsan County, Yes or No?"
+        ],
+        "4102": [
+            "\nKakizawa kill Hata, Yes or No?",
+            "\nKakizawa kill North Korean President Kim Il-song, Yes or No?",
+            "\nHata kill Kakizawa, Yes or No?",
+            "\nHata kill North Korean President Kim Il-song, Yes or No?",
+            "\nNorth Korean President Kim Il-song kill Kakizawa, Yes or No?",
+            "\nNorth Korean President Kim Il-song kill Hata, Yes or No?",
+            "\nKakizawa live in North Korea, Yes or No?",
+            "\nHata live in North Korea, Yes or No?",
+            "\nNorth Korean President Kim Il-song live in North Korea, Yes or No?"
+        ],
+        "4117": [
+            "\nBANGKOK POST base in Bangkok, Yes or No?"
+        ],
+        "4148": [
+            "\nLA JORNADA base in Mexico City, Yes or No?"
+        ],
+        "4174": [
+            "\nErnesto Zedillo Ponce de Leon work for PRI, Yes or No?",
+            "\nPRI base in Valley of Mexico, Yes or No?",
+            "\nErnesto Zedillo Ponce de Leon live in Valley of Mexico, Yes or No?"
+        ],
+        "4196": [
+            "\nENTV Television Network base in Algiers, Yes or No?"
+        ],
+        "4197": [
+            "\nENTV Television Network base in Algiers, Yes or No?"
+        ],
+        "4212": [
+            "\nNEZAVISIMAYA GAZETA base in Moscow, Yes or No?"
+        ],
+        "4230": [
+            "\nTHE HINDU base in Madras, Yes or No?"
+        ],
+        "4242": [
+            "\nACAN base in Panama City, Yes or No?"
+        ],
+        "4266": [
+            "\nSAPA base in Johannesburg, Yes or No?"
+        ],
+        "4267": [
+            "\nNelson Rohihlahla Mandela live in Republic of South Africa, Yes or No?"
+        ],
+        "4284": [
+            "\nKNA base in Nairobi, Yes or No?"
+        ],
+        "4305": [
+            "\nDatuk Sri Dr. Mahathir work for African National Congress, Yes or No?",
+            "\nNelson Mandela work for African National Congress, Yes or No?",
+            "\nPresident de Klerk work for African National Congress, Yes or No?",
+            "\nDatuk Sri Dr. Mahathir kill Nelson Mandela, Yes or No?",
+            "\nDatuk Sri Dr. Mahathir kill President de Klerk, Yes or No?",
+            "\nNelson Mandela kill Datuk Sri Dr. Mahathir, Yes or No?",
+            "\nNelson Mandela kill President de Klerk, Yes or No?",
+            "\nPresident de Klerk kill Datuk Sri Dr. Mahathir, Yes or No?",
+            "\nPresident de Klerk kill Nelson Mandela, Yes or No?",
+            "\nAfrican National Congress base in South Africa, Yes or No?",
+            "\nDatuk Sri Dr. Mahathir live in South Africa, Yes or No?",
+            "\nNelson Mandela live in South Africa, Yes or No?",
+            "\nPresident de Klerk live in South Africa, Yes or No?"
+        ],
+        "4341": [
+            "\nKim Hyong-ki work for IAEA, Yes or No?",
+            "\nIAEA base in North Korea, Yes or No?",
+            "\nKim Hyong-ki live in North Korea, Yes or No?"
+        ],
+        "4347": [
+            "\nSlovak Foreign Ministry base in Bratislava, Yes or No?",
+            "\nSlovak Foreign Ministry base in Budapest, Yes or No?",
+            "\nSlovak Foreign Ministry base in Gabcikovo derivation canal, Yes or No?",
+            "\nSlovak Foreign Ministry base in Danube, Yes or No?",
+            "\nHungarian Embassy base in Bratislava, Yes or No?",
+            "\nHungarian Embassy base in Budapest, Yes or No?",
+            "\nHungarian Embassy base in Gabcikovo derivation canal, Yes or No?",
+            "\nHungarian Embassy base in Danube, Yes or No?",
+            "\nBratislava locate in Budapest, Yes or No?",
+            "\nBratislava locate in Gabcikovo derivation canal, Yes or No?",
+            "\nBratislava locate in Danube, Yes or No?",
+            "\nBudapest locate in Bratislava, Yes or No?",
+            "\nBudapest locate in Gabcikovo derivation canal, Yes or No?",
+            "\nBudapest locate in Danube, Yes or No?",
+            "\nGabcikovo derivation canal locate in Bratislava, Yes or No?",
+            "\nGabcikovo derivation canal locate in Budapest, Yes or No?",
+            "\nGabcikovo derivation canal locate in Danube, Yes or No?",
+            "\nDanube locate in Bratislava, Yes or No?",
+            "\nDanube locate in Budapest, Yes or No?",
+            "\nDanube locate in Gabcikovo derivation canal, Yes or No?"
+        ],
+        "4400": [
+            "\nOrtega work for EU, Yes or No?",
+            "\nRene Steichen work for EU, Yes or No?",
+            "\nOrtega kill Rene Steichen, Yes or No?",
+            "\nRene Steichen kill Ortega, Yes or No?",
+            "\nEU base in Brussels, Yes or No?",
+            "\nOrtega live in Brussels, Yes or No?",
+            "\nRene Steichen live in Brussels, Yes or No?"
+        ],
+        "4437": [
+            "\nYasir 'Arafat work for PLO, Yes or No?",
+            "\nSa 'id Mu 'addi work for PLO, Yes or No?",
+            "\nYasir 'Arafat kill Sa 'id Mu 'addi, Yes or No?",
+            "\nSa 'id Mu 'addi kill Yasir 'Arafat, Yes or No?",
+            "\nPLO base in Cairo, Yes or No?",
+            "\nYasir 'Arafat live in Cairo, Yes or No?",
+            "\nSa 'id Mu 'addi live in Cairo, Yes or No?"
+        ],
+        "4485": [
+            "\nGeorgiy Gurinov work for Pacific Fleet, Yes or No?"
+        ],
+        "4491": [
+            "\nViktor Posuvalyuk work for Russian Foreign Ministry, Yes or No?",
+            "\nViktor Posuvalyuk work for ITAR-TASS, Yes or No?",
+            "\nRussian Foreign Ministry base in Moscow, Yes or No?",
+            "\nRussian Foreign Ministry base in Algeria, Yes or No?",
+            "\nITAR-TASS base in Moscow, Yes or No?",
+            "\nITAR-TASS base in Algeria, Yes or No?",
+            "\nViktor Posuvalyuk live in Moscow, Yes or No?",
+            "\nViktor Posuvalyuk live in Algeria, Yes or No?",
+            "\nMoscow locate in Algeria, Yes or No?",
+            "\nAlgeria locate in Moscow, Yes or No?"
+        ],
+        "4499": [
+            "\nProfessor Sergey Rogov work for Russian Center for Problems of National Security and International Relations, Yes or No?",
+            "\nRussian Center for Problems of National Security and International Relations base in Russia, Yes or No?",
+            "\nProfessor Sergey Rogov live in Russia, Yes or No?"
+        ],
+        "4515": [
+            "\nBASAPRESS base in Chisinau, Yes or No?"
+        ],
+        "4517": [
+            "\nMircea Snegur work for BASAPRESS, Yes or No?",
+            "\nMircea Snegur work for Agrarian Democratic Party of Moldova (PDAM), Yes or No?",
+            "\nMircea Snegur work for Socialist Party, Yes or No?",
+            "\nValentin Krylov work for BASAPRESS, Yes or No?",
+            "\nValentin Krylov work for Agrarian Democratic Party of Moldova (PDAM), Yes or No?",
+            "\nValentin Krylov work for Socialist Party, Yes or No?",
+            "\nMircea Snegur kill Valentin Krylov, Yes or No?",
+            "\nValentin Krylov kill Mircea Snegur, Yes or No?",
+            "\nBASAPRESS base in Chisinau, Yes or No?",
+            "\nAgrarian Democratic Party of Moldova (PDAM) base in Chisinau, Yes or No?",
+            "\nSocialist Party base in Chisinau, Yes or No?",
+            "\nMircea Snegur live in Chisinau, Yes or No?",
+            "\nValentin Krylov live in Chisinau, Yes or No?"
+        ],
+        "4563": [
+            "\nKurds work for Federal Administrative Court, Yes or No?",
+            "\nFederal Administrative Court base in Federal Republic, Yes or No?",
+            "\nFederal Administrative Court base in Turkey, Yes or No?",
+            "\nKurds live in Federal Republic, Yes or No?",
+            "\nKurds live in Turkey, Yes or No?",
+            "\nFederal Republic locate in Turkey, Yes or No?",
+            "\nTurkey locate in Federal Republic, Yes or No?"
+        ],
+        "4603": [
+            "\nScientists work for Institute of Organic Chemistry of Shanghai, Yes or No?",
+            "\nScientists work for Nodrm-1, Yes or No?",
+            "\nScientists work for azotobacteria, Yes or No?",
+            "\nScientists work for bean plants, Yes or No?",
+            "\nInstitute of Organic Chemistry of Shanghai base in Shanghai, Yes or No?",
+            "\nNodrm-1 base in Shanghai, Yes or No?",
+            "\nazotobacteria base in Shanghai, Yes or No?",
+            "\nbean plants base in Shanghai, Yes or No?",
+            "\nScientists live in Shanghai, Yes or No?"
+        ],
+        "4614": [
+            "\nHOLOS UKRAYINY base in Kiev, Yes or No?"
+        ],
+        "4615": [
+            "\nHOLOS UKRAYINY base in Kiev, Yes or No?"
+        ],
+        "4618": [
+            "\nSoviet Union base in Ukraine, Yes or No?"
+        ],
+        "5003": [
+            "\nLee Harvey Oswald work for Warren Commission, Yes or No?",
+            "\nKennedy work for Warren Commission, Yes or No?",
+            "\nLee Harvey Oswald kill Kennedy, Yes or No?",
+            "\nKennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nWarren Commission base in Dallas County Administration Building, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas County Administration Building, Yes or No?",
+            "\nKennedy live in Dallas County Administration Building, Yes or No?"
+        ],
+        "5008": [
+            "\nRobert F. Kennedy work for LAPD, Yes or No?",
+            "\nSirhan Sirhan work for LAPD, Yes or No?",
+            "\nRobert F. Kennedy kill Sirhan Sirhan, Yes or No?",
+            "\nSirhan Sirhan kill Robert F. Kennedy, Yes or No?"
+        ],
+        "5021": [
+            "\nSen. Robert F. Kennedy kill Sirhan Bishara Sirhan, Yes or No?",
+            "\nSirhan Bishara Sirhan kill Sen. Robert F. Kennedy, Yes or No?",
+            "\nSen. Robert F. Kennedy live in Good Samaritan Hospital, Yes or No?",
+            "\nSen. Robert F. Kennedy live in Los Angeles, Yes or No?",
+            "\nSen. Robert F. Kennedy live in Ambassador Hotel, Yes or No?",
+            "\nSirhan Bishara Sirhan live in Good Samaritan Hospital, Yes or No?",
+            "\nSirhan Bishara Sirhan live in Los Angeles, Yes or No?",
+            "\nSirhan Bishara Sirhan live in Ambassador Hotel, Yes or No?",
+            "\nGood Samaritan Hospital locate in Los Angeles, Yes or No?",
+            "\nGood Samaritan Hospital locate in Ambassador Hotel, Yes or No?",
+            "\nLos Angeles locate in Good Samaritan Hospital, Yes or No?",
+            "\nLos Angeles locate in Ambassador Hotel, Yes or No?",
+            "\nAmbassador Hotel locate in Good Samaritan Hospital, Yes or No?",
+            "\nAmbassador Hotel locate in Los Angeles, Yes or No?"
+        ],
+        "5023": [
+            "\nJames Earl Ray kill Dr. Martin Luther King Jr., Yes or No?",
+            "\nDr. Martin Luther King Jr. kill James Earl Ray, Yes or No?",
+            "\nJames Earl Ray live in London, Yes or No?",
+            "\nDr. Martin Luther King Jr. live in London, Yes or No?"
+        ],
+        "5024": [
+            "\nOswald work for Warren Commission, Yes or No?",
+            "\nKennedy work for Warren Commission, Yes or No?",
+            "\nOswald kill Kennedy, Yes or No?",
+            "\nKennedy kill Oswald, Yes or No?",
+            "\nWarren Commission base in Dallas, Yes or No?",
+            "\nWarren Commission base in Dallas County Administration Building, Yes or No?",
+            "\nOswald live in Dallas, Yes or No?",
+            "\nOswald live in Dallas County Administration Building, Yes or No?",
+            "\nKennedy live in Dallas, Yes or No?",
+            "\nKennedy live in Dallas County Administration Building, Yes or No?",
+            "\nDallas locate in Dallas County Administration Building, Yes or No?",
+            "\nDallas County Administration Building locate in Dallas, Yes or No?"
+        ],
+        "5036": [
+            "\nKennedy work for House Assassinations Committee, Yes or No?",
+            "\nLee Harvey Oswald work for House Assassinations Committee, Yes or No?",
+            "\nKennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nLee Harvey Oswald kill Kennedy, Yes or No?",
+            "\nHouse Assassinations Committee base in Dallas, Yes or No?",
+            "\nKennedy live in Dallas, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas, Yes or No?"
+        ],
+        "5041": [
+            "\nLee Harvey Oswald work for Warren Commission, Yes or No?",
+            "\nPresident John F. Kennedy work for Warren Commission, Yes or No?",
+            "\nLee Harvey Oswald kill President John F. Kennedy, Yes or No?",
+            "\nPresident John F. Kennedy kill Lee Harvey Oswald, Yes or No?"
+        ],
+        "5042": [
+            "\nLee Harvey Oswald work for Texas School Book Depository, Yes or No?",
+            "\nKennedy work for Texas School Book Depository, Yes or No?",
+            "\nLee Harvey Oswald kill Kennedy, Yes or No?",
+            "\nKennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nTexas School Book Depository base in Dallas, Yes or No?",
+            "\nTexas School Book Depository base in Texas, Yes or No?",
+            "\nTexas School Book Depository base in Dealey Plaza, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas, Yes or No?",
+            "\nLee Harvey Oswald live in Texas, Yes or No?",
+            "\nLee Harvey Oswald live in Dealey Plaza, Yes or No?",
+            "\nKennedy live in Dallas, Yes or No?",
+            "\nKennedy live in Texas, Yes or No?",
+            "\nKennedy live in Dealey Plaza, Yes or No?",
+            "\nDallas locate in Texas, Yes or No?",
+            "\nDallas locate in Dealey Plaza, Yes or No?",
+            "\nTexas locate in Dallas, Yes or No?",
+            "\nTexas locate in Dealey Plaza, Yes or No?",
+            "\nDealey Plaza locate in Dallas, Yes or No?",
+            "\nDealey Plaza locate in Texas, Yes or No?"
+        ],
+        "5043": [
+            "\nPresident John F. Kennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nLee Harvey Oswald kill President John F. Kennedy, Yes or No?"
+        ],
+        "5055": [
+            "\nCharles J. Guiteau kill President James Garfield, Yes or No?",
+            "\nPresident James Garfield kill Charles J. Guiteau, Yes or No?"
+        ],
+        "5068": [
+            "\nJack Ruby kill Lee Harvey Oswald, Yes or No?",
+            "\nJack Ruby kill President John F. Kennedy, Yes or No?",
+            "\nLee Harvey Oswald kill Jack Ruby, Yes or No?",
+            "\nLee Harvey Oswald kill President John F. Kennedy, Yes or No?",
+            "\nPresident John F. Kennedy kill Jack Ruby, Yes or No?",
+            "\nPresident John F. Kennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nJack Ruby live in Dallas, Yes or No?",
+            "\nJack Ruby live in Dallas municipal building, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas municipal building, Yes or No?",
+            "\nPresident John F. Kennedy live in Dallas, Yes or No?",
+            "\nPresident John F. Kennedy live in Dallas municipal building, Yes or No?",
+            "\nDallas locate in Dallas municipal building, Yes or No?",
+            "\nDallas municipal building locate in Dallas, Yes or No?"
+        ],
+        "5073": [
+            "\nJohn Martini kill Therese Afdahl, Yes or No?",
+            "\nJohn Martini kill Irving Flax, Yes or No?",
+            "\nTherese Afdahl kill John Martini, Yes or No?",
+            "\nTherese Afdahl kill Irving Flax, Yes or No?",
+            "\nIrving Flax kill John Martini, Yes or No?",
+            "\nIrving Flax kill Therese Afdahl, Yes or No?",
+            "\nJohn Martini live in Fort Lee, Yes or No?",
+            "\nTherese Afdahl live in Fort Lee, Yes or No?",
+            "\nIrving Flax live in Fort Lee, Yes or No?"
+        ],
+        "5078": [
+            "\nLee Harvey Oswald kill President John F. Kennedy, Yes or No?",
+            "\nPresident John F. Kennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nLee Harvey Oswald live in Texas School Book Depository, Yes or No?",
+            "\nPresident John F. Kennedy live in Texas School Book Depository, Yes or No?"
+        ],
+        "5080": [
+            "\nDanny Veno kill Lee Harvey Oswald, Yes or No?",
+            "\nDanny Veno kill President Kennedy, Yes or No?",
+            "\nLee Harvey Oswald kill Danny Veno, Yes or No?",
+            "\nLee Harvey Oswald kill President Kennedy, Yes or No?",
+            "\nPresident Kennedy kill Danny Veno, Yes or No?",
+            "\nPresident Kennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nDanny Veno live in Dallas, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas, Yes or No?",
+            "\nPresident Kennedy live in Dallas, Yes or No?"
+        ],
+        "5085": [
+            "\nSirhan Sirhan kill Robert F. Kennedy, Yes or No?",
+            "\nRobert F. Kennedy kill Sirhan Sirhan, Yes or No?",
+            "\nSirhan Sirhan live in New York, Yes or No?",
+            "\nRobert F. Kennedy live in New York, Yes or No?"
+        ],
+        "5088": [
+            "\nSirhan Sirhan kill Sen. Robert F. Kennedy, Yes or No?",
+            "\nSen. Robert F. Kennedy kill Sirhan Sirhan, Yes or No?"
+        ],
+        "5091": [
+            "\nSen. Robert F. Kennedy work for state prison board, Yes or No?",
+            "\nSirhan B. Sirhan work for state prison board, Yes or No?",
+            "\nSen. Robert F. Kennedy kill Sirhan B. Sirhan, Yes or No?",
+            "\nSirhan B. Sirhan kill Sen. Robert F. Kennedy, Yes or No?"
+        ],
+        "5093": [
+            "\nKennedy kill Sirhan Bishara Sirhan, Yes or No?",
+            "\nSirhan Bishara Sirhan kill Kennedy, Yes or No?"
+        ],
+        "5099": [
+            "\nJohn Wilkes Booth kill Abraham Lincoln, Yes or No?",
+            "\nAbraham Lincoln kill John Wilkes Booth, Yes or No?",
+            "\nJohn Wilkes Booth live in .C., Yes or No?",
+            "\nAbraham Lincoln live in .C., Yes or No?"
+        ],
+        "5101": [
+            "\nJean Paul Marat kill Charlotte Corday, Yes or No?",
+            "\nCharlotte Corday kill Jean Paul Marat, Yes or No?"
+        ],
+        "5103": [
+            "\nJames Earl Ray kill Dr. Martin Luther King Jr., Yes or No?",
+            "\nDr. Martin Luther King Jr. kill James Earl Ray, Yes or No?",
+            "\nJames Earl Ray live in Capitol Hill, Yes or No?",
+            "\nDr. Martin Luther King Jr. live in Capitol Hill, Yes or No?"
+        ],
+        "5106": [
+            "\nLee Harvey Oswald work for Warren Commission, Yes or No?",
+            "\nPresident John F. Kennedy work for Warren Commission, Yes or No?",
+            "\nLee Harvey Oswald kill President John F. Kennedy, Yes or No?",
+            "\nPresident John F. Kennedy kill Lee Harvey Oswald, Yes or No?"
+        ],
+        "5112": [
+            "\nRay kill King, Yes or No?",
+            "\nKing kill Ray, Yes or No?",
+            "\nRay live in Memphis, Yes or No?",
+            "\nKing live in Memphis, Yes or No?"
+        ],
+        "5121": [
+            "\nLincoln kill John Wilkes Booth, Yes or No?",
+            "\nJohn Wilkes Booth kill Lincoln, Yes or No?",
+            "\nLincoln live in Washington, Yes or No?",
+            "\nLincoln live in Virginia, Yes or No?",
+            "\nLincoln live in Ford Theatre, Yes or No?",
+            "\nJohn Wilkes Booth live in Washington, Yes or No?",
+            "\nJohn Wilkes Booth live in Virginia, Yes or No?",
+            "\nJohn Wilkes Booth live in Ford Theatre, Yes or No?",
+            "\nWashington locate in Virginia, Yes or No?",
+            "\nWashington locate in Ford Theatre, Yes or No?",
+            "\nVirginia locate in Washington, Yes or No?",
+            "\nVirginia locate in Ford Theatre, Yes or No?",
+            "\nFord Theatre locate in Washington, Yes or No?",
+            "\nFord Theatre locate in Virginia, Yes or No?"
+        ],
+        "5122": [
+            "\nJames Earl Ray kill Martin Luther King Jr., Yes or No?",
+            "\nMartin Luther King Jr. kill James Earl Ray, Yes or No?"
+        ],
+        "5124": [
+            "\nJames Earl Ray kill Martin Luther King Jr., Yes or No?",
+            "\nMartin Luther King Jr. kill James Earl Ray, Yes or No?",
+            "\nJames Earl Ray live in Memphis, Yes or No?",
+            "\nJames Earl Ray live in Tenn., Yes or No?",
+            "\nMartin Luther King Jr. live in Memphis, Yes or No?",
+            "\nMartin Luther King Jr. live in Tenn., Yes or No?",
+            "\nMemphis locate in Tenn., Yes or No?",
+            "\nTenn. locate in Memphis, Yes or No?"
+        ],
+        "5125": [
+            "\nJack Ruby kill Lee Harvey Oswald, Yes or No?",
+            "\nJack Ruby kill President Kennedy, Yes or No?",
+            "\nLee Harvey Oswald kill Jack Ruby, Yes or No?",
+            "\nLee Harvey Oswald kill President Kennedy, Yes or No?",
+            "\nPresident Kennedy kill Jack Ruby, Yes or No?",
+            "\nPresident Kennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nJack Ruby live in Dallas, Yes or No?",
+            "\nLee Harvey Oswald live in Dallas, Yes or No?",
+            "\nPresident Kennedy live in Dallas, Yes or No?"
+        ],
+        "5143": [
+            "\nSirhan B. Sirhan kill Sen. Robert F. Kennedy, Yes or No?",
+            "\nSen. Robert F. Kennedy kill Sirhan B. Sirhan, Yes or No?"
+        ],
+        "5148": [
+            "\nBelli kill Jack Ruby, Yes or No?",
+            "\nBelli kill John F. Kennedy, Yes or No?",
+            "\nBelli kill Lee Harvey Oswald, Yes or No?",
+            "\nBelli kill Jim and Tammy Bakker, Yes or No?",
+            "\nJack Ruby kill Belli, Yes or No?",
+            "\nJack Ruby kill John F. Kennedy, Yes or No?",
+            "\nJack Ruby kill Lee Harvey Oswald, Yes or No?",
+            "\nJack Ruby kill Jim and Tammy Bakker, Yes or No?",
+            "\nJohn F. Kennedy kill Belli, Yes or No?",
+            "\nJohn F. Kennedy kill Jack Ruby, Yes or No?",
+            "\nJohn F. Kennedy kill Lee Harvey Oswald, Yes or No?",
+            "\nJohn F. Kennedy kill Jim and Tammy Bakker, Yes or No?",
+            "\nLee Harvey Oswald kill Belli, Yes or No?",
+            "\nLee Harvey Oswald kill Jack Ruby, Yes or No?",
+            "\nLee Harvey Oswald kill John F. Kennedy, Yes or No?",
+            "\nLee Harvey Oswald kill Jim and Tammy Bakker, Yes or No?",
+            "\nJim and Tammy Bakker kill Belli, Yes or No?",
+            "\nJim and Tammy Bakker kill Jack Ruby, Yes or No?",
+            "\nJim and Tammy Bakker kill John F. Kennedy, Yes or No?",
+            "\nJim and Tammy Bakker kill Lee Harvey Oswald, Yes or No?"
+        ],
+        "5155": [
+            "\nOswald kill Kennedy, Yes or No?",
+            "\nKennedy kill Oswald, Yes or No?",
+            "\nOswald live in Dallas, Yes or No?",
+            "\nKennedy live in Dallas, Yes or No?"
+        ],
+        "5157": [
+            "\nSouth Korean President Park Chung-hee work for Korean Central Intelligence Agency, Yes or No?",
+            "\nKim Jae-kyu work for Korean Central Intelligence Agency, Yes or No?",
+            "\nSouth Korean President Park Chung-hee kill Kim Jae-kyu, Yes or No?",
+            "\nKim Jae-kyu kill South Korean President Park Chung-hee, Yes or No?"
+        ],
+        "5163": [
+            "\nChapman kill Lennon, Yes or No?",
+            "\nLennon kill Chapman, Yes or No?"
+        ],
+        "5166": [
+            "\nMark David Chapman kill John Lennon, Yes or No?",
+            "\nJohn Lennon kill Mark David Chapman, Yes or No?"
+        ],
+        "5168": [
+            "\nLennon kill wife, Yes or No?",
+            "\nLennon kill Mark David Chapman, Yes or No?",
+            "\nwife kill Lennon, Yes or No?",
+            "\nwife kill Mark David Chapman, Yes or No?",
+            "\nMark David Chapman kill Lennon, Yes or No?",
+            "\nMark David Chapman kill wife, Yes or No?",
+            "\nLennon live in New York, Yes or No?",
+            "\nLennon live in Dakota building, Yes or No?",
+            "\nwife live in New York, Yes or No?",
+            "\nwife live in Dakota building, Yes or No?",
+            "\nMark David Chapman live in New York, Yes or No?",
+            "\nMark David Chapman live in Dakota building, Yes or No?",
+            "\nNew York locate in Dakota building, Yes or No?",
+            "\nDakota building locate in New York, Yes or No?"
+        ],
+        "5170": [
+            "\nLennon kill Ono, Yes or No?",
+            "\nLennon kill Mark David Chapman, Yes or No?",
+            "\nOno kill Lennon, Yes or No?",
+            "\nOno kill Mark David Chapman, Yes or No?",
+            "\nMark David Chapman kill Lennon, Yes or No?",
+            "\nMark David Chapman kill Ono, Yes or No?"
+        ],
+        "5174": [
+            "\nKleber Elias Gia Bustamante work for Red Sun central committee, Yes or No?",
+            "\nJose Antonio Briz Lopez work for Red Sun central committee, Yes or No?",
+            "\nKleber Elias Gia Bustamante kill Jose Antonio Briz Lopez, Yes or No?",
+            "\nJose Antonio Briz Lopez kill Kleber Elias Gia Bustamante, Yes or No?",
+            "\nRed Sun central committee base in Garcia Moreno Prison, Yes or No?",
+            "\nKleber Elias Gia Bustamante live in Garcia Moreno Prison, Yes or No?",
+            "\nJose Antonio Briz Lopez live in Garcia Moreno Prison, Yes or No?"
+        ],
+        "5181": [
+            "\nJames Earl Ray kill Martin Luther King, Yes or No?",
+            "\nMartin Luther King kill James Earl Ray, Yes or No?",
+            "\nJames Earl Ray live in Memphis, Yes or No?",
+            "\nMartin Luther King live in Memphis, Yes or No?"
+        ],
+        "5187": [
+            "\nRigoberto Lopez Perez work for Sandinistas, Yes or No?",
+            "\nSomoza Garcia work for Sandinistas, Yes or No?",
+            "\nRigoberto Lopez Perez kill Somoza Garcia, Yes or No?",
+            "\nSomoza Garcia kill Rigoberto Lopez Perez, Yes or No?"
+        ],
+        "5193": [
+            "\nSirhan B. Sirhan kill Sen. Robert F. Kennedy, Yes or No?",
+            "\nSen. Robert F. Kennedy kill Sirhan B. Sirhan, Yes or No?",
+            "\nSirhan B. Sirhan live in Middle Eastern, Yes or No?",
+            "\nSen. Robert F. Kennedy live in Middle Eastern, Yes or No?"
+        ],
+        "5200": [
+            "\nSirhan kill Kennedy, Yes or No?",
+            "\nSirhan kill Markman, Yes or No?",
+            "\nKennedy kill Sirhan, Yes or No?",
+            "\nKennedy kill Markman, Yes or No?",
+            "\nMarkman kill Sirhan, Yes or No?",
+            "\nMarkman kill Kennedy, Yes or No?",
+            "\nSirhan live in Israel, Yes or No?",
+            "\nKennedy live in Israel, Yes or No?",
+            "\nMarkman live in Israel, Yes or No?"
+        ],
+        "5201": [
+            "\nDiamond kill Sen. Robert F. Kennedy, Yes or No?",
+            "\nDiamond kill Sirhan Sirhan, Yes or No?",
+            "\nSen. Robert F. Kennedy kill Diamond, Yes or No?",
+            "\nSen. Robert F. Kennedy kill Sirhan Sirhan, Yes or No?",
+            "\nSirhan Sirhan kill Diamond, Yes or No?",
+            "\nSirhan Sirhan kill Sen. Robert F. Kennedy, Yes or No?"
+        ],
+        "5211": [
+            "\nLyndon B. Johnson kill Jack Ruby, Yes or No?",
+            "\nJack Ruby kill Lyndon B. Johnson, Yes or No?"
+        ],
+        "5215": [
+            "\nLee Harvey Oswald work for county offices, Yes or No?",
+            "\nPresident Kennedy work for county offices, Yes or No?",
+            "\nLee Harvey Oswald kill President Kennedy, Yes or No?",
+            "\nPresident Kennedy kill Lee Harvey Oswald, Yes or No?"
+        ],
+        "5216": [
+            "\nMcCord work for Nixon's 1972 campaign, Yes or No?",
+            "\nPresident Nixon work for Nixon's 1972 campaign, Yes or No?",
+            "\nFensterwald work for Nixon's 1972 campaign, Yes or No?",
+            "\nJames Earl Ray work for Nixon's 1972 campaign, Yes or No?",
+            "\nRev. Martin Luther King Jr. work for Nixon's 1972 campaign, Yes or No?",
+            "\nMcCord kill President Nixon, Yes or No?",
+            "\nMcCord kill Fensterwald, Yes or No?",
+            "\nMcCord kill James Earl Ray, Yes or No?",
+            "\nMcCord kill Rev. Martin Luther King Jr., Yes or No?",
+            "\nPresident Nixon kill McCord, Yes or No?",
+            "\nPresident Nixon kill Fensterwald, Yes or No?",
+            "\nPresident Nixon kill James Earl Ray, Yes or No?",
+            "\nPresident Nixon kill Rev. Martin Luther King Jr., Yes or No?",
+            "\nFensterwald kill McCord, Yes or No?",
+            "\nFensterwald kill President Nixon, Yes or No?",
+            "\nFensterwald kill James Earl Ray, Yes or No?",
+            "\nFensterwald kill Rev. Martin Luther King Jr., Yes or No?",
+            "\nJames Earl Ray kill McCord, Yes or No?",
+            "\nJames Earl Ray kill President Nixon, Yes or No?",
+            "\nJames Earl Ray kill Fensterwald, Yes or No?",
+            "\nJames Earl Ray kill Rev. Martin Luther King Jr., Yes or No?",
+            "\nRev. Martin Luther King Jr. kill McCord, Yes or No?",
+            "\nRev. Martin Luther King Jr. kill President Nixon, Yes or No?",
+            "\nRev. Martin Luther King Jr. kill Fensterwald, Yes or No?",
+            "\nRev. Martin Luther King Jr. kill James Earl Ray, Yes or No?"
+        ],
+        "5236": [
+            "\nRuby kill Oswald, Yes or No?",
+            "\nRuby kill President Kennedy, Yes or No?",
+            "\nOswald kill Ruby, Yes or No?",
+            "\nOswald kill President Kennedy, Yes or No?",
+            "\nPresident Kennedy kill Ruby, Yes or No?",
+            "\nPresident Kennedy kill Oswald, Yes or No?",
+            "\nRuby live in Dallas, Yes or No?",
+            "\nRuby live in Dallas City Jail, Yes or No?",
+            "\nOswald live in Dallas, Yes or No?",
+            "\nOswald live in Dallas City Jail, Yes or No?",
+            "\nPresident Kennedy live in Dallas, Yes or No?",
+            "\nPresident Kennedy live in Dallas City Jail, Yes or No?",
+            "\nDallas locate in Dallas City Jail, Yes or No?",
+            "\nDallas City Jail locate in Dallas, Yes or No?"
+        ],
+        "5240": [
+            "\nAbraham Lincoln kill John Wilkes Booth, Yes or No?",
+            "\nJohn Wilkes Booth kill Abraham Lincoln, Yes or No?"
+        ],
+        "5245": [
+            "\nDole kill Elizabeth, Yes or No?",
+            "\nElizabeth kill Dole, Yes or No?",
+            "\nDole live in North Carolina, Yes or No?",
+            "\nElizabeth live in North Carolina, Yes or No?"
+        ],
+        "5250": [
+            "\nElizabeth Dole work for Dole strategists, Yes or No?",
+            "\nDole strategists base in .C., Yes or No?",
+            "\nElizabeth Dole live in .C., Yes or No?"
+        ],
+        "5257": [
+            "\nJesse Jackson work for Democratic caucuses, Yes or No?",
+            "\nDemocratic caucuses base in South Carolina, Yes or No?",
+            "\nJesse Jackson live in South Carolina, Yes or No?"
+        ],
+        "5259": [
+            "\nJesse Jackson live in South Carolina, Yes or No?",
+            "\nJesse Jackson live in Illinois, Yes or No?",
+            "\nSouth Carolina locate in Illinois, Yes or No?",
+            "\nIllinois locate in South Carolina, Yes or No?"
+        ],
+        "5264": [
+            "\nLowell Thomas live in hio, Yes or No?"
+        ],
+        "5270": [
+            "\nEric Sevareid live in Velva, Yes or No?",
+            "\nEric Sevareid live in Minot, Yes or No?",
+            "\nVelva locate in Minot, Yes or No?",
+            "\nMinot locate in Velva, Yes or No?"
+        ],
+        "5274": [
+            "\nHubert H. Humphrey work for Supreme Court, Yes or No?",
+            "\nHubert H. Humphrey work for National Industrial Recovery Act, Yes or No?",
+            "\nCharles Lindbergh work for Supreme Court, Yes or No?",
+            "\nCharles Lindbergh work for National Industrial Recovery Act, Yes or No?",
+            "\nAnne Spencer Morrow work for Supreme Court, Yes or No?",
+            "\nAnne Spencer Morrow work for National Industrial Recovery Act, Yes or No?",
+            "\nHubert H. Humphrey kill Charles Lindbergh, Yes or No?",
+            "\nHubert H. Humphrey kill Anne Spencer Morrow, Yes or No?",
+            "\nCharles Lindbergh kill Hubert H. Humphrey, Yes or No?",
+            "\nCharles Lindbergh kill Anne Spencer Morrow, Yes or No?",
+            "\nAnne Spencer Morrow kill Hubert H. Humphrey, Yes or No?",
+            "\nAnne Spencer Morrow kill Charles Lindbergh, Yes or No?",
+            "\nSupreme Court base in .D., Yes or No?",
+            "\nSupreme Court base in .J., Yes or No?",
+            "\nNational Industrial Recovery Act base in .D., Yes or No?",
+            "\nNational Industrial Recovery Act base in .J., Yes or No?",
+            "\nHubert H. Humphrey live in .D., Yes or No?",
+            "\nHubert H. Humphrey live in .J., Yes or No?",
+            "\nCharles Lindbergh live in .D., Yes or No?",
+            "\nCharles Lindbergh live in .J., Yes or No?",
+            "\nAnne Spencer Morrow live in .D., Yes or No?",
+            "\nAnne Spencer Morrow live in .J., Yes or No?",
+            "\n.D. locate in .J., Yes or No?",
+            "\n.J. locate in .D., Yes or No?"
+        ],
+        "5275": [
+            "\nBrigham Young live in t., Yes or No?"
+        ],
+        "5277": [
+            "\nMartin kill Jimbob, Yes or No?",
+            "\nMartin kill Rogers, Yes or No?",
+            "\nMartin kill Will Rogers, Yes or No?",
+            "\nJimbob kill Martin, Yes or No?",
+            "\nJimbob kill Rogers, Yes or No?",
+            "\nJimbob kill Will Rogers, Yes or No?",
+            "\nRogers kill Martin, Yes or No?",
+            "\nRogers kill Jimbob, Yes or No?",
+            "\nRogers kill Will Rogers, Yes or No?",
+            "\nWill Rogers kill Martin, Yes or No?",
+            "\nWill Rogers kill Jimbob, Yes or No?",
+            "\nWill Rogers kill Rogers, Yes or No?",
+            "\nMartin live in Oklahoma, Yes or No?",
+            "\nJimbob live in Oklahoma, Yes or No?",
+            "\nRogers live in Oklahoma, Yes or No?",
+            "\nWill Rogers live in Oklahoma, Yes or No?"
+        ],
+        "5294": [
+            "\nJesse Owens live in Danville, Yes or No?",
+            "\nJesse Owens live in Ala., Yes or No?",
+            "\nDanville locate in Ala., Yes or No?",
+            "\nAla. locate in Danville, Yes or No?"
+        ],
+        "5296": [
+            "\nSpringsteen work for Universal Declaration of Human Rights, Yes or No?",
+            "\nUniversal Declaration of Human Rights base in New Jersey, Yes or No?",
+            "\nSpringsteen live in New Jersey, Yes or No?"
+        ],
+        "5301": [
+            "\nJames Garfield live in hio, Yes or No?"
+        ],
+        "5304": [
+            "\nAtwater kill President Reagan, Yes or No?",
+            "\nAtwater kill Sen. Strom Thurmond, Yes or No?",
+            "\nPresident Reagan kill Atwater, Yes or No?",
+            "\nPresident Reagan kill Sen. Strom Thurmond, Yes or No?",
+            "\nSen. Strom Thurmond kill Atwater, Yes or No?",
+            "\nSen. Strom Thurmond kill President Reagan, Yes or No?",
+            "\nAtwater live in South Carolina, Yes or No?",
+            "\nPresident Reagan live in South Carolina, Yes or No?",
+            "\nSen. Strom Thurmond live in South Carolina, Yes or No?"
+        ],
+        "5313": [
+            "\nFats Domino live in St. Louis, Yes or No?",
+            "\nFats Domino live in New Orleans, Yes or No?",
+            "\nSt. Louis locate in New Orleans, Yes or No?",
+            "\nNew Orleans locate in St. Louis, Yes or No?"
+        ],
+        "5317": [
+            "\nBuddy Holly work for Texas Tech University, Yes or No?",
+            "\nTexas Tech University base in Lubbock, Yes or No?",
+            "\nBuddy Holly live in Lubbock, Yes or No?"
+        ],
+        "5323": [
+            "\nJohn Deere live in t., Yes or No?"
+        ],
+        "5326": [
+            "\nRev. Jesse Jackson work for Democratic, Yes or No?",
+            "\nDemocratic base in South Carolina, Yes or No?",
+            "\nRev. Jesse Jackson live in South Carolina, Yes or No?"
+        ],
+        "5330": [
+            "\nUlysses S. Grant live in hio, Yes or No?"
+        ],
+        "5331": [
+            "\nJames Monroe live in irginia, Yes or No?"
+        ],
+        "5335": [
+            "\nSen. Bob Dole work for Republican Party, Yes or No?",
+            "\nRepublican Party base in Russell, Yes or No?",
+            "\nRepublican Party base in Kansas, Yes or No?",
+            "\nSen. Bob Dole live in Russell, Yes or No?",
+            "\nSen. Bob Dole live in Kansas, Yes or No?",
+            "\nRussell locate in Kansas, Yes or No?",
+            "\nKansas locate in Russell, Yes or No?"
+        ],
+        "5350": [
+            "\nRev. Jesse Jackson work for FEMA, Yes or No?",
+            "\nFEMA base in South Carolina, Yes or No?",
+            "\nRev. Jesse Jackson live in South Carolina, Yes or No?"
+        ],
+        "5351": [
+            "\nDwight D. Eisenhower live in exas, Yes or No?"
+        ],
+        "5354": [
+            "\nMartin Van Buren kill Wolfgang Amadeus Mozart, Yes or No?",
+            "\nWolfgang Amadeus Mozart kill Martin Van Buren, Yes or No?",
+            "\nMartin Van Buren live in .Y., Yes or No?",
+            "\nMartin Van Buren live in ustria, Yes or No?",
+            "\nWolfgang Amadeus Mozart live in .Y., Yes or No?",
+            "\nWolfgang Amadeus Mozart live in ustria, Yes or No?",
+            "\n.Y. locate in ustria, Yes or No?",
+            "\nustria locate in .Y., Yes or No?"
+        ],
+        "5358": [
+            "\nElvis Presley live in iss, Yes or No?"
+        ],
+        "5360": [
+            "\nBob Dylan live in Duluth, Yes or No?",
+            "\nBob Dylan live in Hibbing, Yes or No?",
+            "\nDuluth locate in Hibbing, Yes or No?",
+            "\nHibbing locate in Duluth, Yes or No?"
+        ],
+        "5361": [
+            "\nAndrew Jackson live in .C., Yes or No?"
+        ],
+        "5375": [
+            "\nBenjamin Harrison live in hio, Yes or No?"
+        ],
+        "5376": [
+            "\nOliver Hazard Perry live in .I., Yes or No?"
+        ],
+        "5378": [
+            "\nRutherford B. Hayes live in hio, Yes or No?"
+        ],
+        "5383": [
+            "\nJames Garfield live in hio, Yes or No?"
+        ],
+        "5402": [
+            "\nDwight D. Eisenhower live in Tex, Yes or No?",
+            "\nDwight D. Eisenhower live in Denison, Yes or No?",
+            "\nTex locate in Denison, Yes or No?",
+            "\nDenison locate in Tex, Yes or No?"
+        ],
+        "5408": [
+            "\nBette Davis kill Ruth Elizabeth Davis, Yes or No?",
+            "\nRuth Elizabeth Davis kill Bette Davis, Yes or No?",
+            "\nBette Davis live in Lowell, Yes or No?",
+            "\nBette Davis live in Mass, Yes or No?",
+            "\nRuth Elizabeth Davis live in Lowell, Yes or No?",
+            "\nRuth Elizabeth Davis live in Mass, Yes or No?",
+            "\nLowell locate in Mass, Yes or No?",
+            "\nMass locate in Lowell, Yes or No?"
+        ],
+        "5410": [
+            "\nJesse Alexander Helms Jr. live in Monroe, Yes or No?"
+        ],
+        "5413": [
+            "\nLawrence Welk live in North Dakota, Yes or No?"
+        ],
+        "5905": [
+            "\nIndianapolis locate in Indiana, Yes or No?",
+            "\nIndiana locate in Indianapolis, Yes or No?"
+        ]
+    }
+}

@@ -1,13 +1,10 @@
 Example Instructional Prefix: List the entities in [Per, Loc, Org] in the given text. Per are human names. Loc are geographical locations. Org are non-physical group entities, such as companies.
 
-TEXT: SPACE CENTER, Houston (AP)
-Entities: ["SPACE CENTER:Org", "Houston:Loc"]
-
 TEXT: Mrs. Vogt was born in Akron,Ohio, when Ulysses S. Grant was president, and spent much of her life there.
 Entities: ["Akron,Ohio:Loc", "Mrs. Vogt:Per"]
 
-TEXT: SPACE CENTER, Houston (AP)
-Entities: ["SPACE CENTER:Org", "Houston:Loc"]
+TEXT: Jack Ruby bought the revolver for $62.50 in a Dallas gun shop and used it to shoot Oswald two days after Kennedy was assassinated.
+Entities: ["Jack Ruby:Per", "Oswald:Per"]
 
 Instructional Prefix: List the entities in [Per, Loc, Org] in the given text. Per includes common human names. Loc includes countries, cities, states, provinces, counties, and geographical locations. Org includes groups, communities, companies, corportions, clubs, institutions, teams, and governments.
 

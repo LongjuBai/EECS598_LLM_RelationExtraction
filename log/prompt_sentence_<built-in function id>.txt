@@ -1,9 +1,24 @@
 Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.
 
-Given the text: SPACE CENTER, Houston (AP)
-SPACE CENTER is(was) OrgBased In Houston, Yes or No?
+Given the text: Flooding from heavy rain closed a portion of Highway 50 between Salida and Gunnison, Colorado.
+Salida is(was) Located In Colorado, Yes or No?
 Answer:
 Yes
+
+Given the text: Flooding from heavy rain closed a portion of Highway 50 between Salida and Gunnison, Colorado.
+Colorado is(was) Located In Salida, Yes or No?
+Answer:
+No
+
+Given the text: Flooding from heavy rain closed a portion of Highway 50 between Salida and Gunnison, Colorado.
+Gunnison is(was) Located In Colorado, Yes or No?
+Answer:
+Yes
+
+Given the text: Flooding from heavy rain closed a portion of Highway 50 between Salida and Gunnison, Colorado.
+Colorado is(was) Located In Gunnison, Yes or No?
+Answer:
+No
 
 Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (yes/no) for each relation.
 
