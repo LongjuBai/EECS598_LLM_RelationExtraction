@@ -528,6 +528,47 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
         prompt = open(f'prompts/{dataset}/prompt_tot_entity.txt', 'r').read()
         prompt = prompt.split('\n\n')
         prompt_new = prompt[0] + '\n\n' # example instruction
+        prompt_new += '''
+
+TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
+Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
+
+TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
+Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
+
+TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
+Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren:Per", "Warren Commission:Org"]
+
+TEXT: PURCHASE, N.Y.
+Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
+
+TEXT: BELGRADE, Yugoslavia (AP)
+Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
+
+TEXT: Rome is in Lazio province and Naples in Campania.
+Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
+
+TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
+Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
+
+TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
+Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
+
+TEXT: Moscow ITAR-TASS
+Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
+
+TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
+Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
+
+TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
+Entities: ["Sirhan:Per", "Kennedy:Per"]
+
+TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
+Entities: ["Colorado:Loc", "Denver:Loc"]
+
+TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
+Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
+'''
         for i, sample in enumerate(context_samples):
             entities = set()
             for relation in sample['relations']:
@@ -536,6 +577,8 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
             entities_str = '[' + ', '.join([f'"{entity}"' for entity in entities]) + ']'
             prompt_new += f'TEXT: {sample["text"]}\nEntities: {entities_str}\n\n'
         prompt_new += prompt[-2] + '\n\n' + prompt[-1]
+        with open(f'log/prompt_entity_{id}.txt', 'w') as f:
+            f.write(prompt_new)
         return prompt_new
     elif mode == 'sentence':    
         # get the question message, with ICL examples for sentences
@@ -568,6 +611,47 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
             raise Exception('Not supported!')
 
         message = "Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.\n"
+        message += '''
+
+TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
+Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
+
+TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
+Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
+
+TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
+Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren:Per", "Warren Commission:Org"]
+
+TEXT: PURCHASE, N.Y.
+Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
+
+TEXT: BELGRADE, Yugoslavia (AP)
+Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
+
+TEXT: Rome is in Lazio province and Naples in Campania.
+Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
+
+TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
+Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
+
+TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
+Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
+
+TEXT: Moscow ITAR-TASS
+Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
+
+TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
+Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
+
+TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
+Entities: ["Sirhan:Per", "Kennedy:Per"]
+
+TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
+Entities: ["Colorado:Loc", "Denver:Loc"]
+
+TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
+Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
+'''
         # get the ground truth in the training examples
         # set the true relations as Yes answers
         # if reverse gives the wrong relations, set as No answers
@@ -612,6 +696,8 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
             pass
         message += 'Given the text: $TEXT$\n'
         message += 'Answer:'
+        with open(f'log/prompt_sentence_{id}.txt', 'w') as f:
+            f.write(message)
         return message
 
 
