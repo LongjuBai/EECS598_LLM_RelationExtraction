@@ -95,6 +95,7 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
         else:
             if use_ICL: 
                 if dataset == 'conll04':
+                    # use entity cluster centers and entity embeddings as shots
                     sample_gt = json.load(open('outputs/conll04_train/entity_medoids.json', 'r'))
                     embeddings = list(pickle.load(open('outputs/conll04_test/entity_embeddings_notype_test.pickle', 'rb'))[id].values())
                     prompt = make_icl_prompt('conll04', sample_gt, embeddings, context_length, mode='entity')
@@ -518,7 +519,9 @@ def dispart_prompt(prompt):
 
 # TODO: Handle duplicate context examples
 # samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
+# context_len only controls entity shot number, but not sentences
 def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
+    # below: context_len // len(embeddings): desired # of shots // total labeled examples = expected cluster size (each cluster for each shot)
     neigh = NearestNeighbors(n_neighbors= max(1, context_len // len(embeddings)), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
     _, neigh_ids = neigh.kneighbors(embeddings)
     context_samples = [list(samples_gt.values())[id] for id in neigh_ids.flatten()]

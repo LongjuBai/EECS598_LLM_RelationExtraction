@@ -128,7 +128,7 @@ def get_response_from_llm(args):
         test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
-    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=True)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, context_length=args.number_of_shots_for_entity_extraction, use_ICL=True)
     if args.relation_type_extraction: 
         raise Exception('???')
         # responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data, dataset=args.dataset)
@@ -142,7 +142,7 @@ def get_response_from_llm(args):
         entity_type_dict = struct_response_entity(response, data['entities'])
         relation_type_list = struct_response_relation(responses_relation_type[id]) if args.relation_type_extraction else data['relations']      
 
-        # construct relations; {relation type: [[ins1, int2], [ins3, ins4]]}
+        # construct relations; {relation type: [[entity1, entity], [entity3, entity4]]}
         relation_type_dict = {}
         for relation_type in relation_type_list:
             relation_type_dict[relation_type] = []
@@ -301,6 +301,7 @@ if __name__ == "__main__":
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--test_ids', nargs="*", type=int, default=[])
     parser.add_argument('--use_icl', action='store_true')
+    parser.add_argument('--number_of_shots_for_entity_extraction', type=int, default=3)
 
     parser.add_argument('--prompt_dir', type=str, default='')
 
