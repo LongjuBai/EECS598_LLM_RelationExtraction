@@ -205,7 +205,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
         elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
             completion = client.completions.create(
                 model=model,
-                prompt=prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                prompt=prompt.replace('$TEXT$', sample['text']).replace('$ENTITIES$', relation_prompt_string),
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed
@@ -222,7 +222,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
                     # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
                     {
                         "role": "user", 
-                        "content": prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                        "content": prompt.replace('$TEXT$', sample['text']).replace('$ENTITIES$', relation_prompt_string),
                     }],
                 temperature=temp,
                 max_tokens=max_tokens,
@@ -519,10 +519,11 @@ def dispart_prompt(prompt):
 
 # TODO: Handle duplicate context examples
 # samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
-# context_len only controls entity shot number, but not sentences
 def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
     # below: context_len // len(embeddings): desired # of shots // total labeled examples = expected cluster size (each cluster for each shot)
-    neigh = NearestNeighbors(n_neighbors= max(1, context_len // len(embeddings)), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
+    # note in sentence part, each relation may have negative sampling, so need to divide context_len by 2
+    neighbor_num = context_len // len(embeddings) if mode == 'entity' else context_len // (2 * len(embeddings))
+    neigh = NearestNeighbors(n_neighbors= max(1, neighbor_num), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
     _, neigh_ids = neigh.kneighbors(embeddings)
     context_samples = [list(samples_gt.values())[id] for id in neigh_ids.flatten()]
     # print(context_samples)
@@ -531,47 +532,47 @@ def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity')
         prompt = open(f'prompts/{dataset}/prompt_tot_entity.txt', 'r').read()
         prompt = prompt.split('\n\n')
         prompt_new = prompt[0] + '\n\n' # example instruction
-        prompt_new += '''
+#         prompt_new += '''
 
-TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
-Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
+# TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
+# Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
 
-TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
-Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
+# TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
+# Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
 
-TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
-Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren:Per", "Warren Commission:Org"]
+# TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
+# Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren:Per", "Warren Commission:Org"]
 
-TEXT: PURCHASE, N.Y.
-Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
+# TEXT: PURCHASE, N.Y.
+# Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
 
-TEXT: BELGRADE, Yugoslavia (AP)
-Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
+# TEXT: BELGRADE, Yugoslavia (AP)
+# Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
 
-TEXT: Rome is in Lazio province and Naples in Campania.
-Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
+# TEXT: Rome is in Lazio province and Naples in Campania.
+# Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
 
-TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
-Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
+# TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
+# Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
 
-TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
-Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
+# TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
+# Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
 
-TEXT: Moscow ITAR-TASS
-Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
+# TEXT: Moscow ITAR-TASS
+# Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
 
-TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
-Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
+# TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
+# Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
 
-TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
-Entities: ["Sirhan:Per", "Kennedy:Per"]
+# TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
+# Entities: ["Sirhan:Per", "Kennedy:Per"]
 
-TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
-Entities: ["Colorado:Loc", "Denver:Loc"]
+# TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
+# Entities: ["Colorado:Loc", "Denver:Loc"]
 
-TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
-Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
-'''
+# TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
+# Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
+# '''
         for i, sample in enumerate(context_samples):
             entities = set()
             for relation in sample['relations']:
@@ -614,47 +615,47 @@ Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democra
             raise Exception('Not supported!')
 
         message = "Example Instructional Prefix: Check if a given pair of entities have relations [OrgBased In, Work For, Located In, Live In, Kill] follows the logic of the given text. Provide a confidence level (Yes/No) for each relation.\n"
-        message += '''
+#         message += '''
 
-TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
-Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
+# TEXT: "If it does not snow, and a lot, within this month we will have no water to submerge 150, 000 hectares (370, 500 acres) of rice," said Bruno Pusterla, a top official of the Italian Agricultural Confederation.
+# Entities: ["Bruno Pusterla:Per", "Italian Agricultural Confederation:Org"]
 
-TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
-Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
+# TEXT: Meanwhile, Shi Liming at the Institute of Zoology of Kunming found that pandas lack variety in their protein heredity, which may serve as one of the major reasons for pandas' near extinction.
+# Entities: ["Shi Liming:Per", "Kunming:Loc", "Institute of Zoology:Org"]
 
-TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
-Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren:Per", "Warren Commission:Org"]
+# TEXT: 'The viewers of "JFK" and "The Men Who Killed Kennedy" never learn about these facts, nor do they ever learn about all of the other massive body of evidence that conclusively proves beyond a reasonable doubt that Oswald was the lone gunman who killed President Kennedy and Officer Tippit and that there was no coverup by Earl Warren or by the Warren Commission.;
+# Entities: ["Oswald:Per", "President Kennedy:Per", "Officer Tippit:Per", "Earl Warren:Per", "Warren Commission:Org"]
 
-TEXT: PURCHASE, N.Y.
-Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
+# TEXT: PURCHASE, N.Y.
+# Entities: ["PURCHASE:Loc", "N.Y .:Loc"]
 
-TEXT: BELGRADE, Yugoslavia (AP)
-Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
+# TEXT: BELGRADE, Yugoslavia (AP)
+# Entities: ["BELGRADE:Loc", "Yugoslavia:Loc", "AP:Org"]
 
-TEXT: Rome is in Lazio province and Naples in Campania.
-Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
+# TEXT: Rome is in Lazio province and Naples in Campania.
+# Entities: ["Rome:Loc", "Lazio:Loc", "Naples:Loc", "Campania:Loc"]
 
-TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
-Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
+# TEXT: (By ITAR-TASS correspondent Mikhail Shevtsov)
+# Entities: ["Mikhail Shevtsov:Per", "ITAR-TASS:Org"]
 
-TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
-Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
+# TEXT: In the communique, the Group of Rio states that "the Haitian crisis can be resolved only if unrestricted respect is shown for the Governor's Island Agreement which calls for the prompt return of Haitian President Jean Bertrand Aristide to the exercise of his constitutional powers in Haiti.
+# Entities: ["Jean Bertrand Aristide:Per", "Haiti:Loc"]
 
-TEXT: Moscow ITAR-TASS
-Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
+# TEXT: Moscow ITAR-TASS
+# Entities: ["Moscow:Loc", "ITAR-TASS:Org"]
 
-TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
-Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
+# TEXT: King rose to prominence after Mrs. Parks' action in December 1955 in Montgomery, Ala., set the stage for a boycott and subsequent demonstrations that caught the nation by surprise.
+# Entities: ["Mrs. Parks:Per", "Montgomery:Loc", "Ala.:Loc"]
 
-TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
-Entities: ["Sirhan:Per", "Kennedy:Per"]
+# TEXT: Sirhan says he was the lone assassin but can't remember shooting Kennedy.
+# Entities: ["Sirhan:Per", "Kennedy:Per"]
 
-TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
-Entities: ["Colorado:Loc", "Denver:Loc"]
+# TEXT: In Colorado, 13 inches of snow in Denver Wednesday prompted officials to close Interstate 270 temporarily.
+# Entities: ["Colorado:Loc", "Denver:Loc"]
 
-TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
-Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
-'''
+# TEXT: Edward Marks, an official with the Montgomery County Democratic Party, argued that if Ms. Toth is not interested in the job, "she should get out."
+# Entities: ["Edward Marks:Per", "Ms. Toth:Per", "Montgomery County:Loc", "Democratic Party:Org"]
+# '''
         # get the ground truth in the training examples
         # set the true relations as Yes answers
         # if reverse gives the wrong relations, set as No answers

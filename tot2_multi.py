@@ -188,6 +188,7 @@ def get_response_from_llm(args):
     if args.relation_type_extraction and out_dir != args.prompt_dir: 
         shutil.copy2(prompt_path_relation_type, out_dir)
     
+    # do paraphrase
     if args.do_paraphrase:
         responses_para = run_llm_para(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
         for id in test_data:
@@ -197,7 +198,7 @@ def get_response_from_llm(args):
             shutil.copy2(prompt_path_para, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
-    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, use_ICL=args.use_icl)
+    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, use_ICL=args.use_icl, context_length=args.number_of_shots_for_relation)
 
     # metrics initialization
     counters = [{r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']} for _ in range(2)]
@@ -301,7 +302,9 @@ if __name__ == "__main__":
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--test_ids', nargs="*", type=int, default=[])
     parser.add_argument('--use_icl', action='store_true')
-    parser.add_argument('--number_of_shots_for_entity_extraction', type=int, default=3)
+    parser.add_argument('--number_of_shots_for_entity_extraction', type=int, default=10)
+    parser.add_argument('--number_of_shots_for_paraphrase', type=int, default=3)
+    parser.add_argument('--number_of_shots_for_relation', type=int, default=10)
 
     parser.add_argument('--prompt_dir', type=str, default='')
 
