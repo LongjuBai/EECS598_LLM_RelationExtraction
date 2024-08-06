@@ -26,6 +26,8 @@ def dict_random_k(dic, k):
 
 
 def parse_list_string(s, marks_removed=''):
+    if type(s) is not str:
+        return []
     start, end = s.find('['), s.find(']')
     if start == -1 or end == -1:
         return []
@@ -183,6 +185,9 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
             raise Exception('Model Not Supported!')
     
     def llm_worker(relation_prompt_string, id, sample):
+        # relation_prompt_string is None
+        if not relation_prompt_string:
+            return id, ""
         if model == 'gpt-3.5-turbo-0125':
             completion = client.chat.completions.create(
                 model=model,
@@ -204,7 +209,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
         elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
             completion = client.completions.create(
                 model=model,
-                prompt=prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                prompt=prompt.replace('$TEXT$', sample['text']).replace('$ENTITIES$', relation_prompt_string),
                 temperature=temp,
                 max_tokens=max_tokens,
                 seed=seed
@@ -221,7 +226,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
                     # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
                     {
                         "role": "user", 
-                        "content": prompt.replace('$TEXT$', sample['text'] + relation_prompt_string),
+                        "content": prompt.replace('$TEXT$', sample['text']).replace('$ENTITIES$', relation_prompt_string),
                     }],
                 temperature=temp,
                 max_tokens=max_tokens,
@@ -519,7 +524,10 @@ def dispart_prompt(prompt):
 # TODO: Handle duplicate context examples
 # samples_gt = {id: {'text': ..., 'relations': ..., 'entity/masked sentence': ..., 'embedding': ...}, ...}
 def make_icl_prompt(dataset, samples_gt, embeddings, context_len, mode='entity'):
-    neigh = NearestNeighbors(n_neighbors= max(1, context_len // len(embeddings)), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
+    # below: context_len // len(embeddings): desired # of shots // total labeled examples = expected cluster size (each cluster for each shot)
+    # note in sentence part, each relation may have negative sampling, so need to divide context_len by 2
+    neighbor_num = context_len // len(embeddings) if mode == 'entity' else context_len // (2 * len(embeddings))
+    neigh = NearestNeighbors(n_neighbors= max(1, neighbor_num), n_jobs=-1).fit(np.array([sample['embedding'] for sample in samples_gt.values()]))
     _, neigh_ids = neigh.kneighbors(embeddings)
     context_samples = [list(samples_gt.values())[id] for id in neigh_ids.flatten()]
     # print(context_samples)

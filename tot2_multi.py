@@ -128,7 +128,7 @@ def get_response_from_llm(args):
         test_data = {str(id): test_data[str(id)] for id in args.test_ids}
 
     # get response; {id: response}
-    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=False)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=False, context_length=args.number_of_shots_for_entity_extraction)
     if args.relation_type_extraction: 
         raise Exception('???')
         # responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, test_data, dataset=args.dataset)
@@ -197,7 +197,7 @@ def get_response_from_llm(args):
             shutil.copy2(prompt_path_para, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
-    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, use_ICL=True)
+    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, context_length=args.number_of_shots_for_relation)
 
     # metrics initialization
     counters = [{r.lower(): {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in data['relations']} for _ in range(2)]
@@ -300,6 +300,9 @@ if __name__ == "__main__":
     parser.add_argument('--part', default='test')
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--test_ids', nargs="*", type=int, default=[])
+    parser.add_argument('--number_of_shots_for_entity_extraction', type=int, default=10)
+    # parser.add_argument('--number_of_shots_for_paraphrase', type=int, default=3)
+    parser.add_argument('--number_of_shots_for_relation', type=int, default=10)
 
     parser.add_argument('--prompt_dir', type=str, default='')
 
