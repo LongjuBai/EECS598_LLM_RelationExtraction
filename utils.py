@@ -81,7 +81,7 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
             return id, completion.choices[0].text
         elif model == 'umgpt':
             completion = await client.chat.completions.create(
-                model='gpt-35-turbo',
+                model='gpt-4o',
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
                 temperature=temp,
                 max_tokens=max_tokens,
@@ -124,7 +124,7 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
         elif model == 'umgpt':
             try:
                 completion = client.chat.completions.create(
-                    model='gpt-35-turbo',
+                    model='gpt-4o',
                     messages=messages,
                     temperature=temp,
                     max_tokens=max_tokens,
@@ -165,7 +165,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
             return id, completion.choices[0].text
         elif model == 'umgpt':
             completion = await client.chat.completions.create(
-                model='gpt-35-turbo',
+                model='gpt-4o',
                 messages=[
                     # {
                     #     "role": "system",
@@ -217,7 +217,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
             return id, completion.choices[0].text
         elif model == 'umgpt':
             completion = client.chat.completions.create(
-                model='gpt-35-turbo',
+                model='gpt-4o',
                 messages=[
                     # {
                     #     "role": "system",
@@ -265,7 +265,7 @@ def run_llm_relation(client, is_async, model, temp, max_tokens, seed, prompt, da
             return id, completion.choices[0].text
         elif model == 'umgpt':
             completion = await client.chat.completions.create(
-                model='gpt-35-turbo',
+                model='gpt-4o',
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
                 temperature=temp,
                 max_tokens=max_tokens,
@@ -334,7 +334,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
             return id, completion.choices[0].text
         elif model == 'umgpt':
             completion = await client.chat.completions.create(
-                model='gpt-35-turbo',
+                model='gpt-4o',
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
                 temperature=temp,
                 max_tokens=max_tokens,
@@ -396,7 +396,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
                 else:
                     pass # use the prompt passed from function interface above
                 completion = completion_with_backoff(
-                    model='gpt-35-turbo',
+                    model='gpt-4o',
                     messages=[
                         # {
                         #     "role": "system",
