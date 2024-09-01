@@ -1,0 +1,207 @@
+{
+    "micro_pc": 0.0,
+    "macro_pc": 0.0,
+    "pc_list": {
+        "used for": 0.0,
+        "feature of": 0.0,
+        "compare": 0,
+        "evaluated for": 0,
+        "conjunction": 0,
+        "hyponym of": 0.0,
+        "part of": 0
+    },
+    "micro_rc": 0.0,
+    "macro_rc": 0.0,
+    "rc_list": {
+        "used for": 0.0,
+        "feature of": 0.0,
+        "compare": 0,
+        "evaluated for": 0,
+        "conjunction": 0,
+        "hyponym of": 0,
+        "part of": 0
+    },
+    "micro_f1": 0.0,
+    "macro_f1": 0,
+    "f1_list": {
+        "used for": 0,
+        "feature of": 0,
+        "compare": 0,
+        "evaluated for": 0,
+        "conjunction": 0,
+        "hyponym of": 0,
+        "part of": 0
+    },
+    "num_cases": 10,
+    "accuracy": 0.5,
+    "correct_cases": {
+        "0": {
+            "text": "Experimental results are encouraging.",
+            "true": [],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"\n"
+        },
+        "4": {
+            "text": "Preliminary modeling and recognition results are presented.",
+            "true": [],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"\n"
+        },
+        "6": {
+            "text": "A unique form of reg-ularization is also needed.",
+            "true": [],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"  \n(3) \"none\"  \n(4) \"none\"  \n(5) \"none\"  \n(6) \"none\"  \n"
+        },
+        "7": {
+            "text": "The results showed the advantages of our method.",
+            "true": [],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"\n"
+        },
+        "9": {
+            "text": "Turkish has finite-state but nevertheless rather complex morphotactics.",
+            "true": [],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"  \n(3) \"none\"  \n(4) \"none\"  \n(5) \"none\"  \n(6) \"none\"  \n"
+        }
+    },
+    "fail_cases": {
+        "1": {
+            "text": "We call these misunderstandings miscommunication.",
+            "true": [],
+            "pred": [
+                [
+                    "misunderstandings:other scientific term",
+                    "hyponym of",
+                    "miscommunication:other scientific term"
+                ],
+                [
+                    "miscommunication:other scientific term",
+                    "hyponym of",
+                    "misunderstandings:other scientific term"
+                ]
+            ],
+            "response": "(1) \"hyponym of\"  \n(2) \"hyponym of\"\n"
+        },
+        "2": {
+            "text": "The analyzer is called \"Amorph\".",
+            "true": [],
+            "pred": [
+                [
+                    "Amorph:method",
+                    "hyponym of",
+                    "analyzer:generic"
+                ]
+            ],
+            "response": "(1) \"none\"  \n(2) \"hyponym of\"  \n(3) \"none\"  \n(4) \"none\"  \n(5) \"none\"  \n(6) \"none\"  \n"
+        },
+        "3": {
+            "text": "Language resource quality is crucial in NLP.",
+            "true": [
+                [
+                    "Language resource quality:metric",
+                    "feature of",
+                    "NLP:task"
+                ]
+            ],
+            "pred": [
+                [
+                    "Language resource quality:other scientific term",
+                    "feature of",
+                    "NLP:other scientific term"
+                ]
+            ],
+            "response": "(1) \"feature of\"  \n(2) \"none\"\n"
+        },
+        "5": {
+            "text": "Another problem with determiners is their inherent ambiguity.",
+            "true": [
+                [
+                    "ambiguity:other scientific term",
+                    "feature of",
+                    "determiners:method"
+                ]
+            ],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"  \n(3) \"none\"  \n(4) \"none\"  \n(5) \"none\"  \n(6) \"none\"  \n"
+        },
+        "8": {
+            "text": "It is particularly valuable to empirical MT research.",
+            "true": [
+                [
+                    "It:generic",
+                    "used for",
+                    "empirical MT research:task"
+                ]
+            ],
+            "pred": [
+                [
+                    "It:generic",
+                    "used for",
+                    "empirical MT research:other scientific term"
+                ]
+            ],
+            "response": "(1) \"used for\"  \n(2) \"none\"\n"
+        }
+    },
+    "missing_cases": {
+        "3": [
+            [
+                "Language resource quality:metric",
+                "feature of",
+                "NLP:task"
+            ]
+        ],
+        "5": [
+            [
+                "ambiguity:other scientific term",
+                "feature of",
+                "determiners:method"
+            ]
+        ],
+        "8": [
+            [
+                "It:generic",
+                "used for",
+                "empirical MT research:task"
+            ]
+        ]
+    },
+    "false_cases": {
+        "1": [
+            [
+                "miscommunication:other scientific term",
+                "hyponym of",
+                "misunderstandings:other scientific term"
+            ],
+            [
+                "misunderstandings:other scientific term",
+                "hyponym of",
+                "miscommunication:other scientific term"
+            ]
+        ],
+        "2": [
+            [
+                "Amorph:method",
+                "hyponym of",
+                "analyzer:generic"
+            ]
+        ],
+        "3": [
+            [
+                "Language resource quality:other scientific term",
+                "feature of",
+                "NLP:other scientific term"
+            ]
+        ],
+        "8": [
+            [
+                "It:generic",
+                "used for",
+                "empirical MT research:other scientific term"
+            ]
+        ]
+    },
+    "error_cases": {}
+}

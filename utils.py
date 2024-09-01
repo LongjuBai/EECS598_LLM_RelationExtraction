@@ -59,9 +59,16 @@ def find_triplets(s):
     return s[start:end+2]
 
 
+def find_triplets_base(s):
+    start, end = s.find('[['), s.find(']]')
+    if start == -1 or end == -1:
+        return '[]'
+    return s[start:end+2]
+
+
 def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round, data, dataset, context_length = 10, use_ICL = False):
     async def llm_worker_async(id, sample):
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = await client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
@@ -103,7 +110,7 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
                     messages = [{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}]
             else:
                 messages = [{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}]
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = client.chat.completions.create(
                 model=model,
                 messages=messages,
@@ -145,7 +152,7 @@ def run_llm(client, is_async, model, temp, max_tokens, seed, prompt, multi_round
 
 def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
     async def llm_worker_async(relation_prompt_string, id, sample):
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = await client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
@@ -188,7 +195,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
         # relation_prompt_string is None
         if not relation_prompt_string:
             return id, ""
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = client.chat.completions.create(
                 model=model,
                 messages=[
@@ -245,7 +252,7 @@ def run_llm_para(client, is_async, model, temp, max_tokens, seed, prompt, data, 
 # TODO: fix this
 def run_llm_relation(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict):
     async def llm_worker_async(id, sample):
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = await client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
@@ -276,7 +283,7 @@ def run_llm_relation(client, is_async, model, temp, max_tokens, seed, prompt, da
             raise Exception('Model Not Supported!')
     
     def llm_worker(relation_prompt_string, id, sample):
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = client.chat.completions.create(
                 model=model,
                 messages=[
@@ -312,9 +319,9 @@ def run_llm_relation(client, is_async, model, temp, max_tokens, seed, prompt, da
     return responses
 
 
-def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict, dataset, use_ICL = False, context_length = 10):
+def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prompt, data, relation_prompt_string_dict, dataset, use_ICL=False, context_length=10, compact=True):
     async def llm_worker_async(id, sample):
-        if model == 'gpt-3.5-turbo-0125':
+        if model == 'gpt-4o-mini':
             completion = await client.chat.completions.create(
                 model=model,
                 messages=[{"role": "user", "content": f"{prompt.replace('$TEXT$', sample['text'])}"}],
@@ -349,26 +356,45 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
         return client.chat.completions.create(**kwargs)
 
     def llm_worker_multi(relation_prompt_string, id, sample, prompt):
-        if model == 'gpt-3.5-turbo-0125':
-            responses = ''
-            for relation in relation_prompt_string:
-                completion = completion_with_backoff(
-                    model=model,
-                    messages=[
-                        # {
-                        #     "role": "system",
-                        #     "content": "Use Logic to analyze given text. Be smart."
-                        # },
-                        # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
-                        {
-                            "role": "user", 
-                            "content": prompt.replace('$TEXT$', sample['text'] + relation)
-                        }],
-                    temperature=temp,
-                    max_tokens=max_tokens,
-                    seed=seed
-                )
-                responses += completion.choices[0].message.content + '\n'
+        if model == 'gpt-4o-mini':
+            if not compact:
+                responses = ''
+                for relation in relation_prompt_string:
+                    completion = completion_with_backoff(
+                        model=model,
+                        messages=[
+                            # {
+                            #     "role": "system",
+                            #     "content": "Use Logic to analyze given text. Be smart."
+                            # },
+                            # Be loyal to the given text content. Use English acitve and passive voice. Use common sense. Use primary, high school, and colledge knowledge. Answer like a professor, a scholar, and a journalist. 
+                            {
+                                "role": "user", 
+                                "content": prompt.replace('$TEXT$', sample['text'] + relation)
+                            }],
+                        temperature=temp,
+                        max_tokens=max_tokens,
+                        seed=seed
+                    )
+                    responses += completion.choices[0].message.content + '\n'
+            else:
+                if relation_prompt_string:
+                    relation = ''.join([s[0] + f'({i+1}) ' + s[1:] for i, s in enumerate(relation_prompt_string)])
+                    completion = completion_with_backoff(
+                        model=model,
+                        messages=[
+                            {
+                                "role": "user", 
+                                "content": prompt.replace('$TEXT$', sample['text'] + relation)
+                            }],
+                            temperature=temp,
+                            max_tokens=max_tokens,
+                            seed=seed
+                        )
+                    responses = completion.choices[0].message.content + '\n'
+                    print(responses)
+                else:
+                    responses = '\n'
             return id, responses
         elif model == 'gpt-3.5-turbo-instruct' or model == 'davinci-002':
             responses = ''
@@ -422,6 +448,7 @@ def run_llm_relation_multi(client, is_async, model, temp, max_tokens, seed, prom
         responses = dict(asyncio.run(tqdm_asyncio.gather(*[llm_worker_async(id, sample) for id, sample in data.items()]), debug=True))
     return responses
 
+
 # TODO: fix this async
 # text dict should be: id as key, entity list as value
 def run_llm_embed(client, is_async, model, text_dict):
@@ -452,6 +479,33 @@ def run_llm_embed(client, is_async, model, text_dict):
     else:
         raise Exception("Async is closed for this function")
     return responses # dict, with id as key, and embedding list as value. Note each embedding can be a list itself.
+
+
+def run_llm_relation_base(client, model, temp, max_tokens, seed, prompt, data):
+    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(100))
+    def completion_with_backoff(**kwargs):
+        return client.chat.completions.create(**kwargs)
+
+    def llm_worker_multi(id, sample, prompt):
+        if model == 'gpt-4o-mini':
+            completion = completion_with_backoff(
+                model=model,
+                messages=[
+                    {
+                        "role": "user", 
+                        "content": prompt.replace('$TEXT$', sample['text'])
+                    }],
+                temperature=temp,
+                max_tokens=max_tokens,
+                seed=seed
+            )
+            responses = completion.choices[0].message.content
+            return id, responses
+        else:
+            raise Exception('Model Not Supported!')
+    
+    responses = dict([llm_worker_multi(id, sample, prompt) for id, sample in tqdm(data.items())])
+    return responses
 
 
 def update_counter(counter, true_set, pred_set):

@@ -1,0 +1,390 @@
+{
+    "micro_pc": 0.041666666666666664,
+    "macro_pc": 0.08333333333333333,
+    "pc_list": {
+        "contains": 0,
+        "nationality": 1.0,
+        "place lived": 0.0,
+        "company": 0,
+        "capital": 0,
+        "neighborhood of": 0,
+        "place of birth": 0.0,
+        "administrative divisions": 0,
+        "country": 0.0,
+        "place of death": 0,
+        "children": 0,
+        "founders": 0,
+        "place founded": 0,
+        "major shareholder of": 0,
+        "teams": 0.0,
+        "location": 0,
+        "major shareholders": 0,
+        "religion": 0,
+        "advisors": 0,
+        "geographic distribution": 0.0,
+        "ethnicity": 0,
+        "people": 0,
+        "profession": 0.0,
+        "industry": 0
+    },
+    "micro_rc": 0.041666666666666664,
+    "macro_rc": 0.07692307692307693,
+    "rc_list": {
+        "contains": 0.0,
+        "nationality": 1.0,
+        "place lived": 0.0,
+        "company": 0,
+        "capital": 0.0,
+        "neighborhood of": 0,
+        "place of birth": 0.0,
+        "administrative divisions": 0.0,
+        "country": 0.0,
+        "place of death": 0.0,
+        "children": 0.0,
+        "founders": 0,
+        "place founded": 0,
+        "major shareholder of": 0,
+        "teams": 0,
+        "location": 0,
+        "major shareholders": 0,
+        "religion": 0,
+        "advisors": 0,
+        "geographic distribution": 0,
+        "ethnicity": 0,
+        "people": 0,
+        "profession": 0,
+        "industry": 0
+    },
+    "micro_f1": 0.041666666666666664,
+    "macro_f1": 0.08,
+    "f1_list": {
+        "contains": 0,
+        "nationality": 1.0,
+        "place lived": 0,
+        "company": 0,
+        "capital": 0,
+        "neighborhood of": 0,
+        "place of birth": 0,
+        "administrative divisions": 0,
+        "country": 0,
+        "place of death": 0,
+        "children": 0,
+        "founders": 0,
+        "place founded": 0,
+        "major shareholder of": 0,
+        "teams": 0,
+        "location": 0,
+        "major shareholders": 0,
+        "religion": 0,
+        "advisors": 0,
+        "geographic distribution": 0,
+        "ethnicity": 0,
+        "people": 0,
+        "profession": 0,
+        "industry": 0
+    },
+    "num_cases": 5,
+    "accuracy": 0.0,
+    "correct_cases": {},
+    "fail_cases": {
+        "0": {
+            "text": "But that spasm of irritation by a master intimidator was minor compared with what Bobby Fischer, the erratic former world chess champion, dished out in March at a news conference in Reykjavik, Iceland.",
+            "true": [
+                [
+                    "Bobby Fischer:person",
+                    "nationality",
+                    "Iceland:location"
+                ],
+                [
+                    "Iceland:location",
+                    "capital",
+                    "Reykjavik:location"
+                ],
+                [
+                    "Iceland:location",
+                    "contains",
+                    "Reykjavik:location"
+                ],
+                [
+                    "Bobby Fischer:person",
+                    "place of death",
+                    "Reykjavik:location"
+                ]
+            ],
+            "pred": [
+                [
+                    "Bobby Fischer:person",
+                    "place lived",
+                    "Reykjavik:location"
+                ],
+                [
+                    "Bobby Fischer:person",
+                    "place of birth",
+                    "Reykjavik:location"
+                ],
+                [
+                    "Bobby Fischer:person",
+                    "nationality",
+                    "Iceland:location"
+                ],
+                [
+                    "Bobby Fischer:person",
+                    "place lived",
+                    "Iceland:location"
+                ],
+                [
+                    "Bobby Fischer:person",
+                    "place of birth",
+                    "Iceland:location"
+                ],
+                [
+                    "Reykjavik:location",
+                    "geographic distribution",
+                    "Iceland:location"
+                ],
+                [
+                    "Iceland:location",
+                    "country",
+                    "Reykjavik:location"
+                ]
+            ],
+            "response": "(1) \"place lived\", \"place of birth\"  \n(2) \"place lived\", \"place of birth\", \"nationality\"  \n(3) \"geographic distribution\"  \n(4) \"country\"  \n(5) \"none\"  \n(6) \"none\"  \n"
+        },
+        "1": {
+            "text": "But Schaap seems as comfortable in that role as Joe Buck, the Fox baseball and football sportscaster who so clearly benefited from learning beside his father, Jack Buck, the late voice of the St. Louis Cardinals . \"",
+            "true": [
+                [
+                    "Jack Buck:person",
+                    "children",
+                    "Joe Buck:person"
+                ]
+            ],
+            "pred": [
+                [
+                    "Joe Buck:person",
+                    "profession",
+                    "St. Louis Cardinals:organization"
+                ],
+                [
+                    "Jack Buck:person",
+                    "profession",
+                    "St. Louis Cardinals:organization"
+                ]
+            ],
+            "response": "(1) \"none\"  \n(2) \"none\"  \n(3) \"profession\"  \n(4) \"profession\"  \n(5) \"none\"  \n(6) \"none\"  \n"
+        },
+        "2": {
+            "text": "www.bonhams.com July 22 Mecum Hawkeye Classic Auction, Iowa Sate Fairgrounds, Des Moines.",
+            "true": [
+                [
+                    "Iowa:location",
+                    "contains",
+                    "Des Moines:person"
+                ]
+            ],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"  \n(3) \"none\"  \n(4) \"none\"  \n(5) \"none\"  \n(6) \"none\"\n"
+        },
+        "3": {
+            "text": "www.formula1.com August Aug. 1-5 National Corvette Restorers Society Annual Convention, Henry B. Gonzalez Convention Center, San Antonio.",
+            "true": [
+                [
+                    "Henry B. Gonzalez:person",
+                    "place of birth",
+                    "San Antonio:location"
+                ],
+                [
+                    "Henry B. Gonzalez:person",
+                    "place lived",
+                    "San Antonio:location"
+                ],
+                [
+                    "Henry B. Gonzalez:person",
+                    "place of death",
+                    "San Antonio:location"
+                ]
+            ],
+            "pred": [],
+            "response": "(1) \"none\"  \n(2) \"none\"  \n(3) \"none\"  \n(4) \"none\"  \n(5) \"none\"  \n(6) \"none\"\n"
+        },
+        "4": {
+            "text": "(248) 269-7672, www.meadowbrookconcours.org Aug. 6 Formula One Grand Prix, Budapest, Hungary.",
+            "true": [
+                [
+                    "Hungary:location",
+                    "administrative divisions",
+                    "Budapest:location"
+                ],
+                [
+                    "Hungary:location",
+                    "capital",
+                    "Budapest:location"
+                ],
+                [
+                    "Budapest:location",
+                    "country",
+                    "Hungary:location"
+                ],
+                [
+                    "Hungary:location",
+                    "contains",
+                    "Budapest:location"
+                ]
+            ],
+            "pred": [
+                [
+                    "Formula One:organization",
+                    "country",
+                    "Hungary:location"
+                ],
+                [
+                    "Budapest:location",
+                    "teams",
+                    "Formula One:organization"
+                ],
+                [
+                    "Budapest:location",
+                    "geographic distribution",
+                    "Hungary:location"
+                ]
+            ],
+            "response": "(1) \"none\"  \n(2) \"country\"  \n(3) \"teams\"  \n(4) \"none\"  \n(5) \"geographic distribution\"  \n(6) \"none\"  \n"
+        }
+    },
+    "missing_cases": {
+        "0": [
+            [
+                "Bobby Fischer:person",
+                "place of death",
+                "Reykjavik:location"
+            ],
+            [
+                "Iceland:location",
+                "capital",
+                "Reykjavik:location"
+            ],
+            [
+                "Iceland:location",
+                "contains",
+                "Reykjavik:location"
+            ]
+        ],
+        "1": [
+            [
+                "Jack Buck:person",
+                "children",
+                "Joe Buck:person"
+            ]
+        ],
+        "2": [
+            [
+                "Iowa:location",
+                "contains",
+                "Des Moines:person"
+            ]
+        ],
+        "3": [
+            [
+                "Henry B. Gonzalez:person",
+                "place lived",
+                "San Antonio:location"
+            ],
+            [
+                "Henry B. Gonzalez:person",
+                "place of birth",
+                "San Antonio:location"
+            ],
+            [
+                "Henry B. Gonzalez:person",
+                "place of death",
+                "San Antonio:location"
+            ]
+        ],
+        "4": [
+            [
+                "Budapest:location",
+                "country",
+                "Hungary:location"
+            ],
+            [
+                "Hungary:location",
+                "administrative divisions",
+                "Budapest:location"
+            ],
+            [
+                "Hungary:location",
+                "capital",
+                "Budapest:location"
+            ],
+            [
+                "Hungary:location",
+                "contains",
+                "Budapest:location"
+            ]
+        ]
+    },
+    "false_cases": {
+        "0": [
+            [
+                "Bobby Fischer:person",
+                "place lived",
+                "Iceland:location"
+            ],
+            [
+                "Bobby Fischer:person",
+                "place lived",
+                "Reykjavik:location"
+            ],
+            [
+                "Bobby Fischer:person",
+                "place of birth",
+                "Iceland:location"
+            ],
+            [
+                "Bobby Fischer:person",
+                "place of birth",
+                "Reykjavik:location"
+            ],
+            [
+                "Iceland:location",
+                "country",
+                "Reykjavik:location"
+            ],
+            [
+                "Reykjavik:location",
+                "geographic distribution",
+                "Iceland:location"
+            ]
+        ],
+        "1": [
+            [
+                "Jack Buck:person",
+                "profession",
+                "St. Louis Cardinals:organization"
+            ],
+            [
+                "Joe Buck:person",
+                "profession",
+                "St. Louis Cardinals:organization"
+            ]
+        ],
+        "4": [
+            [
+                "Budapest:location",
+                "geographic distribution",
+                "Hungary:location"
+            ],
+            [
+                "Budapest:location",
+                "teams",
+                "Formula One:organization"
+            ],
+            [
+                "Formula One:organization",
+                "country",
+                "Hungary:location"
+            ]
+        ]
+    },
+    "error_cases": {}
+}
