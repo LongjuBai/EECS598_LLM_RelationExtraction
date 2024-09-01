@@ -19,4 +19,5 @@ Few-shot experiments compared with [UIE](https://universal-ie.github.io):
 | UIE | 0.2186 | 0.4404 | **0.5114** |
 | LLM-base | 0.3875 | 0.4887 | 0.4481 |
 | GRE (ours) | **0.5069** | **0.5418** | 0.4898 |
+
 To run GRE, use tot2_fs.py. To run base LLM model (GPT-4o), use tot2_fs_base.py.
