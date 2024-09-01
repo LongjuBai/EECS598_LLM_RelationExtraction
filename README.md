@@ -11,3 +11,12 @@ ADE and CoNLL04 datasets can be downloaded from [SpERT](https://github.com/lavis
 | **ADE Dataset** |
 | COT | 0.6505 | **0.6264** | 0.6382 | 0.6505 | **0.6264** | 0.6382 |
 | GRE (ours) | **0.7565** | 0.6213 | **0.6822** | **0.7565** | 0.6213 | **0.6822** |
+
+Few-shot experiments compared with [UIE](https://universal-ie.github.io):
+| Model         | 1-Shot    | 5-Shot     | 10-Shot      |
+| ------------- |:-------------:|:-------------:|:-------------:|
+| **CoNLL04 Dataset** |
+| UIE | 0.2186 | 0.4404 | **0.5114** |
+| LLM-base | 0.3875 | 0.4887 | 0.4481 |
+| GRE (ours) | **0.5069** | **0.5418** | 0.4898 |
+To run GRE, use tot2_fs.py. To run base LLM model (GPT-4o), use tot2_fs_base.py.
