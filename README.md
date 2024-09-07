@@ -20,4 +20,4 @@ Few-shot experiments compared with [UIE](https://universal-ie.github.io):
 | LLM-base | 0.3875 | 0.4887 | 0.4481 |
 | GRE (ours) | **0.5069** | **0.5418** | 0.4898 |
 
-To run GRE, use tot2_fs.py. To run base LLM model (GPT-4o), use tot2_fs_base.py.
+To run GRE, download [data and preprocessing code](https://drive.google.com/drive/folders/1aP0aTzcKDscao-zzwTVCL4ydbdK_KjOZ?usp=share_link) and put the folder into /datasets598, and then run run_fs.sh. To run base LLM model (GPT-4o-mini), run run_fs_base.sh.
