@@ -1,5 +1,3 @@
-# python tot2_fs.py --dataset scierc --seed 0 --suffix scierc_5shot_2 --model umgpt --test_k 100 --relation_type_extraction
-
 # for i in {1..1}
 # do
 #     echo "Running $i"
@@ -15,5 +13,5 @@
 for i in {1..1}
 do
     echo "Running $i"
-    python tot2_fs.py --dataset nyt --suffix nyt_5shot_test_neg3 --test_k 100 --split $i --compact --n_shot 5 --relation_type_extraction
+    python tot2_fs.py --dataset nyt --suffix nyt_5shot_test_tt --test_k 10 --split $i --compact --n_shot 5 --neg 0
 done

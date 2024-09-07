@@ -27,7 +27,7 @@ def get_response_from_llm(args):
     if args.relation_type_extraction:
         prompt_relation_type = make_relation_prompt(train_data, info)
         print(prompt_relation_type)
-    prompt_relation = make_triplet_prompt(train_data, info, args.single_choice, args.compact)
+    prompt_relation = make_triplet_prompt(train_data, info, args.single_choice, args.compact, args.neg)
     print(prompt_relation)
     
     if args.test_k >= 0:
@@ -37,10 +37,10 @@ def get_response_from_llm(args):
 
     # get response; {id: response}
     print('Run entity')
-    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, args.multi_round, test_data, dataset=args.dataset, use_ICL=False, context_length=args.number_of_shots_for_entity_extraction)
+    responses_entity = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_entity, False, test_data, dataset=args.dataset, use_ICL=False)
     if args.relation_type_extraction:
         print('Run relation') 
-        responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, args.multi_round, test_data, dataset=args.dataset, use_ICL=False, context_length=args.number_of_shots_for_entity_extraction)
+        responses_relation_type = run_llm(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation_type, False, test_data, dataset=args.dataset, use_ICL=False)
 
     # logic to map the extracted entities / relation types into relations, with the valid type dict
     relation_prompt_string_dict = {} # {id: prompt string for candidate relations}
@@ -109,17 +109,17 @@ def get_response_from_llm(args):
     # if args.relation_type_extraction and out_dir != args.prompt_dir: 
     #     shutil.copy2(prompt_path_relation_type, out_dir)
     
-    if args.do_paraphrase:
-        responses_para = run_llm_para(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
-        for id in test_data:
-            test_data[id]['text'] = responses_para[id]
-            # print(test_data[id]['text'])
-        # if out_dir != args.prompt_dir:
-        #     shutil.copy2(prompt_path_para, out_dir)
+    # if args.do_paraphrase:
+    #     responses_para = run_llm_para(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_para, test_data, responses_entity)
+    #     for id in test_data:
+    #         test_data[id]['text'] = responses_para[id]
+    #         # print(test_data[id]['text'])
+    #     # if out_dir != args.prompt_dir:
+    #     #     shutil.copy2(prompt_path_para, out_dir)
 
     # get relation rating from llm: {id: relation_response}; relation_response: each line is a relation, followed by the rating
     print('Run triplet')
-    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, context_length=args.number_of_shots_for_relation, compact=args.compact)
+    responses_relation_rating = run_llm_relation_multi(args.client, args.is_async, args.model, args.temp, args.max_tokens, args.seed, prompt_relation, test_data, relation_prompt_string_dict, dataset=args.dataset, compact=args.compact)
 
     # metrics initialization
     counters = [{r: {'hit': 0, 'num_pred': 0, 'num_true': 0} for r in info['relation types']} for _ in range(2)]
@@ -225,10 +225,11 @@ if __name__ == "__main__":
     parser.add_argument('--max_tokens', type=int, default=1024)
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--relation_type_extraction', action='store_true')
-    parser.add_argument('--do_paraphrase', action='store_true')
-    parser.add_argument('--check_commonsense', action='store_true')
-    parser.add_argument('--multi_round', action='store_true')
+    # parser.add_argument('--do_paraphrase', action='store_true')
+    # parser.add_argument('--check_commonsense', action='store_true')
+    # parser.add_argument('--multi_round', action='store_true')
     parser.add_argument('--compact', action='store_true')
+    parser.add_argument('--neg', default=1, type=int) # negative sampling
 
     parser.add_argument('--dataset', type=str, default='scierc')
     parser.add_argument('--split', type=int, default=1)
@@ -236,11 +237,11 @@ if __name__ == "__main__":
     parser.add_argument('--part', default='test')
     parser.add_argument('--test_k', type=int, default=-1)
     parser.add_argument('--test_ids', nargs="*", type=int, default=[])
-    parser.add_argument('--number_of_shots_for_entity_extraction', type=int, default=10)
+    # parser.add_argument('--number_of_shots_for_entity_extraction', type=int, default=10)
     # parser.add_argument('--number_of_shots_for_paraphrase', type=int, default=3)
-    parser.add_argument('--number_of_shots_for_relation', type=int, default=10)
+    # parser.add_argument('--number_of_shots_for_relation', type=int, default=10)
 
-    parser.add_argument('--prompt_dir', type=str, default='')
+    # parser.add_argument('--prompt_dir', type=str, default='')
 
     args = parser.parse_args()
     args.api_key = open(args.api_key + '_umgpt', 'r').read() if args.model == 'umgpt' else open(args.api_key, 'r').read()
