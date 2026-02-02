@@ -129,24 +129,20 @@ Shared utility functions for data loading, formatting, evaluation, and logging.
 
 The following shell scripts reproduce the experiments reported in the paper:
 	•	ADE dataset
-
+```
 bash run_ade.sh
-
+```
 
 	•	CoNLL04 baseline
-
+```
 bash run_conll04.sh
-
+```
 
 ⸻
 
 ⚙️ Environment Setup
 
 python >= 3.9
-
-Install dependencies (if applicable):
-
-pip install -r requirements.txt
 
 ⚠️ Some experiments require access to proprietary LLM APIs.
 Please set API keys via environment variables before running.
