@@ -1,14 +1,3 @@
-# Large Language Models for Relation Extraction: A Systematic Study
-
-This repository contains the code and experimental resources for the paper:
-
-**Large Language Models for Relation Extraction: A Systematic Study**  
-Submitted to **ACL SRE Workshop 2026**  
-📄 arXiv: https://arxiv.org/abs/2405.00216
-
-🔗 GitHub: https://github.com/LongjuBai/EECS598_LLM_RelationExtraction
-
----
 
 ## 📌 Overview
 
