@@ -128,12 +128,13 @@ Shared utility functions for data loading, formatting, evaluation, and logging.
 🧪 Experiment Scripts
 
 The following shell scripts reproduce the experiments reported in the paper:
-	•	ADE dataset
+
+ADE dataset
 ```
 bash run_ade.sh
 ```
 
-	•	CoNLL04 baseline
+CoNLL04 baseline
 ```
 bash run_conll04.sh
 ```
