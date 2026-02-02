@@ -41,7 +41,7 @@ EECS598_LLM_RelationExtraction/
 ├── tot2.py
 ├── tot2_multi.py
 └── utils.py
-
+```
 
 ⸻
 
@@ -138,18 +138,6 @@ bash run_ade.sh
 bash run_conll04.sh
 
 
-	•	CoNLL04 with embeddings
-
-bash run_conll04_entity_embed.sh
-bash run_conll04_sentence_embed.sh
-
-
-	•	CoNLL04 with clustered embeddings
-
-bash run_conll04_cluster_entity_embeddings.sh
-bash run_conll04_cluster_sentence_embeddings.sh
-
-
 ⸻
 
 ⚙️ Environment Setup
@@ -177,26 +165,6 @@ Please set API keys via environment variables before running.
 	•	Dataset splits follow prior RE literature.
 	•	Random seeds are controlled where applicable.
 	•	All scripts correspond directly to reported experiments.
-
-⸻
-
-📖 Citation
-
-If you use this code or findings, please cite:
-
-@article{bai2024llmre,
-  title={Large Language Models for Relation Extraction: A Systematic Study},
-  author={Bai, Longju and others},
-  journal={arXiv preprint arXiv:2405.00216},
-  year={2024}
-}
-
-
-⸻
-
-📬 Contact
-
-For questions, clarifications, or issues, please open a GitHub issue or contact the authors via the repository.
 
 ---
 
