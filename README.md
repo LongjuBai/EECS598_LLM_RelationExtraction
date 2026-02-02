@@ -1,98 +1,218 @@
-# 📄 Graphical Reasoning: LLM-based Semi-Open Relation Extraction  
-**ACL 2026 Student Research Workshop (SRW)** — *Submitted to ACL 2026*  
-📌 *Preprint (arXiv):* https://arxiv.org/abs/2405.00216
+# Large Language Models for Relation Extraction: A Systematic Study
+
+This repository contains the code and experimental resources for the paper:
+
+**Large Language Models for Relation Extraction: A Systematic Study**  
+Submitted to **ACL SRE Workshop 2026**  
+📄 arXiv: https://arxiv.org/abs/2405.00216
+
+🔗 GitHub: https://github.com/LongjuBai/EECS598_LLM_RelationExtraction
 
 ---
 
-## 🔍 Overview
+## 📌 Overview
 
-Relation Extraction (RE) is a core task in natural language processing that identifies structured relationships between entities in unstructured text. This project explores how **Large Language Models (LLMs)** can be harnessed to perform *semi-open* relation extraction, combining pragmatic reasoning with flexible relation discovery.
+Relation Extraction (RE) aims to identify semantic relations between entities in text and is a core component of information extraction and knowledge base construction. Recent large language models (LLMs) enable RE through prompting and reasoning without task-specific fine-tuning.
 
-We introduce a novel **Graphical Reasoning (GRE)** framework that decomposes relation extraction into sequential, interpretable reasoning subtasks. By leveraging advanced prompting techniques — including *Chain of Thought* (CoT) reasoning and example-based in-context learning — we achieve more reliable and adaptable extraction performance.
+This work presents a **systematic empirical study** of LLM-based relation extraction, investigating:
 
-The proposed approach is evaluated across multiple datasets, demonstrating improvements in accuracy and robustness.
-
----
-
-## 🚀 Key Contributions
-
-- 📌 **Toolkit for LLM-based Relation Extraction**  
-  A framework integrating LLM reasoning with graph-structured decomposition that supports semi-open extraction settings.
-
-- 🧠 **Graphical Reasoning (GRE)**  
-  A structured breakdown of relational inference into reasoning steps, enabling better handling of complex and overlapping relational patterns.
-
-- 🧩 **Chain of Thought (CoT) Prompting**  
-  Application of step-by-step reasoning prompts to enhance LLM understanding and decision-making during relation identification.
-
-- 📊 **Empirical Evaluation**  
-  Demonstrated improvements over baseline extraction methods on diverse datasets, including custom annotated corpora.
-
----
-
-## 🧪 Experimental Setup
-
-The experiments use **in-context learning** with GPT-3.5 to evaluate the proposed GRE pipeline. Detailed comparisons against existing approaches show consistent gains across standard evaluation metrics such as precision, recall, and F1 score.
-
-> See the paper for complete dataset descriptions, experimental configurations, and quantitative results.
+- Prompt-based and reasoning-based RE (including Chain-of-Thought and Tree-of-Thought)
+- Sentence-level vs. entity-level embedding strategies
+- Dataset-dependent behaviors across ADE, and CoNLL04
+- Robustness and consistency of LLM predictions
 
 ---
 
 ## 📂 Repository Structure
 
+The repository structure exactly mirrors the current GitHub layout:
+
 ```text
-📦 .
-├── data/
-│   └── README.md                   # Dataset descriptions and access instructions
-├── models/
-│   └── reasoning_prompt_templates/ # Prompt templates for in-context learning
-├── experiments/
-│   ├── eval_scripts/
-│   └── results/                    # Evaluation outputs and logs
-├── notebooks/
-│   └── demo.ipynb                  # End-to-end extraction demo
-├── src/
-│   └── graphical_reasoning.py      # Core GRE implementation
-├── paper.pdf                       # ACL SRW 2026 submission (local copy)
-├── LICENSE
-└── README.md
-```
+EECS598_LLM_RelationExtraction/
+├── datasets598/
+├── log/
+├── outputs/
+├── prompts/
+├── .gitignore
+├── README.md
+├── cluster_embeddings.py
+├── cot.py
+├── generate_embeddings.py
+├── lh.log
+├── main.py
+├── query_sentence_relation_type.py
+├── run_ade.sh
+├── run_conll04.sh
+├── run_conll04_cluster_entity_embeddings.sh
+├── run_conll04_cluster_sentence_embeddings.sh
+├── run_conll04_entity_embed.sh
+├── run_conll04_sentence_embed.sh
+├── stash_pull_stashPop.sh
+├── tot.py
+├── tot2.py
+├── tot2_multi.py
+└── utils.py
+
 
 ⸻
 
-📦 Dependencies
-	•	Python 3.8+
-	•	transformers
-	•	openai (or other LLM API clients)
-	•	networkx
-	•	scikit-learn
+📁 Directory Description
+
+datasets598/
+
+Contains datasets used in the experiments, including:
+	•	ADE
+	•	CoNLL04
+
+Datasets are preprocessed into formats suitable for LLM prompting and embedding generation.
+
+⸻
+
+prompts/
+
+Prompt templates used in experiments, including:
+	•	Zero-shot prompts
+	•	Chain-of-Thought (CoT) prompts
+	•	Tree-of-Thought (ToT) prompts
+
+These prompts are used verbatim in the paper to ensure reproducibility.
+
+⸻
+
+outputs/
+
+Stores model predictions, intermediate reasoning traces, and final outputs for each experiment.
+
+⸻
+
+log/
+
+Execution logs for debugging and experiment tracking.
+
+⸻
+
+🧠 Core Python Scripts
+
+main.py
+
+Entry point for most experiments.
+Handles dataset loading, prompt construction, LLM inference, and result saving.
+
+⸻
+
+query_sentence_relation_type.py
+
+Queries the LLM to predict the relation type for a given sentence and entity pair.
+
+⸻
+
+cot.py
+
+Implements Chain-of-Thought (CoT) prompting for relation extraction.
+
+⸻
+
+tot.py, tot2.py, tot2_multi.py
+
+Implement Tree-of-Thought (ToT) style reasoning with different search and aggregation strategies.
+
+⸻
+
+generate_embeddings.py
+
+Generates sentence-level or entity-level embeddings used for clustering and analysis.
+
+⸻
+
+cluster_embeddings.py
+
+Clusters embeddings to analyze relation grouping and representation structure.
+
+⸻
+
+utils.py
+
+Shared utility functions for data loading, formatting, evaluation, and logging.
+
+⸻
+
+🧪 Experiment Scripts
+
+The following shell scripts reproduce the experiments reported in the paper:
+	•	ADE dataset
+
+bash run_ade.sh
+
+
+	•	CoNLL04 baseline
+
+bash run_conll04.sh
+
+
+	•	CoNLL04 with embeddings
+
+bash run_conll04_entity_embed.sh
+bash run_conll04_sentence_embed.sh
+
+
+	•	CoNLL04 with clustered embeddings
+
+bash run_conll04_cluster_entity_embeddings.sh
+bash run_conll04_cluster_sentence_embeddings.sh
+
+
+⸻
+
+⚙️ Environment Setup
+
+python >= 3.9
+
+Install dependencies (if applicable):
+
+pip install -r requirements.txt
+
+⚠️ Some experiments require access to proprietary LLM APIs.
+Please set API keys via environment variables before running.
+
+⸻
+
+📊 Results & Analysis
+	•	Quantitative results (precision, recall, F1) are reported in the paper.
+	•	This repository provides raw outputs for transparency and reproducibility.
+	•	Qualitative analyses (reasoning paths, failure cases) are derived from stored CoT/ToT traces.
+
+⸻
+
+🧪 Reproducibility Notes
+	•	Prompts are fixed and versioned.
+	•	Dataset splits follow prior RE literature.
+	•	Random seeds are controlled where applicable.
+	•	All scripts correspond directly to reported experiments.
 
 ⸻
 
 📖 Citation
 
-If you use this work, please cite:
-```
-@misc{tao2024graphical,
-  title={Graphical Reasoning: LLM-based Semi-Open Relation Extraction},
-  author={Tao, Yicheng and Wang, Yiqun and Bai, Longju},
-  year={2024},
-  eprint={2405.00216},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL}
+If you use this code or findings, please cite:
+
+@article{bai2024llmre,
+  title={Large Language Models for Relation Extraction: A Systematic Study},
+  author={Bai, Longju and others},
+  journal={arXiv preprint arXiv:2405.00216},
+  year={2024}
 }
-```
+
 
 ⸻
 
-📌 Contact
+📬 Contact
 
-For questions or collaboration inquiries, please open an issue on GitHub or contact the authors using the information provided in the paper.
+For questions, clarifications, or issues, please open a GitHub issue or contact the authors via the repository.
 
-⸻
+---
 
 
-ADE and CoNLL04 datasets can be downloaded from [SpERT](https://github.com/lavis-nlp/spert/blob/master/scripts/fetch_datasets.sh) and should be put under datasets/ade/ and datasets/conll04/, respectively. NYT dataset can be downloaded from [Zeng et al., 2018](https://github.com/xiangrongzeng/copy_re) and should be put under datasets/nyt/.
+ADE and CoNLL04 datasets can be downloaded from [SpERT](https://github.com/lavis-nlp/spert/blob/master/scripts/fetch_datasets.sh) and should be put under datasets/ade/ and datasets/conll04/, respectively. 
 
 | Model         | Micro Prec    | Micro Rec     | Micro F1      | Macro Prec    | Macro Rec     | Macro F1      |
 | ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
